@@ -3,7 +3,7 @@
 Program R is an AIML interpreter written in Python. It includes an entire Python 3 framework for building you own chat bots using
 Artificial Intelligence Markup Language, or AIML for short. This project was initially forked from [program-y](https://github.com/keiffster/program-y)
 
-Program R is fully cross platform, running on
+Program R is fully cross platform, running on:
 
 - Linux
 - Windows
