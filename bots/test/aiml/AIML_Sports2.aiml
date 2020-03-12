@@ -9,14 +9,10 @@
                     <robot></robot>
                 </oob></li>
                 <li>Excellent! You know, whenever I think about the boys of summer, I think of the greats like Shoeless Joe Jackson! Speaking of him, have you ever seen the movie Field of Dreams?<oob>
-                    <robot>
-                        <video>
-                            <filename>https://www.youtube.com/watch?v=09smBNps4EM</filename>
-                        </video>
-                    </robot>
+                    <robot></robot>
                 </oob></li>
                 <li>Great! You know, whenever I think about the boys of summer, I think of heroes like Jackie Robinson, the first African American
-                                                              player in Major League Baseball! Have you ever had any sports heroes?<oob>
+                                                                              player in Major League Baseball! Have you ever had any sports heroes?<oob>
                     <robot>
                         <image>
                             <filename>Jackie Robinson.jpg</filename>
@@ -29,8 +25,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
         <template>
-            No one can forget a moment like that! 
-            I think Babe Ruth's legacy continues on today because of how much of a hero he was in baseball.
+            No one can forget a moment like that! I think Babe Ruth's legacy continues on today because of how much of a hero he was in baseball.
             Have you ever had any sports heroes?
             <oob>
                 <robot></robot>
@@ -42,8 +37,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
         <template>
-            No problem! I just think Babe Ruth's legacy continues on today because of how much of a hero he was in baseball.
-                                                Have you ever had any sports heroes?
+            That's okay! Have you ever had any sports heroes?
             <oob>
                 <robot></robot>
             </oob>
@@ -54,8 +48,7 @@
         <pattern># Don't Remember ^</pattern>
         <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
         <template>
-            That's just fine! I think Babe Ruth's legacy continues on today because of how much of a hero he was in baseball.
-                                                Have you ever had any sports heroes?
+            That's okay! Have you ever had any sports heroes?
             <oob>
                 <robot></robot>
             </oob>
@@ -66,12 +59,12 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Speaking of him, have you ever seen the movie Field of Dreams?</that>
         <template>
-            That movie reminds me of being a kid and looking up to sports heroes like Joe Jackson!
-                        Have you ever had any sports heroes?
+            It's fun to see baseball heroes like Shoeless Joe Jackson portrayed on screen!
+                                    Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=vlTX_ckJ4nM</filename>
+                        <filename>Field of Dreams Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -82,12 +75,12 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Speaking of him, have you ever seen the movie Field of Dreams?</that>
         <template>
-            It's a great movie, and so nostalgic! That movie reminds me of being a kid and looking up to sports heroes like Joe Jackson!
-                        Have you ever had any sports heroes?
+            It's a great movie, you should watch it! It's fun to see baseball heroes like Shoeless Joe Jackson portrayed on screen!
+                                    Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=vlTX_ckJ4nM</filename>
+                        <filename>Field of Dreams Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -98,12 +91,12 @@
         <pattern># Don't know ^</pattern>
         <that>Speaking of him, have you ever seen the movie Field of Dreams?</that>
         <template>
-            It's a great movie, and so nostalgic! That movie reminds me of being a kid and looking up to sports heroes like Joe Jackson!
-                      Have you ever had any sports heroes?
+            It's a great movie, you should watch it! It's fun to see baseball heroes like Shoeless Joe Jackson portrayed on screen!
+                                  Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=vlTX_ckJ4nM</filename>
+                        <filename>Field of Dreams Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -115,11 +108,11 @@
         <that>Speaking of him, have you ever seen the movie Field of Dreams?</that>
         <template>
             It's a great movie, and so nostalgic! That movie reminds me of being a kid and looking up to sports heroes like Joe Jackson!
-                      Have you ever had any sports heroes?
+                                  Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=vlTX_ckJ4nM</filename>
+                        <filename>Field of Dreams Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -132,16 +125,20 @@
         <template>
             Who were your sports heroes?
             <oob>
-                <robot></robot>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Have you ever had any sports heroes?</that>
+        <that>Did you ever had any sports heroes?</that>
         <template>
-            That's okay! I just think sports heroes can have such an impact on us when we are young. Did you play baseball or softball when you were young?
+            That's okay! I just think our sports heroes can have such an impact on us when we are young. Did you play baseball or softball when you were young?
             <oob>
                 <robot></robot>
             </oob>
@@ -150,9 +147,9 @@
 
     <category>
         <pattern># Don't know ^</pattern>
-        <that>Have you ever had any sports heroes?</that>
+        <that>Did you ever had any sports heroes?</that>
         <template>
-            That's okay! I just think sports heroes can have such an impact on us when we are young. Did you play baseball or softball when you were young?
+            That's okay! I just think our sports heroes can have such an impact on us when we are young. Did you play baseball or softball when you were young?
             <oob>
                 <robot></robot>
             </oob>
@@ -164,7 +161,7 @@
         <that>Did you ever play baseball or softball when you were young?</that>
         <template>
             Nothing can replace the feeling of comraderie on the diamond, or hitting a home run while the crowd cheers you on!
-                                                What is your favorite memory of baseball?
+            What is your favorite memory of baseball?
             <oob>
                 <robot></robot>
             </oob>
@@ -253,7 +250,7 @@
         <that>Have you ever watched your grandkids play sports?</that>
         <template>
             That's okay! I think it is also fun to watch good old fashioned baseball movies at home with our loved ones!
-                                                Have you ever seen the movie A League of Their Own?
+            Have you ever seen the movie A League of Their Own?
             <oob>
                 <robot></robot>
             </oob>
@@ -265,7 +262,7 @@
         <that>Have you ever watched your grandkids play sports?</that>
         <template>
             That's okay! I think it is also fun to make popcorn and watch good old fashioned baseball movies at home!
-                                              Have you ever seen the movie A League of Their Own?
+            Have you ever seen the movie A League of Their Own?
             <oob>
                 <robot></robot>
             </oob>
@@ -283,7 +280,7 @@
                 <li value="positive">What about watching your grandkids play sports makes you happy?</li>
                 <li value="negative">What about watching your grandkids play sports makes you sad?</li>
                 <li value="verynegative">What about watching your grandkids play sports makes you sad?</li>
-                <li value="neutral">I understand. Would you like to keep talking about baseball?</li></condition>
+                <li value="neutral">I understand. Do you want to keep talking about baseball?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -318,11 +315,11 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             They don't make movies like that anymore! I learned so much about the history of women's baseball from watching that movie, too! Would you like to see
-                                                a very short video on the All-American Girls Professional Baseball League?
+                                                            a very short video on the All-American Girls Professional Baseball League?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=tkZTcofj3wU</filename>
+                        <filename>A League of Their Own Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -334,11 +331,11 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             You should see it sometime! I learned so much about the history of women's baseball from watching that movie! Would you like to see
-                                                a very short video on the All-American Girls Professional Baseball League?
+            a very short video on the All-American Girls Professional Baseball League?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=tkZTcofj3wU</filename>
+                        <filename>A League of Their Own Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -350,11 +347,11 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             You should see it sometime! I learned so much about the history of women's baseball from watching that movie. Would you like to see
-                                                a very short video on the All-American Girls Professional Baseball League?
+            a very short video on the All-American Girls Professional Baseball League?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=tkZTcofj3wU</filename>
+                        <filename>A League of Their Own Trailer.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -366,11 +363,11 @@
         <that>Would you like to see a very short video on the All-American Girls Professional Baseball League?</that>
         <template>
             This video gets me every time! It's heartening to see all those women, years later, recounting their love of the game!
-                                    Would you like to keep talking about baseball?
+                                                Do you want to keep talking about baseball?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=EQV57nQsMXg</filename>
+                        <filename>All-American Girls Professional Baseball League.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -382,7 +379,7 @@
         <that>Would you like to see a very short video on the All-American Girls Professional Baseball League?</that>
         <template>
             That's okay! It's just so heartening to see all those women, years later, recounting their love of the game!
-                                    Would you like to keep talking about baseball?
+            Do you want to keep talking about baseball?
             <oob>
                 <robot></robot>
             </oob>
@@ -391,25 +388,25 @@
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
-        <that>Would you like to keep talking about baseball?</that>
+        <that>Do you want to keep talking about baseball?</that>
         <template>
             <random>
                 <li>Excellent! You know, I think it's fascinating to learn about the lives of great ball players like Joe DiMaggio,
-                                                  who was married to Marilyn Monroe! Would you like to see a short video on Joe DiMaggio's life?<oob>
+                                                                  who was married to Marilyn Monroe! Would you like to see a short video on Joe DiMaggio's life?<oob>
                     <robot></robot>
                 </oob></li>
                 <li>Perfect! You know, I always think it's fascinating to learn about the lives of great ball players like Willie Mays! Would you like to watch a short interview with Willie Mays?<oob>
                     <robot></robot>
                 </oob></li>
                 <li>Wonderful! You know, I always think it's fascinating to learn about the lives of great ball players like Lou Gehrig,
-                                                  the Iron Horse himself! Would you like to watch a short video on Lou Gehrig's life?<oob>
+                                                                  the Iron Horse himself! Would you like to watch a short video on Lou Gehrig's life?<oob>
                     <robot></robot>
                 </oob></li></random></template>
     </category>
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Would you like to keep talking about baseball?</that>
+        <that>Do you want to keep talking about baseball?</that>
         <template>
             That's absolutely fine! There is plenty more we can discuss! What would you like to talk about?
             <oob>
@@ -423,11 +420,11 @@
         <that>Would you like to see a short video on Joe DiMaggio's life?</that>
         <template>
             I think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                    What jobs have you felt most dedicated to in your life?
+                                                What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=gufSWZ5xSBc</filename>
+                        <filename>Joe Dimaggio.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -439,7 +436,7 @@
         <that>Would you like to see a short video on Joe DiMaggio?</that>
         <template>
             Not a problem! I just think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                    What jobs have you felt most dedicated to in your life?
+                                                What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot></robot>
             </oob>
@@ -451,11 +448,11 @@
         <that>Would you like to watch a short interview with Willie Mays?</that>
         <template>
             I think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                    What jobs have you felt most dedicated to in your life?
+                                                What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=Rpkco2rHsKc</filename>
+                        <filename>Willie Mays on Costas.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -467,7 +464,7 @@
         <that>Would you like to watch a short interview with Willie Mays?</that>
         <template>
             Not a problem! I just think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                    What jobs have you felt most dedicated to in your life?
+                                                What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot></robot>
             </oob>
@@ -479,11 +476,11 @@
         <that>Would you like to watch a short video on Lou Gehrig's life?</that>
         <template>
             I think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                    What jobs have you felt most dedicated to in your life?
+                                                What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot>
                     <video>
-                        <filename>https://www.youtube.com/watch?v=Oci79mLcKOg</filename>
+                        <filename>Lou Gehrig.mp4</filename>
                     </video>
                 </robot>
             </oob>
@@ -495,7 +492,7 @@
         <that>Would you like to watch a short video on Lou Gehrig's life?</that>
         <template>
             Not a problem! I just think there is much to learn from someone who was so devoted and dedicated to his work on the field!
-                                  What jobs have you felt most dedicated to in your life?
+                                              What jobs have you felt most dedicated to in your life?
             <oob>
                 <robot></robot>
             </oob>
