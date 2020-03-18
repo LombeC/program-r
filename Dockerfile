@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update \
-  && apt-get install -y python3-pip python3-dev net-tools nano vim default-jdk unzip\
+  && apt-get install -y python3-pip python3-dev net-tools nano vim default-jdk unzip wget\
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip 
