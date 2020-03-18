@@ -14,7 +14,7 @@ RUN unzip corenlp.zip
 RUN rm corenlp.zip
 RUN mv stanford-corenlp-full-2018-10-05 corenlp
 RUN cp -r corenlp /usr/src/app/libs
-ENV PYTHONPATH="/usr/src/app/src:/usr/src/app/src/programr${PYTHONPATH}"
+ENV PYTHONPATH="/usr/src/app/src:/usr/src/app/src/programr:${PYTHONPATH}"
 EXPOSE 5000
 RUN pip install --upgrade setuptools
 RUN pip install spacy
