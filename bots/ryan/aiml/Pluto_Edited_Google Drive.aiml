@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># PLUTO ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Did you know that scientists don't consider Pluto a planet any longer?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PLUTO ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Did you know that scientists don't consider Pluto a planet any longer?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DON T YOU TELL ME WHY YOU LIKE PLUTO?</that>
+        <template>
+            Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WHY DON T YOU TELL ME WHY YOU LIKE PLUTO?</that>
+        <template>
+            Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>WHY DON T YOU TELL ME WHY YOU LIKE PLUTO?</that>
+        <template>
+            Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO VISIT PLUTO?</that>
+        <template>
+            That would be a little strange, wouldn't it. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># JUPITER ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Jupiter is the oldest planet in our solar system! Did you know that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># JUPITER ^</pattern>
+        <that>WHICH # PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Jupiter is the oldest planet in our solar system! Did you know that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>DID YOU KNOW THAT?</that>
+        <template>
+            Its age isn't the only interesting thing about Jupiter. I have a short video about it. Should we watch it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>SHOULD WE WATCH IT?</that>
+        <template>
+            What was the most interesting thing you learned?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>jupiter.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT WAS THE MOST INTERESTING THING YOU LEARNED?</that>
+        <template>
+            I think it's incredible that Jupiter's defining feature, the red spot, is a storm and could therefore dissapear. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>SHOULD WE WATCH IT?</that>
+        <template>
+            Okay. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

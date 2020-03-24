@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># MARS ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MARS ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            Perhaps! Maybe we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            Maybe some day we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            Maybe some day we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>
