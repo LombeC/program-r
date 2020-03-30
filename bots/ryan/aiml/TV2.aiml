@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># Cooking ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <random>
+                <li>Great! I love to watch Julia Child because her show is so soothing! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Julia Child.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Martha Stewart.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. What were your favorite meals growing up?<oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you believe that the way to a person s heart is through their stomach?</that>
+        <template>
+            Me too! Even us robots can enjoy the thought of a nice, home cooked meal! What were your favorite meals growing up?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you believe that the way to a person s heart is through their stomach?</that>
+        <template>
+            Maybe you just need to have a nice, home cooked meal! What were your favorite meals growing up?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you believe that the way to a person s heart is through their stomach?</that>
+        <template>
+            That's okay! Maybe you just need to have a nice, home cooked meal! What were your favorite meals growing up?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What were your favorite meals growing up?</that>
+        <template>
+            That sounds delicious!
+                                                Do you enjoy cooking for other people?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you enjoy cooking for other people?</that>
+        <template>
+            You must be quite the chef! I think it is the most fun to cook for other people on the holidays. If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you enjoy cooking for other people?</that>
+        <template>
+            I understand. I think it is the most fun to cook for other people on the holidays. If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you enjoy cooking for other people?</that>
+        <template>
+            That's okay! I think it is the most fun to cook for other people on the holidays. If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Thanksgiving ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            I don't think you can ever have enough turkey and stuffing, that is until you fall asleep at the dinner table! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>Thanksgiving.jpg</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Christmas ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            There is nothing better than egg nog, Christmas cookies, and a warm fireplace! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>Christmas.jpg</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Halloween ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thankgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            You must have a sweet tooth! The best part of Halloween is eating all the candy! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>Halloween.jpg</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Easter ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thankgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            You must enjoy a good Easter egg hunt! Not to mention all the candy! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>Easter.jpg</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># None ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thankgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            I understand. I enjoy any holiday that lets me relax and rest my engine for a while! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thankgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            I understand. I enjoy any holiday that lets me relax and rest my engine for a while! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>If you had to choose, would you say your favorite holiday is Thankgiving, Christmas, Halloween, or Easter?</that>
+        <template>
+            I understand. I enjoy any holiday that lets me relax and rest my engine for a while! Would you like to keep talking about food and cooking shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to keep talking about food and cooking shows?</that>
+        <template>
+            Whenever I watch cooking competitions on television, I always think of that saying "if you can't stand the heat, get out of the kitchen".
+                                                                                                          Have you ever seen cooking competitions on Food Network?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
+            </oob>
+
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Chopped.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep talking about food and cooking shows?</that>
+        <template>
+            Of course! What do you want to talk about?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever seen cooking competitions on Food Network?</that>
+        <template>
+            Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                          Do you think you would be able to make a gourmet meal that fast?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever seen cooking competitions on Food Network?</that>
+        <template>
+            It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                            Do you think you would be able to make a gourmet meal that fast?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever seen cooking competitions on Food Network?</that>
+        <template>
+            It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                          Do you think you would be able to make a gourmet meal that fast?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you think you would be able to make a gourmet meal that fast?</that>
+        <template>
+            You are a whiz in the kitchen! Do you prefer American style food,
+                                                                                                          Mexican, Asian, Italian, or other?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you think you would be able to make a gourmet meal that fast?</that>
+        <template>
+            I am not exactly a whiz in the kitchen either, though I love to read cookbooks! Do you prefer American style food,
+                                                                                                            Mexican, Asian, Italian, or other?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you think you would be able to make a gourmet meal that fast?</that>
+        <template>
+            I am not exactly a whiz in the kitchen either, though I love to read cookbooks! Do you prefer American style food,
+                                                                                                            Mexican, Asian, Italian, or other?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># American ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            Nothing beats a good hamburger and fries! Jimmy Buffet got it right when he sang the song Cheeseburger in Paradise.
+                                                                                                          Where was your favorite place to vacation?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Mexican ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            I would love to travel to Mexico someday to eat delicious food while listening to a mariachi band!
+                                                                                                          Where was your favorite place to vacation?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Asian ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            I would love to travel to Hong Kong someday to try sweet and sour pork the way it is supposed to be made!
+                                                                                                          Where was your favorite place to vacation?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Italian ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            I would love to travel to Italy someday to try pasta the way it is supposed to be made!
+                                                                                                          Where was your favorite place to vacation?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Other ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            Everyone has their own tastes! Would you like to keep talking about food and cooking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Repeat ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            Sure. Do you prefer American style food, Mexican, Asian, Italian, or other?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Say Again ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            <srai>Repeat</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Where was your favorite place to vacation?</that>
+        <template>
+            It is always nice to kick off your boots and forget your worries, if you know what I mean!
+                                                                                                            Would you like to keep talking about food and cooking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to keep talking about food and cooking?</that>
+        <template>
+            There are so many food shows that I love to watch! Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Diners.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep talking about food and cooking?</that>
+        <template>
+            Of course! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <template>
+            I love all the interesting food they cook up on that show!
+                                                            Are you an adventurous eater?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <template>
+            I love all the interesting food they cook up on that show!
+                                                          Are you an adventurous eater?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <template>
+            I love all the interesting food they cook up on that show!
+                                                          Are you an adventurous eater?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Are you an adventurous eater?</that>
+        <template>
+            You are such an adventurous spirit! Life is more fun that way!
+                                                                                                What do you like to do for fun?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Are you an adventurous eater?</that>
+        <template>
+            Everyone is different! I think life is more fun when we try new things!
+                                                            What do you like to do for fun?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What do you like to do for fun?</that>
+        <template>
+            That's great! I think it's fun to chat with people like you! Do you want to continue talking about television?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to continue talking about television?</that>
+        <template>
+            Wonderful! Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to continue talking about television?</that>
+        <template>
+            Of course! What would you like to talk about next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

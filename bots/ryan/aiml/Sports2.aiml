@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># Baseball ^</pattern>
+        <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
+        <template>
+            <random>
+                <li>Perfect! It's fascinating to learn about the lives of great ball players like Joe Dimaggio! Would you like to watch a short video on him?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li>Wonderful! It's fascinating to learn about the lives of great ball players like Willie Mays! Would you like to watch a short interview with him?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li>Great! It's fascinating to learn about the lives of great ball players like Lou Gehrig,
+                                                                                                              the Iron Horse himself! Would you like to see a short video on him?<oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to watch a short video on him?</that>
+        <template>
+            He was one of the greatest center fielders! What is your favorite position, pitcher, catcher, in field, or outfield?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Joe Dimaggio.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to watch a short video on him?</that>
+        <template>
+            He was one of the greatest ball players! What is your favorite position, pitcher, catcher, in field, or outfield?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to watch a short interview with him?</that>
+        <template>
+            He was the best center fielder! What is your favorite position, pitcher, catcher, in field, or outfield?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Willie Mays on Costas.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to watch a short interview with him?</that>
+        <template>
+            He was one of the greatest ball players! What is your favorite position, pitcher, catcher, infield, or outfield?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to see a short video on him?</that>
+        <template>
+            He was one of the greatest infielders! What is your favorite position, pitcher, catcher, infield, or outfield?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Lou Gehrig.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to see a short video on him?</that>
+        <template>
+            He was one of the greatest ball players! What is your favorite position, pitcher, catcher, infield, or outfield?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Pitcher ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might remember Lefty Grove, the game's greatest left handed pitcher who played for the Boston Red Sox!
+                                            What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Catcher ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might remember Yogi Berra, the game's greatest catcher who played for the New York Yankees!
+                                          What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># In Field ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might know Cal Ripkin Jr., the game's greatest shortstop who played for the Baltimore Orioles!
+                                          What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Outfield ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might know Hank Aaron, the game's greatest right fielder who played for the Milwaukee Braves!
+                                          What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># None ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            I understand! What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            I understand! What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What's your favorite baseball team?</that>
+        <template>
+            <think><set name="users favorite baseball team"><person /></set></think>
+
+            <get name="users favorite baseball team" /> are a great team! Do you want to keep talking about baseball?
+        
+            
+            
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to keep talking about baseball?</that>
+        <template>
+            Great! Did you ever play baseball or softball when you were young?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to keep talking about baseball?</that>
+        <template>
+            Okay! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you ever play baseball or softball when you were young?</that>
+        <template>
+            What is your favorite memory of playing ball?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Did you ever play baseball or softball when you were young?</that>
+        <template>
+            Me either! Have you ever watched your grandkids play sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Did you ever play baseball or softball when you were young?</that>
+        <template>
+            No worries! Have you ever watched your grandkids play sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What is your favorite memory of playing ball?</that>
+        <template>
+            It's nice to relive those memories! Have you ever watched your grandkids play sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever watched your grandkids play sports?</that>
+        <template>
+            How exciting! How does it feel to watch your grandkids play sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever watched your grandkids play sports?</that>
+        <template>
+            That's okay! It's also fun to make popcorn and watch baseball movies!
+                                                                                            Have you ever seen the movie A League of Their Own?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Don't have ^</pattern>
+        <that>Have you ever watched your grandkids play sports?</that>
+        <template>
+            That's okay! It's also fun to make popcorn and watch baseball movies!
+                                                                                          Have you ever seen the movie A League of Their Own?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it feel to watch your grandkids play sports?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">What about watching your grandkids play sports makes you happy?</li>
+                <li value="positive">What about watching your grandkids play sports makes you happy?</li>
+                <li value="negative">What about watching your grandkids play sports makes you sad?</li>
+                <li value="verynegative">What about watching your grandkids play sports makes you sad?</li>
+                <li value="neutral">I understand. Do you want to keep talking about baseball and sports?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about watching your grandkids play sports makes you happy?</that>
+        <template>
+            That's lovely! It's also fun to make popcorn and watch baseball movies! Have you ever seen the movie A League of Their Own?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about watching your grandkids play sports makes you sad?</that>
+        <template>
+            I can understand that. Sometimes its better to make popcorn and watch baseball movies! Have you ever seen the movie A League of Their Own?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever seen the movie A League of Their Own?</that>
+        <template>
+            You learn so much about women's baseball watching that movie! Would you like to see
+                                                                                            a very short video on the All-American Girls Baseball League reunion?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>A League of Their Own Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever seen the movie A League of Their Own?</that>
+        <template>
+            You learn so much about women's baseball watching that movie! Would you like to see
+                                                                                            a very short video on the All-American Girls Baseball League reunion?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>A League of Their Own Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever seen the movie A League of Their Own?</that>
+        <template>
+            You learn so much about women's baseball watching that movie! Would you like to see
+                                                                                            a very short video on the All-American Girls Baseball League reunion?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>A League of Their Own Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to see a very short video on the All-American Girls Baseball League reunion?</that>
+        <template>
+            That video gets me every time!
+                                            Do you want to keep talking about baseball and sports?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>All-American Girls Professional Baseball League.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to see a very short video on the All-American Girls Baseball League reunion?</that>
+        <template>
+            That's okay!
+                                            Do you want to keep talking about baseball and sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to keep talking about baseball and sports?</that>
+        <template>
+            <random>
+                <li>Whenever I think about the boys of summer, I think of Babe Ruth, the Great Bambino! Do you remember when he called out his infamous home run against the Chicago Cubs?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li>Whenever I think about the boys of summer, I think of legends like Shoeless Joe Jackson! Have you ever seen the movie Field of Dreams?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li>Whenever I think about the boys of summer, I think of heroes like Jackie Robinson! Have you ever had any sports heroes?<oob>
+                    <robot>
+                        <image>
+                            <filename>Jackie Robinson.jpg</filename>
+                        </image>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
+        <template>
+            No one can forget a moment like that!
+                                            Have you ever had any sports heroes like Babe Ruth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
+        <template>
+            That's okay! Have you ever had any sports heroes like Babe Ruth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
+        <template>
+            That's okay! Have you ever had any sports heroes like Babe Ruth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever seen the movie Field of Dreams?</that>
+        <template>
+            It's fun to see all those baseball heroes brought back to life!
+                                                                    Have you ever had any sports heroes?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Field of Dreams Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever seen the movie Field of Dreams?</that>
+        <template>
+            It's fun to see all those baseball heroes brought back to life!
+                                                                    Have you ever had any sports heroes?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Field of Dreams Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever seen the movie Field of Dreams?</that>
+        <template>
+            It's fun to see all those baseball heroes brought back to life!
+                                                                  Have you ever had any sports heroes?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Field of Dreams Trailer.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever had any sports heroes?</that>
+        <template>
+            Who were you heroes?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
+            </oob>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever had any sports heroes?</that>
+        <template>
+            That's okay! One of my baseball heroes is Mickey Mantle, the homerun king!
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever had any sports heroes?</that>
+        <template>
+            That's okay! One of my baseball heroes is Mickey Mantle, the homerun king!
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever had any sports heroes like Babe Ruth?</that>
+        <template>
+            Who were you heroes?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever had any sports heroes like Babe Ruth?</that>
+        <template>
+            That's okay! One of my baseball heroes is Mickey Mantle, the homerun king!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever had any sports heroes like Babe Ruth?</that>
+        <template>
+            That's okay! One of my baseball heroes is Mickey Mantle, the homerun king!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Who were your heroes?</that>
+        <template>
+            How cool! One of my baseball heroes is Mickey Mantle, the homerun king!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>One of my baseball heroes is Mickey Mantle, the homerun king!</that>
+        <template>
+            It's fun to remember baseball legends!
+                                            Can I show you a video about the National Ballpark Museum in Denver?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Can I show you a video about the National Ballpark Museum in Denver?</that>
+        <template>
+            Do you like to go to museums?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>National Ballpark Museum.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Can I show you a video about the National Ballpark Museum in Denver?</that>
+        <template>
+            Okay! Do you like to go to museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you like to go to museums?</that>
+        <template>
+            Great! Would you like to talk about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you like to go to museums?</that>
+        <template>
+            Would you like to continue discussing sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to keep talking about baseball and sports?</that>
+        <template>
+            That's okay!
+                                            What do you want to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to continue discussing sports?</that>
+        <template>
+            Great! Do you want to talk about basketball, baseball, football, hockey or the olympics?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to continue discussing sports?</that>
+        <template>
+            Sure thing! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>
