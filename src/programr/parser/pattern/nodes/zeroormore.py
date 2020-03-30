@@ -47,9 +47,9 @@ class PatternZeroOrMoreWildCardNode(PatternWildCardNode):
         tabs = self.get_tabs(client_context, depth)
 
         #TODO uncomment this section
-        # if context.search_time_exceeded() is True:
-        #     YLogger.error(client_context, "%sMax search time [%d]secs exceeded", tabs, context.max_search_timeout)
-        #     return None
+        if context.search_time_exceeded() is True:
+            YLogger.error(client_context, "%sMax search time [%d]secs exceeded", tabs, context.max_search_timeout)
+            return None
 
         if context.search_depth_exceeded(depth) is True:
             YLogger.error(client_context, "%sMax search depth [%d] exceeded", tabs, context.max_search_depth)
