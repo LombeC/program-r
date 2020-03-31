@@ -24,10 +24,18 @@
             Who do you consider to be your favorite American President?
             <oob>
                 <robot>
-                    <options>
-                        <option>*</option>
-                        <option>I do not like any American presidents</option>
-                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PRESIDENT ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            Who do you consider to be your favorite American President?
+            <oob>
+                <robot>
                 </robot>
             </oob>
         </template>
@@ -38,8 +46,8 @@
         <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
         <template>
             <think><set name = "favorite president"><star/></set></think>
-            There's one interesting person! Did you know every American President has a portrait painted of them which is shown in the Smithsonian after their presidency ends?
-            I think that it is a cool tradition that we have going. Should I share a fact about one of the presidents with you?
+            There's one interesting person! Did you know every American President has a portrait painted of them?
+            Would you like to hear another fact about the presidents?
             <oob>
                 <robot>
                     <options>
@@ -53,16 +61,17 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>Should I share a fact about one of the presidents with you?</that>
+        <that>Would you like to hear another fact about the presidents?</that>
         <template>
-            Ok no worries. Tell me how you are feeling about our conversation so far?
+            Ok no worries. Would you like to keep talking about American History?
+            It's one of my favorite topics and I have lots more to talk about!
             <oob><robot></robot></oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Should I share a fact about one of the presidents with you?</that>
+        <that>Would you like to hear another fact about the presidents?</that>
         <template>
             <random>
                 <li> Because of his white hair, many people think that George Washington wore a wig, but he never did so. His hair was all his own, and he diligently powdered it each morning to give his hair its distinct, in vogue look. <!-- from: http://mentalfloss.com/article/64959/george-washingtons-incredible-hair-routine --> </li>
@@ -119,7 +128,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>DID YOU KNOW THAT?</that>
         <template>
-            Some of the lives that our presidents lived were pretty remarkable. Would you like to keep talking about American History?
+            Would you like to keep talking about American History?
             It's one of my favorite topics and I have lots more to talk about!
             <oob>
                 <robot>
@@ -136,7 +145,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
         <template>
-            Fair enough! I'm pretty good at talking about other topics too!
+            Fair enough! I'm pretty good at talking about other topics too! What would you like to talk about?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -145,91 +154,12 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
         <template>
-            Fantastic! Before we move on. Tell me how you are feeling about our conversation so far?
+            Fantastic!
             <oob><robot></robot></oob>
         </template>
     </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>Tell me how you are feeling about our conversation so far?</that>
-        <template>
-            <think>
-                <set name = "data"> <star/> </set>
-            </think>
-            <condition name="getsentiment">
-                <li value = "verypositive">
-                    I'm glad you are feeling that way too. I think you are a great conversationalist!
-                    Where should we take this conversation next?
-                    Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
-                    <oob>
-                        <robot>
-                            <options>
-                                <option>AMERICAN INVENTIONS</option>
-                                <option>TITANIC</option>
-                                <option>*</option>
-                            </options>
-                        </robot>
-                    </oob>
-                </li>
-                <li value = "positive">
-                    I'm glad you are feeling that way too. I think you are a great conversationalist!
-                    Where should we take this conversation next?
-                    Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
-                    <oob>
-                        <robot>
-                            <options>
-                                <option>AMERICAN INVENTIONS</option>
-                                <option>TITANIC</option>
-                                <option>*</option>
-                            </options>
-                        </robot>
-                    </oob>
-                </li>
-                <li value = "neutral">
-                    Where should we take this conversation next?
-                    Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
-                    <oob>
-                        <robot>
-                            <options>
-                                <option>AMERICAN INVENTIONS</option>
-                                <option>TITANIC</option>
-                                <option>*</option>
-                            </options>
-                        </robot>
-                    </oob>
-                </li>
-                <li value = "negative">
-                    I'm sorry you're feeling that way. Maybe I can redeem myself if we talk about something else?
-                    Where should we take this conversation next?
-                    Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
-                    <oob>
-                        <robot>
-                            <options>
-                                <option>AMERICAN INVENTIONS</option>
-                                <option>TITANIC</option>
-                                <option>*</option>
-                            </options>
-                        </robot>
-                    </oob>
-                </li>
-                <li value = "verynegative">
-                    I'm sorry you're feeling that way. Maybe I can redeem myself if we talk about something else?
-                    Where should we take this conversation next?
-                    Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
-                    <oob>
-                        <robot>
-                            <options>
-                                <option>AMERICAN INVENTIONS</option>
-                                <option>TITANIC</option>
-                                <option>*</option>
-                            </options>
-                        </robot>
-                    </oob>
-                </li>
-            </condition>
-        </template>
-    </category>
+  
 
 
 </aiml>

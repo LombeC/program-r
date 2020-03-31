@@ -5,8 +5,37 @@
         <pattern># TITANIC ^</pattern>
         <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
         <template>
-            Ah... one of the most infamous tragedies. But endlessly fascinating, too.
-            I don't know about you, but I'm so curious about the events surrounding the Titanic sinking.
+            One of the most infamous tragedies.
+            If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Voyage of the Titanic ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies.
+            If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># The Voyage of the Titanic ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+          One of the most infamous tragedies.
+            If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Voyage ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies. 
             If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
             <oob><robot></robot></oob>
         </template>
@@ -16,8 +45,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
         <template>
-            Knowing what happened to it, it's hard to disagree with that. But it sounds so romantic, to travel the sea in luxury.
-            But I'm sure that a lot of that fantasy is owed to James Cameron's Titanic film. Have you seen his film?
+            Knowing what happened, I absolutely agree. Have you seen the movie about The Titanic?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -26,18 +54,17 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
         <template>
-            It would be hard not to! It sounds so romantic, to travel the sea in luxury.
-            But I'm sure that a lot of that fantasy is owed to James Cameron's Titanic film. Have you seen his film?
+            It sounds so romantic, to travel the sea in luxury.
+            Have you seen the movie about The Titanic?
             <oob><robot></robot></oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>HAVE YOU SEEN HIS FILM?</that>
+        <that>Have you seen the movie about The Titanic?</that>
         <template>
-            James Cameron's Titanic was released in December of 2017, and at that time was the most expensive film ever made.
-            If i remember correctly, I think it cost over 200 million dollars to make! But it was a huge success. Would you like to watch a trailer?
+            Would you like to watch a trailer?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -46,7 +73,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>WOULD YOU LIKE TO WATCH A TRAILER?</that>
         <template>
-            I feel like I just watched the film again! I'm reminded of just how good the music is. What did you think of Titanic when you watched it?
+            I feel like I just watched the film again! What did you think of Titanic when you watched it?
             <oob>
                 <robot>
                     <video><filename>titanic.mp4</filename></video>
@@ -66,9 +93,9 @@
 
     <category>
       <pattern># <set>YES</set> ^</pattern>
-      <that>HAVE YOU SEEN HIS FILM?</that>
+      <that>Have you seen the movie about The Titanic?</that>
       <template>
-        Titanic is one of my favorite films. It has everything! Romance... Action.... And did I mention romance? So steamy. It's been a little while since I watched it.
+        It has everything! Romance, action, and did I mention romance?
         Would you like to watch a trailer?
         <oob><robot></robot></oob>
       </template>
@@ -83,23 +110,28 @@
            </think>
            <condition name="getsentiment">
                <li value = "verypositive">
-                   You already know how much I like it and I'm so glad you do too! That said, I'm not sure how true the movie is to the actual event.
+                   I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
+                   What do you say we talk about real American history?
                    <oob><robot></robot></oob>
                </li>
                <li value = "positive">
-                   You already know how much I like it and I'm so glad you do too! That said, I'm not sure how true the movie is to the actual event.
+                 I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
+                 What do you say we talk about real American history?
                    <oob><robot></robot></oob>
                </li>
                <li value = "neutral">
-                   I'm not sure how true the movie is to the actual event.
+                 I totally understand! I'm not sure how true the movie is to the actual event.
+                 What do you say we talk about real American history?
                    <oob><robot></robot></oob>
                </li>
                <li value = "negative">
-                    It does leave some to be desired. Like, for instance, I'm not sure how true the movie is to the actual event.
+                    I totally understand! I'm not sure how true the movie is to the actual event.
+                    What do you say we talk about real American history?
                    <oob><robot></robot></oob>
                </li>
                <li value = "verynegative">
-                    It does leave some to be desired. Like, for instance, I'm not sure how true the movie is to the actual event.
+                 I totally understand! I'm not sure how true the movie is to the actual event.
+                 What do you say we talk about real American history?
                    <oob><robot></robot></oob>
                </li>
            </condition>
