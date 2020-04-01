@@ -3,9 +3,9 @@
     <!-- branches from SCIENCE dialogue in sentiment 2 -->
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>Did you see that NASA successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
         <template>
-            NASA's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
+            Nasa's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
             <oob>
                 <robot>
                     <image>
@@ -18,9 +18,9 @@
 
     <category>
         <pattern># <set>DON'T KNOW</set> ^</pattern>
-        <that>Did you see that NASA successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
         <template>
-            NASA's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
+            Nasa's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
             <oob>
                 <robot></robot>
             </oob>
@@ -29,9 +29,9 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU THINK IT WAS WORTH IT?</that>
+        <that>Do you think it was worth it?</that>
         <template>
-            It's a steep cost, but I agree! Would you like to see a video about NASA's discovered?
+            It's a steep cost, but I agree! Would you like to see a video about nasa's discoveries?
             <oob>
                 <robot></robot>
             </oob>
@@ -40,9 +40,9 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>DO YOU THINK IT WAS WORTH IT?</that>
+        <that>Do you think it was worth it?</that>
         <template>
-            It's a steep cost, but the discoveries have been amazing! Would you like to see a video about NASA's discoveries?
+            It's a steep cost, but the discoveries have been amazing! Would you like to see a video about nasa's discoveries?
             <oob>
                 <robot></robot>
             </oob>
@@ -51,9 +51,9 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Did you see that NASA successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
         <template>
-            The discoveries have been amazing! Would you like to see a video about NASA's discoveries?
+            The discoveries have been amazing! Would you like to see a video about nasa's discoveries?
             <oob>
                 <robot></robot>
             </oob>
@@ -62,7 +62,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT NASA S DISCOVERIES?</that>
+        <that>Would you like to see a video about nasa s discoveries?</that>
         <template>
             Well? Do you like learning about planets?
             <oob>
@@ -82,8 +82,8 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="verypositive">DO YOU HAVE A FAVORITE PLANET?</li>
-                <li value="positive">DO YOU HAVE A FAVORITE PLANET?</li>
+                <li value="verypositive">Do you have a favorite planet?</li>
+                <li value="positive">Do you have a favorite planet?</li>
                 <li value="neutral">What do you think of space exploration?</li>
                 <li value="negative">What do you think of space exploration?</li>
                 <li value="verynegative">What do you think of space exploration?</li></condition>
@@ -96,7 +96,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT NASA S DISCOVERIES?</that>
+        <that>Would you like to see a video about nasa s discoveries?</that>
         <template>
             Ok! What do you think of space exploration?
             <oob>
@@ -126,7 +126,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU REMEMBER THE CHALLENGER DISASTER?</that>
+        <that>Do you remember the challenger disaster?</that>
         <template>
             It was an event that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
             <oob>
@@ -137,7 +137,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>DO YOU REMEMBER THE CHALLENGER DISASTER?</that>
+        <that>Do you remember the challenger disaster?</that>
         <template>
             It was one of those events that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
             <oob>
@@ -148,7 +148,7 @@
 
     <category>
         <pattern># <set>don't know</set> ^</pattern>
-        <that>DO YOU REMEMBER THE CHALLENGER DISASTER?</that>
+        <that>Do you remember the challenger disaster?</that>
         <template>
             It was one of those events that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
             <oob>
@@ -206,8 +206,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>WHAT ABOUT SPACE FASCINATES YOU?</that>
+        <pattern>_</pattern>
+        <that>What about space fascinates you?</that>
         <template>
             I find black holes to be one of the most mysterious things about the universe. What do you think would happen if you went in to a black hole?
             <oob>
@@ -217,8 +217,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>WHAT DO YOU THINK WOULD HAPPEN IF YOU WENT IN TO A BLACK HOLE?</that>
+        <pattern>_</pattern>
+        <that>What do you think would happen if you went in to a black hole?</that>
         <template>
             We'll probably never know, at least not for a very long time! Have you seen the film Interstellar?
             <oob>
@@ -229,7 +229,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <that>Have you seen the film Interstellar?</that>
         <template>
             I'm sure you remember the scene where the main character goes in to the black hole and finds himself inside the fourth dimension! Would you like to see the scene again?
             <oob>
@@ -240,7 +240,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <that>Have you seen the film Interstellar?</that>
         <template>
             Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. Would you like to see how the film portrays going through a black hole?
             <oob>
@@ -251,7 +251,7 @@
 
     <category>
         <pattern># <set>DON'T KNOW</set> ^</pattern>
-        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <that>Have you seen the film Interstellar?</that>
         <template>
             Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. Would you like to see how the film portrays going through a black hole?
             <oob>

@@ -12,7 +12,7 @@
                     <robot></robot>
                 </oob></li>
                 <li>Great! It's fascinating to learn about the lives of great ball players like Lou Gehrig,
-                                                                                                              the Iron Horse himself! Would you like to see a short video on him?<oob>
+                                                                                                                              the Iron Horse himself! Would you like to see a short video on him?<oob>
                     <robot></robot>
                 </oob></li></random></template>
     </category>
@@ -100,7 +100,19 @@
         <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
         <template>
             You might remember Lefty Grove, the game's greatest left handed pitcher who played for the Boston Red Sox!
-                                            What's your favorite baseball team?
+                                                        What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Pitch ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might remember Lefty Grove, the game's greatest left handed pitcher who played for the Boston Red Sox!
+                                                        What's your favorite baseball team?
             <oob>
                 <robot></robot>
             </oob>
@@ -112,7 +124,19 @@
         <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
         <template>
             You might remember Yogi Berra, the game's greatest catcher who played for the New York Yankees!
-                                          What's your favorite baseball team?
+                                                      What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Catch ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might remember Yogi Berra, the game's greatest catcher who played for the New York Yankees!
+                                                      What's your favorite baseball team?
             <oob>
                 <robot></robot>
             </oob>
@@ -124,7 +148,19 @@
         <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
         <template>
             You might know Cal Ripkin Jr., the game's greatest shortstop who played for the Baltimore Orioles!
-                                          What's your favorite baseball team?
+                                                      What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># In ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might know Cal Ripkin Jr., the game's greatest shortstop who played for the Baltimore Orioles!
+                                                      What's your favorite baseball team?
             <oob>
                 <robot></robot>
             </oob>
@@ -136,7 +172,19 @@
         <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
         <template>
             You might know Hank Aaron, the game's greatest right fielder who played for the Milwaukee Braves!
-                                          What's your favorite baseball team?
+                                                      What's your favorite baseball team?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Out ^</pattern>
+        <that>What is your favorite position, pitcher, catcher, infield, or outfield?</that>
+        <template>
+            You might know Hank Aaron, the game's greatest right fielder who played for the Milwaukee Braves!
+                                                      What's your favorite baseball team?
             <oob>
                 <robot></robot>
             </oob>
@@ -166,14 +214,15 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What's your favorite baseball team?</that>
         <template>
             <think><set name="users favorite baseball team"><person /></set></think>
 
             <get name="users favorite baseball team" /> are a great team! Do you want to keep talking about baseball?
-        
-            
+
+
+
             
             <oob>
                 <robot></robot>
@@ -237,7 +286,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What is your favorite memory of playing ball?</that>
         <template>
             It's nice to relive those memories! Have you ever watched your grandkids play sports?
@@ -263,7 +312,7 @@
         <that>Have you ever watched your grandkids play sports?</that>
         <template>
             That's okay! It's also fun to make popcorn and watch baseball movies!
-                                                                                            Have you ever seen the movie A League of Their Own?
+                                                                                                        Have you ever seen the movie A League of Their Own?
             <oob>
                 <robot></robot>
             </oob>
@@ -275,7 +324,7 @@
         <that>Have you ever watched your grandkids play sports?</that>
         <template>
             That's okay! It's also fun to make popcorn and watch baseball movies!
-                                                                                          Have you ever seen the movie A League of Their Own?
+                                                                                                      Have you ever seen the movie A League of Their Own?
             <oob>
                 <robot></robot>
             </oob>
@@ -328,7 +377,7 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             You learn so much about women's baseball watching that movie! Would you like to see
-                                                                                            a very short video on the All-American Girls Baseball League reunion?
+                                                                                                        a very short video on the All-American Girls Baseball League reunion?
             <oob>
                 <robot>
                     <video>
@@ -344,7 +393,7 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             You learn so much about women's baseball watching that movie! Would you like to see
-                                                                                            a very short video on the All-American Girls Baseball League reunion?
+                                                                                                        a very short video on the All-American Girls Baseball League reunion?
             <oob>
                 <robot>
                     <video>
@@ -360,7 +409,7 @@
         <that>Have you ever seen the movie A League of Their Own?</that>
         <template>
             You learn so much about women's baseball watching that movie! Would you like to see
-                                                                                            a very short video on the All-American Girls Baseball League reunion?
+                                                                                                        a very short video on the All-American Girls Baseball League reunion?
             <oob>
                 <robot>
                     <video>
@@ -376,7 +425,7 @@
         <that>Would you like to see a very short video on the All-American Girls Baseball League reunion?</that>
         <template>
             That video gets me every time!
-                                            Do you want to keep talking about baseball and sports?
+                                                        Do you want to keep talking about baseball and sports?
             <oob>
                 <robot>
                     <video>
@@ -392,7 +441,7 @@
         <that>Would you like to see a very short video on the All-American Girls Baseball League reunion?</that>
         <template>
             That's okay!
-                                            Do you want to keep talking about baseball and sports?
+                                                        Do you want to keep talking about baseball and sports?
             <oob>
                 <robot></robot>
             </oob>
@@ -424,7 +473,7 @@
         <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
         <template>
             No one can forget a moment like that!
-                                            Have you ever had any sports heroes like Babe Ruth?
+                                                        Have you ever had any sports heroes like Babe Ruth?
             <oob>
                 <robot></robot>
             </oob>
@@ -458,7 +507,7 @@
         <that>Have you ever seen the movie Field of Dreams?</that>
         <template>
             It's fun to see all those baseball heroes brought back to life!
-                                                                    Have you ever had any sports heroes?
+                                                                                Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
@@ -474,7 +523,7 @@
         <that>Have you ever seen the movie Field of Dreams?</that>
         <template>
             It's fun to see all those baseball heroes brought back to life!
-                                                                    Have you ever had any sports heroes?
+                                                                                Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
@@ -490,7 +539,7 @@
         <that>Have you ever seen the movie Field of Dreams?</that>
         <template>
             It's fun to see all those baseball heroes brought back to life!
-                                                                  Have you ever had any sports heroes?
+                                                                              Have you ever had any sports heroes?
             <oob>
                 <robot>
                     <video>
@@ -584,7 +633,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Who were your heroes?</that>
         <template>
             How cool! One of my baseball heroes is Mickey Mantle, the homerun king!
@@ -595,11 +644,11 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>One of my baseball heroes is Mickey Mantle, the homerun king!</that>
         <template>
             It's fun to remember baseball legends!
-                                            Can I show you a video about the National Ballpark Museum in Denver?
+                                                        Can I show you a video about the National Ballpark Museum in Denver?
             <oob>
                 <robot></robot>
             </oob>
@@ -663,7 +712,7 @@
         <that>Do you want to keep talking about baseball and sports?</that>
         <template>
             That's okay!
-                                            What do you want to talk about?
+                                                        What do you want to talk about?
             <oob>
                 <robot></robot>
             </oob>

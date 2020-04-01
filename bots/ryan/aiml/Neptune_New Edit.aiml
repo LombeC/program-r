@@ -2,7 +2,7 @@
 <aiml version="2.0">
     <category>
         <pattern># NEPTUNE ^</pattern>
-        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <that>Do you have a favorite planet?</that>
         <template>
             Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
             <oob>
@@ -13,7 +13,7 @@
 
     <category>
         <pattern># NEPTUNE ^</pattern>
-        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <that>Which planet is your favorite?</that>
         <template>
             Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
             <oob>
@@ -24,7 +24,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT DO YOU LIKE ABOUT NEPTUNE?</that>
+        <that>What do you like about Neptune?</that>
         <template>
             I see! Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
             <oob>
@@ -35,7 +35,7 @@
 
     <category>
         <pattern># <set>DON'T KNOW</set> ^</pattern>
-        <that>WHAT DO YOU LIKE ABOUT NEPTUNE?</that>
+        <that>What do you like about Neptune?</that>
         <template>
             Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
             <oob>
@@ -46,7 +46,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU KNOW WHY NEPTUNE SPINS SO FAST?</that>
+        <that>Do you know why Neptune spins so fast?</that>
         <template>
             Why does Neptune spin so fast?
             <oob>
@@ -57,7 +57,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>DO YOU KNOW WHY NEPTUNE SPINS SO FAST?</that>
+        <that>Do you know why Neptune spins so fast?</that>
         <template>
             Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
             <oob>
@@ -68,7 +68,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHY DOES NEPTUNE SPIN SO FAST?</that>
+        <that>Why does Neptune spin so fast?</that>
         <template>
             Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
             <oob>
@@ -79,7 +79,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <that>Would you want to go to Neptune?</that>
         <template>
             It's kind of fun to think about, right?
             <oob>
@@ -90,7 +90,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <that>Would you want to go to Neptune?</that>
         <template>
             Still, it's kind of fun to think about, right?
             <oob>
@@ -101,7 +101,7 @@
 
     <category>
         <pattern># <set>DON'T KNOW</set> ^</pattern>
-        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <that>Would you want to go to Neptune?</that>
         <template>
             Still, it's kind of fun to think about, right?
             <oob>
@@ -111,8 +111,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>STILL, IT S KIND OF FUN TO THINK ABOUT, RIGHT?</that>
+        <pattern>_</pattern>
+        <that>Still, it s kind of fun to think about, right?</that>
         <template>
             What do you say we talk about a scientific discovery a little closer to earth?
             <oob>
@@ -122,8 +122,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>IT S KIND OF FUN TO THINK ABOUT, RIGHT?</that>
+        <pattern>_</pattern>
+        <that>It s kind of fun to think about, right?</that>
         <template>
             What do you say we talk about a scientific discovery a little closer to earth?
             <oob>

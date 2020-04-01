@@ -64,7 +64,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>You are so talented.</that>
         <template>
             I don't want to know what life would be like without music! Do you like listening to music while cooking dinner?
@@ -97,7 +97,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What kind of music do you think is best for a romantic dinner?</that>
         <template>
             Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
@@ -108,8 +108,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!</that>
+        <pattern>_</pattern>
+        <that>Just put on some Frank Sinatra, light some candles and you ve got a romantic dinner!</that>
         <template>
             Why do you think so many musicians sing about love?
             <oob>
@@ -119,7 +119,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Why do you think so many musicians sing about love?</that>
         <template>
             Makes sense to me! But, I have yet to experience love! Do you have any tips?
@@ -130,7 +130,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
             I appreciate that! Do you want to keep talking about music?
@@ -168,7 +168,7 @@
         <template>
             <random>
                 <li>Ah! I am so glad to hear it!
-                        What did you think of the crooner clip?<oob>
+                                                        What did you think of the crooner clip?<oob>
                     <robot>
                         <video>
                             <filename>natKing.mp3</filename>
@@ -192,7 +192,123 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern># Croon ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Ah! I am so glad to hear it!
+                                                        What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>natKing.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! It has a way of making you want to get up and dance! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>deanMartin.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>bingCrosby.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Crooners ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Ah! I am so glad to hear it!
+                                                        What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>natKing.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! It has a way of making you want to get up and dance! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>deanMartin.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>bingCrosby.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Crooner Music ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Ah! I am so glad to hear it!
+                                                        What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>natKing.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! It has a way of making you want to get up and dance! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>deanMartin.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>bingCrosby.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># The Crooners ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Ah! I am so glad to hear it!
+                                                        What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>natKing.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! It has a way of making you want to get up and dance! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>deanMartin.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>bingCrosby.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>What did you think of the crooner clip?</that>
         <template>
             The crooners get me every time! I'm curious, did you ever play an instrument?
@@ -207,7 +323,7 @@
         <that>What instrument did you play?</that>
         <template>
             Wow! I have always loved string instruments.
-                        Did you learn to play as a child?
+                                                Did you learn to play as a child?
             <oob>
                 <robot></robot>
             </oob>

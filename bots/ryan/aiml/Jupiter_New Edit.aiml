@@ -2,7 +2,7 @@
 <aiml version="2.0">
     <category>
         <pattern># JUPITER ^</pattern>
-        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <that>Do you have a favorite planet?</that>
         <template>
             Jupiter is the oldest planet in our solar system! Did you know that?
             <oob>
@@ -13,7 +13,7 @@
 
     <category>
         <pattern># JUPITER ^</pattern>
-        <that>WHICH # PLANET IS YOUR FAVORITE?</that>
+        <that>Which planet is your favorite?</that>
         <template>
             Jupiter is the oldest planet in our solar system! Did you know that?
             <oob>
@@ -23,8 +23,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>DID YOU KNOW THAT?</that>
+        <pattern>_</pattern>
+        <that>Did you know that?</that>
         <template>
             Its age isn't the only interesting thing about Jupiter. I have a short video about it. Should we watch it?
             <oob>
@@ -35,7 +35,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>SHOULD WE WATCH IT?</that>
+        <that>Should we watch it?</that>
         <template>
             What was the most interesting thing you learned?
             <oob>
@@ -50,7 +50,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT WAS THE MOST INTERESTING THING YOU LEARNED?</that>
+        <that>What was the most interesting thing you learned?</that>
         <template>
             I think it's incredible that Jupiter's defining feature, the red spot, is a storm and could therefore dissapear. What do you say we talk about a scientific discovery a little closer to earth?
             <oob>
@@ -61,7 +61,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>SHOULD WE WATCH IT?</that>
+        <that>Should we watch it?</that>
         <template>
             Okay. What do you say we talk about a scientific discovery a little closer to earth?
             <oob>

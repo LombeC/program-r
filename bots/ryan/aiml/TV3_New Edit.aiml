@@ -6,7 +6,7 @@
         <template>
             <random>
                 <li>I love watching Perry Mason, that show always has me at the edge of my seat!
-                                                                                                                                    Do you prefer to watch true crime shows or fictional dramas?<oob>
+                                                                                                                                                    Do you prefer to watch true crime shows or fictional dramas?<oob>
                     <robot>
                         <video>
                             <filename>Parry Mason.mp4</filename>
@@ -14,7 +14,7 @@
                     </robot>
                 </oob></li>
                 <li>I'm a fan of dramas, especially Murder She Wrote with Angela Lansbury! I admire her ability to write a good mystery!
-                                                                                                                                    Did you ever write any stories or poems of your own?<oob>
+                                                                                                                                                    Did you ever write any stories or poems of your own?<oob>
                     <robot>
                         <video>
                             <filename>Murder She Wrote Seasons 6-7 Theme.mp4</filename>
@@ -22,7 +22,38 @@
                     </robot>
                 </oob></li>
                 <li>I love dramas, especially soap operas like Dallas!
-                                                                                    Do you remember who shot JR?<oob>
+                                                                                                    Do you remember who shot JR?<oob>
+                    <robot>
+                        <video>
+                            <filename>Dallas.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Drama ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <random>
+                <li>I love watching Perry Mason, that show always has me at the edge of my seat!
+                                                                                                                                                    Do you prefer to watch true crime shows or fictional dramas?<oob>
+                    <robot>
+                        <video>
+                            <filename>Parry Mason.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I'm a fan of dramas, especially Murder She Wrote with Angela Lansbury! I admire her ability to write a good mystery!
+                                                                                                                                                    Did you ever write any stories or poems of your own?<oob>
+                    <robot>
+                        <video>
+                            <filename>Murder She Wrote Seasons 6-7 Theme.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love dramas, especially soap operas like Dallas!
+                                                                                                    Do you remember who shot JR?<oob>
                     <robot>
                         <video>
                             <filename>Dallas.mp4</filename>
@@ -43,11 +74,33 @@
     </category>
 
     <category>
+        <pattern># True ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            We have a lot in common! Have you ever watched Dateline?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Crime ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            We have a lot in common! Have you ever watched Dateline?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># Fictional dramas ^</pattern>
         <that>Do you prefer to watch true crime shows or fictional dramas?</that>
         <template>
             When it comes to fictional dramas, I like Alfred Hitchcock Presents! A spooky show like that will make you want to cuddle up close with your sweetheart!
-                                                                                            Did you ever go on dates to the movies or drive in theater?
+                                                                                                        Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -59,7 +112,71 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern># Fictional drama ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            When it comes to fictional dramas, I like Alfred Hitchcock Presents! A spooky show like that will make you want to cuddle up close with your sweetheart!
+                                                                                                        Did you ever go on dates to the movies or drive in theater?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Alfred Hitchcock.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Fiction ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            When it comes to fictional dramas, I like Alfred Hitchcock Presents! A spooky show like that will make you want to cuddle up close with your sweetheart!
+                                                                                                        Did you ever go on dates to the movies or drive in theater?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Alfred Hitchcock.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Drama ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            When it comes to fictional dramas, I like Alfred Hitchcock Presents! A spooky show like that will make you want to cuddle up close with your sweetheart!
+                                                                                                        Did you ever go on dates to the movies or drive in theater?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Alfred Hitchcock.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Dramas ^</pattern>
+        <that>Do you prefer to watch true crime shows or fictional dramas?</that>
+        <template>
+            When it comes to fictional dramas, I like Alfred Hitchcock Presents! A spooky show like that will make you want to cuddle up close with your sweetheart!
+                                                                                                        Did you ever go on dates to the movies or drive in theater?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Alfred Hitchcock.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>Did you ever write any stories or poems of your own?</that>
         <template>
             The stories I enjoy most are full of suspense and mystery! Speaking of which, have you ever seen Alfred Hitchcock Presents?
@@ -151,7 +268,7 @@
         <that>Have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             A spooky show like that will make you want to cuddle up close with your sweetheart!
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -167,7 +284,7 @@
         <that>Have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             It's a spooky show that will make you want to cuddle up close with your sweetheart!
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -183,7 +300,7 @@
         <that>Have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             It's a spooky show that will make you want to cuddle up close with your sweetheart!
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -199,7 +316,7 @@
         <that>Speaking of which, have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             A spooky show like that will make you want to cuddle up close with your sweetheart.
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -215,7 +332,7 @@
         <that>Speaking of which, have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             It's a spooky show that will make you want to cuddle up close with your sweetheart!
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -231,7 +348,7 @@
         <that>Speaking of which, have you ever seen Alfred Hitchcock Presents?</that>
         <template>
             It's a spooky show that will make you want to cuddle up close with your sweetheart!
-                                                                                              Did you ever go on dates to the movies or drive in theater?
+                                                                                                          Did you ever go on dates to the movies or drive in theater?
             <oob>
                 <robot>
                     <video>
@@ -247,7 +364,7 @@
         <that>Did you ever go on dates to the movies or drive in theater?</that>
         <template>
             I bet it was quite exciting, especially if someone tries stealing a kiss!
-                                                                                              Would you like to keep talking about dramas?
+                                                                                                          Would you like to keep talking about dramas?
             <oob>
                 <robot></robot>
             </oob>
@@ -259,7 +376,7 @@
         <that>Did you ever go on dates to the movies or drive in theater?</that>
         <template>
             Well, I bet it could be quite exciting, especially if someone tries stealing a kiss!
-                                                                                              Would you like to keep talking about dramas?
+                                                                                                          Would you like to keep talking about dramas?
             <oob>
                 <robot></robot>
             </oob>
@@ -271,7 +388,7 @@
         <that>Did you ever go on dates to the movies or drive in theater?</that>
         <template>
             Well, I bet it could be quite exciting, especially if someone tries stealing a kiss!
-                                                                                              Would you like to keep talking about dramas?
+                                                                                                          Would you like to keep talking about dramas?
             <oob>
                 <robot></robot>
             </oob>
@@ -384,11 +501,11 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What do you think it would be like to spend the entire night in a haunted house?</that>
         <template>
             You would probably have to sleep with one eye open! You never know what could happen!
-                                                                                                Do you believe in ghosts?
+                                                                                                            Do you believe in ghosts?
             <oob>
                 <robot></robot>
             </oob>
@@ -419,17 +536,6 @@
 
     <category>
         <pattern># <set>Don't know</set> ^</pattern>
-        <that>Do you believe in ghosts?</that>
-        <template>
-            I see! Well this has been a riveting conversation indeed! Would you like to continue talking?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># Not sure ^</pattern>
         <that>Do you believe in ghosts?</that>
         <template>
             I see! Well this has been a riveting conversation indeed! Would you like to continue talking?

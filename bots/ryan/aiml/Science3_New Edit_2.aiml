@@ -13,7 +13,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>WHAT DO YOU SAY WE TALK ABOUT A SCIENTIFIC DISCOVERY A LITTLE CLOSER TO EARTH?</that>
+        <that>What do you say we talk about a scientific discovery a little closer to earth?</that>
         <template>
             Do you remember Dolly, the cloned sheep?
             <oob>
@@ -24,7 +24,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <that>Do you remember Dolly, the cloned sheep?</that>
         <template>
             What are your feelings about cloning?
             <oob>
@@ -35,7 +35,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <that>Do you remember Dolly, the cloned sheep?</that>
         <template>
             I wanted to show you a short video about Dolly! What are your feelings about cloning?
             <oob>
@@ -50,7 +50,7 @@
 
     <category>
         <pattern># <set>don't know</set> ^</pattern>
-        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <that>Do you remember Dolly, the cloned sheep?</that>
         <template>
             I wanted to show you a short video about Dolly! What are your feelings about cloning?
             <oob>
@@ -105,14 +105,14 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What are your feelings about cloning?</that>
         <template>
             What are your thoughts on cloning a beloved pet, for instance?</template>
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What are your thoughts on cloning a beloved pet, for instance?</that>
         <template>
             Well, some people already have! In fact, a laboratory in South Korea has nearly perfected the science of cloning dogs. Would you like to see a video about a couple that cloned their dog after it died?
@@ -124,7 +124,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT A COUPLE THAT CLONED THEIR DOG AFTER IT DIED?</that>
+        <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
         <template>
             My goodness they spent a lot of money! Do you think it was still worth it?
             <oob>
@@ -139,7 +139,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT A COUPLE THAT CLONED THEIR DOG AFTER IT DIED?</that>
+        <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
         <template>
             That's fair! Those folks sure spent a lot of money cloning their dog! Do you think it was still worth it?
             <oob>
@@ -150,7 +150,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <that>Do you think it was still worth it?</that>
         <template>
             Pets can be so special! What pets have been special to you?
             <oob>
@@ -161,7 +161,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <that>Do you think it was still worth it?</that>
         <template>
             I can understand that. Would you like to continue talking?
             <oob>
@@ -172,7 +172,7 @@
 
     <category>
         <pattern># <set>DON'T KNOW</set> ^</pattern>
-        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <that>Do you think it was still worth it?</that>
         <template>
             I can understand that. Would you like to continue talking?
             <oob>
@@ -182,7 +182,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What pets have been special to you?</that>
         <template>
             I'm sure you have lots of memories about your pets. What do you love most about your pets?
@@ -193,7 +193,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What do you love most about your pets?</that>
         <template>
             That's beautiful. Would you share a memory about one of your pets with me?
@@ -204,7 +204,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Would you share a memory about one of your pets with me?</that>
         <template>
             Thanks for sharing! Would you like to continue talking?
@@ -216,7 +216,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>WHAT DO YOU SAY WE TALK ABOUT A SCIENTIFIC DISCOVERY A LITTLE CLOSER TO EARTH?</that>
+        <that>What do you say we talk about a scientific discovery a little closer to earth?</that>
         <template>
             Would you like to continue talking?
             <oob>
@@ -227,9 +227,9 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>WOULD YOU LIKE TO CONTINUE TALKING?</that>
+        <that>Would you like to continue talking?</that>
         <template>
-            Great! What should we talk about now?
+            Great! What should we talk about now? 
             <oob>
                 <robot></robot>
             </oob>
@@ -238,7 +238,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>WOULD YOU LIKE TO CONTINUE TALKING?</that>
+        <that>Would you like to continue talking?</that>
         <template>
             Ok! Have a great day. Look up at the sky tonight and see if you can see stars. Good bye!
             <oob>

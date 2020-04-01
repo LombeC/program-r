@@ -11,6 +11,16 @@
     </category>
 
     <category>
+        <pattern>^ Sport ^</pattern>
+        <template>
+            Do you want to talk about sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to talk about sports?</that>
         <template>
@@ -37,7 +47,7 @@
         <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
         <template>
             How fun! I wanted to show you a short video about the history of basketball, so we both could learn something new, or remember something again!
-                                                                                                What do you love about watching baseketball?
+                                                                                                            What do you love about watching baseketball?
             <oob>
                 <robot>
                     <video>
@@ -49,7 +59,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What do you love about watching baseketball?</that>
         <template>
             I agree! What sports did you play growing up?
@@ -60,7 +70,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What sports did you play growing up?</that>
         <template>
             It's so nice to learn more about you! While we're on the topic of basketball, who are your favorite baseketball players?
@@ -71,11 +81,11 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>While we're on the topic of basketball, who are your favorite baseketball players?</that>
         <template>
             I see! I have to say my favorite player of all time is Larry Bird, who played for the Boston Celtics!
-                                                                                                                                Do you remember the infamous rivalry between the Celtics and the Lakers?
+                                                                                                                                            Do you remember the infamous rivalry between the Celtics and the Lakers?
             <oob>
                 <robot>
                     <image>
@@ -144,7 +154,7 @@
                     </robot>
                 </oob></li>
                 <li>I could talk all day about all star basketball players like Bill Russell! Did you know
-                                                                                                                                  that Bill Russell won eleven NBA championships?<oob>
+                                                                                                                                                  that Bill Russell won eleven NBA championships?<oob>
                     <robot>
                         <image>
                             <filename>Bill Russell.jpg</filename>
@@ -152,7 +162,7 @@
                     </robot>
                 </oob></li>
                 <li>I could talk all day about all star basketball players like Bill Walton, who is now in the Basketball Hall of Fame! Do you think it would take a lot of
-                                                                                                                                  dedication to get into the Hall of Fame?<oob>
+                                                                                                                                                  dedication to get into the Hall of Fame?<oob>
                     <robot>
                         <video>
                             <filename>Bill Walton - College Basketball's Greatest Players.mp4</filename>
@@ -173,7 +183,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>I get such a kick out of watching the Harlem Globetrotters!</that>
         <template>
             They are so entertaining! And, they beat the World Champions twice! Do you think it would take a lot of dedication to defeat the World Champions?
@@ -232,7 +242,7 @@
         <that>Did you know that Bill Russell won eleven NBA championships?</that>
         <template>
             Can you believe it! He is tied for the record of the most championships won! Do you think
-                                                                                              it would take a lot of dedication to win that many championships?
+                                                                                                          it would take a lot of dedication to win that many championships?
             <oob>
                 <robot>
                     <image>
@@ -263,7 +273,7 @@
         <that>Did you know that Bill Russell won eleven NBA championships?</that>
         <template>
             He is tied for the record of the most championships won! Do you think
-                                                                                              it would take a lot of dedication to win that many championships?
+                                                                                                          it would take a lot of dedication to win that many championships?
             <oob>
                 <robot>
                     <image>
@@ -365,7 +375,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What jobs have you had in your life?</that>
         <template>
             You've been such a busy bee!
@@ -376,7 +386,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>You've been such a busy bee!</that>
         <template>
             What do you like to do in your free time?
@@ -387,7 +397,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What do you like to do in your free time?</that>
         <template>
             Glad to hear it! I love to watch TV in my free time! Would you like to talk about TV, or continue talking about sports?

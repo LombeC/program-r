@@ -26,11 +26,11 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What did you think about it?</that>
         <template>
             The clip is very informative!
-                    Do you like going to concerts?
+                                Do you like going to concerts?
             <oob>
                 <robot></robot>
             </oob>
@@ -53,7 +53,7 @@
         <that>Do you like movies?</that>
         <template>
             Some people think that movies are best enjoyed at a movie theater, but others say the comfort of your own couch with a bag of Orville Reddenbacher's is the way
-                        go! Do you prefer going to the theater or watching from home?
+                                    go! Do you prefer going to the theater or watching from home?
             <oob>
                 <robot></robot>
             </oob>
@@ -105,7 +105,40 @@
     </category>
 
     <category>
+        <pattern># The theater ^</pattern>
+        <that>Do you prefer going to the theater or watching from home?</that>
+        <template>
+            I think there is something magical about going to the theater and seeing a show on the big screen! Do you think that a good soundtrack can make a movie?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># Home ^</pattern>
+        <that>Do you prefer going to the theater or watching from home?</that>
+        <template>
+            Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Watch from home ^</pattern>
+        <that>Do you prefer going to the theater or watching from home?</that>
+        <template>
+            Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Watching from home ^</pattern>
         <that>Do you prefer going to the theater or watching from home?</that>
         <template>
             Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
@@ -164,7 +197,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What concerts have you gone to?</that>
         <template>
             Amazing! I love reliving memories. Would you like to continue talking about music?
@@ -216,7 +249,7 @@
                     </robot>
                 </oob></li>
                 <li>I like to really feel the beat and rhythm of swing!
-                        What did you think of Benny Goodman's music?<oob>
+                                        What did you think of Benny Goodman's music?<oob>
                     <robot>
                         <video>
                             <filename>bennyGoodman.mp3</filename>
@@ -226,7 +259,94 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern># Band ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>dukeEllington.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>glennMiller.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I like to really feel the beat and rhythm of swing!
+                                        What did you think of Benny Goodman's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>bennyGoodman.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Big Band Music ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>dukeEllington.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>glennMiller.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I like to really feel the beat and rhythm of swing!
+                                        What did you think of Benny Goodman's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>bennyGoodman.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Band Music ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>dukeEllington.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>glennMiller.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I like to really feel the beat and rhythm of swing!
+                                        What did you think of Benny Goodman's music?<oob>
+                    <robot>
+                        <video>
+                            <filename>bennyGoodman.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>What did you think of Duke Ellington's music?</that>
         <template>
             You can't deny he had talent! I'm curious, did you ever play an instrument?
@@ -237,7 +357,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What did you think of Glenn Miller's music?</that>
         <template>
             You can't deny he had talent! I'm curious, did you ever play an instrument?
@@ -248,7 +368,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What did you think of Benny Goodman's music?</that>
         <template>
             You can't deny he had talent! I'm curious, did you ever play an instrument?
@@ -318,7 +438,18 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you like listening to music while cooking dinner?</that>
+        <template>
+            That makes sense! What kind of music do you think is best for a romantic dinner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>What kind of music do you think is best for a romantic dinner?</that>
         <template>
             Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
@@ -329,8 +460,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!</that>
+        <pattern>_</pattern>
+        <that>Just put on some Frank Sinatra, light some candles and you ve got a romantic dinner!</that>
         <template>
             Why do you think so many musicians sing about love?
             <oob>
@@ -340,7 +471,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Why do you think so many musicians sing about love?</that>
         <template>
             Makes sense to me! But, I have yet to experience love! Do you have any tips?
@@ -351,10 +482,34 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I appreciate that! Do you want to keep talking about music?
+            I appreciate that! Do you like stories about romance?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+      <!-- REDIRECT TO ROMANCE DIALOGUE -->
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            Okay! Do you want to keep talking about music?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            Okay! Do you want to keep talking about music?
             <oob>
                 <robot></robot>
             </oob>
@@ -365,7 +520,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to keep talking about music?</that>
         <template>
-            Okay! Do you want to talk about 50s, 60s, or 70s music?
+            Sure! Do you want to talk about fifties, sixties, or seventies music?
             <oob>
                 <robot></robot>
             </oob>

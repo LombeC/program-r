@@ -25,6 +25,54 @@
     </category>
 
     <category>
+        <pattern># Cook ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <random>
+                <li>Great! I love to watch Julia Child because her show is so soothing! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Julia Child.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Martha Stewart.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. What were your favorite meals growing up?<oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Cooking shows ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <random>
+                <li>Great! I love to watch Julia Child because her show is so soothing! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Julia Child.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Martha Stewart.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. What were your favorite meals growing up?<oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you believe that the way to a person s heart is through their stomach?</that>
         <template>
@@ -58,11 +106,11 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What were your favorite meals growing up?</that>
         <template>
             That sounds delicious!
-                                                Do you enjoy cooking for other people?
+                                                            Do you enjoy cooking for other people?
             <oob>
                 <robot></robot>
             </oob>
@@ -200,7 +248,7 @@
         <that>Would you like to keep talking about food and cooking shows?</that>
         <template>
             Whenever I watch cooking competitions on television, I always think of that saying "if you can't stand the heat, get out of the kitchen".
-                                                                                                          Have you ever seen cooking competitions on Food Network?
+                                                                                                                      Have you ever seen cooking competitions on Food Network?
             <oob>
                 <robot>
                     <image>
@@ -239,7 +287,7 @@
         <that>Have you ever seen cooking competitions on Food Network?</that>
         <template>
             Those chefs are able to whip up gourmet meals in under thirty minutes!
-                                                                                                          Do you think you would be able to make a gourmet meal that fast?
+                                                                                                                      Do you think you would be able to make a gourmet meal that fast?
             <oob>
                 <robot></robot>
             </oob>
@@ -251,7 +299,7 @@
         <that>Have you ever seen cooking competitions on Food Network?</that>
         <template>
             It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
-                                                                                                            Do you think you would be able to make a gourmet meal that fast?
+                                                                                                                        Do you think you would be able to make a gourmet meal that fast?
             <oob>
                 <robot></robot>
             </oob>
@@ -263,7 +311,7 @@
         <that>Have you ever seen cooking competitions on Food Network?</that>
         <template>
             It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
-                                                                                                          Do you think you would be able to make a gourmet meal that fast?
+                                                                                                                      Do you think you would be able to make a gourmet meal that fast?
             <oob>
                 <robot></robot>
             </oob>
@@ -275,7 +323,7 @@
         <that>Do you think you would be able to make a gourmet meal that fast?</that>
         <template>
             You are a whiz in the kitchen! Do you prefer American style food,
-                                                                                                          Mexican, Asian, Italian, or other?
+                                                                                                                      Mexican, Asian, Italian, or other?
             <oob>
                 <robot></robot>
             </oob>
@@ -287,7 +335,7 @@
         <that>Do you think you would be able to make a gourmet meal that fast?</that>
         <template>
             I am not exactly a whiz in the kitchen either, though I love to read cookbooks! Do you prefer American style food,
-                                                                                                            Mexican, Asian, Italian, or other?
+                                                                                                                        Mexican, Asian, Italian, or other?
             <oob>
                 <robot></robot>
             </oob>
@@ -299,7 +347,7 @@
         <that>Do you think you would be able to make a gourmet meal that fast?</that>
         <template>
             I am not exactly a whiz in the kitchen either, though I love to read cookbooks! Do you prefer American style food,
-                                                                                                            Mexican, Asian, Italian, or other?
+                                                                                                                        Mexican, Asian, Italian, or other?
             <oob>
                 <robot></robot>
             </oob>
@@ -311,7 +359,7 @@
         <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
         <template>
             Nothing beats a good hamburger and fries! Jimmy Buffet got it right when he sang the song Cheeseburger in Paradise.
-                                                                                                          Where was your favorite place to vacation?
+                                                                                                                      Where was your favorite place to vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -323,7 +371,7 @@
         <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
         <template>
             I would love to travel to Mexico someday to eat delicious food while listening to a mariachi band!
-                                                                                                          Where was your favorite place to vacation?
+                                                                                                                      Where was your favorite place to vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -335,7 +383,7 @@
         <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
         <template>
             I would love to travel to Hong Kong someday to try sweet and sour pork the way it is supposed to be made!
-                                                                                                          Where was your favorite place to vacation?
+                                                                                                                      Where was your favorite place to vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -347,7 +395,7 @@
         <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
         <template>
             I would love to travel to Italy someday to try pasta the way it is supposed to be made!
-                                                                                                          Where was your favorite place to vacation?
+                                                                                                                      Where was your favorite place to vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -385,11 +433,27 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern># Again ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            <srai>Repeat</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What ^</pattern>
+        <that>Do you prefer American style food, Mexican, Asian, Italian, or other?</that>
+        <template>
+            <srai>Repeat</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>Where was your favorite place to vacation?</that>
         <template>
             It is always nice to kick off your boots and forget your worries, if you know what I mean!
-                                                                                                            Would you like to keep talking about food and cooking?
+                                                                                                                        Would you like to keep talking about food and cooking?
             <oob>
                 <robot></robot>
             </oob>
@@ -400,7 +464,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Would you like to keep talking about food and cooking?</that>
         <template>
-            There are so many food shows that I love to watch! Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?
+            There are so many food shows that I love to watch! Have you seen Guy Fieri's Diners, Drive Ins, and Dives?
             <oob>
                 <robot>
                     <video>
@@ -424,10 +488,10 @@
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
-        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
         <template>
             I love all the interesting food they cook up on that show!
-                                                            Are you an adventurous eater?
+                                                                        Are you an adventurous eater?
             <oob>
                 <robot></robot>
             </oob>
@@ -436,10 +500,10 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
         <template>
             I love all the interesting food they cook up on that show!
-                                                          Are you an adventurous eater?
+                                                                      Are you an adventurous eater?
             <oob>
                 <robot></robot>
             </oob>
@@ -448,10 +512,10 @@
 
     <category>
         <pattern># <set>Don't know</set> ^</pattern>
-        <that>Have you seen Guy Fieri's Diners, Drive-Ins, and Dives?</that>
+        <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
         <template>
             I love all the interesting food they cook up on that show!
-                                                          Are you an adventurous eater?
+                                                                      Are you an adventurous eater?
             <oob>
                 <robot></robot>
             </oob>
@@ -463,7 +527,7 @@
         <that>Are you an adventurous eater?</that>
         <template>
             You are such an adventurous spirit! Life is more fun that way!
-                                                                                                What do you like to do for fun?
+                                                                                                            What do you like to do for fun?
             <oob>
                 <robot></robot>
             </oob>
@@ -475,7 +539,7 @@
         <that>Are you an adventurous eater?</that>
         <template>
             Everyone is different! I think life is more fun when we try new things!
-                                                            What do you like to do for fun?
+                                                                        What do you like to do for fun?
             <oob>
                 <robot></robot>
             </oob>
@@ -483,10 +547,32 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>What do you like to do for fun?</that>
         <template>
-            That's great! I think it's fun to chat with people like you! Do you want to continue talking about television?
+            That's great! I think it's fun to chat with people like you, and I also love to read! Do you want to talk about books?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about books?</that>
+        <template>
+            Wonderful! Do you prefer adventure, horror, or drama?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to talk about books?</that>
+        <template>
+            Okay! Do you want to continue talking about television?
             <oob>
                 <robot></robot>
             </oob>

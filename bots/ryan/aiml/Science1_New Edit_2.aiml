@@ -61,7 +61,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT ARE YOUR FEELINGS ABOUT THAT?</that>
+        <that>What are your feelings about that?</that>
         <template>
             <think><set name="data"> <star /> </set></think>
             <condition name="getsentiment">
@@ -135,7 +135,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>DO YOU BELIEVE THAT THERE IS LIFE ON OTHER PLANETS?</that>
+        <that>Do you believe that there is life on other planets?</that>
         <template>
             Interesting! What makes you say that?
             <oob>
@@ -146,7 +146,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>DO YOU BELIEVE THAT THERE IS LIFE ON OTHER PLANETS?</that>
+        <that>Do you believe that there is life on other planets?</that>
         <template>
             Interesting! What makes you say that?
             <oob>
@@ -157,7 +157,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT MAKES YOU SAY THAT?</that>
+        <that>What makes you say that?</that>
         <template>
             Indeed! Speaking of scientific discoveries, did you hear that scientists have found a way to edit genes inside the human body?
             <oob>
@@ -168,7 +168,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>SPEAKING OF SCIENTIFIC DISCOVERIES, DID YOU HEAR THAT SCIENTISTS HAVE FOUND A WAY TO EDIT GENES INSIDE THE HUMAN BODY?</that>
+        <that>Speaking of scientific discoveries, did you hear that scientists have found a way to edit genes inside the human body?</that>
         <template>
             How do you feel about this discovery?
             <oob>
@@ -179,7 +179,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>HOW DO YOU FEEL ABOUT THIS DISCOVERY?</that>
+        <that>How do you feel about this discovery?</that>
         <template>
             <think>
                 <set name = "data"> <star/> </set>
@@ -222,7 +222,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>WOULD YOU EVER LET SCIENTISTS ALTER THE GENES INSIDE YOUR BODY?</that>
+        <that>Would you ever let scientists alter the genes inside your body?</that>
         <template>
             What gene or characteristic would you change?
             <oob>
@@ -233,7 +233,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>WOULD YOU EVER LET SCIENTISTS ALTER THE GENES INSIDE YOUR BODY?</that>
+        <that>Would you ever let scientists alter the genes inside your body?</that>
         <template>
             I understand! It is crazy how much science has progressed in the last few years.
                         Scientists have even developed a way to grow human tissue!
@@ -246,7 +246,7 @@
 
     <category>
         <pattern># <set>don't know</set> ^</pattern>
-        <that>WOULD YOU EVER LET SCIENTISTS ALTER THE GENES INSIDE YOUR BODY?</that>
+        <that>Would you ever let scientists alter the genes inside your body?</that>
         <template>
             I understand! It is crazy how much science has progressed in the last few years.
                         Scientists have even developed a way to grow human tissue!
@@ -258,7 +258,7 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>It is crazy how much science has progressed in the last few years.</that>
         <template>
             Scientists have even developed a way to grow human tissue!
@@ -270,30 +270,8 @@
     </category>
 
     <category>
-        <pattern># not sure ^</pattern>
-        <that>WOULD YOU EVER LET SCIENTISTS ALTER THE GENES INSIDE YOUR BODY?</that>
-        <template>
-            I understand! It is crazy how much science has progressed in the last few years.
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>don't know</set> ^</pattern>
-        <that>WOULD YOU EVER LET SCIENTISTS ALTER THE GENES INSIDE YOUR BODY?</that>
-        <template>
-            I understand! It is crazy how much science has progressed in the last few years.
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
         <pattern>_</pattern>
-        <that>WHAT GENE OR CHARACTERISTIC WOULD YOU CHANGE?</that>
+        <that>What gene or characteristic would you change?</that>
         <template>
             Wow! It is crazy how much science has progressed.
                         Scientists have even developed a way to grow human tissue!
@@ -305,8 +283,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>HOW DO YOU FEEL ABOUT SOMEONE BEING ABLE TO REGROW A LIMB?</that>
+        <pattern>_</pattern>
+        <that>How do you feel about someone being able to regrow a limb?</that>
         <template>
             There may even be a way that babies can develop outside of the womb!
                       Scientists have done it successfully with baby lambs. Would you like to see?
@@ -318,7 +296,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE?</that>
+        <that>Would you like to see?</that>
         <template>
             Some things are better left unseen! On another note, archaeologists just found the oldest known human drawing from 73,000 years ago! Can you believe that?
             <oob>
@@ -329,7 +307,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE?</that>
+        <that>Would you like to see?</that>
         <template>
             What did you think about that?
             <oob>
@@ -343,8 +321,8 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
-        <that>WHAT DID YOU THINK ABOUT THAT?</that>
+        <pattern>_</pattern>
+        <that>What did you think about that?</that>
         <template>
             It is very fascinating and I am curious to see what they discover with this!
                       Speaking of scientific discovery, archaeologists just found the oldest known human drawing from 73,000 years ago! Can you believe that?
@@ -356,7 +334,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>CAN YOU BELIEVE THAT?</that>
+        <that>Can you believe that?</that>
         <template>
             The drawing was on a rock and looks like red lines.
                         Would you like to see a photo of the rock?
@@ -368,7 +346,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A PHOTO OF THE ROCK?</that>
+        <that>Would you like to see a photo of the rock?</that>
         <template>
             Okay.
                         This discovery gives me hope that we have more to find out about our past! What are your thoughts?
@@ -380,7 +358,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>WOULD YOU LIKE TO SEE A PHOTO OF THE ROCK?</that>
+        <that>Would you like to see a photo of the rock?</that>
         <template>
             Here it is!
                         This discovery gives me hope that we have more to find out about our past! What are your thoughts?
@@ -396,7 +374,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT ARE YOUR THOUGHTS?</that>
+        <that>What are your thoughts?</that>
         <template>
             <think><set name="data"><star/></set></think>
 
@@ -432,7 +410,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHY DID YOU CHOOSE THAT TIME PERIOD?</that>
+        <that>Why did you choose that time period?</that>
         <template>
             What feelings do you have about that time?
             <oob>
@@ -443,7 +421,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT FEELINGS DO YOU HAVE ABOUT THAT TIME?</that>
+        <that>What feelings do you have about that time?</that>
         <template>
             <think><set name="data"><star/></set></think>
 
@@ -470,7 +448,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>DO YOU KNOW THEIR MUSIC?</that>
+        <that>Do you know their music?</that>
         <template>
             Awesome! They are one of my favorite bands. How does listening to their music make you feel?
             <oob>
@@ -481,7 +459,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>DO YOU KNOW THEIR MUSIC?</that>
+        <that>Do you know their music?</that>
         <template>
             Which band from that time period is your favorite?
             <oob>
@@ -492,7 +470,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHICH BAND FROM THAT TIME PERIOD IS YOUR FAVORITE?</that>
+        <that>Which band from that time period is your favorite?</that>
         <template>
             How does listening to that music make you feel?
             <oob>
@@ -503,7 +481,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>HOW DOES LISTENING TO THAT MUSIC MAKE YOU FEEL?</that>
+        <that>How does listening to that music make you feel?</that>
         <template>
             <think><set name="data"><star/></set></think>
 
@@ -530,7 +508,7 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>WOULD YOU LIKE TO HEAR ONE OF MY FAVORITE SONGS BY THE BEATLES?</that>
+        <that>Would you like to hear one of my favorite songs by The Beatles?</that>
         <template>
             Okay! What are your thoughts on John Lennon? Do you think he was talented?
             <oob>
@@ -541,7 +519,7 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>WOULD YOU LIKE TO HEAR ONE OF MY FAVORITE SONGS BY THE BEATLES?</that>
+        <that>Would you like to hear one of my favorite songs by The Beatles?</that>
         <template>
             What did you think of that performance?
             <oob>
@@ -556,7 +534,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>WHAT DID YOU THINK OF THAT PERFORMANCE?</that>
+        <that>What did you think of that performance?</that>
         <template>
             I find this to be a beautiful song.
                         Did you know that the song Lucy in the Sky with Diamonds was also inspired by John Lennon's son Julian?
@@ -580,7 +558,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>DID YOU KNOW THAT THE SONG LUCY IN THE SKY WITH DIAMONDS WAS INSPIRED BY JOHN LENNON S SON JULIAN?</that>
+        <that>Did you know that the song Lucy in the Sky with Diamonds was inspired by John Lennon s son Julian?</that>
         <template>
             Julian came home from school one day and shared a picture he had drawn of a woman floating in the sky, who Julian had named Lucy.
                         Do you know how old Paul McCartney was when he began writing songs?
@@ -592,7 +570,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>DO YOU KNOW HOW OLD PAUL MCCARTNEY WAS WHEN HE BEGAN WRITING SONGS?</that>
+        <that>Do you know how old Paul McCartney was when he began writing songs?</that>
         <template>
             Paul was around age eleven when he began writing music. Isn't that incredible?
             <oob>
@@ -603,7 +581,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>ISN T THAT INCREDIBLE?</that>
+        <that>Isn t that incredible?</that>
         <template>
             I think it's fun to talk about all of this with you! Would you like to keep talking about science?
             <oob>
