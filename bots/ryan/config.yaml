@@ -216,6 +216,7 @@ brain:
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
+        model_dir: ""
 
       tokenizer:
         libname: nltk
@@ -227,6 +228,7 @@ brain:
       #embedding
       semantic_similarity:
         method: ""
+
 
       corenlp:
         classname: programr.nlp.corenlp.client.Client

@@ -29,6 +29,9 @@ class BrainSentimentAnalysisConfiguration(BaseConfigurationData):
     def alpha(self):
         return self._alpha
 
+    @property
+    def model_dir(self):
+        return self._model_dir
 
     def load_config_section(self, configuration_file, configuration, bot_root):
         sentiment_analysis = configuration_file.get_section(self._section_name, configuration)
@@ -37,6 +40,7 @@ class BrainSentimentAnalysisConfiguration(BaseConfigurationData):
             self._negative_threshold = configuration_file.get_float_option(sentiment_analysis, "negative_threshold", missing_value=0.1)
             self._positive_thresehold = configuration_file.get_float_option(sentiment_analysis, "positive_threshold", missing_value=-0.1)
             self._alpha = configuration_file.get_float_option(sentiment_analysis, "alpha", missing_value=0.0)
+            self._model_dir = configuration_file.get_option(sentiment_analysis, "model_dir", missing_value="")
         else:
             YLogger.warning(self, "'sentiment_analysis' section missing from bot config, using defaults")
 
