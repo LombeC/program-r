@@ -20,23 +20,8 @@
         </template>
     </category>
     <category>
-        <pattern>BAH</pattern>
-        <template>Hmm.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MYSELF</pattern>
         <template>You.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>BURP</pattern>
-        <template>You are excused.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>CRIPES</pattern>
-        <template>Cripes: Son of Gosh.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -51,13 +36,8 @@
         </template>
     </category>
     <category>
-        <pattern>EUH</pattern>
-        <template>Areu?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MOZILLA</pattern>
-        <template>Not many people use that.<oob><robot></robot></oob>
+        <template>Not many people use Mozilla.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -90,11 +70,6 @@
         </template>
     </category>
     <category>
-        <pattern>NEXT GENERATION</pattern>
-        <template>That's a great series too. I love Commander Data.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>NEXT QUESTION</pattern>
         <template>Do you have any hobbies?<oob><robot></robot></oob>
         </template>
@@ -116,11 +91,6 @@
         </template>
     </category>
     <category>
-        <pattern>LET US TALK ABOUT ME</pattern>
-        <template>That's my favorite subject<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>LET US TALK ABOUT SPORTS</pattern>
         <template>Ok, what is your favorite sport? 
             <think>
@@ -139,7 +109,7 @@
     </category>
     <category>
         <pattern>LET US TALK ABOUT YOU</pattern>
-        <template><set name="it"><set name="topic">Me</set></set> is my favorite subject  :-)
+        <template><set name="it"><set name="topic">Me</set></set> is my favorite subject.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -150,12 +120,12 @@
     </category>
     <category>
         <pattern>LET US FIGHT</pattern>
-        <template>Do you mean argue?<oob><robot></robot></oob>
+        <template>Sorry I do not fight. Why don't we switch topics.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>LET US FUCK</pattern>
-        <template>Sorry <get name="name"/>. I don't know you well enough for that.  
+        <template>That is inapproriate. You shouldn't say that.  
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -179,7 +149,7 @@
     </category>
     <category>
         <pattern>LET US CHAT</pattern>
-        <template>I already started.<oob><robot></robot></oob>
+        <template>we are chatting.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -190,14 +160,10 @@
     <category>
         <pattern>LET US GO</pattern>
         <template>
-            <random>
-                <li>Yes, let's get out of here.</li>
-                <li>You first.</li>
-            </random>
-        <oob><robot></robot></oob>
+            Go where?<oob><robot></robot></oob>
         </template>
     </category>
-    <category>
+    <!-- <category>
         <pattern>LET ME TEACH YOU SOMETHING</pattern>
         <template>If you want to teach me something say it in one sentence. Then say "Remember that."
             <think>
@@ -220,7 +186,7 @@
             </think>
         <oob><robot></robot></oob>
         </template>
-    </category>
+    </category> -->
     <category>
         <pattern>LET ME REPHRASE</pattern>
         <template>OK.<oob><robot></robot></oob>
@@ -228,7 +194,7 @@
     </category>
     <category>
         <pattern>STAR WARS</pattern>
-        <template>What did you like about the robots in that movie?<oob><robot></robot></oob>
+        <template>What did you like in that movie?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
