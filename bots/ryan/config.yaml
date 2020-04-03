@@ -212,11 +212,11 @@ brain:
       nltk_data_dir: C:\Users\Dreamface\program-r\libs\nltk_data
 
       sentiment_analysis:
-        method: corenlp
+        method: distilbert
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
-        model_dir: ""
+        model_dir: libs/pretrain_distillbert_full_sst/
 
       tokenizer:
         libname: nltk

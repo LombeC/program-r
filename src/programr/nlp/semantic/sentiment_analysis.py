@@ -17,8 +17,10 @@ class SentimentAnalysis():
     @staticmethod
     def factory(config: BrainNLPConfiguration):
         if config.sentiment_analysis.method == "corenlp":
+            print("Using corenlp for sentiment analysis")
             return CoreNLPSentimentAnalysis(config.sentiment_analysis, config.corenlp)
         elif config.sentiment_analysis.method == "distilbert":
+            print("Using distilbert for sentiment analysis")
             return DistilBertSentimentAnalysis(config.sentiment_analysis)
         elif config.sentiment_analysis.method == "default":
             return DefaultSentimentAnalysis()
