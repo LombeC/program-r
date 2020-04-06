@@ -9,7 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
   
 COPY . /usr/src/app
 WORKDIR /usr/src/app
-# # RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip -O corenlp.zip
+# RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip -O corenlp.zip
 # RUN unzip corenlp.zip 
 # RUN rm corenlp.zip
 # RUN mv stanford-corenlp-full-2018-10-05 corenlp
