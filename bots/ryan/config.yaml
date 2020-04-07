@@ -75,7 +75,7 @@ bot:
       host: "localhost"
       port: 27017
       password: "password"
-      root: "/home/rohola/mongodbtest-data"
+      root: "/home/jarid/mongodbtest-data"
       name: "programr"
       collection_name: "conversations"
 
@@ -217,7 +217,7 @@ brain:
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
-        model_dir: /home/rohola/codes/program-r/libs/pretrain_distillbert_full_sst/
+        model_dir: libs/pretrain_distillbert_full_sst/
 
       tokenizer:
         libname: nltk

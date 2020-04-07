@@ -11,9 +11,9 @@ class TemplateSRAINode(TemplateNode):
     def resolve_to_string(self, client_context):
         srai_text = self.resolve_children_to_string(client_context)
         YLogger.debug(client_context, "[%s] SRAI Text [%s]", self.to_string(), srai_text)
-        if srai_text == 'RANDOM PICKUP LINE':
-            print("Is pickup line")
-            YLogger.debug(client_context, "UDC was reached for question:")
+        # if srai_text == 'RANDOM PICKUP LINE':
+        #     print("Is pickup line")
+        #     YLogger.debug(client_context, "UDC was reached for question:")
 
         resolved = client_context.bot.ask_question(client_context, srai_text, srai=True)
         YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
