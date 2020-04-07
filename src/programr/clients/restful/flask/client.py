@@ -2,9 +2,9 @@ from programr.utils.logging.ylogger import YLogger
 from flask import Flask, jsonify, request, make_response, abort
 import json
 from programr.clients.restful.client import RestBotClient
-from werkzeug.contrib.profiler import ProfilerMiddleware
+# from werkzeug.contrib.profiler import ProfilerMiddleware
 
-PROFILER = False
+# PROFILER = False
 
 class FlaskRestBotClient(RestBotClient):
 
@@ -82,9 +82,9 @@ if __name__ == '__main__':
 
     print("Initiating Flask REST Service...")
     app = Flask(__name__)
-    if PROFILER:
-        app.config['PROFILE'] = True
-        app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
+    # if PROFILER:
+    #     app.config['PROFILE'] = True
+    #     app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
 
     @app.route('/api/rest/v1.0/ask', methods=['POST'])
     def ask():
