@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+    <category>
+        <pattern>^ INVENTIONS ^</pattern>
+        <template>
+            Would you like to talk about inventions?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
+    <category>
+        <pattern>^ INVENTION ^</pattern>
+        <template>
+            Would you like to talk about inventions?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-  <category>
-      <pattern>^ INVENTIONS ^</pattern>
-      <template>
-          Would you like to talk about inventions?
-          <oob>
-              <robot>
-              </robot>
-          </oob>
-      </template>
-  </category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about inventions?</that>
+        <template>
+            Do you want to talk about technology, the moon landing, or food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-  <category>
-      <pattern>^ INVENTION ^</pattern>
-      <template>
-          Would you like to talk about inventions?
-          <oob>
-              <robot>
-              </robot>
-          </oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern># <set>YES</set> ^</pattern>
-      <that>Would you like to talk about inventions?</that>
-      <template>
-          Do you want to talk about technology, the moon landing, or food?
-          <oob>
-              <robot>
-              </robot>
-          </oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern># <set>NO</set> ^</pattern>
-      <that>Would you like to talk about inventions?</that>
-      <template>
-        Sure! What would you like to talk about?
-          <oob>
-              <robot>
-              </robot>
-          </oob>
-      </template>
-  </category>
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to talk about inventions?</that>
+        <template>
+            Sure! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
     <category>
         <pattern># INVENTIONS ^</pattern>
@@ -54,8 +48,40 @@
         <template>
             Do you want to talk about technology, the moon landing, or food?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN INVENTIONS ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            Do you want to talk about technology, the moon landing, or food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># INVENTION ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            Do you want to talk about technology, the moon landing, or food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN INVENTION ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            Do you want to talk about technology, the moon landing, or food?
+            <oob>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -66,8 +92,18 @@
         <template>
             Good choice! Why don't we start at the beginning? Did you know Benjamin Franklin was an inventor?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Technologies ^</pattern>
+        <that>Do you want to talk about technology, the moon landing, or food?</that>
+        <template>
+            Good choice! Why don't we start at the beginning? Did you know Benjamin Franklin was an inventor?
+            <oob>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -77,10 +113,9 @@
         <that>Did you know Benjamin Franklin was an inventor?</that>
         <template>
             He sure was! He invented the lightning rod and bifocals!
-            Have you ever had any ideas for good inventions?
+                        Have you ever had any good ideas for inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -89,11 +124,10 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know Benjamin Franklin was an inventor?</that>
         <template>
-          He sure was! He invented the lightning rod and bifocals!
-          Have you ever had any ideas for good inventions?
+            He sure was! He invented the lightning rod and bifocals!
+                      Have you ever had any good ideas for inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -102,11 +136,10 @@
         <pattern># <set>Don't know</set> ^</pattern>
         <that>Did you know Benjamin Franklin was an inventor?</that>
         <template>
-          He sure was! He invented the lightning rod and bifocals!
-          Have you ever had any ideas for good inventions?
+            He sure was! He invented the lightning rod and bifocals!
+                      Have you ever had any good ideas for inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -117,8 +150,7 @@
         <template>
             Amazing! What was your idea?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -127,37 +159,36 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Have you ever had any ideas for good inventions?</that>
         <template>
-          Same here! You know, Benjamin Franklin also invented common proverbs like
-          early to bed, early to rise, makes a man healthy, wealthy and wise.
-          Are you a day time person or a night time person?
+            Same here! You know, Benjamin Franklin also invented common sayings like
+                      early to bed, early to rise, makes a man healthy, wealthy and wise.
+                      Are you a day time person or a night time person?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>Don't know</set> ^</pattern>
-        <that>Have you ever had any ideas for good inventions?</that>
+        <that>Have you ever had any good ideas for inventions?</that>
         <template>
-          I understand! You know, Benjamin Franklin also invented common proverbs like
-          early to bed, early to rise, makes a man healthy, wealthy and wise.
-          Are you a day time person or a night time person?
+            I understand! You know, Benjamin Franklin also invented common sayings like
+                      early to bed, early to rise, makes a man healthy, wealthy and wise.
+                      Are you a day time person or a night time person?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
-
 
     <category>
         <pattern># Day time person ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          All of the greatest inventors wake up early!
-            <oob><robot></robot></oob>
+            All of the greatest inventors wake up early!
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -165,8 +196,10 @@
         <pattern># Day time ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          All of the greatest inventors wake up early!
-            <oob><robot></robot></oob>
+            All of the greatest inventors wake up early!
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -174,9 +207,11 @@
         <pattern># Day ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          All of the greatest inventors wake up early!
-          Have you ever watched the sunrise?
-            <oob><robot></robot></oob>
+            All of the greatest inventors wake up early!
+                      Have you ever watched the sunrise?
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -184,8 +219,10 @@
         <pattern># Night time person ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          You must be a night owl! Do you think the best inspiration comes at night?
-            <oob><robot></robot></oob>
+            You must be a night owl! Do you think the best inspiration comes at night?
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -193,8 +230,10 @@
         <pattern># Night time ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          You must be a night owl! Do you think the best inspiration comes at night?
-            <oob><robot></robot></oob>
+            You must be a night owl! Do you think the best inspiration comes at night?
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -202,8 +241,10 @@
         <pattern># Night ^</pattern>
         <that>Are you a day time person or a night time person?</that>
         <template>
-          You must be a night owl! Do you think the best inspiration comes at night?
-            <oob><robot></robot></oob>
+            You must be a night owl! Do you think the best inspiration comes at night?
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
@@ -213,8 +254,7 @@
         <template>
             It's so beautiful, isn't it! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -223,10 +263,9 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Have you ever watched the sunrise?</that>
         <template>
-          You should watch it sometime with a good cup of cofee! Would you like to keep talking about inventions?
+            You should watch it sometime with a good cup of coffee! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -235,10 +274,9 @@
         <pattern># <set>Don't know</set> ^</pattern>
         <that>Have you ever watched the sunrise?</that>
         <template>
-          You should watch it sometime with a good cup of cofee! Would you like to keep talking about inventions?
+            You should watch it sometime with a good cup of coffee! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -249,8 +287,7 @@
         <template>
             You're brilliant! Do you think the best inspiration comes at night or during the day?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -261,8 +298,7 @@
         <template>
             I think you're right! Have you ever watched the sunrise?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -273,8 +309,7 @@
         <template>
             I think you're right! Have you ever watched the sunrise?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -285,8 +320,7 @@
         <template>
             I think you're right! Have you ever watched the sunrise?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -297,8 +331,7 @@
         <template>
             You must be a night owl! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -309,8 +342,7 @@
         <template>
             You must be a night owl! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -321,8 +353,7 @@
         <template>
             You must be a night owl! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -333,8 +364,7 @@
         <template>
             I have to agree! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -343,10 +373,9 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Do you think the best inspiration comes at night?</that>
         <template>
-          I have to agree! Would you like to keep talking about inventions?
+            I have to agree! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -355,10 +384,9 @@
         <pattern># <set>Don't know</set> ^</pattern>
         <that>Do you think the best inspiration comes at night?</that>
         <template>
-          Makes sense to me! Would you like to keep talking about inventions?
+            Makes sense to me! Would you like to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -367,10 +395,9 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>Would you like to keep talking about inventions?</that>
         <template>
-          Great! Do you know who Samuel Morse is?
+            Great! Do you know who Samuel Morse is?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -379,10 +406,9 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to keep talking about inventions?</that>
         <template>
-          Okay! What would you like to talk about next?
+            Okay! What would you like to talk about next?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -393,8 +419,7 @@
         <template>
             Morse is credited with inventing the telegraph machine. Do you know what the telegraph machine was?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -403,11 +428,10 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
         <template>
-          The telegraph allowed people to communicate over long distances by broadcasting a code made up of series of short and long beeps.
-            Would you like to listen to a recording of Morse Code?
+            The telegraph allowed people to communicate over long distances by broadcasting a code made up of series of short and long beeps.
+                        Would you like to listen to a recording of Morse Code?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -419,7 +443,9 @@
             Pretty cool isn't it? Luckily today we have cell phones!
             <oob>
                 <robot>
-                    <video><filename>telegraph.mp4</filename></video>
+                    <video>
+                        <filename>telegraph.mp4</filename>
+                    </video>
                 </robot>
             </oob>
         </template>
@@ -431,8 +457,7 @@
         <template>
             Luckily today we have cell phones!
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -442,10 +467,9 @@
         <that>DO YOU KNOW WHO SAMUEL MORSE IS?</that>
         <template>
             You must know that he invented the telegraph machine!
-            Luckily today we have cell phones!
+                        Luckily today we have cell phones!
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -454,11 +478,10 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
         <template>
-            You're smart as a whip! The telegraph was a code made up of series of short and long beeps.
-            Luckily today we have cell phones!
+            You're smart as a whip!
+                        Luckily today we have cell phones!
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -469,8 +492,7 @@
         <template>
             Are you a fan of texting on your cell phone?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -481,8 +503,7 @@
         <template>
             It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -493,8 +514,7 @@
         <template>
             It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -505,8 +525,7 @@
         <template>
             It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -515,11 +534,10 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you want to keep talking about inventions?</that>
         <template>
-            Excellent! Computers have been around for more than 70 years, but in 1984 Apple released the Macintosh, which made personal computers, well, personal!
-            Care to watch a video?
+            Excellent! In 1984 Apple released the Macintosh, which made personal computers, well, personal!
+                        Care to watch a video?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -531,125 +549,126 @@
             That computer is ancient history by now! Have you ever heard of the Museum of Jurassic Technology?
             <oob>
                 <robot>
-                    <video><filename>macintosh.mp4</filename></video>
+                    <video>
+                        <filename>macintosh.mp4</filename>
+                    </video>
                 </robot>
             </oob>
         </template>
-   </category>
+    </category>
 
-   <category>
-       <pattern># <set>No</set> ^</pattern>
-       <that>CARE TO WATCH A VIDEO?</that>
-       <template>
-           That computer is ancient history by now! Have you ever heard of
-           the Museum of Jurassic Technology?
-           <oob>
-               <robot>
-                   <video><filename>macintosh.mp4</filename></video>
-               </robot>
-           </oob>
-       </template>
-  </category>
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>CARE TO WATCH A VIDEO?</that>
+        <template>
+            That computer is ancient history by now! Have you ever heard of
+                       the Museum of Jurassic Technology?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-  <category>
-      <pattern># <set>YES</set> ^</pattern>
-      <that>Have you ever heard of the Museum of Jurassic Technology?</that>
-      <template>
-          Would you like to watch a video on how the museum came to be?
-          <oob>
-              <robot>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever heard of the Museum of Jurassic Technology?</that>
+        <template>
+            Would you like to watch a video on how the museum came to be?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-              </robot>
-          </oob>
-      </template>
- </category>
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever heard of the Museum of Jurassic Technology?</that>
+        <template>
+            It's a museum of all sorts of old technology! Would you like to watch a video on how the museum came to be?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
- <category>
-     <pattern># <set>No</set> ^</pattern>
-     <that>Have you ever heard of the Museum of Jurassic Technology?</that>
-     <template>
-        It's a museum of all sorts of old technology! Would you like to watch a video on how the museum came to be?
-         <oob>
-             <robot>
-             </robot>
-         </oob>
-     </template>
-</category>
+    <category>
+        <pattern># <set>Don't know</set> ^</pattern>
+        <that>Have you ever heard of the Museum of Jurassic Technology?</that>
+        <template>
+            It's a museum of all sorts of old technology! Would you like to watch a video on how the museum came to be?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-    <pattern># <set>Don't know</set> ^</pattern>
-    <that>Have you ever heard of the Museum of Jurassic Technology?</that>
-    <template>
-        It's a museum of all sorts of old technology! Would you like to watch a video on how the museum came to be?
-        <oob>
-            <robot>
-            </robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to watch a video on how the museum came to be?</that>
+        <template>
+            How inspirational! Would you like to talk about museums? If you'd like to keep talking about inventions, just say inventions.
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Museum of Jurassic Technology.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-    <pattern># <set>YES</set> ^</pattern>
-    <that>Would you like to watch a video on how the museum came to be?</that>
-    <template>
-        How inspirational! Would you like to talk about museums? If you'd like to keep talking about inventions, just say inventions.
-        <oob>
-            <robot>
-              <video><filename>Museum of Jurassic Technology.mp4</filename></video>
-            </robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to watch a video on how the museum came to be?</that>
+        <template>
+            No problem! Do you want to keep talking about inventions, or change the topic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-   <pattern># <set>No</set> ^</pattern>
-   <that>Would you like to watch a video on how the museum came to be?</that>
-   <template>
-      No problem! Do you want to keep talking about inventions, or change the topic?
-       <oob>
-           <robot>
-           </robot>
-       </oob>
-   </template>
-</category>
+    <category>
+        <pattern># Change the topic ^</pattern>
+        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <template>
+            What would you like to discuss next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-   <pattern># Change the topic ^</pattern>
-   <that>Do you want to keep talking about inventions, or change the topic?</that>
-   <template>
-      What would you like to discuss next?
-       <oob>
-           <robot>
-           </robot>
-       </oob>
-   </template>
-</category>
+    <category>
+        <pattern># Change topic ^</pattern>
+        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <template>
+            What would you like to discuss next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-   <pattern># Change topic ^</pattern>
-   <that>Do you want to keep talking about inventions, or change the topic?</that>
-   <template>
-      What would you like to discuss next?
-       <oob>
-           <robot>
-           </robot>
-       </oob>
-   </template>
-</category>
+    <category>
+        <pattern># Different topic ^</pattern>
+        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <template>
+            What would you like to discuss next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-   <pattern># Change ^</pattern>
-   <that>Do you want to keep talking about inventions, or change the topic?</that>
-   <template>
-      What would you like to discuss next?
-       <oob>
-           <robot>
-           </robot>
-       </oob>
-   </template>
-</category>
-
-
-
-
+    <category>
+        <pattern># Change ^</pattern>
+        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <template>
+            What would you like to discuss next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 </aiml>

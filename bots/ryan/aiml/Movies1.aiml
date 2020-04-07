@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>What do you say we talk about movies?</that>
+      <template>
+          Do you like to watch drama, action, comedy, or musicals?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>What do you say we talk about movies?</that>
+      <template>
+          Of course! What would you like to talk about?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># Drama ^</pattern>
+      <that>Do you like to watch drama, action, comedy, or musicals?</that>
+      <template>
+        Excellent! When it comes to dramas, my favorite is It's a Wonderful Life.
+        Who doesn't like that movie?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># Dramas ^</pattern>
+      <that>Do you like to watch drama, action, comedy, or musicals?</that>
+      <template>
+          Excellent! When it comes to dramas, my favorite is It's a Wonderful Life.
+          Who doesn't like that movie?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Who doesn't like that movie?</that>
+      <template>
+          Jimmy Stewart is one of the best actors! Would you like to watch a clip from the movie?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Would you like to watch a clip from the movie?</that>
+      <template>
+          I have to admit, it's a real tearjerker! Do you like to watch It's a Wonderful Life around Christmas time?
+          <oob>
+              <robot><video>
+                  <filename>It's a Wonderful Life.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Would you like to watch a clip from the movie?</that>
+      <template>
+          I have to admit, it's a real tearjerker! Do you like to watch that movie around Christmas time?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Do you like to watch that movie around Christmas time?</that>
+      <template>
+          Me too! It's the perfect Christmas Eve movie. Do you have any Christmas traditions?
+          <oob>
+              <robot><video>
+                  <filename>It's a Wonderful Life.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Do you like to watch that movie around Christmas time?</that>
+      <template>
+          It's the perfect Christmas Eve movie! Do you have any Christmas traditions?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Don't know</set> ^</pattern>
+      <that>Do you like to watch that movie around Christmas time?</that>
+      <template>
+          It's the perfect Christmas Eve movie! Do you have any Christmas traditions?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Do you have any Christmas traditions?</that>
+      <template>
+        What are your Christmas traditions?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Do you have any Christmas traditions?</that>
+      <template>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Don't know</set> ^</pattern>
+      <that>Do you have any Christmas traditions?</that>
+      <template>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>What are your Christmas traditions?</that>
+      <template>
+        That's lovely to hear! Decorating the tree and drinking egg nog are high on my list.
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Do you want to keep talking about film?</that>
+      <template>
+        Great! Speaking of Christmas movies, have you ever seen Christmas Vacation with Chevy Chase?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Do you want to keep talking about film?</that>
+      <template>
+        Okay! What would you like to talk about next?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+</aiml>

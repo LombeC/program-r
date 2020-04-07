@@ -482,6 +482,8 @@ class AIMLParser(object):
 
             # Save the matched context for the associated sentence
             pattern_sentence.matched_context = context
+            
+            # YLogger.debug(context, "Matched sentence: [%s]", context._matched_nodes)
 
             return context
 

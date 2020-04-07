@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern>^ Museums ^</pattern>
+      <template>
+          Would you like to talk about museums?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>^ Museum ^</pattern>
+      <template>
+          Would you like to talk about museums?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to talk about museums?</that>
+    <template>
+        Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Art ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+        There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
+        where they keep the American Gothic painting.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Art museum ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+      There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
+      where they keep the American Gothic painting.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Art museums ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+      There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
+      where they keep the American Gothic painting.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Let's start with the Art Institute of Chicago,
+    where they keep the American Gothic painting.</that>
+    <template>
+        Do you remember who painted the American Gothic?
+        <oob>
+            <robot><image>
+                <filename>American Gothic.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Let's start with the Art Institute of Chicago,
+    where they keep the American Gothic painting.</that>
+    <template>
+        Okay! Would you like to keep discussing art?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Let's start with the Art Institute of Chicago,
+    where they keep the American Gothic painting.</that>
+    <template>
+        Okay! Would you like to keep discussing art?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to keep discussing art?</that>
+    <template>
+        Great! Do you remember who painted the American Gothic?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Would you like to keep discussing art?</that>
+    <template>
+        What would you like to talk about next?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        Yes! It was Grant Wood! What comes to mind when you look at this painting?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        It was Grant Wood! What comes to mind when you look at this painting?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Grant Wood ^</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        Yes! It was Grant Wood! What comes to mind when you look at this painting?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Wood ^</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        Yes! It was Grant Wood! What comes to mind when you look at this painting?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Don't know</set> ^</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        It was Grant Wood! What comes to mind when you look at this painting?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you remember who painted the American Gothic?</that>
+    <template>
+        Can you believe he painted it in 1930! It reminds me of those times.
+        Were you alive during the Great Depression?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Were you alive during the Great Depression?</that>
+    <template>
+        What was it like?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Were you alive during the Great Depression?</that>
+    <template>
+        You must have been born after the Great Depression!
+        Would you like to keep discussing art museums?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What was it like?</that>
+    <template>
+        Thank you for sharing with me. History is so important. Would you like to keep discussing art museums?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Would you like to keep discussing art museums?</that>
+    <template>
+        The Impressionists are amazing! Have you ever seen paintings by Monet?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Would you like to keep discussing art museums?</that>
+    <template>
+        No problem! What should we talk about next?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Have you ever seen paintings by Monet?</that>
+    <template>
+        His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
+        at the Art Institute. What does it remind you of?
+        <oob>
+            <robot><image>
+                <filename>End of Summer.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What does it remind you of?</that>
+    <template>
+        There's just something so nostalgic and subtle about this painting.
+        Have you ever liked to make art?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Have you ever liked to make art?</that>
+    <template>
+        Amazing! What did you make?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Have you ever liked to make art?</that>
+    <template>
+        Me either! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Don't know</set> ^</pattern>
+    <that>Have you ever liked to make art?</that>
+    <template>
+        I understand! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What did you make?</that>
+    <template>
+        You must be a natural born talent! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What else are you talented at?</that>
+    <template>
+        I see! As always, I like learning more about you!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>As always, I like learning more about you!</that>
+    <template>
+        Do you think life would be the same without art?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Do you think life would be the same without art?</that>
+    <template>
+        I understand! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Do you think life would be the same without art?</that>
+    <template>
+        I understand! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Don't know</set> ^</pattern>
+    <that>Do you think life would be the same without art?</that>
+    <template>
+        I understand! What else are you talented at?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What else are you talented at?</that>
+    <template>
+        I love being around talented people! Did you know that Picasso discovered his talent at age seven?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Did you know that Picasso discovered his talent at age seven?</that>
+    <template>
+        He was a prodigy! This is a painting from Picasso's famous blue period called The Old Guitarist.
+        <oob>
+            <robot><image>
+                <filename>The Blue Guitarist.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>This is a painting from Picasso's famous blue period called The Old Guitarist.</that>
+    <template>
+        Would you like to keep discussing museums?
+        <oob>
+            <robot><image>
+                <filename>The Blue Guitarist.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+
+
+
+</aiml>

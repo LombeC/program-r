@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern># Comedy ^</pattern>
+      <that>Do you like to watch drama, action, comedy, or musicals?</that>
+      <template>
+        Great! When it comes to comedy, nothing beats Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># Comedies ^</pattern>
+      <that>Do you like to watch drama, action, comedy, or musicals?</that>
+      <template>
+          Great! When it comes to comedy, nothing beats Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Speaking of Christmas movies, have you ever seen Christmas Vacation with Chevy Chase?</that>
+      <template>
+        Who hasn't! Do you remember that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Speaking of Christmas movies, have you ever seen Christmas Vacation with Chevy Chase?</that>
+      <template>
+        You've got to watch it! How funny was that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Don't know</set> ^</pattern>
+      <that>Speaking of Christmas movies, have you ever seen Christmas Vacation with Chevy Chase?</that>
+      <template>
+        You've got to watch it! How funny was that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Have you seen Christmas Vacation?</that>
+      <template>
+        Who hasn't! Do you remember that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Have you seen Christmas Vacation?</that>
+      <template>
+        You've got to watch it! How funny was that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Don't know</set> ^</pattern>
+      <that>Have you seen Christmas Vacation?</that>
+      <template>
+        You've got to watch it! How funny was that scene?
+          <oob>
+              <robot><video>
+                  <filename>Christmas Vacation.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>How funny was that scene?</that>
+      <template>
+        Does it remind you of your family holidays?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Does it remind you of your family holidays?</that>
+      <template>
+        Would you like to watch a Laurel and Hardy sketch about Christmas Cards?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>Yes</set> ^</pattern>
+      <that>Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</that>
+      <template>
+        I can't get over those two. Do you want to keep talking about film?
+          <oob>
+              <robot><video>
+                  <filename>Laurel and Hardy.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</that>
+      <template>
+        Do you want to keep talking about film?
+          <oob>
+              <robot><video>
+                  <filename>Laurel and Hardy.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+
+
+</aiml>

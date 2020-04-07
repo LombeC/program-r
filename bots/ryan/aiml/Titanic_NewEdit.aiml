@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># TITANIC ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies.
+                        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Voyage of the Titanic ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies.
+                        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># The Voyage of the Titanic ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies.
+                        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Voyage ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            One of the most infamous tragedies.
+                        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
+        <template>
+            Knowing what happened, I absolutely agree. Have you seen the movie about The Titanic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
+        <template>
+            It sounds so romantic, to travel the sea in luxury.
+                        Have you seen the movie about The Titanic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you seen the movie about The Titanic?</that>
+        <template>
+            Would you like to watch the trailer for The Titanic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to watch the trailer for The Titanic?</that>
+        <template>
+            I feel like I just watched the film again! What did you think of Titanic when you watched it?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>titanic.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to watch the trailer for The Titanic?</that>
+        <template>
+            I like a lot of things about that movie, but what I love most of all is the music. Would prefer to listen to one of the songs instead?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you seen the movie about The Titanic?</that>
+        <template>
+            It has everything! Romance, action, and did I mention romance?
+                    Would you like to watch the trailer for The Titanic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DID YOU THINK OF TITANIC WHEN YOU WATCHED IT?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
+                                   What do you say we talk about real American history?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="positive">I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
+                                 What do you say we talk about real American history?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="neutral">I totally understand! I'm not sure how true the movie is to the actual event.
+                                 What do you say we talk about real American history?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="negative">I totally understand! I'm not sure how true the movie is to the actual event.
+                                    What do you say we talk about real American history?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="verynegative">I totally understand! I'm not sure how true the movie is to the actual event.
+                                 What do you say we talk about real American history?<oob>
+                    <robot></robot>
+                </oob></li></condition>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO AMERICANHISTORY DIALOGUE --></aiml>

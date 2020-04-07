@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-
-  <category>
-      <pattern>^ Romance ^</pattern>
-      <template>
-          Do you like stories about romance?
-          <oob>
-              <robot>
-              </robot>
-          </oob>
-      </template>
-  </category>
+    <category>
+        <pattern>^ Romance ^</pattern>
+        <template>
+            Do you like stories about romance?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you like stories about romance?</that>
         <template>
             The most famous romance I can think of is, Romeo, Romeo, wherefore art thou Romeo?
-            Tell me what that's from.
+                        Tell me what that's from.
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -30,18 +26,17 @@
         <pattern>_</pattern>
         <that>Tell me what that's from.</that>
         <template>
-            Romeo and Juliet, of course! Speaking of romance, I think the movie The Notebook is a modern day classic .
-            Would you like to see a trailer?
+            Romeo and Juliet, of course! Speaking of romance, I think the movie The Notebook is a modern day classic.
+                        Would you like to see a trailer for The Notebook?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Would you like to see a trailer?</that>
+        <that>Would you like to see a trailer for The Notebook?</that>
         <template>
             Do you think the movie will be good, based on the trailer?
             <oob>
@@ -59,10 +54,8 @@
         <that>Do you think the movie will be good, based on the trailer?</that>
         <template>
             You make a good point. Do you want to keep talking about romance?
-
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -73,8 +66,7 @@
         <template>
             What do you think of the movie Casablanca? Did you ever see it?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -85,8 +77,7 @@
         <template>
             Absolutely! What can we talk about next?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -97,8 +88,7 @@
         <template>
             No problem! Do you want to keep talking about romance?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -109,8 +99,7 @@
         <template>
             Humphrey Bogart and Ingrid Bergman had great chemistry! Tell me, did you ever write any love letters to a special someone?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -119,10 +108,9 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Tell me, did you ever write any love letters to a special someone?</that>
         <template>
-            The feeling of opening a love letter is pretty special. How did you meet your loved one?
+            How did you meet your loved one?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -133,8 +121,7 @@
         <template>
             I understand! How did you meet your loved one?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -145,8 +132,7 @@
         <template>
             I understand! How did you meet your loved one?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -156,10 +142,9 @@
         <that>How did you meet your loved one?</that>
         <template>
             I could listen to your stories all day! I have to say I think the movie Titanic is a very romantic story, though
-            it is sad, too. Would you like to talk about the Titanic?
+                        it is sad, too. Would you like to talk about the Titanic?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -171,7 +156,9 @@
             Did you ever watch the film?
             <oob>
                 <robot>
-                    <video><filename>titanic.mp4</filename></video>
+                    <video>
+                        <filename>titanic.mp4</filename>
+                    </video>
                 </robot>
             </oob>
         </template>
@@ -183,9 +170,7 @@
         <template>
             What did you think of Titanic when you watched it?
             <oob>
-                <robot>
-                    <video><filename>titanic.mp4</filename></video>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -196,8 +181,7 @@
         <template>
             It has everything! Romance, action, and did I mention romance? So steamy.
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -207,8 +191,8 @@
         <that>Did you ever watch the film?</that>
         <template>
             It has everything! Romance, action, and did I mention romance? So steamy.
-            <oob>  <robot>
-              </robot>
+            <oob>
+                <robot></robot>
             </oob>
         </template>
     </category>
@@ -218,47 +202,22 @@
         <that>So steamy.</that>
         <template>
             That being said, I'm not sure how true the movie is to the actual event.
-            What do you say we talk about real American history?
-            <oob><robot>
-            </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>What do you say we talk about real American history?</that>
-        <template>
-            Great! Do you want to talk about American presidents or American inventions?
+                        What do you say we talk about real American history?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
 
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>What do you say we talk about real American history?</that>
-        <template>
-            Sure thing! What shall we talk about?
-            <oob>
-                <robot>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
+    <!-- REDIRECT TO AMERICANHISTORY DIALOGUE -->
     <category>
         <pattern># <set>No</set> ^</pattern>
         <that>Would you like to talk about the Titanic?</that>
         <template>
             All right! What would you like to discuss?
             <oob>
-                <robot>
-                </robot>
+                <robot></robot>
             </oob>
         </template>
     </category>
-
 </aiml>

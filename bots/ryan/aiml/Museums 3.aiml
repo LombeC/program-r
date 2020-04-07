@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern>^ Museums ^</pattern>
+      <template>
+          Would you like to talk about museums?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>^ Museum ^</pattern>
+      <template>
+          Would you like to talk about museums?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to talk about museums?</that>
+    <template>
+        Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Cowboy ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+        I love the National Cowboy Museum! Would you like to take a tour of the museum?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Cowboy museum ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+        I love the National Cowboy Museum! Would you like to take a tour of the museum?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># The cowboy museum ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+        I love the National Cowboy Museum! Would you like to take a tour of the museum?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to take a tour of the museum?</that>
+    <template>
+        How cool is that!
+        <oob>
+            <robot><video>
+                <filename>Cowboy Museum.mp4</filename>
+            </video></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Would you like to take a tour of the museum?</that>
+    <template>
+        How cool is that! I would love to visit and see what it was like to live back in the Wild West!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I would love to visit and see what it was like to live back in the Wild West!</that>
+    <template>
+        I've heard that their John Wayne Collection is amazing! What's your favorite Western?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What's your favorite Western?</that>
+    <template>
+        Mine is The Good, The Bad and The Ugly! Can I show you the trailer?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Can I show you the trailer?</that>
+    <template>
+     The soundtrack is iconic! What do you like about the Wild West?
+        <oob>
+            <robot><video>
+                <filename>Cowboy Museum.mp4</filename>
+            </video></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Can I show you the trailer?</that>
+    <template>
+        No problem! What do you like about the Wild West?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you like about the Wild West?</that>
+    <template>
+        I love all the history and learning more about Native American heritage!
+        I'd like to show you an art piece from the Cowboy Museum.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <template>
+      It's called The End of the Trail by James Earle Fraser.
+      What comes to mind when you look at this?
+        <oob>
+            <robot><image>
+                <filename>End of the Trail.mp4</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <template>
+      Sure! Would you like to keep discussing museums?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <template>
+      It's called The End of the Trail by James Earle Fraser.
+      What comes to mind when you look at this?
+        <oob>
+            <robot><image>
+                <filename>End of the Trail.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What comes to mind when you look at this?</that>
+    <template>
+      It is both a beautiful and sad piece. Would you like to keep discussing museums?
+        <oob>
+            <robot><image>
+                <filename>End of the Trail.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+</aiml>
