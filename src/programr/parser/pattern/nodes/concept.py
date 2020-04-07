@@ -4,7 +4,7 @@ from programr.parser.pattern.nodes.base import PatternNode
 from programr.parser.pattern.matcher import EqualsMatch
 from programr.parser.exceptions import ParserException
 
-from programr.nlp.semantic.semantic_similarity import SemanticSimilarity
+#from programr.nlp.semantic.semantic_similarity import SemanticSimilarity
 
 class PatternConceptNode(PatternNode):
 
