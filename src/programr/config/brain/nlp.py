@@ -16,7 +16,7 @@ class BrainNLPConfiguration(BaseSectionConfigurationData):
         self._corenlp = BrainCoreNLPConfiguration()
         self._toknizer = BrainTokenizerConfiguration()
         self._sentence_segmentation = BrainSentenceSegmentationConfiguration()
-        self._semantic_similarity = BrainSemanticSimilarityConfiguration()
+        #self._semantic_similarity = BrainSemanticSimilarityConfiguration()
         self._sentiment_analysis = BrainSentimentAnalysisConfiguration()
 
     @property
