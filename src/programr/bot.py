@@ -525,6 +525,7 @@ class Bot(object):
         response = client_context.brain.ask_question(client_context, sentence, srai)
         #response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
 
+
         if response is None and srai is False:
             response = self.check_spelling_and_retry(client_context, sentence)
 
