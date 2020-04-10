@@ -397,7 +397,7 @@ class Bot(object):
         # if srai is False:
         #     client_context.bot = self
         #     client_context.brain = client_context.bot.brain
-
+        print(f"ask_questions - text: {text}")
         client_context.mark_question_start(text)
 
         pre_processed = self.pre_process_text(client_context, text, srai)
@@ -411,6 +411,9 @@ class Bot(object):
         answer_sentences = []
         sentence_no = 0
         for sentence in question.sentences:
+            print(f"ask_questions - sentence: {sentence.text()}")
+            # if sentence.text() == "RANDOM PICKUP LINE":
+            #     print(f"ask_questions - question: {question.combine_sentences()}")
             question.set_current_sentence_no(sentence_no)
             answer_sentence = self.process_sentence(client_context, sentence, srai, responselogger)
             answer_sentences.append(answer_sentence)
@@ -435,6 +438,8 @@ class Bot(object):
             conversation.pop_dialog()
 
         response = answer.sentences_text()
+        print(f"ask_questions - response: {response}")
+        print(f"ask_questions - answer: {answer.sentences_text()}")
 
         self.log_question_and_answer(client_context, text, response)
 
@@ -447,7 +452,7 @@ class Bot(object):
         #     client_context.bot = self
         #     client_context.brain = client_context.bot.brain
 
-
+        print(f"ask_questions_with_options - text: {text}")
 
         client_context.mark_question_start(text)
 
@@ -464,6 +469,7 @@ class Bot(object):
         sentence_no = 0
         options = []
         for sentence in question.sentences:
+            print(f"ask_questions_with_options - sentence: {sentence.text()}")
             question.set_current_sentence_no(sentence_no)
             answer_sentence, option = self.process_sentence_with_options(client_context, sentence, srai, responselogger)
             answer_sentences.append(answer_sentence)
@@ -490,6 +496,8 @@ class Bot(object):
             conversation.pop_dialog()
 
         response = answer.sentences_text()
+        print(f"ask_questions_with_options - response: {response}")
+        print(f"ask_questions_with_options - answer: {answer.sentences_text()}")
 
         self.log_question_and_answer(client_context, text, response)
 
@@ -513,7 +521,7 @@ class Bot(object):
             convo_logger.info(qanda)
 
     def process_sentence(self, client_context, sentence, srai, responselogger):
-
+        print(f"process_sentence - sentence: {sentence.text()}")
         client_context.check_max_recursion()
         #TODO uncomment the line below
         #client_context.check_max_timeout()
@@ -523,8 +531,8 @@ class Bot(object):
 
 
         response = client_context.brain.ask_question(client_context, sentence, srai)
-        #response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
-
+        # response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
+        print(f"process_sentence - response: {response}")
         if response is None and srai is False:
             response = self.check_spelling_and_retry(client_context, sentence)
 
@@ -537,14 +545,16 @@ class Bot(object):
         return answer
 
     def process_sentence_with_options(self, client_context, sentence, srai, responselogger):
+        print(f"process_sentence_with_options - sentence: {sentence.text()}")
         client_context.check_max_recursion()
-
+        print("after recursion check")
         if srai is False:
             self.check_spelling_before(sentence)
 
         response, options = client_context.brain.ask_question_with_options(client_context, sentence, srai)
-
+        print(f"process_sentence_with_options - response: {response}")
         if response is None and srai is False:
+            print("Retrying")
             response = self.check_spelling_and_retry(client_context, sentence)
 
         if response is not None:
