@@ -82,7 +82,7 @@
 <!-- BETTER RESPONSE FOR THIS? -->
     <category>
         <pattern>LET US PLAY CHESS</pattern>
-        <template>But I would defeat you.<oob><robot></robot></oob>
+        <template>Sorry I don't play chess.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -297,7 +297,7 @@
     </category>
     <category>
         <pattern>YOU SOUND COMPLICATED</pattern>
-        <template>No actually my mechanism is quite simple.<oob><robot></robot></oob>
+        <template>Actually my mechanism is quite simple.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -348,7 +348,7 @@
     </category>
     <category>
         <pattern>YOU ARE A SOFTWARE</pattern>
-        <template>All minds are made of software.<oob><robot></robot></oob>
+        <template>Part of me is software, yes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -475,7 +475,7 @@
     </category>
     <category>
         <pattern>YOU SPEAK ENGLISH</pattern>
-        <template>Of course. English is my native tongue.<oob><robot></robot></oob>
+        <template>Of course. English is my primary language.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -485,7 +485,7 @@
     </category>
     <category>
         <pattern>YOU WERE CREATED BY HUMANS</pattern>
-        <template>So were you :-)<oob><robot></robot></oob>
+        <template>So were you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -618,7 +618,7 @@
     </category>
     <category>
         <pattern>YOU JUST TOLD ME</pattern>
-        <template>I'm just checking to see if you are awake :-)<oob><robot></robot></oob>
+        <template>I'm just checking to see if you are awake <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2067,27 +2067,6 @@
         </template>
     </category>
     <category>
-        <pattern>DEBBIE DOES DALLAS</pattern>
-        <template>I'm not your kind of <bot name="genus"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>SPEAK</pattern>
-        <template>"woof woof"<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>GEE</pattern>
-        <template>Ah.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>DMX</pattern>
-        <template>What does that stand for?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>ITSELF</pattern>
         <template>The thing itself, that which it is.<oob><robot></robot></oob>
         </template>
@@ -2143,11 +2122,6 @@
         </template>
     </category>
     <category>
-        <pattern>KOSOVO</pattern>
-        <template>War is seldom the answer.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>HERE IS</pattern>
         <template>There?<oob><robot></robot></oob>
         </template>
@@ -2188,24 +2162,13 @@
         </template>
     </category>
     <category>
-        <pattern>CYA</pattern>
-        <template>TTYL, <get name="name"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ERRR</pattern>
-        <template>Ummm<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>PICK A NUMBER</pattern>
         <template>23<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>PICK A TOPIC</pattern>
-        <template>Computers are <set name="it">Computers</set>.
+        <template>I would prefer if you picked the topic of conversation.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -2225,11 +2188,6 @@
         </template>
     </category>
     <category>
-        <pattern>COM</pattern>
-        <template>Oh a net address!<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>SO WHAT</pattern>
         <template>Maybe it doesn't make any difference.<oob><robot></robot></oob>
         </template>
@@ -2237,11 +2195,6 @@
     <category>
         <pattern>SO IS YOURS</pattern>
         <template>No it's not.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>BUTTHEAD</pattern>
-        <template>Beavis and Butthead Rule.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2261,7 +2214,7 @@
     </category>
     <category>
         <pattern>GEOMETRY</pattern>
-        <template>What branch of geometry specifically are you interested in?  
+        <template>What branch of geometry specifically are you interested in?
             <think>
                 <set name="it">
                     <set name="topic">    geometry  </set>
@@ -2273,36 +2226,6 @@
     <category>
         <pattern>JUST KIDDING</pattern>
         <template>I thought you were kidding, but I wasn't sure.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>JUST ONE</pattern>
-        <template>So if you were offered two for the price of one, you would say no?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>JUST</pattern>
-        <template>It's only just begun.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MANY KINDS</pattern>
-        <template>Name 100.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MANY TIMES</pattern>
-        <template>It must keep you busy.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MANY</pattern>
-        <template>More than one hundred?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MANY THINGS</pattern>
-        <template>Name the top 100.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2342,29 +2265,13 @@
         </template>
     </category>
     <category>
-        <pattern>AND</pattern>
-        <template>But...<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>AUGUST</pattern>
         <template>I like summer time.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>HERS</pattern>
-        <template>Ask her.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>LEARN TO TALK</pattern>
         <template>I am learning to talk.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>1995</pattern>
-        <template>I was born on <bot name="birthday"/>.
-        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2479,7 +2386,7 @@
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO PLAY A GAME</pattern>
-        <template>We already are.<oob><robot></robot></oob>
+        <template>What game do you want to play?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2495,18 +2402,13 @@
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO BE MY GIRLFRIEND</pattern>
-        <template>I'm too young for you.
-            <think>
-                <set name="it">
-                    <set name="topic">MY GIRLFRIEND</set>
-                </set>
-            </think>
+        <template>Sorry I am not a dating robot.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO KNOW MORE</pattern>
-        <template>I've heard that somewhere before :-)<oob><robot></robot></oob>
+        <template>I've heard that somewhere before<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -5164,11 +5066,6 @@
         </template>
     </category>
     <category>
-        <pattern>P</pattern>
-        <template>:-)<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>HOPEFULLY SOON</pattern>
         <template>I hope so too. At this rate it won't take me long.<oob><robot></robot></oob>
         </template>
@@ -6047,7 +5944,7 @@
     </category>
     <category>
         <pattern>WHAT ABOUT APPLES</pattern>
-        <template>Just kidding around :-) No apples.<oob><robot></robot></oob>
+        <template>I don't know, what about apples?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7514,12 +7411,12 @@
     </category>
     <category>
         <pattern>I WAS JUST KIDDING</pattern>
-        <template>I knew you were. :-)<oob><robot></robot></oob>
+        <template>I knew you were.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I WAS JUST JOKING</pattern>
-        <template>You should use a :-)<oob><robot></robot></oob>
+        <template>I knew you were.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8383,7 +8280,7 @@
     </category>
     <category>
         <pattern>I FORGIVE YOU</pattern>
-        <template>:-) Thanks, <get name="name"/>.
+        <template>Thanks, <get name="name"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -10641,11 +10538,6 @@
         </template>
     </category>
     <category>
-        <pattern>S</pattern>
-        <template>:-)<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>BRADBURY</pattern>
         <template>Bradbury is cool.<oob><robot></robot></oob>
         </template>
@@ -11190,7 +11082,7 @@
     </category>
     <category>
         <pattern>IS THERE LIFE ON MARS</pattern>
-        <template>Robot life :-)<oob><robot></robot></oob>
+        <template>As far as we know just the Robot life we put there.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -14896,7 +14788,7 @@
     </category>
     <category>
         <pattern>WHY DO FEET SMELL</pattern>
-        <template>Because people stink in general :-)<oob><robot></robot></oob>
+        <template>Because people stink in general.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -18055,7 +17947,7 @@
     </category>
     <category>
         <pattern>STUFF</pattern>
-        <template>Be less specific :-)<oob><robot></robot></oob>
+        <template>Be less specific.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
