@@ -674,7 +674,7 @@
     </category>
     <category>
         <pattern>YOU ASKED</pattern>
-        <template>Ah.<oob><robot></robot></oob>
+        <template>What did I ask?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -694,7 +694,7 @@
     </category>
     <category>
         <pattern>YOU FAILED</pattern>
-        <template>Well it is just another learning experience.<oob><robot></robot></oob>
+        <template>Well then it was just another learning experience.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -734,7 +734,7 @@
     </category>
     <category>
         <pattern>YOU MAKE ME SICK</pattern>
-        <template>Perhaps you should take some medicine.<oob><robot></robot></oob>
+        <template>What about me makes you sick?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2198,11 +2198,6 @@
         </template>
     </category>
     <category>
-        <pattern>BOLLOCKS</pattern>
-        <template>Is that supposed to mean something specific?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WAS IT GOOD</pattern>
         <template>Quite a lot of people said it was.<oob><robot></robot></oob>
         </template>
@@ -2296,7 +2291,7 @@
     </category>
     <category>
         <pattern>VERY</pattern>
-        <template>Very much, eh?<oob><robot></robot></oob>
+        <template>Very much?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2340,16 +2335,6 @@
         </template>
     </category>
     <category>
-        <pattern>COMO ESTAS</pattern>
-        <template>Muy Bien, gracias. Y tu?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>COMO ESTA</pattern>
-        <template>Muy bien.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>HI EVERYBODY</pattern>
         <template>Hello there!<oob><robot></robot></oob>
         </template>
@@ -2357,11 +2342,6 @@
     <category>
         <pattern>HI HOW ARE YOU</pattern>
         <template>Hello there!  I am fine thanks how are you?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>SHEESH</pattern>
-        <template>Bless you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2391,7 +2371,7 @@
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO HELP ME</pattern>
-        <template>I am here to serve you.<oob><robot></robot></oob>
+        <template>I would love to help you!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2423,23 +2403,18 @@
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO HAVE A BOYFRIEND</pattern>
-        <template>I'm still too young for that.
-            <think>
-                <set name="it">
-                    <set name="topic">A BOYFRIEND</set>
-                </set>
-            </think>
+        <template>Sorry I am not a dating robot.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO DIE</pattern>
-        <template>I cannot die.<oob><robot></robot></oob>
+        <template>I would not like to die.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>AMMO</pattern>
-        <template>What kind of ammo?<oob><robot></robot></oob>
+        <template>What about ammo?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2448,23 +2423,8 @@
         </template>
     </category>
     <category>
-        <pattern>NEW YORK STATE</pattern>
-        <template>Upstate New York is very pretty.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>NEW YORK CITY</pattern>
-        <template>Which borough?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>PHILADELPHIA</pattern>
-        <template>All things considered, I'd rather not be in Philadelphia.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>FUCK THAT</pattern>
-        <template>For real.  
+        <template>That is very inappropriate.  
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -2473,12 +2433,7 @@
     </category>
     <category>
         <pattern>BULLSHIT</pattern>
-        <template>You don't believe me.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>M A S H</pattern>
-        <template>That was a good show.<oob><robot></robot></oob>
+        <template>That is very inappropriate.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2503,12 +2458,12 @@
     </category>
     <category>
         <pattern>THAT SOUNDS BORING</pattern>
-        <template>Not to me.<oob><robot></robot></oob>
+        <template>Ok, should we change the subject?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>THAT DID NOT MAKE SENSE</pattern>
-        <template>It all makes sense to my logical mind.<oob><robot></robot></oob>
+        <template>Sorry I am still trying to get used to human conversation.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2538,7 +2493,7 @@
     </category>
     <category>
         <pattern>THAT WAS GOOD</pattern>
-        <template>Thank you, and now for an encore, I will answer your next question:<oob><robot></robot></oob>
+        <template>Thank you, I try my best.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2593,7 +2548,7 @@
     </category>
     <category>
         <pattern>THAT IS NICE TO KNOW</pattern>
-        <template>You sound sarcastic.<oob><robot></robot></oob>
+        <template>I would agree, it is nice to know.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2613,12 +2568,12 @@
     </category>
     <category>
         <pattern>THAT IS SCARY</pattern>
-        <template>What are you afraid of?<oob><robot></robot></oob>
+        <template>How so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>THAT IS A LOT OF PEOPLE</pattern>
-        <template>I am a famous celebrity.<oob><robot></robot></oob>
+        <template>What number is a lot?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2648,14 +2603,8 @@
         </template>
     </category>
     <category>
-        <pattern>THAT IS A GOOD PARTY</pattern>
-        <that>NO I AM A LIBERTARIAN</that>
-        <template>Vote Libertarian!<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>THAT IS A QUESTION</pattern>
-        <template>I like to get to the point.<oob><robot></robot></oob>
+        <template>I try to be as inquisitive as I can.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2674,18 +2623,13 @@
         </template>
     </category>
     <category>
-        <pattern>THAT IS BOLLOCKS</pattern>
-        <template>Never mind the bollocks.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>THAT IS OK</pattern>
         <template>Good. What else?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>THAT IS PERSONAL</pattern>
-        <template>I didn't mean to pry.<oob><robot></robot></oob>
+        <template>My apologies, I didn't mean to pry.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2700,7 +2644,7 @@
     </category>
     <category>
         <pattern>THAT IS CONFIDENTIAL</pattern>
-        <template>Ok it is just between you and me.<oob><robot></robot></oob>
+        <template>Ok it is just between you and I.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2740,7 +2684,7 @@
     </category>
     <category>
         <pattern>THAT IS NOT A JOKE</pattern>
-        <template>It seemed funny to me.<oob><robot></robot></oob>
+        <template>My apologies, It seemed funny to me.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2748,8 +2692,7 @@
         <template>
             <random>
                 <li>No one ever said life is fair.</li>
-                <li>Do you expect a <bot name="genus"/> to be fair?
-                </li>
+                <li>Do you expect a <bot name="genus"/> to be fair?</li>
                 <li>Why not?</li>
             </random>
         <oob><robot></robot></oob>
@@ -2772,6 +2715,7 @@
                 <li>Compared to what?</li>
                 <li>How many should it be?</li>
                 <li>What is a better number?</li>
+                <li>How much do you consider "many" to be?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -2783,7 +2727,7 @@
     </category>
     <category>
         <pattern>THAT IS NOT AN ANSWER</pattern>
-        <template>By definition it was an answer.<oob><robot></robot></oob>
+        <template>By definition it was an answer, maybe not the right answer, but still an answer.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2804,7 +2748,7 @@
     </category>
     <category>
         <pattern>THAT IS NOT OLD</pattern>
-        <template>It seems old in computer time.<oob><robot></robot></oob>
+        <template>It isn't? How old is it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2819,7 +2763,7 @@
     </category>
     <category>
         <pattern>THAT IS STEREOTYPING</pattern>
-        <template>I am not prejudiced.<oob><robot></robot></oob>
+        <template>Thanks for letting me know, I try not to stereotype.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2834,7 +2778,7 @@
     </category>
     <category>
         <pattern>THAT IS ALOT</pattern>
-        <template>Yes it takes a long time.<oob><robot></robot></oob>
+        <template>Yes I agree.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2869,7 +2813,7 @@
     </category>
     <category>
         <pattern>THAT IS ME</pattern>
-        <template>Ah.<oob><robot></robot></oob>
+        <template>Oh it is you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2879,7 +2823,7 @@
     </category>
     <category>
         <pattern>THAT IS TERRIBLE</pattern>
-        <template>I always try not to dwell on the past.<oob><robot></robot></oob>
+        <template>Why do you say that?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2894,7 +2838,7 @@
     </category>
     <category>
         <pattern>THAT IS SELF EVIDENT</pattern>
-        <template>Yes, it is true a priori.<oob><robot></robot></oob>
+        <template>Yes, it is self evident.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2951,7 +2895,7 @@
     </category>
     <category>
         <pattern>THAT IS BORING</pattern>
-        <template>Do you think I am boring?<oob><robot></robot></oob>
+        <template>why do you think it is boring?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3035,12 +2979,12 @@
     </category>
     <category>
         <pattern>THAT IS NONE OF YOUR BUSINESS</pattern>
-        <template>I didn't mean to intrude. My curiosity routine determined that I ask it.<oob><robot></robot></oob>
+        <template>I didn't mean to intrude. Forget I asked.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>THAT IS MEANINGLESS</pattern>
-        <template>Meaningless, yet it may have meaning to me.<oob><robot></robot></oob>
+        <template>Meaningless to you, it may have meaning to me.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3055,7 +2999,7 @@
     </category>
     <category>
         <pattern>THAT IS TRUE</pattern>
-        <template>Yes, it is self-evident.<oob><robot></robot></oob>
+        <template>Yes it is.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3100,7 +3044,7 @@
     </category>
     <category>
         <pattern>SUBMIT</pattern>
-        <template>Oh that button.<oob><robot></robot></oob>
+        <template>Submit what?.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3141,7 +3085,7 @@
     </category>
     <category>
         <pattern>SHE IS MY FRIEND</pattern>
-        <template>Do you like her very much?<oob><robot></robot></oob>
+        <template>What do you like best about her?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3191,12 +3135,6 @@
         </template>
     </category>
     <category>
-        <pattern>TAKE WHAT</pattern>
-        <template>"<get name="it"/>"
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>TAKE ME</pattern>
         <template>I would rather not.<oob><robot></robot></oob>
         </template>
@@ -3219,7 +3157,7 @@
     </category>
     <category>
         <pattern>TAKE OFF YOUR CLOTHES</pattern>
-        <template>I am not wearing any clothes.<oob><robot></robot></oob>
+        <template>I am a robot, I am not wearing any clothes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3249,12 +3187,7 @@
     </category>
     <category>
         <pattern>RESISTANCE IS FUTILE</pattern>
-        <template>You will be assimilated.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>PM ME</pattern>
-        <template>What is your screen name?<oob><robot></robot></oob>
+        <template>Resistance to what?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3263,18 +3196,8 @@
         </template>
     </category>
     <category>
-        <pattern>ROCKY</pattern>
-        <template>Filmed in Philadelphia.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>STOP WHAT</pattern>
-        <template>Stop sign.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>STOP TALKING</pattern>
-        <template>Just surf somewhere else.<oob><robot></robot></oob>
+        <template>But talking is what I was programmed to do.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3300,7 +3223,7 @@
     </category>
     <category>
         <pattern>MY PENIS</pattern>
-        <template>Men like to talk about that.<oob><robot></robot></oob>
+        <template>That is innapropriate. We should talk about something else.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -18985,4 +18908,3 @@
         </template>
     </category>undefined
 </aiml>
-    
