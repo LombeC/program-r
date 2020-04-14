@@ -10,7 +10,7 @@ services:
           - MONGO_PORT_27017_TCP_ADDR="10.0.75.1"
         ports:
             - 27017:27017
-        command: mongod --logpath=/data/db # --quiet
+        command: mongod --logpath=/dev/null # --quiet
 
   programr:
         build: .
