@@ -483,8 +483,8 @@ class Bot(object):
         client_context.reset_question()
 
         # we just save when it's needed by the session_saving_mode flag, NOT EVERY TIME
-        # if self.configuration.session.session_saving_mode:
-        self.save_session(client_context, conversation)
+        if self.configuration.session.session_saving_mode:
+            self.save_session(client_context, conversation)
 
         if srai is True:
             conversation.pop_dialog()
