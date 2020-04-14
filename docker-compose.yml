@@ -5,15 +5,12 @@ services:
         image: mongo:latest
         container_name: "mongodb"
         environment:
-          - MONGO_INITDB_DATABASE=programr
-          - MONGO_INITDB_ROOT_USERNAME=root
-          - MONGO_INITDB_ROOT_PASSWORD=password
           - MONGO_DATA_DIR=/data/db
           - MONGO_LOG_DIR=/dev/null
           - MONGO_PORT_27017_TCP_ADDR="10.0.75.1"
         ports:
             - 27017:27017
-        command: mongod --logpath=/dev/null # --quiet
+        command: mongod --logpath=/data/db # --quiet
 
   programr:
         build: .
