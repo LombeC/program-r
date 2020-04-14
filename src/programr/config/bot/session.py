@@ -23,7 +23,7 @@ class BotSessionConfiguration(BaseConfigurationData):
     def load_config_section(self, configuration_file, configuration, bot_root):
         session_saving = configuration_file.get_section(self._section_name, configuration)
         if session_saving is not None:
-            self._session_saving_mode = configuration_file.get_bool_option(session_saving, "session_saving_mode", missing_value=True)
+            self._session_saving_mode = configuration_file.get_bool_option(session_saving, "session_saving_mode", missing_value=False)
             session_saving_dir = configuration_file.get_option(session_saving, "session_saving_dir", missing_value=".")
             self._session_saving_dir = self.sub_bot_root(session_saving_dir, bot_root)
 
