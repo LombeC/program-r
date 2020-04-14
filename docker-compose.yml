@@ -10,7 +10,7 @@ services:
           - MONGO_PORT_27017_TCP_ADDR="10.0.75.1"
         ports:
             - 27017:27017
-        #command: mongod --logpath=/dev/null # --quiet
+        command: mongod --logpath=/dev/null # --quiet
 
   programr:
         build: .
@@ -18,10 +18,10 @@ services:
         volumes:
           - .:/usr/src/app
         ports:
-          - 9999:9999
+          - 5000:5000
         links:
           - mongodb
         depends_on:
           - mongodb
-        command: "python ./src/programr/clients/events/majordomo/client.py --config ./bots/ryan/config.yaml --cformat yaml --logging ./bots/ryan/logging.yaml"
-        # command: "python ./src/programr/clients/restful/flask/client.py --config ./bots/ryan/config.yaml --cformat yaml --logging ./bots/ryan/logging.yaml"
+        # command: "python ./src/programr/clients/events/majordomo/client.py --config ./bots/ryan/config.yaml --cformat yaml --logging ./bots/ryan/logging.yaml"
+        command: "python ./src/programr/clients/restful/flask/client.py --config ./bots/ryan/config.yaml --cformat yaml --logging ./bots/ryan/logging.yaml"

@@ -14,6 +14,7 @@ class ConversationMongodbStorage(ConversationStorage):
         self._config = config
         if not config.name in client.list_database_names():
             YLogger.info(self, "Database doesn't exist make a new one!")
+            print("Database doesn't exist make a new one!")
 
         self.db = client[config.name]
 

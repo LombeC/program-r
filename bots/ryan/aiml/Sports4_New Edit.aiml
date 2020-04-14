@@ -399,6 +399,19 @@
     </category>
 
     <category>
+        <pattern>LORE</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            I've heard that many hockey players have superstitions about the Stanley Cup,
+                                                            like not touching it until they've won the game!
+                                                                      Would you call yourself a superstitious person?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># Legends * Lore ^</pattern>
         <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
         <template>
@@ -415,11 +428,7 @@
         <pattern># Legends ^</pattern>
         <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
         <template>
-            <srai>Legends * Lore</srai>
-
-            <oob>
-                <robot></robot>
-            </oob>
+            <srai>LORE</srai>
         </template>
     </category>
 
@@ -427,11 +436,7 @@
         <pattern># Lore ^</pattern>
         <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
         <template>
-            <srai>Legends * Lore</srai>
-
-            <oob>
-                <robot></robot>
-            </oob>
+            <srai>LORE</srai>
         </template>
     </category>
 
