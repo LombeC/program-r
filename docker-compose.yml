@@ -5,6 +5,7 @@ services:
         image: mongo:latest
         container_name: "mongodb"
         environment:
+          - MONGO_INITDB_DATABASE=programr
           - MONGO_INITDB_ROOT_USERNAME=root
           - MONGO_INITDB_ROOT_PASSWORD=password
           - MONGO_DATA_DIR=/data/db
