@@ -6,6 +6,7 @@ from datetime import datetime
 import yaml
 from programr.services.service import ServiceFactory
 
+
 class EventBotClient(BotClient):
 
     def __init__(self, id, argument_parser=None):
@@ -42,17 +43,14 @@ class EventBotClient(BotClient):
             client_context.bot.conversations[userid].set_property("session_number", session_number)
             client_context.bot.conversations[userid].set_property("username", username)
 
-            #client_context.bot.facial_expression_recognition.append(-0.1)
+            # client_context.bot.facial_expression_recognition.append(-0.1)
             self._running = self.wait_and_answer(client_context)
 
             bot.save_conversation(client_context)
 
-
-
     def initial_question(self, request, username):
-        question = "START SESSION "+str(request.session_number) + " " + username
+        question = "START SESSION " + str(request.session_number) + " " + username
         return question
-
 
     def dictionary_of_response(self, client_context, response):
         answer = ""
@@ -70,18 +68,14 @@ class EventBotClient(BotClient):
             if robot is not None and "options" in robot and "option" in robot['options']:
                 answer = robot['options']['option']
 
-
             if robot is not None and "image" in robot and "filename" in robot['image']:
                 image_filename = robot['image']['filename']
-
 
             if robot is not None and "image" in robot and "duration" in robot["image"]:
                 duration = robot["image"]["duration"]
 
-
             if robot is not None and "video" in robot and "filename" in robot["video"]:
                 video_filename = robot["video"]["filename"]
-
 
         if len(client_context.bot.sentiment.values) > 0:
             try:
@@ -94,10 +88,9 @@ class EventBotClient(BotClient):
         else:
             sentiment = None
 
-        #todo: added by hojjat, should be fixed
+        # todo: added by hojjat, should be fixed
         if sentiment is None:
             sentiment = -2.0
-
 
         return {"conversation":
                     {"question": "",
@@ -115,9 +108,9 @@ class EventBotClient(BotClient):
                     }
                 }
 
-
     def wait_and_answer(self, client_context):
-        raise NotImplementedError("You must override this and implement the logic wait for a question and send an answer back")
+        raise NotImplementedError(
+            "You must override this and implement the logic wait for a question and send an answer back")
 
     def post_run_loop(self):
         pass
@@ -145,4 +138,3 @@ class EventBotClient(BotClient):
         #
         # else:
         #     YLogger.debug(self, "noloop set to True, exiting...")
-

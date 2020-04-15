@@ -75,6 +75,7 @@ class RestBotClient(BotClient):
             #      Not sure what Rohola meant by above comment.
             print(question)
             response, options = client_context.bot.ask_question_with_options(client_context, question)
+            client_context.bot.save_conversation(client_context)
             # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
             # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)
         except Exception as e:
