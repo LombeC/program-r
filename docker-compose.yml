@@ -16,8 +16,6 @@ services:
         # command: mongod --logpath=/dev/null # --quiet
         volumes:
             - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-        command:
-            - mongo -u root -p password --authenticationDatabse programr
 
 
   programr:
