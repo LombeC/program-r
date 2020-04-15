@@ -53,8 +53,6 @@ class BotConversationsConfiguration(BaseConfigurationData):
             self._empty_on_start = configuration_file.get_bool_option(Conversations, "empty_on_start", missing_value=False)
 
             self._storage = ConversationStorageFactory.get_storage_config(self._type, config_name, configuration_file, configuration, bot_root)
-
-
         else:
             YLogger.warning(self, "'Conversations' section missing from bot config, using defaults")
 
