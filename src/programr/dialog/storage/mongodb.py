@@ -5,20 +5,24 @@ import datetime
 import pymongo
 from pymongo import MongoClient, IndexModel
 
+
 class ConversationMongodbStorage(ConversationStorage):
 
     def __init__(self, config: BotConversationsMongodbStorageConfiguration):
         ConversationStorage.__init__(self, config)
-        #client = MongoClient("10.0.75.2", 27017)
+        # client = MongoClient("10.0.75.2", 27017)
         client = MongoClient(config.host, config.port)
         self._config = config
-        if not config.name in client.list_database_names():
-            YLogger.info(self, "Database doesn't exist make a new one!")
-            print("Database doesn't exist make a new one!")
 
-        self.db = client[config.name]
+        try:
+            if not config.name in client.list_database_names():
+                YLogger.info(self, "Database doesn't exist make a new one!")
+                print("Database doesn't exist make a new one!")
 
-
+            self.db = client[config.name]
+        except:
+            YLogger.warning(self, "No Mongo Database was found. No conversation will be saved")
+            print("No Mongo Database was found. No conversation will be saved")
 
     def save_conversation(self, client_context):
         userid = client_context.userid
@@ -26,13 +30,11 @@ class ConversationMongodbStorage(ConversationStorage):
         questions = client_context.bot.conversations[userid].questions
         answers = client_context.bot.conversations[userid].answers
 
-
         try:
             last_question = questions[-1].sentences
         except Exception as e:
             YLogger.exception(self, "question sentences length is zero", e)
             raise e
-
 
         try:
             last_sentiment_value = client_context.bot.sentiment.last_sentiment_value
@@ -71,7 +73,6 @@ class ConversationMongodbStorage(ConversationStorage):
         except Exception as e:
             video_filename = None
 
-
         try:
             session_number = bot_properties["session_number"]
         except Exception as e:
@@ -94,10 +95,10 @@ class ConversationMongodbStorage(ConversationStorage):
             "sentiment": last_sentiment_value,
             "fer": last_fer_value,
             "final_sentiment_value": last_final_sentiment_value
-            },
+        },
 
             "session_info": {
-                "session_number": session_number ,
+                "session_number": session_number,
                 "username": username
             },
 
@@ -111,21 +112,18 @@ class ConversationMongodbStorage(ConversationStorage):
             }
 
         }
-        print("###################")
-        print(document)
-        self.db[self._config.collection_name].insert_one(document)
-
+        try:
+            self.db[self._config.collection_name].insert_one(document)
+        except Exception as e:
+            YLogger.error(self, e)
 
     def load_conversation(self, conversation, clientid, restore_last_topic=False):
-        #todo needs loading the whole conversation with properties
-        #needs more work
+        # todo needs loading the whole conversation with properties
+        # needs more work
         pass
 
     def empty(self):
         self.db[self._config.collection_name].drop()
-
-
-
 
     def create_conversation(self, question, answer):
         question_sentence_text = ""
@@ -138,7 +136,7 @@ class ConversationMongodbStorage(ConversationStorage):
             except Exception as e:
                 YLogger.exception(self, "Failed to get end_sign ", e)
 
-            question_sentence_text += " ".join(question_sentence.words) +end_sign
+            question_sentence_text += " ".join(question_sentence.words) + end_sign
 
         answer_sentence_text = ""
         for answer_sentence in answer:
