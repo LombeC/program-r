@@ -11,7 +11,7 @@ class ConversationMongodbStorage(ConversationStorage):
     def __init__(self, config: BotConversationsMongodbStorageConfiguration):
         ConversationStorage.__init__(self, config)
         # client = MongoClient("10.0.75.2", 27017)
-        client = MongoClient(config.host, config.port)
+        client = MongoClient(config.host, config.port, serverSelectionTimeoutMS=2000)
         self._config = config
 
         try:
