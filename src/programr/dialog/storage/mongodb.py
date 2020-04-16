@@ -59,17 +59,17 @@ class ConversationMongodbStorage(ConversationStorage):
             raise e
 
         try:
-            image_filename = answers[-1].robot['robot']['image']['filename']
+            image_filename = answers[-1].robot[0]['robot']['image']['filename']
         except Exception as e:
             image_filename = None
 
         try:
-            duration = answers[-1].robot['robot']['image']['duration']
+            duration = answers[-1].robot[0]['robot']['image']['duration']
         except Exception as e:
             duration = None
 
         try:
-            video_filename = answers[-1].robot['robot']['video']['filename']
+            video_filename = answers[-1].robot[0]['robot']['video']['filename']
         except Exception as e:
             video_filename = None
 
