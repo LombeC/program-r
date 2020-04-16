@@ -16,7 +16,6 @@
     <category>
         <pattern>RANDOM PICKUP LINE</pattern>
         <template>
-            <think>This is the default category</think>
             <random>
                 <li>Do you want to hear a joke?</li>
                 <li>You have genuine empathy. </li>
@@ -96,7 +95,13 @@
                 <li>What is your favorite sport to watch, basketball, baseball, football, or hockey?</li>
                 <li>Do you have any siblings?</li>
             </random>
-            <oob><robot><filename>This is the default</filename></robot></oob>
+            <oob>
+                <robot>
+                    <image>
+                        <filename>This is the default</filename>
+                    </image>
+                </robot>
+            </oob>
         </template>
     </category>
 </aiml>
