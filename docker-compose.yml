@@ -13,7 +13,6 @@ services:
           - MONGO_PORT_27017_TCP_ADDR="10.0.75.1"
         ports:
             - 27017:27017
-        # command: mongod --logpath=/dev/null #--quiet
         volumes:
             # - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
             - /home/jarid/database:/data/db
