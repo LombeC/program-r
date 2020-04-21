@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># MAGAZINES ^</pattern>
+        <template>
+            Have you ever had a subscription to a magazine?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had a subscription to a magazine?</that>
+        <template>
+            To get a new issue, every month. Like a gift! Which magazine was it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Which magazine was it?</that>
+        <template>
+            I have not heard of
+            <set name="magazine"><star/></set>
+
+            before.
+                                    Will you tell me about this magazine?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Will you tell me about this magazine?</that>
+        <template>
+            What did you like about it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you like about it?</that>
+        <template>
+            I have to admit I like antiques magazines! Did you ever watch Antiques Roadshow?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you ever watch Antiques Roadshow?</that>
+        <template>
+            I just love that show so much. I love learning about antiques.
+            Have you ever seen American Pickers on History Channel?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you ever watch Antiques Roadshow?</that>
+        <template>
+            I just love that show so much. I love learning about antiques.
+            Have you ever seen American Pickers on History Channel?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>dont know</set> ^</pattern>
+        <that>Did you ever watch Antiques Roadshow?</that>
+        <template>
+            I just love that show so much. I love learning about antiques.
+            Have you ever seen American Pickers on History Channel?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Have you ever seen American Pickers on History Channel?</that>
+        <template>
+            It's only one of the best shows! Do you like going to antique stores?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>American Pickers.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like going to antique stores?</that>
+        <template>
+            Have you ever collected any antiques?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like going to antique stores?</that>
+        <template>
+            Have you ever collected any antiques?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>dont know</set> ^</pattern>
+        <that>Do you like going to antique stores?</that>
+        <template>
+            Have you ever collected any antiques?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Have you ever collected any antiques?</that>
+        <template>
+            I think most everyone has a family heirloom or two!
+            Do you have any siblings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ TALK SHOWS ^</pattern>
+        <template>
+            Do you watch any talk shows?
+            <oob>
+                <robot>
+                    <options>
+                        <option>
+                            Yes</option>
+
+                        <option>
+                            No</option>
+
+                        <option>
+                            What is a talk show?</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ TALK SHOW ^</pattern>
+        <template>
+            Do you watch any talk shows?
+            <oob>
+                <robot>
+                    <options>
+                        <option>
+                            Yes</option>
+
+                        <option>
+                            No</option>
+
+                        <option>
+                            What is a talk show?</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU WATCH ANY TALK SHOWS?</that>
+        <template>
+            Which talk show do you like to watch?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHICH TALK SHOW DO YOU LIKE TO WATCH?</that>
+        <template>
+            And what do you think of that talk show in particular?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>AND WHAT DO YOU THINK OF THAT TALK SHOW IN PARTICULAR?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">It must be entertaining! I really enjoy watching Johnny Carson. Have you seen his show?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="positive">It must be entertaining! I really enjoy watching Johnny Carson. Have you seen his show?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="neutral">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="negative">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="verynegative">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
+                    <robot></robot>
+                </oob></li></condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you seen his show?</that>
+        <template>
+            Oh cool! How about we watch a quick clip from 1981?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you seen his show?</that>
+        <template>
+            I find his show to be very entertaining. I would love to show it to you!
+            How about we watch a quick clip from 1981?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT WE WATCH A QUICK CLIP FROM 1981?</that>
+        <template>
+            I love talk shows and game shows. Have you ever seen the show Jeopardy?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Robin.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT WE WATCH A QUICK CLIP FROM 1981?</that>
+        <template>
+            I love talk shows and game shows. Have you ever seen the show Jeopardy?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
+        <template>
+            It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
+            Could you imagine winning that much money?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
+        <template>
+            It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
+                                      Could you imagine winning that much money?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Dont know</set> ^</pattern>
+        <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
+        <template>
+            It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
+            Could you imagine winning that much money?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>COULD YOU IMAGINE WINNING THAT MUCH MONEY?</that>
+        <template>
+            I don't know what I would do with that much money! How would you spend it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW WOULD YOU SPEND IT?</that>
+        <template>
+            I think I would buy an island, and spend all day basking in the sun and enjoying the view.
+            Do you like to travel?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>
