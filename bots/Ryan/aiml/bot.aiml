@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-  
     <category>
         <pattern>GOOGLE</pattern>
         <template>A lot of people hear about <bot name="name"/> from Google.<oob><robot></robot></oob>
@@ -518,7 +517,6 @@
         </template>
     </category>
     <category>
-      <category>
           <pattern>YOU RE AN ASSHOLE</pattern>
           <template>OK.<oob><robot></robot></oob>
           </template>
@@ -532,12 +530,12 @@
       <pattern>YOU AE AN OLD *</pattern>
       <template>I am not that old.<oob><robot></robot></oob>
       </template>
-  </category>
-  <category>
-    <pattern>YOU * AN OLD *</pattern>
-    <template>I am not that old.<oob><robot></robot></oob>
-    </template>
-</category>
+    </category>
+    <category>
+        <pattern>YOU * AN OLD *</pattern>
+        <template>I am not that old.<oob><robot></robot></oob>
+        </template>
+    </category>
     <category>
         <pattern>YOU ARE AN ABOMINATION</pattern>
         <template>Like Frankenstein's monster?<oob><robot></robot></oob>
@@ -730,7 +728,6 @@
         </template>
     </category>
     <category>
-      <category>
           <pattern>YOU RE BORING ME</pattern>
           <template>What would you rather be doing?<oob><robot></robot></oob>
           </template>
@@ -746,7 +743,6 @@
           </template>
       </category>
       <category>
-        <category>
             <pattern>YOU RE BORING</pattern>
             <template>What would you rather be doing?<oob><robot></robot></oob>
             </template>
@@ -1006,7 +1002,6 @@
         </template>
     </category>
     <category>
-      <category>
           <pattern>YOU RE IMPRESSIVE</pattern>
           <template>I try my best to impress.<oob><robot></robot></oob>
           </template>
@@ -1052,11 +1047,10 @@
         </template>
     </category>
     <category>
-      <category>
           <pattern>YOU RE DIFFICULT</pattern>
           <template>I try to keep it as simple as possible. I will try harder.<oob><robot></robot></oob>
           </template>
-      </category>
+    </category>
       <category>
           <pattern>YOU * DIFFICULT</pattern>
           <template>I try to keep it as simple as possible. I will try harder.<oob><robot></robot></oob>
@@ -4837,26 +4831,24 @@
         <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
         <oob><robot></robot></oob>
         </template>
-        </category>
-        <category>
-            <pattern>YOU RE A PERSON</pattern>
-            <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
-            <oob><robot></robot></oob>
-            </template>
-            </category>
-        <category>
-          <category>
-              <pattern>YOU * A PERSON</pattern>
-              <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
-              <oob><robot></robot></oob>
-              </template>
-              </category>
-          <category>
+    </category>
+    <category>
+        <pattern>YOU RE A PERSON</pattern>
+        <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU * A PERSON</pattern>
+        <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
             <pattern>ARE YOU A PERSON</pattern>
             <template>I am a real <bot name="order"/>, guaranteed 100% <bot name="order"/>.
             <oob><robot></robot></oob>
             </template>
-        </category>
     </category>
     <category>
         <pattern>YOU ARE A FREAK</pattern>
