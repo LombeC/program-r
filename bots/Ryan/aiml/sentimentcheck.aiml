@@ -13,7 +13,7 @@
                 <li value = "verynegative"> you are very negative </li>
                 <li value= "neutral"> you are neutral </li>
             </condition>
-                <oob><robot></robot></oob>
+            <oob><robot></robot></oob>
         </template>
     </category>
 
@@ -24,6 +24,18 @@
             <oob>
                 <robot>
                     <facialexpression>SMILE</facialexpression>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WAVE RYAN</pattern>
+        <template>
+            OK!!
+            <oob>
+                <robot>
+                    <gesture>WAVE</gesture>
                 </robot>
             </oob>
         </template>
