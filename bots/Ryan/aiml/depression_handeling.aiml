@@ -177,6 +177,20 @@
     </category>
 
     <!--SUICIDE-->
+    <!-- WHAT WOULD A BETTER ANSWER BE?? -->
+    <category> 
+        <pattern>I WANT TO DIE</pattern>
+        <template>I don't want you to die. Please tell me. What makes you so sad?
+            <think>
+                <set name="it">
+                    <set name="want">
+                        <set name="topic">to die</set>
+                    </set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
     <category>
         <pattern>I WANT TO KILL MYSELF</pattern>
         <template>

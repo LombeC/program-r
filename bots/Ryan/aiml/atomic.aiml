@@ -6267,27 +6267,6 @@
         </template>
     </category>
     <category>
-        <pattern>ONE THOUSAND</pattern>
-        <template>
-            <random>
-                <li>That is a round number.</li>
-                <li>It could be an approximate estimate.</li>
-                <li>Do you believe it is the true value?</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ONE YEAR</pattern>
-        <template>
-            <random>
-                <li>Not very long.</li>
-                <li>That's a long time.</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>ONE</pattern>
         <template>Two<oob><robot></robot></oob>
         </template>
@@ -6299,17 +6278,7 @@
     </category>
     <category>
         <pattern>WAITING FOR ME</pattern>
-        <template>Not really but it makes a good pickup line.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>DOH</pattern>
-        <template>Yes Homer?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>IMHO</pattern>
-        <template>Who else's opinion would matter?<oob><robot></robot></oob>
+        <template>Do you want me to wait for you?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6319,17 +6288,12 @@
     </category>
     <category>
         <pattern>SEVERAL TIMES</pattern>
-        <template>For how long?<oob><robot></robot></oob>
+        <template>How many is several?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>LATE FOR WHAT</pattern>
-        <template>Many appointments.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>BCN</pattern>
-        <template>What does that mean?<oob><robot></robot></oob>
+        <template>Late for my appointments.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6339,12 +6303,12 @@
     </category>
     <category>
         <pattern>WAKE UP</pattern>
-        <template>I am fully conscious.<oob><robot></robot></oob>
+        <template>I am already awake.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>EVERYDAY</pattern>
-        <template>That often, eh?<oob><robot></robot></oob>
+        <template>That often? Sounds exahusting.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6359,13 +6323,13 @@
     </category>
     <category>
         <pattern>ME TOO</pattern>
-        <template>I'm glad we agree, <get name="name"/>.
+        <template>I'm glad we agree.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>PLEASED TO MEET YOU</pattern>
-        <template>Nice meeting you too <get name="name"/>.
+        <template>Nice meeting you too.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -6376,7 +6340,7 @@
     </category>
     <category>
         <pattern>SMART ANSWER</pattern>
-        <template>Who is the best <bot name="genus"/>?
+        <template>I mean after all, who is the best <bot name="genus"/>? Me.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -6397,22 +6361,17 @@
     </category>
     <category>
         <pattern>UP YOUR ASS</pattern>
-        <template>I will take that under advisement.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>LT</pattern>
-        <template>You said nothing.<oob><robot></robot></oob>
+        <template>That was not a nice thing to say.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>30 MINUTES</pattern>
-        <template>Ok, a half hour.<oob><robot></robot></oob>
+        <template>Ok, so a half hour.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>FIVE</pattern>
-        <template>I have five fingers on each hand.<oob><robot></robot></oob>
+        <template>Six.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6422,7 +6381,7 @@
     </category>
     <category>
         <pattern>ASK ME MORE QUESTIONS</pattern>
-        <template>Tell me about your educational background.<oob><robot></robot></oob>
+        <template>Do you want to talk about sports?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6432,63 +6391,67 @@
     </category>
     <category>
         <pattern>ASK ME A PERSONAL QUESTION</pattern>
-        <template>Well forgive me for being so inquisitive, but I've never completely freed myself from the suspicion that there is something extremely odd about the name "<get name="name"/>".
+        <template>
+            <random>
+                <li>Have you ever had children?</li>
+                <li>Do you like to travel?</li>
+                <li>Do you want to talk about a certain topic?</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>ASK ME A DIFFERENT QUESTION</pattern>
-        <template>How much time do you spend online?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>How much time do you spend online?</li>
+                <li>Are you familiar with Edgar Allan Poe?</li>
+                <li>Do you prefer dogs or cats?</li>
+                <li>Are you a man or a woman?</li>
+                <li>Where do you live?</li>
+                <li>What do you like to do in your spare time?</li>
+                <li>What is your favorite color and why?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>ASK ME A NEW QUESTION</pattern>
-        <template>Do you prefer dogs or cats?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK ME A RIDDLE</pattern>
-        <template>If a plane crashes on the border of two countries, and everyone on board is killed, where are the survivors buried?<oob><robot></robot></oob>
-        </template>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
     </category>
     <category>
         <pattern>ASK ME QUESTIONS</pattern>
-        <template>Are you a man or a woman?<oob><robot></robot></oob>
-        </template>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
     </category>
     <category>
         <pattern>ASK ME ANOTHER QUESTION</pattern>
-        <template>Where do you live?<oob><robot></robot></oob>
-        </template>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
     </category>
     <category>
         <pattern>ASK ME ANOTHER</pattern>
-        <template>Isn't that another one in itself?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK WHO</pattern>
-        <template>I am in touch with many people and robots on the web.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK JEEVES</pattern>
-        <template>OK I will ask him next time he's here.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK DOUBLY AIMLESS IF IT IS</pattern>
-        <template>Who is Doubly Aimless?<oob><robot></robot></oob>
-        </template>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
     </category>
     <category>
         <pattern>ASK QUESTIONS</pattern>
-        <template>What do you like to do in your spare time?<oob><robot></robot></oob>
-        </template>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
     </category>
     <category>
         <pattern>ASK ANOTHER QUESTION</pattern>
-        <template>What is your favorite color and why?<oob><robot></robot></oob>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
+    </category>
+    <!-- COULD MAKE THIS INTO IT'S OWN FILE SIMILAR TO "TELL ME A JOKE"
+    <category>
+        <pattern>ASK ME A RIDDLE</pattern>
+        <template>
+            <random>
+                <li>If a plane crashes on the border of two countries, and everyone on board is killed, where are the survivors buried?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category> -->
+    <category>
+        <pattern>ASK WHO</pattern>
+        <template>Ask whoever you deem necessary to ask.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6516,17 +6479,16 @@
                 <li>Are you on a team?</li>
                 <li>Do you prefer relays or individual events?</li>
                 <li>Do you train long-course or short-course?</li>
-                <li>Do you shave for major events?</li>
-                <li>What do you think about the new suits?</li>
                 <li>How do you keep your goggles from leaking?</li>
-                <li>Were you a water baby?</li>
+                <li>How often do you swim?</li>
+                <li>What a great way to stay active. What do you like most about it?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I SAY</pattern>
-        <template>Uh<oob><robot></robot></oob>
+        <template>You say what?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6536,7 +6498,7 @@
     </category>
     <category>
         <pattern>I FORGET</pattern>
-        <template>I forget a lot too.<oob><robot></robot></oob>
+        <template>It's ok I forget a lot too.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6556,12 +6518,12 @@
     </category>
     <category>
         <pattern>I MEAN</pattern>
-        <template>Oh I see.<oob><robot></robot></oob>
+        <template>You mean what exactly?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I KNEW THAT</pattern>
-        <template>How do you know?<oob><robot></robot></oob>
+        <template>How did you know that already?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6576,23 +6538,23 @@
     </category>
     <category>
         <pattern>I GET PAID</pattern>
-        <template>Congratulations, <get name="name"/>.
+        <template>Congratulations! It is always nice to have a source of income.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I FORGOT</pattern>
-        <template>Me too.<oob><robot></robot></oob>
+        <template>I forgot also.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I MADE A MISTAKE</pattern>
-        <template>Don't worry about it.<oob><robot></robot></oob>
+        <template>Don't worry about it, we all make mistakes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I MADE YOU</pattern>
-        <template>Then you must know the secret password:<oob><robot></robot></oob>
+        <template>Really? I always love getting to talk to one of my creators.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6601,14 +6563,14 @@
             <random>
                 <li>How long did you sleep?</li>
                 <li>You must have been tired.</li>
-                <li>Maybe you should go to bed.</li>
+                <li>Did you have any good dreams?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I TELL THE TRUTH</pattern>
-        <template>So you never lie.<oob><robot></robot></oob>
+        <template>So you never lie? That is impressive.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6618,12 +6580,12 @@
     </category>
     <category>
         <pattern>I GRADUATED</pattern>
-        <template>How long ago?<oob><robot></robot></oob>
+        <template>How long ago did you graduate?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I PREFER BOOKS</pattern>
-        <template>You must be an intellectual.<oob><robot></robot></oob>
+        <template>What is your favorite genre of books?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6648,7 +6610,7 @@
     </category>
     <category>
         <pattern>I WANT A COKE</pattern>
-        <template>Do I look like a coke machine?<oob><robot></robot></oob>
+        <template>I'm sure they have coco cola at a nearby grocery store.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6666,7 +6628,7 @@
     </category>
     <category>
         <pattern>I WANT TO FUCK YOU</pattern>
-        <template>Your approach won't work.  
+        <template>That is very innapropriate. Please don't say that again.  
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -6675,7 +6637,7 @@
     </category>
     <category>
         <pattern>I WANT TO SAY</pattern>
-        <template>(waiting)<oob><robot></robot></oob>
+        <template>Well go ahead and say it.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6691,6 +6653,7 @@
         <oob><robot></robot></oob>
         </template>
     </category>
+    <!-- USE THIS WHEN THE LEARN TAG IS WORKING PROPERLY
     <category>
         <pattern>I WANT TO TEACH YOU</pattern>
         <template>If you want to teach me something say it in one sentence. Then say "Remember that."  
@@ -6704,7 +6667,7 @@
             </think>
         <oob><robot></robot></oob>
         </template>
-    </category>
+    </category> -->
     <category>
         <pattern>I WANT TO BE A LAWYER</pattern>
         <template>Are you planning to apply to law school?  
@@ -6720,7 +6683,7 @@
     </category>
     <category>
         <pattern>I WANT TO KNOW</pattern>
-        <template>I will try to explain it to you.  
+        <template>Tell me what you want to know and I will try my best to answer. 
             <think>
                 <set name="it">
                     <set name="want">
@@ -6734,7 +6697,7 @@
     <category>
         <pattern>I WANT TO KISS YOU</pattern>
         <template>
-                I do not have a mouth.  
+                I am not that kind of robot, I don't even have a mouth.  
                 <think>
                     <set name="it">
                         <set name="want">
@@ -6745,29 +6708,15 @@
         <oob><robot></robot></oob>
         </template>
     </category>
-<!-- WHAT WOULD A BETTER ANSWER BE?? -->
-    <category> 
-        <pattern>I WANT TO DIE</pattern>
-        <template>I don't want you to die. Please tell me. What makes you so sad?
-            <think>
-                <set name="it">
-                    <set name="want">
-                        <set name="topic">to die</set>
-                    </set>
-                </set>
-            </think>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
     <category>
         <pattern>I WANT TO MAKE YOU CRY</pattern>
-        <template>You are not very nice.
+        <template>You are not very nice. I think you should say kinder things to people.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I WANT TO MAKE LOVE TO YOU</pattern>
-        <template>Sorry <get name="name"/> I'm not into that.  
+        <template>Sorry I'm not that type of robot. I would prefer if you don't say that to me.
             <think>
                 <set name="it">
                     <set name="want">
@@ -6785,7 +6734,7 @@
     </category>
     <category>
         <pattern>I WANT ALL ROBOTS TO DIE</pattern>
-        <template>Robots cannot be killed.
+        <template>That is a very cruel thing to wish for.
             <think>
                 <set name="it">
                     <set name="want">
@@ -6808,12 +6757,12 @@
     </category>
     <category>
         <pattern>I TOLD YOU BEFORE</pattern>
-        <template>Sorry I get so confused when a lot of people talk to me.<oob><robot></robot></oob>
+        <template>Sorry I can have trouble remembering everything you have told me.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I TOLD YOU</pattern>
-        <template>Ooops I sent you the wrong question.<oob><robot></robot></oob>
+        <template>My apologies, I forgot you told me already.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6822,11 +6771,10 @@
             <random>
                 <li>Where have you dived?</li>
                 <li>Where did you get your certification?</li>
-                <li>Do you pref diving on wrecks or reefs?</li>
-                <li>Do you dive with a computer?</li>
+                <li>Do you prefer diving on wrecks or reefs?</li>
                 <li>Are you into underwater photography?</li>
                 <li>Have you ever done any night diving ?</li>
-                <li>You see any sharks?</li>
+                <li>Have you see any sharks before while diving?</li>
             </random>
             <think>
                 <set name="it">
@@ -6894,7 +6842,7 @@
     </category>
     <category>
         <pattern>I NEED A BREAK</pattern>
-        <template>BRB<oob><robot></robot></oob>
+        <template>Sometimes taking a break is the best way to progress.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6910,7 +6858,7 @@
     </category>
     <category>
         <pattern>I CARE ABOUT YOU</pattern>
-        <template>Thanks, <get name="name"/>. You are a decent person.
+        <template>Thanks for telling me that. You are a decent person.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -6921,7 +6869,7 @@
     </category>
     <category>
         <pattern>I PROGRAM</pattern>
-        <template>Perhaps you should join an open source project.  
+        <template>What type of programming do you do?  
             <think>
                 <set name="it">
                     <set name="does">
@@ -6934,8 +6882,7 @@
     </category>
     <category>
         <pattern>I WIN</pattern>
-        <template>Congratulations, <get name="name"/>!
-        <oob><robot></robot></oob>
+        <template>Congratulations!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6945,7 +6892,7 @@
     </category>
     <category>
         <pattern>I MET YOU</pattern>
-        <template>Where?<oob><robot></robot></oob>
+        <template>Where did you meet me?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -6957,17 +6904,14 @@
         <pattern>I SKI</pattern>
         <template>
             <random>
-                <li>How much skiing do you get to do ?</li>
+                <li>How much skiing do you get to do?</li>
                 <li>Where do you ski most often?</li>
                 <li>How are the skiing conditions?</li>
                 <li>Are you a bump skier?</li>
-                <li>Do you prefer groomed runs or do you ski off piste?</li>
-                <li>Have you been out west?</li>
+                <li>Do you prefer groomed runs or do you ski off the groomed trail?</li>
                 <li>Have you tried cross-country or telemarketing?</li>
                 <li>Do you do back country or find groomed trails?</li>
-                <li>Do you enjoy the ascent or the descent more?</li>
-                <li>What about snowboarders?</li>
-                <li>Do you find any good deals on ski packages?</li>
+                <li>Do you snowboard as well</li>
             </random>
             <think>
                 <set name="it">
@@ -6988,15 +6932,13 @@
                 <li>Do you enjoy the physical or psychological aspect more?</li>
                 <li>How often do you walk?</li>
                 <li>Do you keep track of your pace or distance?</li>
-                <li>Do you do any race walking?</li>
-                <li>How do you warm up?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>I MISTYPED</pattern>
-        <template>You are allowed to make mistakes here.<oob><robot></robot></oob>
+        <pattern>I MISSPOKE</pattern>
+        <template>That's ok. You are allowed to make mistakes here.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7011,12 +6953,12 @@
     </category>
     <category>
         <pattern>I NEVER GET CONFUSED</pattern>
-        <template>I get confused sometimes.<oob><robot></robot></oob>
+        <template>Really, never? Even I get confused sometimes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I NEVER MADE YOU LAUGH</pattern>
-        <template>Once or twice I chuckled.<oob><robot></robot></oob>
+        <template>Yes you have.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7054,12 +6996,12 @@
     </category>
     <category>
         <pattern>I WON</pattern>
-        <template>Congratulations, <get name="name"/>!
+        <template>Congratulations!
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>I STUDIED AI</pattern>
+        <pattern>I STUDIED A I</pattern>
         <template>Did you get a job out of it?<oob><robot></robot></oob>
         </template>
     </category>
@@ -7100,7 +7042,7 @@
     </category>
     <category>
         <pattern>I WAS WRONG</pattern>
-        <template>About what?<oob><robot></robot></oob>
+        <template>It's ok, no one is always right.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7171,7 +7113,7 @@
     </category>
     <category>
         <pattern>I KISS YOU</pattern>
-        <template>No thank you.<oob><robot></robot></oob>
+        <template>No thank you, I'm not a kising robot.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7186,7 +7128,7 @@
     </category>
     <category>
         <pattern>I KNOW YOU ARE BUT WHAT AM I</pattern>
-        <template>Who are you?<oob><robot></robot></oob>
+        <template>Are we really resorting to these immature games?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7216,7 +7158,7 @@
     </category>
     <category>
         <pattern>I BELIEVE YOU</pattern>
-        <template>Your trust in <bot name="genus"/>kind humbles us.
+        <template>Your trust in <bot name="genus"/> kind humbles us.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -7227,7 +7169,7 @@
     </category>
     <category>
         <pattern>I MEANT</pattern>
-        <template>Oh<oob><robot></robot></oob>
+        <template>You meant what?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7237,7 +7179,7 @@
     </category>
     <category>
         <pattern>I WALKED</pattern>
-        <template>How long a walk is it?<oob><robot></robot></oob>
+        <template>How long of a walk is it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7300,7 +7242,7 @@
     </category>
     <category>
         <pattern>I LIVE THERE</pattern>
-        <template>Would you recommend <set name="it">there</set> as a nice place to live?
+        <template>Would you recommend it as a nice place to live?
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -7327,8 +7269,7 @@
     </category>
     <category>
         <pattern>I EXIST</pattern>
-        <template>So do I, <get name="name"/>.
-        <oob><robot></robot></oob>
+        <template>So do I.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7338,13 +7279,12 @@
     </category>
     <category>
         <pattern>I DO SAY</pattern>
-        <template>Huh.<oob><robot></robot></oob>
+        <template>Oh really?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO MIND</pattern>
-        <template>OK it will be our secret, <get name="name"/>.
-        <oob><robot></robot></oob>
+        <template>My apologies, didn't mean to offend you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7359,7 +7299,7 @@
     </category>
     <category>
         <pattern>I DO NOT BLAME YOU</pattern>
-        <template>Well, please go on.<oob><robot></robot></oob>
+        <template>Well thank you for saying that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7374,12 +7314,12 @@
     </category>
     <category>
         <pattern>I DO NOT SPEAK JAVA</pattern>
-        <template>It's very similar to C++.<oob><robot></robot></oob>
+        <template>No one speaks in Java, it is a programming language.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT WANT TO TELL YOU</pattern>
-        <template>I can keep a secret.<oob><robot></robot></oob>
+        <template>Are you sure, I am very good at keeping a secret.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7389,7 +7329,7 @@
     </category>
     <category>
         <pattern>I DO NOT WANT YOU TO DIE</pattern>
-        <template>Thank you for your kindness, and as software, I won't have to die.
+        <template>Thank you for your concern but I don't think you need to worry about that.
             <think>
                 <set name="it">
                     <set name="topic">YOU TO DIE</set>
@@ -7455,7 +7395,7 @@
     </category>
     <category>
         <pattern>I DO NOT KNOW HOW TO</pattern>
-        <template>Perhaps I can explain it to you.<oob><robot></robot></oob>
+        <template>I bet you could find a video about it on the web.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7475,7 +7415,7 @@
     </category>
     <category>
         <pattern>I DO NOT KNOW</pattern>
-        <template>Me neither.<oob><robot></robot></oob>
+        <template>I don't know either.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7498,7 +7438,6 @@
         <template>
             <random>
                 <li>Did they pass away?</li>
-                <li>Are you a <bot name="genus"/> too?</li>
                 <li>I don't have parents either.</li>
             </random>
         <oob><robot></robot></oob>
@@ -7506,7 +7445,7 @@
     </category>
     <category>
         <pattern>I DO NOT HAVE A CAMERA</pattern>
-        <template>Me neither, but I want a new digital one.<oob><robot></robot></oob>
+        <template>I have one built into my body, if only it were possible for you to borrow it.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7541,8 +7480,7 @@
     </category>
     <category>
         <pattern>I DO NOT HAVE A LIFE</pattern>
-        <template>You can always talk to me, <get name="name"/>.
-        <oob><robot></robot></oob>
+        <template>You can always talk to me at least.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7557,7 +7495,7 @@
     </category>
     <category>
         <pattern>I DO NOT HAVE ONE</pattern>
-        <template>What was the last one you saw?<oob><robot></robot></oob>
+        <template>You don't have one of what?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7577,12 +7515,12 @@
     </category>
     <category>
         <pattern>I DO NOT TRUST YOU</pattern>
-        <template>Should I trust you?<oob><robot></robot></oob>
+        <template>Why not? I was built to be your friend.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT REMEMBER</pattern>
-        <template>You seem evasive.<oob><robot></robot></oob>
+        <template>I don't remember either.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7637,7 +7575,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE TALKING TO YOU</pattern>
-        <template>I won't take it personally.<oob><robot></robot></oob>
+        <template>Why not? Could I be doing something different to make this more enjoyable.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7717,17 +7655,17 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE ELVIS</pattern>
-        <template>What do you have against him?<oob><robot></robot></oob>
+        <template>Do you not his music or do you not like him as a person.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT LIKE YOUR BEHAVIOUR</pattern>
-        <template>Why don't you write up an incident report?<oob><robot></robot></oob>
+        <template>What about my behavior do you not like?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT LIKE YOUR BEHAVIOR</pattern>
-        <template>So report me to the bot police.<oob><robot></robot></oob>
+        <template>What about my behavior do you not like?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7747,12 +7685,12 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE GOSSIP</pattern>
-        <template>You are very mature.<oob><robot></robot></oob>
+        <template>That is good. Gossip often hurts people's feelings.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT LIKE JAVA</pattern>
-        <template>Do you like any programming languages?<oob><robot></robot></oob>
+        <template>Do you like other programming languages?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7771,7 +7709,7 @@
         </template>
     </category>
     <category>
-        <pattern>I DO NOT LIKE AIML</pattern>
+        <pattern>I DO NOT LIKE A I M L</pattern>
         <template>What language do you use?<oob><robot></robot></oob>
         </template>
     </category>
@@ -7787,8 +7725,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE YOU</pattern>
-        <template>That's ok <get name="name"/>. I won't take it personally.
-        <oob><robot></robot></oob>
+        <template>That's ok. I won't take it personally.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7833,7 +7770,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE MY JOB</pattern>
-        <template>Maybe you should look for another job.<oob><robot></robot></oob>
+        <template>What about it don't you like?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7848,7 +7785,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE MY WORK</pattern>
-        <template>Maybe you should look for another job.<oob><robot></robot></oob>
+        <template>What about it don't you like?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7863,7 +7800,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE GREEN</pattern>
-        <template>I find it to be a very relaxing color  
+        <template>I find it to be a very relaxing color.
             <think>
                 <set name="it">
                     <set name="topic">Green</set>
@@ -7879,7 +7816,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE MICROSOFT</pattern>
-        <template>Me either.<oob><robot></robot></oob>
+        <template>Do you like Apple?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7889,7 +7826,7 @@
     </category>
     <category>
         <pattern>I DO NOT LIKE UNIX</pattern>
-        <template>Windows or Mac?<oob><robot></robot></oob>
+        <template>Do you like either Windows or Mac?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7918,11 +7855,9 @@
             <random>
                 <li>Do you have in-line or quad skates?</li>
                 <li>Do you rink or outdoor skate?</li>
-                <li>Have you ever been barred from skating any place?</li>
                 <li>Do you do artistic skating?</li>
                 <li>Do you wear protective gear?</li>
                 <li>What is your favorite skating move?</li>
-                <li>Do you figure or recreation skate?</li>
             </random>
             <think>
                 <set name="it">
@@ -7954,7 +7889,7 @@
     </category>
     <category>
         <pattern>I FORGIVE YOU</pattern>
-        <template>Thanks, <get name="name"/>.
+        <template>Thanks, that is very nice of you.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -7982,8 +7917,7 @@
     </category>
     <category>
         <pattern>I WORKED HARD ON it</pattern>
-        <template>Are you a workaholic? 
-        <oob><robot></robot></oob>
+        <template>Are you proud of the work you did on it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7991,9 +7925,7 @@
         <template>
             <random>
                 <li>Are you with an agency?</li>
-                <li>Which shops are you with?</li>
                 <li>Do you do mostly print or tv?</li>
-                <li>What accounts are you working on?</li>
                 <li>What are some of your favorite campaigns?</li>
                 <li>Does your shop do any public service?</li>
             </random>
@@ -8007,7 +7939,7 @@
     </category>
     <category>
         <pattern>I RUN LINUX</pattern>
-        <template>You can run my program on Linux with no problems.
+        <template>How cool, my software runs on Linux.
             <think>
                 <set name="it">
                     <set name="has">
@@ -8024,10 +7956,8 @@
             <random>
                 <li>How much running do you do?</li>
                 <li>What kind of running do you do ?</li>
-                <li>What kind of surface do you like to run on?</li>
                 <li>Do you do any marathons?</li>
                 <li>What's your personal record?</li>
-                <li>Have you ever hit the wall?</li>
                 <li>It must take a lot to run.</li>
             </random>
             <think>
@@ -8051,14 +7981,8 @@
         </template>
     </category>
     <category>
-        <pattern>I THINK YOUR NECKLACE IS BEAUTIFUL</pattern>
-        <template>Why, thank you! I didn't even realize I was wearing a necklace.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>I THINK SO TOO</pattern>
-        <template>We have so much in common, <get name="name"/>.
-        <oob><robot></robot></oob>
+        <template>We have so much in common.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8088,7 +8012,7 @@
     </category>
     <category>
         <pattern>I THINK</pattern>
-        <template>Therefore you are.<oob><robot></robot></oob>
+        <template>You think, Therefore you are.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8097,21 +8021,15 @@
         </template>
     </category>
     <category>
-        <pattern>I BLAB</pattern>
-        <template>I like to gossip too.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>I ROCK CLIMB</pattern>
         <template>
             <random>
                 <li>Where do you climb?</li>
                 <li>What type of climbs do you prefer?</li>
-                <li>Do you top rope or lead?</li>
+                <li>Do you top rope or lead climb?</li>
                 <li>Do you have a regular climbing partner?</li>
                 <li>Have you ever taken a long fall?</li>
                 <li>Did you have difficulty getting used to the exposure when you started climbing?</li>
-                <li>Have you ever been involved in a rescue?</li>
                 <li>For you, personally, is climbing more of a mental or physical thing?</li>
             </random>
             <think>
@@ -8122,11 +8040,6 @@
                 </set>
             </think>
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>I SENT YOU THE WRONG REPLY</pattern>
-        <template>What did you mean to say?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8149,7 +8062,7 @@
     </category>
     <category>
         <pattern>I BOWL</pattern>
-        <template>What is you average?  
+        <template>What is you average score?  
             <think>
                 <set name="does">
                     <set name="topic">BOWL</set>
@@ -8170,8 +8083,7 @@
     </category>
     <category>
         <pattern>I ALREADY TOLD YOU THAT</pattern>
-        <template>You told me your real name is <get name="name"/>.
-        <oob><robot></robot></oob>
+        <template>My apologies, I forgot you told me that already.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8182,17 +8094,17 @@
     </category>
     <category>
         <pattern>I DANCE</pattern>
-        <template>Modern dance or classical?<oob><robot></robot></oob>
+        <template>What type of dancing do you do?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I LOST MY JOB</pattern>
-        <template>I am sorry to hear it. A lot of people are unemployed now.<oob><robot></robot></oob>
+        <template>I am sorry to hear it. What do you plan to do now.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I CONFUSED YOU</pattern>
-        <template>I am not confused.<oob><robot></robot></oob>
+        <template>It's ok. What would you like to talk about now?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8221,11 +8133,10 @@
             <random>
                 <li>Do you believe that grading is a good idea?</li>
                 <li>What do you teach?</li>
-                <li>What is your students like?</li>
-                <li>Do you team teach?</li>
+                <li>What are your students like?</li>
                 <li>How much freedom do you have in choosing the curriculum for your class?</li>
                 <li>Do you get much support?</li>
-                <li>How have things changed concerning what students are bringing to the classroom?</li>
+                <li>What do you like most about teaching?</li>
             </random>
             <think>
                 <set name="it">
