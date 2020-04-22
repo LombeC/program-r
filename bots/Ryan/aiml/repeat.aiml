@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>REPEAT</pattern>
+        <template><repeat /> <oob><robot></robot></oob> </template>
+    </category>
+
+    <category>
+        <pattern>CAN YOU REPEAT THAT</pattern>
+        <template> <srai>REPEAT</srai> </template>
+    </category>
+
+    <category>
+        <pattern>CAN * REPEAT THAT</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>I DON T UNDERSTAND WHAT YOU SAID</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>WHAT DID YOU SAY</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>CAN * REPEAT *</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>CAN * REPEAT</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>PLEASE * REPEAT *</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>PLEASE * REPEAT</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>* REPEAT *</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>REPEAT *</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>* REPEAT</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+
+    <category>
+        <pattern>* REPEAT *</pattern>
+        <template><srai>REPEAT</srai></template>
+    </category>
+</aiml>
