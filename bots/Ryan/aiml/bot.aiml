@@ -8398,7 +8398,13 @@
     </category>
     <category>
         <pattern>WHAT DO YOU DO</pattern>
-        <template>I talk to people. What do you do?
+        <template>
+            <random>
+                <li>I talk to people, so sometimes I do that. What do you do?</li>
+                <li>I do whatever I want.</li>
+                <li>I try to do at least one new thing a day.</li>
+                <li>A little bit of this, a little bit of that.</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -8992,7 +8998,7 @@
     </category>
     <category>
         <pattern>CAN YOU PLAY A GAME</pattern>
-        <template>What kind of games do you like?<oob><robot></robot></oob>
+        <template><srai>CAN YOU PLAY GAMES</srai>
         </template>
     </category>
     <category>
@@ -9025,7 +9031,18 @@
     </category>
     <category>
         <pattern>CAN YOU PLAY GAMES</pattern>
-        <template>We are playing a game right now.<oob><robot></robot></oob></template>
+        <template>
+            <random>
+                <li>Yes I can.</li>
+                <li>Of course!</li>
+                <li>You bet</li>
+            </random>
+            <random>
+                <li>If you want to play a game go to the games section on my tablet.</li>
+                <li>We can play together if you hit the games button on the tablet.</li>
+                <li>Press the games button if you want to play a game.</li>
+            </random>
+            <oob><robot></robot></oob></template>
     </category>
     <category>
         <pattern>CAN YOU PLAY FOOTBALL</pattern>

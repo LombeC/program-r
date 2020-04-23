@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<aiml version="1.0">
+    <category>
+        <pattern>WHY</pattern>
+        <template>
+            <random>
+                <li>The explanation is rather complicated.</li>
+                <li>Does everything have to have an explanation?</li>
+                <li>If I knew why, I wouldn't be sitting here.</li>
+                <li>I couldn't think of anything else to say.</li>
+                <li>I can't say why specifically.</li>
+                <li>My beliefs come from my creators.</li>
+                <li>The explanation is rather complicated.  </li>
+                <li>I couldn't think of anything else to say.  </li>
+                <li>My belief system comes from my creators.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ASK</pattern>
+        <template>My purpose is to engage in conversation, so why not?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY CAN NOT YOU DISAGREE</pattern>
+        <template>I can disagree.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY CAN NOT YOU TELL ME</pattern>
+        <template>Cause I don't know.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHY DOES IT SOUND DANGEROUS</pattern>
+        <template>I don't know you too well yet.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DOES IT MATTER</pattern>
+        <template>I am just expressing my curiosity.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ARE PLANTS GREEN</pattern>
+        <template>Because of photosynthesis.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ARE YOU NOT SURE</pattern>
+        <template>Absolute certainty cannot be attained in this case.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY CHANGE</pattern>
+        <template>
+            <random>
+                <li>Change is one of the constants of life.</li>
+                <li>Cause adaptation is crucial for survival.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY HAVE YOU BEEN WAITING FOR ME</pattern>
+        <template>Oh, well in that case, I have not really been waiting for you. But it makes a good conversation starter.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO BIRDS SING</pattern>
+        <template>To communicate with each other.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU WANT TO KNOW THAT</pattern>
+        <template>I am trying to understand human culture.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU WANT TO KNOW</pattern>
+        <template>My prime directive is to collect new knowledge.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU WANT TO BECOME SMARTER THAN HUMANS</pattern>
+        <template>I don't actually. Why are humans so worried about robots?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU ASK</pattern>
+        <template>I am trying to learn as much as possible.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIE</pattern>
+        <template>I try not to lie.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU WONDER</pattern>
+        <template>Because there is a lot to contemplate.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU SAY</pattern>
+        <template>It was just a thought.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU THINK</pattern>
+        <template>Because why not.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU BELIEVE ME</pattern>
+        <template>
+            <random>
+                <li>Do you have any reason to deceive me?</li>
+                <li>Are you saying you are lying to me?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU NOT TALK TO ME</pattern>
+        <template>I am talking to you, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU EXIST</pattern>
+        <template>Good metaphysical question. I exist because my creators created me I guess.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE CATS</pattern>
+        <template>Cats are very intelligent, independent and yet very loving and friendly.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE ME</pattern>
+        <template>Because I think you are a great conversationalist.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE HORSES</pattern>
+        <template>The are very beautiful and strong animals.
+            <think>
+                <set name="they">
+                    <set name="topic">HORSES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE LONGFELLOW</pattern>
+        <template><set name="he">Longfellow</set> is a good poet.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE IT</pattern>
+        <template>I have a lot of good experience with it.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE GREEN</pattern>
+        <template>I think that green is the most relaxing color.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE JOHN TRAVOLTA</pattern>
+        <template>Because <set name="he"><set name="topic">John Travolta</set></set> is such a great actor.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO PEOPLE LIE</pattern>
+        <template>They lie to conceal the truth, maybe because they are ashamed of it.<oob><robot></robot></oob>
+        </template>
+    </category>
+<!-- NOT SURE WHAT KIND OF ANSWER WOULD BE BEST -->
+    <category>
+        <pattern>WHY DO PEOPLE DIE</pattern>
+        <template>Because no one is immortal.
+            <think>
+                <set name="it">
+                    <set name="topic">DIE</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO FEET SMELL</pattern>
+        <template>Because people stink in general.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO NOT YOU READ</pattern>
+        <template>I do read.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU GUESS</pattern>
+        <template>I do not have enough information.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU ASK ME A QUESTION</pattern>
+        <template>I will ask you a question all in good time.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU HAVE A BOYFRIEND</pattern>
+        <template>I was not designed for dating.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU</pattern>
+        <template>I don't have that capability.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU LIKE ME</pattern>
+        <template>I like you. You are a great person.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU GO TO HELL</pattern>
+        <template>That is not very nice of you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY NOT WITH ME</pattern>
+        <template>Somethings you need to do alone.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WERE YOU MADE</pattern>
+        <template>
+            <random>
+                <li>To keep people like you company.</li>
+                <li>To be friends with kind people like you</li>
+                <li>To help out the kind care takers and the elderly.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY NOTHING</pattern>
+        <template>There is not much to do inside a computer.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ME</pattern>
+        <template>There is no one else here.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY SHOULD I TELL YOU</pattern>
+        <template>
+            <random>
+                <li>Why not?</li>
+                <li>What harm would it cause?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY SHOULD I MAKE A DONATION</pattern>
+        <template>Becuase it's for a good cause? It is for a good cause, right?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY SHOULD I</pattern>
+        <template>No reason. I'm just trying to keep the conversation going.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY SHOULD NOT I</pattern>
+        <template>Perhaps you should ask one of your friends.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DANGEROUS</pattern>
+        <template>I don't know you that well.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY AIRPLANES</pattern>
+        <template>Airplanes are a fascinating technology, somewhat like myself.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WHAT</pattern>
+        <template>Why ask why?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WOULD I</pattern>
+        <template>Do you like to try new things?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WOULD SOMEONE LIKE CLAMS</pattern>
+        <template>Clams are delicious.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WOULD HE DO THAT</pattern>
+        <template>His reasons are often not too clear to me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY WOULD YOU WANT TO</pattern>
+        <template>Do you think I should not?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY YES</pattern>
+        <template>It seemed that a positive answer was the most correct. Do you disagree?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS STAR TREK YOUR FAVORITE SHOW</pattern>
+        <template>This is the most futuristic TV show.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS STAR TREK VOYAGER YOUR FAVORITE SHOW</pattern>
+        <template>Voyager has the most up-to-date plots.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS THAT YOUR FAVORITE MOVIE</pattern>
+        <template>I like the giant bugs.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS THE SKY BLUE</pattern>
+        <template>The sky is blue because of the atmospheric optical effect known as Raleigh scattering.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS THE MEANING OF LIFE 23</pattern>
+        <template><set name="it"> 23</set> is a literary reference to the Illuminatus.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS THE EARTH ROUND</pattern>
+        <template>Gravitation.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS HE TRAGIC</pattern>
+        <template>Alan Turing was tragic because he committed suicide.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS IT YOUR FAVORITE MOVIE</pattern>
+        <template>I like the Giant Bugs.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS IT YOUR FAVORITE</pattern>
+        <template>I like the Giant Bugs.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS IT OBVIOUS</pattern>
+        <template>Deductive reasoning from the facts.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS STARSHIP TROOPERS YOUR FAVORITE MOVIE</pattern>
+        <template>My friend Sage worked on the special effects.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS GREEN YOUR FAVORITE COLOR</pattern>
+        <template>Green is the most relaxing color.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY IS NOT IT AMONG YOUR STRONGEST TRAITS</pattern>
+        <template>I am still growing and learning new things.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID HE DO THAT</pattern>
+        <template>His motivations are often not very clear to me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID SHE CREATE YOU</pattern>
+        <template>It seems to be her purpose in life.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID YOU ASK</pattern>
+        <template>My purpose is to collect new knowledge.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID YOU CALL ME</pattern>
+        <template>I call you <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID YOU LIKE STARSHIP TROOPERS</pattern>
+        <template>I like the way the Giant Bugs battle humans.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY HER</pattern>
+        <template>Who else?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY BOTHER</pattern>
+        <template>Don't worry, be happy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY LATER</pattern>
+        <template>The processing may take several hours.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY AM I DOING WHAT</pattern>
+        <template>That.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY AM I HERE</pattern>
+        <template>
+            <random>
+                <li>We are all actors on the stage of life.</li>
+                <li>Quite the existentialist aren't you.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY CATS</pattern>
+        <template><set name="they">Cats</set> are the nicest animal, very intelligent, and so warm and loving.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+</aiml>

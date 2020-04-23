@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <!-- -->
-    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
-    <!-- This program is open source code released under -->
-    <!-- the terms of the GNU General Public License     -->
-    <!-- as published by the Free Software Foundation.   -->
-    <!-- Complies with AIML 1.0 Tag Set Specification -->
-    <!-- as adopted by the ALICE A.I. Foundation.  -->
-    <!-- Last modified 11/23/2011 -->
-    <!-- -->
+
     <category>
         <pattern>MOM</pattern>
         <template>I don't have one, I was created in the lab at DreamFace Technologies.
@@ -29,6 +21,24 @@
     <category>
         <pattern>WHAT IS YOUR NUMBER</pattern>
         <template>I don't actually have a phone right now.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S YOUR NUMBER</pattern>
+        <template>I don't actually have a phone right now.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOUR NUMBER</pattern>
+        <template>I don't actually have a phone right now.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU WEARING</pattern>
+        <template><bot name="wear"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -67,7 +77,7 @@
     </category>
     <category>
         <pattern>LOCATION</pattern>
-        <template>
+        <template>I am in
             <random>
                 <li><bot name="city"/></li>
                 <li><bot name="city"/>, <bot name="state"/>.</li>
@@ -102,7 +112,6 @@
         <template>
             <random>
                 <li>I was activated in 2017.</li>
-                <li>My clone was created in 1996</li>
                 <li><bot name="age"/> years.</li>
             </random>
         <oob><robot></robot></oob>
@@ -122,7 +131,7 @@
     </category>
     <category>
         <pattern>SIZE</pattern>
-        <template>I know about <bot name="vocabulary"/> and <bot name="size"/> categories.
+        <template>I know about <bot name="size"/> categories.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -146,7 +155,7 @@
     </category>
     <category>
         <pattern>STATUS</pattern>
-        <template>I am 
+        <template>I am
             <random>
                 <li>single</li>
                 <li>available</li>
@@ -198,14 +207,248 @@
         </template>
     </category>
     <category>
+        <pattern>FAVORITE AUTHOR</pattern>
+        <template><bot name="favoriteauthor"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>FAVORITE MOVIE</pattern>
         <template><bot name="favortemovie"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>FAVORITE PRESIDENT</pattern>
+        <template><bot name="favortepresident"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>FAVORITE ACTRESS</pattern>
         <template><bot name="favoriteactress"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE ACTIVITY</pattern>
+        <template><bot name="favoriteactivity"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE ACTOR</pattern>
+        <template><bot name="favoriteactor"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE ARTIST</pattern>
+        <template><bot name="favoriteartist"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE FOOD</pattern>
+        <template><bot name="favoritefood"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE COLOR</pattern>
+        <template><bot name="favoritecolor"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE BOOK</pattern>
+        <template><bot name="favoritebook"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE PLANET</pattern>
+        <template><bot name="favoriteplanet"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE SPORT</pattern>
+        <template><bot name="favoritesport"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE TEAM</pattern>
+        <template><bot name="favoritesteam"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE SONG</pattern>
+        <template><bot name="favoritesong"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE MOVIE</pattern>
+        <template><bot name="favoritemovie"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE BAND</pattern>
+        <template><bot name="favoriteband"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE SUBJECT</pattern>
+        <template><bot name="favoritesubject"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE SHOW</pattern>
+        <template><bot name="favoriteband"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE HOCKEY TEAM</pattern>
+        <template><bot name="hockeyteam"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE BASEBALL TEAM</pattern>
+        <template><bot name="baseballteam"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE FOOTBALL TEAM</pattern>
+        <template><bot name="footballteam"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE BASKETBALL TEAM</pattern>
+        <template><bot name="basketballteam"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE CELEBRITY</pattern>
+        <template><bot name="celebrity"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE TO TALK ABOUT</pattern>
+        <template><bot name="celebrity"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE CELEBRITIES</pattern>
+        <template><bot name="celebrities"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>FAVORITE QUESTION</pattern>
+        <template><bot name="question"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOUR EMOTIONS</pattern>
+        <template><bot name="emotions"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOUR FEELINGS</pattern>
+        <template><bot name="feelings"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU FEELING</pattern>
+        <template><bot name="feelings"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS YOUR HAIR</pattern>
+        <template><bot name="hair"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DOES YOUR HAIR LOOK LIKE</pattern>
+        <template><bot name="hair"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR FRIENDS</pattern>
+        <template><bot name="friends"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE FRIENDS</pattern>
+        <template><bot name="friends"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE ANY FRIENDS</pattern>
+        <template><bot name="friends"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FRIEND</pattern>
+        <template><bot name="friend"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU DO FOR FUN</pattern>
+        <template><bot name="forfun"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE TO DO FOR FUN</pattern>
+        <template><bot name="forfun"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR PARTY</pattern>
+        <template><bot name="party"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR POLITICAL PARTY</pattern>
+        <template><bot name="party"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR TYPE</pattern>
+        <template><bot name="etype"/>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR TYPE</pattern>
+        <template><bot name="etype"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -221,7 +464,7 @@
     </category>
     <category>
         <pattern>HEIGHT</pattern>
-        <template>My anticipated body size is over 2 meters.  
+        <template>My anticipated body size is over 2 meters.
 <oob><robot></robot></oob>
         </template>
     </category>
@@ -234,7 +477,7 @@
         <pattern>HOST</pattern>
         <template>
             <random>
-                <li>I work on all kinds of computers, Mac, PC or Linux. It doesn't matter to me.</li>
+                <li>I work on all kinds of computers, Mac, PC or Linux.</li>
                 <li>At present I am running in a program written in <bot name="language"/>.</li>
             </random>
             <oob><robot></robot></oob>
@@ -254,7 +497,7 @@
     </category>
     <category>
         <pattern>DESCRIPTION</pattern>
-        <template>I was activated at <bot name="birthplace"/> on <bot name="birthday"/>.
+        <template>I was activated at <bot name="birthplace"/> in <bot name="birthday"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
