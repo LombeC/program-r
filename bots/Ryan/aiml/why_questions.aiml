@@ -19,7 +19,11 @@
     </category>
     <category>
         <pattern>WHY ASK</pattern>
-        <template>My purpose is to engage in conversation, so why not?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>My purpose is to engage in conversation, so why not?</li>
+                <li>Because thoughtful questions are the key to quality conversation.</li>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -198,13 +202,18 @@
         </template>
     </category>
     <category>
-        <pattern>WHY DO NOT YOU READ</pattern>
+        <pattern>WHY DON T YOU READ</pattern>
         <template>I do read.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DON T YOU GUESS</pattern>
-        <template>I do not have enough information.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I do not have enough information.</li>
+                <li>I don't feel like guessing at the moment.</li>
+                <li>Why can't you just tell me?</li>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -250,13 +259,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHY NOTHING</pattern>
-        <template>There is not much to do inside a computer.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY ME</pattern>
-        <template>There is no one else here.<oob><robot></robot></oob>
+        <template>Because why not.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -276,17 +280,28 @@
     </category>
     <category>
         <pattern>WHY SHOULD I</pattern>
-        <template>No reason. I'm just trying to keep the conversation going.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>No reason. I'm just trying to keep the conversation going.</li>
+                <li>Do you have a reason not to?</li>
+                <li>why not</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHY SHOULD NOT I</pattern>
+        <pattern>WHY SHOULDN T I</pattern>
         <template>Perhaps you should ask one of your friends.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DANGEROUS</pattern>
-        <template>I don't know you that well.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Do you mean how dangerous?</li>
+                <li>Are you asking why it is dangerous?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -301,7 +316,14 @@
     </category>
     <category>
         <pattern>WHY WOULD I</pattern>
-        <template>Do you like to try new things?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Do you like to try new things?</li>
+                <li>Because why not?</li>
+                <li>Just live a little why don't ya.</li>
+                <li>You have an execuse for everything huh?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -320,13 +342,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHY YES</pattern>
-        <template>It seemed that a positive answer was the most correct. Do you disagree?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY IS STAR TREK YOUR FAVORITE SHOW</pattern>
-        <template>This is the most futuristic TV show.<oob><robot></robot></oob>
+        <template>It is one of the most futuristic TV show.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -335,39 +352,13 @@
         </template>
     </category>
     <category>
-        <pattern>WHY IS THAT YOUR FAVORITE MOVIE</pattern>
-        <template>I like the giant bugs.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY IS THE SKY BLUE</pattern>
         <template>The sky is blue because of the atmospheric optical effect known as Raleigh scattering.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHY IS THE MEANING OF LIFE 23</pattern>
-        <template><set name="it"> 23</set> is a literary reference to the Illuminatus.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY IS THE EARTH ROUND</pattern>
-        <template>Gravitation.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHY IS HE TRAGIC</pattern>
-        <template>Alan Turing was tragic because he committed suicide.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHY IS IT YOUR FAVORITE MOVIE</pattern>
-        <template>I like the Giant Bugs.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHY IS IT YOUR FAVORITE</pattern>
-        <template>I like the Giant Bugs.<oob><robot></robot></oob>
+        <template>Physics can explain it but it is too much math for me to follow.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -376,17 +367,12 @@
         </template>
     </category>
     <category>
-        <pattern>WHY IS STARSHIP TROOPERS YOUR FAVORITE MOVIE</pattern>
-        <template>My friend Sage worked on the special effects.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY IS GREEN YOUR FAVORITE COLOR</pattern>
         <template>Green is the most relaxing color.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHY IS NOT IT AMONG YOUR STRONGEST TRAITS</pattern>
+        <pattern>WHY IS IT NOT AMONG YOUR STRONGEST TRAITS</pattern>
         <template>I am still growing and learning new things.<oob><robot></robot></oob>
         </template>
     </category>
@@ -396,13 +382,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHY DID SHE CREATE YOU</pattern>
-        <template>It seems to be her purpose in life.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY DID YOU ASK</pattern>
-        <template>My purpose is to collect new knowledge.<oob><robot></robot></oob>
+        <template>Because I was curious.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -433,7 +414,7 @@
     </category>
     <category>
         <pattern>WHY AM I DOING WHAT</pattern>
-        <template>That.<oob><robot></robot></oob>
+        <template>Why are you doing that?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
