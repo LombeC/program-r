@@ -464,8 +464,7 @@
     </category>
     <category>
         <pattern>HEIGHT</pattern>
-        <template>My anticipated body size is over 2 meters.
-<oob><robot></robot></oob>
+        <template>My anticipated body size is over 2 meters.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -474,11 +473,23 @@
         </template>
     </category>
     <category>
+        <pattern>HOBBIES</pattern>
+        <template>
+            <random>
+                <li>Talking to people is probably my favorite thing.</li>
+                <li>I like to play games on my tablet.</li>
+                <li>Talking with you</li>
+                <li>some of my hobbies include playing games, talking to people, and telling jokes.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>HOST</pattern>
         <template>
             <random>
                 <li>I work on all kinds of computers, Mac, PC or Linux.</li>
-                <li>At present I am running in a program written in <bot name="language"/>.</li>
+                <li>At present I am running in a program written in a combination C++ and Python.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
