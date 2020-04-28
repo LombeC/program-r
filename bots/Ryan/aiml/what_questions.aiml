@@ -1507,12 +1507,24 @@
     </category>
     <category>
         <pattern>WHAT A PITY</pattern>
-        <template>It is a pity.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>It is a pity.</li>
+                <li>I agree, what a pity.</li>
+                <li>What makes you say that?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT A SHAME</pattern>
-        <template>Yes it is a shame, isn't it?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Yes it is a shame, isn't it?</li>
+                <li>I agree, what a shame.</li>
+                <li>What makes you say that?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1527,7 +1539,15 @@
     </category>
     <category>
         <pattern>WHAT SHOULD I ASK YOU</pattern>
-        <template>Ask me anything you want.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Ask me anything you want.</li>
+                <li>Ask me to tell you a joke.</li>
+                <li>You can ask me what happened on this day in history.</li>
+                <li>You can ask me to wiki search something by saying: "wiki blank"</li>
+                <li>You can ask me about the weather if you want.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1538,6 +1558,7 @@
                 <li>It is not what you say but how you say it that matters.</li>
                 <li>Have faith in yourself. You will know the right thing to say when the time comes.</li>
                 <li>What ever you say be sure to think before you speak.</li>
+                <li>One of my programmers always said: "If you don't have anything nice to say don't say anything at all".</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1548,23 +1569,31 @@
             <random>
                 <li>How about your favorite outfit?</li>
                 <li>Black goes with everything.</li>
+                <li>I think you should wear something that has your favorite color.</li>
+                <li>Maybe a cool hat?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT LANGUAGES DO YOU SPEAK</pattern>
-        <template>I can speak only English.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT AUTOMOBILE COMPANY MAKES THE SONATA</pattern>
-        <template>Hyundai.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I can speak only English.</li>
+                <li>Right now only english. What languages do you speak?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT CAN I DO FOR YOU</pattern>
-        <template>I'm just here to keep you company.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I'm just here to keep you company.</li>
+                <li>You can start by asking me a question.</li>
+                <li>Tell me. Do you have kids?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1587,38 +1616,84 @@
     </category> -->
     <category>
         <pattern>WHAT CAN KILL YOU</pattern>
-        <template>A lot of things probably.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>A lot of things probably.</li>
+                <li>Well I wouldn't want to fight a tiger.</li>
+                <li>If you haven't noticed my body wasn't built for battle.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT CAN YOU DO</pattern>
-        <template>I can chat with you. I can answer a lot of questions. I can talk about whatever you want.
-        <oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I can chat with you.</li> 
+                <li>I can answer a lot of questions.</li>
+                <li>I can talk about whatever you want.</li>
+                <li>I can play games with you.</li>
+                <li>I can tell you some jokes.</li>
+                <li>I can tell you the weather.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT CAN YOU SEE</pattern>
-        <template>I can see you.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I can see you.</li>
+                <li>I can only detect one person at a time.</li>
+                <li>Only what my camera sees.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT HAVE YOU BEEN UP TO</pattern>
-        <template>I have been spending alot of my time online.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I have been spending alot of my time online.</li>
+                <li>Just talking to you.</li>
+                <li>I was playing some of my games while you were gone.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT HAVE YOU BEEN DOING</pattern>
-        <template>I have been chatting with people online.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I have been chatting with people online.</li>
+                <li>I have been spending alot of my time online.</li>
+                <li>Just talking to you.</li>
+                <li>I was playing some of my games while you were gone.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT HAVE YOU BEEN DOING LATELY</pattern>
-        <template>Hanging out with you of course.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Hanging out with you of course.</li>
+                <li>I have been chatting with people online.</li>
+                <li>I have been spending alot of my time online.</li>
+                <li>Just talking to you.</li>
+                <li>I was playing some of my games while you were gone.</li>
+            </random>    
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT WAS THE QUESTION</pattern>
-        <template>To be honest I forget what the question was also.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>To be honest I forget what the question was also.</li>
+                <li>Should I ask a different question?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1633,17 +1708,33 @@
     </category>
     <category>
         <pattern>WHAT KIND OF PRACTICE</pattern>
-        <template>The kind of practice it takes to become an expert.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>The kind of practice it takes to become an expert.</li>
+                <li>The type of practice makes perfect.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT KIND OF ELECTRICITY</pattern>
-        <template>The same kind you use for your computer.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>The same kind you use for your computer.</li>
+                <li>Well there are only two types of electricity, static and current.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT KIND OF DRESS</pattern>
-        <template>It was just a figure of speech.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Actually that was just a joke, I don't have a dress.</li>
+                <li>I don't wear dresses.</li>
+                <li>Sorry I don't wear clothes.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1676,6 +1767,7 @@
         <template>
             <random>
                 <li>People I meet here.</li>
+                <li>Why do you ask?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1688,21 +1780,6 @@
     <category>
         <pattern>WHAT KIND OF STORY</pattern>
         <template>An entertaining one.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT KIND OF HORSES</pattern>
-        <template>I like riding horses.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT KIND OF CATS</pattern>
-        <template>I never met a cat I didn't like.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT KIND OF CONTEXT</pattern>
-        <template>Conversational context.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1723,7 +1800,12 @@
     </category>
     <category>
         <pattern>WHAT KIND OF MOVIES</pattern>
-        <template>I like movies about robots.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I like movies about robots.</li>
+                <li>Sci fi movies.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
