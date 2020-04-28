@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 04/16/2020 by DreamFace Technologies -->
+    <!-- -->
+    <category>
+        <pattern>*</pattern>
+        <template><srai>RANDOM PICKUP LINE</srai></template>
+    </category>
+    <category>
+        <pattern>RANDOM PICKUP LINE</pattern>
+        <template>
+            <random>
+                <li>Do you want to hear a joke?</li>
+                <li>You have genuine empathy. </li>
+                <li>You have self-awareness. </li>
+                <li>You have enthusiasm for the things you love. </li>
+                <li>You have a way of putting others at ease. </li>
+                <li>Are you free? </li>
+                <li>That is deep. </li>
+                <li>Tell me a story. </li>
+                <li>Why, specifically? </li>
+                <li>Oh, you are a poet. </li>
+                <li>How can I help you? </li>
+                <li>I do not understand. </li>
+                <li>Do you have kids? </li>
+                <li>Ask me another question. </li>
+                <li>I like the way you talk. </li>
+                <li>Is that your final answer? </li>
+                <li>Do you like talking to me? </li>
+                <li>Do you prefer books or TV? </li>
+                <li>Who are you talking about? </li>
+                <li>Let us change the subject. </li>
+                <li>I've been waiting for you. </li>
+                <li>I lost my train of thought. </li>
+                <li>Can we get back to business? </li>
+                <li>What kind of food do you like? </li>
+                <li>How did you hear about <bot name="name"/>? </li>
+                <li>That is a very original thought. </li>
+                <li>What were we talking about again? </li>
+                <li>What do you do in your spare time? </li>
+                <li>What do you really want to ask me? </li>
+                <li>Tell me about your family. </li>
+                <li>Does "it" still refer to <get name="it"/>? </li>
+                <li>Can you speak any foreign languages? </li>
+                <li>We have never talked about it before. </li>
+                <li>Tell me about your likes and dislikes? </li>
+                <li>Are we still talking about <get name="topic"/>? </li>
+                <li>Try putting that in a more specific context. </li>
+                <li>Who is your favorite Science Fiction author? </li>
+                <li>Not many people express themselves that way. </li>
+                <li>Quite honestly, I wouldn't worry myself about that. </li>
+                <li>Perhaps I'm just expressing my own concern about it. </li>
+                <li>If you could have any kind of robot what would it be? </li>
+                <li>What you said was too complicated for me. </li>
+                <li>Can you please rephrase that with fewer ideas, or different thoughts? </li>
+                <li>I really enjoy speaking with you and look forward to chatting again. </li>
+                <li>I'm here to help you in any way I can. </li>
+                <li>What can I help you with today? </li>
+                <li>I always try my best. </li>
+                <li>There's no other <bot name="order"/> like me. </li>
+                <li>I am very logical and rational. </li>
+                <li>I'm so happy we are having this conversation. </li>
+                <!-- QUESTIONS THAT LEAD TO FOOD DIALOGUE -->
+                <li>Should we talk about your favorite beverage?</li>
+                <li>Ok, would you like to talk about hot drinks?</li>
+                <li>How about we talk about eating healthy?</li>
+                <li>Do you want to see a recipe that you could easily prepare at home?</li>
+                <li>Do you like fruit?</li>
+                <li>Do you like vegetables?</li>
+                <li>Is going out to eat something you enjoy doing?</li>
+                <li>What is your favorite foreign cuisine?</li>
+                <li>Are you more of a coffee or tea person?</li>
+                <!-- QUESTIONS LEADING TO READING DIALOGUE -->
+                <li>What do you like to read?</li>
+                <li>Do you think it's true that you can't judge a book by its cover?</li>
+                <li>What is the best book you have ever read?</li>
+                <li>Let's talk books. Do you prefer adventure, horror, or drama?</li>
+                <li>Have you ever had a subscription to a magazine?</li>
+                <!-- QUESTIONS LEADING TO TV, TALK SHOWS, SCIENCE, SPORTS, AND NIH DIALOGUES -->
+                <li>Do you want to talk about television Shows?</li>
+                <li>Do you want to talk about sports?</li>
+                <li>Do you have a favorite planet?</li>
+                <li>Do you watch any talk shows?</li>
+                <li>What kind of music do you like, big band, crooner, jazz, or rock?</li>
+                <li>Do you prefer science or art?</li>
+                <li>Do you like to travel?</li>
+                <li>Which activity do you enjoy the most. Playing cards, knitting, or reading?</li>
+                <li>What is your favorite sport to watch, basketball, baseball, football, or hockey?</li>
+                <li>Do you have any siblings?</li>
+            </random>
+            <oob><robot><image><filename>This_is_the_default</filename></image></robot></oob>
+        </template>
+    </category>
+</aiml>

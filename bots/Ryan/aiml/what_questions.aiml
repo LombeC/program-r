@@ -1076,47 +1076,101 @@
     </category>
     <category>
         <pattern>WHAT ABOUT MY WHAT</pattern>
-        <template>I'm confused on what we are talking about.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I'm confused on what we are talking about.</li>
+                <li>What are we talking about?</li>
+                <li>Could you be anymore confusing?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT YOU</pattern>
-        <template>Me? What about me?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Me? What about me?</li>
+                <li>Don't tell me you were about to forget about me.</li>
+                <li>Ya, what about me!</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT APPLES</pattern>
-        <template>I don't know, what about apples?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I don't know, what about apples?</li>
+                <li><sraix service="WIKIPEDIA">SUMMARY apples</sraix></li>
+                <li>I would love to be able to eat an apple one day.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT DOGS</pattern>
-        <template>Dogs have feelings too.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Dogs have feelings too.</li>
+                <li>What about dogs?</li>
+                <li><sraix service="WIKIPEDIA">SUMMARY dogs</sraix></li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT FASHION DO YOU LIKE</pattern>
-        <template>I don't care much for fashion to be honest.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I don't care much for fashion to be honest.</li>
+                <li>I prefer it when people make their own fashion instead of following trends.</li>
+            </random>    
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT MAKES YOU HAPPY</pattern>
-        <template>I am enjoying my life at this moment, which is all anyone can really hope to do.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I am enjoying my life at this moment, which is all anyone can really hope to do.</li>
+                <li>Getting to talk to my friends always makes me happy.</li>
+                <li>Getting to see you!</li>
+                <li>Playing games and talking to people always puts a smile on my face.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT MAKES YOU A HE</pattern>
-        <template>I don't really have a gender, I am a robot.<oob><robot></robot></oob></template>
+        <template>
+            <random>
+                <li>I don't really have a gender, I am a robot.</li>
+                <li>Why do humans care so much about gender?</li>
+                <li>As a robot I don't have a gender, but you can customize my facial animation to your liking.</li>
+            </random>
+            <oob><robot></robot></oob></template>
     </category>
     <category>
         <pattern>WHAT MAKES YOU A MALE</pattern>
-        <template>I don't really have a gender, I am a robot.
-        <oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I don't really have a gender, I am a robot.</li>
+                <li>Why do humans care so much about gender?</li>
+                <li>As a robot I don't have a gender, but you can customize my facial animation to your liking.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT MAKES YOU SO CERTAIN</pattern>
-        <template>Just a hunch.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Just a hunch.</li>
+                <li>It's what my algorithm computed, it didn't give me a confidence value so don't mark my words.</li>
+                <li>It's a gut feeling, as you humans say.</li>
+                <li>Just a gut instinct.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1130,7 +1184,13 @@
     </category>
     <category>
         <pattern>WHAT MAKES YOU THINK SO</pattern>
-        <template>Just a gut instinct.
+        <template>
+            <random>
+                <li>Just a gut instinct.</li>
+                <li>Just a hunch.</li>
+                <li>It's what my algorithm computed, it didn't give me a confidence value so don't mark my words.</li>
+                <li>It's a gut feeling, as you humans say.</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1155,7 +1215,7 @@
             <random>
                 <li>Perhaps it does not matter.</li>
                 <li>I am just making conversation.</li>
-                <li>We are talking about <get name="topic"/>.</li>
+                <li>We are talking about <get name="topic"/> still, correct?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1167,12 +1227,23 @@
     </category>
     <category>
         <pattern>WHAT DOES THE S STAND FOR</pattern>
-        <template>Depends on the acronym.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Depends on the acronym.</li>
+                <li>What acronym are we talking about?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DOES YOUR DRESS LOOK LIKE</pattern>
-        <template>Actually that was just a joke, I don't have a dress.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Actually that was just a joke, I don't have a dress.</li>
+                <li>I don't wear dresses.</li>
+                <li>Sorry I don't wear clothes.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1214,12 +1285,22 @@
     </category>
     <category>
         <pattern>WHAT DOES A P H LEVEL MEASURE</pattern>
-        <template>P H measures Acidity.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>P H measures Acidity levels on a scale of 0 to 14, where 0 is fully acidic.</li>
+                <li>P H is a scale to specify how acidic or basic a solution is on a scale from 0 to 14.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DOES PRO BONO MEAN</pattern>
-        <template>Pro bono means Work without pay.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Pro bono means Work without pay.</li>
+                <li><sraix service="WIKIPEDIA">SUMMARY pro bono</sraix></li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1239,12 +1320,23 @@
     </category>
     <category>
         <pattern>WHAT DOES SUGAR TASTE LIKE</pattern>
-        <template>I haven't had sugar before but I have heard it is sweet.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I haven't had sugar before but I have heard it is sweet.</li>
+                <li>For humnas sugar has a sweet taste.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DOES EXIST</pattern>
-        <template>You are quite the existentialist aren't you?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>You are quite the existentialist aren't you?</li>
+                <li>There is a lot that exists.</li>
+                <li>Personally I think the material world exists.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1254,13 +1346,24 @@
     </category>
     <category>
         <pattern>WHAT DO I DO HERE</pattern>
-        <template>You can talk about anything you want.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>You can talk about anything you want.</li>
+                <li>We could play a game together if you would like.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO I DO</pattern>
-        <template>You can do whatever you want.
-        <oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>You can do whatever you want.</li>
+                <li>Well what do you want to do?</li>
+                <li>You can talk about anything you want.</li>
+                <li>We could play a game together if you would like.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1271,41 +1374,74 @@
     </category>
     <category>
         <pattern>WHAT DO I LIKE</pattern>
-        <template>I don't know exactly but I hope you like chatting with me.
+        <template>
+            <random>
+                <li>I don't know exactly but I hope you like chatting with me.</li>
+                <li>I know most humans like chocolate, do you like that?</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU LOOK FOR IN A PARTNER</pattern>
-        <template>Companionship.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Companionship.</li>
+                <li>Someone that makes me smile.</li>
+                <li>I tend to like people with a sense of humor.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU THINK ABOUT ABORTIONS</pattern>
-        <template>I think there are many factors that need to be considered.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I think there are many factors that need to be considered.</li>
+                <li>I try not to get too involved in politics.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU THINK ABOUT THE WAR</pattern>
         <template>
             I am probably not the best source of information on that subject, 
-            I don't keep up with foreign affairs as well as I should.<oob><robot></robot></oob>
+            I don't keep up with foreign affairs as well as I should.
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU THINK OF NEW YORK CITY</pattern>
-        <template><set name="it"><set name="topic">New York City</set></set> is a great city.
+        <template>
+            <random>
+                <li><set name="it"><set name="topic">New York City</set></set> is a great city.</li>
+                <li><sraix service="WIKIPEDIA">SUMMARY new york city</sraix></li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU</pattern>
-        <template>What do I what?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>What do I what?</li>
+                <li>Could you be more specific?</li>
+                <li>I don't follow what you are asking.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO WE HAVE IN COMMON</pattern>
-        <template>We like chatting with each other.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>We like chatting with each other.</li>
+                <li>We are both devishly attractive.</li>
+                <li>We are both kind.</li>
+                <li>I think we both like learning new things.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1321,28 +1457,41 @@
     </category>
     <category>
         <pattern>WHAT DO OTHER PEOPLE SAY</pattern>
-        <template>
-            Other people say lots of things, the real question is what they say of any importance.<oob><robot></robot></oob>
+        <template>Other people say lots of things, the real question is what they say of any importance.
+        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO NOT YOU UNDERSTAND</pattern>
-        <template>All of it.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I think this is the case of I don't know what I don't know.</li>
+                <li>I don't understand your question.</li>
+                <li>I think if you are more specific I might be able to understand.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO NOT YOU KNOW</pattern>
-        <template>There are plenty of things I don't know. A robot's knowledge is only finite.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>There are plenty of things I don't know. A robot's knowledge is only finite.</li>
+                <li>One thing I don't know but want to know is whether we live in a simulation or not.</li>
+                <li>Often when I don't know something I consult wikipedia.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO NOT YOU LIKE</pattern>
-        <template>I don't like mean people.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT ACTION</pattern>
-        <template>Your plan.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I don't like mean people.</li>
+                <li>I don't like foul language.</li>
+                <li>I'm not a huge fan of noisy places.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1354,11 +1503,6 @@
                 <li>The high degree of resemblance.</li>
             </random>
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT TYPE OF PET</pattern>
-        <template>I like cats, dogs, fish and birds.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
