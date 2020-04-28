@@ -7,7 +7,7 @@
 <!-- as published by the Free Software Foundation.   -->
 <!-- Complies with AIML 1.0 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
-<!-- Last modified 10/5/2011 -->
+<!-- Last modified 04/2802020 -->
 <!-- -->
 
 
@@ -15,18 +15,35 @@
 
 <!-- Greetings -->
 <category><pattern>^ <set>greetings</set> ^</pattern>
-    <template><random>
-        <li>Hi!</li>  <li>Hi There!</li>  <li>Hello</li>  <li>Hello friend</li>  <li>Hello, how are you?</li>
-    </random> <!--What's your name?--><oob><robot></robot></oob>
-        </template>
+    <template>
+        <random>
+            <li>Hi!</li> 
+            <li>Hi There!</li>
+            <li>Hello</li>
+            <li>Hello friend</li>
+            <li>Hello, how are you?</li>
+        </random> 
+        <!--What's your name?--><oob><robot></robot></oob>
+    </template>
 </category>
 
 <!-- Farewells -->
 <category><pattern>^ <set>farewells</set> ^</pattern>
-    <template><random>
-        <li>Bye.</li>  <li>Adios.</li>  <li>Goodbye.</li>  <li>Bye bye.</li>  <li>Sayonara</li>  <li>Bye for now.</li>  <li>See you later!</li>  <li>See you later <get name = "name"/></li>  <li>Until next time, <get name = "name"/>.</li>  <li>Talk to you later!</li>
-    </random><oob><robot></robot></oob>
-        </template>
+    <template>
+        <random>
+            <li>Bye.</li>
+            <li>Adios.</li>
+            <li>Goodbye.</li>
+            <li>Bye bye.</li>
+            <li>Sayonara</li>
+            <li>Bye for now.</li>
+            <li>See you later!</li>
+            <li>See you later <get name = "name"/></li>
+            <li>Until next time, <get name = "name"/>.</li>
+            <li>Talk to you later!</li>
+        </random>
+        <oob><robot></robot></oob>
+    </template>
 </category>
 
 <category><pattern>_ TALK TO YOU LATER</pattern>
@@ -71,8 +88,8 @@
             <li value = "NIGHT">Good Night! Talk to you again soon, <get name = "name"/>.</li>
             <li>That doesn't make any sense</li>
         </condition>
-    <oob><robot></robot></oob>
-        </template>
+        <oob><robot></robot></oob>
+    </template>
 </category>
 
 <category><pattern>MORNING</pattern>
