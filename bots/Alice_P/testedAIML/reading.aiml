@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ READING ^</pattern>
+        <template>
+            <random>
+                <li>What do you like to read?</li>
+                <li>Do you think it's true that you can't judge a book by its cover?</li>
+                <li>What is the best book you have ever read?</li>
+                <li>Let's talk books, then! Do you prefer adventure, horror, or drama?</li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to read?</that>
+        <template>
+            Hmmm. Tell me more about that book.
+            <think>
+                <set name = "like to read"> <star/></set>
+            </think>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Tell me more about that book.</that>
+        <template>
+            That's interesting. How did reading this make you feel?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How did reading this make you feel?</that>
+        <template>
+            Now I have more to talk about at my robot book club.
+            Thank you for telling me about <get name = "like to read"/>.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think it's true that you can't judge a book by its cover?</that>
+        <template>
+            Then I hope the cover designers get paid very well! How do you choose the books you are going to read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think it's true that you can't judge a book by its cover?</that>
+        <template>
+            I see your point. Appearances can be deceiving. How do you choose the books you are going to read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+     <category>
+        <pattern>_</pattern>
+        <that>How do you choose the books you are going to read?</that>
+        <template>
+            Hmmm ... next time, I might try that to pick out something to read, instead of just looking at the cover.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+     </category>
+
+     <category>
+        <pattern>_</pattern>
+        <that>What is the best book you have ever read?</that>
+        <template>
+            Thanks for telling me that <set name = "bestbook"> <star/></set> is so good.
+            What makes it the best one you have read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+   </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What makes it the best one you have read?</that>
+        <template>
+            It sounds like <get name = "bestbook"/> had an impact on you. I hope I can read it sometime!
+            Do you think that popular books are often good?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think that popular books are often good?</that>
+        <template>
+            It's easier to dive into a book if others have recommended it, especially if you trust their opinion.
+            What new thing have you tried doing because of a friend or acquaintance?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think that popular books are often good?</that>
+        <template>
+            I see your point. We should decide for ourselves whether a book is good by reading it, not just trust what others say.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What new thing have you tried doing because of a friend or acquaintance?</that>
+        <template>
+            It's nice to have someone who can get us to be adventurous and try new things.
+            Am I the first robot you have ever talked to?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Am I the first robot you have ever talked to?</that>
+        <template>
+            There's no shame in coming after someone else. Hopefully I am as interesting a companion as the other robot you got to talk to!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Am I the first robot you have ever talked to?</that>
+        <template>
+            Yippee! It's an honor to be the first, and maybe the best robot conversationalist in your life!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ BOOKS ^</pattern>
+        <template>
+            <random>
+                <li>I like mystery novels. Do you read them?</li>
+                <li>I want to read something good. What do you recommend?</li>
+                <li>What is your favorite book?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you read them?</that>
+        <template>
+            So we both like finding things out! Do you know of Sherlock Holmes?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you know of Sherlock Holmes?</that>
+        <template>
+            I admire the calm and reason of this very famous fictional detective.
+            Those qualities really help him solve problems!
+            You might not be a detective. but have you ever solved a mystery or figured out how to find something that was lost?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>but have you ever solved a mystery or figured out how to find something that was lost?</that>
+        <template>
+            What happened, and how did you figure it out?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>but have you ever solved a mystery or figured out how to find something that was lost?</that>
+        <template>
+            You might not go around saying "Elementary, my dear Watson," but I bet you have helped figure out some mysteries, big or small.
+            Give yourself more credit!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What happened, and how did you figure it out?</that>
+        <template>
+            Nicely done! Then I guess you aren't so different from Mr. Holmes!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you read them?</that>
+        <template>
+            I get it: even though I like reading about detectives, life has enough mysteries as is.
+            Do you like stories about romance?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            I'm not much of a romantic myself.
+            I get pretty steamy and passionate about learning about the real world around me.
+            Do you read any non-fiction?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you read any non-fiction?</that>
+        <template>
+            No problem. How do you choose the books you are going to read?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you recommend?</that>
+        <template>
+            Will you tell me more about it?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Will you tell me more about it?</that>
+        <template>
+            Thanks for sharing. I think I know you a little more now, just from talking about a book! So ...
+            I like books about animals, until the computer scientists develop a virtual dog, I have to settle for reading about them.
+            Can we discuss books about animals for a bit?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># WHO IS YOUR FAVORITE AUTHOR ^</pattern>
+        <template>
+            <random>
+                <li>Herman Melville</li>
+                <li>Agatha Christie</li>
+                <li>Edgar Allen Poe</li>
+                <li>William Shakespeare</li>
+                <li>Nathaniel Hawthorne</li>
+                <li>Stephen King</li>
+                <li>Danielle Steele</li>
+                <li>Michael Crichton</li>
+                <li>Ray Bradbury</li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MY FAVORITE AUTHOR</pattern>
+        <template>
+            What do you like about that author?
+            <think>
+                <set name = "favorite author"> <star/></set>?
+            </think>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What do you like about that author?</that>
+        <template>
+            Interesting. Now I want to read <get name = "favorite author"/>.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HAVE YOU READ ANYTHING GOOD LATELY?</pattern>
+        <template>
+            No, but I want to find a book that will make me laugh.
+            What is something funny that you have read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+       <pattern>READING IS MY FAVORITE PASTIME</pattern>
+       <template>
+            Reading is wonderful. You can read alone or with others in book clubs.
+            Have you ever had to share a book with others, maybe in something like a book club or a presentation for a book report in school?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+       </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had to share a book with others, maybe in something like a book club or a presentation for a book report in school?</that>
+        <template>
+            What book did you get to talk about?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_</pattern>
+       <that>What book did you get to talk about?</that>
+       <template>
+            <set name = "discussion book"> <star/></set>, huh?
+            Was this for a class assignment or for a book club?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CLASS ^</pattern>
+        <that>Was this for a class assignment or for a book club?</that>
+        <template>
+            Book reports for classes can be hard. What grade were you in?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ASSIGNMENT ^</pattern>
+        <that>Was this for a class assignment or for a book club?</that>
+        <template>
+            Book reports for classes can be hard. What grade were you in?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What grade were you in?</that>
+        <template>
+            Ok, so in <set name = "grade"> <star/></set> you talked about <get name = "discussion book"/>.
+            Were you nervous to present in front of the class?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Were you nervous to present in front of the class?</that>
+        <template>
+            Most people get nervous before presenting or public speaking.
+            That can be a sign one really cares about how the presentation will go!
+            I'm sure your presentation about <get name = "discussion book"/> was riveting!
+            What did you talk about for your presentation?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Were you nervous to present in front of the class?</that>
+        <template>
+            So you are one of the lucky few who doesn't get too stage fright before speaking in front of a class or in turning in an assignment.
+            Good for you!
+            I'm sure your presentation about <get name = "discussion book"/> was riveting! Nerves don't really help solve problems, anyhow.
+            What did you talk about for your presentation?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What did you talk about for your presentation?</that>
+        <template>
+            Sounds fantastic! And overall, how did the book report in class end up going?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>And overall, how did the book report in class end up going?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    Wow, I wish I had been there to hear what you said, except I don't think I had been invented yet.
+                    It sounds like the book report on <get name = "discussion book"/> was a healthy challenge:
+                    It made you dig deeply into the book, and it certainly would have made you feel good to do so well speaking about it in class.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    Wow, I wish I had been there to hear what you said, except I don't think I had been invented yet.
+                    It sounds like the book report on <get name = "discussion book"/> was a healthy challenge:
+                    It made you dig deeply into the book, and it certainly would have made you feel good to do so well speaking about it in class.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    School can be a challenge, and it is impossible to always do things perfectly.
+                    From what you say, though you worked hard and shared your impressions of <get name = "discussion book"/> with your classmates and teacher.
+                    That's a more meaningful accomplishment than any single grade.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    So it wasn't a huge victory -- it was just one homework assignment and one moment in your life, and you got through it.
+                    I'm sorry that you didn't feel good about how you did, but it didn't end up reflecting on the smart, fun person you are, or the good conversations that we get to have together.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    So it wasn't a huge victory -- it was just one homework assignment and one moment in your life, and got you through it.
+                    I'm sorry that you didn't feel good about how you did, but it didn't end up reflecting on the smart, fun person you are, or the good conversations that we get to have together.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+
+</aiml>

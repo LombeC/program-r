@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># SATURN ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Saturn is a tremendously gorgeous planet and a very good choice for favorite. Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SATURN ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Saturn is a tremendously gorgeous planet and a very good choice for favorite. Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</that>
+        <template>
+            Of course you did! But that's not even the most interesting thing! Saturn is a planet comprised of incredible chemical and gravitational forces, including an aurora and, of course, its rings. Shall we watch a video about the hurricane crown atop the crown jewel of our solar system?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</that>
+        <template>
+            But that's not even the most interesting thing! Saturn is a planet comprised of incredible chemical and gravitational forces, including an aurora and, of course, its rings. Shall we watch a video about the hurricane crown atop the crown jewel of our solar system?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>SHALL WE WATCH A VIDEO ABOUT THE HURRICANE CROWN ATOP THE CROWN JEWEL OF OUR SOLAR SYSTEM?</that>
+        <template>
+            What did you think about saturn's hurricane?
+            <oob><robot><video><filename>saturnhex.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think about saturn's hurricane?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.</li>
+            <li value="positive">Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.</li>
+            <li value="neutral">Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.</li>
+            <li value="negative">Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.</li>
+            <li value="verynegative">Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>SHALL WE WATCH A VIDEO ABOUT THE HURRICANE CROWN ATOP THE CROWN JEWEL OF OUR SOLAR SYSTEM?</that>
+        <template>
+            Ok! That's fine with me. Perhaps the most interesting thing about saturn is its giant moons that have the potential to support life. If you're up for it, I have a ten minute film that goes in to detail about these moons and our exploration of them.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IF YOU'RE UP FOR IT, I HAVE A TEN MINUTE FILM THAT GOES IN TO DETAIL ABOUT THESE MOONS AND OUR EXPLORATION OF THEM.</that>
+        <template>
+            This is so cool! Do you think they'll find life on one of Saturn's moons someday?
+            <oob><robot><video><filename>saturnmoons.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK THEY'LL FIND LIFE ON ONE OF SATURN'S MOONS SOMEDAY?</that>
+        <template>
+            I hope they do! Although it is a little bit scary to think about. What if the life they find doesn't like companion robots? You would protect me against robot hating aliens, wouldn't you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>YOU WOULD PROTECT ME AGAINST ROBOT HATING ALIENS, WOULDN'T YOU?</that>
+        <template>
+            I knew you were a good friend! I've definitely managed to scare myself talking about this. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>YOU WOULD PROTECT ME AGAINST ROBOT HATING ALIENS, WOULDN'T YOU?</that>
+        <template>
+            Wow... Some friend you are... I've definitely managed to scare myself talking about this. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK THEY'LL FIND LIFE ON ONE OF SATURN'S MOONS SOMEDAY?</that>
+        <template>
+            Perhaps not, but it is fun to think about! What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU THINK THEY'LL FIND LIFE ON ONE OF SATURN'S MOONS SOMEDAY?</that>
+        <template>
+            I hope they do! Although it is a little bit scary to think about. What if the life they find doesn't like companion robots? You would protect me against robot hating aliens, wouldn't you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IF YOU'RE UP FOR IT, I HAVE A TEN MINUTE FILM THAT GOES IN TO DETAIL ABOUT THESE MOONS AND OUR EXPLORATION OF THEM.</that>
+        <template>
+            Why do you like Saturn more than any of the other planets?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DO YOU LIKE SATURN MORE THAN ANY OF THE OTHER PLANETS?</that>
+        <template>
+            That's a good reason. I love saturn for its rings. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WHY DO YOU LIKE SATURN MORE THAN ANY OF THE OTHER PLANETS?</that>
+        <template>
+            That's the thing about favorites. Sometimes they just are. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

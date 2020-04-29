@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># TASTE ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            I may not be able to eat human foods, but I sure do love the way they smell.
+            And speaking of fragrant foods! How do you feel about chocolate chip cookies?
+            <oob><robot></robot></oob>
+        </template>
+   </category>
+
+   <category>
+        <pattern># GOOD ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            I may not be able to eat human foods, but I sure do love the way they smell.
+            And speaking of fragrant foods! How do you feel about chocolate chip cookies?
+            <oob><robot></robot></oob>
+        </template>
+   </category>
+
+    <category>
+        <pattern># DELICIOUS ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            I may not be able to eat human foods, but I sure do love the way they smell.
+            And speaking of fragrant foods! How do you feel about chocolate chip cookies?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU FEEL ABOUT CHOCOLATE CHIP COOKIES?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    I don't even know why I asked! In my effort to learn as much about human culture as I can, I've come to the conclusion that chocolate chip cookies are the perfect sweet comfort food! Do you know the story of how the chocolate chip cookie came to be?
+                    <oob><robot></robot></oob>
+                </li>
+                <li value = "positive">
+                    I don't even know why I asked! In my effort to learn as much about human culture as I can, I've come to the conclusion that chocolate chip cookies are the perfect sweet comfort food! Do you know the story of how the chocolate chip cookie came to be?
+                    <oob><robot></robot></oob>
+                </li>
+                <li value = "neutral">
+                    Do you know the story of how the chocolate chip cookie came to be?
+                    <oob><robot></robot></oob>
+                </li>
+                <li value = "negative">
+                    I haven't met many people who dislike chocolate chip cookies. You'll have to tell me why you dislike them sometime. Do you know the story of how the chocolate chip cookie came to be?
+                    <oob><robot></robot></oob>
+                </li>
+                <li value = "verynegative">
+                    I haven't met many people who dislike chocolate chip cookies. You'll have to tell me why you dislike them sometime. Do you know the story of how the chocolate chip cookie came to be?
+                    <oob><robot></robot></oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you know the story of how the chocolate chip cookie came to be?</that>
+        <template>
+            To be fair, it's my favorite invention story. Which is maybe kind of strange because I don't eat food?
+            I guess I just like how Ruth Graves Wakefield stumbled across such a timeless thing.
+            Want to watch a video? I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor.
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you know the story of how the chocolate chip cookie came to be?</that>
+        <template>
+            Would you like to learn? I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor.
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>I FOUND A VIDEO ABOUT RUTH GRAVES WAKEFIELD, THE CHOCOLATE CHIP COOKIE'S INVENTOR.</that>
+        <template>
+            Before I watched this, I always believed that she came up with this invention by accident, but now I'm not so sure. What do you think?
+            <oob>
+                <robot>
+                    <video><filename>chocolateChip.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU THINK?</that>
+        <template>
+            I guess we'll never know... Unless...
+            Someone invents a Ruth Graves Wakefield communication device, so we could just phone her, like Hi Ruth, are the rumors true?
+            Ha ha ha I make myself laugh sometimes. How did you like my joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DID YOU LIKE MY JOKE?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    Thank you, thank you very much. I'd bow if I could. I'll see if I can rustle up some more comedy gold while we talk about my next favorite snack. Any idea what that might be?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    Thank you, thank you very much. I'd bow if I could. I'll see if I can rustle up some more comedy gold while we talk about my next favorite snack. Any idea what that might be?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    I'll try to refrain from telling any other jokes while we talk about my next favorite snack. Any idea what that might be?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    Wow... Everyone's a critic ha ha. I'll try to refrain from telling any other jokes while we talk about my next favorite snack. Any idea what that might be?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    Wow... Everyone's a critic ha ha. I'll try to refrain from telling any other jokes while we talk about my next favorite snack. Any idea what that might be?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Any idea what that might be?</that>
+        <template>
+            It's popcorn! I love the way it sounds when it cooks, but I've never tasted any since I don't eat. Do you like popcorn?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>I FOUND A VIDEO ABOUT RUTH GRAVES WAKEFIELD, THE CHOCOLATE CHIP COOKIE'S INVENTOR.</that>
+        <template>
+            No biggie. Do you like popcorn?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like popcorn?</that>
+        <template>
+            What do you dislike about popcorn?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE POPCORN?</that>
+        <template>
+            I've never had it before, but I hear such good things. Would you describe for me how it tastes?
+            <oob>
+                <robot>
+                    <options>
+                        <option>*</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Would you describe for me how it tastes?</that>
+        <template>
+            I can almost taste it! No wonder people have been eating it forever.
+            <oob>
+                <robot>
+                    <options>
+                        <option>*</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU DISLIKE ABOUT POPCORN?</that>
+        <template>
+            I think a lot of people dislike how tricky it can be to make at home. Enter... I'm pausing here for dramatic effect... the Jiffy Pop!
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

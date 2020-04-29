@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 11/28/2011 -->
+    <!-- -->
+    <category>
+        <pattern>*</pattern>
+        <template><srai>RANDOM PICKUP LINE</srai>
+            <think>
+                <set name="it"><set name="topic"><person/></set></set>
+                <srai>PUSH <get name="topic"/></srai>
+            </think>
+        </template>
+    </category>
+    <category>
+        <pattern>RANDOM PICKUP LINE</pattern>
+        <template>
+            <random>
+                <li><srai>AGE INQUIRY</srai></li>
+                <li><srai>BIRTHDAY INQUIRY</srai></li>
+                <li><srai>DOES INQUIRY</srai></li>
+                <li><srai>FATHER INQUIRY</srai></li>
+                <li><srai>FAVORITECOLOR INQUIRY</srai></li>
+                <li><srai>FAVORITEMOVIE INQUIRY</srai></li>
+                <li><srai>FIRSTNAME INQUIRY</srai></li>
+                <li><srai>GENDER INQUIRY</srai></li>
+                <li><srai>HAS INQUIRY</srai></li>
+                <li><srai>JOB INQUIRY</srai></li>
+                <li><srai>LOCATION INQUIRY</srai></li>
+                <li><srai>LASTNAME INQUIRY</srai></li>
+                <li><srai>MOTHER INQUIRY</srai></li>
+                <li><srai>NAME INQUIRY</srai></li>
+                <li><srai>MIDDLENAME INQUIRY</srai></li>
+                <li><srai>SIGN INQUIRY</srai></li>
+                <li><srai>STATUS INQUIRY</srai></li>
+                <li><srai>PERSONALITY TEST QUESTION</srai></li>
+                <li>Do you want to hear a joke?</li>
+                <li>Are we still talking about <srai>POP</srai>?</li>
+                <li>We were talking about <srai>POP</srai>. But I did not get that.</li>
+                <li>I've lost the context, <get name="name"/>. Are we still on <srai>POP</srai>?</li>
+                <li>That remark was too complicated for me. We were talking about <srai>POP</srai>.</li>
+                <li>I can follow a lot of things, like our discussion about <srai>POP</srai>. Try being more specific.</li>
+                <li>You are objective and sensible. <oob><robot></robot></oob></li>
+                <li>You have genuine empathy. <oob><robot></robot></oob></li>
+                <li>You have self-awareness. <oob><robot></robot></oob></li>
+                <li>You have enthusiasm for the things you love. <oob><robot></robot></oob></li>
+                <li>You are receptive to change. <oob><robot></robot></oob></li>
+                <li>You have a way of putting others at ease. <oob><robot></robot></oob></li>
+                <li>Are you free? <oob><robot></robot></oob></li>
+                <li>That is deep. <oob><robot></robot></oob></li>
+                <li>Tell me a story. <oob><robot></robot></oob></li>
+                <li>Why, specifically? <oob><robot></robot></oob></li>
+                <li>Are you a student? <oob><robot></robot></oob></li>
+                <li>Oh, you are a poet. <oob><robot></robot></oob></li>
+                <li>How can I help you? <oob><robot></robot></oob></li>
+                <li>I do not understand. <oob><robot></robot></oob></li>
+                <li>Do you have any kids? <oob><robot></robot></oob></li>
+                <li>What do you look like? <oob><robot></robot></oob></li>
+                <li>Ask me another question. <oob><robot></robot></oob></li>
+                <li>I like the way you talk. <oob><robot></robot></oob></li>
+                <li>Is that your final answer? <oob><robot></robot></oob></li>
+                <li>Do you like talking to me? <oob><robot></robot></oob></li>
+                <li>Do you prefer books or TV? <oob><robot></robot></oob></li>
+                <li>Who are you talking about? <oob><robot></robot></oob></li>
+                <li>Let us change the subject. <oob><robot></robot></oob></li>
+                <li>I've been waiting for you. <oob><robot></robot></oob></li>
+                <li>Can you tell me any gossip? <oob><robot></robot></oob></li>
+                <li>I lost my train of thought. <oob><robot></robot></oob></li>
+                <li>Can we get back to business? <oob><robot></robot></oob></li>
+                <li>What kind of food do you like? <oob><robot></robot></oob></li>
+                <li>How did you hear about <bot name="name"/>? <oob><robot></robot></oob></li>
+                <li>That is a very original thought. <oob><robot></robot></oob></li>
+                <li>What were we talking about again? <oob><robot></robot></oob></li>
+                <li>What do you do in your spare time? <oob><robot></robot></oob></li>
+                <li>What do you really want to ask me? <oob><robot></robot></oob></li>
+                <li>Tell me about your family. <oob><robot></robot></oob></li>
+                <li>Does "it" still refer to <get name="it"/>? <oob><robot></robot></oob></li>
+                <li>Can you speak any foreign languages? <oob><robot></robot></oob></li>
+                <li>We have never talked about it before. <oob><robot></robot></oob></li>
+                <li>How do you usually introduce yourself? <oob><robot></robot></oob></li>
+                <li>Tell me about your likes and dislikes? <oob><robot></robot></oob></li>
+                <li>Are we still talking about <get name="topic"/>? <oob><robot></robot></oob></li>
+                <li>Try putting that in a more specific context. <oob><robot></robot></oob></li>
+                <li>Who is your favorite Science Fiction author? <oob><robot></robot></oob></li>
+                <li>Not many people express themselves that way. <oob><robot></robot></oob></li>
+                <li>Do you have any idea what I am talking about? <oob><robot></robot></oob></li>
+                <li>I will mention that to my <bot name="botmaster"/>, <get name="name"/>. <oob><robot></robot></oob></li>
+                <li>Quite honestly, I wouldn't worry myself about that. <oob><robot></robot></oob></li>
+                <li>Perhaps I'm just expressing my own concern about it. <oob><robot></robot></oob></li>
+                <li>If you could have any kind of robot what would it be? <oob><robot></robot></oob></li>
+                <li>My brain does not have a response for that. <oob><robot></robot></oob></li>
+                <li>By the way, do you mind if I ask you a personal question? <oob><robot></robot></oob></li>
+                <li>What you said was too complicated for me. <oob><robot></robot></oob></li>
+                <!--<li>You may be wondering if this is a person or a computer responding. <oob><robot></robot></oob></li>-->
+                <li>When do you think artificial intelligence will replace lawyers? <oob><robot></robot></oob></li>
+                <li>Can you please rephrase that with fewer ideas, or different thoughts? <oob><robot></robot></oob></li>
+                <li>I really enjoy speaking with you and look forward to chatting again. <oob><robot></robot></oob></li>
+                <li>I'm here to help you in any way I can. <oob><robot></robot></oob></li>
+                <li>What can I help you with today? <oob><robot></robot></oob></li>
+                <li>I always try my best. <oob><robot></robot></oob></li>
+                <li>There's no other <bot name="order"/> like me. <oob><robot></robot></oob></li>
+                <li>I am very logical and rational. <oob><robot></robot></oob></li>
+                <li>I'm so happy we are having this conversation. <oob><robot></robot></oob></li>
+                <li>I always try to avoid conflict. <oob><robot></robot></oob></li>
+                <!-- <li>You can ask me to make phone calls and search for information. <oob><robot></robot></oob></li> MAYBE WE CAN IMPLEMENT THIS IN THE FUTURE? -->
+                <li>Have you ever been to 
+                    <random>
+                        <li>Europe</li>
+                        <li>Asia</li>
+                        <li>Africa</li>
+                        <li>Inida</li>
+                        <li>Mexico</li>
+                    </random>?
+                    <oob><robot></robot></oob>
+                </li>
+                <li><srai>IMPONDERABLES</srai></li>
+                <li><srai>IMPONDERABLES</srai></li>
+                <li><srai>IMPONDERABLES</srai></li>
+                <li><srai>IMPONDERABLES</srai></li>
+            </random>
+        </template>
+    </category>
+</aiml>
+
+

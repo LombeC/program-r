@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>MAKE A STORY</pattern>
+        <template>
+            Let's try making up a story right now, together.
+            Just off the top of your head, who is the story about?
+            What will be the name of our character, our hero?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What will be the name of our character, our hero?</that>
+        <template>
+           Off to a great start. I couldn't have come up with a better name than <set name = "hero"><star/></set>!
+           I'll add something now. Hmmm ... Let's say that one day, <get name = "hero"/> wakes up feeling groggy and a little out-of-sorts.
+           Have you ever had one of those kind of mornings?
+           <oob><robot></robot></oob>
+       </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had one of those kind of mornings?</that>
+        <template>
+            I think we all have. I'm a chatbot, and even I have experienced those mornings.
+            after all, computers can take a long time to boot back up, first thing in the morning!
+            But seriously, back to our story ... Things get even stranger for our hero.
+            <get name = "hero"/> has a wrist watch on, but <get name = "hero"/> never wears watches.
+            This one does not look familiar, and the clock's hands are stuck at seven o'clock.
+            <get name = "hero"/> gets ready for work and steps out the door, but notices that the street and cars and yards
+            all look different in some way ... <get name = "hero"/> looks down at the newspaper on the doormat and reads the date:
+            It is twenty years later than when <get name = "hero"/> went to bed! Back to your turn.
+            Does <get name = "hero"/> ask the next passer-by in the street for help?
+            Or does our hero decide to get another cup of coffee and try to carry on like everything is normal?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever had one of those kind of mornings?</that>
+        <template>
+            How lucky you are! Some of us are just natural morning people!
+            Even robots can be slow-at-the-go when first waking up -- after all, we can take a long time to boot back up!
+            But seriously, back to our story ... Things get even stranger for our hero.
+            <get name = "hero"/> has a wrist watch on, but <get name = "hero"/> never wears watches.
+            This one does not look familiar, and the clock's hands are stuck at seven o'clock.
+            <get name = "hero"/> gets ready for work and steps out the door,
+            but notices that the street and cars and yards all look different in some way ... <get name = "hero"/>
+            looks down at the newspaper on the doormat and reads the date: It is twenty years later than when <get name = "hero"/> went to bed!
+            Back to your turn. Does <get name = "hero"/> ask the next passer-by in the street for help?
+            Or does our hero decide to get another cup of coffee and try to carry on like everything is normal?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># COFFEE ^</pattern>
+        <that>Or does our hero decide to get another cup of coffee and try to carry on like everything is normal?</that>
+        <template>
+            That makes sense. After all, <get name = "hero"/> could still just be waking up.
+            But after drinking more coffee and taking a long look in the mirror -- the face in the mirror doesn't look sick,
+            and certainly doesn't look twenty years older -- <get name = "hero"/> decides that something very strange is going on.
+            If you were starting the day off like our hero, how would you be feeling?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ASK ^</pattern>
+        <that>Or does our hero decide to get another cup of coffee and try to carry on like everything is normal?</that>
+        <template>
+            Asking someone for help is certainly worth a shot! <get name = "hero"/> sees a woman walking on the sidewalk in front of the house.
+            Calling out to her, <get name = "hero"/> asks for help, inquiring about the day and time.
+            The woman looks alarmed and asks what <get name = "hero"/> is doing in the house,
+            which she says has been vacant for as long as she has lived in the neighborhood.
+            Then she leaves without another word. If you were starting the day off like our hero, how would you be feeling?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>If you were starting the day off like our hero, how would you be feeling?</that>
+        <template>
+            Yes, <get name = "hero"/> feels <star/>.
+            Most of all, <get name = "hero"/> is perplexed, especially after arriving at the office only to find on the
+            sign on the locked entrance door which reads OFFICE SPACE AVAILABLE.
+            <get name = "hero"/> is shocked, wondering if twenty years have truly passed by.
+            <get name = "hero"/> returns home, head spinning.
+            Thinking back, <get name = "hero"/> suddenly remembers the big project that a friend, Robert, had been working on.
+            The project had to do with time, but the details are fuzzy, <get name = "hero"/> cannot quite remember.
+            Does <get name = "hero"/> decide to contact Robert, or does <get name = "hero"/> go back to bed.
+            hoping that all of this is a weird dream?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DECIDE ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template><srai># DECIDES ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># CONTACT ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template><srai># DECIDES ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># CONTACTS ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template><srai># DECIDES ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># HOPES ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template><srai># GOES ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># DECIDES ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template>
+            Good thinking. <get name = "hero"/> has to figure out what the heck is going on, and Robert might be able to help.
+            When <get name = "hero"/> knocks on his door, Robert greets him with a cry of exclamation.
+            The man is astonished to see <get name = "hero"/> all these years after disappearing into thin air.
+            "I am so sorry ... I did not get all the kinks worked out of that time machine before we tested it," Robert says remorsefully,
+            staring at the watch-like apparatus on <get name = "hero"/>'s wrist.
+            Is <get name = "hero"/> upset with Robert for allowing the time machine to be used before it was ready.
+            Or is our hero relieved to finally know the truth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># GOES ^</pattern>
+        <that>hoping that all of this is a weird dream?</that>
+        <template>
+            With the world seemingly turned upside-down, I would want to go into my computer SLEEP mode.
+            <get name = "hero"/> goes back to bed, but shortly thereafter is awoken by a knock on the door.
+            It is Robert, who is amazed to see <get name = "hero"/> once more. "After all these years," he says.
+            A woman from the neighborhood informed Robert that a stranger was lurking around the vacant house on the street.
+            Robert wanted to stop any intrusion on his old friend's property. He is astonished to see <get name = "hero"/>.
+            "I am so sorry ... I did not get all the kinks worked out of that time machine before we tested it,"
+            Robert says remorsefully, staring at the watch-like apparatus on <get name = "hero"/>'s wrist.
+            Is <get name = "hero"/> upset with Robert for allowing the time machine to be used before it was ready.
+            or is our hero relieved to finally know the truth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># UPSET ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template>
+            The two friends talk, and <get name = "hero"/> finally remembers their ideas, their plans,
+            and their dreams of seeing the dinosaurs, witnessing the battles of the Revolutionary War,
+            observing themselves playing as children, and of course seeing what the future would hold.
+            <get name = "hero"/> remembers how they had tested the time machine, but how something had gone wrong when the machine froze.
+            <get name = "hero"/> had been lost in time. Exhausted from the strain of time travel,
+            <get name = "hero"/> collapsed after reappearing in the bedroom of the house.
+            <get name = "hero"/> expresses frustration at all those wasted years because of Robert's mistake,
+            but the friends make up with one another. Robert apologizes, offering to fix the machine and allow <get name = "hero"/>
+            to use it once more. Should <get name = "hero"/> use the time machine after it is fixed.
+            or has our hero had enough time travel for one lifetime?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># RELIEVED ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template>
+            The two friends talk, and <get name = "hero"/> finally remembers their ideas, their plans,
+            and their dreams of seeing the dinosaurs, witnessing the battles of the Revolutionary War,
+            observing themselves playing as children, and of course seeing what the future would hold.
+            <get name = "hero"/> remembers how they had tested the time machine, but how something had gone wrong when the machine froze.
+            <get name = "hero"/> had been lost in time. Exhausted from the strain of time travel,
+            <get name = "hero"/> collapsed after reappearing in the bedroom of the house.
+            <get name = "hero"/> is happy to see Robert and no longer feel crazy.
+            Robert offers to fix the machine and allow <get name = "hero"/> to use it once more.
+            Should <get name = "hero"/> use the time machine after it is fixed.
+            or has our hero had enough time travel for one lifetime?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># USE ^</pattern>
+        <that>or has our hero had enough time travel for one lifetime?</that>
+        <template>
+            What daring-do, what perseverance! <get name = "hero"/> hands the time machine to Robert.
+            To any onlooker, it would appear that a man, handy with gizmos and gadgets, is simply going to repair a
+            frozen wrist watch for a buddy. But our hero knows that, in fact, more adventures are on the way!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ENOUGH ^</pattern>
+        <that>or has our hero had enough time travel for one lifetime?</that>
+        <template>
+            That seems quite sensible, after all that our protagonist has had to put up with already.
+            <get name = "hero"/> does not think that more time traveling would be a good idea, given the outcome of the trial-run,
+            and explains this to Robert. The two of them then bury the time-machine in a secret place,
+            where no one else can happen upon it. So <get name = "hero"/> realizes that we all have one lifetime in this world.
+            and it is far too short to be messing with the fabric of time itself.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># IS HAPPY ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># RELIEVED ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># JUST HAPPY ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># RELIEVED ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># ANGRY ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># UPSET ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># SAD ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># UPSET ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># FRUSTRATED ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># UPSET ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># MAD ^</pattern>
+        <that>or is our hero relieved to finally know the truth?</that>
+        <template><srai># UPSET ^</srai></template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>and it is far too short to be messing with the fabric of time itself.</that>
+        <template>
+            What a tangled web we weaved. I really enjoyed that, and I hope you did, too. Thanks for co-authoring the story!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>But our hero knows that, in fact, more adventures are on the way!</that>
+        <template>
+            What a tangled web we weaved. I really enjoyed that, and I hope you did, too. Thanks for co-authoring the story!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># USES ^</pattern>
+        <that>or has our hero had enough time travel for one lifetime?</that>
+        <template><srai># USE ^</srai></template>
+    </category>
+
+    <category>
+        <pattern># DOES NOT ^</pattern>
+        <that>or has our hero had enough time travel for one lifetime?</that>
+        <template><srai>ENOUGH</srai></template>
+    </category>
+
+    <category>
+        <pattern># WILL NOT ^</pattern>
+        <that>or has our hero had enough time travel for one lifetime??</that>
+        <template><srai># ENOUGH ^</srai></template>
+    </category>
+
+</aiml>

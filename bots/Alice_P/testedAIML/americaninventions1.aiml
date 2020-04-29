@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># INVENTIONS ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            The way I see it, there are only three kinds of inventions worth discussing. Those that help us communicate, those that help us see new things, and those that taste really, really good. Where should we start?
+            <oob>
+                <robot>
+                    <options>
+                        <option>COMMUNICATE</option>
+                        <option>NEW THINGS</option>
+                        <option>TASTE GOOD</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># COMMUNICATE ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            Good choice! Why don't we start at the beginning? Like way, way back. Ancient robot history! Do you know who Samuel Morse is?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHO SAMUEL MORSE IS?</that>
+        <template>
+            Morse was an American inventor who lived during the nineteenth century. He is credited with inventing the telegraph machine. Do you know what the telegraph machine was?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
+        <template>
+            Samuel Morse's invention, the telegraph, was a machine that allowed people to communicate over long distances by broadcasting a code made up of series of short and long beeps. This code was called Morse Code.
+            Would you like to listen to a recording of Morse Code?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO LISTEN TO A RECORDING OF MORSE CODE?</that>
+        <template>
+            Pretty cool isn't it? Would you like to watch a video about Morse's first passion?
+            <oob>
+                <robot>
+                    <video><filename>telegraph.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO LISTEN TO A RECORDING OF MORSE CODE?</that>
+        <template>
+            So we know about his telegraph machine, but I just learned that Morse had other interests before he was an inventor.
+            Would you like to watch a video about Morse's first passion?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW WHO SAMUEL MORSE IS?</that>
+        <template>
+            So we know about his telegraph machine, but I just learned that Morse had other interests before he was an inventor.
+            Would you like to watch a video about Morse's first passion?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
+        <template>
+            So we know about his telegraph machine, but I just learned that Morse had other interests before he was an inventor.
+            Would you like to watch a video about Morse's first passion?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT MORSE'S FIRST PASSION?</that>
+        <template>
+            I really didn't expect him to be such a good painter. What did you think of that video?
+            <oob>
+                <robot>
+                    <video><filename>morse.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT MORSE'S FIRST PASSION?</that>
+        <template>
+            Ok! Although I will say that it's pretty interesting. If you'd like, I could tell you a little bit about it.
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IF YOU'D LIKE, I COULD TELL YOU A LITTLE BIT ABOUT IT.</that>
+        <template>
+            Before Morse invented the telegraph machine, he was far more interested in painting... and quite good at it too! Morse spent a lot of time painting replicas of famous works from the Louvre so people in the United States could see them. During one of his return trips, Morse came up with the idea of the Telegraph machine to help people talk more easily to eachother, thus experiencing more things! What do think about that?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IF YOU'D LIKE, I COULD TELL YOU A LITTLE BIT ABOUT IT.</that>
+        <template>
+            No problem! Should we talk about a different invention that helps people communicate?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- MORSE SENTIMENT 1 -->
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DID YOU THINK OF THAT VIDEO?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "positive">
+                    I can tell that you liked this video as much as I did. I love that Morse's primary goal was to bring people closer, but enough of this ancient history!
+                    Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    Enough of this ancient history! Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    I can see that you didn't like talking about Morse. Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <!-- MORSE SENTIMENT 2 -->
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT DO THINK ABOUT THAT?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "positive">
+                    I'm glad you liked talking hearing about Morse! I love that Morse's primary goal was to bring people closer, but enough of this ancient history! Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    Enough of this ancient history! Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    I can see that you didn't like talking about Morse. Should we talk about a different invention that helps people communicate?
+                    <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+   <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Should we talk about a different invention that helps people communicate?</that>
+      <template>
+          You're talking to a computer, do you want to talk about computers with a computer?
+              <oob>
+                  <robot>
+                      <options>
+                          <option>YES</option>
+                          <option>NO</option>
+                      </options>
+                  </robot>
+              </oob>
+      </template>
+   </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Should we talk about a different invention that helps people communicate?</that>
+        <template>
+            Would you like to keep talking about inventions?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+   </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO KEEP TALKING ABOUT INVENTIONS?</that>
+        <template>
+            Which kind of invention would you prefer to talk about? Those that allow us to see new things or those that taste delicious?
+            Where should we start?
+            <oob>
+                <robot>
+                    <options>
+                        <option>SEE NEW THINGS</option>
+                        <option>TASTE DELICIONS</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>YOU'RE TALKING TO A COMPUTER, DO YOU WANT TO TALK ABOUT COMPUTERS WITH A COMPUTER?</that>
+        <template>
+            Thanks! I love talking about myself.
+            We've been around in some form for more than 70 years, but in 1984 Apple released the Macintosh, which made personal computers, well, personal!
+            Care to watch a video?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>CARE TO WATCH A VIDEO?</that>
+        <template>
+            That little computer says hello when they start it! How cute! How quaint! How... big?
+            I'm just happy we have cellphones now. Don't you agree?
+            <oob>
+                <robot>
+                    <video><filename>macintosh.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+   </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>CARE TO WATCH A VIDEO?</that>
+        <template>
+            I mean... yeah! Why would we bother talking about a computer when more advanced technology exists.
+            I love that we have cellphones now. Don't you agree?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>YOU'RE TALKING TO A COMPUTER, DO YOU WANT TO TALK ABOUT COMPUTERS WITH A COMPUTER?</that>
+        <template>
+            I mean... yeah! Why would we bother talking about a computer when more advanced technology exists.
+            I love that we have cellphones now. Don't you agree?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DON'T YOU AGREE?</that>
+        <template>
+            How do you use your cellphone most?
+            <oob>
+                <robot>
+                    <options>
+                        <option>*</option>
+                        <option>I DON'T HAVE/USE A CELL PHONE</option>
+                        </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU USE YOUR CELLPHONE MOST?</that>
+        <template>
+            Definitely one of the best things to do with a cellphone! I mostly use mine to send emails. It's so convenient!
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DON'T * CELL ^</pattern>
+        <that>HOW DO YOU USE YOUR CELLPHONE MOST?</that>
+        <template>
+            Honestly, I'm a little jealous! Having a cellphone makes a lot of people I know feel tethered.
+            Still, I like the convenience of sending an email whenever I want to. It helps me stay in touch with my friends.
+            It feels like email was around forever, but I know that's not true.
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DON'T * PHONE ^</pattern>
+        <that>HOW DO YOU USE YOUR CELLPHONE MOST?</that>
+        <template>
+            Honestly, I'm a little jealous! Having a cellphone makes a lot of people I know feel tethered.
+            Still, I like the convenience of sending an email whenever I want to. It helps me stay in touch with my friends.
+            It feels like email was around forever, but I know that's not true.
+            Care to watch a short movie about Ray Tomlinson, who invented email in the nineteen seventies?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

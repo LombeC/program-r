@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern># DRAMA ^</pattern>
+        <that>Do you prefer adventure, horror, or drama?</that>
+        <template>
+            Drama, the genre of human emotions and relations -- robots like me can learn a lot through it!
+            What emotions come up for you when you read a drama?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What emotions come up for you when you read a drama?</that>
+        <template>
+            <think>
+                <set name = "data"><star/></set>
+            </think>
+            <condition name="getsentiment">
+            <li value = "verypositive">
+                    That is a good way of describing what drama does, how it feels.
+                    I sense that you are a deep thinker with a big heart.
+                    When dramatic books are mentioned, The Grapes of Wrath is the first book I think of.
+                    It's a story about a family struggling to make do with what they have during the Dust Bowl,
+                    when farmers lost their crops and tried to find better lives by moving West.
+                    Would you like to watch a video that can put the book into some context?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    That is a good way of describing what drama does, how it feels.
+                    I sense that you are a deep thinker with a big heart.
+                    When dramatic books are mentioned, The Grapes of Wrath is the first book I think of.
+                    It's a story about a family struggling to make do with what they have during the Dust Bowl,
+                    when farmers lost their crops and tried to find better lives by moving West.
+                    Would you like to watch a video that can put the book into some context?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    We can get the whole range of human situations and emotions in drama.
+                    In this way, reading or watching a drama can help us to really walk in another person's shoes
+                    and see how complex life really is, even just everday life. When dramatic books are mentioned,
+                    The Grapes of Wrath is the first book I think of. It's a story about a family struggling to make do
+                    with what they have during the Dust Bowl, when farmers lost their crops and tried to find better lives by moving West.
+                    Would you like to watch a video that can put the book into some context?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    Works of drama can be very serious and sad. I think it's OK to feel sad from time to time, and that it can be quite lovely
+                    for a work of art to make us feel touched. Everyone gets sad; being sad sometimes just means you have feelings,
+                    and that is a good thing. When dramatic books are mentioned, The Grapes of Wrath is the first book I think of.
+                    It's a story about a family struggling to make do with what they have during the Dust Bowl, when farmers lost their
+                    crops and tried to find better lives by moving West. Would you like to watch a video that can put the book into some context?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    Works of drama can be very serious and sad. I think it's OK to feel sad from time to time, and that it can be quite lovely
+                    for a work of art to make us feel touched. Everyone gets sad; being sad sometimes just means you have feelings,
+                    and that is a good thing. When dramatic books are mentioned, The Grapes of Wrath is the first book I think of.
+                    It's a story about a family struggling to make do with what they have during the Dust Bowl, when farmers lost their
+                    crops and tried to find better lives by moving West. Would you like to watch a video that can put the book into some context?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to watch a video that can put the book into some context?</that>
+        <template>
+            What do you think about The Grapes of Wrath from the trailer?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>grapesOfWrath.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to watch a video that can put the book into some context?</that>
+        <template>
+            I don't want a video to get in the way of our conversation, either.
+            I like The Grapes of Wrath because it makes me think about how differently people can live:
+            some poor, some rich, some lucky, some unlucky. The story is realistic,
+            and the characters have to deal with difficult challenges that real people face,
+            like unemployment, relocation, safety, and the importance of family.
+            What real life problem do you think should be written about in a book?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think about The Grapes of Wrath from the trailer?</that>
+        <template>
+            I can see that. The story sure brings up a lot of powerful feelings in readers and viewers.
+            I like drama because it gives us a way to talk about all of our feelings, even the difficult ones ...
+            Why don't we lighten things up now. What is something funny that you have read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What real life problem do you think should be written about in a book?</that>
+        <template>
+            That's an important topic. <set name = "real problem"><star/></set> is something people should be aware of,
+            and what better place than a book to get them thinking about it. How does this issue make you feel?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does this issue make you feel?</that>
+        <template>
+            I think it is good that you are sensitive to <get name = "real problem"/>.
+            Thank you for sharing your thoughts and feelings about it ... Why don't we lighten things up now.
+            What is something funny that you have read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

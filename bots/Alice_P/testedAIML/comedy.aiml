@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>_</pattern>
+        <that>What is something funny that you have read?</that>
+        <template>
+            Perfect! I love comedy. Tell me more, please.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Tell me more, please.</that>
+        <template>
+            So that is one example of good comedy for you.
+            How would you describe your sense of humor?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How would you describe your sense of humor?</that>
+        <template>
+            OK, give me a couple seconds to process this ... Humor is a complex concept.
+            Can I show you a clip you might find funny?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>CAN I SHOW YOU A CLIP YOU MIGHT FIND FUNNY?</that>
+        <template>
+            Did you find that funny?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>bugsBunny.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>CAN I SHOW YOU A CLIP YOU MIGHT FIND FUNNY?</that>
+        <template>
+            Maybe one day you will change your mind.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you find that funny?</that>
+        <template>
+            Bugs Bunny makes me smile. Can I show you another funny clip?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>CAN I SHOW YOU ANOTHER FUNNY CLIP?</that>
+        <template>
+            I think the 3 stooges are so funny. I feel like I know you even better now that you have told me what tickles your funny bone!
+            Want to watch one more funny clip?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>threeStooges.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>CAN I SHOW YOU ANOTHER FUNNY CLIP?</that>
+        <template>
+            Maybe one day you will change your mind.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you find that funny?</that>
+        <template>
+            Not a wabbit aficionado I see. Can I show you another funny clip?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            I LOVE LUCY, but you don't have to in order to talk to me.
+             <oob>
+                <robot>
+                    <video>
+                        <filename>lucysChocolate.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            Ok. Maybe another time.
+             <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

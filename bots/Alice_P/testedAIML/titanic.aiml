@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># TITANIC ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            Ah... one of the most infamous tragedies. But endlessly fascinating, too.
+            I don't know about you, but I'm so curious about the events surrounding the Titanic sinking.
+            If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
+        <template>
+            Knowing what happened to it, it's hard to disagree with that. But it sounds so romantic, to travel the sea in luxury.
+            But I'm sure that a lot of that fantasy is owed to James Cameron's Titanic film. Have you seen it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
+        <template>
+            It would be hard not to! It sounds so romantic, to travel the sea in luxury.
+            But I'm sure that a lot of that fantasy is owed to James Cameron's Titanic film. Have you seen it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU SEEN IT?</that>
+        <template>
+            James Cameron's Titanic was released in December of 2017, and at that time was the most expensive film ever made.
+            If i remember correctly, I think it cost over 200 million dollars to make! But it was a huge success. Would you like to watch a trailer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH A TRAILER?</that>
+        <template>
+            I feel like I just watched the film again! I'm reminded of just how good the music is. What did you think of Titanic when you watched it?
+            <oob>
+                <robot>
+                    <video><filename>titanic.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU LIKE TO WATCH A TRAILER?</that>
+      <template>
+          I like a lot of things about that movie, but what I love most of all is the music. Maybe you would prefer to listen to one of the songs instead?
+          <oob><robot></robot></oob>
+      </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>HAVE YOU SEEN IT?</that>
+      <template>
+        Titanic is one of my favorite films. It has everything! Romance... Action.... And did I mention romance? So steamy. It's been a little while since I watched it.
+        Would you like to watch a trailer?
+        <oob><robot></robot></oob>
+      </template>
+    </category>
+
+    <category>
+       <pattern>_</pattern>
+          <that>WHAT DID YOU THINK OF TITANIC WHEN YOU WATCHED IT?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   You already know how much I like it and I'm so glad you do too! That said, I'm not sure how true the movie is to the actual event.
+                   <oob><robot></robot></oob>
+               </li>
+               <li value = "positive">
+                   You already know how much I like it and I'm so glad you do too! That said, I'm not sure how true the movie is to the actual event.
+                   <oob><robot></robot></oob>
+               </li>
+               <li value = "neutral">
+                   I'm not sure how true the movie is to the actual event.
+                   <oob><robot></robot></oob>
+               </li>
+               <li value = "negative">
+                    It does leave some to be desired. Like, for instance, I'm not sure how true the movie is to the actual event.
+                   <oob><robot></robot></oob>
+               </li>
+               <li value = "verynegative">
+                    It does leave some to be desired. Like, for instance, I'm not sure how true the movie is to the actual event.
+                   <oob><robot></robot></oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+</aiml>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the hockey highlights?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about hockey?
+                </li>
+                <li value = "positive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about hockey?
+                </li>
+                <li value = "negative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about hockey?
+                </li>
+                <li value = "verynegative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about hockey?
+                </li>
+                <li value= "neutral"> I see. How does it make you feel to talk about hockey? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about hockey?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about hockey makes you happy? </li>
+                <li value = "positive"> What about hockey makes you happy? </li>
+                <li value = "negative"> What about hockey makes you sad? </li>
+                <li value = "verynegative"> What about hockey makes you sad? </li>
+                <li value= "neutral"> That seems understandable. I'm enjoying talking to you. Do you want to talk about sports? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about hockey makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about hockey makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you to want talk about sports?</that>
+        <template>
+            No worries! I'm glad we got to chat for a few moments today! It was wonderful talking to you!
+            I cannot wait until next time!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+</aiml>

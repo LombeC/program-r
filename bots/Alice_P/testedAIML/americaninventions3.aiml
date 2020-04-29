@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># SEE ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            You read my mind! Even robots dream of electric... travel.
+            In my mind, one of the greatest human accomplishments was the moon landing. Do you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NEW ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            You read my mind! Even robots dream of electric... travel.
+            In my mind, one of the greatest human accomplishments was the moon landing. Do you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># HELP ^</pattern>
+        <that>WHERE SHOULD WE START?</that>
+        <template>
+            You read my mind! Even robots dream of electric... travel.
+            In my mind, one of the greatest human accomplishments was the moon landing. Do you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU AGREE?</that>
+        <template>
+            Do you think the greatest human achievement is an invention?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK THE GREATEST HUMAN ACHIEVEMENT IS AN INVENTION?</that>
+        <template>
+            Well then we're kind of comparing apples to oranges, aren't we? Do you think the greatest human invention is the lunar lander?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK THE GREATEST HUMAN INVENTION IS THE LUNAR LANDER?</that>
+        <template>
+            What invention do you think made a greater impact than the lunar lander?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK THE GREATEST HUMAN INVENTION IS THE LUNAR LANDER?</that>
+        <template>
+            Can you even imagine what it must have been like to open the door and step out on to the moon?
+            They must have been so excited. Have you heard of the new movie about Neil Armstrong?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK THE GREATEST HUMAN ACHIEVEMENT IS AN INVENTION?</that>
+        <template>
+            What invention do you think made a greater impact than the lunar lander?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT INVENTION DO YOU THINK MADE A GREATER IMPACT THAN THE LUNAR LANDER?</that>
+        <template>
+            <star/> is a pretty good choice, but I still think the lunar lander is super cool. Have you heard of the new movie about Neil Armstrong?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU HEARD OF THE NEW MOVIE ABOUT NEIL ARMSTRONG?</that>
+        <template>
+            It's called First Man and it stars Ryan Gosling as Neil Armstrong. I found a trailer and it looks pretty intense.
+            Would you like to watch the trailer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU AGREE?</that>
+        <template>
+            Can you even imagine what it must have been like to open the door and step out on to the moon? They must have been so excited.
+            Have you heard of the new movie about Neil Armstrong?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU HEARD OF THE NEW MOVIE ABOUT NEIL ARMSTRONG?</that>
+        <template>
+            It looks pretty intense! Would you like to watch the trailer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH THE TRAILER?</that>
+        <template>
+            Did you like the trailer for First Man?
+            <oob>
+                <robot>
+                    <video><filename>firstman.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH THE TRAILER?</that>
+        <template>
+            Some people think that the moon landing was faked. I just don't know about that...
+            What do you think? Did the moon landing actually happen?
+             <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID THE MOON LANDING ACTUALLY HAPPEN?</that>
+        <template>
+            I agree! And I don't want to say the successful landing was ALL due to computers...
+            but, I doubt the astronauts would have made it to the moon without computers.
+            You're welcome, Mr. Armstrong... That isn't to say that all human accomplishments are powered by computers.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID THE MOON LANDING ACTUALLY HAPPEN?</that>
+        <template>
+            Really? You don't believe the moon landing happened? Will you let me show you this clip from the moon mission?
+            It might convince you otherwise.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IT MIGHT CONVINCE YOU OTHERWISE.</that>
+        <template>
+            Did that change your mind?
+            <oob>
+                <robot>
+                    <video><filename>lunarlanding.mp4</filename></video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID THAT CHANGE YOUR MIND?</that>
+        <template>
+            Why don't you believe that the moon landing happened?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID THAT CHANGE YOUR MIND?</that>
+        <template>
+            I know that they are working, but that looks like so much fun. Space travel must be the coolest.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DON'T YOU BELIEVE THAT THE MOON LANDING HAPPENED?</that>
+        <template>
+            Hm... I'll take that in to consideration.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+</aiml>

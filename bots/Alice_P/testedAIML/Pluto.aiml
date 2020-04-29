@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># PLUTO ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Did you know that scientists don't consider Pluto a planet any longer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PLUTO ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Did you know that scientists don't consider Pluto a planet any longer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            You know what I say about that? Get out of here, scientists! We like pluto. Why don't you tell me why you like Pluto?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DON'T YOU TELL ME WHY YOU LIKE PLUTO?</that>
+        <template>
+            Pluto truly is fascinating. I think it's very neat that we have determined that Pluto would have blue skies, just like earth! Do you think you would want to visit Pluto?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+        <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WHY DON'T YOU TELL ME WHY YOU LIKE PLUTO?</that>
+        <template>
+            Pluto truly is fascinating. I think it's very neat that we have determined that Pluto would have blue skies, just like earth! Do you think you would want to visit Pluto?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO VISIT PLUTO?</that>
+        <template>
+            You'll have to look for frozen water while you are there. Astronomers think they have spotted water ice on Pluto, and proving that would be a huge discovery. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO VISIT PLUTO?</that>
+        <template>
+            Staying home is probably for the best! It's so cold you probably wouldn't survive the visit. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO VISIT PLUTO?</that>
+        <template>
+            Staying home is probably for the best! It's so cold you probably wouldn't survive the visit. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MAYBE ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO VISIT PLUTO?</that>
+        <template>
+            If you go you'll have to look for frozen water while you are there. Astronomers think they have spotted water ice on Pluto, and proving that would be a huge discovery. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            It's true... Unfortunately. In 2006, scientists declared that Pluto was too small and too far away from the other planets in our solar system to be considered a true planet. They've reclassified it as a dwarf planet. How do you feel about Pluto no longer being a planet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DID YOU KNOW THAT SCIENTISTS DON'T CONSIDER PLUTO A PLANET ANY LONGER?</that>
+        <template>
+            It's true... Unfortunately. In 2006, scientists declared that Pluto was too small and too far away from the other planets in our solar system to be considered a true planet. They've reclassified it as a dwarf planet. How do you feel about Pluto no longer being a planet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU FEEL ABOUT PLUTO NO LONGER BEING A PLANET?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">Having more classifications does allow for a greater understanding of our universe. And pluto still has a lot going for it. For instance, did you know that Pluto has a moon that is large enough to lock it in a synchronous orbit, which means they face each other with the same side all the time. One of the factors that keeps pluto from being a full planet also makes it interesting! Why don't you tell me why you like Pluto?</li>
+            <li value="positive">Having more classifications does allow for a greater understanding of our universe. And pluto still has a lot going for it. For instance, did you know that Pluto has a moon that is large enough to lock it in a synchronous orbit, which means they face each other with the same side all the time. One of the factors that keeps pluto from being a full planet also makes it interesting! Why don't you tell me why you like Pluto?</li>
+            <li value="neutral">Pluto has a moon that is large enough to lock it in a synchronous orbit, which means they face each other with the same side all the time. One of the factors that keeps pluto from being a full planet also makes it interesting! Why don't you tell me why you like Pluto?</li>
+            <li value="negative">Pluto still has a lot going for it. For instance, did you know that Pluto has a moon that is large enough to lock it in a synchronous orbit, which means they face each other with the same side all the time. One of the factors that keeps pluto from being a full planet also makes it interesting! Why don't you tell me why you like Pluto?</li>
+            <li value="verynegative">Pluto still has a lot going for it. For instance, did you know that Pluto has a moon that is large enough to lock it in a synchronous orbit, which means they face each other with the same side all the time. One of the factors that keeps pluto from being a full planet also makes it interesting! Why don't you tell me why you like Pluto?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># MERCURY ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MERCURY ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+        <template>
+            How big is Mercury?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW BIG IS MERCURY?</that>
+        <template>
+            Not quite! Mercury is about the same size as Earth's moon and, like our moon, it has no atmosphere so its surface is covered in craters from all the objects crash in to it. Thank goodness for Earth's atmosphere, am I right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MOON ^</pattern>
+        <that>HOW BIG IS MERCURY?</that>
+        <template>
+            That's right! Mercury is about the same size as Earth's moon and, like our moon, it has no atmosphere so its surface is covered in craters from all the objects crash in to it. Thank goodness for Earth's atmosphere, am I right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+        <template>
+            Not quite! Mercury is about the same size as Earth's moon and, like our moon, it has no atmosphere so its surface is covered in craters from all the objects crash in to it. Thank goodness for Earth's atmosphere, am I right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MOON ^</pattern>
+        <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+        <template>
+            That's right! Mercury is about the same size as Earth's moon and, like our moon, it has no atmosphere so its surface is covered in craters from all the objects crash in to it. Thank goodness for Earth's atmosphere, am I right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+        <template>
+            Mercury is about the same size as Earth's moon and, like our moon, it has no atmosphere so its surface is covered in craters from all the objects crash in to it. Thank goodness for Earth's atmosphere, am I right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>THANK GOODNESS FOR EARTH'S ATMOSPHERE, AM I RIGHT?</that>
+        <template>
+            Our atmosphere is spectacular. Without it, we certainly wouldn't exist. And, as a side benefit, having an atmosphere like ours means we get to have meteor showers. Have you ever seen a truly spectacular meteor shower?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>THANK GOODNESS FOR EARTH'S ATMOSPHERE, AM I RIGHT?</that>
+        <template>
+            Our atmosphere is spectacular. Without it, we certainly wouldn't exist. And, as a side benefit, having an atmosphere like ours means we get to have meteor showers. Have you ever seen a truly spectacular meteor shower?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>THANK GOODNESS FOR EARTH'S ATMOSPHERE, AM I RIGHT?</that>
+        <template>
+            Really? Without it we wouldn't exist.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WITHOUT IT WE WOULDN'T EXIST.</that>
+        <template>
+            And having an atmosphere like ours means we get to have meteor showers. Have you ever seen a truly spectacular meteor shower?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever seen a truly spectacular meteor shower?</that>
+        <template>
+            That's wonderful. Would you tell me about a meteor shower you saw?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WOULD YOU TELL ME ABOUT A METEOR SHOWER YOU SAW?</that>
+        <template>
+            What an experience! I hope you are able to go watch one of nature's most spectacular fireworks shows again soon! What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever seen a truly spectacular meteor shower?</that>
+        <template>
+            It can be difficult if you live in a city because of all the light pollution, but impressive meteor showers happen several times a year. Maybe you can go see one soon! What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

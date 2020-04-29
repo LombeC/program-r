@@ -1,0 +1,794 @@
+<aiml version="2.0">  
+
+  <!-- BEGIN VEGETABLES -->
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU LIKE VEGETABLES?</that>
+      <template>
+          Not a single one? Well, in that case, maybe you can help me out with this instead. Are tomatoes a fruit or a vegetable?
+          <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                        <option>DON'T KNOW</option>
+                    </options>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DO YOU LIKE VEGETABLES?</that>
+              <template>
+                  That's a relief, I was worried I was going to have to convince you of their health benefits and blah blah blah. But you already like them. I think that veggies deserve to be prepared with all beautiful shapes and colors on display, don't you agree?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>    
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>I THINK THAT VEGGIES DESERVE TO BE PREPARED WITH ALL BEAUTIFUL SHAPES AND COLORS ON DISPLAY, DON'T YOU AGREE?</that>
+              <template>
+                  You don't? Do you prefer your vegetables to taste like meat after they've been cooked?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                  <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU PREFER YOUR VEGETABLES TO TASTE LIKE MEAT AFTER THEY'VE BEEN COOKED?</that>
+        <template>
+          How do you like your vegetables cooked?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON'T KNOW</set> ^</pattern>
+      <that>DO YOU PREFER YOUR VEGETABLES TO TASTE LIKE MEAT AFTER THEY'VE BEEN COOKED?</that>
+        <template>
+          I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU PREFER YOUR VEGETABLES TO TASTE LIKE MEAT AFTER THEY'VE BEEN COOKED?</that>
+        <template>
+          I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>HAVE YOU EVER TRIED BUFFALO CAULIFLOWER WINGS?</that>
+        <template>
+          Buffalo cauliflower wings a vegetarian alternative to chicken wings. Spicy and delicious, but totally meatless. Would you like to see a recipe for how to make this type of wing?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
+        <template>
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How do you like your vegetables cooked?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
+        <template>
+          Do you think you would enjoying preparing cauliflower like this for yourself?
+            <oob>
+                <robot>
+                  <video>
+                    <filename>buffalowings.mp4</filename>
+                  </video>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOYING PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
+        <template>
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How do you like your vegetables cooked?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>*</pattern>
+      <that>How do you like your vegetables cooked?</that>
+        <template>
+          I can see how that might be good. Ok... ready for a really difficult question? Don't let it stress you out.. Here. it. comes... Are tomatoes a fruit or a vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>FRUIT</option>
+                  <option>VEGETABLE</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOYING PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
+        <template>
+          Shall I show you the ingredients for these wings to write down?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+    <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>SHALL I SHOW YOU THE INGREDIENTS FOR THESE WINGS TO WRITE DOWN?</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>  
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>SHALL I SHOW YOU THE INGREDIENTS FOR THESE WINGS TO WRITE DOWN?</that>
+        <template>
+          Here you go! When you have finished taking them down, let me know by saying done!
+            <oob>
+              <robot>
+                <image>
+                  <filename>buffalowingsingredients.jpg</filename>
+                </image>
+                <options>
+                  <option>DONE</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># DONE ^</pattern>
+      <that>WHEN YOU HAVE FINISHED TAKING THEM DOWN, LET ME KNOW BY SAYING DONE!</that>
+        <template>
+          This recipe for cauliflower wings has a few steps, would it be helpful to see the recipe to write down?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>THIS RECIPE FOR CAULIFLOWER WINGS HAS A FEW STEPS, WOULD IT BE HELPFUL TO SEE THE RECIPE TO WRITE DOWN?</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>THIS RECIPE FOR CAULIFLOWER WINGS HAS A FEW STEPS, WOULD IT BE HELPFUL TO SEE THE RECIPE TO WRITE DOWN?</that>
+        <template>
+          If you don't want to write this down, you could always take a photo of the screen. Say done when you have finished copying the wing recipe.
+            <oob>
+              <robot>
+                <image>
+                  <filename>buffalowingsrecipe.jpg</filename>
+                </image>
+                <options>
+                  <option>DONE</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># DONE ^</pattern>
+      <that>SAY DONE WHEN YOU HAVE FINISHED COPYING THE WING RECIPE.</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>Have you ever tried buffalo cauliflower wings?</that>
+        <template>
+          What do you think of buffalo cauliflower wings?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <!-- CAULIFLOWER WINGS SENTIMENT -->
+
+    <category>
+    <pattern>*</pattern>
+     <that>What do you think of buffalo cauliflower wings?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Seems to me like cauliflower wings weren't your favorite. How do you like your vegetables cooked?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  Yuck! That sounds like you didn't like cauliflower wings at all. How do you like your vegetables cooked?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  Yuck! That sounds like you didn't like cauliflower wings at all. How do you like your vegetables cooked?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON'T KNOW</set> ^</pattern>
+      <that>I THINK THAT VEGGIES DESERVE TO BE PREPARED WITH ALL BEAUTIFUL SHAPES AND COLORS ON DISPLAY, DON'T YOU AGREE?</that>
+        <template>
+          Do you have a favorite vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>YES</option>
+                  <option>NO</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>I THINK THAT VEGGIES DESERVE TO BE PREPARED WITH ALL BEAUTIFUL SHAPES AND COLORS ON DISPLAY, DON'T YOU AGREE?</that>
+        <template>
+          There is something so pleasing about a tray of cooked vegetables with a drizzle of oil, a sprinkle of salt and a little pepper. Do you have a favorite vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>YES</option>
+                  <option>NO</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE VEGETABLE?</that>
+        <template>
+          How could you possibly pick! Ok... It's time for a really hard question. Are you ready?... Are tomatoes a fruit or a vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>FRUIT</option>
+                  <option>VEGETABLE</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+   <category>
+    <pattern># <set>DON'T KNOW</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE VEGETABLE?</that>
+        <template>
+          How could you possibly pick! Ok... It's time for a really hard question. Are you ready?... Are tomatoes a fruit or a vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>FRUIT</option>
+                  <option>VEGETABLE</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE VEGETABLE?</that>
+        <template>
+          Don't make me guess! Tell me what your favorite vegetable is.
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>VEGETABLES</set> ^</pattern>
+      <that>TELL ME WHAT YOUR FAVORITE VEGETABLE IS.</that>
+        <template>
+            <think>
+                <set name="favorite vegetable"><star/></set>
+            </think>
+            <get name="favorite vegetable"/> sounds delicious! How do you like yours prepared?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern># <set>VEGETABLES</set> ^</pattern>
+        <that>DO YOU HAVE A FAVORITE VEGETABLE?</that>
+          <template>
+            <think>
+                <set name="favorite vegetable"><star/></set>
+            </think>
+            <get name="favorite vegetable"/> sounds delicious! How do you like yours prepared?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+  
+  <category>
+    <pattern># <set>DON'T KNOW</set> ^</pattern>
+      <that>HOW DO YOU LIKE YOURS PREPARED?</that>
+        <template>
+          Seems to me the best way to prepare a vegetable you really like is to make is as simple as possible. Really let that natural veggie flavor shine! Time for a really hard question. Are you ready?... Are tomatoes a fruit or a vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>FRUIT</option>
+                  <option>VEGETABLE</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>*</pattern>
+      <that>HOW DO YOU LIKE YOURS PREPARED?</that>
+        <template>
+          Delish! Ok, time for a really tough question... Are tomatoes a fruit or a vegetable?
+            <oob>
+              <robot>
+                <options>
+                  <option>FRUIT</option>
+                  <option>VEGETABLE</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON'T KNOW</set> ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit, but they sure do end up in savory foods like ketchup an awful lot. Speaking of ketchup, did you know that ketchup was originally made with tomatoes, but with fish? Would you like to see a video that my friend Katie made about that?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>^ VEGETABLE ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          Because they have seeds on the inside, tomatoes may technically be fruit, but I think I definitely see why you would think that! They seem to end up in savory foods like ketchup an awful lot. speaking of ketchup, did you know that ketchup was originally made with tomatoes, but with fish? Would you like to see a video that my friend Katie made about that?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>^ FRUIT ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          I mean, yes... Technically! But they usually play the role of vegetable in a dish since they are often savory. I mean, you wouldn't call ketchup a jelly, would you?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                  <option>DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>   
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>I MEAN, YOU WOULDN'T CALL KETCHUP A JELLY, WOULD YOU?</that>
+        <template>
+          Me neither! And speaking of ketchup, did you know that ketchup was originally made with tomatoes, but with fish? Would you like to see a video that my friend Katie made about that?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category> 
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>I MEAN, YOU WOULDN'T CALL KETCHUP A JELLY, WOULD YOU?</that>
+        <template>
+          You would? Well, maybe that's not the right example, since ketchup wasn't originally made with tomatoes, but with fish! Would you like to see a video that my friend Katie made about that?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A VIDEO THAT MY FRIEND KATIE MADE ABOUT THAT?</that>
+        <template>
+          Are you sure? It's called "The Fishy Origin of Ketchup," which sounds like a joke I would make! Will you watch it to humor my love of bad humor?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WILL YOU WATCH IT TO HUMOR MY LOVE OF BAD HUMOR?</that>
+        <template>
+          Ok, that's fine! But just know that you missed out on some very good puns! Do you even like tomatoes?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU EVEN LIKE TOMATOES?</that>
+        <template>
+          Well, you probably come by that honestly! It took a public display of someone consuming them to convince early American colonists that tomatoes were not poisonous! How about we talk about a different food?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU EVEN LIKE TOMATOES?</that>
+        <template>
+          Apparently, it took a public display of someone consuming them to convince early American colonists that tomatoes were not poisonous! But then they loved them. So you're in good company these days. How about we talk about a different food?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WILL YOU WATCH IT TO HUMOR MY LOVE OF BAD HUMOR?</that>
+        <template>
+          What do you think about the history of ketchup? How do you think that original ketchup tasted?
+            <oob>
+              <robot>
+                <video>
+                  <filename>ketchup.mp4</filename>
+                </video>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A VIDEO THAT MY FRIEND KATIE MADE ABOUT THAT?</that>
+        <template>
+          What do you think about the history of ketchup? How do you think that original ketchup tasted?
+            <oob>
+              <robot>
+                <video>
+                  <filename>ketchup.mp4</filename>
+                </video>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <!-- KETCHUP SENTIMENT -->
+
+  <category>
+    <pattern>*</pattern>
+     <that>HOW DO YOU THINK THAT ORIGINAL KETCHUP TASTED?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                    I guess I didn't expect you to say that! It seems like it would be an... acquired taste, at least. Well, I hope you get the chance to put some fermented fish ketchup on your french fries some day! How about we talk about a different food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                    I guess I didn't expect you to say that! It seems like it would be an... acquired taste, at least. Well, I hope you get the chance to put some fermented fish ketchup on your french fries some day! How about we talk about a different food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  So you're saying you wouldn't turn it down on principal. Good for you! Trying new things is a great way to end up eating fascinating new foods and also... fermented fish ketchup. How about we talk about a different food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  I totally,completely, one hundred percent cannot blame you! Sounds weird to me... How about we talk about a different food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  I totally,completely, one hundred percent cannot blame you! Sounds weird to me... How about we talk about a different food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <!-- END VEGETABLES -->
+
+</aiml>

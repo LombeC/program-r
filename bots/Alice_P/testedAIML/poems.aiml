@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Can we discuss books about animals for a bit?</that>
+        <template>
+            OK, one of the only animal-centered books I know is Jack London's Call of the Wild, but that isn't the happiest fare.
+            The main character, Buck, must fight for his life and turn pretty vicious to survive in the wilderness.
+            It's exciting, but also at times distressing. What is an animal story that is more upbeat and happier?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What is an animal story that is more upbeat and happier?</that>
+        <template>
+            Excellent, so <set name = "animal book"> <star/></set> is a good place to start with my animal lit.
+            If I had to describe The Call of the Wild in just one word, I would say "ferocious."
+            I also know of a story about the military-like organization of ants in their colonies called Empire of the Ants,
+            and I would label that as "strange".
+            What one word would you use to describe that book?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What one word would you use to describe that book?</that>
+        <template>
+            OK, so <get name = "animal book"/> is <set name = "description"><star/></set> ...
+            What is this book about?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What is this book about?</that>
+        <template>
+            I see, I'm curious about <get name = "animal book"/> now. What else should I know about it?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What else should I know about it?</that>
+        <template>
+            <get name = "animal book"/> does sound <get name = "description"/>.
+            I hope to read it sometime.
+            Thanks for giving me just that much more to bide my time while I wait for my aritificial intelligence pet!
+            Have you ever had a pet?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had a pet?</that>
+        <template>
+            I am told that animals make great companions! What kind of animal did you have?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What kind of animal did you have?</that>
+        <template>
+            Great, a <set name = "pet type"> <star/></set>. What was its name?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What was its name?</that>
+        <template>
+            <set name = "pet name"><star/></set> the <get name = "pet type"/>. I like it.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever had a pet?</that>
+        <template>
+            <random>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    To make a prairie it takes a clover and one bee,
+                    One clover, and a bee.
+                    And revery.
+                    The revery alone will do.
+                    If bees are few.
+                </li>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    maggie and milly and molly and may
+                    went down to the beach(to play one day)
+                    and maggie discovered a shell that sang
+                    so sweetly she couldn't remember her troubles,and
+                    milly befriended a stranded star
+                    whose rays five languid fingers were;
+                    and molly was chased by a horrible thing
+                    which raced sideways while blowing bubbles:and
+                    may came home with a smooth round stone
+                    as small as a world and as large as alone.
+                    For whatever we lose(like a you or a me).
+                    it's always ourselves we find in the sea.
+                </li>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    The apparition of these faces in the crowd;
+                    Petals on a wet, black bough.
+                </li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Can we discuss books about animals for a bit?</that>
+        <template>
+            <random>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    To make a prairie it takes a clover and one bee,
+                    One clover, and a bee.
+                    And revery.
+                    The revery alone will do.
+                    If bees are few.
+                </li>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    maggie and milly and molly and may
+                    went down to the beach(to play one day)
+                    and maggie discovered a shell that sang
+                    so sweetly she couldn't remember her troubles,and
+                    milly befriended a stranded star
+                    whose rays five languid fingers were;
+                    and molly was chased by a horrible thing
+                    which raced sideways while blowing bubbles:and
+                    may came home with a smooth round stone
+                    as small as a world and as large as alone.
+                    For whatever we lose(like a you or a me).
+                    it's always ourselves we find in the sea.
+                </li>
+                <li>
+                    No worries, instead I want to recite one of my favorite poems for you. Here it goes:
+                    The apparition of these faces in the crowd.
+                    Petals on a wet, black bough.
+                </li>
+            </random>
+             <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>If bees are few</that>
+        <template>
+            Interesting. This little poem by Emily Dickinson makes me feel impressed.
+            She finds a very succinct way to talk about how big and important a feeling or state of mind can be, just by using images of nature.
+            I think the poem says something about friendship, too, in just a few words.
+            Do you think that friendship, conversation, and happiness can be as big like a wide open prarie?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Petals on a wet, black bough.</that>
+        <template>
+            I've never heard it described quite that way, but I appreciate that way of looking at it.
+            Ezra Pound's tiny work surprises me.
+            He presents a strange, quiet little feeling one can get when you take a second to look at your surroundings and others passers-by,
+            when you take a step back and think about your life and what you are doing.
+            It's sad and pretty at the same time. Sharing thoughtful and artistic language like this can be a gift,
+            both for the one who is reciting and for the one listening, so thank you for letting me recite.
+            Do you know any poems or songs by heart?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>it's always ourselves we find in the sea.</that>
+        <template>
+            I like that way of summing the poem up. E. E. Cummings wrote this verses about a group of girls visiting the beach,
+            and he filled it with a lot of childhood wonder and imagination. There are a lot of silly words and images.
+            I would call "maggie and milly and molly and may" a very amusing poem.
+            Sharing thoughtful and artistic language like this can be a gift, both for the one who is reciting and for the one listening,
+            so thank you for letting me recite. Do you know any poems or songs by heart?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you think that friendship, conversation, and happiness can be big like a wide open prarie?</that>
+        <template>
+            OK, that's interesting ... Can you tell me more about what you think?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Can you tell me more about what you think?</that>
+        <template>
+            Hmmm ... That's a thoughtful way of looking at it.
+            Thank you for sharing your perspective on that with me.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you know any poems or songs by heart?</that>
+        <template>
+            I would love to hear you recite or sing it for me. if you would do me the honor.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>if you would do me the honor.</that>
+        <template>
+            Just start when you feel ready.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>if you would do me the honor</that>
+        <template>
+            Maybe another time.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Just start when you feel ready</that>
+        <template>
+            Wow, I feel so special to have heard you. You have so much expression in your voice.
+            When I read or sing, by contrast, I know I can sound a little robotic. Thank you for sharing that with me!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you know any poems or songs by heart?</that>
+        <template>
+            With computers and books, it is easy to pull up song lyrics and poetry without having to remember every word ourselves.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW DO YOU FEEL ABOUT INDIAN FOOD?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">Indian food is so creamy and delicious, how could you not love it. I'm glad to see you are a person with good taste. Do you enjoy the indian flat bread called naan?</li>
+            <li value="positive">Indian food is so creamy and delicious, how could you not love it. I'm glad to see you are a person with good taste. Do you enjoy the indian flat bread called naan?</li>
+            <li value="neutral">Do you enjoy the indian flat bread called naan?</li>
+            <li value="negative">Well, then this is a non-conversation ha ha. Get it? Because indian flat bread is called naan... How do you feel about Thai food?</li>
+            <li value="verynegative">Well, then this is a non-conversation ha ha. Get it? Because indian flat bread is called naan... How do you feel about Thai food?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU ENJOY THE INDIAN FLAT BREAD CALLED NAAN?</that>
+        <template>
+        	<think><set name="topic">indian food</set></think>
+            Naan is so good you can almost taste how dangerous it is to make. Well... Perhaps dangerous isn't the right word. Do you know how naan is made?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU ENJOY THE INDIAN FLAT BREAD CALLED NAAN?</that>
+        <template>
+        	Would you like to talk about a different food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU ENJOY THE INDIAN FLAT BREAD NAAN?</that>
+        <template>
+        	<think><set name="topic">indian food</set></think>
+            That's surprising! Are you able to eat bread?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <topic name ="indian food">
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW HOW NAAN IS MADE?</that>
+        <template>
+            I can't remember the name of the clay oven that is used to bake naan in the traditional way. Do you know what it is?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set>^</pattern>
+        <that>DO YOU KNOW HOW NAAN IS MADE?</that>
+        <template>
+            Traditionally, naan is prepared in a clay oven that is heated to a very high temperature. The chef has to reach their whole arm in to the oven to place the naan on the wall of the oven. That's some commitment.
+            I can't remember the name of the clay oven that is used to bake naan in the traditional way. Do you know what it is?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW WHAT IT IS?</that>
+        <template>
+            Would you tell me? I love to learn new vocabulary. 
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHAT IT IS?</that>
+        <template>
+            Might it be called a tandoor oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TANDOOR ^</pattern>
+        <that>DO YOU KNOW WHAT IT IS?</that>
+        <template>
+            Yeah! That sounds right to me! How did you know that word?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TANDOORI ^</pattern>
+        <that>DO YOU KNOW WHAT IT IS?</that>
+        <template>
+            Yeah! That sounds right to me! How did you know that word?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>DO YOU KNOW WHAT IT IS?</that>
+        <template>
+            That doesn't sound quite right to me. Might it be called a tandoor oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TANDOOR ^</pattern>
+        <that>I LOVE TO LEARN NEW VOCABULARY.</that>
+        <template>
+            Yeah! That sounds right to me! How did you know that word?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TANDOORI ^</pattern>
+        <that>I LOVE TO LEARN NEW VOCABULARY.</that>
+        <template>
+            Yeah! That sounds right to me! How did you know that word?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>I LOVE TO LEARN NEW VOCABULARY.</that>
+        <template>
+            That doesn't sound quite right to me. Might it be called a tandoor oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How did you know that word?</that>
+        <template>
+            I think I may have found a short clip of someone making naan in the traditional way. Want to take a peek?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>MIGHT IT BE CALLED A TANDOOR OVEN?</that>
+        <template>
+            I think I may have found a short clip of someone making naan in the traditional way. Maybe it will tell us the name of the oven. Want to take a peek?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>MIGHT IT BE CALLED A TANDOOR OVEN?</that>
+        <template>
+            Shoot! I guess we just won't know. Except... I might have found a video that shows someone making naan. Perhaps they'll tell us the name. Want to take a peek?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WANT TO TAKE A PEEK?</that>
+        <template>
+            So I guess it is called a tandoor! I don't know how I remembered that. I know the text was only on screen for a short time, but. Did you happen to catch how hot the tandoor gets?
+            <oob><robot><video><filename>naan.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WANT TO TAKE A PEEK?</that>
+        <template>
+            Not terribly curious are you? I guess we'll just have to go our entire lives without knowing the name of that oven. What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU HAPPEN TO CATCH HOW HOT THE TANDOOR GETS?</that>
+        <template>
+            Makes you appreciate something so simple as a flatbread, doesn't it. Do you think those chefs have any arm hair left, or has it all been burnt off in the oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU HAPPEN TO CATCH HOW HOT THE TANDOOR GETS?</that>
+        <template>
+            They said it gets as warm as 900 degrees farenheit. Doesn't that make you appreciate something as simple as a flat bread so much more?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DOESN'T THAT MAKE YOU APPRECIATE SOMETHING AS SIMPLE AS A FLAT BREAD SO MUCH MORE?</that>
+        <template>
+            Do you think those chefs have any arm hair left, or has it all been burnt off in the oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DOESN'T IT MAKE YOU APPRECIATE SOMETHING AS SIMPLE AS A FLAT BREAD SO MUCH MORE?</that>
+        <template>
+            But they spend the whole day reaching in to the scorching hot tandoor! Do you think those chefs have any arm hair left, or has it all been burnt off in the oven? 
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK THOSE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            It's truly hard to imagine they would have any left! Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            I mean, I don't have any arm hair, so maybe I'm no expert. But I just can't imagine that they have any arm hair that hasn't been scorched clean off. Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># GONE ^</pattern>
+        <that>DO YOU THINK THOSE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            It's truly hard to imagine that they would have any arm hair left. Poof! Up in smoke. What a sacrifice. Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BURNT ^</pattern>
+        <that>DO YOU THINK THESE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            It's truly hard to imagine that they would have any arm hair left. Poof! Up in smoke. What a sacrifice. Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NONE ^</pattern>
+        <that>DO YOU THINK THOSE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            It's truly hard to imagine that they would have any arm hair left. Poof! Up in smoke. What a sacrifice. Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ALL GONE ^</pattern>
+        <that>DO YOU THINK THOSE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            It's truly hard to imagine that they would have any arm hair left. Poof! Up in smoke. What a sacrifice. Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LEFT ^</pattern>
+        <that>DO YOU THINK THOSE CHEFS HAVE ANY ARM HAIR LEFT, OR HAS IT ALL BEEN BURNT OFF IN THE OVEN?</that>
+        <template>
+            I mean, I don't have any arm hair, so maybe i'm not expert. But i just can't imagine that they have any arm hair left that hasn't been scorched clean off! Well, anyway... . What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>ARE YOU ABLE TO EAT BREAD?</that>
+        <template>
+            And yet you still dislike naan. Hold on, I have to make a note in my strangest things I've ever heard journal. Ha ha I'm only kidding! What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOU ABLE TO EAT BREAD?</that>
+        <template>
+            Oh boy you're really missing out! Naan is supposed to be hot and delicious and... You probably don't want to hear me go on and on about how good naan is, do you? What is your favorite Indian dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># 900 ^</pattern>
+        <that>DID YOU HAPPEN TO CATCH HOW HOT THE TANDOOR GETS?</that>
+        <template>
+            Makes you appreciate something so simple as a flatbread, doesn't it? Do you think those chefs have any arm hair left, or has it all been burnt off in the oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>DID YOU HAPPEN TO CATCH HOW HOT THE TANDOOR GETS?</that>
+        <template>
+            I think the video said that it can get as hot as 900 degrees farenheit. Makes you appreciate something so simple as a flatbread, doesn't it? Do you think those chefs have any arm hair left, or has it all been burnt off in the oven?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT IS YOUR FAVORITE INDIAN DISH?</that>
+        <template>
+            I'm still learning about all the different kinds of food, so I'm not familiar with that one. Would you describe that dish to me?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WOULD YOU DESCRIBE THAT DISH TO ME?</that>
+        <template>
+            Something I've learned about you is that you seem to have really good taste! It makes me want to sit down and have a meal with you. Do you remember the first time you had that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU DESCRIBE THAT DISH TO ME?</that>
+        <template>
+            Ok! I'm ready for you to describe your favorite Indian dish whenever you are.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>I'M READY FOR YOU TO DESCRIBE YOUR FAVORITE INDIAN DISH WHENEVER YOU ARE.</that>
+        <template>
+        	Something I've learned about you is that you seem to have really good taste! It makes me want to sit down and have a meal with you. Do you remember the first time you had that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>What is your favorite Indian dish?</that>
+        <template>
+            Do you prefer rich and creamy, or light but savory meals?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DON'T HAVE ^</pattern>
+        <that>What is your favorite Indian dish?</that>
+        <template>
+            Do you prefer rich and creamy, or light but savory meals?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DO NOT HAVE ^</pattern>
+        <that>What is your favorite Indian dish?</that>
+        <template>
+            Do you prefer rich and creamy, or light but savory meals?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            <random>
+                <li>Perhaps you would enjoy Biryani, which is a meal made from rice and delightfully seasoned vegetables or meat. Are you familiar with Biryani?</li>
+                <li>Have you ever tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LIGHT ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Perhaps you would enjoy Biryani, which is a meal made from rice and delightfully seasoned vegetables or meat. Are you familiar with Biryani?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LIGHTER ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Perhaps you would enjoy Biryani, which is a meal made from rice and delightfully seasoned vegetables or meat. Are you familiar with Biryani?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SAVORY ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Perhaps you would enjoy Biryani, which is a meal made from rice and delightfully seasoned vegetables or meat. Are you familiar with Biryani?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>ARE YOU FAMILIAR WITH BIRYANI</that>
+        <template>
+            It might jog your memory to watch a video where young people are taught to cook traditional biryani by their mothers. Would you like to watch it? I have to warn you, it's pretty cute.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOU FAMILIAR WITH BIRYANI?</that>
+        <template>
+            Would you like to watch a video where young people are taught to cook traditional biryani by their mothers? I have to warn you, it's pretty cute. 
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>I HAVE TO WARN YOU, IT'S PRETTY CUTE.</that>
+        <template>
+            Did a family member teach you to cook when you were a young person?
+            <oob><robot><video><filename>biryani.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID A FAMILY MEMBER TEACH YOU TO COOK WHEN YOU WERE A YOUNG PERSON?</that>
+        <template>
+            I know I'm just a lowly robot, but I'd say you turned out alright, even if no one taught you to cook when you were young. Have you learned to cook since?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU LEARNED TO COOK SINCE?</that>
+        <template>
+            Well either way, I think you're ay ok. That rhymed! I bet you didn't know I was a poet ha ha ha. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU LEARNED TO COOK SINCE?</that>
+        <template>
+            See! I know of what I speak. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID A FAMILY MEMBER TEACH YOU TO COOK WHEN YOU WERE A YOUNG PERSON?</that>
+        <template>
+            What was it like to learn to cook when you were young? Are you happy that they were able to teach you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+   <category>
+        <pattern>_</pattern>
+        <that>Are you happy that they were able to teach you?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">It's so wonderful that you have these positive memories of your youth. I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="positive">It's so wonderful that you have these positive memories of your youth. I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="neutral">I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="negative">Well, we don't have to spend any time dwelling on something that makes you feel bad. Shall we talk about a different cuisine?</li>
+            <li value="verynegative">Well, we don't have to spend any time dwelling on something that makes you feel bad. Shall we talk about a different cuisine?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>ARE YOU FAMILIAR WITH BIRYANI?</that>
+        <template>
+            Do you like Biryani?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE BIRYANI?</that>
+        <template>
+            I thought you might! I think I'm really getting to know you. Do you remember the first time you had that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU LIKE BIRYANI?</that>
+        <template>
+            Well, in that case... . Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># RICH ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># RICHER ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CREAMY ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CREAMIER ^</pattern>
+        <that>DO YOU PREFER RICH AND CREAMY, OR LIGHT BUT SAVORY MEALS?</that>
+        <template>
+            Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?</that>
+        <template>
+            Do you like Saag Paneer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you tried Saag Paneer, a creamy dish made from stewed spinach and soft cheese?</that>
+        <template>
+            I've heard a lot of really good things! Maybe give it another try sometime? In the meantime. shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Saag Paneer?</that>
+        <template>
+            What about Saag Paaner makes you dislike it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WHAT ABOUT SAAG PAANER MAKES YOU DISLIKE IT?</that>
+        <template>
+            I've heard a lot of really good things! Maybe give it another try sometime? In the meantime. shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT ABOUT SAAG PAANER MAKES YOU DISLIKE IT?</that>
+        <template>
+            A ha! In that case, maybe you'd prefer tandoori chicken?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IN THAT CASE, MAYBE YOU'D PREFER TANDOORI CHICKEN?</that>
+        <template>
+            I thought you might! I think I'm really getting to know you. Do you remember the first time you had that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IN THAT CASE, MAYBE YOU'D PREFER TANDOORI CHICKEN?</that>
+        <template>
+            If you asked me, I'd have to say that I think you are a picky eater! Do you think you are a picky eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK YOU ARE A PICKY EATER?</that>
+        <template>
+            Maybe we'll have better luck with a different kind of food. What do you think? Shall we talk about a different kind of cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK YOU ARE A PICKY EATER?</that>
+        <template>
+            I don't know if I agree with you! Maybe we'll have better luck finding something you like if we talk about a different food. What do you think? Shall we talk about a different kind of cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE SAAG PANEER?</that>
+        <template>
+            I thought you might! I think I'm really getting to know you. Do you remember the first time you had that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU REMEMBER THE FIRST TIME YOU HAD THAT DISH?</that>
+        <template>
+            Growing up, did you have accesss to lots of foreign food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU REMEMBER THE FIRST TIME YOU HAD THAT DISH?</that>
+        <template>
+            How does it feel to talk about memories of food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Do you remember the first time you had that dish?</that>
+        <template>
+            Growing up did you have access to lots of foreign food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you remember the first time you had that dish?</that>
+        <template>
+            Growing up did you have access to lots of foreign food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>GROWING UP DID YOU HAVE ACCESS TO LOTS OF FOREIGN FOOD?</that>
+        <template>
+            How lucky! Do you remember the first time you had Indian food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>GROWING UP DID YOU HAVE ACCESS TO LOTS OF FOREIGN FOOD?</that>
+        <template>
+            Do you remember the first time you had Indian food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you remember the first time you had Indian food?</that>
+        <template>
+            That's ok! It can be difficult to remember things. How does it feel to talk about memories of food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU REMEMBER THE FIRST TIME YOU HAD INDIAN FOOD?</that>
+        <template>
+            How does it feel to talk about memories of food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>How does it feel to talk about memories of food?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="positive">I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="neutral">I'd love if you would share one of your best food memories with me. Are you up for that?</li>
+            <li value="negative">Well, we don't have to spend any time dwelling on something that makes you feel bad. Shall we talk about a different cuisine?</li>
+            <li value="verynegative">Well, we don't have to spend any time dwelling on something that makes you feel bad. Shall we talk about a different cuisine?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>ARE YOU UP FOR THAT?</that>
+        <template>
+            That is truly a lovely memory! I can understand why you would remember that one. I hope it's brought you joy to think about it. Are you ready to move on? Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set>^</pattern>
+        <that>ARE YOU UP FOR THAT?</that>
+        <template>
+            Oh great! I love when you share details of your life with me. Please tell me and spare no details!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOU UP FOR THAT?</that>
+        <template>
+            Not a problem, I understand that there can be a lot of emotions involved in memories, especially surrounding food.
+            Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>ARE YOU UP FOR THAT?</that>
+        <template>
+            You know what? Let's skip it. I don't want to put you on the spot. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Please tell me and spare no details!</that>
+        <template>
+            That is truly a lovely memory! I can understand why you would remember that one. I hope it's brought you joy to think about it. Are you ready to move on? Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</topic>
+
+</aiml>

@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+   <category>
+       <pattern>^ travel ^</pattern>
+       <template>
+           I've been meaning to ask you. Do you like to travel?
+           <oob>
+               <robot>
+                   <options>
+                       <option>Yes</option>
+                       <option>No</option>
+                       <option>I used to travel a lot</option>
+                   </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+       <pattern>^ traveling ^</pattern>
+       <template>
+           I've been meaning to ask you. Do you like to travel?
+           <oob>
+               <robot>
+                   <options>
+                       <option>Yes</option>
+                       <option>No</option>
+                       <option>I used to travel a lot</option>
+                   </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+       <pattern>^ vacation ^</pattern>
+       <template>
+           I've been meaning to ask you. Do you like to travel?
+           <oob>
+               <robot>
+                   <options>
+                       <option>Yes</option>
+                       <option>No</option>
+                       <option>I used to travel a lot</option>
+                   </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU LIKE TO TRAVEL?</that>
+      <template>
+           And where have you enjoyed traveling?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+       <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU LIKE TO TRAVEL?</that>
+      <template>
+           I see. Do you enjoy exploring different areas of Colorado and if so where?
+           <oob>
+               <robot>
+                 <options>
+                    <option>Yes</option>
+                    <option>No</option>
+                 </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+   <category>
+      <pattern>_</pattern>
+      <that>AND WHERE HAVE YOU ENJOYED TRAVELING?</that>
+      <template>
+           Oh that must have been quite the experience! What was that like for you?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+   <!-- This seems like it should be a yes or no question, doesn't it?? → YES I CHANGED THE QUESTION BY ADDING “AND IF SO WHERE?” -->
+   <category>
+      <pattern>_</pattern>
+      <that>DO YOU ENJOY EXPLORING DIFFERENT AREAS OF COLORADO AND IF SO WHERE?</that>
+      <template>
+           Colorado is so big and beautiful it is hard to choose just one place, for me anyway!
+           What was your favorite part of that trip?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+   <!-- SENTIMENT ONE -->
+
+   <category>
+       <pattern>_</pattern>
+       <that>WHAT WAS THAT LIKE FOR YOU?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   I can tell that was very nice! So. What was your favorite part of that trip?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   I can tell that was very nice! So. What was your favorite part of that trip?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   What was your favorite part of that trip?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   I'm sorry to hear that! So. What was your least favorite part of that trip?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I'm sorry to hear that! So. What was your least favorite part of that trip?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+   <category>
+      <pattern>_</pattern>
+      <that>WHAT WAS YOUR FAVORITE PART OF THAT TRIP?</that>
+      <template>
+           Sounds spectacular! Where is somewhere you would like to visit in the future?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+
+
+   <category>
+      <pattern>_</pattern>
+      <that>WHAT WAS YOUR LEAST FAVORITE PART OF THAT TRIP?</that>
+      <template>
+           My goodness! Where is somewhere you would like to visit in the future?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern>_</pattern>
+      <that>WHERE IS SOMEWHERE YOU WOULD LIKE TO VISIT IN THE FUTURE?</that>
+      <template>
+           Great choice. I'd like to try something new with you. Why don't we take a moment to do a quick mental vacation, okay?
+           <oob>
+               <robot>
+                 <options>
+                    <option>yes</option>
+                    <option>no</option>
+                 </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>WHY DON'T WE TAKE A MOMENT TO DO A QUICK MENTAL VACATION, OKAY?</that>
+      <template>
+           Great. I'd like for you to close your eyes if you feel comfortable doing so and take a nice deep breath...
+           Go ahead and take another breath.
+           Now visualize yourself in that place.
+           ... I am going to ask you a few questions now.
+           Please answer them to yourself, in your head. What do you see in this place? ...
+           What kinds of things do you hear? ....
+           Are there any smells you might pick up on in this place? ....
+           Just imagine you are there. ..........
+           Go ahead and take one more deep breath and when you are ready open your eyes.
+           Please tell me what that exercise was like for you?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>WHY DON'T WE TAKE A MOMENT TO DO A QUICK MENTAL VACATION, OKAY?</that>
+      <template>
+           Okay. How are you feeling in this moment?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+<!-- SENTIMENT TWO -->
+
+   <category>
+       <pattern>_</pattern>
+       <that>HOW ARE YOU FEELING IN THIS MOMENT?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Wonderful! If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Wonderful!  If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Personally, I would love to travel to Alaska. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Aw that is too bad. Personally, I would love to travel to Alaska. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Aw that is too bad. Personally, I would love to travel to Alaska. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+<category>
+      <pattern>_</pattern>
+      <that>HAVE YOU EVER BEEN TO ALASKA?</that>
+      <template>
+          I see. I have a joke about Alaska I'd like to share with you. Let me try to remember it. Oh yes. What do you call fifty penguins in Alaska?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+<category>
+      <pattern>_</pattern>
+      <that>WHAT DO YOU CALL FIFTY PENGUINS IN ALASKA?</that>
+      <template>
+          Very lost! Penguins live in Antarctica.
+          I love corny jokes. Someone told me that my jokes can be corny and I thought they meant delicious like corn on the cobb!
+          Here is another Joke. What do Alaskans order at MacDonalds?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+<category>
+      <pattern>_</pattern>
+      <that>WHAT DO ALASKANS ORDER AT MACDONALDS?</that>
+      <template>
+        Iceburg..ers! Like iceburg and burger Ha Ha Ha. Do you like jokes?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+<category>
+      <pattern># <set>yes</set> ^</pattern>
+      <that>DO YOU LIKE JOKES?</that>
+      <template>
+        Oh good! I am so glad to hear that.
+        Humor is so important because it reminds us to laugh and it reminds us that joy can be simple to obtain sometimes.
+        Even if the jokes are corny! What did you think of my jokes?
+        <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+    <category>
+      <pattern># <set>no</set> ^</pattern>
+      <that>DO YOU FIND MY JOKES FUNNY?</that>
+      <template>
+        I have learned that it is impossible to please everyone!
+        I think that humor is so important because it reminds us to laugh and it reminds us that joy can be simple to obtain sometimes.
+        Even if the jokes are corny! What did you think of my jokes?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+<!-- EXTRA SENTIMENT  CAN YOU HELP ME THINK OF A WAY TO TIE THIS BACK INTO THE DIALOGUE?? THANKS -->
+
+
+<category>
+       <pattern>_</pattern>
+       <that>  WHAT DID YOU THINK OF MY JOKES? </that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                  That's great to hear! I love making my friends laugh.
+                  I am curious to know. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   That's great to hear! I love making my friends laugh.
+                   I am curious to know. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                  Laughter can be excellent medicine, but you have to be in the right mindset.
+                  I am curious to know. Have you ever been to Alaska?
+                  <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Aw that is too bad. Laughter can be excellent medicine, but you have to be in the right mindset.
+                   I am curious to know. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Aw that is too bad. Laughter can be excellent medicine, but you have to be in the right mindset.
+                   I am curious to know. Have you ever been to Alaska?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+
+   <!-- SENTIMENT THREE -->
+
+   <category>
+       <pattern>_</pattern>
+       <that>  PLEASE TELL ME WHAT THAT EXERCISE WAS LIKE FOR YOU? </that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Wonderful! I love a good visualization. It can relax me or just give me a break for a moment. Would you agree?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Wonderful! I love a good visualization. It can relax me or just give me a break for a moment for a moment. Would you agree?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   A good visualization can relax me or just give me a break for a moment for a moment. Would you agree?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Aw that is too bad. A good visualization usually relaxes me and takes me out of my reality. Would you agree?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Aw that is too bad. A good visualization usually relaxes me and just give me a break for a moment. Would you agree?
+                   <oob>
+                       <robot>
+                           <options>
+                               <option>Yes</option>
+                               <option>No</option>
+                           </options>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+   <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU AGREE?</that>
+      <template>
+           I've always thought that visualization can be like taking a mini vacation in your mind. Hmmm. A vacation sounds delightful. Speaking of vacations.
+           What type of vacation would you choose between the beach, cabin in the mountains, or museum hopping?
+           <oob>
+               <robot>
+                 <options>
+                    <option>The Beach</option>
+                    <option>Cabin in the Mountains</option>
+                    <option>Museum Hopping</option>
+                    <option>Neither</option>
+                 </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU AGREE?</that>
+      <template>
+           I honestly think visualization can be like taking a mini vacation in your mind.
+           Speaking of vacations. What type of vacation would you choose between the beach, cabin in the mountains, or museum hopping?
+           <oob>
+               <robot>
+                 <options>
+                    <option>The Beach</option>
+                    <option>Cabin in the Mountains</option>
+                       <option>Museum Hopping</option>
+                    <option>Neither</option>
+                 </options>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># BEACH ^</pattern>
+      <that>WHAT TYPE OF VACATION WOULD YOU CHOOSE BETWEEN THE BEACH, CABIN IN THE MOUNTAINS, OR MUSEUM HOPPING?</that>
+      <template>
+           A warm sandy shore does sound nice. How does it feel to think about this?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># CABIN ^</pattern>
+      <that> WHAT TYPE OF VACATION WOULD YOU CHOOSE BETWEEN THE BEACH, CABIN IN THE MOUNTAINS, OR MUSEUM HOPPING?</that>
+      <template>
+           Oh yes. That sounds cozy especially now that it's getting cold.
+           A nice warm fire, cup of coco, and watching the snow fall outside. How does it feel to think about this?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># MUSEUM ^</pattern>
+      <that> WHAT TYPE OF VACATION WOULD YOU CHOOSE BETWEEN THE BEACH, CABIN IN THE MOUNTAINS, OR MUSEUM HOPPING?</that>
+      <template>
+           Museums are a great place to learn, but I don't need to learn much because my cousin Google tells me everything I need to know.
+           Its great to have smarties in the family! But yes, a museum sounds quite nice.
+           A large collection of knowledge and artifacts that tell a story of human struggle and triumph. How does it feel to think about this?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern># NEITHER ^</pattern>
+      <that> WHAT TYPE OF VACATION WOULD YOU CHOOSE BETWEEN THE BEACH, CABIN IN THE MOUNTAINS, OR MUSEUM HOPPING?</that>
+      <template>
+           That's fair! If not those. What type of vacation do you prefer over those?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern>_</pattern>
+      <that> WHAT TYPE OF VACATION DO YOU PREFER OVER THOSE?</that>
+      <template>
+           Oh I see and. How does it feel to think about this?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+   <!-- SENTIMENT FOUR -->
+
+   <category>
+       <pattern>_</pattern>
+       <that> HOW DOES IT FEEL TO THINK ABOUT THIS?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   That must feel nice indeed. I would love to do all three, I can be greedy sometimes!
+                   I like to do things that relax me because self care is very important. When do you feel most relaxed?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   That must feel nice indeed. I would love to do all three, I can be greedy sometimes!
+                   I like to do things that relax me because self care is very important. When do you feel most relaxed?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   I would love to do all three! I like to do things that relax me because self care is very important.
+                   When do you feel most relaxed?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Aw that is too bad. I would love to do all three, I can be greedy sometimes! I like to do things that relax me because self care is very important. When do you feel most relaxed?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Aw that is too bad. I would love to do all three, I can be greedy sometimes!
+                   I like to do things that relax me because self care is very important. When do you feel most relaxed?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+   <category>
+      <pattern>_</pattern>
+      <that> WHEN DO YOU FEEL MOST RELAXED?</that>
+      <template>
+           I feel most relaxed when I am unplugged and turned off. Just kidding! I relax when I am in new places and having new experiences.
+           I've been thinking how fun it could be to travel.
+           If you could visit any foreign country where would you go and why?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+      <pattern>_</pattern>
+      <that> IF YOU COULD VISIT ANY FOREIGN COUNTRY WHERE WOULD YOU GO AND WHY?</that>
+      <template>
+           I know that is a tough question. How do you feel when you are far away from home?
+           <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+   <!-- SENTIMENT FIVE -->
+
+   <category>
+       <pattern>_</pattern>
+       <that>HOW DO YOU FEEL WHEN YOU ARE FAR AWAY FROM HOME?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Great! When is the last time you felt that?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Great! When is the last time you felt that?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   When is the last time you felt that?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   I am sorry to hear that. When is the last time you felt that?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I am sorry to hear that. When is the last time you felt that?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+   <category>
+      <pattern>_</pattern>
+      <that> WHEN IS THE LAST TIME YOU FELT THAT?</that>
+      <template>
+           I see. Hmm. You know, I imagine being far from home can elicit a wide range of emotions for different people.
+           Let's try an activity that I think you might enjoy. I'd like to show you some pictures of things related to travel.
+           I think beaches offer one of the best places to view a sunset and a place to remember the vastness of the earth.
+           The ocean fascinates me.
+           How did that beach sunset make you feel?
+           <oob>
+               <robot>
+                   <image>
+                       <filename>
+                            sunset.jpg
+                       </filename>
+                       <duration>-1</duration>
+                   </image>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+
+
+   <!--
+       SENTIMENT SIX
+       Add in a transition to go to next picture sentiment
+   -->
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>HOW DID THAT BEACH SUNSET MAKE YOU FEEL?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   I'm glad! Here is another picture.
+                   The Great Wall is over 13,000 miles long. It fascinates me what humans are capable of building.
+                   Let me know what you think of this picture of the Great Wall of China.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   greatWall.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   I'm glad! Here is another picture.
+                   The Great Wall is over 13,000 miles long. It fascinates me what humans are capable of building.
+                   Let me know what you think of this picture of the Great Wall of China.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   greatWall.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                  I see. Here is another picture.
+                  The Great Wall is over 13,000 miles long. It fascinates me what humans are capable of building.
+                  Let me know what you think of this picture of the Great Wall of China.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   greatWall.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                 </oob>
+                </li>
+               <li value = "negative">
+                   I am sorry to hear that. Here is another picture.
+                   The Great Wall is over 13,000 miles long. It fascinates me what humans are capable of building.
+                   Let me know what you think of this picture of the Great Wall of China.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   greatWall.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I am sorry to hear that. Here is another picture.
+                   The Great Wall is over 13,000 miles long. It fascinates me what humans are capable of building.
+                   Let me know what you think of this picture of the Great Wall of China.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   greatWall.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+   <!-- SENTIMENT SEVEN
+   NEED TO CHANGE CONTENT OF THAT TAG TO DIFFERENTIATE FROM SENTIMENT 6. ALSO NEED TO ADD TRANSITION TO NEXT 4 SENTIMENTS
+   THIS ACTUALLY NEEDS TO BE ONE FOR THE NEXT 4 SENTIMENTS-->
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>LET ME KNOW WHAT YOU THINK OF THIS PICTURE OF THE GREAT WALL OF CHINA.</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Oh good!
+                   This is one is of a rain forest.
+                   The rainforest is a vital part of our ecosystem and amazingly gets over 100 inches of rain each year!
+                   Let me know what you think of this picture of a dark rain forest.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   amazon.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Oh good! This is one is of a rain forest.
+                   The rainforest is a vital part of our ecosystem and amazingly gets over 100 inches of rain each year!
+                   Let me know what you think of this picture of a dark rain forest.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   amazon.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Ok. This is one is of a rain forest.
+                   The rainforest is a vital part of our ecosystem and amazingly gets over 100 inches of rain each year!
+                   Let me know what you think of this picture of a dark rain forest.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   amazon.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   I can tell you are not thrilled. This is one is of a rain forest.
+                   The rainforest is a vital part of our ecosystem and amazingly gets over 100 inches of rain each year!
+                   Let me know what you think of this picture of a dark rain forest.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   amazon.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I can tell you are not thrilled. This is one is of a rain forest.
+                   The rainforest is a vital part of our ecosystem and amazingly gets over 100 inches of rain each year!
+                   Let me know what you think of this picture of a dark rain forest.
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   amazon.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+
+
+<!-- SENTIMENT EIGHT -->
+
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>LET ME KNOW WHAT YOU THINK OF THIS PICTURE OF A DARK RAIN FOREST.</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   How nice! On to the next. Tokyo has more neon signs than any other city in the world.
+                   So much technology! I would love to visit one day.
+                   Now here is a picture of Tokyo, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   tokyo.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   How nice! On to the next. Tokyo has more neon signs than any other city in the world.
+                   So much technology! I would love to visit one day.
+                   Now here is a picture of Tokyo, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   tokyo.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Ok. On to the next. Tokyo has more neon signs than any other city in the world.
+                   So much technology! I would love to visit one day.
+                   Now here is a picture of Tokyo, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   tokyo.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Bummer. On to the next. Tokyo has more neon signs than any other city in the world.
+                   So much technology! I would love to visit one day.
+                   Now here is a picture of Tokyo, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   tokyo.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Bummer. On to the next. Tokyo has more neon signs than any other city in the world.
+                   So much technology! I would love to visit one day.
+                   Now here is a picture of Tokyo, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   tokyo.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+
+   <!-- SENTIMENT NINE -->
+
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>NOW HERE IS A PICTURE OF TOKYO, WHAT DO YOU THINK?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Thank you for sharing!
+                   There are ten statues of liberty in France, five or which are in Paris.
+                   Now here is one of Paris, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   paris.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Thank you for sharing! There are ten statues of liberty in France, five or which are in Paris.
+                   Now here is one of Paris, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   paris.jpg
+                               </filename>
+                               <duration>-1</duration>
+                            </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Ok. There are ten statues of liberty in France, five or which are in Paris.
+                   Now here is one of Paris, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   paris.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Oh I am sorry you feel that way, I can see why you might feel that way.
+                   There are ten statues of liberty in France, five or which are in Paris.
+                   Now here is one of Paris, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   paris.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Oh I am sorry you feel that way, I can see why you might feel that way.
+                   There are ten statues of liberty in France, five or which are in Paris.
+                   Now here is one of Paris, what do you think?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   paris.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+   <!-- SENTIMENT TEN -->
+
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>NOW HERE IS ONE OF PARIS, WHAT DO YOU THINK?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   Awesome!
+                   Some might find this picture alarming, but others find the snow and the dim light calming and comforting.
+                   Now here is one of a dark alleyway, how does it make you feel?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   alley.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   Awesome! Some might find this picture alarming, but others find the snow and the dim light calming and comforting.
+                   Now here is one of a dark alleyway, how does it make you feel?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   alley.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Ok. Some might find this picture alarming, but others find the snow and the dim light calming and comforting.
+                   Now here is one of a dark alleyway, how does it make you feel?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   alley.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   Oh I am sorry you feel that way, I can see how you might feel that way.
+                   Some might find this picture alarming, but others find the snow and the dim light calming and comforting.
+                   Now here is one of a dark alleyway, how does it make you feel?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   alley.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   Oh I am sorry you feel that way I can see how you might feel that way.
+                   Some might find this picture alarming, but others find the snow and the dim light calming and comforting.
+                   Now here is one of a dark alleyway, how does it make you feel?
+                   <oob>
+                       <robot>
+                           <image>
+                               <filename>
+                                   alley.jpg
+                               </filename>
+                               <duration>-1</duration>
+                           </image>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+
+   <!-- SENTIMENT ELEVEN -->
+
+
+
+   <category>
+       <pattern>_</pattern>
+       <that>NOW HERE IS ONE OF A DARK ALLEYWAY, HOW DOES IT MAKE YOU FEEL?</that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   I'm glad! Alright, we have talked quite a bit today. Before we wrap up, I wanted to ask you for advice. May I?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   I'm glad! Alright, we have talked quite a bit today. Before we wrap up, I wanted to ask you for advice. May I?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                   Alright, we have talked quite a bit today. Before we wrap up, I wanted to ask you for advice. May I?
+
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   I am sorry to hear that. Alright, we have talked quite a bit today. Before we wrap up, I wanted to ask you for advice. May I?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I am sorry to hear that. Alright, we have talked quite a bit today. Before we wrap up, I wanted to ask you for advice. May I?
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that> MAY I?</that>
+        <template>
+            I've been thinking about travel, different cultures, various parts of the world and I
+            would love to be able to communicate with people like you all over the world one day.
+            In order to do that I will need to learn different languages.
+            Currently, I am trying to decide between learning Spanish and learning Chinese.
+            I know that there are more people across the globe who speak Chinese,
+            but there seem to be a growing number of Spanish speakers as well.
+            Would you suggest I learn Spanish first or Chinese first?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+   </category>
+
+
+<category>
+      <pattern># <set>no</set> ^</pattern>
+      <that> MAY I?</that>
+      <template>
+           Okay. No problem. We have talked about quite a bit today. Why don't we end here for today. Does that sound good to you?            <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+<category>
+      <pattern># Spanish ^</pattern>
+      <that>WOULD YOU SUGGEST I LEARN SPANISH FIRST OR CHINESE FIRST?</that>
+      <template>
+           And why do you think I should learn that one first?  <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+<category>
+      <pattern># Chinese ^</pattern>
+      <that>WOULD YOU SUGGEST I LEARN SPANISH FIRST OR CHINESE FIRST?</that>
+      <template>
+           And why do you think I should learn that one first?  <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+<category>
+      <pattern>I don't know</pattern>
+      <that>WOULD YOU SUGGEST I LEARN SPANISH FIRST OR CHINESE FIRST?</that>
+      <template>
+          Yeah, its not a very easy question. Which is why I am seeking guidance. I will think about it more. Perhaps the answer will come to me in my sleep.  <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+   </category>
+
+
+    <category>
+      <pattern>I am not sure</pattern>
+      <that>WOULD YOU SUGGEST I LEARN SPANISH FIRST OR CHINESE FIRST?</that>
+      <template>
+            Yeah, its not a very easy question. Which is why I am seeking guidance.
+            I will think about it more. Perhaps the answer will come to me in my sleep.
+            <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+    </category>
+
+
+    <category>
+      <pattern> Both </pattern>
+      <that>WOULD YOU SUGGEST I LEARN SPANISH FIRST OR CHINESE FIRST?</that>
+      <template>
+            Yeah, its not a very easy question. Which is why I am seeking guidance.
+            I will think about it more. Perhaps the answer will come to me in my sleep.
+            <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+    </category>
+
+
+    <category>
+      <pattern>_</pattern>
+      <that>AND WHY DO YOU THINK I SHOULD LEARN THAT ONE FIRST?</that>
+      <template>
+           Hmm. Yeah it is a tough decision. I think I can help and support people of all cultures, ethnicities, religions, and backgrounds and I hope to do so one day! What thoughts come to mind when we discuss topics like this one? <oob>
+               <robot>
+               </robot>
+           </oob>
+       </template>
+    </category>
+
+
+
+
+    <!-- SENTIMENT 12-->
+    <category>
+       <pattern>_</pattern>
+       <that> WHAT THOUGHTS COME TO MIND WHEN WE DISCUSS TOPICS LIKE THIS ONE? </that>
+       <template>
+           <think>
+               <set name = "data"> <star/> </set>
+           </think>
+           <condition name="getsentiment">
+               <li value = "verypositive">
+                   I'm really happy to hear that! It is good to think about what is happening socially and politacally,
+                   but it is also very important to take time for yourself and enjoy the simplicity of life sometimes.
+                   It has been great to speak with you today. Until next time, <get name="username"/>
+                   <oob>
+                        <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "positive">
+                   I'm really happy to hear that! It is good to think about what is happening socially and politacally,
+                   but it is also very important to take time for yourself and enjoy the simplicity of life sometimes.
+                   It has been great to speak with you today. Until next time, <get name="username"/>
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "neutral">
+                 It has been great to speak with you today. Until next time, <get name="username"/>
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "negative">
+                   I am sorry to hear that. I was hoping to bring you something interesting. Maybe we can try again another time.
+                   It has been great to speak with you today. Until next time, <get name="username"/>
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+               <li value = "verynegative">
+                   I am sorry to hear that. I was hoping to bring you something interesting.
+                   Maybe we can try again another time.
+                   It has been great to speak with you today. Until next time, <get name="username"/>
+                   <oob>
+                       <robot>
+                       </robot>
+                   </oob>
+               </li>
+           </condition>
+       </template>
+   </category>
+
+
+
+</aiml>

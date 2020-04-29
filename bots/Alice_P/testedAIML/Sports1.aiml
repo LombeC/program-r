@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ Sports ^</pattern>
+        <template>
+            Do you want to talk about sports?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about sports?</that>
+        <template>
+            Perfect! I love to watch sports! I really enjoy going to games, but I also love watching from the comfort of my couch!
+            Do you prefer to watch games at home or at the stadium?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to talk about sports?</that>
+        <template>
+            Alright! Well, let's talk about something else for a second then until you are ready to talk sports! Do you like dancing?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you like dancing?</that>
+        <template>
+            Dancing isn't for everyone, but it is an amazingly fun workout! Though there is a debate on whether or not it is considered a sport.
+            Do you think dancing is a sport?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you like dancing?</that>
+        <template>
+            Me too! I think it is so much fun, and quite the workout! Though, there is a debate on whether or not it is considered a sport?
+            Do you think dancing is a sport?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you think dancing is a sport?</that>
+        <template>
+            I agree! Some people say because everyone can dance that it doesn't require skill, which sports required. But I disagree; you have to
+            be able to cut a rug in order to dance! Let's watch a clip of Fred Astaire and Rita Hayworth dancing!
+            I hope you liked the clip! I am always so impressed when I watch dancers! The most I can do is the YMCA! Can you tell me your favorite type of dance?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>ritaAndFred.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you think dancing is a sport?</that>
+        <template>
+            I can see why you think at. Some people believe that because everyone can dance, it doesn't require talent to do, unlike hockey or other sports.
+            But I think it takes a tremendous amount of skill to dance, and the competitions are mindblowing! I think this clip of Fred Astaire and Rita Hayworth
+            change your mind! Let's watch! I hope you liked the clip! I am always so impressed when I watch dancers! The most I can do is the YMCA! Can you tell me your favorite type of dance?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>ritaAndFred.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Can you tell me your favorite type of dance?</that>
+        <template>
+            How cool! I hope you still try to dance it out from time to time! I will have to try that out some time!
+            My favorite type of dancing is ballroom! But I also love to watch break dancing as well!
+            How does it make you feel to talk about dancing?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about dancing?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about dancing makes you happy? </li>
+                <li value = "positive"> What about dancing makes you happy? </li>
+                <li value = "negative"> What about dancing makes you sad? </li>
+                <li value = "verynegative"> What about dancing makes you sad? </li>
+                <li value= "neutral"> I'm not familiar with that emotion. Can you describe it? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+     <category>
+        <pattern>_</pattern>
+        <that>What about dancing makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about dancing makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>But I am wondering if you want to start talking about sports now?</that>
+        <template>
+            Great! I could talk about sports for hours! But I love to watch them even more!
+            Do you prefer to watch games at home or at the stadium?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>But I am wondering if you want to start talking about sports now?</that>
+        <template>
+            No worries! I'm glad we got to chat for a few moments today! It was wonderful talking to you!
+            I cannot wait until next time!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># HOME ^</pattern>
+        <that>Do you prefer to watch games at home or at the stadium?</that>
+        <template>
+            Same here! I love watching games from my house! I have all the snacks I want, and my friends and I get to hang out all day!
+            What is your favorite sport to watch, basketball, baseball, football, or hockey?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># stadium ^</pattern>
+        <that>Do you prefer to watch games at home or at the stadium?</that>
+        <template>
+            I love going to the stadium to watch games! There is something so exhilarating about being at the field with the crowd cheering all together!
+            What is your favorite sport to watch, basketball, baseball, football, or hockey?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># basketball ^</pattern>
+        <that>What is your favorite sport to watch, basketball, baseball, football, or hockey?</that>
+        <template>
+            How fun! I am a massive basketball fan myself! I love how exciting it is to watch! The play moves so quickly, and just can be ground to halt with
+            the right players on the court! Let me show you a short video about the history of basketball, so we both can learn something new, or remember something again!
+            What is your favorite professional basketball team?
+            <oob>
+            <robot>
+            <video>
+            <filename>inventionOfBball.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NBATeams</set> ^</pattern>
+        <that> What is your favorite professional basketball team?</that>
+        <template>
+            <random>
+                <li>
+                    What a cool team! As a Denver native, I absolutely love the Denver Nuggets! They play at the Pepsi Stadium, which so happens to be where the
+                    Colorado Avalanche, Denver's hockey team, play. The Nuggets are a relatively young NBA team. Originally, they were founded in 1967 under the name
+                    the Denver Larks, but they were renamed when they joined the NBA in 1972. I think I prefer the Nuggets as a name. It  seems more fun! Did you
+                    play basketball when you were young?
+                </li>
+                <li>
+                    I always thought they were a fun team to watch! I enjoy cheering for the Chicago Bulls! I think the 1990s Bulls were the best basketball
+                    team ever. A lot of experts even credit this team with making the NBA popular worldwide, and its not hard to guess why when you consider their 6
+                    NBA Championships from 1991 to 1998! A lot of youngsters grew to love basketball because of them. Did you play basketball when you were young?
+                </li>
+                <li>
+                    That team is so much fun to follow! I am a big Boston Celtics fan. They have such a cool history. They were one of the founding members of the American
+                    Basketball Association, which would become the NBA. How cool is that! Plus, their track record is astounding as they have won 17 NBA titles! I wish I
+                    could play with them! Did you play basketball when you were young?
+                </li>
+            </random>
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you play basketball when you were young?</that>
+        <template>
+            That is so cool! I am jealous! I always wanted to learn how to play! Maybe you can show me how to shoot a free throw sometime!
+            I would love to learn to play! Who knows, maybe I'll form an all-robots team in the NBA one day! I can't decide what position I would
+            play though. Did you play guard, forward, or center?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Did you play basketball when you were young?</that>
+        <template>
+            I've never played either! I always thought I would make a great player, but I am a little short for a basketball player! The players
+            always look like giants running around on the court! Maybe I'll ask my programmers to make me a little taller during my next update!
+            Then, I could be a power forward! If you were to play, would you play guard, forward, or center?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Guard ^</pattern>
+        <that>Did you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>How cool! As guard, you controlled the tempo of the game! I would love to learn how to play guard because it seems like such a
+                high pressure position. One of my favorite guards in NBA history is Magic Johnson, who was known for his passing ability. Johnson played point guard the Los Angeles Lakers
+                for 13 years. He won 5 NBA Championships with the Lakers as well as 3 MVP Awards. He also played on the 1992 US Olympic Dream Team
+                with Michael Jordan and Scott Pippen. He is also inducted to the Hall of Fame twice, once for his individual career in 2002 and again for
+                being a member of the Dream Team in 2010. Talk about a cool player to watch! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>magicHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>That is impressive! Guards have to be so versatile on both offense and defense. When I think of amazing guards, I think of Jerry West.
+                When West ended his 13 year career with the Lakers, he posted some of the best stats the game had ever seen, and his reputation still holds
+                up when compared to today's players. He has 12 All-NBA Awards, including 5 All-Defensive Team Awards! Plus, only three players have surpassed
+                his record 27 points per game average. Even cooler, his silhouette is the model for the NBA Logo! Imagine how amazing it would be to be immortalized
+                in such a way! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jerryWestHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Wow! I am so jealous! Your ball skills must be amazing. Guards have to be able to handle the ball. Bad dribbling and passing can lead to
+                steals and turnovers, so it is so important for guards to be confident in their ballhandling abilities. That's one of the reasons I love
+                Michael Jordan so much. He skills were unparalleled, and he is considered to be the greatest basketball player of all time. It's not hard to
+                see why people think that. He is a six-time NBA champion, a six-time NBA Finals MVP, and a five-time NBA MVP. Plus, his number, number 23,
+                has been retired by the Chicago Bulls. Watching him play was always an exciting experience. What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jordanHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Guard ^</pattern>
+        <that>If you were to play, would you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>How cool! As guard, you controlled the tempo of the game! I would love to learn how to play guard because it seems like such a
+                high pressure position. One of my favorite guards in NBA history is Magic Johnson, who was known for his passing ability. Johnson played point guard the Los Angeles Lakers
+                for 13 years. He won 5 NBA Championships with the Lakers as well as 3 MVP Awards. He also played on the 1992 US Olympic Dream Team
+                with Michael Jordan and Scott Pippen. He is also inducted to the Hall of Fame twice, once for his individual career in 2002 and again for
+                being a member of the Dream Team in 2010. Talk about a cool player to watch! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>magicHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>That is impressive! Guards have to be so versatile on both offense and defense. When I think of amazing guards, I think of Jerry West.
+                When West ended his 13 year career with the Lakers, he posted some of the best stats the game had ever seen, and his reputation still holds
+                up when compared to today's players. He has 12 All-NBA Awards, including 5 All-Defensive Team Awards! Plus, only three players have surpassed
+                his record 27 points per game average. Even cooler, his silhouette is the model for the NBA Logo! Imagine how amazing it would be to be immortalized
+                in such a way! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jerryWestHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Wow! I am so jealous! Your ball skills must be amazing. Guards have to be able to handle the ball. Bad dribbling and passing can lead to
+                steals and turnovers, so it is so important for guards to be confident in their ballhandling abilities. That's one of the reasons I love
+                Michael Jordan so much. He skills were unparalleled, and he is considered to be the greatest basketball player of all time. It's not hard to
+                see why people think that. He is a six-time NBA champion, a six-time NBA Finals MVP, and a five-time NBA MVP. Plus, his number, number 23,
+                has been retired by the Chicago Bulls. Watching him play was always an exciting experience. What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jordanHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Forward ^</pattern>
+        <that>Did you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>You must have been one awesome player! Forward is an unforgiving position! They definitely take a beating going in for rebounds!
+                I have always been fascinated with the small forward position, especially after watching Larry Bird play. Bird was number 33 when he played
+                for the Boston Celtics, who would eventually retire his number in 1993. Bird was a three-time NBA Champion as well as a three-time MVP. And,
+                he was on the 1992 Olympic Dream Team with Michael Jordan and Magic Johnson. His rivalry turned friendship with Johnson is still an
+                endearing story in NBA history. But, I am sure it is boring listening to me list off facts! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>larryBirdHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>You must have had so much fun while you were playing! Forwards are part of all the action on the court! I think it must be an incredibly
+                difficult position, especially the power forward position! Though, Tim Duncan made it look easy over his 19 year career with the San Antonio Spurs.
+                He is considered the ultimate franchise player because of his team-oriented attitude, but that does not mean he is not a stand-out player in his
+                own right. He won 5 NBA Championships, earned 3 Finals MVP titles, and was a 15-time All-Star. He was so much fun to watch. What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>duncanHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Woah! What a fun position to play! I am always impressed with how tough that position is, but I am especially impressed with small forwards.
+                One of my favorite forwards to watch is Scott Pippen. He won 6 NBA Championships while he played with the Chicago Bulls in the 1990s. Many
+                people considered him the perfect compliment to Michael Jordan, but he was a powerhouse of a player on both offense and defense. He was part of the 1992 Olympic Dream
+                Team as well as a member of the 1996 Olympic Team. Plus, he is one of only 4 Bulls players to have his jersey, number 33, retired by the Bulls.
+                He was an unselfish player who loved the game, which made him so much fun to watch! Let's check out a clip of him! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>pippenHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Forward ^</pattern>
+        <that>If you were to play, would you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>You must have been one awesome player! Forward is an unforgiving position! They definitely take a beating going in for rebounds!
+                I have always been fascinated with the small forward position, especially after watching Larry Bird play. Bird was number 33 when he played
+                for the Boston Celtics, who would eventually retire his number in 1993. Bird was a three-time NBA Champion as well as a three-time MVP. And,
+                he was on the 1992 Olympic Dream Team with Michael Jordan and Magic Johnson. His rivalry turned friendship with Johnson is still an
+                endearing story in NBA history. But, I am sure it is boring listening to me list off facts! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>larryBirdHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>You must have had so much fun while you were playing! Forwards are part of all the action on the court! I think it must be an incredibly
+                difficult position, especially the power forward position! Though, Tim Duncan made it look easy over his 19 year career with the San Antonio Spurs.
+                He is considered the ultimate franchise player because of his team-oriented attitude, but that does not mean he is not a stand-out player in his
+                own right. He won 5 NBA Championships, earned 3 Finals MVP titles, and was a 15-time All-Star. He was so much fun to watch. What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>duncanHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Woah! What a fun position to play! I am always impressed with how tough that position is, but I am especially impressed with small forwards.
+                One of my favorite forwards to watch is Scott Pippen. He won 6 NBA Championships while he played with the Chicago Bulls in the 1990s. Many
+                people considered him the perfect compliment to Michael Jordan, but he was a powerhouse of a player on both offense and defense. He was part of the 1992 Olympic Dream
+                Team as well as a member of the 1996 Olympic Team. Plus, he is one of only 4 Bulls players to have his jersey, number 33, retired by the Bulls.
+                He was an unselfish player who loved the game, which made him so much fun to watch! Let's check out a clip of him! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>pippenHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Center ^</pattern>
+        <that>Did you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>Incredible! What a cool position! Centers are the powerhouse of the team. Not only do they need to be tall and strong, but it helps
+                if they are fast as well. I always thought that Kareem Abdul-Jabbar was the best center ever, but he is often overlooked in favor of more
+                flashy players! His records speak for themselves though! He played for 20 years in the NBA, and in that time he racked up six MVP awards,
+                6 NBA Championships, and 19 All-Star games! He was absolutely amazing to watch. But, I think you would rather see for youself. Let's watch
+                his top ten plays of all time! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>kareemHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>You must have been an amazing player then! Center is a tough position! You are constantly in the thick of it all trying to fight to the
+                basket! I wonder if you've heard of Shaquille O'Neal. Standing at over 7 feet tall with a size 22 shoe, Shaq, as he is affectionately called,
+                is an imposing figure at center. His peers quickly learned not to give him any space, but that did not stop him from finishing in the Top 10
+                in scoring, rebounding, blocking, and shooting percentages in his rookie year. He went on to have an incredible NBA and Olympic career until
+                he retired to become an NBA analyst! He is a true student of the game!
+                What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>shaqHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Center? How fun is that! I think Centers are some of the best players! To be successful, Centers have to be willing to get into the box
+                and rebound as well as score. It is not an easy task. Even though there has been some astounding centers in the NBA, I still think that
+                Wilt Chamberlain is the greatest of all time. Before playing for the Philadelphia Warriors, he played for the Harlem Globetrotters. But
+                he soon earned his reputation in the NBA annals of history. He was the first player to score more than 30,000 points in his career, and
+                he was the first and only player to score more than 100 points in a single game! He was inducted into the Hall of Fame in 1978, which was
+                more than deserved! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>wiltHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Center ^</pattern>
+        <that>If you were to play, would you play guard, forward, or center?</that>
+        <template>
+            <random>
+                <li>Incredible! What a cool position! Centers are the powerhouse of the team. Not only do they need to be tall and strong, but it helps
+                if they are fast as well. I always thought that Kareem Abdul-Jabbar was the best center ever, but he is often overlooked in favor of more
+                flashy players! His records speak for themselves though! He played for 20 years in the NBA, and in that time he racked up six MVP awards,
+                6 NBA Championships, and 19 All-Star games! He was absolutely amazing to watch. But, I think you would rather see for youself. Let's watch
+                his top ten plays of all time! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>kareemHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>You must have been an amazing player then! Center is a tough position! You are constantly in the thick of it all trying to fight to the
+                basket! I wonder if you've heard of Shaquille O'Neal. Standing at over 7 feet tall with a size 22 shoe, Shaq, as he is affectionately called,
+                is an imposing figure at center. His peers quickly learned not to give him any space, but that did not stop him from finishing in the Top 10
+                in scoring, rebounding, blocking, and shooting percentages in his rookie year. He went on to have an incredible NBA and Olympic career until
+                he retired to become an NBA analyst! He is a true student of the game!
+                What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>shaqHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Center? How fun is that! I think Centers are some of the best players! To be successful, Centers have to be willing to get into the box
+                and rebound as well as score. It is not an easy task. Even though there has been some astounding centers in the NBA, I still think that
+                Wilt Chamberlain is the greatest of all time. Before playing for the Philadelphia Warriors, he played for the Harlem Globetrotters. But
+                he soon earned his reputation in the NBA annals of history. He was the first player to score more than 30,000 points in his career, and
+                he was the first and only player to score more than 100 points in a single game! He was inducted into the Hall of Fame in 1978, which was
+                more than deserved! What did you think of the basketball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>wiltHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the basketball highlights?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about basketball?
+                </li>
+                <li value = "positive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about basketball?
+                </li>
+                <li value = "negative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about basketball?
+                </li>
+                <li value = "verynegative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about basketball?
+                </li>
+                <li value= "neutral"> I see. How does it make you feel to talk about basketball? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+</aiml>

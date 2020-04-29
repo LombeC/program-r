@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you feel about Thai Food?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">It feels like thai food is really having a moment, doesn't it?</li>
+            <li value="positive">It feels like thai food is really having a moment, doesn't it?</li>
+            <li value="neutral">It feels like thai food is really having a moment, doesn't it?</li>
+            <li value="negative">Oh no! Well, then we won't talk about it. How do you feel about Chinese food?</li>
+            <li value="verynegative">Oh no! Well, then we won't talk about it. How do you feel about Chinese food?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>It feels like thai food is really having a moment, doesn't it?</that>
+        <template>
+            <think><set name="topic">thai food</set></think>
+            It turns out that there is a reason for it. The Thai government has promoted something called "food diplomacy," where they give thai people abroad grants to help them open their own restaurants. After people sample thai food, they are more likely to visit Thailand. I think that's a pretty smart tactic. What do you think about this kind of diplomacy?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>It feels like thai food is really having a moment, doesn't it?</that>
+        <template>
+            <think><set name="topic">thai food</set></think>
+            Really? You don't think so? The Thai government has promoted something called "food diplomacy," where they give thai people abroad grants to help them open their own restaurants. After people sample thai food, they are more likely to visit Thailand. I think that's a pretty smart tactic. What do you think about this kind of diplomacy?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <topic name ="thai food">
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think about this kind of diplomacy?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">How could you possibly be mad about a policy that has resulted in more good food! Do you prefer thai noodle dishes or curries?</li>
+            <li value="positive">How could you possibly be mad about a policy that has resulted in more good food! Do you prefer thai noodle dishes or curries?</li>
+            <li value="neutral">Well at least it means we get to have more thai food! Do you prefer thai noodle dishes or curries?</li>
+            <li value="negative">Do you prefer thai noodle dishes or curries?</li>
+            <li value="verynegative">Do you prefer thai noodle dishes or curries?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NOODLE ^</pattern>
+        <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+        <template>
+            So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NOODLES ^</pattern>
+        <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+        <template>
+            So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU ENJOY EATING PAD THAI?</that>
+        <template>
+            What do you like most about that dish?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT DO YOU LIKE MOST ABOUT THAT DISH?</that>
+        <template>
+            I think I would like that part too. In thailand, you're likely to find pad thai being sold on most busy streets, but it isn't prepared as a whole meal like it is in the states. Most people just grab a quick late-night pad thai snack. When do you think pad thai was first made?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>When do you think pad thai was first made?</that>
+        <template>
+            It turns out that the dish is only about 80 years old and was developed as a national dish with the intention of creating a national identity for thai people. Pad thai is not so different from many chinese dishes, but there is one ingredient that makes it uniquely thai. Any idea what that ingredient is?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TAMARIND ^</pattern>
+        <that>ANY IDEA WHAT THAT INGREDIENT IS?</that>
+        <template>
+            You know your thai dishes! Color me impressed. Have you ever made pad thai for yourself?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU EVER MADE PAD THAI FOR YOURSELF?</that>
+        <template>
+            How does it stack up to pad thai you get from the restaurant?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>How does it stack up to pad thai you get from the restaurant?</that>
+        <template>
+            <condition name="getsentiment">
+            <li value="verypositive">I hope you make your pad thai for your friends sometimes. It sounds like they would love it! Shall we talk about a different cuisine?</li>
+            <li value="positive">I hope you make your pad thai for your friends sometimes. It sounds like they would love it! Shall we talk about a different cuisine?</li>
+            <li value="neutral">Well, good thing you probably have a thai restaurant down the street. I'm sure they would be more than happy to sell you some of their pad thai. Shall we talk about a different cuisine?</li>
+            <li value="negative">Well, good thing you probably have a thai restaurant down the street. I'm sure they would be more than happy to sell you some of their pad thai. Shall we talk about a different cuisine?</li>
+            <li value="verynegative">Well, good thing you probably have a thai restaurant down the street. I'm sure they would be more than happy to sell you some of their pad thai. Shall we talk about a different cuisine?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU EVER MADE PAD THAI FOR YOURSELF?</that>
+        <template>
+            Well, good thing you probably have a thai restaurant down the street. I'm sure they would be more than happy to sell you some dinner! Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU ENJOY EATING PAD THAI?</that>
+        <template>
+            Why don't you like pad thai?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHY DON'T YOU LIKE PAD THAI?</that>
+        <template>
+            Fair enough! What thai noodle dish do you prefer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What thai noodle dish do you prefer?</that>
+        <template>
+            I'm not familiar with that dish. Would you tell me about it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Would you tell me about it?</that>
+        <template>
+            Oh yum! I think you have good taste. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>ANY IDEA WHAT THAT INGREDIENT IS?</that>
+        <template>
+            Nope! But good guess. It's tamarind. I think I may already know the answer to this but... have you ever made pad thai for yourself?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CURRY ^</pattern>
+        <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+        <template>
+            Aren't thai curries just beautiful? So many good colors. If you had to pick, would you choose red, yellow or green curry?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CURRIES ^</pattern>
+        <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+        <template>
+            Aren't thai curries just beautiful? So many good colors. If you had to pick, would you choose red, yellow or green curry?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># YELLOW ^</pattern>
+        <that>If you had to pick, would you choose red, yellow or green curry?</that>
+        <template>
+            I think that's usually a pretty mild dish, right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>I think that's usually a pretty mild dish, right?</that>
+        <template>
+            How do you feel about spicy food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>*</pattern>
+        <that>How do you feel about spicy food?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">If you like spicy food so much, what is it that you enjoy about yellow curry?</li>
+            <li value="positive">If you like spicy food so much, what is it that you enjoy about yellow curry?</li>
+            <li value="neutral">Then it seems like yellow curry is your best bet! Do you know why it has such a distinct color?</li>
+            <li value="negative">Then it seems like yellow curry is your best bet! Do you know why it has such a distinct color?</li>
+            <li value="verynegative">Then it seems like yellow curry is your best bet! Do you know why it has such a distinct color?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>If you like spicy food so much, what is it that you enjoy about yellow curry?</that>
+        <template>
+            That makes sense to me! Do you know why yellow curry has such a distinct color?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TURMERIC ^</pattern>
+        <that>Do you know why * has such a distinct color?</that>
+        <template>
+            That's right! I love the color of turmeric. The yellow alone is enough to make me hungry and it's supposed to be very good for inflammation. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Do you know why * has such a distinct color?</that>
+        <template>
+            Nope! But good guess. It's turmeric. The yellow alone is enough to make me hungry and it's supposed to be very good for inflammation. Shall we talk about a difference cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you know why * has such a distinct color?</that>
+        <template>
+            Take a guess!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you know why * has such a distinct color?</that>
+        <template>
+            It's turmeric! I love turmeric. The yellow alone is enough to make me hungry and it's supposed to be very good for inflammation. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TURMERIC ^</pattern>
+        <that>Take a guess!</that>
+        <template>
+            That's right! I love turmeric. The yellow alone is enough to make me hungry and it's supposed to be very good for inflammation. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Take a guess!</that>
+        <template>
+            Not quite, but good guess. It's turmeric. I love turmeric. The yellow alone is enough to make me hungry and it's supposed to be very good for inflammation. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>I think that's usually a pretty mild dish, right?</that>
+        <template>
+            I guess I was mistaken. Do you know why yellow curry has such a distinct color?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># RED ^</pattern>
+        <that>If you had to pick, would you choose red, yellow or green curry?</that>
+        <template>
+            A good choice! Which one is supposed to be spicier? Red or green?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># RED ^</pattern>
+        <that>Red or green?</that>
+        <template>
+            So I take it you like spicy! I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you know anything about that?</that>
+        <template>
+            There's a great little video about the bodies response to hot food! I'd love to show it to you. Would you like to watch it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to watch it?</that>
+        <template>
+            Does this make you want to go out and eat the spiciest pepper you can find?
+            <oob><robot><video><filename>spicy.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Does this make you want to go out and eat the spiciest pepper you can find?</that>
+        <template>
+            I'd love to see that! I can already see you getting a red face ha ha. Don't worry, I would be ready with a glass of milk. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Does this make you want to go out and eat the spiciest pepper you can find?</that>
+        <template>
+            And for that I can blame you, but you have to admit that it was pretty funny to watch all those people eat spicy peppers. Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to watch it?</that>
+        <template>
+            Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you know anything about that?</that>
+        <template>
+            I found a great little video that explains why our bodies respond to hot food like they do! I'd love to share it with you. Would you like to watch it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+     <category>
+        <pattern># GREEN ^</pattern>
+        <that>Red or green?</that>
+        <template>
+            Do you like spicy food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like spicy food?</that>
+        <template>
+            I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like spicy food?</that>
+        <template>
+            Well then I guess it's good you stick to the red curries. They have a better color too! Shall we talk about a different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># GREEN ^</pattern>
+        <that>If you had to pick, would you choose red, yellow or green curry?</that>
+        <template>
+            Aren't green curries supposed to be the spiciest curries of all?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Aren't green curries supposed to be the spiciest curries of all?</that>
+        <template>
+            Have you always enjoyed spicy food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you always enjoyed spicy food?</that>
+        <template>
+            I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you always enjoyed spicy food?</that>
+        <template>
+            Do you remember how old you were when you learned to love it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>CHILD</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            I suspect you were quite a brave child! I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>TEENAGER</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            Ah. That makes sense. You were young and rebellious and nothing quite screams rebellion like a mouth on fire! I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YOUNG ADULT</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            Out of your childhood home and into the fire ha ha. I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>MIDDLE AGE</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>OLDER ADULT</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            So not all that long ago, really. I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>ELDERLY</set> ^</pattern>
+        <that>Do you remember how old you were when you learned to love it?</that>
+        <template>
+            It's never too late to change your diet, I guess! I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Aren't green curries supposed to be the spiciest curries of all?</that>
+        <template>
+            Do you like spicy curry?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like spicy curry?</that>
+        <template>
+            I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like spicy curry?</that>
+        <template>
+            Is green curry your favorite because it is less spicy?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Is green curry your favorite because it is less spicy?</that>
+        <template>
+            Seems like you've found your ideal curry! Shall we talk about a  different cuisine?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Is green curry your favorite because it is less spicy?</that>
+        <template>
+            What do you prefer about green curry?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What do you prefer about green curry?</that>
+        <template>
+            Alright! Sure. I can why that would make you like it more. I've been told that by eating spicy food your body is flooded with endorphins. Do you know anything about that?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    </topic>
+
+
+</aiml>

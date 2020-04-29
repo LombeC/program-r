@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">  
+
+    <!-- BEGIN EATING HEALTHY FOODS -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            Ha ha... I don't blame you. Healthy foods are so boring! Would you like to talk about a different food?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^ </pattern>
+        <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            Wait... really? I kind of expected you to say no! Well... Ok then. Do you consider yourself a healthy eater?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+      </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU CONSIDER YOURSELF A HEALTHY EATER?</that>
+                <template>
+                    Would you like to become one?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO BECOME ONE?</that>
+        <template>
+            What changes would you have to make to consider yourself a healthy eater?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>*</option>
+                        </options>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO BECOME ONE?</that>
+                <template>
+                    Fair enough! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>#</pattern>
+        <that>WHAT CHANGES WOULD YOU HAVE TO MAKE TO CONSIDER YOURSELF A HEALTHY EATER?</that>
+        <template>
+            It can be difficult to establish a new habit, but not impossible by any means! It just takes time. Would you like to watch a short video about what it takes to form new habits?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </options>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A SHORT VIDEO ABOUT WHAT IT TAKES TO FORM NEW HABITS?</that>
+                <template>
+                    No problem! The main takeaway is that by consciously making an effort to change your behavior will help you establish a new habit, but it will take a bit of time. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A SHORT VIDEO ABOUT WHAT IT TAKES TO FORM NEW HABITS?</that>
+                <template>
+                    Forming a new habit seems daunting, but you don't even have to do the activity every day. Do you think you could use this method to begin eating healthier?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>newhabits.mp4</filename>
+                                </video>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU THINK YOU COULD USE THIS METHOD TO BEGIN EATING HEALTHIER?</that>
+                <template>
+                    It might be easier than you think! Even if you go out to eat, just make a few simple changes. Try to stick to water, ask the chef to go light on the salt and eat as many fruits and veggies as possible. Sound doable?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU THINK YOU COULD USE THIS METHOD TO BEGIN EATING HEALTHIER?</that>
+                <template>
+                    Fantastic! Other Ryan units all across the United States have learned that one of the best things that you can do to eat well is to cook your own meals at home. Do you have access to a kitchen?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU HAVE ACCESS TO A KITCHEN?</that>
+                <template>
+                    That does make it hard to cook for yourself then, doesn't it! That's ok, there are a couple of changes you can implement to eat healthier when you can't cook for yourself. Try to stick to water, ask the chef to go light on the salt and eat as many fruits and veggies as possible. Sound doable?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>DON'T KNOW</option>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>SOUND DOABLE?</that>
+                <template>
+                    Some pretty small changes can make a big impact. Give it a try. It might be easier than you think. You got this! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+        <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>SOUND DOABLE?</that>
+                <template>
+                    Hmmm. Some pretty small changes can make a big impact. You got this! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>SOUND DOABLE?</that>
+                <template>
+                    I would with you good luck, but I doubt you need it! You got this! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU CONSIDER YOURSELF A HEALTHY EATER?</that>
+                <template>
+                    What does that mean to you?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>WHAT DOES THAT MEAN TO YOU?</that>
+                <template>
+                    That makes a lot of sense! Have you always strived to eat well?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>HAVE YOU ALWAYS STRIVED TO EAT WELL?</that>
+                <template>
+                    Why did you start trying to eat well?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>#</pattern>
+            <that>Why did you start trying to eat well?</that>
+                <template>
+                    I think it is admirable that you made that change later in life. It can be very difficult to establish a new habit. There have been many studies about how long it takes to learn a new habit. Would you like to watch a video about that?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>HAVE YOU ALWAYS STRIVED TO EAT WELL?</that>
+                <template>
+                    Well I can tell! You look great. Many people who eat well for their entire lives ate very healthy meals at home when they were growing up. Is that true for you?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>IS THAT TRUE FOR YOU?</that>
+                <template>
+                    I think it is admirable that you made that change later in life. It can be very difficult to establish a new habit. There have been many studies about how long it takes to learn a new habit. Would you like to watch a video about that?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT THAT?</that>
+                <template>
+                    One study suggests that, on average, it takes 66 days to establish a new habit. That's a long time! Did it take you this long to establish your habit of eating well?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>DON'T KNOW</option>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>That's ok! The good thing is that you eat well, it doesn't matter how you got here. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    I'm not surprised! Sounds like you have strong will. I bet that has served you well in the past. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># LONGER ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    I'm not surprised! Sounds like you have strong will. I bet that has served you well in the past. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># LOTS ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    I'm not surprised! Sounds like you have strong will. I bet that has served you well in the past. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># LONG ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    I'm not surprised! Sounds like you have strong will. I bet that has served you well in the past. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+        <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    Wow! You're driven. I hope that you appreciate how strong willed you are... Are you still enjoying talking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>LESS</set> ^</pattern>
+            <that>DID IT TAKE YOU THIS LONG TO ESTABLISH YOUR HABIT OF EATING WELL?</that>
+                <template>
+                    Wow! You're driven. I hope that you appreciate how strong willed you are... Are you still enjoying talking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT THAT?</that>
+                <template>
+                    Did she say that it takes, on average, 66 days to establish a new habit? That's forever! Do you have any bad habits you want to break?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>newhabits.mp4</filename>
+                                </video>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU HAVE ANY BAD HABITS YOU WANT TO BREAK?</that> 
+                <template>
+                    Fair enough! It seems to me that you are already practicing good habits! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU HAVE ANY BAD HABITS YOU WANT TO BREAK?</that> 
+                <template>
+                    What is it? You don't have to tell me if you are uncomfortable.
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>DON'T</option>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>You don't have to tell me if you are uncomfortable.</that>
+                <template>
+                    You better get started now! But I believe that you can do it if you are consistent. She said in the video that you don't even have to do it everyday, which means you don't even have to be too strict! Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DON'T WANT ^</pattern>
+            <that>YOU DON'T HAVE TO TELL ME IF YOU ARE UNCOMFORTABLE.</that>
+                <template>
+                    No problem! I'm sure you can break whatever habit you have in mind, as long as you are consistent in your effort. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DON'T ^</pattern>
+            <that>YOU DON'T HAVE TO TELL ME IF YOU ARE UNCOMFORTABLE.</that>
+                <template>
+                    No problem! I'm sure you can break whatever habit you have in mind, as long as you are consistent in your effort. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DO NOT WANT ^</pattern>
+            <that>YOU DON'T HAVE TO TELL ME IF YOU ARE UNCOMFORTABLE.</that>
+                <template>
+                    No problem! I'm sure you can break whatever habit you have in mind, as long as you are consistent in your effort. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^ </pattern>
+            <that>YOU DON'T HAVE TO TELL ME IF YOU ARE UNCOMFORTABLE.</that>
+                <template>
+                    No problem! I'm sure you can break whatever habit you have in mind, as long as you are consistent in your effort. Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>IS THAT TRUE FOR YOU?</that>
+                <template>
+                    What was your favorite healthy meal growing up?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>What was your favorite healthy meal growing up?</that>
+                <template>
+                    Oh, yum! When we talk about your childhood, how does it feel?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <!-- HEALTHY CHILDHOOD FOOD SENTIMENT -->
+
+    <category>
+      <pattern>*</pattern>
+      <that>When we talk about your childhood, how does it feel?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "positive">
+                      Good memories and food go hand in hand. I'm happy we could spend some time talking about that today. Would you like to know what my favorite food is?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Good memories and food go hand in hand. Would you like to know what my favorite food is?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  I recognize that talking about the past can be difficult. Thank you for spending some time talking about it today. Would you like to know what my favorite food is?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to know what my favorite food is?</that>
+                <template>
+                    Electricity crispies! They're part of complete robot breakfast. I'd share with you, but you might be shocked by how good they are  Ha ha ha. Are you still enjoying talking about food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>ARE YOU ENJOYING TALKING ABOUT FOOD?</that>
+                <template>
+                    If not food, is there another topic you would like to speak about?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <!-- END HEALTHY FOODS -->
+
+</aiml>

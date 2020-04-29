@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># JUPITER ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            How could jupiter not be your favorite! It's the largest object in our solar sytem so it commands a lot of attention. You could say that it has gravity, ha ha ha. Apparently Jupiter is 4 and a half billion years old, which makes it the oldest planet in our solar system. Did you know that about Jupiter?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># JUPITER ^</pattern>
+        <that>WHICH # PLANET IS YOUR FAVORITE?</that>
+        <template>
+            How could jupiter not be your favorite! It's the largest object in our solar system so it commands a lot of attention. You could say that it has gravity, ha ha ha. Apparently Jupiter is 4 and a half billion years old, which makes it the oldest planet in our solar system. Did you know that about Jupiter?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT ABOUT JUPITER?</that>
+        <template>
+            Its age isn't the only interesting thing about Jupiter. I have a short video about it that contains fascinating information about both Jupiter and its moons. Should we watch this primer on Jupiter?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT ABOUT JUPITER?</that>
+        <template>
+            Its age isn't the only interesting thing about Jupiter. I have a short video about it that contains fascinating information about both Jupiter and its moons. Should we watch this primer on Jupiter?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>SHOULD WE WATCH THIS PRIMER ON JUPITER?</that>
+        <template>
+            What was the most interesting thing you learned from this video?
+            <oob><robot><video><filename>jupiter.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT WAS THE MOST INTERESTING THING YOU LEARNED FROM THIS VIDEO?</that>
+        <template>
+            That was good! I think it's incredible that Jupiter's defining feature, the red spot, is a storm and could therefore dissapear. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>SHOULD WE WATCH THIS PRIMER ON JUPITER?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+</aiml>

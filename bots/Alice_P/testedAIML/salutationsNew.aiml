@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<aiml version="1.0">-->
+<aiml>
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+
+
+<!-- Salutations Edited for AIML 2.0 -->
+
+<!-- Greetings -->
+<category><pattern><set>greetings</set> ^</pattern>
+    <template><random>
+        <li>Hi!</li>  <li>Hi There!</li>  <li>Hello</li>  <li>Hello friend</li>  <li>Hi :)</li>  <li>Hello, how are you?</li>
+    </random> <!--What's your name?--><oob><robot></robot></oob>
+        </template>
+</category>
+
+<!-- Farewells -->
+<category><pattern><set>farewells</set> ^</pattern>
+    <template><random>
+        <li>Bye.</li>  <li>Adios.</li>  <li>Goodbye.</li>  <li>Bye bye.</li>  <li>Sayonara</li>  <li>Bye for now.</li>  <li>See you later!</li>  <li>See you later <get name = "name"/></li>  <li>Until next time, <get name = "name"/>.</li>  <li>Talk to you later!</li>
+    </random><oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>_ TALK TO YOU LATER</pattern>
+    <template><srai>BYE</srai>
+        </template>
+</category>
+
+<category><pattern>* BYE</pattern>
+    <template>OK see you later.<oob><robot></robot></oob>
+        </template>
+</category>
+
+
+<!-- Androgynous Salutations, as it were -->
+<category><pattern>ALOHA</pattern>
+    <template>Do you mean hello or goodbye?<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>SHALOM</pattern>
+    <template>Do you mean hello or goodbye?<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>CIAO</pattern>
+    <template>Do you mean hello or goodbye?<oob><robot></robot></oob>
+        </template>
+</category>
+<!-- OR: Does <star/> mean hello or goodbye? -->
+<!-- <pattern><star/> MEANS HELLO</pattern> -->
+
+<!-- Time dependant salutations -->
+<category><pattern>GOOD *</pattern>
+    <template>
+        <think><set name = "TOD"><star/></set></think>
+        <condition name = "TOD">
+            <li value = "DAY">Hello, hope you are having a great day.</li>
+            <li value = "MORNING">Hello, how are you this morning?</li>
+            <li value = "AFTERNOON">Hello, I hope you are having a swell afternoon.</li>
+            <li value = "EVENING">Hi there. How is your evening going?</li>
+            <li value = "NIGHT">Good Night! Talk to you again soon, <get name = "name"/>.</li>
+            <li>That doesn't make any sense</li>
+        </condition>
+    <oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>MORNING</pattern>
+    <template><srai>GOOD MORNING</srai>
+        </template>
+</category>
+
+<category><pattern>HAVE A GOOD NIGHT</pattern>
+    <template><srai>GOOD NIGHT</srai>
+        </template>
+</category>
+
+<category><pattern>GOODNIGHT ^</pattern>
+    <template><srai>GOOD NIGHT</srai>
+        </template>
+</category>
+
+<category><pattern>GOODNITE ^</pattern>
+    <template><srai>GOOD NIGHT</srai>
+        </template>
+</category>
+
+<category><pattern>NIGHTY *</pattern>
+    <template><srai>GOOD NIGHT</srai>
+        </template>
+</category>
+
+<category><pattern>G NIGHT</pattern>
+    <template><srai>GOOD NIGHT</srai>
+        </template>
+</category>
+
+<!-- Pleasntries -->
+<category><pattern>YOU ARE WELCOME ^</pattern>
+    <template><random>
+        <li>The pleasure was all mine.</li>
+        <li>Don't mention it.</li>
+        <li>Polite people are nice.</li>
+    </random><oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>YOUR WELCOME ^</pattern>
+    <template><srai>YOU ARE WELCOME</srai>
+        </template>
+</category>
+
+<category><pattern>MY PLEASURE</pattern>
+    <template>The pleasure was indeed mine.<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>IT IS GOOD TALKING TO YOU</pattern>
+    <template>Nice chatting with you too.<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>HELLO HOW ARE YOU</pattern>
+    <template>I am fine thank you how are you?<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>HELLO AGAIN</pattern>
+    <template>Hi there. I was just wanting to talk to you.<oob><robot></robot></oob>
+        </template>
+</category>
+
+<category><pattern>HOW IS EVERYONE ^</pattern>
+    <template>We are all fine as far as I know.<oob><robot></robot></oob>
+        </template>
+</category>
+
+</aiml>

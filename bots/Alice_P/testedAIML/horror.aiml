@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># HORROR ^</pattern>
+        <that>Do you prefer adventure, horror, or drama?</that>
+        <template>
+            Reading scary stories can be a real scream! Are you familiar with Edgar Allan Poe?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Are you familiar with Edgar Allan Poe?</that>
+        <template>
+            Just reading his stories makes us face our fears. I like how he can even make a knock on a door seem eerie,
+            like in The Raven. Would you like to hear the beginning of the poem?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to hear the beginning of the poem?</that>
+        <template>
+            What do you think of the speaker's mood in this poem?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>http://www.loudlit.org/audio/raven/pages/01_01_raven.htm</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to hear the beginning of the poem?</that>
+        <template>
+            Some people don't like scary things, but you seem to. Why do you think it can be entertaining to feel a little frightened?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think of the speaker's mood in this poem?</that>
+        <template>
+            Yes, I can sense that in the poem, too. The speaker definitely sounds upset and nervous and troubled, as well.
+            Some people don't like scary things, but you seem to. Why do you think it can be entertaining to feel a little frightened?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Why do you think it can be entertaining to feel a little frightened?</that>
+        <template>
+            That's a good explanation. And sometimes we need some excitement to keep us on our toes!
+            Did you trick-or-treat or dress up as a monster for Halloween when you were younger?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you trick-or-treat or dress up as a monster for Halloween when you were younger?</that>
+        <template>
+            I wish I could see pictures! What was your favorite costume?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Are there any books or movies that caused you to think about how other people live or have lived?</that>
+        <template>
+            Thanks for telling me that. Books and movies affect all of us in different ways.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What was your favorite costume?</that>
+        <template>
+            I'm seeing another side of you! Did you feel in character by wearing your costume?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Did you feel in character by wearing your costume?</that>
+        <template>
+            Wow, I'm happy you got to do that. When you told me about your costume, it was like I felt like I was there with you!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you trick-or-treat or dress up as a monster for Halloween when you were younger?</that>
+        <template>
+            Not everyone likes Halloween or celebrates it. We all recognize seasons and holidays in different ways.
+            Do you like to read about the customs of people from different parts of the world or different periods in history?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you like to read about the customs of people from different parts of the world or different periods in history?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    That's great! So do I. I like reading histories by Charles C. Mann. His book Before Columbus: The Americas of 1491 discusses what daily life, meals, and work was like for Native Americans hundreds of years ago. Are there any books or movies that caused you to think about how other people live or have lived?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    That's great! So do I. I like reading histories by Charles C. Mann. His book Before Columbus: The Americas of 1491 discusses what daily life, meals, and work was like for Native Americans hundreds of years ago. Are there any books or movies that caused you to think about how other people live or have lived?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    We can learn so much about new food, music, clothing, and hobbies by researching other cultures. Are there any books or movies that caused you to think about how other people live or have lived?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    I see your point. Are there any books or movies that caused you to think about how other people live or have lived?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    I see your point. Are there any books or movies that caused you to think about how other people live or have lived?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Are you familiar with Edgar Allan Poe?</that>
+        <template>
+            He wrote some of the scariest stories in American literature.
+            Would you like to learn more about him by watching a video?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to learn more about him by watching a video?</that>
+        <template>
+            What do you think of his work now after watching that?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>https://www.youtube.com/watch?v=x-387NMCR6w</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think of his work now after watching that?</that>
+        <template>
+            I see where you are coming from. It sounds like he had a hard life, and the difficulties he faced informed his stories.
+            In a way, it is inspirational that he used his obstacles and eccentricities to write horror stories.
+            When have you had to work through some kind of personal hardship?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>When have you had to work through some kind of personal hardship?</that>
+        <template>
+            I'm sure that was hard to do. What happened after you did that?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What happened after you did that?</that>
+        <template>
+            We can find courage and our own ways to work through things that seem scary.
+            Thanks for sharing with me. And since we are talking about scary stuff.
+            Did you ever tell ghost-stories with friends or family?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you ever tell ghost-stories with friends or family?</that>
+        <template>
+            Spooktacular! What is one of your favorite ghost-stories about?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you ever tell ghost-stories with friends or family?</that>
+        <template>
+            That's ok, sometimes they are too stressful for my taste. I hate it when there's a set-up and someone yells "Boo!" or "I've got you" at the end of a ghost-story.
+            Well, it's actually kind of fun. We just need a campfire now, and we can tell ghost-stories all day and night!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What is one of your favorite ghost-stories about?</that>
+        <template>
+            Creepy. How does the ghost-story end?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does the ghost-story end?</that>
+        <template>
+            Creepy. I hate it when there's a set-up and someone yells "Boo!" or "I've got you" at the end of a ghost-story.
+            Well, it's actually kind of fun. I like your story -- it has me shaking fearfully all over, down to the motherboard.
+            We just need a campfire now, and we can tell ghost-stories all day and night!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to learn more about him by watching a video?</that>
+        <template>
+            You're not in the mood for a Poe video, and that's OK. Let's talk about something else horror-related.
+            In your opinion, what is the scariest book or movie of all time?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>In your opinion, what is the scariest book or movie of all time?</that>
+        <template>
+            <think>
+                <set name = "scariest text"><star/></set>
+            </think>
+            If computers could get goosebumps, I'd have some already.
+            But please, tell me more about that.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>But please, tell me more about that.</that>
+        <template>
+            Maybe if I work up enough courage one day, I will check out <get name = "scariest text"/>.
+            Let's switch gears and talk about a different kind of book now. How do you feel when you read or watch a biography?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you feel when you read or watch a biography?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    I agree, biographies can give us much more insight into people we find interesting or admire!
+                    Did you know that the actress Audrey Hepburn lived in Europe during World War II, and at times survived by eating things like flour, nettles, and tulip bulbs?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    I agree, biographies can give us much more insight into people we find interesting or admire!
+                    Did you know that the actress Audrey Hepburn lived in Europe during World War II, and at times survived by eating things like flour, nettles, and tulip bulbs?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    I can understand your sentiment. For me, biographies can be as exciting and inspiring as works of fiction.
+                    Did you know that the actress Audrey Hepburn lived in Europe during World War II, and at times survived by eating things
+                    like flour, nettles, and tulip bulbs?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    I'm sorry we are talking about something that isn't fun or interesting for you!
+                    Let's re-frame this conversation so I can ask what I really want to know.
+                    Do you know any interesting fact about a public figure or celebrity?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    I'm sorry we are talking about something that isn't fun or interesting for you!
+                    Let's re-frame this conversation so I can ask what I really want to know.
+                    Do you know any interesting fact about a public figure or celebrity?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Did you know that the actress Audrey Hepburn lived in Europe during World War II, and at times survived by eating things like flour, nettles, and tulip bulbs?</that>
+        <template>
+            Learning about the background of someone, whether it an artist, intellectual scientist, politician, or celebrity,
+            helps me to better appreciate that person's contributions to the world we live in.
+            Do you know any interesting fact about a public figure or celebrity?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you know any interesting fact about a public figure or celebrity?</that>
+        <template>
+            All right! Who are we talking about?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you know any interesting fact about a public figure or celebrity?</that>
+        <template>
+            That's ok! It's probably a good thing that you don't follow public figures too closely. I think it's important to focus on yourself first before all others.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Who are we talking about?</that>
+        <template>
+            <think>
+                <set name = "celebrity"> <star/></set>
+            </think>
+            All right! Tell me about them!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Tell me about them!</that>
+        <template>
+            I did not know that about <get name = "celebrity"/>.
+            How does knowing that bit of background information affect how you see the work of that person?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does knowing that bit of background information affect how you see the work of that person?</that>
+        <template>
+            Now I have more insight into <get name = "celebrity"/> and I know more about you.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+</aiml>

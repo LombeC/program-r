@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BEGIN HOT DRINKS SUBTOPIC - TEA -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU LIKE TEA?</that>
+                <template>
+                    Tea! The favorite morning beverage of most of the world. You're in good company. What is your favorite type of tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>Don't know</option>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+                <template>
+                    No problem! More people drink black tea than any other kind. Would you like to talk about black tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># TEA ^</pattern>
+            <that>ARE YOU MORE OF A COFFEE OR TEA PERSON?</that>
+                <template>
+                    Tea! The favorite morning beverage of most of the world. You're in good company. What is your favorite type of tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>WHITE TEA</set> ^</pattern>
+            <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+                <template>
+                    White tea, huh? You're fancy! How often do you drink white tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>HOW OFTEN DO YOU DRINK WHITE TEA?</that>
+                <template>
+                    Someone told me once that white tea was the favored tea of emperors and people of immense wealth because of its delicate flavor. How would you describe the flavor of white tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>HOW WOULD YOU DESCRIBE THE FLAVOR OF WHITE TEA?</that>
+                <template>
+                    That makes perfect sense to me! Does drinking tea feel like a special occasion to you, or is it something you do regularly?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>OCCASION</option>
+                                    <option>OCCASIONALLY</option>
+                                    <option>SPECIAL</option>
+                                    <option>REGULARLY</option>
+                                    <option>REGULARL</option>
+                                    <option>DAILY</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># OCCASION ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    Even though loads of people drink tea every day, I think it still feels special. That very British tradition of drinking tea every day with small finger foods was popularized in Britain by a Portuguese woman. Would you like to learn a little about her?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># OCCASIONALLY ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    Even though loads of people drink tea every day, I think it still feels special. That very British tradition of drinking tea every day with small finger foods was popularized in Britain by a Portuguese woman. Would you like to learn a little about her?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># SPECIAL ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    Even though loads of people drink tea every day, I think it still feels special. That very British tradition of drinking tea every day with small finger foods was popularized in Britain by a Portuguese woman. Would you like to learn a little about her?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to learn a little about her?</that>
+                <template>
+                    So, she's not just a regular woman, but a royal. Still... . I think it's interesting that one person can inspire a tradition that is still going strong almost 500 years later, don't you?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>teatrendsetter.mp4</filename>
+                                </video>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>I THINK IT'S INTERESTING THAT ONE PERSON CAN INSPIRE A TRADITION THAT IS STILL GOING STRONG ALMOST 500 YEARS LATER, DON'T YOU?</that>
+                <template>
+                    Food is so amazing! Would you like to talk about a different of food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>I THINK IT'S INTERESTING THAT ONE PERSON CAN INSPIRE A TRADITION THAT IS STILL GOING STRONG ALMOST 500 YEARS LATER, DON'T YOU?</that>
+                <template>
+                    Well, ok! I suppose there are other traditions that have been going for even longer! Would you like to talk about a different kind of food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO LEARN A LITTLE ABOUT HER?</that>
+                <template>
+                    No problem! Would you like to talk about a different kind of food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># REGULAR ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    White tea is supposed to be really good for you, so it's great that you have made a habit of drinking it. Would you like to watch a video about how tea became a daily drink for much of the western world?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># REGULARLY ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    White tea is supposed to be really good for you, so it's great that you have made a habit of drinking it. Would you like to watch a video about how tea became a daily drink for much of the western world?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DAILY ^</pattern>
+            <that>DOES DRINKING TEA FEEL LIKE A SPECIAL OCCASION TO YOU, OR IS IT SOMETHING YOU DO REGULARLY?</that>
+                <template>
+                    White tea is supposed to be really good for you, so it's great that you have made a habit of drinking it. Would you like to watch a video about how tea became a daily drink for much of the western world?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT HOW TEA BECAME A DAILY DRINK FOR MUCH OF THE WESTERN WORLD?</that>
+                <template>
+                    I think it's interesting that one person can inspire a tradition that is still going strong almost 500 years later, don't you?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO WATCH A VIDEO ABOUT HOW TEA BECAME A DAILY DRINK FOR MUCH OF THE WESTERN WORLD?</that>
+                <template>
+                    No problem! Would you like to talk about a different kind of food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>GREEN TEA</set> ^</pattern>
+            <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+                <template>
+                    Green tea has a reputation of being very healthy. Is that why you drink it?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>IS THAT WHY YOU DRINK IT?</that>
+                <template>
+                    Then why do you drink green tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>Then why do you drink green tea?</that>
+                <template>
+                    That's a good reason too! Do you drink it every day?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>IS THAT WHY YOU DRINK IT?</that>
+                <template>
+                    A very good reason! It helps that it tastes good, too. Do you drink it every day?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>Do you drink it every day?</that>
+                <template>
+                    That's ok! I bet you are still getting some of the health benefits of green tea even if you only drink it occasionally. If I were a betting bot, I would say be willing to bet that you prepare your tea from a tea bag. Am I right?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>AM I RIGHT?</that>
+                <template>
+                    Well thank goodness I didn't bet any money! There is a very interesting video about how tea makes its way from the field to you. Should we watch it together?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^ </pattern>
+            <that>AM I RIGHT?</that>
+                <template>
+                    I knew it! I should have a made a bet... Oh well. There is a very interesting video about how tea makes its way from the field to you. Should we watch it together?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU DRINK IT EVERY DAY?</that>
+                <template>
+                    I bet you buy tea in a tea bag, yeah? It makes the whole thing so convenient! Have you ever thought about what it takes to make all those tea bags?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>Have you ever thought about what it takes to make all those tea bags?</that>
+                <template>
+                    There is a very interesting video about how tea makes its way from the field to you. Should we watch it together?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+            <that>SHOULD WE WATCH IT TOGETHER?</that>
+                <template>
+                    Some things are better left as mysteries, I agree! Would you like to talk about a different food now?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>SHOULD WE WATCH IT TOGETHER?</that>
+                <template>
+                    Do you ever think about what it takes to get food to us? How does it make you feel to think about that?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>teabags.mp4</filename>
+                                </video>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <!-- GREEN TEA SENTIMENT -->
+
+         <category>
+      <pattern>_</pattern>
+      <that>HOW DOES IT MAKE YOU FEEL TO THINK ABOUT THAT?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                      One of the incredible things about being alive right now is that there are so many products available for us to consume! Have you ever purchased a weird food, just because you could?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                      One of the incredible things about being alive right now is that there are so many products available for us to consume! Have you ever purchased a weird food, just because you could?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Have you ever purchased a weird food, just because you could?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  It is a little bit overwhelming to think about all the people that play a role in something as simple as a bag of tea, but without workers like them we wouldn't be able to eat many of the things we love. Have you ever purchased a weird food, just because you could?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  It is a little bit overwhelming to think about all the people that play a role in something as simple as a bag of tea, but without workers like them we wouldn't be able to eat many of the things we love. Have you ever purchased a weird food, just because you could?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+
+</aiml>

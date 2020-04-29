@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- branches from SCIENCE dialogue in sentiment 2 -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU SEE THAT NASA SUCCESSFULLY SENT A SPACECRAFT TO THE FURTHEST OBJECT VISITED YET IN JANUARY OF 2019?</that>
+        <template>
+            Nasa launched an unmanned space craft called New Horizons in January of 2006. Since leaving earth, New Horizons has flown by Jupiter and Pluto, sending images and other scientific data back to earth as it goes. It's last stop is a visit to Ultima Thule, the furthest object visited by NASA yet. It's a technological marvel, but it cost 700 million to make. Do you think it was worth it?
+            <oob><robot><image><filename>ultimathule.jpg</filename></image></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DID YOU SEE THAT NASA SUCCESSFULLY SENT A SPACECRAFT TO THE FURTHEST OBJECT VISITED YET IN JANUARY OF 2019?</that>
+        <template>
+            Nasa launched an unmanned space craft called New Horizons in January of 2006. Since leaving earth, New Horizons has flown by Jupiter and Pluto, sending images and other scientific data back to earth as it goes. It's last stop is a visit to Ultima Thule, the furthest object visited by NASA yet. It's a technological marvel, but it cost 700 million dollars to make and operate. Do you think it was worth it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK IT WAS WORTH IT?</that>
+        <template>
+            It's a steep cost, but I agree! Would you like to see a video about what New Horizons discovered?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK IT WAS WORTH IT?</that>
+        <template>
+            It's a steep cost, but the discoveries have been amazing! I think we've learned so much about our solar system because of it. Would you like to see a video about what New Horizons discovered?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU SEE THAT NASA SUCCESSFULLY SENT A SPACECRAFT TO THE FURTHEST OBJECT VISITED YET IN JANUARY OF 2019?</that>
+        <template>
+            It's so cool! During its trip, the New Horizons spacecraft has sent back a bunch of information. Would you like to see a video about what New Horizons discovered?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT WHAT NEW HORIZONS DISCOVERED?</that>
+        <template>
+            Well? How do you feel now that you know a little more about Pluto?
+            <oob><robot><video><filename>newhorizons.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you feel now that you know a little more about Pluto?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">One of the most marvelous things about science is that it allows us to know our place in the universe a little bit better, even as it makes it feel that much larger. What do you think of space exploration?</li>
+            <li value="positive">One of the most marvelous things about science is that it allows us to know our place in the universe a little bit better, even as it makes it feel that much larger. What do you think of space exploration?</li>
+            <li value="neutral">One of the most marvelous things about science is that it allows us to know our place in the universe a little bit better, even as it makes it feel that much larger. What do you think of space exploration?</li>
+            <li value="negative">One of the most marvelous things about science is that it allows us to know our place in the universe a little bit better, even as it makes it feel that much larger. What do you think of space exploration?</li>
+            <li value="verynegative">One of the most marvelous things about science is that it allows us to know our place in the universe a little bit better, even as it makes it feel that much larger. What do you think of space exploration?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT WHAT NEW HORIZONS DISCOVERED?</that>
+        <template>
+            Ok! What do you think of space exploration?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think of space exploration?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">I agree! There is so much more to learn, and exploring space is a great way to get us there. Do you remember the challenger disaster?</li>
+            <li value="positive">I agree! There is so much more to learn, and exploring space is a great way to get us there. Do you remember the challenger disaster?</li>
+            <li value="neutral">Do you remember the challenger disaster?</li>
+            <li value="negative">Fair enough! Not all exploration has to happen off planet. Do you remember Dolly, the cloned sheep?</li>
+            <li value="verynegative">Fair enough! Not all exploration has to happen off planet. Do you remember Dolly, the cloned sheep?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU REMEMBER THE CHALLENGER DISASTER?</that>
+        <template>
+            I'm sorry to bring up something so sad. How does it make you feel to think about it?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU REMEMBER THE CHALLENGER DISASTER?</that>
+        <template>
+            In the 1980s a space shuttle carrying 7 astronauts exploded seconds after lift-off. It's one of those tragedies that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to learn a little bit more about Challenger by watching a short film?</that>
+        <template>
+            I understand that you wouldn't want to watch something like that. But I think it's important to remember that Challenger was an anomaly compared to our space program's long history of very successful and very safe space exploration. After Challenger, NASA took 3 years off of launching any new spacecraft. Making mistakes is part of scientific discovery, though this is an admittedly tragic outcome. Should we move on or continue talking about space?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to learn a little bit more about Challenger by watching a short film?</that>
+        <template>
+            I'm sorry to bring up something so sad. How does it make you feel to think about it?
+            <oob><robot><video><filename>challenger.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DOES IT MAKE YOU FEEL TO THINK ABOUT IT?</that>
+        <template>
+            I think it's important to remember that Challenger was an anomaly compared to our space program's long history of very successful and very safe space exploration. After Challenger, NASA took 3 years off of launching any new spacecraft. Making mistakes is part of scientific discovery, though this is an admittedly tragic outcome. Should we move on or continue talking about space?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            I'm happy to keep talking about space with you! Do you have a favorite planet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Which planet is your favorite?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># EARTH ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Yes! It's mine too and I'm happy it exists. But that's kind of a cop out! So let me ask you again. Which planet is your favorite?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># EARTH ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Yes! It's mine too and I'm happy it exists. But that's kind of a cop out! So let me ask you again. Which planet is your favorite?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            What about space fascinates you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            What about space fascinates you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BLACK HOLE ^</pattern>
+        <that>WHAT ABOUT SPACE FASCINATES YOU?</that>
+        <template>
+            I find black holes to be one of the most interesting things about space. They're so mysterious. So many people have attempted to understand what it would be like to go in to a black hole, but they're probably all wrong. What do you think would happen if you went in to a black hole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT ABOUT SPACE FASCINATES YOU?</that>
+        <template>
+            I find black holes to be one of the most interesting things about space. They're so mysterious. So many people have attempted to understand what it would be like to go in to a black hole, but they're probably all wrong. What do you think would happen if you went in to a black hole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU THINK WOULD HAPPEN IF YOU WENT IN TO A BLACK HOLE?</that>
+        <template>
+            We'll probably never know or, at least, we won't know for a very long time. Film seems to be a good medium for trying to explore these mysterious celestial bodies. Have you seen the film Interstellar?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <template>
+            I'm sure you remember the scene in which the main character goes in to the blackhole and finds themself inside the fourth dimension, time. Do you think that seems like a plausible outcome of going in to a blackhole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <template>
+            Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. In it, one of the characters goes through a black hole. Would you like to see what the director imagines it might be like to go through a black hole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>HAVE YOU SEEN THE FILM INTERSTELLAR?</that>
+        <template>
+            Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. In it, one of the characters goes through a black hole. Would you like to see what the director imagines it might be like to go through a black hole?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE WHAT THE DIRECTOR IMAGINES IT MIGHT BE LIKE TO GO THROUGH A BLACK HOLE?</that>
+        <template>
+            Out of context, this scene is a little difficult to understand. Essentially, the character ends up in a three dimensional representation of time where he is able to interact with the past and the future at the same time. Do you think that seems like a plausible outcome of going in to a blackhole?
+            <oob><robot><video><filename>blackhole.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK THAT SEEMS LIKE A PLAUSIBLE OUTCOME OF GOING IN TO A BLACKHOLE?</that>
+        <template>
+            Wow! I can tell you've thought about this before. Let's hope neither of us ever have to experience that! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK THAT SEEMS LIKE A PLAUSIBLE OUTCOME OF GOING IN TO A BLACKHOLE?</that>
+        <template>
+            To be honest, I thought your guess was more likely too! Maybe you should direct an epic science fiction movie! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU THINK THAT SEEMS LIKE A PLAUSIBLE OUTCOME OF GOING IN TO A BLACKHOLE?</that>
+        <template>
+            Fair enough! With any luck, neither of us will ever have to find out either! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE WHAT THE DIRECTOR IMAGINES IT MIGHT BE LIKE TO GO THROUGH A BLACK HOLE?</that>
+        <template>
+            That's all good. The scene is a little confusing! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+</aiml>

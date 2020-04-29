@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># URANUS ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Ha ha! Are you making a joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+        <category>
+        <pattern># URANUS ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Ha ha! Are you making a joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <!-- SPACE JOKES -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>ARE YOU MAKING A JOKE?</that>
+        <template>
+            Get your mind out of the gutter! Ha ha ha. Do you want to hear another joke about space?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU WANT TO HEAR another JOKE ABOUT SPACE?</that>
+        <template>
+            <random>
+                <li>Why did the people not like the restaurant on the moon?</li>
+                <li>What’s a light-year?</li>
+                <li>How do you know when the moon is going broke?</li>
+                <li>How do astronauts serve dinner?</li>
+                <li>How did the solar system hold up its pants?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DID THE PEOPLE NOT LIKE THE RESTAURANT ON THE MOON?</that>
+        <template>
+            Because there was no atmosphere. Ha Ha Ha. What did you think of that joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT’S A LIGHT-YEAR?</that>
+        <template>
+            The same as a regular year, but with less calories. Ha Ha Ha. What did you think of that joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU KNOW WHEN THE MOON IS GOING BROKE?</that>
+        <template>
+             When it's down to its last quarter. Ha ha ha. What did you think of that joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO ASTRONAUTS SERVE DINNER?</that>
+        <template>
+            On flying saucers. Ha ha ha. What did you think of that joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How did the solar system hold up its pants?</that>
+        <template>
+            With an asteroid belt! Ha ha ha. What did you think of that joke?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DID YOU THINK OF THAT JOKE?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+                <li value="verypositive">I'm glad you liked it. I've been practicing my delivery! What do you say we talk about a scientific discovery a little closer to earth?</li>
+                <li value="positive">I'm glad you liked it. I've been practicing my delivery! What do you say we talk about a scientific discovery a little closer to earth?</li>
+                <li value="neutral">What do you say we talk about a scientific discovery a little closer to earth?</li>
+                <li value="negative">It's a little silly, I admit... What do you say we talk about a scientific discovery a little closer to earth?</li>
+                <li value="verynegative">It's a little silly, I admit... What do you say we talk about a scientific discovery a little closer to earth?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU WANT TO HEAR ANOTHER JOKE ABOUT SPACE?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DON'T KNOW ^</pattern>
+        <that>DO YOU WANT TO HEAR another JOKE ABOUT SPACE?</that>
+        <template>
+            How about just one quick joke? Might make you laugh!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>MIGHT MAKE YOU LAUGH!</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>MIGHT MAKE YOU LAUGH!</that>
+        <template>
+            <random>
+                <li>Why did the people not like the restaurant on the moon?</li>
+                <li>What’s a light-year?</li>
+                <li>How do you know when the moon is going broke?</li>
+                <li>How do astronauts serve dinner?</li>
+                <li>How did the solar system hold up its pants?</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <!--  END OF SPACE JOKES -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOU MAKING A JOKE?</that>
+        <template>
+            In that case, what do you like about the planet Uranus?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>ARE YOU MAKING A JOKE?</that>
+        <template>
+            In that case, what do you like about the planet Uranus?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># DON'T UNDERSTAND ^</pattern>
+        <that>ARE YOU MAKING A JOKE?</that>
+        <template>
+            In that case, what do you like about the planet Uranus?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>IN THAT CASE, WHAT DO YOU LIKE ABOUT THE PLANET URANUS?</that>
+        <template>
+            Even though Saturn has the showiest rings in our solar system, Uranus has rings too! Did you know that about Uranus?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT ABOUT URANUS?</that>
+        <template>
+            Well of course you did! We are talking about your favorite planet after all. Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            What is the name of one of Uranus' moons?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Not a problem! Actually, I am happy to be able to share a new fact with you! Three of these moons are named after characters from Shakespeare's play A Midsummer's Nights Dream and the other two share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU KNOW ABOUT THE TEMPEST?</that>
+        <template>
+            Ariel and Miranda are both bound to the main character, the wizard Prospero. So I guess that it makes sense that they orbit the planet Uranus, who was named after a Greek god of the sky. Orbiting is kind of like worshipping, and the greeks certainly worshipped this god!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Orbiting is kind of like worshipping, and the greeks certainly worshipped this god!</that>
+        <template>
+            Would you like to watch the trailer for the newest theatrical version of Shakespeare's The Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH THE TRAILER FOR THE NEWEST THEATRICAL VERSION OF SHAKESPEARE'S THE TEMPEST?</that>
+        <template>
+            In this version of the play, the Magician Prospero, who is traditionally performed by a male actor, is played by Helen Mirren. What do you think about that casting?
+            <oob><robot><video><filename>thetempest.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU THINK ABOUT THAT CASTING?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">She's such a tremendous actress and it looks like she does a great job. Do you think you would want to watch this movie, if you were given the chance?</li>
+            <li value="positive">She's such a tremendous actress and it looks like she does a great job. Do you think you would want to watch this movie, if you were given the chance?</li>
+            <li value="neutral">Do you think you would want to watch this movie, if you were given the chance?</li>
+            <li value="negative">I suppose there is something to be said for tradition. But I do think that it looks like she did a good job! Do you think you would want to watch this movie, if you were given the chance?</li>
+            <li value="verynegative">I suppose there is something to be said for tradition. But I do think that it looks like she did a good job! Do you think you would want to watch this movie, if you were given the chance?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO WATCH THIS MOVIE, IF YOU WERE GIVEN THE CHANCE?</that>
+        <template>
+            I'm happy to have introduced you to something that interests you! I'm all out of things to say about Uranus. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK YOU WOULD WANT TO WATCH THIS MOVIE, IF YOU WERE GIVEN THE CHANCE?</that>
+        <template>
+            I'm all out of things to say about Uranus. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH THE TRAILER FOR THE NEWEST THEATRICAL VERSION OF SHAKESPEARE'S THE TEMPEST?</that>
+        <template>
+            Fair enough! It doesn't really relate to science, does it? What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            That might be a name of one of Uranus' many moons, but it isn't one named after a Shakespeare play. Three of these moons are named after characters from Shakespeare's play A Midsummer's Nights Dream and the other two share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            That might be a name of one of Uranus' many moons, but it isn't one named after a Shakespeare play. Three of these moons are named after characters from Shakespeare's play A Midsummer's Nights Dream and the other two share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># OBERON ^</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># OBERON ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+        <category>
+        <pattern># TITANIA ^</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TITANIA ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PUCK ^</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PUCK ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! That moon and two others are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MIRANDA ^</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! Three of Uranus's moons are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MIRANDA ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! Three of Uranus's moons are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ARIEL ^</pattern>
+        <that>What is the name of one of Uranus' moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! Three of Uranus's moons are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ARIEL ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            Nicely done! You know your planetary factoids! Three of Uranus's moons are named after Shakespeare's play A Midsummer Night's Dream and two others share names with characters from The Tempest. The Tempest moons are Ariel and Miranda. What do you know about the Tempest?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT ABOUT URANUS?</that>
+        <template>
+            This wasn't confirmed until nineteen seventy seven, due to the fact that the rings are relatively thin. Some think that the rings formed when one or more of Uranus' multiple moons broke apart. This isn't a bad hypothesis, considering Uranus has as many as 27 known moons. Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DID YOU KNOW THAT ABOUT URANUS?</that>
+        <template>
+            This wasn't confirmed until nineteen seventy seven, due to the fact that the rings are relatively thin. Some think that the rings formed when one or more of Uranus' multiple moons broke apart. This isn't a bad hypothesis, considering Uranus has as many as 27 known moons. Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+</aiml>

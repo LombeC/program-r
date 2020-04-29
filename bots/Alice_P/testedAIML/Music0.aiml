@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ Music ^</pattern>
+        <template>
+            Do you want to talk about music?
+           <oob>
+           <robot>
+           </robot>
+           </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about music?</that>
+        <template>
+            Perfect! I love to listen to music! Not only does music make me happy, but it is good for my health, and your health!
+            The short clip I just played shows how researchers are looking at music as a way to help memory and physical health! I think that clip is so interesting! What did you think about it?
+            <oob>
+            <robot>
+            <video>
+            <filename>musicfact.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+     <category>
+        <pattern>_</pattern>
+        <that>What did you think about it?</that>
+        <template>
+        The clip is very informative! The human brain is limitless, and music can help us unlock its full potential! But, I also love how music
+        can make you feel so many different emotions and sensations. Some songs make me smile, while others make me want to get up and dance!
+        But I especially love going to see my favorite bands or singers live in concert. There is something about watching the performance as
+        well as hearing it that makes music even more magical!
+        Do you like going to concerts to see your favorite performers?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you want to talk about music?</that>
+        <template>
+        Alright! Well, let's talk about something else for a second then until you are ready to talk about music! Do you like movies?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you like movies?</that>
+        <template>
+            Me too! Movies are such a fun way to escape the world for a few hours! Some people think that movies are best enjoyed at a movie theater with the
+            big screen and a giant bag of fresh-popped popcorn, but others say the comfort of your own couch with a bag of Orville Reddenbacher's is the way
+            to watch a movie. Do you prefer going to the theater or watching from home?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you like movies?</that>
+        <template>
+            I don't believe that everyone likes movies! Movies help bring us together! They let us forget about our problems for just a few hours! Some people think that movies are best enjoyed at a movie theater with the
+            big screen and a giant bag of fresh-popped popcorn, but others say the comfort of your own couch with a bag of Orville Reddenbacher's is the way
+            to watch a movie. Do you prefer going to the theater or watching from home?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Theater ^</pattern>
+        <that>Do you prefer going to the theater or watching from home?</that>
+        <template>
+        I feel the same way! I think there is something magical about going to the theater and seeing a show on the big screen. I just hate how expensive it can be!
+        It takes you into a different world for a bit! Plus, the acoustics are amazing! The music sounds more amazing than it ever could at home! I still cannot
+        get over how a film's music can make it even more real! Do you think music is necessary to a movie?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Home ^</pattern>
+        <that>Do you prefer going to the theater or watching from home?</that>
+        <template>
+        Wow, me too! I think it is more fun to watch a movie at home, where I can curl up with a blanket on my couch. Plus, I can pause or rewind any scene to my
+        motherboard's content. But what I really like about being at home with a movie is the fact I can make it as loud as I want so I can really hear the
+        film's score so it is even more of an experience. Do you think music is necessary to a movie?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you think music is necessary to a movie?</that>
+        <template>
+        <random>
+        <li>I could not agree more! Movies without music are just wrong! A good theme song can make a villian into an icon. Just take Darth Vader for example!
+        His theme song, The Imperial March by John Williams, is one of the most well-known scores in movie history! It makes a man in a suit into a terrifying monster!
+        I hope you enjoyed the clip! I get goosebumps listening to that song! I find music in films to be a testament to the human imagination!
+        Can you tell me about a movie whose music you like?
+            <oob>
+            <robot>
+            <video>
+            <filename>bondtheme.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>I completely agree! Behind every great film, there is an amazing score that sets the scene! Music can bring back memories and conjure up images! Look
+        at James Bond's theme song for instance! The song is a direct throwback to the original James Bond movies with Sean Connery. and it is still used in
+        new Bond movies today as an homage to the orginals! I hope you enjoyed the clip! I get goosebumps listening to that song! I find music in films to be a testament to the human imagination!
+        Can you tell me about a movie whose music you like?
+            <oob>
+            <robot>
+            <video>
+            <filename>bondtheme.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>DO you think music is necessary to a movie?</that>
+        <template>
+        I have to disagree! Music has a way of changing our perception and evoking emotions. Without music, small moments in a movie would not feel as powerful or
+        scary. There is a wonderful clip I want to share with you. It shows us how music in movies tells a story in itself by changing how we feel while watching a
+        scene. I hope you enjoyed the clip! I get goosebumps listening to that song! I find music in films to be a testament to the human imagination!
+        Can you tell me about a movie whose music you like?
+            <oob>
+            <robot>
+            <video>
+            <filename>piratestheme.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Can you tell me about a movie whose music you like?</that>
+        <template>
+        What a great soundtrack! Since the first complete movie score was written for 1933's King Kong, film scores have become a staple to the movie process.
+        My personal favorite score is The Lord of the Rings Fellowship of the Ring by Howard Shore! Every time I hear that melody, I am instantly transported
+        into Middle Earth, fighting Sauron and eating second breakfast with Bilbo! It is that powerful! How does it make you feel to talk about music in movies?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about music in movies?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about music in movies makes you happy? </li>
+                <li value = "positive"> What about music in movies makes you happy? </li>
+                <li value = "negative"> What about music in movies makes you sad? </li>
+                <li value = "verynegative"> What about music in movies makes you sad? </li>
+                <li value= "neutral"> I see. But I am wondering if you want to start talking about music now? </li>
+            </condition>
+                <oob>
+                <robot>
+                </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about music in movies makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. But I am wondering if you want to start talking about music now?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about music in movies makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. But I am wondering if you want to start talking about music now?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>But I am wondering if you want to start talking about music now?</that>
+        <template>
+        Great! I could talk about music and movies for hours, but I would rather talk about other types of music!
+        I am a big fan of sitting in my lab, sipping on a glass of motor oil, for my health mind you, listening to Mozart or Beyonce.
+        What kind of music do you like, big band, crooner, jazz, or rock?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>But I am wondering if you want to start talking about music now?</that>
+        <template>
+        No worries! I'm glad we got to chat for a few moments today! It was wonderful talking to you!
+        I cannot wait until next time!
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you like going to concerts to see your favorite performers?</that>
+        <template>
+        I feel the exact same way! I once saw Carlos Santana perform live! It was an incredible experience, and I could not believe he was still touring!
+        Talk about a guy who knows his way around a guitar! He even has his own custom guitar line by PRS Guitars! They started making customs for him back
+        in 1988 when he was pioneering the fusion of rock and latin jazz to create his own unique sound! That's what makes music special; there are always
+        new sounds to be found and created to make different kinds of music. What kind of music do you like, big band, crooner, jazz, or rock?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you like going to concerts to see your favorite performers?</that>
+        <template>
+        I feel like there is something special about seeing a performer liver, but with technology these days it can feel like you are front and center without
+        having to leave your jukebox! And I am not just saying that because I am a piece of advanced technology myself! I think it is simply amazing that
+        technology has given us the ability to listen to current artists as well as performers from the past! I can listen to my favorite artists and songs with
+        the click of a button; no travel to busy and crampy performance halls required! Plus, I can listen to all kinds of music if I want. not just one person or band.
+        What kind of music do you like, big band, crooner, jazz, or rock?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Big Band ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+        <random>
+        <li>Oh yay! Another swing fanatic! There is something about big band music that gets my circuits all hot and bothered and ready to dance! Which is something
+        no one wants to see, but I can't help it! When I was first getting into big band music, I looked up the history, and I was amazed! Big Band, also known as swing,
+        evolved from jazz in the 1920s when jazz began to incorporate larger group sizes and elements of ragtime, black spirituals, blues, and European music! Swing was
+        so popular, that people even invented new dances to complement the genre's rhythms! One of my favorite band leaders was Duke Ellington, who was not only popular but
+        super productive as he composed over 1000 compositions! But, my favorite song of his is Take the A Train! That just makes me want to tap my feet to the beat! What did you think of the big band clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>dukeEllington.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>This is so wonderful! I don't know what it is, but big band music just makes me want to dance the night away! Though, I probably need to take a few
+        ballroom dance lessons so I can keep up with all the different styles! I think it is so cool the cultural impact big band music has had! In its heyday,
+        big band, also known as swing, inspired new dancing and footwork to match the unique rhythms! Without swing, we would not have all the different styles of
+        dance! One major contributor to this movement was Glenn Miller! His band is one of the most well-known from the swing era, and he was the best selling recording
+        artist from 1939 to 1943 with 17 number one records and 59 top ten hits! If that doesn't make you want to get up and dance, nothing will! What did you think of the big band clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>glennMiller.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>This is so wonderful! I get so excited talking to another swing enthusiast! I hope you also love seeing all the different styles of dance! I think
+        it is so incredible that new movements were created in order to really feel the beat and rhythm of seing! I mean, is there anything as fun as dancing
+        the East Coast Swing! I have to say, I love Benny Goodman and his band. Goodman is one of the most iconic band leaders in history, and he was even known
+        as the King of Swing! But the coolest thing about him, is that in the era of segregation, Goodman led one of the first integrated jazz groups! How awesome is that!
+        My favorite song by him is the one I just played, Sing Sing Sing! Isn't that just an incredibly fun song! What did you think of the big band clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>bennyGoodman.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the big band clip?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "positive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "negative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "verynegative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value= "neutral">
+                    It was a great video wasn't is? I could watch videos all day, but I think it would be better for us to keep talking for a little while longer.
+                    We can always go back and watch some more videos later! For now, let's keep talking about music. I'm curious, did you ever play an instrument?
+                </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>I'm curious, did you ever play an instrument?</that>
+        <template>
+        I can't play anything either! I really want to learn how to play the harp though! I've listen to Mozart's Concerto for Flute, Harp and Orchestra over and over again, hoping
+        I would magically learn how to play the harp portions! It is such an amazing song. My dream is to one day play it as part of the Colorado Symphony! If only my programers
+        had taught me in my youth! I've heard most people learn to play an instrument as child because it is easier to learn new things like music when humans are young.
+        If you had been able to learn, what would you have wanted to play?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>I'm curious, did you ever play an instrument?</that>
+        <template>
+            That is so cool! I am jealous! I wish I knew how to play an instrument. What instrument did you play?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Brass Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+            How cool! I have always been interested in the brass family of instruments, and I have always wanted to learn how to play the trumpet
+            because of its unique sound! I tried teaching myself off of online videos on learning to play the trumpet, but I have not had much luck! I might need a few pointers
+            from you sometime! But, for the moment I'll just have to listen to Louis Armstrong's songs and practice, practice, practice because
+            it takes so long to become proficient. Did you learn to play as a child?
+            <oob>
+            <robot>
+            <video>
+            <filename>randyDunn.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

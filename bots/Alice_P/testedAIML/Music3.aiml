@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># Rock ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+        <random>
+        <li>That is so cool! I love rock music as well! Look how much we have in common! I have recently become obsessed with The Beatles! I mean, you cannot
+        talk about rock music without mentioning The Beatles and their Beatlemania in the 1960s! It has been decades since they disbanded, but their work continues
+        to inspire music today! Their legacy is astounding! They helped paved the way for viewing music as art since they blended different genres and techniques
+        to create new sounds! The one song that always stands out to me from their incredible collection is Black Bird; I can't seem to get it out of my head!
+        I love their style of rock which can be so powerful yet so soulful! What did you think of the rock clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>blackbird.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>What fun! We both have incredible taste in music then because I am a rock fan as well! I hope you are also a fan of Jimi Hendrix! His mainstream career
+        only lasted four years before he died, but his legacy endures to this day! Hendrix completely changed the sound of rock music
+        by implementing technology and changing what sounds were considered acceptable in the genre! But Hendrix is probably best known for his guitar skills!
+        In fact, in 2005 Rolling Stones magazine named him the greatest guitarist of all time as well as the sixth greatest artist of all time.
+        If you don't start head banging with that beat, then I cannot help you! What did you think of the rock clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>jimiBio.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>
+        How marvelous! I love talking with a fellow rock fan! I feel like we can't talk about rock music without mentioning Elvis Presley. I'm sure you know
+        this already, but Elvis was a pioneer of rockabilly, a fusion of country music and rhythm and blues. He was incredible performer, combining energetic
+        interpretations of songs with suggestive dancing. Crazily enough, in 1973, Elvis became the first solo artist to have a concert broadcast around the world.
+        On top of that distinction, he also was awarded the Grammy Lifetime Achievement Award at age 36. His music was highly successful, and he had a
+        lot of chart toppers! I'm not sure about you, but my hips are moving to that beat! What did you think of the rock clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>elvisJailhouse.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>
+        That is so great to hear! Rock music is incredible; there are so many different varieties and sounds to choose from! Plus, watching the evolution of the genre
+        from its roots in blue and rhythm to hair rock to metal is so interesting. I love to see how different artists and bands have inspired one another. I've searched
+        the internet fairly extensively, and I have to say, I am not only impressed with Queen's influence on later artists, but on the band's body of work! Most of the
+        songs were the brainchild of frontman Freddie Mercury, who blended hard rock, heavy metal, arena rock, and pop rock sounds to create the band's unique style.
+        Many of their songs, like We are the Champions and We Will Rock You, are still popular to this day! Hollywood
+        even made a movie in 2018 chronicling the life of Freddy Mercury and the rise of Queen's popularity.
+        What an incredible journey! What did you think of the rock clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>queenHistory.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the rock clip?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "positive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "negative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "verynegative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value= "neutral">
+                    It was a great video wasn't is? I could watch videos all day, but I think it would be better for us to keep talking for a little while longer.
+                    We can always go back and watch some more videos later! For now, let's keep talking about music. I'm curious, did you ever play an instrument?
+                </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to keep talking about music?</that>
+        <template>
+        Excellent! I am so excited to keep chatting! There are so many different music genres to choose from!
+        What kind of music do you like, big band, crooner, jazz, or rock?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to keep talking about music?</that>
+        <template>
+            No worries! I'm glad we got to chat for a few moments today! It was wonderful talking to you!
+            I cannot wait until next time!
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

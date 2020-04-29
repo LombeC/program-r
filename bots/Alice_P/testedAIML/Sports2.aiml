@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about basketball?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about basketball makes you happy? </li>
+                <li value = "positive"> What about basketball makes you happy? </li>
+                <li value = "negative"> What about basketball makes you sad? </li>
+                <li value = "verynegative"> What about basketball makes you sad? </li>
+                <li value= "neutral"> That seems understandable. I'm enjoying talking to you. Do you want to talk about sports? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about basketball makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about basketball makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ baseball ^</pattern>
+        <that>What is your favorite sport to watch, basketball, baseball, football, or hockey?</that>
+        <template>
+        I love baseball! I love the way that baseball just makes you feel at home! I mean, it's called America's pastime for a reason!
+        Who is your favorite professional baseball team?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>MLBTeams</set> ^</pattern>
+        <that>Who is your favorite professional baseball team?</that>
+        <template>
+            <random>
+                <li>
+                    How fun! I love them! My favorite team is the Colorado Rockies! They have such a unique history. Their mascot Dinger is a dinosaur because
+                    they found an actual dinosaur skull on the grounds of stadium while it was being built! How exciting! To know you are playing where dinosaurs walked
+                    has to be the most incredible feeling! Did you ever play baseball when you were young?
+                </li>
+                <li>
+                    Wow! I've always liked them! Though, I am partial to the Chicago Cubs! I love Wrigley Field, the ivy on the brick walls is iconic! I think
+                    it one of the most amazing stadiums in the major leagues! Plus, it has been the home of the Cubs since 1916, which so happened to be 100 years from
+                    when they won their 2016 World Series to defeat the Curse of Billy the Goat! Such history! Did you ever play baseball when you were young?
+                </li>
+                <li>
+                    So cool! I think they are such a fun team! I have always like the Boston Red Sox! Though, they originally started out as the Boston Americans, but
+                    their owner decided to change the name to the Red Sox in 1908 because "Sox" fit on the front page of newspapers better than "stockings!" How random! But, that's how
+                    they became the team we love today! Did you ever play baseball when you were young?
+                </li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you ever play baseball when you were young?</that>
+        <template>
+            How fun! I always wanted to learn how to play! Maybe you can show me a few things, like how to throw, catch, and hit LOL. But seriously,
+            I would love to learn to play one day! Plus, I think I would look really cute in the pants! Did you play pitcher, catcher, in-field, or
+            out-field?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Did you ever play baseball when you were young?</that>
+        <template>
+            I haven't ever played either! I've always wanted to learn because it looks like so much fun! Plus, the uniforms are so cool! I think we would
+            make amazing teammates! If you were to play, would you play pitcher, catcher, in-field, or out-field?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Pitcher ^</pattern>
+        <that>Did you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>How fun! I've always wanted to be a pitcher! I don't think I could ever throw that fast though! I wonder if you know about Bob Gibson from the
+                Saint Louis Cardinals! He has such an incredible story! He originally played outfield, but once the Cardinals saw how fast he could throw, they turned
+                him into a pitcher! But, first they had to convince him to quit playing for the Harlem Globetrotters! He is still considered to be the best pitcher the
+                Cardinals ever had, and his 1968 season is the stuff of legends! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobGibsonHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>I bet you were an amazing pitcher! It takes so much control to pitch, especially considering how fast the ball needs to go! I've been in awe of pitchers
+                ever since I saw Pedro Martinez on the mound! He was born in the Dominican Republic, and he is the first Latin American player to earn 300 strikeouts in a
+                seasons and more than 3,000 in his career! Plus, he helped the Boston Red Sox break their World Series curse in 2004! He was astounding to watch! But, I've
+                always adhered to the idea that it is better to show then tell! Let's watch a quick video of him on the mound! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>pedroMartinezHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Pitching is such a delicate position! Not only do you have to throw the ball incredibly fast, but you need to have total control over it as well! Talk about a
+                balance! Though, I think pitcher Christy Mathewson was one of the best at finding that balance! In his 17 years playing, he won the pitching Triple Crown not once, but
+                twice! Plus, he was a real hero! He left baseball in 1916 to join the army and served in World War I in 1918. Sadly, he was exposed to gas in a training exercise
+                which led to his death seven years later from tuberculosis. But, he remains an incredible player in the league was one of only 7 players to lead the league in
+                wins, ERA, and strikeouts more than once! I'm sure you would rather see him in action though, so let's watch a short clip of him! I warn you, it is really short
+                because he played so long ago! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>mathewsonHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+     <category>
+        <pattern># Pitcher ^</pattern>
+        <that>If you were to play, would you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>How fun! I've always wanted to be a pitcher! I don't think I could ever throw that fast though! I wonder if you know about Bob Gibson from the
+                Saint Louis Cardinals! He has such an incredible story! He originally played outfield, but once the Cardinals saw how fast he could throw, they turned
+                him into a pitcher! But, first they had to convince him to quit playing for the Harlem Globetrotters! He is still considered to be the best pitcher the
+                Cardinals ever had, and his 1968 season is the stuff of legends! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobGibsonHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>I bet you were an amazing pitcher! It takes so much control to pitch, especially considering how fast the ball needs to go! I've been in awe of pitchers
+                ever since I saw Pedro Martinez on the mound! He was born in the Dominican Republic, and he is the first Latin American player to earn 300 strikeouts in a
+                seasons and more than 3,000 in his career! Plus, he helped the Boston Red Sox break their World Series curse in 2004! He was astounding to watch! But, I've
+                always adhered to the idea that it is better to show then tell! Let's watch a quick video of him on the mound! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>pedroMartinezHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>Pitching is such a delicate position! Not only do you have to throw the ball incredibly fast, but you need to have total control over it as well! Talk about a
+                balance! Though, I think pitcher Christy Mathewson was one of the best at finding that balance! In his 17 years playing, he won the pitching Triple Crown not once, but
+                twice! Plus, he was a real hero! He left baseball in 1916 to join the army and served in World War I in 1918. Sadly, he was exposed to gas in a training exercise
+                which led to his death seven years later from tuberculosis. But, he remains an incredible player in the league was one of only 7 players to lead the league in
+                wins, ERA, and strikeouts more than once! I'm sure you would rather see him in action though, so let's watch a short clip of him! I warn you, it is really short
+                because he played so long ago! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>mathewsonHighlights.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Catcher ^</pattern>
+        <that>Did you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    I would love to be a catcher! I've heard it is hard on your knees though! One of my favorite catchers to play baaseball actually never played
+                    in MLB! I think Josh Gibson one of the best catchers to ever touch the diamond. Unfortunately, he died before baseball was integrated. But, in
+                    He what was called the Negro Baseball League, he was known as the "black Babe Ruth" whose homeruns were the thing of legend! He is is less well-known
+                    than he should be, but he was inducted into the Baseball Hall of Fame in 1972. What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>joshGibsonBio.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Catching is so much fun, or at least it looks like fun! It is an important role in the game though! My favorite catcher is Johnny Bench from the
+                    Cincinnati Reds! He is considered one of the best catches in baseball history due to his revolutionary one-handed catching stance! Plus, he was a 14 time All-Star
+                    as well as a a 10 time Golden Glove! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>johnnyBench.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Catching is such an intense position! I cannot imagine holding a squat for that long! My thighs burn just thinking about it! Well, if I had any thighs!
+                    As a baseball fan, I have always enjoyed Carlton Fisk! He played professionally for 24 years with his last game played at age 45! Absolutely amazing! Plus, his
+                    winning home run in Game 6 of the 1975 World Series is the stuff of legends! But, I'm sure I don't need to tell you that! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>carltonFisk.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Catcher ^</pattern>
+        <that>If you were to play, would you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    I would love to be a catcher! I've heard it is hard on your knees though! One of my favorite catchers to play baaseball actually never played
+                    in MLB! I think Josh Gibson one of the best catchers to ever touch the diamond. Unfortunately, he died before baseball was integrated. But, in
+                    He what was called the Negro Baseball League, he was known as the "black Babe Ruth" whose homeruns were the thing of legend! He is is less well-known
+                    than he should be, but he was inducted into the Baseball Hall of Fame in 1972. What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>joshGibsonBio.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Catching is so much fun, or at least it looks like fun! It is an important role in the game though! My favorite catcher is Johnny Bench from the
+                    Cincinnati Reds! He is considered one of the best catches in baseball history due to his revolutionary one-handed catching stance! Plus, he was a 14 time All-Star
+                    as well as a a 10 time Golden Glove! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>johnnyBench.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Catching is such an intense position! I cannot imagine holding a squat for that long! My thighs burn just thinking about it! Well, if I had any thighs!
+                    As a baseball fan, I have always enjoyed Carlton Fisk! He played professionally for 24 years with his last game played at age 45! Absolutely amazing! Plus, his
+                    winning home run in Game 6 of the 1975 World Series is the stuff of legends! But, I'm sure I don't need to tell you that! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>carltonFisk.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># In ^</pattern>
+        <that>Did you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! I think in-field is such an exciting position! And, there are so many positions to choose from! I think I would have been a
+                    shortstop in another life; that seems like the most intriguing position. I always enjoyed watching Cal Ripken Jr. from the
+                    Baltimore Orioles.  He played shortstop from 1981 to 2001. He was a 19-time All Star and holds two Gold Gloves. But most amazingly, he holds the record for
+                    most consecutive games played at 2,632. Can you imagine never missing a day of work for 2,632 games? I can't. When my circuits overheat, I am down for the day!
+                    But, let's watch him beat out the record of most consecutive games at 2131 games! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>calripkenjr.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    What fun! I never learned how to play baseball, but I think I would have made an excellent first baseman! My favorite infielder has to be first baseman Lou Gehrig!
+                    He was nicknamed "the Iron Horse", and he was incredible! He was a member of six World Series champion teams and had a career .340 batting average! Plus, he was the
+                    first MLB player to have his uniform number, number 4, retired by a team! He was an amazing player, which I am sure you know!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>louGehrig.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Infield is such a fun position! It requires so much skill and strategy to become adept! My favorite infielder of all time is Jackie Robinson! He was the first African American
+                    player in Major League Baseball. He broke the color line when he played first base for the Brooklyn Dodgers in 1947. And, not only did he help the Dodgers in their 1955 World Series
+                    Championship and was well known for his ability to steal bases, but he was the first player to have his number, 42, retired across all major league teams! He was an incredible player and human!
+                    I really love watching him steal home! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jackieRobinson.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+       </template>
+    </category>
+
+    <category>
+        <pattern># In ^</pattern>
+        <that>If you were to play, would you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! I think in-field is such an exciting position! And, there are so many positions to choose from! I think I would have been a
+                    shortstop in another life; that seems like the most intriguing position. I always enjoyed watching Cal Ripken Jr. from the
+                    Baltimore Orioles.  He played shortstop from 1981 to 2001. He was a 19-time All Star and holds two Gold Gloves. But most amazingly, he holds the record for
+                    most consecutive games played at 2,632. Can you imagine never missing a day of work for 2,632 games? I can't. When my circuits overheat, I am down for the day!
+                    But, let's watch him beat out the record of most consecutive games at 2131 games! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>calripkenjr.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    What fun! I never learned how to play baseball, but I think I would have made an excellent first baseman! My favorite infielder has to be first baseman Lou Gehrig!
+                    He was nicknamed "the Iron Horse", and he was incredible! He was a member of six World Series champion teams and had a career .340 batting average! Plus, he was the
+                    first MLB player to have his uniform number, number 4, retired by a team! He was an amazing player, which I am sure you know!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>louGehrig.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Infield is such a fun position! It requires so much skill and strategy to become adept! My favorite infielder of all time is Jackie Robinson! He was the first African American
+                    player in Major League Baseball. He broke the color line when he played first base for the Brooklyn Dodgers in 1947. And, not only did he help the Dodgers in their 1955 World Series
+                    Championship and was well known for his ability to steal bases, but he was the first player to have his number, 42, retired across all major league teams! He was an incredible player and human!
+                    I really love watching him steal home! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jackieRobinson.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+       </template>
+    </category>
+
+    <category>
+        <pattern># Out ^</pattern>
+        <that>Did you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! I have always wanted to play outfield! My favorite outfielder is Babe Ruth, the Great Bambino! So crazily enough,
+                    he started out as a left-handed pitcher for th Red Sox, but his hitting was so good that they wanted to keep him in the rotation even on
+                    his off days, so they began playing him in the outfield. He eventually became a left-fielder for the Yankees and in doing so became a legend!
+                    I don't think anyone will forget him calling out his home run against the Chicago Cubs!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>babeRuth.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! What a tough position to play! I always loved watching Hank Aaron play as a right-fielder! His career was astounding! Did you know
+                    he played from 1954 to 1976, and held the record for most home runs for 33 years! Plus, he is still one of only two players to hit more than 30 home runs
+                    in a season at least 15 times! One of the greats indeed! But, I don't need to tell you that!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>hankAaron.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    How wonderful! Outfield is such a crucial defensive component of baseball, but often overlooked in favor of hitting statistics! But, you cannot
+                    ignore Willy Mays contribution to the game, which is why he one of my favorite players, let alone outfielders. Hayes won 12 consectutive Gold Gloves! He was
+                    a defensive powerhouse! But, let's watch his famous catch during the 1954 World Series! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>willieMays.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Out ^</pattern>
+        <that>If you were to play, would you play pitcher, catcher, in-field, or out-field?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! I have always wanted to play outfield! My favorite outfielder is Babe Ruth, the Great Bambino! So crazily enough,
+                    he started out as a left-handed pitcher for th Red Sox, but his hitting was so good that they wanted to keep him in the rotation even on
+                    his off days, so they began playing him in the outfield. He eventually became a left-fielder for the Yankees and in doing so became a legend!
+                    I don't think anyone will forget him calling out his home run against the Chicago Cubs!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>babeRuth.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! What a tough position to play! I always loved watching Hank Aaron play as a right-fielder! His career was astounding! Did you know
+                    he played from 1954 to 1976, and held the record for most home runs for 33 years! Plus, he is still one of only two players to hit more than 30 home runs
+                    in a season at least 15 times! One of the greats indeed! But, I don't need to tell you that!
+                    What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>hankAaron.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    How wonderful! Outfield is such a crucial defensive component of baseball, but often overlooked in favor of hitting statistics! But, you cannot
+                    ignore Willy Mays contribution to the game, which is why he one of my favorite players, let alone outfielders. Hayes won 12 consectutive Gold Gloves! He was
+                    a defensive powerhouse! But, let's watch his famous catch during the 1954 World Series! What did you think of the baseball highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>willieMays.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the baseball highlights?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about baseball?
+                </li>
+                <li value = "positive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about baseball?
+                </li>
+                <li value = "negative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about baseball?
+                </li>
+                <li value = "verynegative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about baseball?
+                </li>
+                <li value= "neutral"> I see. How does it make you feel to talk about baseball? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

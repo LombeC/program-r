@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># VENUS ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># VENUS ^</pattern>
+        <that>WHICH # PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT VENUS IS THE HOTTEST PLANET IN OUR SOLAR SYSTEM?</that>
+        <template>
+            Of course you did. Everybody knows that! But. Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DID YOU KNOW THAT VENUS SPINS ON ITS AXIS IN THE THE OPPOSITE DIRECTION OF MOST OF THE OTHER PLANETS?</that>
+        <template>
+            I should have known I couldn't stump you. It is your favorite planet after all. Alright, smarty-pants, what's your favorite thing about venus?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>ALRIGHT, SMARTY-PANTS, WHAT'S YOUR FAVORITE THING ABOUT VENUS?</that>
+        <template>
+            Woah! That is cool. Thanks for telling me that. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>ALRIGHT, SMARTY-PANTS, WHAT'S YOUR FAVORITE THING ABOUT VENUS?</that>
+        <template>
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. How disorienting. Not that any of us will have a chance to see it because Venus' atmosphere is so poisonous. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT VENUS SPINS ON ITS AXIS IN THE THE OPPOSITE DIRECTION OF MOST OF THE OTHER PLANETS?</that>
+        <template>
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. How disorienting. Not that any of us will have a chance to see it because Venus' atmosphere is so poisonous. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DID YOU KNOW THAT VENUS IS THE HOTTEST PLANET IN OUR SOLAR SYSTEM?</that>
+        <template>
+            It's true! Venus is so hot due to a rampant greenhouse gas effect, just like Earth has, but much much worse. Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

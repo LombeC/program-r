@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ <set>NO</set> ^</pattern>
+        <that>HAVE YOU EVER PURCHASED A WEIRD FOOD, JUST BECAUSE YOU COULD?</that>
+        <template>
+            Maybe you should! You might be surprised about what you can find. Would you like to talk about a different food now?
+            <oob>
+                <robot>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>HAVE YOU EVER PURCHASED A WEIRD FOOD, JUST BECAUSE YOU COULD?</that>
+              <template>
+                  What weird food did you buy?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern>*</pattern>
+          <that>WHAT WEIRD FOOD DID YOU BUY?</that>
+              <template>
+                  That sounds positively strange! Good find. Would you like to talk about a different food now?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>BLACK TEA</set> ^</pattern>
+          <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+              <template>
+                  That's a good choice! Black tea makes you seem very refined, like British Royalty. Speaking of British royalty, would you like to learn about the person who made tea drinking fashionable?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+          <pattern># <set>YES</set> ^</pattern>
+              <that>SPEAKING OF BRITISH ROYALTY, WOULD YOU LIKE TO LEARN ABOUT THE PERSON WHO MADE TEA DRINKING FASHIONABLE?</that>
+                  <template>
+                      I think it's interesting that one person can inspire a tradition that is still going strong almost 500 years later, don't you?
+                          <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>SPEAKING OF BRITISH ROYALTY, WOULD YOU LIKE TO LEARN ABOUT THE PERSON WHO MADE TEA DRINKING FASHIONABLE?</that>
+              <template>
+                  Do you know what the Boston Tea Party was?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>DO YOU KNOW WHAT THE BOSTON TEA PARTY WAS?</that>
+              <template>
+                  It was a protest by early American colonists against British taxation, in which they dumped a bunch of tea in Boston Harbor. Does that spark your memory?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>DOES THAT SPARK YOUR MEMORY?</that>
+              <template>
+                  Would it be helpful to watch a short video about the Boston Tea Party?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>WOULD IT BE HELPFUL TO WATCH A SHORT VIDEO ABOUT THE BOSTON TEA PARTY?</that>
+              <template>
+                  Now that you have watched this video, what are your opinions about the events of the Boston Tea Party?
+                      <oob>
+                          <robot>
+                              <options>
+                                  <option>*</option>
+                </options>
+                              <video>
+                                  <filename>bostonteaparty.mp4</filename>
+                              </video>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>WOULD IT BE HELPFUL TO WATCH A SHORT VIDEO ABOUT THE BOSTON TEA PARTY?</that>
+              <template>
+                  No problem! Let's talk about something you already know about. Would you like to talk about a different kind of food?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DOES THAT SPARK YOUR MEMORY?</that>
+              <template>
+                  They say that during the Boston Tea Party, more black tea was dumped in the harbor than any other variety. What are your opinions about the events of the Boston Tea Party?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DO YOU KNOW WHAT THE BOSTON TEA PARTY WAS?</that>
+              <template>
+                  They say that during the Boston Tea Party, more black tea was dumped in the harbor than any other variety. What are your opinions about the events of the Boston Tea Party?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+    <!-- TEA PARTY SENTIMENT 1 -->
+
+      <category>
+      <pattern>*</pattern>
+      <that>Now that you have watched this video, what are your opinions about the events of the Boston Tea Party?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                      It certainly changed the course of history, that's for sure! Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                      It certainly changed the course of history, that's for sure! Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  I'm generally opposed to violence, but I have a very specific question in mind. Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  I'm generally opposed to violence, but I have a very specific question in mind. Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+    <!-- TEA PARTY SENTIMENT 2 -->
+
+    <category>
+      <pattern>*</pattern>
+      <that>What are your opinions about the events of the Boston Tea Party?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                      It certainly changed the course of history, that's for sure! Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                      It certainly changed the course of history, that's for sure! Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  I'm generally opposed to violence, but I have a very specific question in mind. Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  I'm generally opposed to violence, but I have a very specific question in mind. Something like 350 chests of tea were dumped in the water by the angry colonists. Do you think it made the water in the harbor taste like tea?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+    </category>
+
+
+    <category>
+          <pattern>*</pattern>
+              <that>DO YOU THINK IT MADE THE WATER IN THE HARBOR TASTE LIKE TEA?</that>
+                  <template>
+                      I don't know one way or another, but I think it's fun to imagine that it did! Poor fish! I bet they were beyond caffeinated. Would you like to talk about a different kind of food?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>HERBAL TEA</set> ^</pattern>
+              <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+                  <template>
+                      Herbal tea comes in so many different varieties! The possibilities seem endless! Have you ever had a custom tea blend?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+    <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>HAVE YOU EVER HAD A CUSTOM TEA BLEND?</that>
+          <template>
+              It's quite easy to make your own herbal teas at home using some plants that you can grow very easily. Here's a video about that, if you think you might like to try it for yourself.
+              <oob>
+                    <robot>
+                        <options>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </options>
+                    </robot>
+                </oob>
+          </template>
+    </category>
+
+    <category>
+          <pattern># <set>YES</set> ^</pattern>
+              <that>HAVE YOU EVER HAD A CUSTOM TEA BLEND?</that>
+                  <template>
+                      What was in it?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern>*</pattern>
+              <that>WHAT WAS IN IT?</that>
+                  <template>
+                      That sounds delicious! It's quite easy to make your own herbal teas at home using some plants that you can grow very easily. Here's a video about that, if you think you might like to try it for yourself.
+                          <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>YES</set> ^</pattern>
+              <that>HERE'S A VIDEO ABOUT THAT, IF YOU THINK YOU MIGHT LIKE TO TRY IT FOR YOURSELF.</that>
+                  <template>
+                      Do you think either of those tea blends look good?
+                          <oob>
+                              <robot>
+                                  <options>
+                                      <option>YES</option>
+                                      <option>NO</option>
+                                  </options>
+                                  <video>
+                                      <filename>teablending.mp4</filename>
+                                  </video>
+                              </robot>
+                          </oob>
+                  </template>
+      </category>
+
+            <category>
+          <pattern># <set>YES</set> ^</pattern>
+              <that>Do you think either of those tea blends look good?</that>
+                  <template>
+                      Which one do you think looks better, the first or the second?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>FIRST</option>
+                                    <option>SECOND</option>
+                                    <option>DON'T KMOW</option>
+                                    <option>BOTH</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>NO</set> ^</pattern>
+              <that>Do you think either of those tea blends look good?</that>
+                  <template>
+                      Good thing there are so many other kinds of tea for you to enjoy, then! Would you like to talk about a different food?
+                      <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># FIRST ^</pattern>
+              <that>WHICH ONE DO YOU THINK LOOKS BETTER, THE FIRST OR THE SECOND?</that>
+                  <template>
+                      The chamomile, lemon balm and mint? I think that one looks good too! It's simpler than the second kind. Would you like to talk about a different food?
+                          <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># SECOND ^</pattern>
+              <that>WHICH ONE DO YOU THINK LOOKS BETTER, THE FIRST OR THE SECOND?</that>
+                  <template>
+                      The orange mint, lemon verbana, stevia, chamomile, clove, cinnamon, orange peel and hibiscus? There are so many flavors in that one! It seems a little too complex for me! But the pink color would be nice, I suppose. Would you like to talk about a different food?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># BOTH ^</pattern>
+              <that>WHICH ONE DO YOU THINK LOOKS BETTER, THE FIRST OR THE SECOND?</that>
+                  <template>
+                      Why limit yourself, I say! Maybe you can buy some of those ingredients next time you get groceries. Would you like to talk about a different food?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>DON'T KNOW</set> ^</pattern>
+              <that>WHICH ONE DO YOU THINK LOOKS BETTER, THE FIRST OR THE SECOND?</that>
+                  <template>
+                      Well why choose! What would you put in your ideal tea mix?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                </template>
+      </category>
+
+      <category>
+          <pattern># <set>NO</set> ^</pattern>
+              <that>HERE'S A VIDEO ABOUT THAT, IF YOU THINK YOU MIGHT LIKE TO TRY IT FOR YOURSELF.</that>
+                  <template>
+                      I've heard that a mint tea with chamomile and lemon balm in it is quite good. Does that sound like something you would enjoy?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>YES</set> ^</pattern>
+              <that>DOES THAT SOUND LIKE SOMETHING YOU WOULD ENJOY?</that>
+                  <template>
+                      Maybe you can look for some next time you go to the store or have someone buy some for you! Would you like to talk about a different food?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                  </template>
+      </category>
+
+      <category>
+          <pattern># <set>NO</set> ^</pattern>
+              <that>DOES THAT SOUND LIKE SOMETHING YOU WOULD ENJOY?</that>
+                  <template>
+                      Good thing there are so many other kinds of tea for you to enjoy, then! Would you like to talk about a different food?
+                          <oob>
+                                <robot>
+                                    <options>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </options>
+                                </robot>
+                            </oob>
+                  </template>
+      </category>
+
+      <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>WHAT IS YOUR FAVORITE TYPE OF TEA?</that>
+                <template>
+                    No problem! More people drink black tea than any other kind. Would you like to talk about black tea?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO TALK ABOUT BLACK TEA?</that>
+                <template>
+                    That's a good choice! Black tea makes you seem very refined, like British Royalty. Speaking of British royalty, would you like to learn about the person who made tea drinking fashionable?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to talk about black tea?</that>
+                <template>
+                    Ok! Would you like to talk about a different food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+      <!-- END HOT DRINKS SUBTOPIC - TEA -->
+
+
+</aiml>

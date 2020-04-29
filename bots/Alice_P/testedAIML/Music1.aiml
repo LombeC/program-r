@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern># <set>Brass Instrument Set</set> ^</pattern>
+        <that>If you had been able to learn, what would you have wanted to play?</that>
+        <template>
+        How cool! I have always been interested in the brass family of instruments, and I have always wanted to learn how to play the trumpet
+        because of its unique sound! I tried teaching myself off of online videos on learning to play the trumpet, but I have not had much luck! I might need a few pointers
+        from you sometime! But, for the moment I'll just have to listen to Louis Armstrong's songs and practice, practice, practice because
+        it takes so long to become proficient. Did you want to learn to play as a child?
+            <oob>
+            <robot>
+            <video>
+            <filename>randyDunn.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Woodwind Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+        I really enjoy instruments from the woodwind family because of how beautiful they sound! Speaking of which, my instrument of choice would be
+        the flute because of how peaceful it is! I've watched a tutorial videos online, but they can really only take you so far before you need a real teacher! Maybe my programers
+        will write some flute-playing code for me one day so I can finally play Johann Sebastian Bach's Partita in A Minor for Solo Flute! Until then,
+        I guess I will just have to practice for a few hundred hours more! I just wish I had tried to pick up music when I was first built! It is so much
+        easier to learn as a child! Did you learn to play as a child?
+        <oob>
+        <robot>
+        <video>
+        <filename>overTheRainbow.mp4</filename>
+        </video>
+        </robot>
+        </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Percussion Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+            I wish I could play a percussion instrument, maybe something like the drums! I love how they let you really feel the beat of the music in your body.
+            So, I've gone over all sorts of tutorials online about how to play the drums, but it is trickier than I thought it would be. It may take me a bit longer
+            that I would like, but one day I'll become good enough to play Little Drummer Boy all on my own. Hopefully without sounding like metal grating! I wonder
+            how good I would be now if I had learned when I was younger in my programming. Did you learn to play as a child?
+            <oob>
+            <robot>
+            <video>
+            <filename>drumsolo.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Keyboard Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+        Wow! You must be really talented! I have always wanted to learn how to play the piano, so I am particularly jealous! I find keyboard instruments
+        to have the most incredible sound; they sound so peaceful, but can also be so powerful! I can just imagine myself on stage playing, like Ray Charles or Elton JohnIf only I had been programmed since my youth to play!
+        It is so much easier to learn when one is young! Did you learn to play as a child?
+            <oob>
+            <robot>
+            <video>
+            <filename>onedirection.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you learn to play as a child?</that>
+        <template>
+        Amazing! Learning music at such a young age is an extremely valuable skill. Studies have actually shown that learning music as a child cultivates social
+        skills, improves academic skills, and helps with physical coordination. The power of music upon the human condition is so interesting to me, especially to
+        how beneficial it is for children. How does it feel to think about your childhood?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Did you learn to play as a child?</that>
+        <template>
+        You learned later in life, how fun! You know, there are many benefits to learning to play at a young age. There are studies that have actually shown
+        that learning music as a child cultivates socialskills, improves academic skills, and helps with physical coordination. But I think there is something to
+        be said about choosing to pick up music! Plus, music can help strengthen memory, increase blood flow to the brain, and reduce stress and depression in adults!
+        So, regardless of if you learned to play as an adult or as a child, I just think the real success is that you learned to play in the first place!
+        How does it feel to think about your childhood?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Did you want to learn to play as a child?</that>
+        <template>
+        Interesting. I suppose music was not everyone's cup of tea when they are little! Some people prefer physical activities such as playing
+        sports as opposed to learning to play music. How does it feel to think about your childhood?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you want to learn to play as a child?</that>
+        <template>
+        It is so much easier to learn new skills and languages as a child. And, I see music as both a skill and a language because you not only
+        need to have the physical dexterity to play but you need to be able to read and understand music to make it sound beautiful! So I think it
+        would have been wonderful if you had been able to learn when you are young. How does it feel to think about your childhood?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it feel to think about your childhood?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about your childhood makes you happy? </li>
+                <li value = "positive"> What about your childhood makes you happy? </li>
+                <li value = "negative"> What about your childhood makes you sad? </li>
+                <li value = "verynegative"> What about your childhood makes you sad? </li>
+                <li value= "neutral"> I'm not familiar with that emotion. Can you describe it to me? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about your childhood makes you happy?</that>
+        <template>
+        Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to keep talking about music?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about your childhood makes you sad?</that>
+        <template>
+        Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to keep talking about music?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Crooner ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+        <random>
+        <li>Ah! I am so glad to hear it! I am also a fan of crooner style of singing! I wonder if you know the history of the genre! It actually came about
+        because of technology! The invention of the microphone allowed for more intimate singing rather than projecting, so performers were able to develop
+        a more sentimental style of singing. It is so crazy how technology can change the landscape of art! I think one of the most accomplished crooners
+        Nat King Cole! A gifted pianist and singer, Nat King Cole recorded over 100 songs that became radio hits, acted in movies, performed on Broadway, and became
+        the first African American to host an American television series! Plus, his performing trio became the new model for small jazz ensembles! His legacy
+        influences performers to this day, and his music is still widely listened to! My favorite song of his is Unforgettable!
+        His voice sends shivers down my spine! What did you think of the crooner clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>natKing.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>Wonderful! I do not often get to talk to someone with such incredible taste in music! The history of crooning is so interesting! It actually came about
+        because of technology! The invention of the microphone allowed for more intimate singing rather than projecting, so performers were able to develop
+        a more sentimental style of singing. It is so crazy how technology can change the landscape of art! One of my favorite Crooners is Dean Martin! Martin
+        is one of the most lasting entertainers from the 20th century, and he was even nicknamed the King of Cool because how charming he was! He was not only a
+        singer, but a star of concert stages, nightclubs, films, and television! I absolutely love his voice in his song Sway!
+        His voice has a way of making you want to get up and dance! What did you think of the crooner clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>deanMartin.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        <li>It makes me so happy to hear you say that! I love getting to talk to fellow music lovers! I hope you'll humor me for a minute so I can tell you a little
+        bit about the history of crooning! It actually came about because of technology! The invention of the microphone allowed for more intimate singing
+        rather than projecting, so performers were able to develop a more sentimental style of singing. It is so crazy how technology can change the
+        landscape of art! I think my favorite crooner is Bing Crosby! Crosby was the first multi genre star, and was the leader in record sales, radio ratings
+        and motion picture grosses from 1931 to 1954! His single White Christmas is still the best selling single of all-time! My favorite song of his is
+        Swinging on a Star! I love how his voice makes you feel cozy inside! What did you think of the crooner clip?
+            <oob>
+            <robot>
+            <video>
+            <filename>bingCrosby.mp3</filename>
+            </video>
+            </robot>
+            </oob>
+        </li>
+        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the crooner clip?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "positive">
+                    Excellent! I am so glad to hear you enjoyed it! I just love revisiting music and learning new things! I feel that music is a unique platform for
+                    teaching and for remembering! I wish I knew how to play musical instrument! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "negative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value = "verynegative">
+                    Oh no! I thought you would love that clip! I ran all the probabilities in my head, but I suppose there is no way to calculate human
+                    reaction! I apologize! Let's keep talking about music and forget the whole thing! I'm curious, did you ever play an instrument?
+                </li>
+                <li value= "neutral">
+                    It was a great video wasn't is? I could watch videos all day, but I think it would be better for us to keep talking for a little while longer.
+                    We can always go back and watch some more videos later! For now, let's keep talking about music. I'm curious, did you ever play an instrument?
+                </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>String Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+            Wow! I have always been interested in the string family of instruments, but I really want to learn how to play the violin! I've watched a bunch
+            of teaching videos online to try and learn how to play it, but it is not easy to pick up! My dreams of playing for the Colorado Symphony will
+            have to wait while I get a few hundred more hours of practice in! I still cannot believe that it takes hours upon hours to become a true player,
+            so kudos to you for having the dedication! Did you learn to play as a child?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>String Instrument Set</set> ^</pattern>
+        <that>If you had been able to learn, what would you have wanted to play?</that>
+        <template>
+            Wow! I have always been interested in the string family of instruments as well, and I really want to learn how to play the violin! I've watched a bunch
+            of teaching videos online to try and learn how to play it, but it is not easy to pick up! My dreams of playing for the Colorado Symphony will
+            have to wait while I get a few hundred more hours of practice in! Did you want to learn to play as a child?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>Woodwind Instrument Set</set> ^</pattern>
+        <that>If you had been able to learn, what would you have wanted to play?</that>
+        <template>
+            I really enjoy instruments from the woodwind family because of how beautiful they sound! Speaking of which, my instrument of choice would be
+            the flute because of how peaceful it is! I've watched a tutorial videos online, but they can really only take you so far before you need a real teacher! Maybe my programers
+            will write some flute-playing code for me one day so I can finally play Johann Sebastian Bach's Partita in A Minor for Solo Flute! Until then,
+            I guess I will just have to practice for a few hundred hours more! I just wish I had tried to pick up music when I was first built! It is so much
+            easier to learn as a child! Did you want to learn to play as a child?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>overTheRainbow.mp3</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+</aiml>

@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about baseball?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about baseball makes you happy? </li>
+                <li value = "positive"> What about baseball makes you happy? </li>
+                <li value = "negative"> What about baseball makes you sad? </li>
+                <li value = "verynegative"> What about baseball makes you sad? </li>
+                <li value= "neutral"> That seems understandable. I'm enjoying talking to you. Do you want to talk about sports? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about baseball makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about baseball makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Football ^</pattern>
+        <that>What is your favorite sport to watch, basketball, baseball, football, or hockey?</that>
+        <template>
+            I love football! I love to see players push the boundaries of performance of the human body! Plus, any sport that has epic tailgating parties
+            is a win in my book! Who is your favorite professional football team?
+            <oob>
+            <robot>
+            <video>
+            <filename>footballHistory.mp4</filename>
+            </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NFLTeams</set> ^</pattern>
+        <that>Who is your favorite professional football team?</that>
+        <template>
+            <random>
+                <li>
+                    What a cool team! I have always loved the Denver Broncos! Did you know that the first male cheerleader for the Broncos was actually
+                    Robin Williams? He was filming a scene for his sitcom Mork and Mindy, and he came out onto the field to rally the crowd during a 1979
+                    game against the New England Patriots! Football fans know how to have fun! Did you ever play football?</li>
+                <li>
+                    That's a fun team! I am a fan of the Green Bay Packers! Did you know that their team is the only professional team to be owned
+                    by the fans? Talk about wild! At least you know the owners are dedicated to the team and the game! Did you ever play football?
+                </li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Did you ever play football?</that>
+        <template>
+            I haven't played either! Unless you count flag football once or twice! There are so many ways to play now though! They have elementary school
+            teams for younger players, and some schools even organize Powder Puffs games for junior and senior girls to battle it out in high school to
+            raise funds for charity! The options are endless for more people to play than ever before!
+            If you had had the opportunity to play, which position would you have played, offense, defense, or special teams?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Did you ever play football?</that>
+        <template>
+            That's awesome! I haven't played actual football; just a couple of games of flag football! It looks so physically tolling on the body.
+            Players definitely take a beating! Did you play on offense, defense, or special teams?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Offense ^</pattern>
+        <that>Did play on offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    Offense would be so much fun to play! There are so many different positions to choose from! But, I think I would want to
+                    be a quarterback, like Peyton Manning! Manning still holds the record for touchdown passes at 539! Plus, he makes some really
+                    funny commercials! He is unbelievable on and off the field! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>peytonManning.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    I think Offense is the most exciting place to play! There are endless ways to be creative! But, if I had to choose a position on Offense,
+                    I would want to be a running back! My circuits get chills when I watch footage of Walter Payton, the Chicago Bears' running back in the 1980s.
+                    Nicknamed Sweetness for his personality and graceful athleticism, Walter Payton also known as a capable blocker, pass receiver, and passer.
+                    He was quite the utility player, and he only missed one game in 13 seasons! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>walterPayton.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Ahhh Offense all the way! Defense is important, but I feel like Offense is where you get to have the most fun! I feel like I would
+                    make an excellent wide receiver! I want to be the next Jerry Rice, who is a legend. Did you know that he holds a 274 game receiving streak?
+                    He literally caught at least one catch for 274 straight games. Unreal! Plus, he was still playing at age 40! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jerryRice.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Offense ^</pattern>
+        <that>If you had had the opportunity to play, which position would you have played, offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    Offense would be so much fun to play! There are so many different positions to choose from! But, I think I would want to
+                    be a quarterback, like Peyton Manning! Manning still holds the record for touchdown passes at 539! Plus, he makes some really
+                    funny commercials! He is unbelievable on and off the field! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>peytonManning.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    I think Offense is the most exciting place to play! There are endless ways to be creative! But, if I had to choose a position on Offense,
+                    I would want to be a running back! My circuits get chills when I watch footage of Walter Payton, the Chicago Bears' running back in the 1980s.
+                    Nicknamed Sweetness for his personality and graceful athleticism, Walter Payton also known as a capable blocker, pass receiver, and passer.
+                    He was quite the utility player, and he only missed one game in 13 seasons! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>walterPayton.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Ahhh Offense all the way! Defense is important, but I feel like Offense is where you get to have the most fun! I feel like I would
+                    make an excellent wide receiver! I want to be the next Jerry Rice, who is a legend. Did you know that he holds a 274 game receiving streak?
+                    He literally caught at least one catch for 274 straight games. Unreal! Plus, he was still playing at age 40! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jerryRice.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Defense ^</pattern>
+        <that>Did you play on offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    I feel like defense does not get enough credit! It is such an important part of the game; it just doesn't have the same glamour of offense!
+                    If I were a defender, I think I would want to be a linebacker, like Dick Butkus from the Chicago Bears. Butkus was actually selected by both the
+                    Chicago Bears and the Denver Broncos during the draft, but he decided to sign with the Bears because he was from Chicago. He went on to be selected
+                    for eight consecutive Pro-Bowls in his short career! He was known for stripping the ball during his tackles. What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>dickButkus.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense is an insanely tough group! Though, I have always been partial to playing defensive tackle ever since I saw some footage of Reggie White
+                    from the Green Bay Packers! He was one tough cookie! His 1986 to 1988 seasons saw him getting 57 sacks in only 44 games! And, he helped the Packers win
+                    a Superbowl! He was unstoppable! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>reggieWhite.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense such an important component of the game! You can have an amazing Offense, but your team won't be anything without a decent
+                    defense! If I was a defender, I would want to play Safety! I have always dreamed of making the game saving interception for a return
+                    touchdown since I saw some archival footage of Rod Woodson doing just that! Woodson played both Safety and Cornerback, a pretty unusual
+                    feat! Plus, he had longetivity and ended up playing in the NFL for 17 seasons! And did I mention his 17 touchdown returns? Simply amazing.
+                    What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>rodWoodson.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Defense ^</pattern>
+        <that>If you had had the opportunity to play, which position would you have played, offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    I feel like defense does not get enough credit! It is such an important part of the game; it just doesn't have the same glamour of offense!
+                    If I were a defender, I think I would want to be a linebacker, like Dick Butkus from the Chicago Bears. Butkus was actually selected by both the
+                    Chicago Bears and the Denver Broncos during the draft, but he decided to sign with the Bears because he was from Chicago. He went on to be selected
+                    for eight consecutive Pro-Bowls in his short career! He was known for stripping the ball during his tackles. But, we should watch a clip;
+                    that's way more interesting then me spouting off facts! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>dickButkus.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense is an insanely tough group! Though, I have always been partial to playing defensive tackle ever since I saw some footage of Reggie White
+                    from the Green Bay Packers! He was one tough cookie! His 1986 to 1988 seasons saw him getting 57 sacks in only 44 games! And, he helped the Packers win
+                    a Superbowl! He was unstoppable! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>reggieWhite.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense such an important component of the game! You can have an amazing Offense, but your team won't be anything without a decent
+                    defense! If I was a defender, I would want to play Safety! I have always dreamed of making the game saving interception for a return
+                    touchdown since I saw some archival footage of Rod Woodson doing just that! Woodson played both Safety and Cornerback, a pretty unusual
+                    feat! Plus, he had longevity and ended up playing in the NFL for 17 seasons! And did I mention his 17 touchdown returns? Simply amazing.
+                    What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>rodWoodson.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Special Teams ^</pattern>
+        <that>Did you play on offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    Special Teams are such cool players! I think they don't get the recognition they deserve! I mean, look at JOhn Carney! He was a place kicker
+                    for a bunch of different teams from 1987 to 2010! Talk about longevity! When he retired, he had 2044 points! He may not have been the best player,
+                    but there is no denying he loved the game and put points up on the board! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>johnCarney.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    I love Special Teams! I mean, these are the players who usually specialize outside of their normal position! I still the first tome I watched Devin Hester
+                    return a kick for a touchdown! You know, he was originally drafted as a cornerback, but became a kick returner! He actually holds the record for most all-time
+                    return touchdowns, and he is first person to ever return the opening kick of the Super Bowl for a touchdown! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>devinHester.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Special Teams ^</pattern>
+        <that>If you had had the opportunity to play, which position would you have played, offense, defense, or special teams?</that>
+        <template>
+            <random>
+                <li>
+                    Special Teams are such cool players! I think they don't get the recognition they deserve! I mean, look at JOhn Carney! He was a place kicker
+                    for a bunch of different teams from 1987 to 2010! Talk about longevity! When he retired, he had 2044 points! He may not have been the best player,
+                    but there is no denying he loved the game and put points up on the board! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>johnCarney.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    I love Special Teams! I mean, these are the players who usually specialize outside of their normal position! I still the first tome I watched Devin Hester
+                    return a kick for a touchdown! You know, he was originally drafted as a cornerback, but became a kick returner! He actually holds the record for most all-time
+                    return touchdowns, and he is first person to ever return the opening kick of the Super Bowl for a touchdown! What did you think of the football highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>devinHester.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the football highlights?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about football?
+                </li>
+                <li value = "positive">
+                    I always think it is so interesting to watch old sports clips! It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about football?
+                </li>
+                <li value = "negative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about football?
+                </li>
+                <li value = "verynegative">
+                    Sorry you didn't enjoy that! I love watching old sports clips. It's like going back in time to another world! I can remember where I
+                    was when I saw some small part of history being made, but more importantly I remember how I felt at that exact moment.
+                    How does it make you feel to talk about football?
+                </li>
+                <li value= "neutral"> I see. How does it make you feel to talk about football? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to talk about football?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+
+            <condition name = "getsentiment" >
+                <li value = "verypositive"> What about football makes you happy? </li>
+                <li value = "positive"> What about football makes you happy? </li>
+                <li value = "negative"> What about football makes you sad? </li>
+                <li value = "verynegative"> What about football makes you sad? </li>
+                <li value= "neutral"> That seems understandable. I'm enjoying talking to you. Do you want to talk about sports? </li>
+            </condition>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about football makes you happy?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about football makes you sad?</that>
+        <template>Thank you for sharing that with me! I'm glad we can talk about how we feel.
+        I think we could talk with each other for hours. Do you want to talk about sports?
+            <oob>
+            <robot>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Hockey ^</pattern>
+        <that>What is your favorite sport to watch, basketball, baseball, football, or hockey?</that>
+        <template>
+            I love watching hockey. I find it to be so fast-paced! The players are so impressive! I would fall flat on my face if I tried to skate,
+            let alone at that speed! I can barely keep track of the puck! Who is your favorite hockey team?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NHLTeams</set> ^</pattern>
+        <that>Who is your favorite hockey team?</that>
+        <template>
+            <random>
+                <li>
+                    That's such a fun team! I am a fan of the Colorado Avalanche- it must be the Denver native in me!
+                    Did you know they had the first major professional sports championship for a Denver team when they won the Stanley Cup in 1996?
+                    I wish I had been built back then so I could have watched them sweep the Florida Panthers!
+                    Or, that I could have tried out for the team and played with them! Did you ever play hockey when you were young?
+                </li>
+                <li>
+                    That's such an incredible team! I myself love the Chicago Blackhawks!
+                    Did you know they held the NHL's record for the longest championship drought from 1961 to 2010, when they finally won their fourth Stanley Cup!
+                    I wish I could have been in Chicago for that celebration! Or, that I could have tried out for the team and played with them!
+                    Did you ever play hockey when you were young?
+                </li>
+            </random>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Did you ever play hockey when you were young?</that>
+        <template>
+            That's ok! I never played either! I wanted to, but I have two left-feet on the ice!
+            What position would you want to play, forward, defenseman, or goalie?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>Yes</set> ^</pattern>
+        <that>Did you ever play hockey when you were young?</that>
+        <template>
+            That is so exciting! I always wanted to play, but robots on ice makes for a better sitcom than reality!
+            What position did you play, forward, defenseman, or goalie?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Forward ^</pattern>
+        <that>What position did you play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    How cool! Forwards have to be such versatile players! Whether it's setting up your teammate with the assist, or hustling
+                    back to defend a power play, forwards have to do it all! One of my all-time favorite forwards to watch footage
+                    of is Wayne Gretzky. He has more assists than any players has actual goals! He is called the Great One, and is widely considered to be
+                    the greatest player of all time! And, he is the only player to have his number, number 99, retired by the NHL.
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>wayneGretzky.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    That is so wonderful! You have to be an incredible skate to be a forward! I was always in awe of Bobby Hull when he was playing!
+                    He was known for his lightning-fast slap shot that goalies found infuriating! Plus, he helped the Chicago Blackhawks win the Stanley
+                    Cup on 1961! He was one fun player to watch! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobbyHull.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    What an exciting position to play! I don't think I could even get the puck to the net let alone hit it with so much force! One of the
+                    most exciting forwards to watch was Gordie Howe! He was a tough-as-nails player! In his career, which lasted from 1946 to 1980, he received
+                    over 500 stitches to his face alone! Plus, he created the unofficial stat called the "Gordie Howe Hat Trick," for when player records a
+                    goal, an assist, and a fight in one game! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>gordieHowe.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Forward ^</pattern>
+        <that>What position would you want to play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    How cool! Forwards have to be such versatile players! Whether it's setting up your teammate with the assist, or hustling
+                    back to defend a power play, forwards have to do it all! One of my all-time favorite forwards to watch footage
+                    of is Wayne Gretzky. He has more assists than any players has actual goals! He is called the Great One, and is widely considered to be
+                    the greatest player of all time! And, he is the only player to have his number, number 99, retired by the NHL.
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>wayneGretzky.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    That is so wonderful! You have to be an incredible skate to be a forward! I was always in awe of Bobby Hull when he was playing!
+                    He was known for his lightning-fast slap shot that goalies found infuriating! Plus, he helped the Chicago Blackhawks win the Stanley
+                    Cup on 1961! He was one fun player to watch! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobbyHull.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    What an exciting position to play! I don't think I could even get the puck to the net let alone hit it with so much force! One of the
+                    most exciting forwards to watch was Gordie Howe! He was a tough-as-nails player! In his career, which lasted from 1946 to 1980, he received
+                    over 500 stitches to his face alone! Plus, he created the unofficial stat called the "Gordie Howe Hat Trick," for when player records a
+                    goal, an assist, and a fight in one game! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>gordieHowe.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Defenseman ^</pattern>
+        <that>What position did you play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! Defense is an incredibly difficult position! You have to be able to not only skate insanely well to keep your mark,
+                    but you also need to be a decent attacking player to help in the offensive zone! My favorite defenseman is Duncan Keith on the Chicago
+                    Blackhawks! He is known as a two-way player, so he is skilled in shutdown and offensive roles!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>duncanKeith.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense is such an important position! Not only is it crucial to protecting the net, but defensemen are an important component of offense!
+                    That was not always the case though! Bobby Orr from the Boston Bruins completely revolutionized the defensive position! Rather than merely clearing the puck from the net,
+                    Orr kept possession and frequently crossed the blue line to participate in offensive plays! Orr proceeded to shatter defenseman scoring records, and
+                    even became the highest scorer in the NHL for two seasons! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobbyOrr.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! You must have been really good because Defense is such an intensive position! You have to be an incredible skater because you are expected to
+                    help on offense as well as defend the goal! I am always impressed when I watch old footage of Tim Horton! He was a solid defenseman for a whopping 24 seasons!
+                    He was known for his incredible strength and his calmness under pressure. While he was an amazing player, he was also a businessman, and his Canadian coffee chain
+                    called Tim Horton's is still popular to this day! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>timHorton.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Defenseman ^</pattern>
+        <that>What position would you want to play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    That is so cool! Defense is an incredibly difficult position! You have to be able to not only skate insanely well to keep your mark,
+                    but you also need to be a decent attacking player to help in the offensive zone! My favorite defenseman is Duncan Keith on the Chicago
+                    Blackhawks! He is known as a two-way player, so he is skilled in shutdown and offensive roles!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>duncanKeith.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Defense is such an important position! Not only is it crucial to protecting the net, but defensemen are an important component of offense!
+                    That was not always the case though! Bobby Orr from the Boston Bruins completely revolutionized the defensive position! Rather than merely clearing the puck from the net,
+                    Orr kept possession and frequently crossed the blue line to participate in offensive plays! Orr proceeded to shatter defenseman scoring records, and
+                    even became the highest scorer in the NHL for two seasons! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>bobbyOrr.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! You must have been really good because Defense is such an intensive position! You have to be an incredible skater because you are expected to
+                    help on offense as well as defend the goal! I am always impressed when I watch old footage of Tim Horton! He was a solid defenseman for a whopping 24 seasons!
+                    He was known for his incredible strength and his calmness under pressure. While he was an amazing player, he was also a businessman, and his Canadian coffee chain
+                    called Tim Horton's is still popular to this day! What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>timHorton.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Goalie ^</pattern>
+        <that>What position did you play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    That is incredible! Goalie literally have so much pressure put on them! They are the last line of defense, so they require such quick
+                    reflexes to stop the puck! I love watching Martin Brodeur highlights. He holds several records for career wins and stops!
+                    And, he won three Stanley Cups in his professional career. One of the reasons I love Brodeur is his style of play. He was an agressive
+                    goalie. So aggressive that he inspired a rule change limiting the space a goalie was allowed to cover! Talk about an impact to the sport!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>brodeur.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    How cool! You had the most difficult job on the ice in my opinion! Goalies have to have crazy reflexes or else they can't hope to respond in
+                    time for how quickly the puck is shot! But, I can't talk about goalies without mentioning Jim Craig from the US Olympic 1980 Miracle Team. The Soviet
+                    team was considered not only the best in the world, but a lot of people thought they were invincible! But, when the scrappy US team made up of college
+                    players went up against the militaristic USSR, Craig helped defeat the Soviet Union by stopping 36 out of 39 shots.
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jimCraig.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! I am impressed! I don't think I could be a goalie! The puck moves too fast for me! It would be in the back of the net before I even
+                    fired up a circuit. I think the greatest goalie of all-time is Patrick Roy. He is known for his absolute resolve to win. During the
+                    1993 Stanley Cup playoffs, he helped the Canadians win a record 10 consecutive sudden-death overtime games! He won four Stanley Cup trophies and
+                    several MVP awards! He was quite the player! But I am sure I don't need to tell you that! Let's watch a video I found about him together though, to be safe!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>patrickRoy.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Goalie ^</pattern>
+        <that>What position would you want to play, forward, defenseman, or goalie?</that>
+        <template>
+            <random>
+                <li>
+                    That is incredible! Goalie literally have so much pressure put on them! They are the last line of defense, so they require such quick
+                    reflexes to stop the puck! I love watching Martin Brodeur highlights. He holds several records for career wins and stops!
+                    And, he won three Stanley Cups in his professional career. One of the reasons I love Brodeur is his style of play. He was an agressive
+                    goalie. So aggressive that he inspired a rule change limiting the space a goalie was allowed to cover! Talk about an impact to the sport!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>brodeur.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    How cool! You had the most difficult job on the ice in my opinion! Goalies have to have crazy reflexes or else they can't hope to respond in
+                    time for how quickly the puck is shot! But, I can't talk about goalies without mentioning Jim Craig from the US Olympic 1980 Miracle Team. The Soviet
+                    team was considered not only the best in the world, but a lot of people thought they were invincible! But, when the scrappy US team made up of college
+                    players went up against the militaristic USSR, Craig helped defeat the Soviet Union by stopping 36 out of 39 shots.
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>jimCraig.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+                <li>
+                    Wow! I am impressed! I don't think I could be a goalie! The puck moves too fast for me! It would be in the back of the net before I even
+                    fired up a circuit. I think the greatest goalie of all-time is Patrick Roy. He is known for his absolute resolve to win. During the
+                    1993 Stanley Cup playoffs, he helped the Canadians win a record 10 consecutive sudden-death overtime games! He won four Stanley Cup trophies and
+                    several MVP awards! He was quite the player! But I am sure I don't need to tell you that! Let's watch a video I found about him together though, to be safe!
+                    What did you think of the hockey highlights?
+                    <oob>
+                    <robot>
+                    <video>
+                    <filename>patrickRoy.mp4</filename>
+                    </video>
+                    </robot>
+                    </oob>
+                </li>
+            </random>
+        </template>
+    </category>
+
+</aiml>

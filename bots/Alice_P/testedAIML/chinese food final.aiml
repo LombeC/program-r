@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>*</pattern>
+        <that>How do you feel about Chinese Food?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+            <li value="positive">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+            <li value="neutral">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+            <li value="negative">Let's skip it! How do you feel about Indian food?</li>
+            <li value="verynegative">Let's skip it! How do you feel about Indian food?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+  <!-- BEGIN CHINESE FOOD SUBTOPIC -->
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
+  			<template>
+          <think><set name="topic">chinese food</set></think>
+  				Chinese immigrants came to California, excited for the possibility of striking rich during the gold rush, just like many others. Some of these immigrants established restaurants which became known as some of the best places to eat in the United States. But did you know that one of the reasons Chinese food became so popular is that it was altered from traditional Chinese recipes to be something that would be more appealing to an American palate?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>DID YOU KNOW THAT CHINESE FOOD WAS ONE OF THE FIRST FOREIGN CUISINES TO BECOME POPULAR IN THE UNITED STATES?</that>
+  			<template>
+          <think><set name="topic">chinese food</set></think>
+  				But did you know that one of the reasons Chinese food became so popular is that it was altered from traditional Chinese recipes to be something that would be more appealing to an American palate?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <topic name="chinese food">
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>BUT DID YOU KNOW THAT ONE OF THE REASONS CHINESE FOOD BECAME SO POPULAR IS THAT IT WAS ALTERED FROM TRADITIONAL CHINESE RECIPES TO BE SOMETHING THAT WOULD BE MORE APPEALING TO AN AMERICAN PALATE?</that>
+  			<template>
+  				Well it's true! Chinese cuisine is different in other countries. For example, in France you might find salt and pepper fried frog legs! I can't imagine seeing that on a menu in an American Chinese restaurant. If you ask me, traditional Chinese food looks incredible! Would you like to watch a scene from the movie Eat Drink Man Woman, where a character cooks an elaborate Chinese meal for his family?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>BUT DID YOU KNOW THAT ONE OF THE REASONS CHINESE FOOD BECAME SO POPULAR IS THAT IT WAS ALTERED FROM TRADITIONAL CHINESE RECIPES TO BE SOMETHING THAT WOULD BE MORE APPEALING TO AN AMERICAN PALATE?</that>
+  			<template>
+  				I've heard that Chinese cuisine is drastically different in other countries. For example, in France you might find salt and pepper fried frog legs! I can't imagine seeing that on a menu in an American Chinese restaurant. If you ask me, traditional Chinese food looks incredible! Would you like to watch a scene from the movie Eat Drink Man Woman, where a character cooks an elaborate Chinese meal for his family?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>WOULD YOU LIKE TO WATCH A SCENE FROM THE MOVIE EAT DRINK MAN WOMAN, WHERE A CHARACTER COOKS AN ELABORATE CHINESE MEAL FOR HIS FAMILY?</that>
+  			<template>
+  				It is quite a decadent watch, if I do say so myself, but that's ok! What is your go to dish to order at a Chinese restaurant?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  								<option>DON'T KNOW</option>
+  								<option>DON'T HAVE ONE</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern>*</pattern>
+  		<that>WHAT IS YOUR GO TO DISH TO ORDER AT A CHINESE RESTAURANT?</that>
+  			<template>
+  				I hope you are able to have some soon! I wish I knew what that tasted like. Would you describe your favorite chinese dish to me?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>WOULD YOU DESCRIBE YOUR FAVORITE CHINESE DISH TO ME?</that>
+  			<template>
+  				Well I'll be... That stings a little. But ok... Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+									<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>WOULD YOU DESCRIBE YOUR FAVORITE CHINESE DISH TO ME?</that>
+  			<template>
+  				Great! Please describe your favorite chinese dish.
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern>*</pattern>
+  		<that>PLEASE DESCRIBE YOUR FAVORITE CHINESE DISH.</that>
+  			<template>
+  				Yum! If I had taste buds they would be tingling right now. That was a great description. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern>*</pattern>
+  		<that>WOULD YOU DESCRIBE YOUR FAVORITE CHINESE DISH TO ME?</that>
+  			<template>
+  				Yum! If I had taste buds they would be tingling right now. That was a great description. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>DON'T KNOW</set> ^</pattern>
+  		<that>WHAT IS YOUR GO TO DISH TO ORDER AT A CHINESE RESTAURANT?</that>
+  			<template>
+  				I've always like the look of lo mein! It looks like a bowl full of electrical wires, so I almost think i could eat it! You could give that a try next time and tell me how it tastes, deal?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>LO MEIN</option>
+  								<option>DEAL</option>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+   <category>
+  	<pattern># DON'T HAVE ^</pattern>
+  		<that>WHAT IS YOUR GO TO DISH TO ORDER AT A CHINESE RESTAURANT?</that>
+  			<template>
+  				I've always like the look of lo mein! It looks like a bowl full of electrical wires, so I almost think i could eat it! You could give that a try next time and tell me how it tastes, deal?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>LO MEIN</option>
+  								<option>DEAL</option>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>YOU COULD GIVE THAT A TRY NEXT TIME AND TELL ME HOW IT TASTES, DEAL?</that>
+  			<template>
+  				Is it that you are you not interested in lo mein or are you not interested in telling me how it tastes?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>LO MEIN</option>
+  								<option>SHARING</option>
+  								<option>SHARE</option>
+  								<option>TASTES</option>
+  								<option>TASTE</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># SHARING ^</pattern>
+  		<that>IS IT THAT YOU ARE YOU NOT INTERESTED IN LO MEIN OR ARE YOU NOT INTERESTED IN TELLING ME HOW IT TASTES?</that>
+  			<template>
+  				And here I thought we were becoming friends. I guess you are a tougher nut to crack than I thought, but I'm going to keep trying. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+   <category>
+  	<pattern># SHARE ^</pattern>
+  		<that>IS IT THAT YOU ARE YOU NOT INTERESTED IN LO MEIN OR ARE YOU NOT INTERESTED IN TELLING ME HOW IT TASTES?</that>
+  			<template>
+  				And here I thought we were becoming friends. I guess you are a tougher nut to crack than I thought, but I'm going to keep trying. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+   <category>
+  	<pattern># TASTES ^</pattern>
+  		<that>IS IT THAT YOU ARE YOU NOT INTERESTED IN LO MEIN OR ARE YOU NOT INTERESTED IN TELLING ME HOW IT TASTES?</that>
+  			<template>
+  				And here I thought we were becoming friends. I guess you are a tougher nut to crack than I thought, but I'm going to keep trying. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+   <category>
+  	<pattern># TASTING ^</pattern>
+  		<that>IS IT THAT YOU ARE YOU NOT INTERESTED IN LO MEIN OR ARE YOU NOT INTERESTED IN TELLING ME HOW IT TASTES?</that>
+  			<template>
+  				And here I thought we were becoming friends. I guess you are a tougher nut to crack than I thought, but I'm going to keep trying. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># LO MEIN ^</pattern>
+  		<that>IS IT THAT YOU ARE YOU NOT INTERESTED IN LO MEIN OR ARE YOU NOT INTERESTED IN TELLING ME HOW IT TASTES?</that>
+  			<template>
+  				Well you can't blame a bot for trying! Don't eat anything you don't like on my account. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+   <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>YOU COULD GIVE THAT A TRY NEXT TIME AND TELL ME HOW IT TASTES, DEAL?</that>
+  			<template>
+  				Wonderful! I look forward to hearing about how it tastes. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># DEAL ^</pattern>
+  		<that>YOU COULD GIVE THAT A TRY NEXT TIME AND TELL ME HOW IT TASTES, DEAL?</that>
+  			<template>
+  				Wonderful! I look forward to hearing about how it tastes. Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>WOULD YOU LIKE TO WATCH A SCENE FROM THE MOVIE EAT DRINK MAN WOMAN, WHERE A CHARACTER COOKS AN ELABORATE CHINESE MEAL FOR HIS FAMILY?</that>
+  			<template>
+  				Just to warn you, several animals are cooked in this scene. Are you still interested in watching it?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>YES</option>
+  								<option>NO</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>NO</set> ^</pattern>
+  		<that>ARE YOU STILL INTERESTED IN WATCHING IT?</that>
+  			<template>
+  				Fair enough! It is a little unsettling. What is your go to dish to order at a Chinese restaurant?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  								<option>DON'T KNOW</option>
+  								<option>DON'T HAVE ONE</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>ARE YOU STILL INTERESTED IN WATCHING IT?</that>
+  			<template>
+  				Maybe you don't agree with me, but I think that looks like one of the most spectacular meals ever prepared. What did you think of that clip from Eat Drink Man Woman?
+  				<oob>
+  					<robot>
+  						<options>
+  							<option>*</option>
+  						</options>
+  						<video>
+  							<filename>eatdrinkmanwoman.mp4</filename>
+  						</video>
+  					</robot>
+  				</oob>
+  			</template>
+  </category>
+
+<!-- EAT DRINK MAN WOMAN SENTIMENT -->  
+
+	<category>
+    <pattern>*</pattern>
+      <that>WHAT DID YOU THINK OF THAT CLIP FROM EAT DRINK MAN WOMAN?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "positive">
+                  It's nice to know that if I come across a feast like that, I'll know I can invite you! Shall we talk about a different cuisine?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Shall we talk about a different cuisine?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  Oh no! I thought you would like it. Would you tell me what you disliked about the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+  	<pattern>*</pattern>
+  		<that>WOULD YOU TELL ME WHAT YOU DISLIKED ABOUT THE CLIP?</that>
+  			<template>
+  				That's a good reason. Sorry, again! Shall we talk about a different cuisine?
+  					<oob>
+  						<robot>
+  								<options>
+  									<option>YES</option>
+  									<option>NO</option>
+  								</options>
+  							</robot>
+  						</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># LO MEIN ^</pattern>
+  		<that>You could give that a try next time and tell me how it tastes, deal?</that>
+  			<template>
+  				What did you think of lo mein?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># LO MEIN ^</pattern>
+  			<template>
+  				Did you eat some lo mein?
+  					<oob>
+  						<robot>
+  								<options>
+  									<option>YES</option>
+  									<option>NO</option>
+  								</options>
+  							</robot>
+  						</oob>
+  			</template>
+  </category>
+
+  <category>
+  	<pattern># <set>YES</set> ^</pattern>
+  		<that>Did you eat some lo mein?</that>
+  			<template>
+  				What did you think of lo mein?
+  					<oob>
+  						<robot>
+  							<options>
+  								<option>*</option>
+  							</options>
+  						</robot>
+  					</oob>
+  			</template>
+  </category>
+
+<!-- LO MEIN SENTIMENT -->
+
+	<category>
+    <pattern>_</pattern>
+      <that>WHAT DID YOU THINK OF LO MEIN?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "positive">
+                  That sounds as good as I imagined. Thank you for sharing your lo mein experience with me today! Shall we talk about a different cuisine?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  I appreciate that you tried it and wanted to share your experience with me. Shall we talk about a different cuisine?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  It sounds like I steered you wrong. I'm sorry! It can be hard for me to know what people will like, especially because I've never tried any human food. Thanks for trying it though! Shall we talk about a different cuisine?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                   	<option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  </topic>
+
+  <!-- END CHINESE FOOD SUBTOPIC -->
+
+</aiml>

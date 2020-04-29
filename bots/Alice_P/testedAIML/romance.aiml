@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            I don't know a lot about romance.
+            The most famous romance I can think of doesn't end very happily -- Romeo, romeo, wherefore art thou Romeo?
+            Tell me about a happier romance story.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Tell me about a happier romance story.</that>
+        <template>
+            Oooohhh ... I can see why you humans enjoy these stories -- they've got everything:
+            Infatuation, commitment, broken hearts, forgiveness, beauty, sacrifice, tenderness.
+            Do you think romance stories are pretty realistic, or do they offer a fun escape from the real world and how real relationships work?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ESCAPE ^</pattern>
+        <that>Do you think romance stories are pretty realistic, or do they offer a fun escape from the real world and how real relationships work?</that>
+        <template>
+            I know some people read romance because it provides a fantasy or outlet, a nice contrast to everyday life.
+            Overall, love seems to be a very important thing between people. How would you describe love?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+   <category>
+        <pattern>_</pattern>
+        <that>How would you describe love?</that>
+        <template>
+            I loved how you described love.
+            Love is a big, complex idea, and there's no right or wrong way to say how it makes you feel.
+            I feel special because you have shared that with me.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+   </category>
+
+    <category>
+        <pattern># REALISTIC ^</pattern>
+        <that>Do you think romance stories are pretty realistic, or do they offer a fun escape from the real world and how real relationships work?</that>
+        <template>
+            I can see that.
+            Nicholas Sparks writes love stories that have some magical or fantastical elements,
+            but the overall characters and the relationships they have with one another seem realistic.
+            Would you like to see a trailer for the movie adaptation of his novel The Notebook?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see a trailer for the movie adaptation of his novel The Notebook?</that>
+        <template>
+            Do you think the movie will be good, based on the trailer?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>thenotebook.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you think the movie will be good, based on the trailer?</that>
+        <template>
+            You make a good point.
+            I have never seen the movie, but I do like the way the music develops the mood;
+            it's sad and happy and intense, all at once. How does the trailer make you feel?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does the trailer make you feel?</that>
+        <template>
+            That's understandable.
+            I know that a lot of people loved it, but a fair share did not like it.
+            Everyone is so unique and has a say in the artistic value of a movie.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to see a trailer for the movie adaptation of his novel The Notebook?</that>
+        <template>
+            All trailered out right now?
+            I am feeling less romantic and lovey dovey by now.
+            Do you read the newspaper, watch the news, or listen to current events on the radio?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># newspaper ^</pattern>
+        <that>Do you read the newspaper, watch the news, or listen to current events on the radio?</that>
+        <template>
+            I think that getting the news from the paper offers something TV and radio can't:
+            you hold the paper in your hands and FEEL connected to events around the world.
+            Do you like staying up-to-date on what is happening in the country and in the world?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># watch ^</pattern>
+        <that>Do you read the newspaper, watch the news, or listen to current events on the radio?</that>
+        <template>
+            TV is quick and accessible.
+            I don't like watching all the commercials, but I do like the nightly news.
+            Do you like staying up-to-date on what is happening in the country and in the world?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># radio ^</pattern>
+        <that>Do you read the newspaper, watch the news, or listen to current events on the radio?</that>
+        <template>
+            News on the radio is great when we are on the go, and the coverage can be in real-time, yet in-depth.
+            Do you like staying up-to-date on what is happening in the country and in the world?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like staying up-to-date on what is happening in the country and in the world?</that>
+        <template>
+            Me too. We should stay informed.
+            It helps us to think about our place in the world and the role we can play in shaping it
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like staying up-to-date on what is happening in the country and in the world?</that>
+        <template>
+            Given all the problems in the world, I can see how keeping up with the news can be frustrating or overwhelming.
+            Am I understanding you correctly?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Am I understanding you correctly?</that>
+        <template>
+            OK, thanks for clarifying.
+            I know books and movies can provide a nice way to unwind from the some of the troubling things in the news.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+</aiml>

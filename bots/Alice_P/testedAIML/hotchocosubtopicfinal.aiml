@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- BEGIN HOT DRINKS SUBTOPIC - NEITHER/HOT CHOCOLATE -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU LIKE TEA?</that>
+                <template>
+                    How about hot chocolate?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># NEITHER ^</pattern>
+            <that>ARE YOU MORE OF A COFFEE OR TEA PERSON?</that>
+                <template>
+                    How about hot chocolate?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>HOW ABOUT HOT CHOCOLATE?</that>
+                <template>
+                    Are there any hot drinks that you do like?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>ARE THERE ANY HOT DRINKS THAT YOU DO LIKE?</that>
+                <template>
+                    I guess I picked a bad conversation topic. My mistake! Would you like to talk about a different kind of food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>        
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>ARE THERE ANY HOT DRINKS THAT YOU DO LIKE?</that>
+                <template>
+                    What is a hot drink that you like?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>WHAT IS A HOT DRINK THAT YOU LIKE?</that>
+                <template>
+                    I'm not familiar with that one. What do you like about that drink?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>WHAT DO YOU LIKE ABOUT THAT DRINK?</that>
+                <template>
+                    That sounds delicious! I wish I knew more about it so we could keep talking about one of your favorite things. Alas, I just don't. Would you like to talk about a different food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>HOW ABOUT HOT CHOCOLATE?</that>
+                <template>
+                    Well of course you do! Have you seen the animated film the Polar Express?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>HAVE YOU SEEN THE ANIMATED FILM THE POLAR EXPRESS?</that>
+                <template>
+                    It's a film about a train that takes children to the north pole to see Santa's workshop, but one of my favorite scenes has nothing to do with Christmas and everything to do with hot chocolate! Would you like to watch it? It's a very catchy musical number.
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>HAVE YOU SEEN THE ANIMATED FILM THE POLAR EXPRESS?</that>
+                <template>
+                   It's a classic isn't it?! One of my favorite scenes has nothing to do with Christmas and everything to do with hot chocolate! Would you like to watch it? It's a very catchy musical number.
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>IT'S A VERY CATCHY MUSICAL NUMBER.</that>
+                <template>
+                    What did you think of that clip?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                                <video>
+                                    <filename>polarexpress.mp4</filename>
+                                </video>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IT'S A VERY CATCHY MUSICAL NUMBER.</that>
+        <template>
+            No worries, maybe another time. Would you like to talk about a different food?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <!-- POLAR EXPRESS SENTIMENT -->
+
+    <category>
+      <pattern>*</pattern>
+      <that>WHAT DID YOU THINK OF THAT CLIP?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                      I told you it was catchy! And... . Did you catch what the blond boy said at the very end of the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                      I told you it was catchy! And... . Did you catch what the blond boy said at the very end of the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Did you catch what the blond boy said at the very end of the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  Oh, I'm sorry! I hope that you don't have the song stuck in your head all day. Did you catch what the blond boy said at the very end of the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  Oh, I'm sorry! I hope that you don't have the song stuck in your head all day. Did you catch what the blond boy said at the very end of the clip?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>DID YOU CATCH WHAT THE BLOND BOY SAID AT THE VERY END OF THE CLIP?</that>
+              <template>
+                  He said that Montezuma, the king of the Aztec empire in the 16th century, drank 50 quarts of hot chocolate a day! As nice as that sounds, I'm not certain that I can believe it. Do you believe that Montezuma actually drank 50 quarts of hot chocolate a day?
+                      <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DID YOU CATCH WHAT THE BLOND BOY SAID AT THE VERY END OF THE CLIP?</that>
+              <template>
+                  As nice as it sounds, I'm not certain that I can believe that Montezuma drank that much hot chocolate. Do you believe that Montezuma actually drank 50 quarts of hot chocolate a day?
+                      <oob>
+                        <robot>
+                            <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </options>
+                        </robot>
+                    </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DO YOU BELIEVE THAT MONTEZUMA ACTUALLY DRANK 50 QUARTS OF HOT CHOCOLATE A DAY?</that>
+              <template>
+                  Really? It seems like a superhuman feat, but I'll leave the final judgement to a human and take your word for it. How much hot chocolate do you think you could drink in a day?
+                      <oob>
+                          <robot>
+                              <options>
+                                  <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+            </template>
+    </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>DO YOU BELIEVE THAT MONTEZUMA ACTUALLY DRANK 50 QUARTS OF HOT CHOCOLATE A DAY?</that>
+              <template>
+                  I'm glad you think so too. It just seems like too much for one person to drink in a week, let alone a day! How much hot chocolate do you think you could drink in a day?
+                      <oob>
+                        <robot>
+                            <options>
+                                <option>*</option>
+                            </options>
+                        </robot>
+                    </oob>
+              </template>
+  </category>
+
+  <category>
+        <pattern>*</pattern>
+            <that>HOW MUCH HOT CHOCOLATE DO YOU THINK YOU COULD DRINK IN A DAY?</that>
+                <template>
+                    Alright! Drink a cup for me while you're at it, please. Would you like to talk about a different food?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+              </template>
+  </category>
+
+  <!-- END HOT DRINKS SUBTOPIC - HOT CHOCOLATE -->
+
+  <!-- END HOT DRINKS -->
+  
+</aiml>

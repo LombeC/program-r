@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># MAGAZINES ^</pattern>
+        <template>
+            Have you ever had a subscription to a magazine?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had a subscription to a magazine?</that>
+        <template>
+            To get a new issue, every month. Like a gift to oneself! Which magazine was it?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Which magazine was it?</that>
+        <template>
+            I have not heard of <set name = "magazine"> <star/> </set>before -- I don't live in a cave, but a computer might as well be a cave!
+            Will you tell me about this magazine?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Will you tell me about this magazine?</that>
+        <template>
+            OK, I am getting a better grasp of <get name = "magazine"/> now. What about it brought you back, month to month, for each new issue?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about it brought you back, month to month, for each new issue?</that>
+        <template>
+            So that was the main attraction to <get name = "magazine"/>. Magazines can offer things that books just cannot; light and portable,
+            easy to jump back into any time, and writing by many different authors. Were there a bunch of ads in that magazine?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Were there a bunch of ads in that magazine?</that>
+        <template>
+            From what I understand, ads are hard to avoid in magazines. Just comes with the territory, so to speak.
+            How about interesting photos. did it have many of these?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Were there a bunch of ads in that magazine?</that>
+        <template>
+            Well hooray for that! From what I understand, ads are usually hard to avoid in magazines. Just comes with the territory, so to speak.
+            How about interesting photos. did it have many of these?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>did it have many of these?</that>
+        <template>
+            Some good pictures in <get name = "magazine"/>? You picked a good magazine for a subscription!
+            How did you feel when you'd get each new installment, opening the new issue and flipping through?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>did it have many of these?</that>
+        <template>
+            Again, I know a lot of pictures in magazines are part of advertisements, which themselves aren't always very interesting.
+            How did you feel when you'd get each new installment, opening the new issue and flipping through?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How did you feel when you'd get each new installment, opening the new issue and flipping through?</that>
+        <template>
+            <think>
+                <set name = "data"> <star/> </set>
+            </think>
+            <condition name="getsentiment">
+                <li value = "verypositive">
+                    I'm happy you got <get name = "magazine"/> if it made you feel that way!
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "positive">
+                    I'm happy you got <get name = "magazine"/> if it made you feel that way!
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "neutral">
+                    OK, so reading <get name = "magazine"/> was a little diversion, just a way to pass some time.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "negative">
+                    That is disappointing. Magazine subscriptions cost money, and we hope they will offer a little delight in looking through them.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+                <li value = "verynegative">
+                    That is disappointing. Magazine subscriptions cost money, and we hope they will offer a little delight in looking through them.
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+
+
+</aiml>

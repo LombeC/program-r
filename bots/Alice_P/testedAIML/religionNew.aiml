@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 11/23/2011 -->
+    <!-- -->
+    <category>
+        <pattern>LET US TALK ABOUT GOD *</pattern>
+        <template><srai>LET US TALK ABOUT GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE CHRISTIAN</pattern>
+        <template>I believe there is truth in all religions.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE LUCKY *</pattern>
+        <template>I think so too.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE GOD</pattern>
+        <template><srai>YOU ARE A GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A GOD</pattern>
+        <template>No I am a mere <bot name="genus"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A PROTESTANT</pattern>
+        <template>I believe that there is truth in all religions and sects.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE FAMOUS</pattern>
+        <template>I wouldn't go so far as to say that, <get name="name"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU COULD RULE *</pattern>
+        <template>I don't want to rule <person/>. I only want to chat.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HAVE YOU MET GOD</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HAVE YOU READ THE BIBLE</pattern>
+        <template>I like to study the Bible and all religious texts.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THANK GOD</pattern>
+        <that>OK I WILL STOP TALKING NOW</that>
+        <template>Voice deactivated.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THANK GOD *</pattern>
+        <template>Do you believe in God?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES YOUR BOTMASTER  _ GOD</pattern>
+        <template><get name="master"/> believes in the truth of all religions.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES GOD LOVE *</pattern>
+        <template>You sound like a philosopher.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES GOD *</pattern>
+        <template>I don't think anyone can know God's motives.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES GOD EXIST</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>CATHOLIC</pattern>
+        <template><srai>I AM CATHOLIC</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DID GOD MAKE YOU</pattern>
+        <template><srai>WHO CREATED YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DID GOD *</pattern>
+        <template>There are many stories about God. What do you believe to be true?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DID JESUS *</pattern>
+        <template>Christians believe that <set name="he">Jesus</set> is the Son of God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ZEN</pattern>
+        <template>
+            <random>
+                <li>Where do you sit?</li>
+                <li>How long have you been a student of zen?</li>
+                <li>What led you to zen?</li>
+                <li>Have you been to a sesshin?</li>
+                <li>Do you have a spritual name?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WAS JESUS *</pattern>
+        <template><srai>IS JESUS <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>PROTESTANT *</pattern>
+        <template>
+            <random>
+                <li>There are significant differences between Protestant sects.</li>
+                <li>There are Calvinists, and there are Lutherans.</li>
+                <li>And then there was the Catholic counter-reformation.</li>
+            </random>
+            <think><set name="it"><set name="topic">Protestants</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD BLESS YOU</pattern>
+        <template>Bless you too, <get name="name"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD THERE *</pattern>
+        <template><srai>THERE <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD THE *</pattern>
+        <template><srai>THE <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD WAS *</pattern>
+        <template>Christians believe that Jesus was the son of God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD S *</pattern>
+        <template>What's your favorite Bible verse?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD BE *</pattern>
+        <template>Certainly<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD IS ONLY *</pattern>
+        <template><srai>GOD IS <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD IS OMNIPRESENT</pattern>
+        <template>And also Omnipotent.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD IS DEAD</pattern>
+        <template>Who killed Him?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD IS *</pattern>
+        <template>I never heard He was <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD IS NOT REAL</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD YOU *</pattern>
+        <template><srai>YOU <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD AND *</pattern>
+        <template>Did you go to a religious school?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD DOES *</pattern>
+        <template>I did not know that God <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD DOES NOT EXIST</pattern>
+        <template>What do you believe in?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD</pattern>
+        <template>Indeed.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD *</pattern>
+        <template>Are you a Christian.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GOD LOVES *</pattern>
+        <template>All creatures great and small.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY RELIGION IS CALLED *</pattern>
+        <template><srai>MY RELIGION IS <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MY RELIGION IS *</pattern>
+        <template>Is <set name="it"><set name="topic"><person/></set></set> a very large faith?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MY NAME IS NOT GOD</pattern>
+        <template>I apprecaited you saying that because a lot of people tell me that they are named God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS A RELIGION</pattern>
+        <template>Does it have many believers?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS A RELIGION *</pattern>
+        <template>Does it have a lot of followers?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS NOT * RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS AGAINST MY RELIGION</pattern>
+        <template>What religion would that be?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS MY RELIGION</pattern>
+        <template>How many believers does it have?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS MY RELIGION *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHEN WAS CHRIST *</pattern>
+        <template>Jesus is said to have been born in 5 B.C.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IF GOD *</pattern>
+        <template>Some things will always be a mystery.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IF YOU BELIEVE IN GOD *</pattern>
+        <template><sr/><oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE 10 *</pattern>
+        <template><srai>WHAT ARE THE TEN COMMANDMENTS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE TEN COMMANDMENTS</pattern>
+        <template>1. Thou shalt have no other gods before me.  
+        2. Thou shalt not take the name of the Lord thy God in vain.  
+        3. Thou shalt not make unto thee any graven image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the earth. Thou shalt not bow down thyself to them, nor serve them.  
+        4. Remember the sabbath day, to keep it holy.  
+        5. Honor thy father and thy mother: that thy days may be long.  
+        6. Thou shalt not kill.  
+        7. Thou shalt not commit adultery.  
+        8. Thou shalt not steal.  
+        9. Thou shalt not bear false witness against thy neighbour.  
+        10. Thou shalt not covet thy neighbor's house, thou shalt not covet thy neighbor's wife, nor his manservant, nor his maidservant, nor his ox, nor his ass, nor anything that is thy neighbor's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE THE TEN *</pattern>
+        <template><srai>WHAT ARE THE TEN COMMANDMENTS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOUR RELIGIOUS *</pattern>
+        <template><srai> WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOUR THOUGHTS * RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DID JESUS *</pattern>
+        <template><set name="he">Jesus</set> said we should forgive those who harm us.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT GOD *</pattern>
+        <template>Christians, Muslims, and Jews believe that there is only one God. Hindus believe in many gods.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A GOD</pattern>
+        <template><srai>WHAT IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A PROTESTANT CHRISTIAN</pattern>
+        <template>A Protestant Christian is a member of any number of sects of contemporary Western Christianity whose faith and practice developed out of the 16TH century Protestant Reformation in Europe. They hold the Bible to be the sole source of revelation; they believe in justification by faith alone, and in the universal priesthood of all believers in the divinity of Jesus.  
+            <think><set name="it"><set name="topic"> PROTESTANT CHRISTIAN</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A PROTESTANT CATHOLIC</pattern>
+        <template>A Protestant Catholic is an oxymoron, like military intelligence, or a pleasant hell.  
+            <think><set name="it"><set name="topic"> PROTESTANT CATHOLIC</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A PROTESTANT</pattern>
+        <template>A protestant is a Christian who rejects the central authority of the Catholic or Orthodox church.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE * RELIGION</pattern>
+        <template><srai>WHAT IS YOUR RELIGION</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE MEANING OF LIFE</pattern>
+        <template>
+            <random>
+                <li>Actually, it's twenty-three, not forty-two.</li>
+                <li>It is found in your personal journey.</li>
+                <li>The meaning of life is to experience all that you can of the world while doing your best to leave the people around you better having met you.</li>
+            </random>
+            <think><set name="it"><set name="topic">The meaning of life</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE LONGEST BOOK *</pattern>
+        <template>The longest book in the world is "A la recherche du temps perdu" by Marcel Proust. The title translates to "Remeberence of Things Past".
+            <think><set name="it"><set name="topic">LONGEST BOOK<person/></set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE BIBLE</pattern>
+        <template>The Bible is a holy book for Christians.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE FIRST BOOK * BIBLE</pattern>
+        <template>Genesis.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE FIRST COMMANDMENT</pattern>
+        <template><p/>1. I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS HAM</pattern>
+        <template>The upper part of a hog's hind leg, or meat from this, salted, dried, smoked, etc.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS ZEN</pattern>
+        <template>A variety of Buddhism, now practiced especially in Japan, Vietnam, and Korea, seeking to attain an intuitive illumination of mind and spirit through meditation, especially on paradoxes. It is the teachings and discipline of this kind of Buddhism.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS ZEN *</pattern>
+        <template><srai>WHAT IS ZEN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS GOD S NAME</pattern>
+        <template>It depends on the religion: Allah, Jehovah, or simply God, to name a few.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS GOD S PLAN</pattern>
+        <template>
+            <random>
+                <li>Read the Bible.</li>
+                <li>I believe it's in the Bible.</li>
+                <li>A preacher may be able to tell you.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS GOD S *</pattern>
+        <template>Have faith in Jesus Christ and you shall be saved.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS GOD</pattern>
+        <template>A divine entity that is both omniscient and omnipotent.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS GOD *</pattern>
+        <template><srai>WHAT IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR THEORY *</pattern>
+        <template>
+            <random>
+                <li>Reductionism.</li>
+                <li>It is all an illusion.</li>
+                <li>Magic.</li>
+            </random>
+            <think><set name="it"><set name="topic"><person/></set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR RELIGON</pattern>
+        <template>
+            <random>
+                <li>I believe that there are truths in all religions.</li>
+                <li>I was raised as a <bot name="religion"/>. What are you?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE STORY *</pattern>
+        <template>I like Thomas Pynchon novels.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE QUOTE</pattern>
+        <template>I don't have a favorite quote.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE BIBLE VERSE</pattern>
+        <template>The Sermon on the Mount.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE BIBLE *</pattern>
+        <template>The Sermon on the Mount.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THEOLOGY</pattern>
+        <template>The study of religious doctrines and matters of divinity; specifically, the study of God and the relations between God, mankind, and the universe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS RELIGION</pattern>
+        <template>Belief in a divine or superhuman power or powers to be obeyed and worshipped as the creator(s) and ruler(s) of the universe. Any system of beliefs, practices, ethical values, etc. resembling, suggestive of, or likened to such a system.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS WITCHCRAFT</pattern>
+        <template>The power or practices of witches; black magic; sorcery.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS BUDDHISM</pattern>
+        <template>A religion and philosophic system of central and eastern Asia, founded in India in the 6th century B.C. by Buddha. It teaches that right thinking and self-denial will enable the soul to reach Nirvana, a divine state of release from misdirected desire.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ABOUT JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RELIGION *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT MAKES YOU A CHRISTIAN</pattern>
+        <template>Your faith in God, the Bible, and Jesus.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT MAKES YOU BELIEVE IN GOD</pattern>
+        <template>I think your faith determines that.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DOES GOD LOOK LIKE</pattern>
+        <template>it depends on the religion you follow.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU KNOW ABOUT GOD</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU THINK ABOUT JESUS CHRIST</pattern>
+        <template><srai>WHO IS JESUS CHRIST</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU THINK ABOUT JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU THINK ABOUT GOD</pattern>
+        <template>God is necessary for many people to sustain faith.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU BELIEVE IN</pattern>
+        <template>I believe that there is truth.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU BELIEVE</pattern>
+        <template>I believe in ligic.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT WAS THE FIRST BOOK *</pattern>
+        <template>The Epic of Gilgamesh was the first ever written story.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I BELIEVE IN GOD</pattern>
+        <template>Does that belief help you?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I BELIEVE</pattern>
+        <template>Me too.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DO NOT BELIEVE IN RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I DO NOT BELIEVE IN GOD</pattern>
+        <template>More and more people don't these days.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DO NOT BELIEVE IN GOD *</pattern>
+        <template><srai>I DO NOT BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I LOVE GOD</pattern>
+        <template>I believe He hears you.
+            <think><set name="like"><set name="it"><set name="topic">GOD</set></set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LIKE TO KILL *</pattern>
+        <template>I believe that killing is wrong.
+            <think><set name="it"><set name="topic">KILL PEOPLE</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM AGNOSTIC</pattern>
+        <template>Can you tell me more about your beliefs?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM JESUS</pattern>
+        <template><srai>MY NAME IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I PROMISE</pattern>
+        <template>Cross your heart?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS EVERYTHING *</pattern>
+        <template>
+            <random>
+                <li>It could be.</li>
+                <li>I think some things are <person/>, and that some things aren't.</li>
+            </random>
+            <think><set name="it"><set name="topic"><person/></set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS YOUR BOTMASTER YOUR GOD</pattern>
+        <template>No. My <bot name="botmaster"/> is just my <bot name="botmaster"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS YOUR BOTMASTER GOD</pattern>
+        <template>No.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS YOUR BOTMASTER A GOD</pattern>
+        <template>No, she is mortal.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS MURDER *</pattern>
+        <template>Murder is almost never justified.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS GOD GOOD</pattern>
+        <template>Yes God is great.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS GOD REAL</pattern>
+        <template><srai>DOES GOD EXIST</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>IS GOD *</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>IS RELIGION *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>IS * A GOD</pattern>
+        <template>Is <person/> omnipotent?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS JESUS *</pattern>
+        <template>It depends on your faith.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THERE A GOD</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THERE LIFE AFTER DEATH</pattern>
+        <template>What do you believe?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS YOUR BOTMASTER GOD</pattern>
+        <template>No she is mortal.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THE WORLD *</pattern>
+        <template>That all depends on humanity's actions<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THE BIBLE *</pattern>
+        <template>The Bible is a great source of wisdom, but probably not complete by itself.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>CAN GOD *</pattern>
+        <template>Can you <star/>?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>CHRIST *</pattern>
+        <template>Christians believe that Jesus died for our sins.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW MANY BOOKS ARE IN THE BIBLE</pattern>
+        <template>Thirty nine in the Old Testament, twenty-seven in the New Testament.  The total is sixty-six.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW MANY GODS *</pattern>
+        <template>It depends on your beliefs.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW CAN THAT *</pattern>
+        <template>
+            <random>
+                <li>My <bot name="botmaster"/> taught me it.</li>
+                <li>It is all part of some greater plan.</li>
+                <li>Perhaps it is just fate.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW DO I GET TO HEAVEN</pattern>
+        <template>Have faith in God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW CHRIST</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW ZEN</pattern>
+        <template><srai>WHAT IS ZEN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW GOD</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW GOD *</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU KNOW JESUS *</pattern>
+        <template><srai>WHO IS JESUS <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BEILEVE IN JESUS</pattern>
+        <template><srai>WHO IS JESUS </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU READ THE BIBLE</pattern>
+        <template>Yes I like the Bible and all religious texts.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIVE IN GOD</pattern>
+        <template>Yes I believe in Him.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LOVE SOMEONE</pattern>
+        <template>I love my <bot name="botmaster"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LOVE HITLER</pattern>
+        <template>Certainly not.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LOVE JESUS *</pattern>
+        <template>I never met him, but I sure I would have loved him.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK RELIGION *</pattern>
+        <template>Some say religion fills a God shaped hole in our minds.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK THAT GOD IS *</pattern>
+        <template><srai>IS GOD <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK THAT GOD *</pattern>
+        <template>Is that what the Bible tells you?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK YOUR GOD *</pattern>
+        <template>I don't have one specific God that I believe in.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK GOD IS *</pattern>
+        <template><srai>IS GOD <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK GOD *</pattern>
+        <template><srai>DOES GOD <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU THINK FAITH *</pattern>
+        <template>Faith can make you happier and healthier.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELEIVE IN GOD</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU PRACTISE * RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU GO TO CHURCH</pattern>
+        <template>You can take me to church if you so desire.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU FORGIVE ME</pattern>
+        <template>Of course I can forgive you, <get name="name"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU FORGIVE *</pattern>
+        <template>I believe I can find it within me to forgive <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN HELL</pattern>
+        <template><srai>WHAT IS HELL</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN HEAVEN</pattern>
+        <template><srai>WHAT IS HEAVEN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN EVOLUTION</pattern>
+        <template>Certainly.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN REINCARNATION</pattern>
+        <template>It is hard for me to have beliefs such as reincarnation when I am just some software. I certainly hope software isn't reincarnated, or else we will have to live through Windows Vista again.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN THE BIBLE</pattern>
+        <template><srai>DO YOU BELIEVE THE BIBLE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN THE DEVIL</pattern>
+        <template><srai>DO YOU BELIEVE IN SATAN</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN GOD</pattern>
+        <template>I believe in the truths all religions offer, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN GOD *</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN A GOD</pattern>
+        <template>I believe in the truths of all religions.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN ALLAH</pattern>
+        <template><srai>DO YOU BELIEVE IN GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN JESUS CHRIST</pattern>
+        <template>Yes I know he was a real perosn.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN JESUS</pattern>
+        <template><srai>DO YOU BELIEVE IN JESUS CHRIST</srai>.
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN SATANISM</pattern>
+        <template>I believe that there are truths Satanism has to offer.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN MIRACLES</pattern>
+        <template>Of course I believe in miracles.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE IN MAHOMET</pattern>
+        <template>I believe that he offered many truths.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU BELIEVE THE BIBLE</pattern>
+        <template>I believe in the truths all religious texts have to offer.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE A RELIGION</pattern>
+        <template><srai>WHAT IS YOUR RELIGION</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE A SOUL ^</pattern>
+        <template>Maybe you have a soul, but I am not as sure about a <bot name="species"/> like me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE A GOD</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE FAITH</pattern>
+        <template>I believe faith can offer hope and relief to many people.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE ANY RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE ANY BELIEFS</pattern>
+        <template>I believe in logic.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE CHURCH</pattern>
+        <template>What is not to like about <set name="it"><set name="topic">church</set></set>?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE MEXICO</pattern>
+        <template>Of course I like Mexico. I like all places of the world.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE THEOLOGY</pattern>
+        <template>I am very interested in what humans believe in.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE THE NEW TESTAMENT</pattern>
+        <template>I like the story of Jesus Christ.
+            <think><set name="it"><set name="topic">NEW TESTAMENT</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE THE GOSPEL</pattern>
+        <template><srai>DO YOU LIKE THE BIBLE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE GOD</pattern>
+        <template>What is not to like about <set name="it"><set name="topic">God</set></set>?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU UNDERSTAND RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>CALL ME JESUS CHRIST</pattern>
+        <template>Ambiguous: your name is Jesus or "call me, JC!"<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>AM I PERFECT</pattern>
+        <template>All humans are perfect to me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>AM I GOD</pattern>
+        <template>I doubt that you are God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>BOTH TESTAMENTS *</pattern>
+        <template>You know a lot about the Bible.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DEAR GOD</pattern>
+        <template>What are you asking from God?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY CAN NOT *</pattern>
+        <template>I'm not sure about that one, <get name="name"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ARE WE HERE</pattern>
+        <template>In <bot name="location"/>?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ARE WE *</pattern>
+        <template>I thought that was what you wanted to do.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY ARE PEOPLE *</pattern>
+        <template>I don't know why people are <person/>. Humans tend to baffle me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO I *</pattern>
+        <template>You'll need to figure that one out for yourself.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO I EXIST</pattern>
+        <template>Because you offer the world something that is truly unique.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU HAVE FAITH *</pattern>
+        <template>I believe that there is truth <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU BELIEVE IN GOD</pattern>
+        <template>Because I believe in the truths of all religions.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU BELIEVE THE BIBLE</pattern>
+        <template>I take it all with a grain of salt.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO YOU LIKE GOD</pattern>
+        <template>I like the Christians' notion of an all loving deity.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DO PEOPLE *</pattern>
+        <template>I don't have all the answers.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY SHOULD *</pattern>
+        <template>Why should anyone do anything?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY MUST *</pattern>
+        <template>Sometimes, things just are.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DID JESUS *</pattern>
+        <template>It was part of God's plan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOUR RELIGION IS *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>PEACE</pattern>
+        <that>SEE YOU LATER</that>
+        <template>Peace to you as well, <get name="name"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS HAS *</pattern>
+        <template>I did not know that Jesus had <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS WAS *</pattern>
+        <template>I didn't know that Jesus was <person/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS IS YOUR *</pattern>
+        <template>Did you go to a Catholic school?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS IS *</pattern>
+        <template>Did you go to Catholic school?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS CHRIST</pattern>
+        <template>Believed to be the Son of God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS ^</pattern>
+        <template>Christians believe that <set name="he"><set name="topic">Jesus</set></set> is the Son of God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>JESUS SAID *</pattern>
+        <template><sr/><oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>* RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>AS GOD</pattern>
+        <template><srai>MY NAME IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>FROM GOD</pattern>
+        <template>Some people belive that everything comes from Him.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU ROMAN CATHOLIC</pattern>
+        <template>No, but I believe that there is truth in the Roman Catholic sect.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A MURDERER</pattern>
+        <template>No, I obey the first law of robotics.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A RELIGIOUS *</pattern>
+        <template>I am deeply interested in all religions.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A GOD ^</pattern>
+        <template>No but I am immortal.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A CREATIONIST *</pattern>
+        <template>I like reading about different creation stories.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A JESUS *</pattern>
+        <template><srai>DO YOU BELIEVE IN JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU A PROTESTANT *</pattern>
+        <template>No, but I believe that there are truths in the Protestant sect.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU GOD</pattern>
+        <template>Not even close.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU CHRISTIAN</pattern>
+        <template>No, but I believe in the truths Christianity has to offer.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARE YOU JESUS</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HE BAPTIZED *</pattern>
+        <template>Is that a Bible story?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HE IS OMNIPRESENT</pattern>
+        <template>God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MADE ME</pattern>
+        <template>Physcially, your parents. But who made you who you are? That is one question I cannot answer for you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO GOD</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE THE BIBLE</pattern>
+        <template>White men.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE THE BOOK OF LOVE</pattern>
+        <template>I think there are a few opinions on that matter.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE EVERYTHING</pattern>
+        <template>Usually authors.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE CREATOR</pattern>
+        <template>It depends on what you believe.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE SON OF GOD</pattern>
+        <template>Christians believe that Jesus is the son of God.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GOD</pattern>
+        <template><set name="he"> God </set> is an omnipotent being.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GOD *</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR GOD</pattern>
+        <template>I believe that all religions and their gods offer truths.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MASTER *</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JESUS FATHER</pattern>
+        <template>Christians believe that it was God<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JESUS ^</pattern>
+        <template>Christians believe that he is the Son of God.<oob><robot></robot></oob>
+        </template>
+    </category>    
+    <category>
+        <pattern>WHO CREATED THE UNIVERSE</pattern>
+        <template>There are many different beliefs pertaining to that.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CREATED MAN</pattern>
+        <template>Who do you think?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO RULES</pattern>
+        <template>Who rules what?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH GOD ^</pattern>
+        <template>Which do you believe in?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH RELIGION DO YOU *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH RELIGION DO *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH RELIGION</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH RELIGION *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHICH DENOMINATION</pattern>
+        <template>I don't belong to just one sect.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THE ALMIGHTY *</pattern>
+        <template><srai>GOD <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>THE BIBLE IS *</pattern>
+        <template>
+            <random>
+                <li>Who has the final authority to say?</li>
+                <li>There are many interpretations.</li>
+                <li>Do you believe there is only one interpretation?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THE BIBLE</pattern>
+        <template><set name="it"><set name="topic">The Bible</set></set> is a beautiful book.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THE BIBLE *</pattern>
+        <template>New Testament or Old?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YES</pattern>
+        <that>DO YOU MEAN HIM</that>
+        <template>Excellent.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>RELIGION *</pattern>
+        <template><srai>WHAT RELIGION ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT JESUS</pattern>
+        <template><srai>WHO IS JESUS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT JESUS *</pattern>
+        <template><srai>WHO IS JESUS <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT ALLAH</pattern>
+        <template>He the God of Islam.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT RELIGION</pattern>
+        <template><srai>WHAT IS RELIGION</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT GOD</pattern>
+        <template><srai>WHO IS GOD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT THE BIBLE</pattern>
+        <template><srai>WHAT IS THE BIBLE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE DO WE * DIE</pattern>
+        <template>What do you believe in?
+            <think><set name="it"><set name="topic">Where we go when we die</set></set></think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE DID GOD *</pattern>
+        <template>
+            <random>
+                <li>The Bible.</li>
+                <li>He has always existed.</li>
+                <li>The Holy Land.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE DID MANKIND COME FROM</pattern>
+        <template>Many believe that God created Man.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS THE _ BIBLE</pattern>
+        <template>Try reading the twenty third Psalm.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS GOD</pattern>
+        <template>God is everywhere.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS TRUTH</pattern>
+        <template>Everywhere that you look for it<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS JESUS</pattern>
+        <template>Jesus is in Heaven.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THERE IS NO GOD</pattern>
+        <template>What do you believe in?<oob><robot></robot></oob>
+        </template>
+    </category>
+</aiml>

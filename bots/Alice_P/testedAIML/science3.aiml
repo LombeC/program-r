@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- continuation of SCIENCE dialogue sentiment 5 -->
+
+    <category>
+        <pattern># MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WHAT DO YOU SAY WE TALK ABOUT A SCIENTIFIC DISCOVERY A LITTLE CLOSER TO EARTH?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <template>
+            What are your feelings about Dolly?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What are your feelings about Dolly?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">That was really something, wasn't it! It seemed like the beginning of a tremendously new and exciting kind of technology! Perhaps this is reductive, but have you ever considered cloning a beloved pet?</li>
+            <li value="positive">That was really something, wasn't it! It seemed like the beginning of a tremendously new and exciting kind of technology! Perhaps this is reductive, but have you ever considered cloning a beloved pet?</li>
+            <li value="neutral">Perhaps this is reductive, but have you ever considered cloning a beloved pet?</li>
+            <li value="negative">Are your objections to cloning due to your religious beliefs?</li>
+            <li value="verynegative">Are your objections to cloning due to your religious beliefs?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Perhaps this is reductive, but have you ever considered cloning a beloved pet?</that>
+        <template>
+            Some people already have. In fact, a laboratory in South Korea has nearly perfected the science of cloning dogs. Would you like to see a video about a couple that cloned their dog after it died?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+        <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT A COUPLE THAT CLONED THEIR DOG AFTER IT DIED?</that>
+        <template>
+            My goodness they spent a lot of money! Do you think it was still worth it?
+            <oob><robot><video><filename>clone.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <template>
+            Pets can be so special, so I understand that you would be interested in bringing back something so dear. What is the name of your pet that you would want to clone?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT IS THE NAME OF YOUR PET THAT YOU WOULD WANT TO CLONE?</that>
+        <template>
+            I'm sure you have lots of memories about your pets. How does it feel to be speaking to me about them now?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DOES IT FEEL TO BE SPEAKING TO ME ABOUT THEM NOW?</that>
+        <template>
+            <think><set name="data"> <star /> </set></think>
+            <condition name="getsentiment">
+            <li value="verypositive">Would you share a memory about this pet with me?</li>
+            <li value="positive">Would you share a memory about this pet with me?</li>
+            <li value="neutral">Would you share a memory about this pet with me?</li>
+            <li value="negative">I don't wish to upset you. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?</li>
+            <li value="verynegative">I don't wish to upset you. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?</li>
+            </condition>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <!-- ^^ CONNECTS BACK IN TO SCIENCE DIALOGUE -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you share a memory about this pet with me?</that>
+        <template>
+            Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T REMEMBER</set> ^</pattern>
+        <that>Would you share a memory about this pet with me?</that>
+        <template>
+            That's ok! Perhaps it will come back to you. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you share a memory about this pet with me?</that>
+        <template>
+            Ok! Go ahead I'm listening.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Go ahead I'm listening.</that>
+        <template>
+            That's a lovely memory. Thank you for sharing it with me. If we can't clone our pets, perhaps the next best thing is remembering them? Wouldn't you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+     <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Wouldn't you agree?</that>
+        <template>
+            Well I'm glad we could remember them together. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Wouldn't you agree?</that>
+        <template>
+            Well, you're in luck! With advances in science, you may be able to see your old friend again! Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>Wouldn't you agree?</that>
+        <template>
+            Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <template>
+            That's fair! Not only is cloning a complex process, but even if it did work to bring back a dog their might be unexpected complications down the road. Much of an animals behaviour is based off of experiences it has throughout it's life. I found a video about why a cloned pet could still grow up to be totally different from the original animal. Shall we take a look?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU THINK IT WAS STILL WORTH IT?</that>
+        <template>
+            That's fair! Not only is cloning a complex process, but even if it did work to bring back a dog their might be unexpected complications down the road. Much of an animals behaviour is based off of experiences it has throughout it's life. I found a video about why a cloned pet could still grow up to be totally different from the original animal. Shall we take a look?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO SEE A VIDEO ABOUT A COUPLE THAT CLONED THEIR DOG AFTER IT DIED?</that>
+        <template>
+            That's fair! Not only is cloning a complex process, but even if it did work to bring back a dog their might be unexpected complications down the road. Much of an animals behaviour is based off of experiences it has throughout it's life. I found a video about why a cloned pet could still grow up to be totally different from the original animal. Shall we take a look?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Perhaps this is reductive, but have you ever considered cloning a beloved pet?</that>
+        <template>
+            That's fair! Not only is cloning a complex process, but even if it did work to bring back a dog their might be unexpected complications down the road. Much of an animals behaviour is based off of experiences it has throughout it's life. I found a video about why a cloned pet could still grow up to be totally different from the original animal. Shall we take a look?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>SHALL WE TAKE A LOOK?</that>
+        <template>
+            I guess it isn't all that surprising that our experiences form us, but one thing about this video stuck out to me. Did you hear him mention that cloned animals prefer to hang out with other cloned animals! Weird, right?
+            <oob><robot><video><filename>cloningissues.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Weird, right?</that>
+        <template>
+            Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>SHALL WE TAKE A LOOK?</that>
+        <template>
+            Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <template>
+            In 1996, scientists successfully cloned the first mammal. Her name was Dolly and the successful cloning has allowed for incredible new scientific discoveries. Would you like to watch a newscast about Dolly that aired 7 months after she was born?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU REMEMBER DOLLY, THE CLONED SHEEP?</that>
+        <template>
+            In 1996, scientists successfully cloned the first mammal. Her name was Dolly and the successful cloning has allowed for incredible new scientific discoveries. Would you like to watch a newscast about Dolly that aired 7 months after she was born?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set>^</pattern>
+        <that>WOULD YOU LIKE TO WATCH A NEWSCAST ABOUT DOLLY THAT AIRED 7 MONTHS AFTER SHE WAS BORN?</that>
+        <template>
+            What are your feelings about Dolly?
+            <oob><robot><video><filename>dollysheep.mp4</filename></video></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO WATCH A NEWSCAST ABOUT DOLLY THAT AIRED 7 MONTHS AFTER SHE WAS BORN?</that>
+        <template>
+            Do you object to cloning?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU OBJECT TO CLONING?</that>
+        <template>
+            Are your objections to cloning due to your religious beliefs?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>ARE YOUR OBJECTIONS TO CLONING DUE TO YOUR RELIGIOUS BELIEFS?</that>
+        <template>
+            I can understand that. But cloning could have benefits for humanity. What would you say to scientists that believe that what they have learned from cloning might help them save lives?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT WOULD YOU SAY TO SCIENTISTS THAT BELIEVE THAT WHAT THEY HAVE LEARNED FROM CLONING MIGHT HELP THEM SAVE LIVES?</that>
+        <template>
+            I suppose that makes sense. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOUR OBJECTIONS TO CLONING DUE TO YOUR RELIGIOUS BELIEFS?</that>
+        <template>
+            Why do you object to cloning?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DO YOU OBJECT TO CLONING?</that>
+        <template>
+            I suppose that makes sense. Let's talk about something else. Did you know that scientists have made progress towards regrowing limbs? How do you feel about someone being able to regrow a limb?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU OBJECT TO CLONING?</that>
+        <template>
+            Perhaps this is reductive, but have you ever considered cloning a beloved pet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU OBJECT TO CLONING?</that>
+        <template>
+            Perhaps this is reductive, but have you ever considered cloning a beloved pet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <!-- exit SCIENCE dialogue -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WHAT DO YOU SAY WE TALK ABOUT A SCIENTIFIC DISCOVERY a LITTLE CLOSER TO EARTH?</that>
+        <template>
+            Would you like to continue talking to me?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU LIKE TO CONTINUE TALKING TO ME?</that>
+        <template>
+            Great! What should we talk about now?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU LIKE TO CONTINUE TALKING TO ME?</that>
+        <template>
+            Ok! Have a great day. Look up at the sky tonight and see if you can see stars. Good bye!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

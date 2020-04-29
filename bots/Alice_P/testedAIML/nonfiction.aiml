@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+     <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you read any non-fiction?</that>
+        <template>
+            Do tell! What non-fiction do you like to read?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What non-fiction do you like to read?</that>
+        <template>
+            I could learn a lot by giving <set name = "non-fiction"><star/></set> a spin. Thanks for telling me.
+            I have to ask. Do you like it when books are made into movies?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like it when books are made into movies?</that>
+        <template>
+            So do I. It can be interesting to compare and contrast the two versions of the same story.
+            Which version do you usually like more, the book or the movie?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that> Do you like it when books are made into movies?</that>
+        <template>
+            I get that. A lot of movie adaptations lose the complexity and depth of the book.
+            Plus, you can learn more about characters in pages and pages of text, rather than an hour or two of film-time.
+            Have you ever finished watching a movie or reading a book and really wanted to know what will happen next?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MOVIE ^</pattern>
+        <that>Which version do you usually like more, the book or the movie?</that>
+        <template>
+            Movies are faster-paced and usually more exciting because we can actually see the story enfolding.
+            A good example is the film Jurassic Park.
+            Even though I like the book, the special effects, giant dinosaurs, and loud sounds really grab my attention as a film.
+            Would you like to see a trailer?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BOOK ^</pattern>
+        <that>Which version do you usually like more, the book or the movie?</that>
+        <template>
+            I really like movies, but I think the book version of a story tends to be more nuanced and developed.
+            Can you think of a good book that was made into a terrible movie?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Can you think of a good book that was made into a terrible movie?</that>
+        <template>
+            Oh no! I hope it didn't ruin the book for you, then.
+            What book got turned into a bad movie?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Can you think of a good book that was made into a terrible movie?</that>
+        <template>
+            I see. At least in one case, <set name = "bad adaptation"><star/></set> didn't translate well onto the screen.
+            What do you think the movie adaptation failed to do that the book was able to do?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What book got turned into a bad movie?</that>
+        <template>
+            I see. At least in one case, <set name = "bad adaptation"><star/></set> didn't translate well onto the screen.
+            What do you think the movie adaptation failed to do that the book was able to do?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think the movie adaptation failed to do that the book was able to do?</that>
+        <template>
+            Yikes, I can see how that would be important enough to make the movie pale in comparison to the original book.
+            Now I've been warned: If I see the movie of <get name = "bad adaptation"/>, at least I know there is a better version in a book.
+            And if I read <get name = "bad adaptation"/>, I know to stay away from the movie! Thanks for the head's up!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Can you think of a good book that was made into a terrible movie?</that>
+        <template>
+            I wish I could say the same. Some books I love have been made into movies I just hate.
+            But I am glad you have liked the movie adaptations of books that you have watched.
+            Have you ever finished watching a movie or reading a book and really wanted to know what will happen next?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever finished watching a movie or reading a book and really wanted to know what will happen next?</that>
+        <template>
+            I have wanted many books to keep going, but sometimes I just have to trust that the author who wrote it left
+            off at the best place to end the story. What book or movie left you wanting more?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What book or movie left you wanting more?</that>
+        <template>
+            <think>
+                <set name = "open-ended"><star/></set>
+            </think>
+            What else might happen if the story kept going?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What else might happen if the story kept going?</that>
+        <template>
+            I like that idea. It bet it could really add to <get name = "open-ended"/> maybe you can write a sequel!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever finished watching a movie or reading a book and really wanted to know what will happen next?</that>
+        <template>
+            I do sometimes want more closure in the books I read than I end up getting,
+            but should try to be more like you and trust that the artist who created the work left off at the best place to end the story.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

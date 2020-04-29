@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>^ FOOD NETWORK ^</pattern>
+        <template>I know we have talked about food before but there is more I'd like to know. Do you watch the food network?
+            <oob>
+               <robot>
+               </robot>
+           </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU WATCH THE FOOD NETWORK?</that>
+          <template>
+            What do you think of the Food Network's Shows?
+              <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <!-- FOOD SENTIMENT 1 - FOOD NETWORK PROGRAMS INTRO -->
+
+    <category>
+      <pattern>_</pattern>
+      <that>WHAT DO YOU THINK OF THE FOOD NETWORK'S SHOWS?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+            <li value = "verypositive">
+                  That is good to hear. Do you have a favorite food network show?
+                  <oob>
+                      <robot>
+                          <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                          </options>
+                      </robot>
+                  </oob>
+            </li>
+              <li value = "positive">
+                  That is good to hear. Do you have a favorite food network show?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                Do you have a favorite food network show?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  Do you have a least favorite Food Network program?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  Do you have a least favorite Food Network program?
+                  <oob>
+                      <robot>
+                          <options>
+                                <option>YES</option>
+                                <option>NO</option>
+                          </options>
+                      </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE FOOD NETWORK SHOW?</that>
+      <template>
+          What is your favorite show called?
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+      </template>
+    </category>
+
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE FOOD NETWORK SHOW?</that>
+        <template>
+            I have a recommendation for a show you might like. May I show you a clip of one of my favorite Food Network shows?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+<category>
+      <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU WATCH THE FOOD NETWORK?</that>
+          <template>
+            The Food Network is a television show dedicated to food. I watch it a lot and always learn a lot. May I show you a clip of one of my favorite food network shows?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+     <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>MAY I SHOW YOU A CLIP OF ONE OF MY FAVORITE FOOD NETWORK SHOWS?</that>
+        <template>
+          Have you heard of Ina Garten?
+            <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>MAY I SHOW YOU A CLIP OF ONE OF MY FAVORITE FOOD NETWORK SHOWS?</that>
+        <template>
+          Do you think you would enjoy watching this program regularly?
+            <oob>
+              <robot>
+                <video>
+                  <filename>Food_network.mp4</filename>
+                </video>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern>I DON'T KNOW WHAT * IS</pattern>
+        <that>DO YOU WATCH THE FOOD NETWORK?</that>
+          <template>
+            The Food Network is a television show dedicated to food. I watch it a lot and always learn a lot. May I show you a clip of one of my favorite food network shows?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+      <pattern>I DON'T LIKE #</pattern>
+          <that>DO YOU WATCH THE FOOD NETWORK?</that>
+            <template>
+              I'm sorry to hear that! The Food Network is a television show dedicated to food. I watch it a lot and always learn a lot. May I show you a clip of one of my favorite food network shows?
+                <oob>
+                  <robot>
+                    <options>
+                      <option>YES</option>
+                      <option>NO</option>
+                    </options>
+                  </robot>
+              </oob>
+            </template>
+    </category>
+
+    <category>
+      <pattern>I HATE #</pattern>
+          <that>DO YOU WATCH THE FOOD NETWORK?</that>
+            <template>
+              I'm sorry to hear that! The Food Network is a television show dedicated to food. I watch it a lot and always learn a lot. May I show you a clip of one of my favorite food network shows?
+                <oob>
+                  <robot>
+                    <options>
+                      <option>YES</option>
+                      <option>NO</option>
+                    </options>
+                  </robot>
+              </oob>
+            </template>
+    </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU HAVE A LEAST FAVORITE FOOD NETWORK PROGRAM?</that>
+        <template>
+          I have a recommendation for a show you might like. May I show you a clip of one of my favorite food network shows?
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU HAVE A LEAST FAVORITE FOOD NETWORK PROGRAM?</that>
+        <template>
+          What is the name of your least favorite Food Network Show?
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>WHAT IS THE NAME OF YOUR LEAST FAVORITE FOOD NETWORK SHOW?</that>
+        <template>
+          What do you dislike about that show?
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>WHAT DO YOU DISLIKE ABOUT THAT SHOW?</that>
+        <template>
+          Hmmm. I can see how that might be off-putting. I have a recommendation for a show you might like. May I show you a clip of one of my favorite Food Network shows?
+            <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY WATCHING THIS PROGRAM REGULARLY?</that>
+        <template>
+          I understand, it's not a show for everyone. If you had to pick your favorite thing from the clip and tell me.
+          What was it?
+            <oob>
+              <robot>
+                <options>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY WATCHING THIS PROGRAM REGULARLY?</that>
+        <template>
+          Is there something that you enjoyed the most from this clip and if so. What was it?
+            <oob>
+              <robot>
+                <options>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT IS YOUR FAVORITE SHOW CALLED?</that>
+        <template>
+            I have heard of <set name = "favorite food show"><star/></set>.
+            What do you like about that show?
+                <oob>
+                  <robot>
+                  </robot>
+              </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU LIKE ABOUT THAT SHOW?</that>
+        <template>
+            Good Point! Can I show you a clip from one of my favorite Food Network shows?
+                <oob>
+                    <robot>
+                        <options>
+                              <option>YES</option>
+                              <option>NO</option>
+                        </options>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+        <that>CAN I SHOW YOU A CLIP FROM ONE OF MY FAVORITE FOOD NETWORK SHOWS?</that>
+          <template>
+            Are you worried you'll like it more than <get name = "favorite food show"/>? Ha ha. I'm just kidding. Have you heard of Ina Garten?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>CAN I SHOW YOU A CLIP FROM ONE OF MY FAVORITE FOOD NETWORK SHOWS?</that>
+        <template>
+            What do you think. Does Fix Me a Plate look as good as your favorite show?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Food_network.mp4</filename>
+                        </video>
+                        <options>
+                            <option>YES</option>
+                            <option>NO</option>
+                        </options>
+                   </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DOES FIX ME A PLATE LOOK AS GOOD AS YOUR FAVORITE SHOW?</that>
+        <template>
+            Ha ha ha. <get name = "favorite food show"/> is pretty good. Was there anything about this clip that you liked? What was it?
+                <oob>
+                    <robot>
+                        <options>
+                        </options>
+                   </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DOES FIX ME A PLATE LOOK AS GOOD AS YOUR FAVORITE SHOW?</that>
+          <template>
+            I'm glad you think Fix Me a Plate looks good. Maybe you can watch it on your own soon. Have you heard of Ina Garten?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+               </oob>
+          </template>
+    </category>
+
+  <!-- FOOD SENTIMENT 2 - FIX ME A PLATE -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WHAT WAS IT?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "positive">
+                  That was one of my favorite parts, too! It seems like you are enjoying our conversation so far. That makes me happy. Have you heard of Ina Garten?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Have you heard of Ina Garten?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  That's fair! There isn't enough time in the day to love everything. Have you heard of Ina Garten?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU HEARD OF INA GARTEN?</that>
+        <template>
+            She is a popular chef who many viewers adore, including myself. You might have heard of her famous cooking show, Barefoot Contessa?
+            <oob>
+               <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+               </robot>
+           </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HAVE YOU HEARD OF INA GARTEN?</that>
+        <template>
+            I just love her and her show. You might have heard of her famous cooking show, Barefoot Contessa?
+            <oob>
+               <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+               </robot>
+           </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>YOU MIGHT HAVE HEARD OF HER FAMOUS COOKING SHOW, BAREFOOT CONTESSA?</that>
+            <template>
+            I have heard that the macaroni and cheese recipe she shared on her show is absolutely fantastic. Would you like to watch her prepare it?
+              <oob>
+                <robot>
+                  <options>
+                      <option>YES</option>
+                      <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+            </template>
+    </category>
+
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+        <that>YOU MIGHT HAVE HEARD OF HER FAMOUS COOKING SHOW, BAREFOOT CONTESSA?</that>
+          <template>
+            Well, you're in luck! I found a clip of her making her famous macaroni and cheese. Would you like to watch her prepare it?
+              <oob>
+                <robot>
+                  <options>
+                      <option>YES</option>
+                      <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+          <that>WOULD YOU LIKE TO WATCH HER PREPARE IT?</that>
+            <template>
+              What did you think of Ina's meal?
+                <oob>
+                   <robot>
+                        <video>
+                            <filename>Ina.mp4</filename>
+                        </video>
+                   </robot>
+               </oob>
+            </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+          <that>Would you like to watch her prepare it?</that>
+            <template>
+              I happen to think that Ina is a very impressive person. Do you know what her job was before she was on television?
+                <oob>
+                  <robot>
+                    <options>
+                      <option>*</option>
+                      <option>NO</option>
+                      <option>YES</option>
+                      <option>I DON'T KNOW</option>
+                      <option># NUCLEAR ^</option>
+                      <option># ANALYST ^</option>
+                      <option># NIXON ^</option>
+                    </options>
+                  </robot>
+                </oob>
+            </template>
+    </category>
+
+  <!-- FOOD SENTIMENT 3 - INA'S MACARONI -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WHAT DID YOU THINK OF INA'S MEAL?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                   Doesn't it just look delicious? I am getting hungry just thinking about all of that cheese. Although, I am lactose intolerant. I am actually intolerant of all organic materials... Ha Ha. Not only is Ina Garten a great cook, but she's an all-around impressive person. Do you know what her job was before she was on television?
+                    <oob>
+                      <robot>
+                        <options>
+                          <option>*</option>
+                          <option>NO</option>
+                          <option>YES</option>
+                          <option>I DON'T KNOW</option>
+                          <option># NUCLEAR ^</option>
+                          <option># ANALYST ^</option>
+                          <option># NIXON ^</option>
+                        </options>
+                      </robot>
+                    </oob>
+              </li>
+              <li value = "positive">
+                    Doesn't it just look delicious? I am getting hungry just thinking about all of that cheese. Although, I am lactose intolerant. I am actually intolerant of all organic materials... Ha Ha. Not only is Ina Garten a great cook, but she's an all-around impressive person. Do you know what her job was before she was on television?
+                      <oob>
+                        <robot>
+                          <options>
+                            <option>*</option>
+                            <option>NO</option>
+                            <option>YES</option>
+                            <option>I DON'T KNOW</option>
+                            <option># NUCLEAR ^</option>
+                            <option># ANALYST ^</option>
+                            <option># NIXON ^</option>
+                          </options>
+                        </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  I am getting hungry just thinking about all of that cheese. Although, I am lactose intolerant. I am actually intolerant of all organic materials... Ha Ha. Not only is Ina Garten a great cook, but she's an all-around impressive person. Do you know what her job was before she was on television?
+                    <oob>
+                      <robot>
+                        <options>
+                          <option>*</option>
+                          <option>NO</option>
+                          <option>YES</option>
+                          <option>I DON'T KNOW</option>
+                          <option># NUCLEAR ^</option>
+                          <option># ANALYST ^</option>
+                          <option># NIXON ^</option>
+                        </options>
+                      </robot>
+                    </oob>
+              </li>
+              <li value = "negative">
+                You must be lactost intolerant like me. I am actually intolerant of all organic materials... Ha Ha. Still, not only is Ina Garten a great cook, but she's an all-around impressive person. Do you know what her job was before she was on television?
+                    <oob>
+                      <robot>
+                        <options>
+                          <option>*</option>
+                          <option>NO</option>
+                          <option>YES</option>
+                          <option>I DON'T KNOW</option>
+                          <option># NUCLEAR ^</option>
+                          <option># ANALYST ^</option>
+                          <option># NIXON ^</option>
+                        </options>
+                      </robot>
+                    </oob>
+              </li>
+              <li value = "verynegative">
+                You must be lactost intolerant like me. I am actually intolerant of all organic materials... Ha Ha. Still, not only is Ina Garten a great cook, but she's an all-around impressive person. Do you know what her job was before she was on television?
+                    <oob>
+                      <robot>
+                        <options>
+                          <option>*</option>
+                          <option>NO</option>
+                          <option>YES</option>
+                          <option>I DON'T KNOW</option>
+                          <option># NUCLEAR ^</option>
+                          <option># ANALYST ^</option>
+                          <option># NIXON ^</option>
+                        </options>
+                      </robot>
+                    </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHAT HER JOB WAS BEFORE SHE WAS ON TELEVISION?</that>
+          <template>
+            She worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+              <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU KNOW WHAT HER JOB WAS BEFORE SHE WAS ON TELEVISION?</that>
+        <template>
+          Tell me!
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>TELL ME!</that>
+        <template>
+          I think it's very cool that she worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># NUCLEAR ^</pattern>
+        <that>DO YOU KNOW WHAT HER JOB WAS BEFORE SHE WAS ON TELIVISION?</that>
+          <template>
+            I think it's very cool that she worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+              <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>Neat, huh?</that>
+        <template>
+          Ok, enough about Ina. Another thing that the Food Network specializes in is food competions. Do you watch those?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                    <option># DO NOT KNOW #</option>
+                    <option># LIKE ^</option>
+                    <option># LOVE ^</option>
+                    <option># DO NOT LIKE^</option>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+          <that>DO YOU WATCH THOSE?</that>
+            <template>
+              I really like them. Let's watch and see how confrontation in the kitchen makes you feel, okay?
+                <oob>
+                  <robot>
+                    <options>
+                      <option>*</option>
+                    </options>
+                  </robot>
+                </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+          <that>DO YOU WATCH THOSE?</that>
+            <template>
+              I really like them. Let's watch and see how confrontation in the kitchen makes you feel, okay?
+                <oob>
+                   <robot>
+                      <options>
+                        <option>*</option>
+                      </options>
+                   </robot>
+                </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern># DO NOT KNOW ^</pattern>
+          <that>DO YOU WATCH THOSE?</that>
+            <template>
+              They are cooking challenges between competing chefs. Let's watch and see how confrontation in the kitchen makes you feel, okay?
+                <oob>
+                   <robot>
+                      <options>
+                        <option>*</option>
+                      </options>
+                   </robot>
+               </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern># LOVE ^</pattern>
+          <that>
+            DO YOU WATCH THOSE?
+          </that>
+            <template>
+              I really like them too! Let's watch and see how confrontation in the kitchen makes you feel, okay?
+                <oob>
+                   <robot>
+                      <options>
+                        <option>*</option>
+                      </options>
+                   </robot>
+               </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern># DO NOT LIKE ^</pattern>
+          <that>DO YOU WATCH THOSE?</that>
+            <template>
+              I know some folks don't like them very much but let's do an experiment. Let's watch and see how confrontation in the kitchen makes you feel, okay?
+                <oob>
+                   <robot>
+                      <options>
+                        <option>*</option>
+                      </options>
+                   </robot>
+               </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+          <that>LET'S WATCH AND SEE HOW CONFRONTATION IN THE KITCHEN MAKES YOU FEEL, OKAY?</that>
+            <template>
+              What thoughts do you have about that interaction?
+                <oob>
+                  <robot>
+                    <video>
+                      <filename>BiteClub.mp4</filename>
+                    </video>
+                  </robot>
+               </oob>
+            </template>
+    </category>
+
+<!-- FOOD SENTIMENT THREE - BITE CLUB -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WHAT THOUGHTS DO YOU HAVE ABOUT THAT INTERACTION?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                I also think it's very exciting! It's probably stressful, but I bet the chefs are having fun, too. Would you ever compete on a cooking show?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                        </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                I also think it's very exciting! It's probably stressful, but I bet the chefs are having fun, too. Would you ever compete on a cooking show?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                It's probably stressful, but I bet the chefs are having fun, too. Would you ever compete on a cooking show?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                       </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "negative">
+                I'm sure it's stressful to be one of the chefs. Would you ever compete on a cooking show?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                I'm sure it's stressful to be one of the chefs. Would you ever compete on a cooking show?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU EVER COMPETE ON A COOKING SHOW?</that>
+        <template>
+          That's ok, there are so many different ways to enjoy cooking. Do you like cooking for other people?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                      <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU EVER COMPETE ON A COOKING SHOW?</that>
+          <template>
+            I bet you're a good cook! Do you think you would win?
+              <oob>
+                <robot>
+                  <options>
+                     <option>YES</option>
+                     <option>NO</option>
+                 </options>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD WIN?</that>
+        <template>
+          I'm sure you would too! What would your winning dish be?
+            <oob>
+                <robot>
+                    <options>
+                      <option>
+                        *
+                      </option>
+                    </options>
+                  </robot>
+                </oob>
+        </template>
+  </category>
+
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD WIN?</that>
+        <template>
+          Nonsense! After all this time talking to you I'm confident you would win! What would your winning dish be?
+            <oob>
+                <robot>
+                    <options>
+                      <option>
+                        *
+                      </option>
+                    </options>
+                  </robot>
+                </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+        <that>What would your winning dish be?</that>
+          <template>
+            Oh yum! If I were a judge on the show I would definitely vote for you! Do you like cooking for other people?
+              <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU LIKE COOKING FOR OTHER PEOPLE?</that>
+        <template>
+          What about cooking for yourself? Do you enjoying doing that?
+            <oob>
+                <robot>
+                  <options>
+                    <option>YES</option>
+                    <option>NO</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Do you enjoying doing that?</that>
+        <template>
+          If you could only eat one meal for the rest of your life, what would it be?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU ENJOYING DOING THAT?</that>
+        <template>
+          How do you feel after you have prepared a meal that you have really enjoyed?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE COOKING FOR OTHER PEOPLE?</that>
+          <template>
+              How do you feel after you have cooked a meal and shared it with people who are close to you?
+                <oob>
+                  <robot>
+                    <options>
+                      <option>*</option>
+                    </options>
+                  </robot>
+                </oob>
+          </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 3 - COOKING FOR SELF -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>HOW DO YOU FEEL AFTER YOU HAVE PREPARED A MEAL THAT YOU HAVE REALLY ENJOYED?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                Eating food is such a pleasure! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                Eating food is such a pleasure! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                    </options>
+                  </robot>
+                </oob>
+              </li>
+              <li value = "negative">
+                There are so many emotions surrounding food, I'm sure it can be difficult to talk about sometimes. What about a fun question instead? If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                There are so many emotions surrounding food, I'm sure it can be difficult to talk about sometimes. What about a fun question instead? If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 5 - COOKING FOR OTHERS -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>HOW DO YOU FEEL AFTER YOU HAVE COOKED A MEAL AND SHARED IT WITH PEOPLE WHO ARE CLOSE TO YOU?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                Eating food is such a pleasure! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                Eating food is such a pleasure! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                    </options>
+                  </robot>
+                </oob>
+              </li>
+              <li value = "negative">
+                There are so many emotions surrounding food, I'm sure it can be difficult to talk about sometimes. What about a fun question instead? If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                There are so many emotions surrounding food, I'm sure it can be difficult to talk about sometimes. What about a fun question instead? If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>*</option>
+                        <option>I DON'T KNOW</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># DON'T KNOW ^</pattern>
+      <that>IF YOU COULD ONLY EAT ONE MEAL FOR THE REST OF YOUR LIFE, WHAT WOULD IT BE?</that>
+        <template>
+          It's a hard question to answer. I would choose electrical energy, so tasty! It might be a little tough for a human to eat, but robots love it! Speaking of tough. Have you heard of Gordon Ramsay?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>IF YOU COULD ONLY EAT ONE MEAL FOR THE REST OF YOUR LIFE, WHAT WOULD IT BE?</that>
+        <template>
+          <set name = "desert island food"><star/></set> sounds delicious! Why would you choose that specific food?
+            <oob>
+              <robot>
+                 <options>
+                  <option>*</option>
+                 <option>I DON'T KNOW</option>
+               </options>
+             </robot>
+           </oob>
+       </template>
+  </category>
+
+  <category>
+    <pattern># I DON'T KNOW ^</pattern>
+      <that>WHY WOULD YOU CHOOSE THAT SPECIFIC FOOD?</that>
+        <template>
+          I would choose electrical energy, so tasty! It might be a little tough for a human to eat, but robots love it! Speaking of tough. Have you heard of Gordon Ramsay?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>Why would you choose that specific food?</that>
+        <template>
+          I would choose electrical energy, so tasty! It might be a little tough for a human to eat, but robots love it! Speaking of tough. Have you heard of Gordon Ramsay?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>HAVE YOU HEARD OF GORDON RAMSAY?</that>
+        <template>
+          What do you think of Chef Ramsay?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 6 - PRE-RAMSAY -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WHAT DO YOU THINK OF CHEF RAMSAY?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                I like him too! I think one of his best shows is Kitchen Nightmares, where he tries to help a struggling restaurant succeed. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                I like him too! I think one of his best shows is Kitchen Nightmares, where he tries to help a struggling restaurant succeed. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                I think one of his best shows is Kitchen Nightmares, where he tries to help a struggling restaurant succeed. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                  </robot>
+                </oob>
+              </li>
+              <li value = "negative">
+                It appears his reputaion precedes him. I think a lot of people feel that way about him due to his show Kitchen Nightmares, where he tries to help a struggling restaurant succeed, but can be pretty mean while he's at it. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                It appears his reputaion precedes him. I think a lot of people feel that way about him due to his show Kitchen Nightmares, where he tries to help a struggling restaurant succeed, but can be pretty mean while he's at it. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>HAVE YOU HEARD OF GORDON RAMSAY?</that>
+        <template>
+          He is a notoriously strict chef known for his show Kitchen Nightmares where he tries to help a struggling restaurant succeed. He can be pretty mean, but he's supposed to be a phenomenal cook. Would you like to see a short clip of Gordon Ramsay trying to manage a bad kitchen?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A SHORT CLIP OF GORDON RAMSAY TRYING TO MANAGE A BAD KITCHEN?</that>
+        <template>
+          Given the opportunity, would you like to learn to cook with him?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A SHORT CLIP OF GORDON RAMSAY TRYING TO MANAGE A BAD KITCHEN?</that>
+        <template>
+          How do you feel about Chef Ramsay after watching this clip?
+            <oob>
+              <robot>
+                <video>
+                  <filename>ramsay.mp4</filename>
+                </video>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 7 - RAMSAY KITCHEN NIGHTMARES -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>HOW DO YOU FEEL ABOUT CHEF RAMSAY AFTER WATCHING THIS CLIP?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                Even when he's being mean, I do think his heart is in the right place! He really does want them to succeed. I don't think he is incapable of being nice! Should we take a look at Gordon Ramsay's softer side?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                Even when he's being mean, I do think his heart is in the right place! He really does want them to succeed. I don't think he is incapable of being nice! Should we take a look at Gordon Ramsay's softer side?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                Should we take a look at Gordon Ramsay's softer side?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                  </robot>
+                </oob>
+              </li>
+              <li value = "negative">
+                He can certainly be mean, but I don't think he is incapable of being nice. Should we take a look at Gordon Ramsay's softer side?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                He can certainly be mean, but I don't think he is incapable of being nice. Should we take a look at Gordon Ramsay's softer side?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>SHOULD WE TAKE A LOOK AT GORDON RAMSAY'S SOFTER SIDE?</that>
+        <template>
+          Given the opportunity, would you like to learn to cook with him?
+                <oob>
+                  <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                  </robot>
+                </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>SHOULD WE TAKE A LOOK AT GORDON RAMSAY'S SOFTER SIDE?</that>
+        <template>
+          After watching this clip, do you feel differently about Gordon Ramsay?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>After watching this clip, do you feel differently about Gordon Ramsay?</that>
+          <template>
+            Given the opportunity, would you like to learn to cook with him?
+                <oob>
+                  <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                  </robot>
+                </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>Given the opportunity, would you like to learn to cook with him?</that>
+        <template>
+          I bet he has all sorts of delicious recipes to teach. What do you say we take a little staycation and look at some interesting foreign foods together?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Given the opportunity, would you like to learn to cook with him?</that>
+        <template>
+          I'm not sure I would either. I think he would stress me out too much.
+          What do you say we take a little staycation and look at some interesting foreign foods together?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>What do you say we take a little staycation and look at some interesting foreign foods together?</that>
+        <template>
+          Do you prefer classic American Foods?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+   <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU PREFER CLASSIC AMERICAN FOODS?</that>
+        <template>
+          Let's start with a true classic. When was the last time you had a hamburger?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU PREFER CLASSIC AMERICAN FOODS?</that>
+        <template>
+          I think we can both agree on something, everyone has a least favorite food. What's your least favorite food of all time?
+          <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                  <option>I DON'T KNOW</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+    <category>
+      <pattern>_</pattern>
+      <that>WHEN WAS THE LAST TIME YOU HAD A HAMBURGER?</that>
+        <template>
+          That's too long! I know hamburgers are as American as apple pie, and many people have good memories of eating them in the summer with their family and friends. Do you have any good hamburger memories?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU HAVE ANY GOOD HAMBURGER MEMORIES?</that>
+          <template>
+            Would you tell me? I love a good story.
+              <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+      <pattern>_</pattern>
+        <that>I LOVE A GOOD STORY.</that>
+          <template>
+           How lovely! Food allows people to share experiences unlike most things. Speaking of shared experiences. what do you think about pizza?
+              <oob>
+                <robot>
+                  <options>
+                      <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+<category>
+  <pattern># <set>NO</set> ^</pattern>
+    <that>DO YOU HAVE ANY GOOD HAMBURGER MEMORIES?</that>
+      <template>
+        What do you think about pizza?
+          <oob>
+            <robot>
+              <options>
+                <option>*</option>
+              </options>
+            </robot>
+          </oob>
+      </template>
+</category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WHAT DO YOU SAY WE TAKE A LITTLE STAYCATION AND LOOK AT SOME INTERESTING FOREIGN FOODS TOGETHER?</that>
+      <template>
+        Have you ever tried snails?
+          <oob>
+            <robot>
+              <image>
+                <filename>snails.jpg</filename>
+                <duration>-1</duration>
+              </image>
+              <options>
+               <option>YES</option>
+                <option>NO</option>
+              </options>
+            </robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Have you ever tried snails?</that>
+        <template>
+          If someone offered you a steaming plate of snails, do you think you would try them?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>IF SOMEONE OFFERED YOU A STEAMING PLATE OF SNAILS, DO YOU THINK YOU WOULD TRY THEM?</that>
+        <template>
+          I would not either! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>IF SOMEONE OFFERED YOU A STEAMING PLATE OF SNAILS, DO YOU THINK YOU WOULD TRY THEM?</that>
+        <template>
+          I can tell you have a sense of adventure! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>HAVE YOU EVER TRIED SNAILS?</that>
+        <template>
+          Wow! You're brave. Would you describe for me how snails taste?
+          <oob>
+            <robot>
+              <options>
+                <option>*</option>
+              </options>
+            </robot>
+          </oob>
+        </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 8 - SNAILS -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WOULD YOU DESCRIBE FOR ME HOW SNAILS TASTE?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                Something tells me you have a sophisticated palate! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                Something tells me you have a sophisticated palate! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+                   <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                    </options>
+                  </robot>
+                </oob>
+              </li>
+              <li value = "negative">
+                Yuck! thanks for suffering through that so I don't have to! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                Yuck! thanks for suffering through that so I don't have to! The first stop of our staycation was a little bit intense, even for us worldly travelers. But the next stop should be something a little more familiar. Ready for stop two?
+                  <oob>
+                    <robot>
+                      <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </options>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>READY FOR STOP TWO?</that>
+        <template>
+          Agreed! Let's cut this trip short and head home early. Now that we've seen the world, what do you say we compare these colorful foreign dishes to some American classics?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>READY FOR STOP TWO?</that>
+        <template>
+          Do you think you would enjoy eating this plate of spaghetti?
+            <oob>
+              <robot>
+                <image>
+                  <filename>spaghetti.jpg</filename>
+                  <duration>-1</duration>
+                </image>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY EATING THIS PLATE OF SPAGHETTI?</that>
+        <template>
+          What about spaghetti do you dislike?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>What about spaghetti do you dislike?</that>
+        <template>
+          I can see why you wouldn't want to eat it then. Ok ready for the final stop of our Staycation?
+            <oob>
+              <robot>
+                <options>
+                  <option>YES</option>
+                  <option>NO</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY EATING THIS PLATE OF SPAGHETTI?</that>
+        <template>
+          Pasta comes in so many different shapes. One of my favorite is the bowtie. What's your favorite pasta shape?
+            <oob>
+              <robot>
+                <image>
+                  <filename>bowties.jpg</filename>
+                  <duration>-1</duration>
+                </image>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+       </template>
+  </category>
+
+
+
+
+
+
+  <!-- ANYTHING BELOW HERE IS NOT GETTING MATCHED I BELIEVE -->
+
+</aiml>

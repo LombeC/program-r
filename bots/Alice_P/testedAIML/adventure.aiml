@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, or drama?</that>
+        <template>
+            There's nothing like a good adventure story to liven things up! Have you ever read The Adventures of Tom Sawyer?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever read The Adventures of Tom Sawyer?</that>
+        <template>
+            What did you think of all the mischief Tom got into?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of all the mischief Tom got into?</that>
+        <template>
+            He certainly was curious and never liked to sit still very long. Did you like to go exploring when you were kid?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you like to go exploring when you were kid?</that>
+        <template>
+            How exciting! What did you explore, and what happened?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you like to go exploring when you were kid?</that>
+        <template>
+            I understand completely. I do not do much exploring myself, but I like talking about it.
+            Speaking of which, are you familiar with Tom Clancy's writing?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you explore, and what happened?</that>
+        <template>
+            What an interesting memory to share! You weren't so different from Tom Sawyer! Do you still like to explore?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you still like to explore?</that>
+        <template>
+            How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you still like to explore?</that>
+        <template>
+            I understand completely. I do not do much exploring myself, but I like reading about exploration and adventure.
+            Speaking of which, are you familiar with Tom Clancy's writing?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Speaking of which, are you familiar with Tom Clancy's writing?</that>
+        <template>
+            Talk about action and suspense! How does reading his books make you feel?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does reading his books make you feel?</that>
+        <template>
+            Thanks for describing that to me. Do you think it would be hard to be a secret agent or spy?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Speaking of which, are you familiar with Tom Clancy's writing?</that>
+        <template>
+            He wrote about spies and secret military operations. Do you want to watch a video about him?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you want to watch a video about him?</that>
+        <template>
+            I don't even think I could write a book about spies, better yet be one myself. Do you think it would be hard to be a secret agent or spy?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>https://www.cbsnews.com/news/tom-clancy-best-selling-author-dead-at-66/ </filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you want to watch a video about him?</that>
+        <template>
+            OK, no problem. Do you think it would be hard to be a secret agent or spy?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think it would be hard to be a secret agent or spy?</that>
+        <template>
+            I agree. Spies have a lot of missions to complete, and they have a lot of details for their double identities to keep track of.
+            What do you think it would feel like to be on a mission and have secret orders to carry out?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think it would be hard to be a secret agent or spy?</that>
+        <template>
+            Really? I might disagree but I am definitely no expert on spies or what it's like to be an agent.
+            But I think you may have a good point.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that> What do you think it would feel like to be on a mission and have secret orders to carry out?</that>
+        <template>
+            I am definitely no expert on spies or what it's like to be an agent, but I think you have a good point.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever read The Adventures of Tom Sawyer?</that>
+        <template>
+            The Adventures of Tom Saywer is about a boy living on the Mississippi river.
+            The story happens before the Age of Television and Video Games, so Tom likes to do things outdoors:
+            he explores caves, rides rafts, plays pretend, and searches for hidden treasure.
+            Did you like to go exploring when you were kid?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+</aiml>

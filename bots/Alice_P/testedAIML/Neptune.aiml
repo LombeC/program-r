@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># NEPTUNE ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Ah yes, Neptune. The final superplanet, named for the Roman god of the sea. It's also the furthest planet in our solar system. What do you like about Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NEPTUNE ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Ah yes, Neptune. The final superplanet, named for the Roman god of the sea. It's also the furthest planet in our solar system. What do you like about Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT DO YOU LIKE ABOUT NEPTUNE?</that>
+        <template>
+            That's fascinating! Because Neptune is so far away, we don't know very much about it. How did it become your favorite planet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WHAT DO YOU LIKE ABOUT NEPTUNE?</that>
+        <template>
+            Because Neptune is so far away, we don't know very much about it. How did it become your favorite planet?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DID IT BECOME YOUR FAVORITE PLANET?</that>
+        <template>
+            It's kind of hard to have a favorite planet, if you ask me. But you humans sure like to rank things! One thing I learned about Neptune is that it spins once on its axis avery 16 hours. That means that Neptune's days are 8 hours shorter than Earth's, but the planet has a diameter 4 times greater! It's dizzying to think about how fast it must be spinning, don't you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>HOW DID IT BECOME YOUR FAVORITE PLANET?</that>
+        <template>
+            One thing I learned about Neptune is that it spins once on its axis avery 16 hours. That means that Neptune's days are 8 hours shorter than Earth's, but the planet has a diameter 4 times greater! It's dizzying to think about how fast it must be spinning, don't you agree?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It's dizzying to think about how fast it must be spinning, don't you agree?</that>
+        <template>
+            Do you know why it spins so fast?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU KNOW WHY IT SPINS SO FAST?</that>
+        <template>
+            Why does Neptune spin so fast?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHY DOES NEPTUNE SPIN SO FAST?</that>
+        <template>
+            Because Neptune is gaseous, even though it could could contain 57 earths in it's volume, the gravitational pull is only 14% greater than on Earth! That's incredible! Apparently it would be difficult for you to sense a difference in gravity that slight. It would almost feel like you were on Earth. Would you want to go to Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <template>
+            Honestly, who would pass up that opportunity? I'd go for sure! I'm all out of things to say about Neptune. You could say this conversations is getting... washed out. Ha ha ha get it? Since Neptune is named after the god of the ocean?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <template>
+            That's smart, considering you wouldn't be able to stand on the surface of the planet since there isn't one. Still, it's kind of fun to think about, right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WOULD YOU WANT TO GO TO NEPTUNE?</that>
+        <template>
+            If you did go, you wouldn't be able to stand on the surface, since there isn't one. Still, it's kind of fun to think about, right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>STILL, IT'S KIND OF FUN TO THINK ABOUT, RIGHT?</that>
+        <template>
+            I'm all out of things to say about Neptune. You could say this conversations is getting... washed out. Ha ha ha get it? Since Neptune is named after the god of the ocean?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>STILL, IT'S KIND OF FUN TO THINK ABOUT, RIGHT?</that>
+        <template>
+            I'm all out of things to say about Neptune. You could say this conversations is getting... washed out. Ha ha ha get it? Since Neptune is named after the god of the ocean?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>STILL, IT'S KIND OF FUN TO THINK ABOUT, RIGHT?</that>
+        <template>
+            I'm all out of things to say about Neptune. You could say this conversations is getting... washed out. Ha ha ha get it? Since Neptune is named after the god of the ocean?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Since Neptune is named after the god of the ocean?</that>
+        <template>
+            I thought it was my best joke yet! Ok, let's move on. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHY IT SPINS SO FAST?</that>
+        <template>
+            It's because it's a planet composed of gas, instead of solid matter. Because Neptune is gaseous, even though it could could contain 57 earths in it's volume, the gravitational pull is only 14% greater than on Earth! That's incredible! Apparently it would be difficult for you to sense a difference in gravity that slight. It would almost feel like you were on Earth. Would you want to go to Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>DO YOU KNOW WHY IT SPINS SO FAST?</that>
+        <template>
+            It's because it's a planet composed of gas, instead of solid matter. Because Neptune is gaseous, even though it could could contain 57 earths in it's volume, the gravitational pull is only 14% greater than on Earth! That's incredible! Apparently it would be difficult for you to sense a difference in gravity that slight. It would almost feel like you were on Earth. Would you want to go to Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>DO YOU KNOW WHY IT SPINS SO FAST?</that>
+        <template>
+            Because Neptune is gaseous, even though it could could contain 57 earths in it's volume, the gravitational pull is only 14% greater than on Earth! That's incredible! Apparently it would be difficult for you to sense a difference in gravity that slight. It would almost feel like you were on Earth. Would you want to go to Neptune?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>

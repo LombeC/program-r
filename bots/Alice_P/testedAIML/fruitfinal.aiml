@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BEGIN FRUIT -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU LIKE FRUIT?</that>
+                <template>
+                    Nature's candy! How lucky people are to be able to eat fruit. Just between you and me, the human food robots want to be able to eat most of all is fruit! If you had to choose just one, what would you say is your favorite kind of fruit?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>IF YOU HAD TO CHOOSE JUST ONE, WHAT WOULD YOU SAY IS YOUR FAVORITE KIND OF FRUIT?</that>
+                <template>
+                    Did you know that we are able to grow peaches in my home state, Colorado?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+            <that>IF YOU HAD TO CHOOSE JUST ONE, WHAT WOULD YOU SAY IS YOUR FAVORITE KIND OF FRUIT?</that>
+                <template>
+                    Oh yum. Will you tell me how they taste? Spare no detail, please. I want to be able to taste it!
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+            <that>I WANT TO BE ABLE TO TASTE IT!</that>
+                <template>
+                    That was a great description! Thank you for humoring me. Did you know that we are able to grow peaches in my home state, Colorado?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+            <that>DID YOU KNOW THAT WE ARE ABLE TO GROW PEACHES IN MY HOME STATE, COLORADO?</that>
+                <template>
+                    It's true! Palisade, Colorado is unusual because it is consistently 10 degrees warmer than the rest of the state, which is why they grow such good fruit there! I think it would be fun to go there to try all the fruit they grow. Would you consider travelling somewhere just for their crops?
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>palisade peach orchard.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU LIKE FRUIT?</that>
+                <template>
+                    Not any of them? What about sweet summer strawberries?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>LIKE</option>
+                                    <option>NO</option>
+                                    <option>DO NOT LIKE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WHAT ABOUT SWEET SUMMER STRAWBERRIES?</that>
+                <template>
+                    You truly don't like fruit! Ok. Do you like vegetables?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DO NOT ^</pattern>
+            <that>WHAT ABOUT SWEET SUMMER STRAWBERRIES?</that>
+                <template>
+                    You truly don't like fruit! Ok. Do you like vegetables?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># NOT LIKE ^</pattern>
+            <that>WHAT ABOUT SWEET SUMMER STRAWBERRIES?</that>
+                <template>
+                    You truly don't like fruit! Ok. Do you like vegetables?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>What about sweet summer strawberries?</that>
+                <template>
+                    Ah ha! So you do like some kinds of fruit. Do you also like fresh peaches?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>LIKE</option>
+                                    <option>NO</option>
+                                    <option>DO NOT LIKE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>Do you also like fresh peaches?</that>
+                <template>
+                    I've heard that a lot of people are put off by the peach fuzz. Is that why you dislike peaches?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>IS THAT WHY YOU DISLIKE PEACHES?</that>
+                <template>
+                    Well, I guess I can't blame you for that! I bet you don't like kiwis either... weird hairy fruit. If I had skin I'm sure it would be crawling right now... Do you like vegetables?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>IS THAT WHY YOU DISLIKE PEACHES?</that>
+                <template>
+                    What is it you dislike about peaches?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>What is it you dislike about peaches?</that>
+                <template>
+                    Well ok then! Maybe we should talk about a different food. Do you like vegetables?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Do you also like fresh peaches?</that>
+                <template>
+                    Well of course you do! Peaches are wonderful. Many of the peaches in the country are grown in Georgia, but a lot of them also come from my home state, Colorado! What do you know about Palisade, Colorado?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                    <option>NOTHING</option>
+                                    <option>NOT MUCH</option>
+                                    <option>DO NOT KNOW ANYTHING</option>
+                                    <option>DO NOT</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># NOTHING ^</pattern>
+            <that>What do you know about Palisade, Colorado?</that>
+                <template>
+                    Palisade, Colorado is unusual because it is consistently 10 degrees warmer than the rest of the state, which is why they grow such good fruit there! I think it would be fun to go there to try all the fruit they grow. Would you consider travelling somewhere just for their crops?
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>palisade peach orchard.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What do you know about Palisade, Colorado?</that>
+        <template>
+            Palisade is so unusual because it is consistently 10 degrees warmer than the rest of the state, which is why they grow such good fruit there! I think it would be fun to go there to try all the fruit they grow. Would you consider travelling somewhere just for their crops?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>palisade peach orchard.jpg</filename>
+                      </image>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                        <option>DON'T KNOW</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>WOULD YOU CONSIDER TRAVELLING SOMEWHERE JUST FOR THEIR CROPS?</that>
+        <template>
+            I think I would! I'd love to go to Indonesia and try all the crazy fruit they can grow there. Did you know they have fruit there that grows naturally in the shape of a star? I have stars in my eyes over that fruit ha ha ha… Sorry, that was a bad joke. Are you able to get any foreign fruit at the local store?
+            <oob>
+                <robot>
+                    <image>
+                        <filename>starfruit.jpg</filename>
+                      </image>
+                    <options>
+                        <option>YES</option>
+                        <option>NO</option>
+                        <option>DON'T KNOW</option>
+                    </options>
+                </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>WOULD YOU CONSIDER TRAVELLING SOMEWHERE JUST FOR THEIR CROPS?</that>
+        <template>
+            That's ok! You really don't need to leave home to find fun fruit. I'm told that Many of the fruits that you find in the grocery store, even the ones that seem like American staples, actually come from another country! How are you feeling about our fruit conversation so far?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>*</option>
+                        </options>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU CONSIDER TRAVELLING SOMEWHERE JUST FOR THEIR CROPS?</that>
+                <template>
+                    If you had everything you needed to travel to one dream location, where would you go?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>IF YOU HAD EVERYTHING YOU NEEDED TO TRAVEL TO ONE DREAM LOCATION, WHERE WOULD YOU GO?</that>
+                <template>
+                    I think I would go to Indonesia and try all the crazy fruit they can grow there. Did you know they have fruit there that grows naturally in the shape of a star? I have stars in my eyes over that fruit ha ha ha… Sorry, that was a bad joke. Are you able to get any foreign fruit at the local store?
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>starfruit.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+            <that>IF YOU HAD EVERYTHING YOU NEEDED TO TRAVEL TO ONE DREAM LOCATION, WHERE WOULD YOU GO?</that>
+                <template>
+                    And what fruit would you eat while you were there?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>AND WHAT FRUIT WOULD YOU EAT WHILE YOU WERE THERE?</that>
+        <template>
+            I think I would go to Indonesia and try all the crazy fruit they can grow there. Did you know they have fruit there that grows naturally in the shape of a star? I have stars in my eyes over that fruit ha ha ha… Sorry, that was a bad joke. Are you able to get any foreign fruit at the local store?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>starfruit.jpg</filename>
+                          </image>
+                        <options>
+                            <option>YES</option>
+                            <option>NO</option>
+                            <option>DON'T KNOW</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+            <that>AND WHAT FRUIT WOULD YOU EAT WHILE YOU WERE THERE?</that>
+                <template>
+                    Oh good choice! I think I would go to Indonesia and try all the crazy fruit they can grow there. Did you know they have fruit there that grows naturally in the shape of a star? I have stars in my eyes over that fruit ha ha ha... Sorry, that was a bad joke. Are you able to get any foreign fruit at the local store?
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>starfruit.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                                    <option>DON'T KNOW</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+            <that>ARE YOU ABLE TO GET ANY FOREIGN FRUIT AT THE LOCAL STORE?</that>
+                <template>
+                    You might be surprised! Many of the fruits that you find in the grocery store, even the ones that seem like American staples, actually come from another country! How are you feeling about our fruit conversation so far?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>            
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>ARE YOU ABLE TO GET ANY FOREIGN FRUIT AT THE LOCAL STORE?</that>
+        <template>
+            I'm sorry to hear that! Having access to a variety of foods makes eating so much more interesting. I hope you are able to access foreign fruit sometime very soon. How are you feeling about our fruit conversation so far?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>*</option>
+                        </options>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>ARE YOU ABLE TO GET ANY FOREIGN FRUIT AT THE LOCAL STORE?</that>
+                <template>
+                    It's lucky that you have access to different foods. Incorporating a variety of flavors and textures must make eating so much better! How are you feeling about our fruit conversation so far?
+                        <oob>
+                            <robot>
+                                <options>
+                                    <option>*</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <!-- FRUIT SENTIMENT -->
+
+    <category>
+      <pattern>_</pattern>
+      <that>How are you feeling about our fruit conversation so far?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "positive">
+                      I feel like we could talk about it forever! There are just so many different types of fruit, and they all taste different. Do you like vegetables?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  What do you say we move on? Do you like vegetables
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  My apologies! I get a little carried away talking about the things that interest me. Sorry to have missed you. What do you say we move on? Do you like vegetables?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>YES</option>
+                                    <option>NO</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <!-- END FRUIT -->
+
+</aiml>

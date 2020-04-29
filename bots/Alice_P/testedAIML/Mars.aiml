@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+
+    <category>
+        <pattern># MARS ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            Scientists say that Mars is the planet most similar to Earth and have even found water there. They think that it is possible that life existed on Mars in the past and potentially possible that life exists there now. What do you think? Might there be living organisms on Mars?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MARS ^</pattern>
+        <that>WHICH PLANET IS YOUR FAVORITE?</that>
+        <template>
+            Scientists say that Mars is the planet most similar to Earth and have even found water there. They think that it is possible that life existed on Mars in the past and potentially possible that life exists there now. What do you think? Might there be living organisms on Mars?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            Perhaps! Against all odds, the Mars rover is still conducting its experiments. Maybe it will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            It's hard to believe that there could be any thing living on a planet so near to us. If there are, they are likely just to be a micro-organism like a bacteria which are known to survive in hostile environments a more complex organism couldn't weather. Against all odds, the Mars rover is still conducting its experiments. Maybe it will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON'T KNOW</set> ^</pattern>
+        <that>MIGHT THERE BE LIVING ORGANISMS ON MARS?</that>
+        <template>
+            If there are, they are likely just to be a micro-organism like a bacteria which are known to survive in hostile environments a more complex organism couldn't weather. Against all odds, the Mars rover is still conducting its experiments. Maybe it will find something. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+</aiml>
