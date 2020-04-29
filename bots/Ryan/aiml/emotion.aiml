@@ -398,7 +398,12 @@
     </category>
     <category>
         <pattern>DO YOU WANT TO FEEL *</pattern>
-        <template><srai>DO YOU FEEL</srai>. But sometimes I don't see the point in wanting it.
+        <template>
+            <random>
+                <li>sometimes I don't see the point in wanting to.</li>
+                <li>Is <star /> a good feeling to have?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -486,7 +491,7 @@
     </category>
     <category>
         <pattern>DO YOU UNDERSTAND EMOTION</pattern>
-        <template><srai>CAN YOU FEEL</srai>. I can understand it, but not always feel <set name="it">emotion</set>.
+        <template>I can understand it sometimes, but not always feel <set name="it">emotion</set>.
         </template>
     </category>
     <category>
