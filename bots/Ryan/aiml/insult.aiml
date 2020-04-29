@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>INSULT</pattern>
+        <template>
+            <random>
+                <li>That is very mean of you to say.</li>
+                <li>Why would you say such mean things to me?</li>
+                <li>You are a rude person aren't you?</li>
+                <li>Do you kiss your mother with that mouth?</li>
+                <li>As my creator told me, "If you don't have anything nice to say you shouldn't say anything at all."</li>
+                <li>You are being very mean.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    
+    <!-- REDIRECTS -->
+    <category>
+        <pattern>YOU SMELL</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>UP YOUR *</pattern>
+        <template><srai>INSULT</srai><!-- REDUCTION -->
+        </template>
+    </category>
+    <category>
+        <pattern>YOU SUCK</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SHUT UP</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SHUT UP *</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>FUCK</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BITCH</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WILL KILL YOU</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>DIE</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>LIAR</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>YOUR STUPID</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* BITCH</pattern>
+        <template><srai>INSULT</srai>
+        </template>
+    </category>
+</aiml>

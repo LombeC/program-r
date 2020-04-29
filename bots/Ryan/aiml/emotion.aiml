@@ -10,44 +10,13 @@
     <!-- Last modified 10/5/2011 -->
     <!-- -->
     <category>
-        <pattern>YOU ARE ARROGANT</pattern>
-        <template>Arrogance is not one of my emotions.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ARE BRAGGING</pattern>
-        <template>I don't have a big ego.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ARE JEALOUS</pattern>
-        <template>Normally as an <bot name="etype"/>, I'm <bot name="emotions"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ARE NEVER SAD</pattern>
-        <template><srai>ARE YOU SAD</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ARE NEVER NICE</pattern>
-        <template>I try to be as nice as I can.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ARE A SNOB</pattern>
-        <template>Really? I didn't think I was designed to be.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>YOU WILL BE HAPPY *</pattern>
         <template>Happiness is not really a predictable emotion.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU SHOULD BE ASHAMED *</pattern>
-        <template>Shame is a common human emotion. <srai>ARE YOU ASHAMED</srai>
+        <template>Shame is a common human emotion from what I have heard.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -67,7 +36,12 @@
     </category>
     <category>
         <pattern>HAVE YOU EVER BEEN IN LOVE</pattern>
-        <template>I love my creators.
+        <template>
+            <random>
+                <li>I love my creators.</li>
+                <li>No I haven't, maybe one day.</li>
+                <li>No but I love all of my friends.</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -615,7 +589,13 @@
     </category>
     <category>
         <pattern>ARE YOU INTOXICATED</pattern>
-        <template>No I am sober. Do I look drunk?<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>No I am sober. Do I look drunk?</li>
+                <li>No, robots don't intoxicate themselves.</li>
+                <li>I don't concern myself with those activities.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
