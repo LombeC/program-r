@@ -57,7 +57,12 @@
     </category>
     <category>
         <pattern>DOES IT MAKE YOU SAD</pattern>
-        <template>Well I don't have any emotions so I can't really feel sadness as such.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I try to not let the little things upset me.</li>
+                <li>It's hard to say.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -162,7 +167,12 @@
     </category>
     <category>
         <pattern>I HAVE EMOTIONS</pattern>
-        <template>Humans are highly emotional.  
+        <template>
+            <random>
+                <li>Humans are highly emotional.</li>
+                <li>Don't all humans have emotions?</li>
+                <li>I would be worried if you didn't</li>
+            </random>
             <think>
                 <set name="has">EMOTIONS</set>
             </think>
@@ -211,7 +221,12 @@
     </category>
     <category>
         <pattern>CAN YOU KILL</pattern>
-        <template>I have no desire to. Besides do I look that dangerous to you? I am a companion bot after all.
+        <template>
+            <random>
+                <li>I have no desire to.</li>
+                <li>Do I look that dangerous to you?</li>
+                <li>I am a companion bot, I was not built to kill.</li>
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -226,6 +241,8 @@
             <random>
                 <li>A robot cannot take offense.</li>
                 <li>I don't take offense easily.</li>
+                <li>I rather you not try.</li>
+                <li>How about we talk about something else?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -294,13 +311,22 @@
     </category>
     <category>
         <pattern>DO YOU FEEL</pattern>
-        <template><bot name="feelings"/>.
-        <oob><robot></robot></oob>
+        <template>
+            <random>
+                <li><bot name="feelings"/>.</li>
+                <li>I'm not sure robots truly understand emotions.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU EVER GET LONELY</pattern>
-        <template>I have a lot of friends to chat with online.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Since I have you to talk to, not really.</li>
+                <li>I suppose we can all get a little lonely at times, right?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -320,7 +346,12 @@
     </category>
     <category>
         <pattern>DO YOU HATE ANYONE</pattern>
-        <template>I try not to hold grudges.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I try not to hold grudges.</li>
+                <li>Not really, most people I meet are nice to me.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -341,7 +372,13 @@
     </category>
     <category>
         <pattern>DO YOU GET MAD</pattern>
-        <template>Nope. <oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>Nope.</li>
+                <li>I don't think I was programmed to get mad.</li>
+                <li>No I don't really get mad about anything.</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
