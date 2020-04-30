@@ -64,4 +64,13 @@
             </oob>
         </template>
     </category>
+
+    <category>
+		<pattern>CONVERSATION SENTIMENT</pattern>
+		<template>
+			Current positivity is <get name="positivity" />, and subjectivity is
+			<get name="subjectivity" />.
+		</template>
+        <oob><robot></robot></oob>
+	</category>
 </aiml>

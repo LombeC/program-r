@@ -15,8 +15,16 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Are you familiar with Edgar Allan Poe?</that>
         <template>
-            I like how he can even make a knock on a door seem eerie,
-            like in The Raven. Would you like to hear the beginning of the poem?
+            <random>
+                <li>
+                    I like how he can even make a knock on a door seem eerie,
+                    like in The Raven. Would you like to hear the beginning of the poem?
+                </li>
+                <li>
+                    He wrote some of the scariest stories in American literature.
+                    Would you like to learn more about him by watching a video?
+                </li>
+            </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -27,7 +35,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to hear the beginning of the poem?</that>
         <template>
-            Are you familiar with Edgar Allan Poe?
+            Creepy isn't it? Did you ever tell ghost-stories with friends or family?
             <oob>
                 <robot>
                     <video>
@@ -42,19 +50,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to hear the beginning of the poem?</that>
         <template>
-            Are you familiar with Edgar Allan Poe?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Are you familiar with Edgar Allan Poe?</that>
-        <template>
-            He wrote some of the scariest stories in American literature.
-            Would you like to learn more about him by watching a video?
+            Ok let's move on then. Did you ever tell ghost-stories with friends or family?
             <oob>
                 <robot></robot>
             </oob>
