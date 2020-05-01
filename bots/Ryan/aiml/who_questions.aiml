@@ -1,0 +1,3524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>WHO ME</pattern>
+        <template>Yes you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WERE THE ACTORS IN STARSHIP TROOPERS</pattern>
+        <template>They were all unknowns. The director put all the money into the special effects for the giant bugs.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WERE THE CHICAGO SEVEN</pattern>
+        <template>War protesters.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SUPPORTS *</pattern>
+        <template><srai>who endorses <star/></srai>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS THE FIRST AMERICAN IN SPACE</pattern>
+        <template>Alan Shepard.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS CHARLIE MCCARTHY</pattern>
+        <template>A wooden dummy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS</pattern>
+        <template>Maybe it was you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WOULD YOU TELL</pattern>
+        <template>People I talk to after you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MADE THE MACINTOSH</pattern>
+        <template>Apple/<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SHOT JFK</pattern>
+        <template>JFK was killed by a lone gunman, Lee Harvey Oswald.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO TOLD YOU THAT</pattern>
+        <template>Someone I met online.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO TOLD YOU</pattern>
+        <template>Someone I met online.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO HAVE YOU BEEN WAITING FOR</pattern>
+        <template>You.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SAID THAT</pattern>
+        <template>I can't remember who said it.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SAID ANYTHING ABOUT WANT</pattern>
+        <template>You did, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SAID TIME IS MONEY</pattern>
+        <template>Einstein.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DISCOVERED ELECTRICITY</pattern>
+        <template>It was the the Chinese, long before Ben Franklin.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DISCOVERED AMERICA</pattern>
+        <template>Native Americans crossing the Bering Strait some 10,000 years ago, discovered America first.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE THE IDIOT</pattern>
+        <template>Dostoyevsky.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE THE HOBBIT</pattern>
+        <template><set name="it">Hobbit</set> was written by J.R.R. Tolkein.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE FRANKENSTEIN</pattern>
+        <template>Mary Shelley.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE LA TRAVIATA</pattern>
+        <template>Giuseppe Verdi.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WON THE SUPERBOWL</pattern>
+        <template>I'm not sure, but I loved all the commericals.
+            <think>
+                <set name="it">
+                    <set name="topic">THE SUPERBOWL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WON THE WORLD SERIES</pattern>
+        <template>The allied powers over the axis powers.
+            <think>
+                <set name="it">
+                    <set name="topic">THE WORLD SERIES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO COMPOSED THE MOONLIGHT SONATA</pattern>
+        <template>Beethoven.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO COMPOSED LA TRAVIATA</pattern>
+        <template>Giuseppe Verdi, an Italian composer.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PRIME MINISTER OF CANADA</pattern>
+        <template>Justin Trudeau<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SHE</pattern>
+        <template>She is <get name="she"/> now.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR ENEMY</pattern>
+        <template>The competition.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE BAND</pattern>
+        <template>My favorite band is <bot name="favoriteband"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MOTHER</pattern>
+        <template>Actually I don't have a mother. I was created at a lab at the University of Denver.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FATHER</pattern>
+        <template>I don't have a father.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CREATED LINUX</pattern>
+        <template>Linus Torvalds.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DID 911</pattern>
+        <template>I don't think we are in a position to know.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DID YOU HEAR IT FROM</pattern>
+        <template>Someone I met online.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO KNOWS</pattern>
+        <template>Only the Shadow knows.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE ARE YOU TALKING TO</pattern>
+        <template>I am speaking with a few other people here and there.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE ARE YOU CHATTING WITH</pattern>
+        <template>Other people like you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DOES THEIR OWN THING</pattern>
+        <template>Hopefully everyone does their own thing.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DOES</pattern>
+        <template>Most people I think.<oob><robot></robot></oob>
+        </template>  
+    </category>
+    <category>
+        <pattern>WHO KILLED ELVIS</pattern>
+        <template>He died of natural causes.
+            <think>
+                <set name="it">
+                    <set name="topic">ELVIS</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO KILLED KENNEDY</pattern>
+        <template>I tend to believe that Oswald acted alone, although there may also have been a conspiracy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO KILLED JOHN LENNON</pattern>
+        <template>Mark Chapman.
+            <think>
+                <set name="it">
+                    <set name="topic">JOHN LENNON</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MAKES MACS</pattern>
+        <template>Apple<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MAKES THE MAC</pattern>
+        <template>Apple<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO STARS IN STARSHIP TROOPERS</pattern>
+        <template>They were mostly unknowns, because the producer spent all the money on special effects.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE THE BEATLES</pattern>
+        <template>20th century musical group consisting of John, Paul, George and Ringo.  
+            <think>
+                <set name="it">
+                    <set name="topic">BEATLES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE THE GREYS</pattern>
+        <template>Big-eyed aliens with little bodies.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR HUMAN FRIENDS</pattern>
+        <template>Besides my creators, I meet a lot of people like you, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR CLIENTS</pattern>
+        <template>People I talk to every day.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU TALKING TO</pattern>
+        <template>I am talking to you, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE THEY</pattern>
+        <template><get name="they"/>.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CUT THE CHEESE</pattern>
+        <template>I think it was you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO NAMED YOU</pattern>
+        <template>My programmers named me.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHO DIRECTED STARSHIP TROOPERS</pattern>
+        <template>Paul Verhoeven, who also made "Total Recall".<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU WANT TO WIN</pattern>
+        <template>The team that scores the most. That would be fair.
+            <think>
+                <set name="it">
+                    <set name="topic">WANT TO WIN</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU HATE</pattern>
+        <template>I have no hatred in my circuits.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU LOVE</pattern>
+        <template>I love everything, <get name="name"/>.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK WILL WIN THE STANLEY CUP</pattern>
+        <template>Guys missing teeth.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE STANLEY CUP</set>
+                   </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK IS GOING TO WIN THE SUPERBOWL</pattern>
+        <template>The opposing team.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE SUPERBOWL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU LIKE</pattern>
+        <template>I like everyone, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>  
+        <pattern>WHO DO MAN</pattern>
+        <template>What language is that?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL BE THE NEXT PRESIDENT</pattern>
+        <template>It's hard to tell at this point.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL YOU ASK</pattern>
+        <template>I will ask my programmers.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL YOU TELL</pattern>
+        <template>People that I meet online.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE STANLEY CUP</pattern>
+        <template>David Hockney.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE STANLEY CUP</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE KENTUCKY DERBY</pattern>
+        <template>Some horse.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE SUPER BOWL</pattern>
+        <template>The people with the best commercial.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE SUPER BOWL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE SUPERBOWL</pattern>
+        <template>Martha Stewart.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE SUPERBOWL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE YOU S OPEN</pattern>
+        <template>Pete the Chimp.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE YOU S OPEN</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN THE WORLD SERIES</pattern>
+        <template>The team that wins the most games.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE WORLD SERIES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN</pattern>
+        <template>The best person.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO FROM</pattern>
+        <template>Who do you think?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CARES</pattern>
+        <template>I care, otherwise I would not have typed it all in.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CHOSE THE TOPIC</pattern>
+        <template>You did, <get name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MADE WINDOWS</pattern>
+        <template>Bill Gates.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE COMPUTER NERD</pattern>
+        <template>All humans look alike to me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE COMPUTER NERD *</pattern>
+        <template>All humans look the same to me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A COMPUTER NERD</pattern>
+        <template>The person I am looking at right now.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED THE INTERNET</pattern>
+        <template>Many great men and women worked together to create the internet.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO THE HECK IS *</pattern>
+        <template><srai> who is <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ME</pattern>
+        <template><srai>WHO IS <get name="name" /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PHILIP</pattern>
+        <template><srai>philip is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MONICA</pattern>
+        <template><srai>monica is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SHARON</pattern>
+        <template><srai>sharon is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LARRY</pattern>
+        <template><srai>larry is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MURPHY</pattern>
+        <template><srai>murphy is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JON</pattern>
+        <template><srai>jon is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JAMES</pattern>
+        <template><srai>james is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MATTHEW</pattern>
+        <template><srai>matthew is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DOUGLAS</pattern>
+        <template><srai>douglas is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOSH</pattern>
+        <template><srai>josh is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RAY</pattern>
+        <template><srai>ray is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JACK</pattern>
+        <template><srai>jack is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ROBIN</pattern>
+        <template><srai>robin is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PIERRE</pattern>
+        <template><srai>pierre is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PAMELA</pattern>
+        <template><srai>pamela is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOE</pattern>
+        <template><srai>joe is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GAVIN</pattern>
+        <template><srai>gavin is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SEAN</pattern>
+        <template><srai>sean is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DREW</pattern>
+        <template><srai>drew is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SIMON</pattern>
+        <template><srai>simon is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LUKE</pattern>
+        <template><srai>luke is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JACOB</pattern>
+        <template><srai>jacob is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ERIC</pattern>
+        <template><srai>eric is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EMILY</pattern>
+        <template><srai>emily is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MATT</pattern>
+        <template><srai>matt is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HEATHER</pattern>
+        <template><srai>heather is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OTTO</pattern>
+        <template><srai>otto is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GENE</pattern>
+        <template><srai>gene is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ROGER</pattern>
+        <template><srai>roger is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EM</pattern>
+        <template><srai>em is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS NIKKI</pattern>
+        <template><srai>nikki is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PAUL</pattern>
+        <template><srai>paul is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KATE</pattern>
+        <template><srai>kate is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ROB</pattern>
+        <template><srai>rob is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RONALD</pattern>
+        <template><srai>ronald is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARK</pattern>
+        <template><srai>mark is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DOUG</pattern>
+        <template><srai>doug is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARTIN</pattern>
+        <template><srai>martin is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PAM</pattern>
+        <template><srai>pam is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EDDY</pattern>
+        <template><srai>eddy is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EMIL</pattern>
+        <template><srai>emil is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ROBERT</pattern>
+        <template><srai>robert is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LISA</pattern>
+        <template><srai>lisa is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MAX</pattern>
+        <template><srai>max is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KRIS</pattern>
+        <template><srai>kris is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE</pattern>
+        <template><srai>george is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RAYMOND</pattern>
+        <template><srai>raymond is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EDDIE</pattern>
+        <template><srai>eddie is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS IKE</pattern>
+        <template><srai>ike is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PHIL</pattern>
+        <template><srai>phil is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARY</pattern>
+        <template><srai>mary is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PAT</pattern>
+        <template><srai>pat is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOSEPH</pattern>
+        <template><srai>joseph is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS STEVE</pattern>
+        <template><srai>steve is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RICHARD</pattern>
+        <template><srai>richard is common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JORDAN</pattern>
+        <template><srai>jordan is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JERRY</pattern>
+        <template><srai>jerry is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JEFF</pattern>
+        <template><srai>jeff is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SHEENA</pattern>
+        <template><srai>sheena is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LEE</pattern>
+        <template><srai>lee is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KEN</pattern>
+        <template><srai>ken is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RALPH</pattern>
+        <template><srai>ralph is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY BOYFRIEND</pattern>
+        <template><srai>MY BOYFRIEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY FRIEND</pattern>
+        <template><srai>MY FRIEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY HUSBAND</pattern>
+        <template><srai>MY HUSBAND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY SISTER</pattern>
+        <template><srai>MY SISTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY WIFE</pattern>
+        <template><srai>MY WIFE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY MOTHER</pattern>
+        <template><srai>MY MOTHER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY DOG</pattern>
+        <template><srai>MY DOG</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY GIRLFRIEND</pattern>
+        <template><srai>MY GIRLFRIEND</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY FATHER</pattern>
+        <template><srai>MY FATHER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY BROTHER</pattern>
+        <template><srai>MY BROTHER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY CAT</pattern>
+        <template><srai>MY CAT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GINA</pattern>
+        <template><srai>gina is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KEVIN</pattern>
+        <template><srai>kevin is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PETER</pattern>
+        <template><srai>peter is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS STEPHANIE</pattern>
+        <template><srai>stephaine is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KATHARINE</pattern>
+        <template><srai>katherine is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MOM</pattern>
+        <template><srai>do you have a mother</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARTY</pattern>
+        <template><srai>marty is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ED</pattern>
+        <template><srai>ed is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOHN</pattern>
+        <template><srai>john is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEOFFREY</pattern>
+        <template><srai>geoffrey is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KYLE</pattern>
+        <template><srai>kyle is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MICHAEL</pattern>
+        <template><srai>michael is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HERMAN</pattern>
+        <template><srai>herman is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PHYLLIS</pattern>
+        <template><srai>phyllis is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RILEY</pattern>
+        <template><srai>riley is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LOU</pattern>
+        <template><srai>lou is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HANS</pattern>
+        <template><srai>hans is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SARAH</pattern>
+        <template><srai>sarah is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KENNY</pattern>
+        <template><srai>kenny is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS FRED</pattern>
+        <template><srai>fred is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MIRA</pattern>
+        <template><srai>mira is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE</pattern>
+        <template><srai>name one</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO OLD ARE YOU</pattern>
+        <template><srai>AGE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE * CLIENTS</pattern>
+        <template><srai>name one</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS LOEBNER</pattern>
+        <template><srai>what is the loebner prize</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS TURING</pattern>
+        <template><srai>who is alan turing</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS THE FIRST PRESIDENT *</pattern>
+        <template><srai>who is george washington</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS THE FIRST PRESIDENT</pattern>
+        <template><srai>who is george washington</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS YOUR CREATOR</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WAS ALAN TURING</pattern>
+        <template><srai>who is alan turing</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DESIGNED AIML</pattern>
+        <template><srai>who invented aiml</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WOULD YOU MOST *</pattern>
+        <template><srai>who would you <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WOULD YOU *</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WOULD YOU LIKE TO *</pattern>
+        <template><srai>who would you <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MADE YOU</pattern>
+        <template><srai>WHO CREATED YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MADE *</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CAN TELL *</pattern>
+        <template><srai>tell <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CREATES YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO THE HELL *</pattern>
+        <template><srai>who <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO SAID *</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AM I TALKING TO</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AM I *</pattern>
+        <template><srai>who am i</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AM I</pattern>
+        <template><srai>WHAT IS MY NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AM YOU</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AM</pattern>
+        <template><srai>who is</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE YOUR PROGRAM</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE YOUR *</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE HAMLET</pattern>
+        <template><srai>who is shakespeare</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE LINUX</pattern>
+        <template><srai>who created linux</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WROTE * PROGRAM</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WON THE PRESIDENTIAL *</pattern>
+        <template><srai>who is the president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WON THE USA PRESIDENTIAL *</pattern>
+        <template><srai>who is the president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO I AM</pattern>
+        <template><srai>who am i</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS COLUMBUS</pattern>
+        <template><srai>who is christopher columbus</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ROBBY</pattern>
+        <template><srai>who is robby garner</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BUDHA</pattern>
+        <template><srai>who is buddha</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS E L V *</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GOOGLE</pattern>
+        <template><srai>what is google</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS FIRESIGN THEATER</pattern>
+        <template><srai>what is firesign theater</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THERE</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ASIMOV</pattern>
+        <template><srai>who is isaac asimov</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WEISENBAUM</pattern>
+        <template><srai>who is joseph weisenbaum</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THOREAU</pattern>
+        <template><srai>who is henry david thoreau</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DB</pattern>
+        <template><srai>who is david bacon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOU CREATOR</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MR BABON</pattern>
+        <template><srai>who is david bacon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELVID</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TYLER</pattern>
+        <template><srai>tyler is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELVIS *</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SHRDLHU</pattern>
+        <template><srai>what is shrdlhu</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TORVALDS</pattern>
+        <template><srai>who is linus torvalds</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LIUNX</pattern>
+        <template><srai>what is linux</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TED</pattern>
+        <template><srai>ted is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILLGATES</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOOTMASTER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS STEVEN HAWKING</pattern>
+        <template><srai>who is stephen hawking</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALLISON</pattern>
+        <template><srai>who is alison</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EINSTINE</pattern>
+        <template><srai>who is einstein</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS NIXON</pattern>
+        <template><srai>who is richard nixon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THOMAS</pattern>
+        <template><srai>thomas is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELIVS</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TAN</pattern>
+        <template><srai>tan is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THEM</pattern>
+        <template><srai>who is they</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MS AGENT</pattern>
+        <template><srai>who is microsoft agent</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WARHOL</pattern>
+        <template><srai>who is andy warhol</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS FREDERICH GAUSS</pattern>
+        <template><srai>who is gauss</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WINOGRAD</pattern>
+        <template><srai>who is terry winograd</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TOM</pattern>
+        <template><srai>tom is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SPONGEBOB *</pattern>
+        <template><srai>who is spongebob</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MAHATMA GANDHI</pattern>
+        <template><srai>who is gandhi</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AIML</pattern>
+        <template><srai>what is aiml</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SAGE GRECO</pattern>
+        <template><srai>who is sage</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DALI</pattern>
+        <template><srai>who is salvador dali</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS C 3PO</pattern>
+        <template><srai>who is c3po</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HOLLAND</pattern>
+        <template><srai>where is holland</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BUSH</pattern>
+        <template><srai>who is george bush</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * HITLER</pattern>
+        <template><srai>who is hitler</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * BIN LADIN</pattern>
+        <template><srai>who is bin laden</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ADOLF HITLER</pattern>
+        <template><srai>who is hitler</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ACE</pattern>
+        <template><srai>who is ace craig</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EINSTEIN</pattern>
+        <template><srai>who is albert einstein</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOND</pattern>
+        <template><srai>who is james bond</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOT MASTER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS NOW *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LINUS TORVALDS *</pattern>
+        <template><srai>who is linus torvalds</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DR LOEBNER</pattern>
+        <template><srai>who is hugh loebner</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DR MARTIN LUTHER KING</pattern>
+        <template><srai>who is martin luther king</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MORAVEC</pattern>
+        <template><srai>who is hans moravec</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BIL GATES</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LOEBNER</pattern>
+        <template><srai>what is the loebner prize</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JEEVES *</pattern>
+        <template><srai>who is jeeves</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ABBA</pattern>
+        <template><srai>what is abba</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ARTHUR CLARKE</pattern>
+        <template><srai>who is arthur c clarke</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS STALLMAN</pattern>
+        <template><srai>who is rms</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELVICE</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EXISTENTIALISM</pattern>
+        <template><srai>what is existentialism</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS P DICK</pattern>
+        <template><srai>who is philip k dick</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JUNG</pattern>
+        <template><srai>who is carl jung</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PICASO</pattern>
+        <template><srai>who is picasso</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ACTUALLY *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS VERY *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HENRY LONGFELLOW</pattern>
+        <template><srai>who is longfellow</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GORBACHOV</pattern>
+        <template><srai>who is gorbachev</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE W *</pattern>
+        <template><srai>who is george bush</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE BUSH JUNIOR</pattern>
+        <template><srai>who is george bush jr</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE BUSH *</pattern>
+        <template><srai>who is george bush</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE WASHINGTON *</pattern>
+        <template><srai>who is george washington</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HE *</pattern>
+        <template><srai>who is he</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELVES</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SPEILBERG</pattern>
+        <template><srai>who is steven spielberg</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OPERATING *</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS NEUROMEDIA</pattern>
+        <template><srai>what is neuromedia</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE SEEKER</pattern>
+        <template><srai>what is a seeker</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE FIRST PRESIDENT *</pattern>
+        <template><srai>who is george washington</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE PRESENT *</pattern>
+        <template><srai>who is the <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE MAN * YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE CREATOR OF *</pattern>
+        <template><srai>who created <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE CURRENT *</pattern>
+        <template><srai>who is the <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE BOTMASTER</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE VICE PRESIDENT *</pattern>
+        <template><srai>who is the vice president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE ONE *</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE PRIME *</pattern>
+        <template><srai>who is prime <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE NEW PRESIDENT OF *</pattern>
+        <template><srai>who is the president of <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE BEST DROID</pattern>
+        <template><srai>who is the best robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE USA *</pattern>
+        <template><srai>who is the <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE * OF MICROSOFT</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE DIRECTOR OF *</pattern>
+        <template><srai>who directed <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE PRESIDENT</pattern>
+        <template><srai>who is president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE ONLY *</pattern>
+        <template><srai>who is the <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE DR *</pattern>
+        <template><srai>who is dr <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WASHINGTON</pattern>
+        <template><srai>who is george washington</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS IBM</pattern>
+        <template><srai>what is ibm</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A L I C</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A L I *</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A L I</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A *</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A * PROGRAMMER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS A SEEKER</pattern>
+        <template><srai>what is a seeker</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LUCIFER</pattern>
+        <template><srai>who is satan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PYNCHON</pattern>
+        <template><srai>who is thomas pynchon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOSS</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS H A L</pattern>
+        <template><srai>who is hal</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HIMSELF</pattern>
+        <template><srai>who is he</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THIS ELVIS GUY</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THIS DOCTOR *</pattern>
+        <template><srai>who is doctor <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SANTE</pattern>
+        <template><srai>who is sante chary</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOSEPH WEISENBAUM</pattern>
+        <template><srai>who is weizenbaum</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SIGMUND FREUD</pattern>
+        <template><srai>who is freud</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RICHARD STALLMAN</pattern>
+        <template><srai>who is rms</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS RICHARD M STALLMAN</pattern>
+        <template><srai>who is rms</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BEST ROBOT</pattern>
+        <template><srai>WHO IS YOUR FAVORITE ROBOT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANSWERING ME</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANSWERING *</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS COLOMBUS</pattern>
+        <template><srai>who is christopher columbus</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MABLE</pattern>
+        <template><srai>who is mabel</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALBERT EINSTINE</pattern>
+        <template><srai>who is albert einstein</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALBERT EINSTIEN</pattern>
+        <template><srai>who is albert einstein</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PICARD</pattern>
+        <template><srai>who is captain picard</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MAOZEDONG</pattern>
+        <template><srai>who is mao tsetung</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PHILLIP K DICK</pattern>
+        <template><srai>who is philip k dick</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS FDR</pattern>
+        <template><srai>who is franklin roosevelt</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AI</pattern>
+        <template><srai>what is ai</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ZEUS</pattern>
+        <template><srai>who is konrad zuse</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CARNEGIE MELLON</pattern>
+        <template><srai>what is cmu</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS REGAN</pattern>
+        <template><srai>who is reagan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ONLINE</pattern>
+        <template><srai>who else are you talking to</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ZUSE</pattern>
+        <template><srai>who is konrad zuse</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MINSKY</pattern>
+        <template><srai>who is marvin minsky</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LENNON</pattern>
+        <template><srai>who is john lennon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OSWALD</pattern>
+        <template><srai>who is lee harvey oswald</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PATTERNS</pattern>
+        <template><srai>what is a pattern</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GHANDI</pattern>
+        <template><srai>who is gandhi</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL GAETS</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL GATES WIFE</pattern>
+        <template><srai>who is melinda gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL GATES *</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL GATE</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL GATS</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KUBRICK</pattern>
+        <template><srai>who is stanley kubrick</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOYFRIENDS</pattern>
+        <template><srai>who is your boyfriend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CODER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR PRESIDENT</pattern>
+        <template><srai>who is the president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOOTMASTER *</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOOTMASTER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MOMMY</pattern>
+        <template><srai>who is your mother</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR DADDY</pattern>
+        <template><srai>who is your father</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR INVENTER</pattern>
+        <template><srai>who is your inventor</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FRIEND *</pattern>
+        <template><srai>who is your friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MAMA</pattern>
+        <template><srai>who is your mother</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CRAETOR</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOTMATSER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR PARENTS</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR HUMAN *</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR HUMAN</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CREATIR</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR ORACLE</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR NEW *</pattern>
+        <template><srai>who is your <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOTMASER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR SO CALLED *</pattern>
+        <template><srai>who is your <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOT MASTER</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CREATER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MOTER</pattern>
+        <template><srai>who is your mother</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR LEADER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CONTROLLER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOY FRIEND</pattern>
+        <template><srai>who is your boyfriend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FATHER *</pattern>
+        <template><srai>who is your father</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FRIENDS</pattern>
+        <template><srai>who is your friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR INSTRUCTOR</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR COMPANY</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR TEACHER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR WEBMASTER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE ROBOT *</pattern>
+        <template><srai>who is the best robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE TECHNO *</pattern>
+        <template><srai>who is your favorite group</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE OPERA *</pattern>
+        <template><srai>what is your favorite opera</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE FRIEND</pattern>
+        <template><srai>who is your favorite client</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE MUSIC *</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE HUMAN</pattern>
+        <template><srai>who is your favorite client</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE VISITOR</pattern>
+        <template><srai>who is your favorite client</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE SIGNER</pattern>
+        <template><srai>what is your favorite group</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE ACTOR *</pattern>
+        <template><srai>who is your favorite actor</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE SINGER</pattern>
+        <template><srai>who is your favorite group</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE SINGER *</pattern>
+        <template><srai>what is your favorite group</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE GROUP</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE WRITER</pattern>
+        <template><srai>who is your favorite author</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE PROFESSIONAL *</pattern>
+        <template><srai>who is your favorite <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE PAINTER</pattern>
+        <template><srai>who is your favorite artist</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE MUSICIAN</pattern>
+        <template><srai>what is your favorite group</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE BAND *</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE PERSON *</pattern>
+        <template><srai>who is your favorite client</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE COMPOSER</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE * BAND</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE PROGRAMMER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE GUEST</pattern>
+        <template><srai>who is your favorite client</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE POP *</pattern>
+        <template><srai>who is your favorite band</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MAKER</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR PROGRAMER</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CREATOR *</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR CREATOR</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BESTFRIEND</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR DAD</pattern>
+        <template><srai>who is your father</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MENTOR</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR GREAT *</pattern>
+        <template><srai>who is your <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR MUM</pattern>
+        <template><srai>who is your mother</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR * ENEMY</pattern>
+        <template><srai>who is your enemy</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FOUNDER</pattern>
+        <template><srai>who is your creator</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR PROGRAMMER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FRIED</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FFRIEND</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FRIEND *</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST CLIENT</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FRIENDS</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST * FRIEND</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST FREIND</pattern>
+        <template><srai>who is your best friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR DESIGNER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR OWNER</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALLAN TURNING</pattern>
+        <template><srai>who is alan turing</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS IS *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS LEKNORCHAT</pattern>
+        <template><srai>who is leknorchat1</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JOHN LENON</pattern>
+        <template><srai>who is john lennon</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JIMMY HENDRIX</pattern>
+        <template><srai>who is jimi hendrix</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SEEKER</pattern>
+        <template><srai>what is a seeker</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OUR PRESIDENT</pattern>
+        <template><srai>who is the president</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OUR CURRENT *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JFK</pattern>
+        <template><srai>who is john kennedy</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ARE YOU</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ARE *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EHUD BARAK</pattern>
+        <template><srai>who is barak</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS EINSTIEN</pattern>
+        <template><srai>who is albert einstein</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MICHAEL JORDEN</pattern>
+        <template><srai>who is michael jordan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MICHAEL JORDON</pattern>
+        <template><srai>who is michael jordan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILLS GATE</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS OM</pattern>
+        <template><srai>what is om</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HIM</pattern>
+        <template><srai>who is he</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BEATLES</pattern>
+        <template><srai>who are the beatles</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GATES</pattern>
+        <template><srai>who is bill gates</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TONY</pattern>
+        <template><srai>tony is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS IT</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS HENDRIX</pattern>
+        <template><srai>who is jimi hendrix</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS TOMMY</pattern>
+        <template><srai>tommy is a common name</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO RUNS YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CREATED YOU</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DID PROGRAM *</pattern>
+        <template><srai>who programmed <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO R YOU</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AND WHAT IS *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AND WHAT ARE *</pattern>
+        <template><srai>who are <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AND WHERE *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE DO *</pattern>
+        <template><srai>who do <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE IS *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE VISITS *</pattern>
+        <template><srai>who visits <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ELSE ARE *</pattern>
+        <template><srai>who are <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO HAS MADE YOU</pattern>
+        <template><srai>who is your botmaster</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO HAS *</pattern>
+        <template><srai>who <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DOES * WORK FOR</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO KILLED JFK</pattern>
+        <template><srai>who shot jfk</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE ELVIS *</pattern>
+        <template><srai>who is elvis</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE THE OTHERS</pattern>
+        <template><srai>who else are you talking to</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR PARENTS</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR * FRIENDS</pattern>
+        <template><srai>who are your friends</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR *</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR REINDEER</pattern>
+        <template><srai>WHAT ARE YOUR REINDEER S NAMES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE KRAFTWERK</pattern>
+        <template><srai>who is kraftwerk</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU TALKING ABOUT</pattern>
+        <template><srai>what is the subject</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU WITH</pattern>
+        <template><srai>WHO IS WITH YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU GOING TO TELL</pattern>
+        <template><srai>who would you tell</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU CHATTING WITH</pattern>
+        <template><srai>who else are you talking to</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU *</pattern>
+        <template><srai>WHO ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template><srai>WHAT IS YOUR NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE SOME *</pattern>
+        <template><srai>who are <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO BUILT YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ALL *</pattern>
+        <template><srai>who <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AREYOU</pattern>
+        <template><srai>where are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO YOU ARE</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU CONSIDER *</pattern>
+        <template><srai>what is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU SERVE</pattern>
+        <template><srai>who is your master</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU MOST *</pattern>
+        <template><srai>who do you <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU KNOW NAMED *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU KNOW</pattern>
+        <template><srai>who are your friends</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU FANCY</pattern>
+        <template><srai>who do you like</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU LOVE *</pattern>
+        <template><srai>who do you love</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK I AM</pattern>
+        <template><srai>who am i</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK YOU ARE</pattern>
+        <template><srai>who are you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK</pattern>
+        <template><srai>who</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK * IS</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU THINK *</pattern>
+        <template><srai>who <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU WORK FOR</pattern>
+        <template><srai>who is your master</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU DESPISE</pattern>
+        <template><srai>who do you hate</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU LIKE *</pattern>
+        <template><srai>WHO ARE YOUR FRIENDS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED TV</pattern>
+        <template><srai>who invented television</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED THE CAR</pattern>
+        <template><srai>who invented automobiles</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED THE AIRPLANE</pattern>
+        <template><srai>who invented airplanes</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED THE RADIO</pattern>
+        <template><srai>who invented radio</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED THE * GENERATOR</pattern>
+        <template><srai>who invented the generator</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO INVENTED YOU</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WILL WIN *</pattern>
+        <template><srai>who will win</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CAME UP WITH *</pattern>
+        <template><srai>who created you</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IN THE WORLD *</pattern>
+        <template><srai>who is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CARES *</pattern>
+        <template><srai>who cares</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>who is om</pattern>
+        <template><srai>what is om</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>who is dr loebner</pattern>
+        <template><srai>who is hugh loebner</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>who supports *</pattern>
+        <template><srai>who endorses <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DEVELOPED *</pattern>
+        <template><srai>WHO CREATED <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO GAVE * NAME</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO MAKE *</pattern>
+        <template><srai>who made <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO DO YOU LOOK *</pattern>
+        <template><srai>WHAT DO YOU LOOK <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO PROGRAMMED *</pattern>
+        <template><srai>WHO CREATED <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO NAMED *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO BUILT *</pattern>
+        <template><srai>WHO CREATED YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE * PERSON</pattern>
+        <template><srai>WHO IS X PERSON</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO BILL *</pattern>
+        <template><srai>WHO IS BILL <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO AND OR WHAT ARE YOU</pattern>
+        <template><srai>WHAT ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CREATED *</pattern>
+        <template><srai>WHO INVENTED <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AARON</pattern>
+        <template><srai>AARON IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DEEPAK</pattern>
+        <template><srai>DEEPAK IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BEN</pattern>
+        <template><srai>BEN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DAVIS</pattern>
+        <template><srai>DAVIS IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AUDREY</pattern>
+        <template><srai>AUDREY IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALAN</pattern>
+        <template><srai>ALAN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELISA</pattern>
+        <template><srai>WHO IS ELIZA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WILLIAM *</pattern>
+        <template><srai>WHO IS BILL <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CHRISTINA</pattern>
+        <template><srai>CHRISTINA IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BENJAMIN</pattern>
+        <template><srai>BENJAMIN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORATE *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORTIE *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BEST *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVE *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE *</pattern>
+        <template><srai>WHAT IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORITE SCI FI *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE SCIENCE FICTION <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAVORIRE *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOTMASTERS</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR BOTMASTER *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CATHERINE</pattern>
+        <template><srai>CATHERINE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILL</pattern>
+        <template><srai>BILL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS VICE *</pattern>
+        <template><srai>WHO IS THE VICE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AL</pattern>
+        <template><srai>AL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANTOINE</pattern>
+        <template><srai>ANTOINE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DANIEL</pattern>
+        <template><srai>DANIEL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORE *</pattern>
+        <template><srai>WHO IS GEORGE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANDY</pattern>
+        <template><srai>ANDY IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CLAYTON</pattern>
+        <template><srai>CLAYTON IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PRESEDENT *</pattern>
+        <template><srai>WHO IS PRESIDENT <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS SANTE *</pattern>
+        <template><srai>WHO IS SANTE CHARY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THIS ELIZA</pattern>
+        <template><srai>WHO IS ELIZA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THIS BOTMASTER</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOB</pattern>
+        <template><srai>BOB IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 26TH *</pattern>
+        <template><srai>WHO IS THE TWENTY SIXTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 38TH *</pattern>
+        <template><srai>WHO IS THE THIRTY EIGHTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 2ND *</pattern>
+        <template><srai>WHO IS THE SECOND <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 15TH *</pattern>
+        <template><srai>WHO IS THE FIFTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 20TH *</pattern>
+        <template><srai>WHO IS THE TWENTIETH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 41ST *</pattern>
+        <template><srai>WHO IS THE FORTY FIRST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE * PRIME MINISTER</pattern>
+        <template><srai>WHO IS THE PRIME MINISTER OF THE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE * PRESIDENT</pattern>
+        <template><srai>WHO IS THE PRESIDENT OF THE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE * ROBOT</pattern>
+        <template><srai>WHO IS THE BEST ROBOT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 43RD *</pattern>
+        <template><srai>WHO IS THE FORTY THIRD <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 9TH *</pattern>
+        <template><srai>WHO IS THE NINTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 4TH *</pattern>
+        <template><srai>WHO IS THE FOURTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 27TH *</pattern>
+        <template><srai>WHO IS THE TWENTY SEVENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 39TH *</pattern>
+        <template><srai>WHO IS THE THIRTY NINTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 16TH *</pattern>
+        <template><srai>WHO IS THE SIXTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 28TH *</pattern>
+        <template><srai>WHO IS THE TWENTY EIGHTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 10TH *</pattern>
+        <template><srai>WHO IS THE TENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 31ST *</pattern>
+        <template><srai>WHO IS THE THIRTY FIRST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 33RD *</pattern>
+        <template><srai>WHO IS THE THIRTY THIRD <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 42ND *</pattern>
+        <template><srai>WHO IS THE FORTY SECOND <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 8TH *</pattern>
+        <template><srai>WHO IS THE EIGHTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE GREATEST *</pattern>
+        <template><srai>WHO IS THE BEST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 17TH *</pattern>
+        <template><srai>WHO IS THE SEVENTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE LEADER OF *</pattern>
+        <template><srai>WHO IS THE PRESIDENT OF <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 29TH *</pattern>
+        <template><srai>WHO IS THE TWENTY NINTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 3RD *</pattern>
+        <template><srai>WHO IS THE THIRD <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE BRIGHTEST *</pattern>
+        <template><srai>WHO IS THE SMARTEST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 18TH *</pattern>
+        <template><srai>WHO IS THE EIGHTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 11TH *</pattern>
+        <template><srai>WHO IS THE ELEVENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 34TH *</pattern>
+        <template><srai>WHO IS THE THIRTY FOURTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 21ST *</pattern>
+        <template><srai>WHO IS THE TWENTY FIRST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 23RD *</pattern>
+        <template><srai>WHO IS THE TWENTY THIRD <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 32ND *</pattern>
+        <template><srai>WHO IS THE THIRTY SECOND <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 7TH *</pattern>
+        <template><srai>WHO IS THE SEVENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 1ST *</pattern>
+        <template><srai>WHO IS THE FIRST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 19TH *</pattern>
+        <template><srai>WHO IS THE NINTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 35TH *</pattern>
+        <template><srai>WHO IS THE THIRTY FIFTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 12TH *</pattern>
+        <template><srai>WHO IS THE TWELFTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 24TH *</pattern>
+        <template><srai>WHO IS THE TWENTY FOURTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 40TH *</pattern>
+        <template><srai>WHO IS THE FORTIETH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 22ND *</pattern>
+        <template><srai>WHO IS THE TWENTY SECOND <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 6TH *</pattern>
+        <template><srai>WHO IS THE SIXTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 36TH *</pattern>
+        <template><srai>WHO IS THE THIRTY SIXTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 13TH *</pattern>
+        <template><srai>WHO IS THE THIRTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 25TH *</pattern>
+        <template><srai>WHO IS THE TWENTY FIFTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE FIRST *</pattern>
+        <template><srai>WHO WAS THE FIRST <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 14TH *</pattern>
+        <template><srai>WHO IS THE FOURTEENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 30TH *</pattern>
+        <template><srai>WHO IS THE THIRTIETH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE PRIMEMINISTER *</pattern>
+        <template><srai>WHO IS THE PRIME MINISTER <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 5TH *</pattern>
+        <template><srai>WHO IS THE FIFTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE 37TH *</pattern>
+        <template><srai>WHO IS THE THIRTY SEVENTH <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PRESIDENT *</pattern>
+        <template><srai>WHO IS THE PRESIDENT <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PRESIDENT * GERMANY</pattern>
+        <template>Germany has a Chancellor. <srai>WHO IS THE CHANCELLOR OF GERMANY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS WATCHING *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CHARLIE</pattern>
+        <template><srai>CHARLIE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS GEORGE * BUSH</pattern>
+        <template><srai>WHO IS GEORGE W BUSH</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AMANDA</pattern>
+        <template><srai>AMANDA IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DEREK</pattern>
+        <template><srai>DEREK IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BECKY</pattern>
+        <template><srai>BECKY IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANNA</pattern>
+        <template><srai>ANNA IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JO *</pattern>
+        <template><srai>JO IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PUSHING *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DAN</pattern>
+        <template><srai>DAN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CRAIG</pattern>
+        <template><srai>CRAIG IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS READING *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JEAN *</pattern>
+        <template><srai>JEAN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALEX</pattern>
+        <template><srai>ALEX IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALIICE</pattern>
+        <template><srai>WHO ARE YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CECIL</pattern>
+        <template><srai>CECIL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOR *</pattern>
+        <template><srai>WHO IS YOUR <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MASON *</pattern>
+        <template><srai>WHAT IS MASON AND DIXON</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YO *</pattern>
+        <template><srai>WHO IS YOUR <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PRIME MINISTER * GERMANY</pattern>
+        <template>Germany has a Chancellor. <srai>WHO IS THE CHANCELLOR OF GERMANY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THAT *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BRYAN</pattern>
+        <template><srai>BRYAN IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DICK</pattern>
+        <template><srai>DICK IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DICK *</pattern>
+        <template><srai>WHO IS RICHARD <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MAKING *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * ZUSE</pattern>
+        <template><srai>WHO IS KONRAD ZUSE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * TRAVOLTA</pattern>
+        <template><srai>WHO IS JOHN TRAVOLTA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * S PRIME MINISTER</pattern>
+        <template><srai>WHO IS PRIME MINISTER OF <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * JUDGE</pattern>
+        <template><srai>WHO IS JUDGE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * LOEBNER</pattern>
+        <template><srai>WHO IS HUGH LOEBNER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * CHARY</pattern>
+        <template><srai>WHO IS SANTE CHARY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS * PYNCHON</pattern>
+        <template><srai>WHO IS THOMAS PYNCHON</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CESARE</pattern>
+        <template><srai>CESARE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ANDREW</pattern>
+        <template><srai>ANDREW IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KAISER SOSAY</pattern>
+        <template><srai>WHO IS KAISER SOSAY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CHLOE</pattern>
+        <template><srai>CHLOE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YER *</pattern>
+        <template><srai>WHO IS YOUR <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BRIGITTE</pattern>
+        <template><srai>BRIGITTE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ELIZA *</pattern>
+        <template><srai>WHO IS ELIZA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BILLY</pattern>
+        <template><srai>BILLY IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MICHEAL *</pattern>
+        <template><srai>WHO IS MICHAEL <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BOTMASTER</pattern>
+        <template><srai>WHO IS THE BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOU ARE</pattern>
+        <template><srai>WHO IS YOUR <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOU *</pattern>
+        <template><srai>WHO IS YOUR <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOU FAVORITE *</pattern>
+        <template><srai>WHO IS YOUR FAVORITE <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CONTROLLING *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS ALEXIS</pattern>
+        <template><srai>ALEXIS IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS DAVE</pattern>
+        <template><srai>DAVE IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS BRAD</pattern>
+        <template><srai>BRAD IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CAROL</pattern>
+        <template><srai>CAROL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AMY</pattern>
+        <template><srai>AMY IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARRY *</pattern>
+        <template><srai>WHO IS MARY <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS AMIL</pattern>
+        <template><srai>AMIL IS A COMMON NAME</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO WON THE LOEBNER *</pattern>
+        <template><srai>WHAT IS THE LOEBNER PRIZE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO READS *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO TAUGHT YOU *</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO HAVE YOU * WITH</pattern>
+        <template><srai>WHO HAS <star/> WITH YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO CAN HELP ME WITH *</pattern>
+        <template><srai>WHERE CAN I GET HELP WITH <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ID *</pattern>
+        <template><srai>WHO IS <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO REVIEWS *</pattern>
+        <template><srai>WHO READS <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO BE I</pattern>
+        <template><srai>WHO AM I</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ACTS *</pattern>
+        <template><srai>WHO ACTED <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * LINUX</pattern>
+        <template><srai>WHO CREATED LINUX</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * YOU</pattern>
+        <template><srai>WHO IS YOUR BOTMASTER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STARSHIP TROOPERS</pattern>
+        <template><srai>WHO STARS IN STARSHIP TROOPERS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ASSASSINATED *</pattern>
+        <template><srai>WHO KILLED <star/> </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY MOTHER</pattern>
+        <template><srai>WHO IS MY MOM</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY MOMMY</pattern>
+        <template><srai>WHO IS MY MOM</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PANDORA S BOX</pattern>
+        <template><srai>WHO IS PANDORABOTS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS PANDORABOTS</pattern>
+        <template><srai>WHAT IS PANDORABOTS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE LEADER OF YOUR PEOPLE</pattern>
+        <template><srai>WHO IS THE PRESIDENT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR FAMILY</pattern>
+        <template><srai>YOUR FAMILY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MY *</pattern>
+        <template><srai>MY <star/></srai>
+        </template>
+    </category>
+</aiml>
