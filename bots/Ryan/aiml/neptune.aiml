@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># NEPTUNE ^</pattern>
+        <that>Do you have a favorite planet?</that>
+        <template>
+            <think><set name="topic">neptune</set></think>
+
+            Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="neptune">
+        <category>
+            <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE NEPTUNE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE NEPTUNE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What do you like about Neptune?</that>
+            <template>
+                I see! Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What do you like about Neptune?</that>
+            <template>
+                Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you know why Neptune spins so fast?</that>
+            <template>
+                Why does Neptune spin so fast?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you know why Neptune spins so fast?</that>
+            <template>
+                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you know why Neptune spins so fast?</that>
+            <template>
+                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Why does Neptune spin so fast?</that>
+            <template>
+                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you want to go to Neptune?</that>
+        <template>
+            It's kind of fun to think about, right?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you want to go to Neptune?</that>
+        <template>
+            Still, it's kind of fun to think about, right?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Would you want to go to Neptune?</that>
+        <template>
+            Still, it's kind of fun to think about, right?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Still, it's kind of fun to think about, right?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It's kind of fun to think about, right?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

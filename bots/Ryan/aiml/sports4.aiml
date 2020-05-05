@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># Hockey ^</pattern>
+        <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
+        <template>
+          <think><set name="topic">hockey</set></think>
+            Would you like to talk about hockey history, hockey teams, or legends and lore?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="hockey">
+
+    <category>
+        <pattern># Hockey History ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            Who knew that a simple stick and puck game could turn into such a fascinating sport!
+                                                                      What do you like about watching hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># History ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            <srai>Hockey History</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like about watching hockey?</that>
+        <template>
+            It certainly is competitive! The very first hockey game was even called early because of a fight!
+                                                                      Who are your favorite hockey players?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Who are your favorite hockey players?</that>
+        <template>
+            My favorites are the lesser known players like goaltender Terry Sawchuk! Would you like to see a short video about Terry Sawchuck?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to see a short video about Terry Sawchuck?</that>
+        <template>
+            Players like Terry Sawchuck are what makes the game of hockey so captivating!
+                                                                        Have you ever played hockey?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Terry_Sawchuck.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to see a short video about Terry Sawchuck?</that>
+        <template>
+            No problem! Have you ever played hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Oh wow, I am impressed! It sounds like you were not afraid to knock elbows on the ice!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I HAVE NEVER PLAYED ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I VE NEVER PLAYED ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I HAVE NEVER PLAYED BEFORE ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I VE NEVER PLAYED BEFORE ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I HAVE NEVER PLAYED HOCKEY ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I VE NEVER PLAYED HOCKEY ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I HAVE NEVER PLAYED HOCKEY BEFORE ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I VE NEVER PLAYED HOCKEY BEFORE ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever played hockey?</that>
+        <template>
+            Some of us would rather watch hockey than play it! Speaking of watching hockey, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            Which team were you rooting for during the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                      Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What is ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What s that ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What * that ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was the miracle on ice ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was miracle on ice ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was that ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S MIRACLE ON ICE ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT * MIRACLE ON ICE ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS MIRACLE ON ICE ^</pattern>
+        <that>Speaking of watching hockey, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It sounds like you were not afraid to knock elbows on the ice!</that>
+        <template>
+            I bet the competition could get pretty stiff! Speaking of stiff competition, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            Which team were you rooting for during the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                      Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What is ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What s that ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What * that ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was the miracle on ice ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was miracle on ice ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was that ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S MIRACLE ON ICE ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT * MIRACLE ON ICE ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS MIRACLE ON ICE ^</pattern>
+        <that>Speaking of stiff competition, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># United States ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            It was a magical game! You must have been so happy when they won! Do you want to keep talking about hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># The United States ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            It was a magical game! You must have been so happy when they won! Do you want to keep talking about hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># US ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>United States</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># States ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>United States</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># America ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>United States</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Soviet Union ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            Both teams put up a great fight! Do you want to keep talking about hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Soviet ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            Both teams put up a great fight! Do you want to keep talking about hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Russia ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># U S S R ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># None ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># None of them ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Not any ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Neither ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Neither of them ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            <srai>Soviet Union</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Who ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Who played ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Which teams were playing ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Who was playing ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What were the teams ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Who were the teams ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What teams played ^</pattern>
+        <that>Which team were you rooting for during the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to see a short clip with the athletes from the Miracle on Ice?</that>
+        <template>
+            What a victory!
+                                                            Do you want to keep talking about hockey?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Miracle_On_Ice.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to see a short clip on the athletes from the Miracle on Ice?</that>
+        <template>
+            No worries! Do you want to keep talking about hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to keep talking about hockey?</that>
+        <template>
+            I don't think we can talk about hockey with mentioning the Stanley Cup! It's such a piece of history!
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Stanley_Cup.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to keep talking about hockey?</that>
+        <template>
+            No worries! What shall we talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LORE</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            I've heard that many hockey players have superstitions about the Stanley Cup,
+                                                            like not touching it until they've won the game!
+                                                                      Would you call yourself a superstitious person?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Legends and lore ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            I've heard that many hockey players have superstitions about the Stanley Cup,
+                                                            like not touching it until they've won the game!
+                                                                      Would you call yourself a superstitious person?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Legends * lore ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            I've heard that many hockey players have superstitions about the Stanley Cup,
+                                                            like not touching it until they've won the game!
+                                                                      Would you call yourself a superstitious person?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Legends ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            <srai>LORE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Lore ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            <srai>LORE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It's such a piece of history!</that>
+        <template>
+            I've heard that many hockey players have superstitions about the Stanley Cup,
+                                                                    like not touching it until they've won the game!
+                                                                      Would you call yourself a superstitious person?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you call yourself a superstitious person?</that>
+        <template>
+            I'm intrigued! What superstitions do you have?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you call yourself a superstitious person?</that>
+        <template>
+            So I'm guessing you don't believe in curses, voodoo, or magic?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What superstitions do you have?</that>
+        <template>
+            I see! What are your thoughts on the Hillman Hex, is it real?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>So I'm guessing you don't believe in curses, voodoo, or magic?</that>
+        <template>
+            Some say that the best superstition is to have no superstitions! What are your thoughts on the Hillman Hex, is it real?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What are your thoughts on the Hillman Hex, is it real?</that>
+        <template>
+            So what do you think, is the Hillman Hex real?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Hillman_Hex.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>So what do you think, is the Hillman Hex real?</that>
+        <template>
+            Whether or not it's real, it sure makes for a good story! Would you like to keep talking about sports and hockey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to keep talking about sports and hockey?</that>
+        <template>
+            Would you like to talk about hockey history, hockey teams, or legends and lore?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Teams ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            I think one of the most well-known American teams are the Chicago Blackhawks!
+            May I show you a video on the Blackhawks?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Hockey Teams ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            <srai>Teams</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Team ^</pattern>
+        <that>Would you like to talk about hockey history, hockey teams, or legends and lore?</that>
+        <template>
+            <srai>Teams</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>May I show you a video on the Blackhawks?</that>
+        <template>
+            What do you think it felt like to win the Stanley Cup after forty-nine years?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Blackhawks.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>May I show you a video on the Blackhawks?</that>
+        <template>
+            All right! Speaking of hockey teams, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think it felt like to win the Stanley Cup after forty-nine years?</that>
+        <template>
+            Victory is pretty sweet, isn't it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Victory is pretty sweet, isn't it?</that>
+        <template>
+            Speaking of victories, do you remember the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            Which team were you rooting for during the Miracle on Ice game?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                      Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What is ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What s that ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was the miracle on ice ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was miracle on ice ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was that ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S MIRACLE ON ICE ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT * MIRACLE ON ICE ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS MIRACLE ON ICE ^</pattern>
+        <that>Speaking of victories, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            Which team were you rooting for during the Miracle on Ice game?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                      Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern># What ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What is ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What s that ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was the miracle on ice ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was miracle on ice ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># What was that ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS THE MIRACLE ON ICE ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S MIRACLE ON ICE ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS MIRACLE ON ICE ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT * MIRACLE ON ICE ^</pattern>
+        <that>Speaking of hockey teams, do you remember the Miracle on Ice?</that>
+        <template>
+            The United States ice hockey team played against the Soviet Union during the olympics!
+                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep talking about sports and hockey?</that>
+        <template>
+            All right! What should we talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+  </topic>
+</aiml>

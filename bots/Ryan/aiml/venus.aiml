@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># VENUS ^</pattern>
+        <that>Do you have a favorite planet?</that>
+        <template>
+            <think><set name="topic">venus</set></think>
+
+            Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="venus">
+        <category>
+            <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># VENUS IS MY FAVORITE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE VENUS ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># VENUS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># VENUS IS MY FAVORITE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE VENUS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
+            <template>
+                Of course you did. But. Did you know that Venus spins in the the opposite direction of most other planets?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
+            <template>
+                I should have known I couldn't stump you. What's your favorite thing about Venus?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What's your favorite thing about Venus?</that>
+            <template>
+                Thanks for telling me that. What do you say we talk about a scientific discovery a little closer to earth?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What's your favorite thing about Venus?</that>
+            <template>
+                Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
+        <template>
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
+        <template>
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
+        <template>
+            It's true! Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
+        <template>
+            It's true! Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

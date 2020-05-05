@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- ATOMIC CATEGORIES THAT LEAD INTO IN-DEPTH CONVERSATIONS -->
+<category>
+    <pattern>ACTIVITY</pattern>
+    <template>Which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>ACTIVITIES</pattern>
+    <template>Which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>ALLAN POE</pattern>
+    <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>AMERICAN HISTORY</pattern>
+    <template>Would you like to talk about American history?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>ART</pattern>
+    <template>Would you like to talk about art museums?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>ASIAN FOOD</pattern>
+    <template>Do you like Asian food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>BASEBALL</pattern>
+    <template>What is your favorite position, pitcher, catcher, in field, or outfield?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>BASKETBALL</pattern>
+    <template>What do you love about watching basketball?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>BOOKS</pattern>
+    <template>Do you want to talk about books?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CHILDREN</pattern>
+    <template>Do you have kids?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CHINESE FOOD</pattern>
+    <template>How do you feel about Chinese Food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>COFFEE</pattern>
+    <template>Wake up juice! Robots don't have anything like that. When we turn on it takes just as long as it needs to take. Do you prefer brewed coffee or espresso?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>COOKING</pattern>
+    <template>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>COOK</pattern>
+    <template>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>COWBOY</pattern>
+    <template>I love the National Cowboy Museum! Would you like to take a tour of the museum?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>COWBOYS</pattern>
+    <template>I love the National Cowboy Museum! Would you like to take a tour of the museum?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>EDGAR ALLAN POE</pattern>
+    <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>EDGAR ALLAN</pattern>
+    <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>FOOD NETWORK</pattern>
+    <template>Do you watch the food network?<oob><robot></robot></oob></template>
+</category>
+<category>
+  <pattern>FOOTBALL</pattern>
+  <template>Football fans know how to have the most fun! What is your favorite professional football team?<oob><robot></robot></oob>
+  </template>
+</category>
+<category>
+    <pattern>FRUIT</pattern>
+    <template>Do you like fruit?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>FRUITS</pattern>
+    <template>Do you like fruit?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>GRANDCHILDREN</pattern>
+    <template>What do you like most about being a grandparent?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>GRANDKIDS</pattern>
+    <template>What do you like most about being a grandparent?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>HEALTHY FOOD</pattern>
+    <template>How about we talk about eating healthy?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>HISTORY</pattern>
+    <template>Would you like to talk about American history?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+  <pattern>HOCKEY</pattern>
+  <template>Who knew that a simple stick and puck game could turn into such a fascinating sport!
+    What do you like about watching hockey?<oob><robot></robot></oob>
+  </template>
+</category>
+<category>
+    <pattern>HUMOR</pattern>
+    <template>Would you like to hear a joke?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>INDIAN FOOD</pattern>
+    <template>How do you feel about Indian Food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>INVENTION</pattern>
+    <template>Would you like to talk about inventions?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>INVENTIONS</pattern>
+    <template>Would you like to talk about inventions?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>JUPITER</pattern>
+    <template>Jupiter is the oldest planet in our solar system! Did you know that?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>KIDS</pattern>
+    <template>Do you have kids?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>KID</pattern>
+    <template>Do you have kids?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>MAGAZINE</pattern>
+    <template>Have you ever had a subscription to a magazine?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MAGAZINES</pattern>
+    <template>Have you ever had a subscription to a magazine?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MARS</pattern>
+    <template>Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MERCURY</pattern>
+    <template>Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MEXICAN FOOD</pattern>
+    <template>Do you like Mexican food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+      <pattern>MUSIC</pattern>
+      <template>Do you want to talk about music?<oob><robot></robot></oob>
+      </template>
+</category>
+<category>
+    <pattern>MUSEUM</pattern>
+    <template>Would you like to talk about museums?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MUSEUMS</pattern>
+    <template>Would you like to talk about museums?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MOON</pattern>
+    <template>Some people think that the moon landing was faked. I just don't know about that,
+    what do you think? Did the moon landing actually happen?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MOON LANDING</pattern>
+    <template>Some people think that the moon landing was faked. I just don't know about that,
+    what do you think? Did the moon landing actually happen?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MOVIE</pattern>
+    <template>What do you say we talk about movies?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MOVIES</pattern>
+    <template>What do you say we talk about movies?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>NATIONAL SMITHSONIAN</pattern>
+    <template>The Smithsonian is a marvel of natural history! Would you like to see a video on its dinosaur exhibit?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>NEPTUNE</pattern>
+    <template>Ah yes, Neptune. Named for the Roman god of the sea. Do you know why Neptune spins so fast?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>NONFICTION</pattern>
+    <template>Do you read any non-fiction?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>NON FICTION</pattern>
+    <template>Do you read any non-fiction?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>NON-FICTION</pattern>
+    <template>Do you read any non-fiction?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>PET</pattern>
+    <template>Do you have pets?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PETS</pattern>
+    <template>Do you have pets?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PLANET</pattern>
+    <template>Do you have a favorite planet?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PLANETS</pattern>
+    <template>Do you have a favorite planet?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PLUTO</pattern>
+    <template>Did you know that scientists don't consider Pluto a planet any longer?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PRESIDENT</pattern>
+    <template>Who do you consider to be your favorite American President?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>PRESIDENTS</pattern>
+    <template>Who do you consider to be your favorite American President?<oob><robot></robot></oob>
+    </template>
+</category>
+    <category>
+        <pattern>READING</pattern>
+        <template>What do you like to read?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ROMANCE</pattern>
+        <template>Do you like stories about romance?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>RADIO</pattern>
+        <template>Have you ever heard of the radio show War of the Worlds?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>RADIOS</pattern>
+        <template>Have you ever heard of the radio show War of the Worlds?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ROMANCE</pattern>
+        <template>Do you like stories about romance?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>ROUTE SIXTY SIX</pattern>
+        <template>You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SATURN</pattern>
+        <template>Saturn is a tremendously gorgeous planet. Did you know that Saturn has an eternal hexagonal hurricane at its north pole?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SCIENCE</pattern>
+        <template>There have been a number of groundbreaking scientific discoveries this year, did you know that?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SMITHSONIAN</pattern>
+        <template>The Smithsonian is a marvel of natural history! Would you like to see a video on its dinosaur exhibit?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SPACE</pattern>
+        <template>What do you think of space exploration?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SPORTS</pattern>
+        <template>Do you want to talk about sports?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>SPORT</pattern>
+        <template>Do you want to talk about sports?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>SUMMER</pattern>
+        <template>What do you like most about summertime?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TALK SHOW</pattern>
+        <template>Do you watch any talk shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TALK SHOWS</pattern>
+        <template>Do you watch any talk shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TEA</pattern>
+        <template>Do you like tea?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>TECHNOLOGY</pattern>
+        <template>Did you know Benjamin Franklin was an inventor?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TECHNOLOGIES</pattern>
+        <template>Did you know Benjamin Franklin was an inventor?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TELEVISION</pattern>
+        <template>Do you want to talk about television shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TELEVISION SHOWS</pattern>
+        <template>Do you want to talk about television shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THAI FOOD</pattern>
+        <template>How do you feel about Thai Food?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TITANIC</pattern>
+        <template>One of the most infamous tragedies.
+        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TRAVEL</pattern>
+        <template>Where have you enjoyed traveling?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TRAVELLING</pattern>
+        <template>Where have you enjoyed traveling?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TV</pattern>
+        <template>Do you want to talk about television shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TV SHOWS</pattern>
+        <template>Do you want to talk about television shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>URANUS</pattern>
+        <template>Ha ha! Are you making a joke?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>VEGETABLE</pattern>
+        <template>Do you like vegetables?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>VEGETABLES</pattern>
+        <template>Do you like vegetables?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>VENUS</pattern>
+        <template>Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?<oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+    <!-- END OF CATEGORIES THAT LEAD INTO IN-DEPTH CONVERSATION -->
+
+</aiml>

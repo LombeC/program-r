@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># Rock ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Rock Music ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Rock and Roll ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the rock clip?</that>
+        <template>
+            There's nothing in the world like rock music! I'm curious, did you ever play an instrument?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

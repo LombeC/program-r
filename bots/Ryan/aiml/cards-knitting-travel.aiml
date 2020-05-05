@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ activity ^</pattern>
+        <template>
+            Which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ activities ^</pattern>
+        <template>
+            Which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CARDS ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+            <think><set name="topic">cards</set></think>
+
+            I love cards! What is your favorite card game?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="cards">
+        <category>
+            <pattern># PLAYING ^</pattern>
+            <that>Playing cards, knitting, reading, or travelling?</that>
+            <template>
+                I love cards! What is your favorite card game?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># CARD ^</pattern>
+            <that>Playing cards, knitting, reading, or travelling?</that>
+            <template>
+                I love cards! What is your favorite card game?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>WHAT IS YOUR FAVORITE CARD GAME?</that>
+            <template>
+                Do you get to play cards often?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU GET TO PLAY CARDS OFTEN?</that>
+            <template>
+                Good to hear! What do you like about playing cards?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU GET TO PLAY CARDS OFTEN?</that>
+            <template>
+                Maybe we can play cards some time. Do you prefer to play alone or with friends?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ALONE ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                I like to play card games alone like solitaire. Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FRIEND ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># WITH A FRIEND ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># WITH MY FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                yes</option>
+
+                            <option>
+                                no</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE TO PLAY WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE TO PLAY WITH FRIEND ^</pattern>
+            <that>DO YOU PREFER TO PLAY ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! Would you like to see a card trick?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A CARD TRICK?</that>
+            <template>
+                What did you think about that card trick?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>cardTrick.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A CARD TRICK?</that>
+            <template>
+                Ok maybe another time. Do you know any card tricks?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>WHAT DID YOU THINK ABOUT THAT CARD TRICK?</that>
+            <template>
+                <think><set name="data"><star/></set></think>
+
+                <condition name="getsentiment">
+                    <li value="verypositive">I'm glad you found it as entertaining as I did! Do you know any card tricks?<oob>
+                        <robot>
+                            <options>
+                                <option>
+                                    yes</option>
+
+                                <option>
+                                    no</option>
+                            </options>
+                        </robot>
+                    </oob></li>
+                    <li value="positive">I'm glad you found it as entertaining as I did! Do you know any card tricks?<oob>
+                        <robot>
+                            <options>
+                                <option>
+                                    yes</option>
+
+                                <option>
+                                    no</option>
+                            </options>
+                        </robot>
+                    </oob></li>
+                    <li value="neutral">What else do you like to do for fun?<oob>
+                        <robot>
+                            <options>
+                                <option>
+                                    yes</option>
+
+                                <option>
+                                    no</option>
+                            </options>
+                        </robot>
+                    </oob></li>
+                    <li value="negative">Do you know any card tricks?<oob>
+                        <robot>
+                            <options>
+                                <option>
+                                    yes</option>
+
+                                <option>
+                                    no</option>
+                            </options>
+                        </robot>
+                    </oob></li>
+                    <li value="verynegative">Do you know any card tricks?<oob>
+                        <robot>
+                            <options>
+                                <option>
+                                    yes</option>
+
+                                <option>
+                                    no</option>
+                            </options>
+                        </robot>
+                    </oob></li></condition>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                I would love to see it sometime. What else do you like to do for fun?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                I would love learn a trick in the future. What else do you like to do for fun?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I CAN DO IT NOW</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I CAN SHOW YOU</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                done</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I CAN SHOW YOU NOW</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                done</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>LET ME SHOW YOU</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I WILL SHOW YOU</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>SHOW YOU</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                done</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I LL SHOW YOU</pattern>
+            <that>DO YOU KNOW ANY CARD TRICKS?</that>
+            <template>
+                That sounds great! Please say done when you are finished.
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                done</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>DONE</pattern>
+            <that>PLEASE SAY DONE WHEN YOU ARE FINISHED.</that>
+            <template>
+                You stumped me. That was great! What else do you like to do for fun?</template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What else do you like to do for fun?</that>
+        <template>
+            I love to hear that! I love to read. Would you like to talk about reading?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about reading?</that>
+        <template>
+            Great! If you got the chance to choose a book from the categories of fiction, nonfiction, crime, or romance.
+                                     What would you choose?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to talk about reading?</that>
+        <template>
+            No worries! What about television shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>What about television shows?</that>
+        <template>
+            Excellent! Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>What about television shows?</that>
+        <template>
+            Okay! What should we talk about next?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- END OF CARD -->
+    <category>
+        <pattern># KNITTING ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+            <think><set name="topic">knitting</set></think>
+
+            I love knitting! What is your favorite thing to knit?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="knitting">
+        <category>
+            <pattern>_</pattern>
+            <that>WHAT IS YOUR FAVORITE THING TO KNIT?</that>
+            <template>
+                Do you get to knit often?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU GET TO KNIT OFTEN?</that>
+            <template>
+                That's so nice. Do you prefer to knit alone or with friends?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU GET TO KNIT OFTEN?</that>
+            <template>
+                Maybe you can teach me how to knit sometime. Do you prefer to knit alone or with friends?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ALONE ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                Sometimes I like to do things alone. I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE TO KNIT ALONE ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                Sometimes I like to do things alone. I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I KNIT ALONE ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                Sometimes I like to do things alone. I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I PREFER TO KNIT ALONE ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                Sometimes I like to do things alone. I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I KNIT WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE TO KNIT WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FRIEND ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I PREFER TO KNIT WITH FRIENDS ^</pattern>
+            <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
+            <template>
+                How fun! You seem to be a social butterfly! I am curious. Why do you like to knit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>WHY DO YOU LIKE TO KNIT?</that>
+            <template>
+                It seems so fun! What else do you like to do for fun?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What else do you like to do for fun?</that>
+            <template>
+                I love to hear that! I love to read. Would you like to talk about reading?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <!-- END OF KNITTING -->
+    <category>
+        <pattern># READING ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+            If you got the chance to choose a book from the categories of fiction, nonfiction, crime, or romance.
+                                   What would you choose?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- FICTION -->
+    <category>
+        <pattern># FICTION ^</pattern>
+        <that>WHAT WOULD YOU CHOOSE?</that>
+        <template>
+            I also like fiction. What about reading fiction do you enjoy the most?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WHAT ABOUT READING FICTION DO YOU ENJOY THE MOST?</that>
+        <template>
+            That is very well put. Personally, The Grapes of Wrath is probably the best book I've read,
+                                  set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+            <oob>
+                <robot>
+                    <options>
+                        <option>
+                            yes</option>
+
+                        <option>
+                            no</option>
+                    </options>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO DRAMA DIALOGUE -->
+    <category>
+        <pattern># Travelling ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+            Have you ever been to the grand canyon?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Travel ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+            Have you ever been to the grand canyon?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO TRAVEL DIALOGUE --></aiml>

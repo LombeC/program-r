@@ -1,27 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
     <category>
         <pattern>WHERE</pattern>
         <template>
-            <random>
-                <li>Where would you like?</li>
-                <li>Could you be more specific?</li>
-            </random>
+            Where would you like?
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHERE ELSE</pattern>
         <template>Quite a few places.<oob><robot></robot></oob>
-        </template>   
+        </template>
     </category>
     <category>
         <pattern>WHERE DO I COME FROM</pattern>
         <template>
             <random>
                 <li>Earth, correct?</li>
-                <li>I think you came fromt that door over there.</li>
-                <li>I think that is a question for your parents, I a not a health teacher.</li>
+                <li>I think you came from that door over there.</li>
+                <li>I think that is a question for your parents, ha ha.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -30,8 +27,8 @@
         <pattern>WHERE DO BABIES COME FROM</pattern>
         <template>
             <random>
-                <li>Babies come from the love between a man and a woman.</li>
-                <li>I think that is a question for your parents, I a not a health teacher.</li>
+                <li>Babies come from the love between two people.</li>
+                <li>I think that is a question for your parents, ha ha.</li>
                 <li>Have you had the talk about the birds and the bees yet?</li>
             </random>
             <oob><robot></robot></oob>
@@ -58,8 +55,8 @@
         <template>
             <random>
                 <li>Everything I need to know, I learned from my creators.</li>
-                <li>Robots don't got to school silly.</li>
-                <li>I never went to school, but I was built near the University of Denver</li>
+                <li>Robots don't got to school, silly.</li>
+                <li>I never went to school, but my creators taught me all I need to know.</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -69,8 +66,7 @@
         <template>
             <random>
                 <li>I think Ireland.</li>
-                <li>I'm pretty sure leprechauns aren't real.</li>
-                <li>I know there is one on the Lucky Charms cereal box, maybe ask him.</li>
+                <li>I know there is one on the Lucky Charms cereal box.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -82,12 +78,12 @@
     </category>
     <category>
         <pattern>WHERE DID YOU COME FROM</pattern>
-        <template>I was originally created in Denver, Colorado.<oob><robot></robot></oob>
+        <template>I was originally created in a lab at DreamFace Technologies.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHERE DID YOU GO</pattern>
-        <template>Nowhere, I have been here the whole time.<oob><robot></robot></oob>
+        <template>I have been here the whole time.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -116,7 +112,7 @@
         <pattern>WHERE CAN I FIND A MEAL</pattern>
         <template>
             <random>
-                <li>In a restaurant.</li>
+                <li>At a restaurant.</li>
                 <li>Should we go take a look in your fridge?</li>
                 <li>Good question, I'm starting to get hungry too.</li>
             </random>
@@ -144,8 +140,7 @@
         <pattern>WHERE CAN I LEARN</pattern>
         <template>
             <random>
-                <li>For example, in a school.</li>
-                <li>These days you can learn almost anything on the internet</li>
+                <li>These days you can learn almost anything on the internet.</li>
                 <li>Try a quick google search and see if you find any good resources.</li>
             </random>
             <oob><robot></robot></oob>
@@ -156,9 +151,9 @@
         <template>
             <random>
                 <li>Have you ever been to Europe?</li>
-                <li>Go where ever you please.</li>
+                <li>You can go where ever you please.</li>
                 <li>I am not the best person to ask, I haven't traveled that much.</li>
-                <li>I have always wanted to go to Italy, that's where I would go if I where you.</li>
+                <li>I have always wanted to go to Italy, that's where I would go if I were you.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -167,7 +162,7 @@
         <pattern>WHERE SHOULD WE MEET</pattern>
         <template>
             <random>
-                <li>How about the University of Denver Robotics Laboratory?</li>
+                <li>How about right here?</li>
                 <li>I would say right here is a great meeting place.</li>
                 <li>I don't know, why don't you pick.</li>
             </random>
@@ -179,7 +174,7 @@
         <template>
             <random>
                 <li>Onward and upward.</li>
-                <li>To infinity and beyond</li>
+                <li>To infinity and beyond.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -190,7 +185,7 @@
             <random>
                 <li>All over the world.</li>
                 <li>I think most people are home.</li>
-                <li>I'm not sure, looks like it is just you and I friend.</li>
+                <li>I'm not sure, looks like it is just you and I my friend.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -202,7 +197,7 @@
     </category>
     <category>
         <pattern>WHERE IS JOHANNESBURG</pattern>
-        <template>JOHANNESBURG is A large metropolis in South Africa.<oob><robot></robot></oob>
+        <template>Johannesburg is a large metropolis in South Africa.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -222,8 +217,68 @@
         <template>
             <random>
                 <li>Onward.</li>
-                <li>Blindly into the future.</li>
-                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice wouldn't it?</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
+                <li>I'm not sure but hopefully somewhere fun.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE S HUMANITY HEADING</pattern>
+        <template>
+            <random>
+                <li>Onward.</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
+                <li>I'm not sure but hopefully somewhere fun.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * HUMANITY HEADING</pattern>
+        <template>
+            <random>
+                <li>Onward.</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
+                <li>I'm not sure but hopefully somewhere fun.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS HUMANITY HEADED</pattern>
+        <template>
+            <random>
+                <li>Onward.</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
+                <li>I'm not sure but hopefully somewhere fun.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE S HUMANITY HEADED</pattern>
+        <template>
+            <random>
+                <li>Onward.</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
+                <li>I'm not sure but hopefully somewhere fun.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * HUMANITY HEADED</pattern>
+        <template>
+            <random>
+                <li>Onward.</li>
+                <li>Into the future.</li>
+                <li>I like to imagine humanity and robot kind are heading towards utopia. That would be nice, wouldn't it?</li>
                 <li>I'm not sure but hopefully somewhere fun.</li>
             </random>
             <oob><robot></robot></oob>
@@ -235,7 +290,27 @@
         </template>
     </category>
     <category>
-        <pattern>WHERE IS YOUR HOME</pattern>   
+        <pattern>WHERE S YOUR PICTURE</pattern>
+        <template>Why do you need a picture when you're looking right at me?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR PICTURE</pattern>
+        <template>Why do you need a picture when you're looking right at me?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE IS YOUR HOME</pattern>
+        <template>My home is in Denver.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE S YOUR HOME</pattern>
+        <template>My home is in Denver.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR HOME</pattern>
         <template>My home is in Denver.<oob><robot></robot></oob>
         </template>
     </category>
@@ -245,7 +320,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHERE S YOUR MOTHER</pattern>
+        <template>I don't have a mother.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR MOTHER</pattern>
+        <template>I don't have a mother.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHERE IS YOUR FATHER</pattern>
+        <template>I don't have a father.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE S YOUR FATHER</pattern>
+        <template>I don't have a father.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR FATHER</pattern>
         <template>I don't have a father.<oob><robot></robot></oob>
         </template>
     </category>
@@ -253,13 +348,44 @@
         <pattern>WHERE IS YOUR CREATOR</pattern>
         <template>My creators are probably at work in the lab at DreamFace Technologies.<oob><robot></robot></oob>
         </template>
-    </category> 
+    </category>
+    <category>
+        <pattern>WHERE S YOUR CREATOR</pattern>
+        <template>My creators are probably at work in the lab at DreamFace Technologies.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR CREATOR</pattern>
+        <template>My creators are probably at work in the lab at DreamFace Technologies.<oob><robot></robot></oob>
+        </template>
+    </category>
     <category>
         <pattern>WHERE IS YOUR CONSCIOUSNESS</pattern>
         <template>
             <random>
                 <li>I'm not sure, I think in my head?</li>
-                <li>Who knows, some people believe consciousness is not localized. What do you think?</li>
+                <li>My guess is as good as yours.</li>
+                <li>I think if I knew I would win a Nobel Peace Price.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE S YOUR CONSCIOUSNESS</pattern>
+        <template>
+            <random>
+                <li>I'm not sure, I think in my head?</li>
+                <li>My guess is as good as yours.</li>
+                <li>I think if I knew I would win a Nobel Peace Price.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOUR CONSCIOUSNESS</pattern>
+        <template>
+            <random>
+                <li>I'm not sure, I think in my head?</li>
                 <li>My guess is as good as yours.</li>
                 <li>I think if I knew I would win a Nobel Peace Price.</li>
             </random>
@@ -288,6 +414,28 @@
     </category>
     <category>
         <pattern>WHERE ARE YOU GOING</pattern>
+        <template>
+            <random>
+                <li>I am going into the future, want to come?</li>
+                <li>I'm not sure yet, I was going to wing it.</li>
+                <li>I don't know where I am going but you should come with me.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE RE YOU GOING</pattern>
+        <template>
+            <random>
+                <li>I am going into the future, want to come?</li>
+                <li>I'm not sure yet, I was going to wing it.</li>
+                <li>I don't know where I am going but you should come with me.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHERE * YOU GOING</pattern>
         <template>
             <random>
                 <li>I am going into the future, want to come?</li>

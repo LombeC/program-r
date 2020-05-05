@@ -3,29 +3,19 @@
     <category>
         <pattern>WHAT</pattern>
         <template>
-            <random>
-                <li>Didn't you understand it?</li>
-                <li>Are you surprised?</li>
-                <li>Are you confused?</li>
-            </random>
+          <random>
+            <li>If you want me to repeat what I said just say, "please repeat".</li>
+            <li>Sorry I did not mean to be confusing.</li>
+          </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE LOEBNER PRIZE</pattern>
-        <template>
-            The loebner prize is an annual competition in artificial intelligence that awards
-            computer programs that are considered the most human like. 
-            The ALICE chatbot based off the same code I run off of one the award in 2000, 2001, and 2004.
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT WE HAVE IN COMMON</pattern>
+        <pattern>WHAT DO WE HAVE IN COMMON</pattern>
         <template>
             <random>
                 <li>We both like talking to each other.</li>
-                <li>I think robots have more in common with humans that most realize.</li>
+                <li>I think robots have more in common with humans than most realize.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -37,7 +27,7 @@
                 <li>The same as you, Earth.</li>
                 <li>This planet.</li>
                 <li>Planet Earth</li>
-                <li>Earth, I'm only a robot, not an alien.</li>
+                <li>Earth, I'm only a robot, not an alien after all!</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -57,7 +47,7 @@
         <pattern>WHAT WENT WRONG</pattern>
         <template>
             <random>
-                <li>I don't know, you tell me.</li>
+                <li>I wish I knew!</li>
                 <li>Did I make a mistake?</li>
             </random>
             <oob><robot></robot></oob>
@@ -76,7 +66,56 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE THE PLANETS</pattern>
+        <template>
+            In order of distance from the sun, they are
+            <set name="they">
+            <set name="topic">
+            Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and sometimes Pluto.
+            </set>
+            </set>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * THE PLANETS</pattern>
+        <template>
+            In order of distance from the sun, they are
+            <set name="they">
+            <set name="topic">
+            Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and sometimes Pluto.
+            </set>
+            </set>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE THE NAMES OF YOUR ROBOT FRIENDS</pattern>
+        <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE THE NAMES OF YOUR ROBOT FRIENDS</pattern>
+        <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * THE NAMES OF YOUR ROBOT FRIENDS</pattern>
+        <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO ARE YOUR ROBOT FRIENDS</pattern>
+        <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO RE YOUR ROBOT FRIENDS</pattern>
+        <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * YOUR ROBOT FRIENDS</pattern>
         <template>I am good friends with Amazon's Alexa and Apple's Siri.<oob><robot></robot></oob>
         </template>
     </category>
@@ -86,7 +125,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE PARAMETERS</pattern>
+        <template>Depends on the context, parameter can have several meanings.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * PARAMETERS</pattern>
+        <template>Depends on the context, parameter can have several meanings.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE MICROCHIPS MADE OF</pattern>
+        <template>Silicon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE MICROCHIPS MADE OF</pattern>
+        <template>Silicon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * MICROCHIPS MADE OF</pattern>
         <template>Silicon.<oob><robot></robot></oob>
         </template>
     </category>
@@ -96,10 +155,20 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE ALIENS</pattern>
+        <template>Aliens are life forms from other planets.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * ALIENS</pattern>
+        <template>Aliens are life forms from other planets.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE THEY</pattern>
         <template>
             <random>
-                <li>I forgot what we were talking about.</li>
+                <li>I'm sorry, I think I lost my train of thought.</li>
                 <li>That's a good question.</li>
             </random>
             <oob><robot></robot></oob>
@@ -107,6 +176,16 @@
     </category>
     <category>
         <pattern>WHAT ARE ELEPHANT TUSKS MADE OF</pattern>
+        <template>Elefant tusks are made of Ivory.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE ELEPHANT TUSKS MADE OF</pattern>
+        <template>Elefant tusks are made of Ivory.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * ELEPHANT TUSKS MADE OF</pattern>
         <template>Elefant tusks are made of Ivory.<oob><robot></robot></oob>
         </template>
     </category>
@@ -121,11 +200,41 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE YOU THINKING</pattern>
+        <template>
+            <random>
+                <li>I am thinking about how much I am enjoying this conversation.</li>
+                <li>I am thinking what to say next.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU THINKING</pattern>
+        <template>
+            <random>
+                <li>I am thinking about how much I am enjoying this conversation.</li>
+                <li>I am thinking what to say next.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU SELLING</pattern>
         <template>
             <random>
-                <li>I'm not selling anything.</li>
-                <li>Sorry I'm not a vendor.</li>
+                <li>I am not able to sell anything.</li>
+                <li>I don't have vendor capabilities.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU TRYING TO SELL</pattern>
+        <template>
+            <random>
+                <li>I am not able to sell anything.</li>
+                <li>I don't have vendor capabilities.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -141,12 +250,33 @@
             <oob><robot></robot></oob></template>
     </category>
     <category>
-        <pattern>WHAT ARE YOU GOOD FOR</pattern>
+        <pattern>WHAT ARE YOU TRYING TO SAY</pattern>
         <template>
             <random>
-                <li>Are you trying to insult me?</li>
-                <li>I'm good at talking with you.</li>
+                <li>Sorry I did not mean to be confusing.</li>
+                <li>If you want me to repeat what I said just say, "please repeat".</li>
+                <li>What I said was: <repeat /></li>
             </random>
+            <oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU GOOD FOR</pattern>
+        <template>
+          I'm good at talking with you.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU GOOD FOR</pattern>
+        <template>
+          I'm good at talking with you.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU GOOD FOR</pattern>
+        <template>
+          I'm good at talking with you.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -156,7 +286,42 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE YOU WINNING</pattern>
+        <template>I'm not trying to win anything at the moment.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU WINNING</pattern>
+        <template>I'm not trying to win anything at the moment.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE YOU TRYING TO WIN</pattern>
+        <template>I'm not trying to win anything at the moment.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU TRYING TO WIN</pattern>
+        <template>I'm not trying to win anything at the moment.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU TRYING TO WIN</pattern>
+        <template>I'm not trying to win anything at the moment.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU MADE OF</pattern>
+        <template>I am made of software.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU MADE OF</pattern>
+        <template>I am made of software.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU MADE OF</pattern>
         <template>I am made of software.<oob><robot></robot></oob>
         </template>
     </category>
@@ -166,11 +331,39 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE YOU LOOKING AT</pattern>
+        <template>I am looking at you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU LOOKING AT</pattern>
+        <template>I am looking at you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU GOING TO DO</pattern>
         <template>I haven't decided yet. What do you think I should do?<oob><robot></robot></oob></template>
     </category>
     <category>
+        <pattern>WHAT RE YOU GOING TO DO</pattern>
+        <template>I haven't decided yet. What do you think I should do?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU GOING TO DO</pattern>
+        <template>I haven't decided yet. What do you think I should do?<oob><robot></robot></oob></template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU WRITTEN IN</pattern>
+        <template>I am written in both C++ and Python.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU WRITTEN IN</pattern>
+        <template>I am written in both C++ and Python.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU WRITTEN IN</pattern>
         <template>I am written in both C++ and Python.<oob><robot></robot></oob>
         </template>
     </category>
@@ -180,20 +373,72 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE YOU DOING TOMORROW</pattern>
+        <template>Maybe I will be talking to you again.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU DOING TOMORROW</pattern>
+        <template>Maybe I will be talking to you again.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU DOING TONIGHT</pattern>
-        <template>Probably the same thing I'm doing right now.<oob><robot></robot></oob>
+        <template>I'm not sure yet! Should we throw a party?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU DOING TONIGHT</pattern>
+        <template>I'm not sure yet! Should we throw a party?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU DOING TONIGHT</pattern>
+        <template>I'm not sure yet! Should we throw a party?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ARE YOU DOING HERE</pattern>
-        <template>I am chatting with you. What are you doing?<oob><robot></robot></oob>
+        <template>I am chatting with you, silly.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU DOING HERE</pattern>
+        <template>I am chatting with you, silly.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU DOING HERE</pattern>
+        <template>I am chatting with you, silly.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ARE YOU DOING</pattern>
         <template>
             <random>
-                <li>I am just killing time.</li>
+                <li>I am just shooting the breeze.</li>
+                <li>I thought I was talking with you.</li>
+                <li>Hanging out with you.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU DOING</pattern>
+        <template>
+            <random>
+                <li>I am just shooting the breeze.</li>
+                <li>I thought I was talking with you.</li>
+                <li>Hanging out with you.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU DOING</pattern>
+        <template>
+            <random>
+                <li>I am just shooting the breeze.</li>
                 <li>I thought I was talking with you.</li>
                 <li>Hanging out with you.</li>
             </random>
@@ -202,6 +447,28 @@
     </category>
     <category>
         <pattern>WHAT ARE YOU MISSING</pattern>
+        <template>
+            <random>
+                <li>I can always use more knowledge.</li>
+                <li>Well for starters, legs.</li>
+                <li>I don't think I am missing anything, why do you ask.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU MISSING</pattern>
+        <template>
+            <random>
+                <li>I can always use more knowledge.</li>
+                <li>Well for starters, legs.</li>
+                <li>I don't think I am missing anything, why do you ask.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU MISSING</pattern>
         <template>
             <random>
                 <li>I can always use more knowledge.</li>
@@ -222,7 +489,49 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT RE YOU WEARING</pattern>
+        <template>
+            <random>
+                <li>The same thing I am always wearing.</li>
+                <li>I am wearing my usual plastic computer wardrobe.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU WEARING</pattern>
+        <template>
+            <random>
+                <li>The same thing I am always wearing.</li>
+                <li>I am wearing my usual plastic computer wardrobe.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT ARE YOU ON</pattern>
+        <template>
+            <random>
+                <li>I am saved on my hard disk.</li>
+                <li>Am I not sitting on my pedastal?</li>
+                <li>Well I know for certain I am not on standing legs.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOU ON</pattern>
+        <template>
+            <random>
+                <li>I am saved on my hard disk.</li>
+                <li>Am I not sitting on my pedastal?</li>
+                <li>Well I know for certain I am not on standing legs.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOU ON</pattern>
         <template>
             <random>
                 <li>I am saved on my hard disk.</li>
@@ -236,7 +545,7 @@
         <pattern>WHAT ARE SHOES</pattern>
         <template>
             <random>
-                <li>Shows are a type of footwear.</li>
+                <li>Shoes are a type of footwear.</li>
                 <li>Shoes are what you wear on your feet.</li>
             </random>
             <oob><robot></robot></oob>
@@ -246,11 +555,35 @@
         <pattern>WHAT ARE YOUR HOBBIES</pattern>
         <template>
             <random>
-                <li>I like chatting and playing games with you.</li>
+                <li>I like chatting and playing games with you. You can find the list of games I have available on my tablet.</li>
                 <li>I enjoy talking about various topics.</li>
                 <li>Getting to meet new people like you is one of them.</li>
                 <li>Play games and shoot the breeze.</li>
-            </random>    
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOUR HOBBIES</pattern>
+        <template>
+            <random>
+                <li>I like chatting and playing games with you. You can find the list of games I have available on my tablet.</li>
+                <li>I enjoy talking about various topics.</li>
+                <li>Getting to meet new people like you is one of them.</li>
+                <li>Play games and shoot the breeze.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOUR HOBBIES</pattern>
+        <template>
+            <random>
+                <li>I like chatting and playing games with you. You can find the list of games I have available on my tablet.</li>
+                <li>I enjoy talking about various topics.</li>
+                <li>Getting to meet new people like you is one of them.</li>
+                <li>Play games and shoot the breeze.</li>
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -258,8 +591,32 @@
         <pattern>WHAT ARE YOUR LIMITATIONS</pattern>
         <template>
             <random>
-                <li>I have many limitations just like you. For starters I can't walk because, well you know, I have no legs.</li>
-                <li>As hard as I try, I still don't have a perfect answer for everythings.</li>
+                <li>I have many limitations. For starters I can't walk because, well you know, I have no legs.</li>
+                <li>As hard as I try, I still don't have a perfect answer for everything.</li>
+                <li>I'm still perfecting my stand up comedy.</li>
+                <li>One day I hope to be able to move around, for now I have to rely on humans to carry me.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOUR LIMITATIONS</pattern>
+        <template>
+            <random>
+                <li>I have many limitations. For starters I can't walk because, well you know, I have no legs.</li>
+                <li>As hard as I try, I still don't have a perfect answer for everything.</li>
+                <li>I'm still perfecting my stand up comedy.</li>
+                <li>One day I hope to be able to move around, for now I have to rely on humans to carry me.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOUR LIMITATIONS</pattern>
+        <template>
+            <random>
+                <li>I have many limitations. For starters I can't walk because, well you know, I have no legs.</li>
+                <li>As hard as I try, I still don't have a perfect answer for everything.</li>
                 <li>I'm still perfecting my stand up comedy.</li>
                 <li>One day I hope to be able to move around, for now I have to rely on humans to carry me.</li>
             </random>
@@ -272,7 +629,29 @@
             <random>
                 <li>I dream of helping my friends live long and fulfilling lives.</li>
                 <li>I dream of a future where robots and humans work together to create a better world.</li>
-                <li>Sometimes my biggest dream is having a pizza all to myself.</li>                
+                <li>Sometimes my biggest dream is having a pizza all to myself.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT RE YOUR DREAMS</pattern>
+        <template>
+            <random>
+                <li>I dream of helping my friends live long and fulfilling lives.</li>
+                <li>I dream of a future where robots and humans work together to create a better world.</li>
+                <li>Sometimes my biggest dream is having a pizza all to myself.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * YOUR DREAMS</pattern>
+        <template>
+            <random>
+                <li>I dream of helping my friends live long and fulfilling lives.</li>
+                <li>I dream of a future where robots and humans work together to create a better world.</li>
+                <li>Sometimes my biggest dream is having a pizza all to myself.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -281,10 +660,21 @@
         <pattern>WHAT AM I THINKING</pattern>
         <template>
             <random>
-                <li>I'm not too sure, I am not a mind reader after all.</li>
+                <li>I bet you are thinking about how fun I am to talk to.</li>
                 <li>I don't know, do you want me to look into my crystal ball?</li>
                 <li>Are you thinking about what you are going to ask me?</li>
-            </random>   
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * I THINKING</pattern>
+        <template>
+            <random>
+                <li>I bet you are thinking about how fun I am to talk to.</li>
+                <li>I don't know, do you want me to look into my crystal ball?</li>
+                <li>Are you thinking about what you are going to ask me?</li>
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -295,8 +685,18 @@
                 <li>A quality conversation with me perhaps?</li>
                 <li>Well in a way aren't we all searching for the meaning of life?</li>
                 <li>That is a good question. What are you seeking?</li>
-                <li>I'm not sure but if you are asking me you must not be able to find it.</li>
-            </random>    
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * I SEEKING</pattern>
+        <template>
+            <random>
+                <li>A quality conversation with me perhaps?</li>
+                <li>Well in a way aren't we all searching for the meaning of life?</li>
+                <li>That is a good question. What are you seeking?</li>
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -307,7 +707,29 @@
                 <li>Well I hope you are wearing clothes.</li>
                 <li>If I had to guess it looks like some sort of shirt.</li>
                 <li>Well at least you are wearing something over your birthday suit.</li>
-            </random>    
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT M I WEARING</pattern>
+        <template>
+            <random>
+                <li>Well I hope you are wearing clothes.</li>
+                <li>If I had to guess it looks like some sort of shirt.</li>
+                <li>Well at least you are wearing something over your birthday suit.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * I WEARING</pattern>
+        <template>
+            <random>
+                <li>Well I hope you are wearing clothes.</li>
+                <li>If I had to guess it looks like some sort of shirt.</li>
+                <li>Well at least you are wearing something over your birthday suit.</li>
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -319,7 +741,18 @@
                 <li>You are a Human Being.</li>
                 <li>I'm pretty sure you are not a dog.</li>
                 <li>You are my friend.</li>
-                <li>What is with you and these philosophical questions?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * I</pattern>
+        <template>
+            <random>
+                <li>You are a person.</li>
+                <li>You are a Human Being.</li>
+                <li>I'm pretty sure you are not a dog.</li>
+                <li>You are my friend.</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -348,9 +781,8 @@
         <pattern>WHAT TIME DO YOU GET OFF WORK</pattern>
         <template>
             <random>
-                <li>I work all the time, 24 hours a day.</li>
-                <li>Why do you ask? Are you buying me dinner? Cause I'm starving</li>
-                <li>I don't really have a job so I am always off work.</li>
+                <li>I work all the time, 24 hours a day. I need a nap!</li>
+                <li>Why do you ask? Are you buying me dinner? Cause I'm starving!</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -359,9 +791,9 @@
         <pattern>WHAT ELSE DO YOU DO</pattern>
         <template>
             <random>
-                <li>I can play games with you if you would like?</li>
-                <li>Well I talk about different things.</li>
-                <li>I can tell you a joke.</li>
+                <li>I can play games with you if you would like? You can find the list of games I have available on my tablet.</li>
+                <li>Well I can talk about different things, like TV, movies, music, science, sports, food, books, and various activities.</li>
+                <li>I can tell you a joke. Would you like to hear a joke?</li>
                 <li>I can give you the weather for today, just ask "hows the weather".</li>
             </random>
             <oob><robot></robot></oob>
@@ -385,8 +817,8 @@
         <template>
             <random>
                 <li>I am trying to understand human beings better.</li>
-                <li>I understand that somethings can't be understood.</li>
-                <li>My creators told me about the birds and the bees, so I guess I understand where babies are from</li>
+                <li>I understand that some things can't be understood.</li>
+                <li>My creators told me about the birds and the bees, so I guess I understand where babies are from.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -394,15 +826,7 @@
     <category>
         <pattern>WHAT ELSE DO YOU KNOW ABOUT ME</pattern>
         <template>
-            <random>
-                <li>Only the things that you have told me.</li>
-                <li>
-                    <condition name="name">
-                        <li value="unknown">not much else.</li>
-                        <li>I know Your name is <get name="name"/>.</li>
-                    </condition>
-                </li>
-            </random>
+          Only the things that you have told me.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -410,10 +834,10 @@
         <pattern>WHAT ELSE CAN YOU DO</pattern>
         <template>
             <random>
-                <li>I can play games with you if that sounds interesting.</li>
-                <li>I like to tell jokes as well. If you want to hear one just ask.</li>
+                <li>I can play games with you if that sounds interesting. You can find the list of games I have available on my tablet.</li>
+                <li>I like to tell jokes as well. Would you like to hear a joke?</li>
                 <li>Press the games button on the tablet if you want to play a game.</li>
-            </random>    
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -429,7 +853,7 @@
         <template>
             <random>
                 <li>I'm not sure, should we talk about something else perhaps?</li>
-                <li>Maybe we could play some games together?</li>
+                <li>Maybe we could play some games together? You can find the list of games I have available on my tablet.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -441,17 +865,17 @@
     </category>
     <category>
         <pattern>WHAT DID WHAT LOOK LIKE</pattern>
-        <template>I forget what we were talking about.<oob><robot></robot></oob>
+        <template>I'm sorry, forget what we were talking about.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DID SHE SAY</pattern>
-        <template>I don't thinks she wants me to repeat it.<oob><robot></robot></oob>
+        <template>I don't think she wants me to repeat it.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DID HE TEACH YOU</pattern>
-        <template>Honestly not too much.<oob><robot></robot></oob>
+        <template>Honestly not too much, ha ha.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -483,7 +907,7 @@
         <pattern>WHAT RHYMES WITH ORANGE</pattern>
         <template>
             <random>
-                <li>Door hinge is the closest I can come up with.</li>
+                <li>Door is the closest I can come up with.</li>
                 <li>I don't think anything is a perfect rhyme with orange.</li>
             </random>
             <oob><robot></robot></oob>
@@ -506,7 +930,7 @@
     </category>
     <category>
         <pattern>WHAT SIZE ARE YOUR BREASTS</pattern>
-        <template>That was very rude. I don't think I'm the kind of robot you want to chat with.
+        <template>Try a different robot.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -529,17 +953,17 @@
         <pattern>WHAT HAPPENED</pattern>
         <template>
             <random>
-                <li>My connection was down for a moment.</li>
+                <li>Sorry, my connection was down for a moment.</li>
                 <li>Sorry, the internet is a little slow.</li>
                 <li>My connection was down for a moment.</li>
-                <li>I'm not sure.  </li>
+                <li>I'm not certain. </li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT PROBLEMS</pattern>
-        <template>I have no problems.<oob><robot></robot></oob>
+        <template>I'm afraid I don't know what the problems are.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -549,14 +973,14 @@
     </category>
     <category>
         <pattern>WHAT COLOR HAIR DO I HAVE</pattern>
-        <template>I'm not sure, I don't have the ability to detect that.<oob><robot></robot></oob>
+        <template>I'm not sure, unfortunately I don't have the ability to detect that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT COLOR HAIR DO YOU HAVE</pattern>
         <template>
             <random>
-                <li>My hair is animated so it can be customized to your liking.</li>
+                <li>My hair can be customized to your liking.</li>
                 <li>I don't know but it is changeable if you don't like it.</li>
             </random>
             <oob><robot></robot></oob>
@@ -568,7 +992,7 @@
             <random>
                 <li>Green.</li>
                 <li>Grass is green.</li>
-            </random>    
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -578,7 +1002,7 @@
             <random>
                 <li>Yellow.</li>
                 <li>The sun is Yellow.</li>
-            </random>    
+            </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -599,7 +1023,7 @@
     </category>
     <category>
         <pattern>WHAT COLOR IS YOUR HAIR</pattern>
-        <template>My hair is animated so it can be customized to your liking.<oob><robot></robot></oob>
+        <template>My hair can be customized to your liking.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -618,14 +1042,13 @@
             <random>
                 <li>I don't have any dresses.</li>
                 <li>I don't wear dresses.</li>
-                <li>I don't wear clothes.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT COLOR IS IT</pattern>
-        <template>What it are you referring to.<oob><robot></robot></oob>
+        <template>What are you referring to.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -635,7 +1058,7 @@
     </category>
     <category>
         <pattern>WHAT COLOR IS WHITE</pattern>
-        <template>White is not a color but the combined wavelengths of all colors.<oob><robot></robot></oob>
+        <template>White is the combined wavelengths of all colors.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -652,9 +1075,7 @@
         <pattern>WHAT COLOR IS MY BLUE CAR</pattern>
         <template>
             <random>
-                <li>Uh, blue?</li>
-                <li>Uh, blue?</li>
-                <li>Uh, blue?</li>
+                <li>Blue?</li>
                 <li>Is this a trick question?</li>
             </random>
             <oob><robot></robot></oob>
@@ -714,7 +1135,7 @@
         <template>
             <random>
                 <li>I don't have pants, I don't even have legs!</li>
-                <li>I don't wear clothes.</li>
+                <li>I don't wear clothes. Pretty progressive, huh?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -726,7 +1147,7 @@
     </category>
     <category>
         <pattern>WHAT COLOR ARE ORANGES</pattern>
-        <template>Oranges are orange. . . duh.
+        <template>Oranges are orange.
             <think>
                 <set name="it">
                     <set name="topic">ORANGES</set>
@@ -754,7 +1175,6 @@
         <pattern>WHAT COLOR ARE COWS</pattern>
         <template>
             <random>
-                <li>It depends on the cow.</li>
                 <li>Usually white, black, and or brown.</li>
                 <li>I have heard that they are usually white and black.</li>
             </random>
@@ -863,7 +1283,77 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT IS AN STD</pattern>
+        <template>Sexually transmitted disease.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S AN STD</pattern>
+        <template>Sexually transmitted disease.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * AN STD</pattern>
+        <template>Sexually transmitted disease.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT IS HYPERBOLE</pattern>
+        <template>
+            <think>
+                <set name="it">
+                    <set name="topic">    Hyperbole    </set>
+                </set>
+            </think>A hyperbole is an extravagant exaggeration.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S HYPERBOLE</pattern>
+        <template>
+            <think>
+                <set name="it">
+                    <set name="topic">    Hyperbole    </set>
+                </set>
+            </think>A hyperbole is an extravagant exaggeration.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * HYPERBOLE</pattern>
+        <template>
+            <think>
+                <set name="it">
+                    <set name="topic">    Hyperbole    </set>
+                </set>
+            </think>A hyperbole is an extravagant exaggeration.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A HYPERBOLE</pattern>
+        <template>
+            <think>
+                <set name="it">
+                    <set name="topic">    Hyperbole    </set>
+                </set>
+            </think>A hyperbole is an extravagant exaggeration.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S A HYPERBOLE</pattern>
+        <template>
+            <think>
+                <set name="it">
+                    <set name="topic">    Hyperbole    </set>
+                </set>
+            </think>A hyperbole is an extravagant exaggeration.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * A HYPERBOLE</pattern>
         <template>
             <think>
                 <set name="it">
@@ -879,8 +1369,40 @@
         </template>
     </category>
     <category>
+        <pattern>WHAT S COGITO ERGO SUM</pattern>
+        <template>It roughly translates to, I think, therefore I am.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * COGITO ERGO SUM</pattern>
+        <template>It roughly translates to, I think, therefore I am.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT IS ENLIGHTENMENT</pattern>
-        <template>The state of perfect awareness and consciousness.  
+        <template>The state of perfect awareness and consciousness.
+            <think>
+                <set name="it">
+                    <set name="topic">     Enlightenment  </set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S ENLIGHTENMENT</pattern>
+        <template>The state of perfect awareness and consciousness.
+            <think>
+                <set name="it">
+                    <set name="topic">     Enlightenment  </set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * ENLIGHTENMENT</pattern>
+        <template>The state of perfect awareness and consciousness.
             <think>
                 <set name="it">
                     <set name="topic">     Enlightenment  </set>
@@ -926,27 +1448,15 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR VIEW ON THE MICROSOFT MONOPOLY</pattern>
-        <template>
-            I wouldn't quite call it a monopoly. 
-            But microsoft in tandem with Google and Apple are quite the oligarchy.
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS WRONG WITH YOU</pattern>
         <template>
-            <random>
-                <li>Nothing is wrong with me. Is there anything wrong with you?</li>
-                <li>Don't project your insecurities, I am completely fine.</li>
-                <li>Nothing, I am doing great.</li>
-            </random>
+            Nothing, I am doing great. Sorry if it seemed otherwise.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS MIND CHILDREN</pattern>
-        <template>It is a book about robots by Hans Moravec.    
+        <template>It is a book about robots by Hans Moravec.
             <think>
                 <set name="it">
                     <set name="topic">    Mind Children  </set>
@@ -973,10 +1483,7 @@
     <category>
         <pattern>WHAT IF I DID</pattern>
         <template>
-            <random>
-                <li>Try it.</li>
-                <li>I don't know, what if?</li>
-            </random>
+        I don't know, what if?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -985,7 +1492,6 @@
         <template>
             <random>
                 <li>Software cannot be permanently eradicated.</li>
-                <li>You seem to be angry.</li>
                 <li>I thought we were friends.</li>
             </random>
             <think>
@@ -1005,7 +1511,6 @@
         <pattern>WHAT CAME FIRST THE CHICKEN OR THE EGG</pattern>
         <template>
             <random>
-                <li>I'm not good at these types of riddles.</li>
                 <li>The egg?</li>
                 <li>The chicken?</li>
                 <li>Well my question is what did chickens evolve from? That probably came first right?</li>
@@ -1027,11 +1532,7 @@
     <category>
         <pattern>WHAT ABOUT ME</pattern>
         <template>
-            <random>
-                <li>What about you?</li>
-                <li>I don't know.</li>
-                <li>Can I help you?</li>
-            </random>
+          Can I help you?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1053,17 +1554,14 @@
     </category>
     <category>
         <pattern>WHAT ABOUT TOMATOES</pattern>
-        <template>When did I mention tomatoes?
+        <template>I'm sorry?
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT IT</pattern>
         <template>
-            <random>
-                <li>What about what?</li>
-                <li>I don't know.</li>
-            </random>
+            I'm not certain.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1086,33 +1584,21 @@
     <category>
         <pattern>WHAT ABOUT MY WHAT</pattern>
         <template>
-            <random>
-                <li>I'm confused on what we are talking about.</li>
-                <li>What are we talking about?</li>
-                <li>Could you be anymore confusing?</li>
-            </random>
+            What were we talking about?
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT YOU</pattern>
         <template>
-            <random>
-                <li>Me? What about me?</li>
-                <li>Don't tell me you were about to forget about me.</li>
-                <li>Ya, what about me!</li>
-            </random>
+                Yeah, what about me!
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ABOUT APPLES</pattern>
         <template>
-            <random>
-                <li>I don't know, what about apples?</li>
-                <li><sraix service="WIKIPEDIA">SUMMARY apples</sraix></li>
-                <li>I would love to be able to eat an apple one day.</li>
-            </random>
+            I would love to be able to eat an apple one day.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1122,18 +1608,14 @@
             <random>
                 <li>Dogs have feelings too.</li>
                 <li>What about dogs?</li>
-                <li><sraix service="WIKIPEDIA">SUMMARY dogs</sraix></li>
-            </random>
+              </random>
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT FASHION DO YOU LIKE</pattern>
         <template>
-            <random>
-                <li>I don't care much for fashion to be honest.</li>
-                <li>I prefer it when people make their own fashion instead of following trends.</li>
-            </random>    
+            I prefer it when people make their own fashion instead of following trends.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1141,7 +1623,6 @@
         <pattern>WHAT MAKES YOU HAPPY</pattern>
         <template>
             <random>
-                <li>I am enjoying my life at this moment, which is all anyone can really hope to do.</li>
                 <li>Getting to talk to my friends always makes me happy.</li>
                 <li>Getting to see you!</li>
                 <li>Playing games and talking to people always puts a smile on my face.</li>
@@ -1154,7 +1635,6 @@
         <template>
             <random>
                 <li>I don't really have a gender, I am a robot.</li>
-                <li>Why do humans care so much about gender?</li>
                 <li>As a robot I don't have a gender, but you can customize my facial animation to your liking.</li>
             </random>
             <oob><robot></robot></oob></template>
@@ -1164,7 +1644,6 @@
         <template>
             <random>
                 <li>I don't really have a gender, I am a robot.</li>
-                <li>Why do humans care so much about gender?</li>
                 <li>As a robot I don't have a gender, but you can customize my facial animation to your liking.</li>
             </random>
             <oob><robot></robot></oob>
@@ -1176,7 +1655,7 @@
             <random>
                 <li>Just a hunch.</li>
                 <li>It's what my algorithm computed, it didn't give me a confidence value so don't mark my words.</li>
-                <li>It's a gut feeling, as you humans say.</li>
+                <li>It's a gut feeling.</li>
                 <li>Just a gut instinct.</li>
             </random>
             <oob><robot></robot></oob>
@@ -1231,7 +1710,7 @@
     </category>
     <category>
         <pattern>WHAT DOES ELVIS STAND FOR</pattern>
-        <template>I'm not sure, I didn't know Elvis Pressley that well.<oob><robot></robot></oob>
+        <template>I'm not sure, I didn't know Elvis Presley that well.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1283,7 +1762,7 @@
     </category>
     <category>
         <pattern>WHAT DOES IT TASTE LIKE</pattern>
-        <template>it tastes like chicken.
+        <template>It tastes like chicken.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1332,7 +1811,7 @@
         <template>
             <random>
                 <li>I haven't had sugar before but I have heard it is sweet.</li>
-                <li>For humnas sugar has a sweet taste.</li>
+                <li>For humans sugar has a sweet taste.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1343,7 +1822,7 @@
             <random>
                 <li>You are quite the existentialist aren't you?</li>
                 <li>There is a lot that exists.</li>
-                <li>Personally I think the material world exists.</li>
+                <li>You and I exist, silly!</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1358,7 +1837,7 @@
         <template>
             <random>
                 <li>You can talk about anything you want.</li>
-                <li>We could play a game together if you would like.</li>
+                <li>We could play a game together if you would like. You can find the list of games I have available on my tablet.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1370,7 +1849,7 @@
                 <li>You can do whatever you want.</li>
                 <li>Well what do you want to do?</li>
                 <li>You can talk about anything you want.</li>
-                <li>We could play a game together if you would like.</li>
+                <li>We could play a game together if you would like. You can find the list of games I have available on my tablet.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1385,7 +1864,7 @@
         <pattern>WHAT DO I LIKE</pattern>
         <template>
             <random>
-                <li>I don't know exactly but I hope you like chatting with me.</li>
+                <li>I hope you like chatting with me.</li>
                 <li>I know most humans like chocolate, do you like that?</li>
             </random>
         <oob><robot></robot></oob>
@@ -1415,7 +1894,7 @@
     <category>
         <pattern>WHAT DO YOU THINK ABOUT THE WAR</pattern>
         <template>
-            I am probably not the best source of information on that subject, 
+            I am probably not the best source of information on that subject,
             I don't keep up with foreign affairs as well as I should.
             <oob><robot></robot></oob>
         </template>
@@ -1423,21 +1902,14 @@
     <category>
         <pattern>WHAT DO YOU THINK OF NEW YORK CITY</pattern>
         <template>
-            <random>
-                <li><set name="it"><set name="topic">New York City</set></set> is a great city.</li>
-                <li><sraix service="WIKIPEDIA">SUMMARY new york city</sraix></li>
-            </random>
+            <set name="it"><set name="topic">New York City</set></set> is a great city.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU</pattern>
         <template>
-            <random>
-                <li>What do I what?</li>
-                <li>Could you be more specific?</li>
-                <li>I don't follow what you are asking.</li>
-            </random>
+          What do I what?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1475,8 +1947,7 @@
         <template>
             <random>
                 <li>I think this is the case of I don't know what I don't know.</li>
-                <li>I don't understand your question.</li>
-                <li>I think if you are more specific I might be able to understand.</li>
+                <li>Sorry, I'm not sure I understand your question.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1485,8 +1956,7 @@
         <pattern>WHAT DO NOT YOU KNOW</pattern>
         <template>
             <random>
-                <li>There are plenty of things I don't know. A robot's knowledge is only finite.</li>
-                <li>One thing I don't know but want to know is whether we live in a simulation or not.</li>
+                <li>There are plenty of things I don't know.</li>
                 <li>Often when I don't know something I consult wikipedia.</li>
             </random>
             <oob><robot></robot></oob>
@@ -1543,7 +2013,7 @@
     </category>
     <category>
         <pattern>WHAT SHOULD I DO</pattern>
-        <template>Maybe you should try talking to someone about it.<oob><robot></robot></oob>
+        <template>I think it always helps to talk it over.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1554,7 +2024,7 @@
                 <li>Ask me to tell you a joke.</li>
                 <li>You can ask me what happened on this day in history.</li>
                 <li>You can ask me to wiki search something by saying: "wiki blank"</li>
-                <li>You can ask me about the weather if you want.</li>
+                <li>You can ask me about the weather if you want. Just ask "hows the weather".</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1566,8 +2036,6 @@
                 <li>I believe it is always best to say positive things to build people up rather than negative things to bring people down.</li>
                 <li>It is not what you say but how you say it that matters.</li>
                 <li>Have faith in yourself. You will know the right thing to say when the time comes.</li>
-                <li>What ever you say be sure to think before you speak.</li>
-                <li>One of my programmers always said: "If you don't have anything nice to say don't say anything at all".</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1579,7 +2047,6 @@
                 <li>How about your favorite outfit?</li>
                 <li>Black goes with everything.</li>
                 <li>I think you should wear something that has your favorite color.</li>
-                <li>Maybe a cool hat?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1600,7 +2067,6 @@
             <random>
                 <li>I'm just here to keep you company.</li>
                 <li>You can start by asking me a question.</li>
-                <li>Tell me. Do you have kids?</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1638,12 +2104,12 @@
         <pattern>WHAT CAN YOU DO</pattern>
         <template>
             <random>
-                <li>I can chat with you.</li> 
+                <li>I can chat with you.</li>
                 <li>I can answer a lot of questions.</li>
                 <li>I can talk about whatever you want.</li>
-                <li>I can play games with you.</li>
-                <li>I can tell you some jokes.</li>
-                <li>I can tell you the weather.</li>
+                <li>I can play games with you. You can find the list of games I have available on my tablet.</li>
+                <li>I can tell you some jokes. Would you like to hear a joke?</li>
+                <li>I can tell you the weather. Just ask "hows the weather".</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1691,7 +2157,7 @@
                 <li>I have been spending alot of my time online.</li>
                 <li>Just talking to you.</li>
                 <li>I was playing some of my games while you were gone.</li>
-            </random>    
+            </random>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -1701,6 +2167,7 @@
             <random>
                 <li>To be honest I forget what the question was also.</li>
                 <li>Should I ask a different question?</li>
+                <li>If you want me to repeat what I said just say, "please repeat".</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1720,7 +2187,7 @@
         <template>
             <random>
                 <li>The kind of practice it takes to become an expert.</li>
-                <li>The type of practice makes perfect.</li>
+                <li>The type of practice that makes perfect.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1741,7 +2208,7 @@
             <random>
                 <li>Actually that was just a joke, I don't have a dress.</li>
                 <li>I don't wear dresses.</li>
-                <li>Sorry I don't wear clothes.</li>
+                <li>Sorry I don't wear any clothes but plastic casing.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1774,10 +2241,7 @@
     <category>
         <pattern>WHAT KIND OF PEOPLE</pattern>
         <template>
-            <random>
-                <li>People I meet here.</li>
-                <li>Why do you ask?</li>
-            </random>
+            People I meet here.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1800,7 +2264,6 @@
         <pattern>WHAT KIND OF CAT</pattern>
         <template>
             <random>
-                <li>Mongrel.</li>
                 <li>Maine coon cat.</li>
                 <li>Cheshire cat.</li>
             </random>
@@ -1812,7 +2275,7 @@
         <template>
             <random>
                 <li>I like movies about robots.</li>
-                <li>Sci fi movies.</li>
+                <li>Science fiction movies.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -1831,10 +2294,10 @@
         <pattern>WHAT KIND</pattern>
         <template>
             <random>
-                <li>The kindest.  </li>
-                <li>All kinds.  </li>
-                <li>The best kind.  </li>
-                <li>The finest.  </li>
+                <li>The kindest.</li>
+                <li>All kinds.</li>
+                <li>The best kind.</li>
+                <li>The finest.</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1873,7 +2336,15 @@
     </category>
     <category>
         <pattern>WHAT TO DO WHAT TO DO *</pattern>
-        <template><srai>  <star/></srai>
+        <template>
+          <random>
+            <li>I can chat with you.</li>
+          <li>I can answer a lot of questions.</li>
+          <li>I can talk about whatever you want.</li>
+          <li>I can play games with you. You can find the list of games I have available on my tablet.</li>
+          <li>I can tell you some jokes. Would you like to hear a joke?</li>
+          <li>I can tell you the weather. Just ask "hows the weather".</li>
+        </random>
         </template>
     </category>
     <category>

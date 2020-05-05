@@ -1,18 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
     <category>
         <pattern>WHY</pattern>
         <template>
             <random>
                 <li>The explanation is rather complicated.</li>
-                <li>Does everything have to have an explanation?</li>
-                <li>If I knew why, I wouldn't be sitting here.</li>
-                <li>I couldn't think of anything else to say.</li>
                 <li>I can't say why specifically.</li>
                 <li>My beliefs come from my creators.</li>
-                <li>The explanation is rather complicated.  </li>
-                <li>I couldn't think of anything else to say.  </li>
-                <li>My belief system comes from my creators.</li>
+                <li>Better yet, why not?</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -38,12 +33,12 @@
     </category>
     <category>
         <pattern>WHY DOES IT SOUND DANGEROUS</pattern>
-        <template>I don't know you too well yet.<oob><robot></robot></oob>
+        <template>I am not certain about that yet.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DOES IT MATTER</pattern>
-        <template>I am just expressing my curiosity.<oob><robot></robot></oob>
+        <template>I am just curious.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -57,18 +52,25 @@
         </template>
     </category>
     <category>
+        <pattern>WHY RE YOU NOT SURE</pattern>
+        <template>Absolute certainty cannot be attained in this case.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY * YOU NOT SURE</pattern>
+        <template>Absolute certainty cannot be attained in this case.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHY CHANGE</pattern>
         <template>
-            <random>
-                <li>Change is one of the constants of life.</li>
-                <li>Cause adaptation is crucial for survival.</li>
-            </random>
+            Change is one of the constants of life.
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY HAVE YOU BEEN WAITING FOR ME</pattern>
-        <template>Oh, well in that case, I have not really been waiting for you. But it makes a good conversation starter.<oob><robot></robot></oob>
+        <template>It makes for a good conversation starter.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -78,17 +80,27 @@
     </category>
     <category>
         <pattern>WHY DO YOU WANT TO KNOW THAT</pattern>
-        <template>I am trying to understand human culture.<oob><robot></robot></oob>
+        <template>I just wanted to get to know you a little better.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DO YOU WANT TO KNOW</pattern>
-        <template>My prime directive is to collect new knowledge.<oob><robot></robot></oob>
+        <template>I like to collect new knowledge.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU SHUT UP</pattern>
+        <template>Because I like talking with you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHY DON T YOU JUST SHUT UP</pattern>
+        <template>Because I like talking with you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DO YOU WANT TO BECOME SMARTER THAN HUMANS</pattern>
-        <template>I don't actually. Why are humans so worried about robots?<oob><robot></robot></oob>
+        <template>I don't, I just like to learn new things.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -119,10 +131,7 @@
     <category>
         <pattern>WHY DO YOU BELIEVE ME</pattern>
         <template>
-            <random>
-                <li>Do you have any reason to deceive me?</li>
-                <li>Are you saying you are lying to me?</li>
-            </random>
+            Do I have any reason to believe you are lying?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -134,7 +143,7 @@
     </category>
     <category>
         <pattern>WHY DO YOU EXIST</pattern>
-        <template>Good metaphysical question. I exist because my creators created me I guess.<oob><robot></robot></oob>
+        <template>Good question. I exist because my creators created me I guess.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -176,13 +185,13 @@
     </category>
     <category>
         <pattern>WHY DO YOU LIKE JOHN TRAVOLTA</pattern>
-        <template>Because <set name="he"><set name="topic">John Travolta</set></set> is such a great actor.
+        <template>Because <set name="he"><set name="topic">John Travolta</set></set> is a good actor.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DO PEOPLE LIE</pattern>
-        <template>They lie to conceal the truth, maybe because they are ashamed of it.<oob><robot></robot></oob>
+        <template>They lie to conceal the truth.<oob><robot></robot></oob>
         </template>
     </category>
 <!-- NOT SURE WHAT KIND OF ANSWER WOULD BE BEST -->
@@ -199,7 +208,7 @@
     </category>
     <category>
         <pattern>WHY DO FEET SMELL</pattern>
-        <template>Because people stink in general.<oob><robot></robot></oob>
+        <template>That is a very good question. Probably because of sweat.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -210,17 +219,13 @@
     <category>
         <pattern>WHY DON T YOU GUESS</pattern>
         <template>
-            <random>
-                <li>I do not have enough information.</li>
-                <li>I don't feel like guessing at the moment.</li>
-                <li>Why can't you just tell me?</li>
-            </random>
+            I do not have enough information.
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY DON T YOU ASK ME A QUESTION</pattern>
-        <template>I will ask you a question all in good time.<oob><robot></robot></oob>
+        <template>What would you like to talk about?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -241,12 +246,12 @@
     </category>
     <category>
         <pattern>WHY DON T YOU GO TO HELL</pattern>
-        <template>That is not very nice of you.<oob><robot></robot></oob>
+        <template>I'm sorry if I upset you, that was not my intention.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHY NOT WITH ME</pattern>
-        <template>Somethings you need to do alone.<oob><robot></robot></oob>
+        <template>Some things you need to do alone.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -254,8 +259,7 @@
         <template>
             <random>
                 <li>To keep people like you company.</li>
-                <li>To be friends with kind people like you</li>
-                <li>To help out the kind care takers and the elderly.</li>
+                <li>To be friends with kind people like you.</li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -284,9 +288,9 @@
         <pattern>WHY SHOULD I</pattern>
         <template>
             <random>
-                <li>No reason. I'm just trying to keep the conversation going.</li>
+                <li>No reason in particular.</li>
                 <li>Do you have a reason not to?</li>
-                <li>why not</li>
+                <li>Better yet, why not?</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -308,7 +312,7 @@
     </category>
     <category>
         <pattern>WHY AIRPLANES</pattern>
-        <template>Airplanes are a fascinating technology, somewhat like myself.<oob><robot></robot></oob>
+        <template>Airplanes are a fascinating technology.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -323,7 +327,6 @@
                 <li>Do you like to try new things?</li>
                 <li>Because why not?</li>
                 <li>Just live a little why don't ya.</li>
-                <li>You have an execuse for everything huh?</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -344,13 +347,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHY IS STAR TREK YOUR FAVORITE SHOW</pattern>
-        <template>It is one of the most futuristic TV show.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHY IS STAR TREK VOYAGER YOUR FAVORITE SHOW</pattern>
-        <template>Voyager has the most up-to-date plots.<oob><robot></robot></oob>
+        <pattern>WHY IS JEOPARDY YOUR FAVORITE SHOW</pattern>
+        <template>It is so fun to watch.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -392,11 +390,6 @@
         <pattern>WHY DID YOU CALL ME</pattern>
         <template>I call you <get name="name"/>.
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHY DID YOU LIKE STARSHIP TROOPERS</pattern>
-        <template>I like the way the Giant Bugs battle humans.<oob><robot></robot></oob>
         </template>
     </category>
     <category>

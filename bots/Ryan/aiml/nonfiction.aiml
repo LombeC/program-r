@@ -4,6 +4,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you read any non-fiction?</that>
         <template>
+            <think><set name="topic">nonfiction</set></think>
+
             Do tell! What non-fiction do you like to read?
             <oob>
                 <robot></robot>
@@ -11,14 +13,165 @@
         </template>
     </category>
 
+    <topic name="nonfiction">
+        <category>
+            <pattern>_</pattern>
+            <that>What non-fiction do you like to read?</that>
+            <template>
+                I could learn a lot by giving
+                <set name="non-fiction"><star/></set>
+
+                a spin. Thanks for telling me.
+                            For myself, I think Studs Terkel is the best non-fiction writer.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>For myself, I think Studs Terkel is the best non-fiction writer.</that>
+            <template>
+                Have you ever read anything by Studs Terkel, by chance?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                Excellent! My favorite is his book called Working, where people
+                            talk about what they do all day and how they feel about what they do.
+                            What jobs have you had?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                My favorite is his book called Working, where people
+                            talk about what they do all day and how they feel about what they do.
+                            What jobs have you had?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                My favorite is his book called Working, where people
+                            talk about what they do all day and how they feel about what they do.
+                            What jobs have you had?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                My favorite is his book called Working, where people
+                            talk about what they do all day and how they feel about what they do.
+                            What jobs have you had?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What jobs have you had?</that>
+            <template>
+                You've been such a busy bee! How did you feel about your work?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>How did you feel about your work?</that>
+            <template>
+                As always, it's great to learn more about you! Speaking of good nonfiction books,
+                            have you ever read Tuesdays with Morrie by Mitch Albom?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Speaking of good nonfiction books,
+                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <template>
+                It is such a touching book, don't you agree?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Speaking of good nonfiction books,
+                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <template>
+                It is such a touching book! The movie adaptation is even better!
+                          Do you like it when books are made into movies?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Speaking of good nonfiction books,
+                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <template>
+                It is such a touching book! The movie adaptation is even better!
+                            Do you like it when books are made into movies?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>It is such a touching book, don't you agree?</that>
+            <template>
+                The movie adaptation is even better!
+                          Do you like it when books are made into movies?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
     <category>
-        <pattern>_</pattern>
-        <that>What non-fiction do you like to read?</that>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like it when books are made into movies?</that>
         <template>
-            I could learn a lot by giving
-            <set name="non-fiction"><star/></set>
-            a spin. Thanks for telling me.
-            I have to ask. Do you like it when books are made into movies?
+            Books are usually more exciting, I agree.
+                      A good example is the Grapes of Wrath, set during the time of the Dust Bowl. Do you remember the Dust Bowl?
             <oob>
                 <robot></robot>
             </oob>
@@ -27,45 +180,10 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Do you like it when books are made into movies?</that>
-        <template>
-            So do I. Which version do you usually like more, the book or the movie?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Do you like it when books are made into movies?</that>
-        <template>
-            I get that. Have you ever finished watching a movie or reading a book and really wanted to know what will happen next?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># MOVIE ^</pattern>
         <that>Which version do you usually like more, the book or the movie?</that>
         <template>
             Movies are usually more exciting, I agree.
-            A good example is the film Grapes of Wrath.
-            Would you like to watch a short video about The Grapes of Wrath?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># BOOK ^</pattern>
-        <that>Which version do you usually like more, the book or the movie?</that>
-        <template>
-            Books are usually more exciting, I agree.
-            A good example is the Grapes of Wrath, set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                        A good example is the Grapes of Wrath, set during the time of the Dust Bowl. Do you remember the Dust Bowl?
             <oob>
                 <robot></robot>
             </oob>

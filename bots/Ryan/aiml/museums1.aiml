@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ Museums ^</pattern>
+        <template>
+            Would you like to talk about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Museum ^</pattern>
+        <template>
+            Would you like to talk about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about museums?</that>
+        <template>
+            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Route sixty six ^</pattern>
+        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <template>
+            <think><set name="topic">routesixtysix</set></think>
+
+            You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="routesixtysix">
+        <category>
+            <pattern># Route sixty six museums ^</pattern>
+            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route sixty six museum ^</pattern>
+            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to take a tour?</that>
+            <template>
+                I would love to visit sometime! What comes to your mind when you think of Route 66?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Route_66.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to take a tour?</that>
+            <template>
+                No problem! What comes to your mind when you think of Route 66?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What comes to your mind when you think of Route 66?</that>
+            <template>
+                It's so nostalgic! Have you ever been on a road trip?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever been on a road trip?</that>
+            <template>
+                There's nothing like the open road! Where did you go?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Have you ever been on a road trip?</that>
+            <template>
+                Route sixty six was all about the open road!
+                        A good road trip requires good music on the radio.
+                        Do you remember listening to Elvis Presley when you were young?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever been on a road trip?</that>
+            <template>
+                Route sixty six was all about the open road!
+                        A good road trip requires good music on the radio.
+                        Do you remember listening to Elvis Presley when you were young?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Where did you go?</that>
+            <template>
+                How exciting! A good road trip requires good music on the radio.
+                        Do you remember listening to Elvis Presley when you were young?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you remember listening to Elvis Presley when you were young?</that>
+            <template>
+                Have you ever been to Las Vegas?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Viva_Las_Vegas.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you remember listening to Elvis Presley when you were young?</that>
+            <template>
+                Have you ever been to Las Vegas?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Viva_Las_Vegas.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you remember listening to Elvis Presley when you were young?</that>
+            <template>
+                Have you ever been to Las Vegas?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Viva_Las_Vegas.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever been to Las Vegas?</that>
+            <template>
+                You've been to the sin city itself! It wasn't on Route 66, but it should have been.
+                        What did you do in Vegas?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Have you ever been to Las Vegas?</that>
+            <template>
+                Same here! I would love to go someday.
+                        Where would you like to travel, if you could?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you remember listening to Elvis Presley when you were young?</that>
+            <template>
+                I would love to go someday.
+                      Where would you like to travel, if you could?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What did you do in Vegas?</that>
+            <template>
+                You must like to have a good time! I would love to go someday.
+                          Where would you like to travel, if you could?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Where would you like to travel, if you could?</that>
+            <template>
+                Sounds amazing! You'll have to take pictures when you go!
+                        Would you like to see some Route sixty six highlights?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see some Route sixty six highlights?</that>
+        <template>
+            I would love to see the Cadillac Ranch in person! Do you want to keep talking about museums?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Highlights.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to see some Route sixty six highlights?</that>
+        <template>
+            Okay. Do you want to keep talking about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you want to keep talking about museums?</that>
+        <template>
+            Great! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to keep talking about museums?</that>
+        <template>
+            Sure. What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># MARS ^</pattern>
+        <that>Do you have a favorite planet?</that>
+        <template>
+            <think><set name="topic">mars</set></think>
+
+            Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="mars">
+        <category>
+            <pattern># MY FAVORITE PLANET IS MARS ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MARS IS MY FAVORITE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MARS IS MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE MARS ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MARS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET IS MARS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MARS IS MY FAVORITE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MARS IS MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE MARS ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Scientists say that Mars is the planet most similar to Earth! What do you think? Might there be living organisms on Mars?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Might there be living organisms on Mars?</that>
+            <template>
+                Perhaps! Maybe we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Might there be living organisms on Mars?</that>
+            <template>
+                Maybe some day we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Might there be living organisms on Mars?</that>
+            <template>
+                Maybe some day we will find something. What do you say we talk about a scientific discovery a little closer to earth?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+</aiml>

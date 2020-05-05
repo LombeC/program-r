@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LETS MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CAN WE MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LET S MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I WANT TO MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I WOULD LIKE TO MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I D LIKE TO MOVE ON ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>What do you say we talk about a scientific discovery a little closer to earth?</that>
+        <template>
+            Do you remember Dolly, the cloned sheep?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you remember Dolly, the cloned sheep?</that>
+        <template>
+            What are your feelings about cloning?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you remember Dolly, the cloned sheep?</that>
+        <template>
+            I wanted to show you a short video about Dolly! What are your feelings about cloning?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Dolly.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you remember Dolly, the cloned sheep?</that>
+        <template>
+            I wanted to show you a short video about Dolly! What are your feelings about cloning?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Dolly.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>While we are on the topic of science, do you remember Dolly, the cloned sheep?</that>
+        <template>
+            What are your feelings about cloning?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>While we are on the topic of science, do you remember Dolly, the cloned sheep?</that>
+        <template>
+            I wanted to show you a short video about Dolly! What are your feelings about cloning?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Dolly.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>While we are on the topic of science, do you remember Dolly, the cloned sheep?</that>
+        <template>
+            I wanted to show you a short video about Dolly! What are your feelings about cloning?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Dolly.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What are your feelings about cloning?</that>
+        <template>
+            What are your thoughts on cloning a beloved pet, for instance?</template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What are your thoughts on cloning a beloved pet, for instance?</that>
+        <template>
+            Can you believe some people already have! In fact, a laboratory in South Korea has nearly perfected the science of cloning dogs. Would you like to see a video about a couple that cloned their dog after it died?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
+        <template>
+            My goodness they spent a lot of money! Do you think it was still worth it?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>clone.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
+        <template>
+            That's fair! Those folks sure spent a lot of money cloning their dog! Do you think it was still worth it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think it was still worth it?</that>
+        <template>
+            Pets can be so special! What pets have been special to you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think it was still worth it?</that>
+        <template>
+            I can understand that. Would you like to continue talking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think it was still worth it?</that>
+        <template>
+            I can understand that. Would you like to continue talking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What pets have been special to you?</that>
+        <template>
+            What do you love most about your pets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you love most about your pets?</that>
+        <template>
+            That's beautiful. Would you like to continue talking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>What do you say we talk about a scientific discovery a little closer to earth?</that>
+        <template>
+            Would you like to continue talking?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to continue talking?</that>
+        <template>
+            Great! What should we talk about now?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to continue talking?</that>
+        <template>
+            Ok! Have a great day. Look up at the sky tonight and see if you can see stars. Goodbye!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

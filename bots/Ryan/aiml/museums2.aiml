@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ Museums ^</pattern>
+        <template>
+            Would you like to talk about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Museum ^</pattern>
+        <template>
+            Would you like to talk about museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about museums?</that>
+        <template>
+            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Smithsonian ^</pattern>
+        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <template>
+            <think><set name="topic">smithsonian</set></think>
+
+            The Smithsonian is a marvel of natural history! Would you like to see a video on its dinosaur exhibit?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="smithsonian">
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to see a video on its dinosaur exhibit?</that>
+            <template>
+                Those dinosaurs look so lifelike! Would you like to discuss mammals or ancient Egypt?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Dinosaur_exhibit.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to see a video on its dinosaur exhibit?</that>
+            <template>
+                The dinosaurs look so lifelike! Would you like to discuss mammals or ancient Egypt next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Ancient Egypt ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
+                        Would you like to see a video on a newly-discovered pyramid?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Ancient ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
+                        Would you like to see a video on a newly-discovered pyramid?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Egypt ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
+                      Would you like to see a video on a newly-discovered pyramid?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Egyptian ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
+                      Would you like to see a video on a newly-discovered pyramid?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to see a video on a newly-discovered pyramid?</that>
+            <template>
+                Ancient pyramids are so mysterious! Did you know ancient Egyptians believed in eternal life?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Pyramid.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to see a video on a newly-discovered pyramid?</that>
+            <template>
+                Ancient pyramids are so mysterious! Did you know ancient Egyptians believed in eternal life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Did you know ancient Egyptians believed in eternal life?</that>
+            <template>
+                That's why they buried mummies with food and treasures!
+                        Would you like to see a trailer for a movie on ancient Egypt? It's called The Mummy.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>It's called The Mummy.</that>
+            <template>
+                You should watch the whole film if you haven't seen it yet! What do you say we talk about movies?
+                        If you want to keep talking about museums, just say museums.
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>The_Mummy.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>It's called The Mummy.</that>
+            <template>
+                You should watch it sometime if you haven't seen it yet! What do you say we talk about movies?
+                      If you want to keep talking about museums, just say museums.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>If you want to keep talking about museums, just say museums.</that>
+            <template>
+                You should watch it sometime if you haven't seen it yet! What do you say we talk about movies?
+                      If you want to keep talking about museums, just say museums.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Movies ^</pattern>
+            <that>If you want to keep talking about museums, just say museums.</that>
+            <template>
+                Do you like to watch drama, action, comedy, or musicals?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Movie ^</pattern>
+            <that>If you want to keep talking about museums, just say museums.</that>
+            <template>
+                Do you like to watch drama, action, comedy, or musicals?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Mammal ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Mammals ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Mammalia ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                Let's talk about ancient Egypt, then! Would you like to see a video on a newly-discovered pyramid?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <template>
+                OK! What would you like to discuss?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to tour the exhibit?</that>
+            <template>
+                That's okay! What are your thoughts on evolution?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Would you like to tour the exhibit?</that>
+            <template>
+                What are your thoughts on evolution?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Evolution_exhibit.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What are your thoughts on evolution?</that>
+            <template>
+                I love to hear about what you think! Speaking of mammals, do you have a favorite animal?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Evolution_exhibit.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Speaking of mammals, do you have a favorite animal?</that>
+            <template>
+                What's your favorite animal?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Speaking of mammals, do you have a favorite animal?</that>
+        <template>
+            I have to admit I am partial to humans! Would you like to keep discussing museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Speaking of mammals, do you have a favorite animal?</that>
+        <template>
+            I have to admit I am partial to humans! Would you like to keep discussing museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What's your favorite animal?</that>
+        <template>
+            So cool! I have to admit I am partial to humans. Would you like to keep discussing museums?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to keep discussing museums?</that>
+        <template>
+            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep discussing museums?</that>
+        <template>
+            Sure! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

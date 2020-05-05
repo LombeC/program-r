@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ Science ^</pattern>
+        <template>
+            I would love to continue discussing science! There have been a number of groundbreaking scientific discoveries this year, did you know that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <template>
+            Scientists recently discovered an alien planet that may be able to support human life.
+                                    Do you think you would volunteer to live on a planet alone?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <template>
+            Scientists recently discovered an alien planet that may be able to support human life.
+                                    Do you think you would volunteer to live on a planet alone?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <template>
+            Scientists recently discovered an alien planet that may be able to support human life.
+                                    Do you think you would volunteer to live on a planet alone?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <template>
+            You would? Do you believe that there is life on other planets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <template>
+            I totally get that! Do you believe that there is life on other planets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <template>
+            I totally get that! Do you believe that there is life on other planets?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you believe that there is life on other planets?</that>
+        <template>
+            Interesting! What makes you say that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you believe that there is life on other planets?</that>
+        <template>
+            Interesting! What makes you say that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What makes you say that?</that>
+        <template>
+            The universe is such a mysterious place! Do you want to keep talking about space?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you want to keep talking about space?</that>
+        <template>
+            Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you want to keep talking about space?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

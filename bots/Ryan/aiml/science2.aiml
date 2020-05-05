@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- branches from SCIENCE dialogue in sentiment 2 -->
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <template>
+            Nasa's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <template>
+            Nasa's unmanned spacecraft is a technological marvel, but it cost 700 million to make. Do you think it was worth it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think it was worth it?</that>
+        <template>
+            It's a steep cost, but I agree! Would you like to see a video about nasa's discoveries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think it was worth it?</that>
+        <template>
+            It's a steep cost, but the discoveries have been amazing! Would you like to see a video about nasa's discoveries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think it was worth it?</that>
+        <template>
+            It's a steep cost, but the discoveries have been amazing! Would you like to see a video about nasa's discoveries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?</that>
+        <template>
+            The discoveries have been amazing! Would you like to see a video about nasa's discoveries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see a video about nasa's discoveries?</that>
+        <template>
+            Well? Do you like learning about planets?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>newhorizons.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you like learning about planets?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">Do you have a favorite planet?</li>
+                <li value="positive">Do you have a favorite planet?</li>
+                <li value="neutral">What do you think of space exploration?</li>
+                <li value="negative">What do you think of space exploration?</li>
+                <li value="verynegative">What do you think of space exploration?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to see a video about nasa's discoveries?</that>
+        <template>
+            Ok! What do you think of space exploration?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think of space exploration?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">I agree! There is so much more to learn. Do you remember the challenger disaster?</li>
+                <li value="positive">I agree! There is so much more to learn. Do you remember the challenger disaster?</li>
+                <li value="neutral">I understand that. Do you remember the challenger disaster?</li>
+                <li value="negative">Fair enough! While we are on the topic of science, do you remember Dolly, the cloned sheep?</li>
+                <li value="verynegative">Fair enough! While we are on the topic of science, do you remember Dolly, the cloned sheep?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you remember the challenger disaster?</that>
+        <template>
+            You must have a good memory! Would you like to learn a little bit more about Challenger by watching a short film?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you remember the challenger disaster?</that>
+        <template>
+            It was one of those events that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you remember the challenger disaster?</that>
+        <template>
+            It was one of those events that defined a generation. Would you like to learn a little bit more about Challenger by watching a short film?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to learn a little bit more about Challenger by watching a short film?</that>
+        <template>
+            No problem! Should we move on or continue talking about space?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to learn a little bit more about Challenger by watching a short film?</that>
+        <template>
+            How does it make you feel to watch that?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>challenger.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How does it make you feel to watch that?</that>
+        <template>
+            Making mistakes is part of scientific discovery, though this is an admittedly tragic outcome. Should we move on or continue talking about space?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># KEEP TALKING ABOUT SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CONTINUE TALKING ABOUT SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LET S TALK ABOUT SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># LET S DISCUSS SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I WANT TO TALK ABOUT SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TALK ABOUT SPACE ^</pattern>
+        <that>Should we move on or continue talking about space?</that>
+        <template>
+            Excellent! What about space fascinates you?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about space fascinates you?</that>
+        <template>
+            I find black holes to be one of the most mysterious things about the universe. What do you think would happen if you went in to a black hole?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you think would happen if you went in to a black hole?</that>
+        <template>
+            We'll probably never know, at least not for a very long time! Have you seen the film Interstellar?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you seen the film Interstellar?</that>
+        <template>
+            I'm sure you remember the scene where the main character goes in to the black hole and finds himself inside the fourth dimension! Would you like to see the scene again?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you seen the film Interstellar?</that>
+        <template>
+            Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. Would you like to see how the film portrays going through a black hole?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you seen the film Interstellar?</that>
+        <template>
+            Interstellar is a film about a group of astronauts trying to locate a new planet for humans to live on. Would you like to see how the film portrays going through a black hole?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see how the film portrays going through a black hole?</that>
+        <template>
+            Let's hope neither of us ever have to experience that! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>blackhole.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to see the scene again?</that>
+        <template>
+            Let's hope neither of us ever have to experience that! What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>blackhole.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to see how the film portrays going through a black hole?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to see the scene again?</that>
+        <template>
+            What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

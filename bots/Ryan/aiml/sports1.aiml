@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ Sports ^</pattern>
+        <template>
+            Do you want to talk about sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Sport ^</pattern>
+        <template>
+            Do you want to talk about sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about sports?</that>
+        <template>
+            Great! Do you want to talk about basketball, baseball, football, hockey or the olympics?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you want to talk about sports?</that>
+        <template>
+            No problem! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># basketball ^</pattern>
+        <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
+        <template>
+            <think><set name="topic">basketball</set></think>
+
+            How fun! I wanted to show you a short video about the history of basketball, so we both could learn something new, or remember something again!
+                                                                                                                        What do you love about watching basketball?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>inventionOfBball.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="basketball">
+        <category>
+            <pattern>_</pattern>
+            <that>What do you love about watching basketball?</that>
+            <template>
+                I agree! What sports did you play growing up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What sports did you play growing up?</that>
+            <template>
+                It's so nice to learn more about you! While we're on the topic of basketball, who are your favorite baseketball players?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>While we're on the topic of basketball, who are your favorite baseketball players?</that>
+            <template>
+                I see! I have to say my favorite player of all time is Larry Bird, who played for the Boston Celtics!
+                                                                                                                                                            Do you remember the infamous rivalry between the Celtics and the Lakers?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Larry_Bird.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you remember the infamous rivalry between the Celtics and the Lakers?</that>
+            <template>
+                What a pivotal time in basketball history! Would you like to keep talking about basketball?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you remember the infamous rivalry between the Celtics and the Lakers?</that>
+            <template>
+                It was a pivotal time in basketball history! Would you like to keep talking about basketball?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Don't know</set> ^</pattern>
+            <that>Do you remember the infamous rivalry between the Celtics and the Lakers?</that>
+            <template>
+                It was a pivotal time in basketball history! Would you like to keep talking about basketball?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Would you like to keep talking about basketball?</that>
+            <template>
+                <random>
+                    <li>I could talk about basketball all day! I get a such a kick out of watching the Harlem Globetrotters!<oob>
+                        <robot>
+                            <video>
+                                <filename>globetrotters.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I could talk all day about all star basketball players like Bill Russell! Did you know
+                                                                                                                                                                      that Bill Russell won eleven NBA championships?<oob>
+                        <robot>
+                            <image>
+                                <filename>Bill_Russell.jpg</filename>
+                            </image>
+                        </robot>
+                    </oob></li>
+                    <li>I could talk all day about all star basketball players like Bill Walton, who is now in the Basketball Hall of Fame! Do you think it would take a lot of
+                                                                                                                                                                      dedication to get into the Hall of Fame?<oob>
+                        <robot>
+                            <video>
+                                <filename>Bill_Walton.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to keep talking about sports?</that>
+            <template>
+                Okay! What would you like to talk about?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>I get such a kick out of watching the Harlem Globetrotters!</that>
+            <template>
+                They are so entertaining! And, they beat the World Champions twice! Do you think it would take a lot of dedication to defeat the World Champions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to defeat the World Champions?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to defeat the World Champions?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Don't know</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to defeat the World Champions?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Maybe ^</pattern>
+            <that>Do you think it would take a lot of dedication to defeat the World Champions?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you know that Bill Russell won eleven NBA championships?</that>
+            <template>
+                Can you believe it! He is tied for the record of the most championships won! Do you think
+                                                                                                                          it would take a lot of dedication to win that many championships?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you know that Bill Russell won eleven NBA championships?</that>
+            <template>
+                He is tied for the record of the most championships won! Do you think it would take a lot of dedication to win that many championships?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Don't know</set> ^</pattern>
+            <that>Did you know that Bill Russell won eleven NBA championships?</that>
+            <template>
+                He is tied for the record of the most championships won! Do you think
+                                                                                                                          it would take a lot of dedication to win that many championships?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to get into the Hall of Fame?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to get into the Hall of Fame?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Don't know</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to get into the Hall of Fame?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to win that many championships?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to win that many championships?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Don't know</set> ^</pattern>
+            <that>Do you think it would take a lot of dedication to win that many championships?</that>
+            <template>
+                I think it would be hard work! What jobs have you had in your life?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What jobs have you had in your life?</that>
+            <template>
+                You've been such a busy bee!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>You've been such a busy bee!</that>
+            <template>
+                What do you like to do in your free time?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to do in your free time?</that>
+        <template>
+            Glad to hear it! I love to watch TV in my free time! Would you like to talk about TV, or continue talking about sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># None ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Neither ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Sports ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            Do you want to talk about basketball, baseball, football, hockey or the olympics?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># TV ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Television ^</pattern>
+        <that>Would you like to talk about TV, or continue talking about sports?</that>
+        <template>
+            Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

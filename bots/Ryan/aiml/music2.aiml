@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># Jazz ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+
+                <li>Ah! Jazz just makes you want to move and smile, especially Latin Jazz! What did you think of the jazz clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>desafinado.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>That is so wonderful to hear! Billy Holiday is one of the best! What did you think of the jazz clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>billieHoliday.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Jazz Music ^</pattern>
+        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+
+                <li>Ah! Jazz just makes you want to move and smile, especially Latin Jazz! What did you think of the jazz clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>desafinado.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>That is so wonderful to hear! Billy Holiday is one of the best! What did you think of the jazz clip?<oob>
+                    <robot>
+                        <video>
+                            <filename>billieHoliday.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What did you think of the jazz clip?</that>
+        <template>
+            Jazz music pulls on my heartstrings! I'm curious, did you ever play an instrument?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

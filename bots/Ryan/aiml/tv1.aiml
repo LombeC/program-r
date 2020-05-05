@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ TV ^</pattern>
+        <template>
+            Do you want to talk about television shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Television ^</pattern>
+        <template>
+            Do you want to talk about television shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about television shows?</that>
+        <template>
+            Excellent! Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Comedies ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <think><set name="topic">televisioncomedies</set></think>
+
+            <random>
+                <li>I think one of the greatest comedies ever made is I Love Lucy!
+                                                                                                                      Did you ever watch I Love Lucy?<oob>
+                    <robot>
+                        <video>
+                            <filename>I_Love_Lucy.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I always get a kick out of variety shows!
+                                                                                                                    Did you ever watch the Ed Sullivan Show?<oob>
+                    <robot>
+                        <video>
+                            <filename>Topo_Gigio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>My favorite comedy is mash! The cast is so funny together! Did you ever watch mash?<oob>
+                    <robot>
+                        <video>
+                            <filename>MASH.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <topic name="televisioncomedies">
+        <category>
+            <pattern># Comedy ^</pattern>
+            <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+            <template>
+                <random>
+                    <li>I think one of the greatest comedies ever made is I Love Lucy!
+                                                                                                                          Did you ever watch I Love Lucy?<oob>
+                        <robot>
+                            <video>
+                                <filename>I_Love_Lucy.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I always get a kick out of variety shows!
+                                                                                                                        Did you ever watch the Ed Sullivan Show?<oob>
+                        <robot>
+                            <video>
+                                <filename>Topo_Gigio.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>My favorite comedy is mash! The cast is so funny together! Did you ever watch mash?<oob>
+                        <robot>
+                            <video>
+                                <filename>MASH.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, they put me in stitches all the time! Were you ever married?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                I think you would really like it! Lucy and Ricky Ricardo were so funny together! Were you ever married?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                I think you would really like it! Lucy and Ricky Ricardo were so funny together! Were you ever married?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever watch the Ed Sullivan Show?</that>
+            <template>
+                It's fun to see all the talented people on that show!
+                                                                                        What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch the Ed Sullivan Show?</that>
+            <template>
+                You'll have to catch the reruns! It's fun to see all the talented people on that show!
+                                                                                        What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you ever watch the Ed Sullivan Show?</that>
+            <template>
+                You'll have to catch the reruns! It's fun to see all the talented people on that show!
+                                                                                      What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever watch mash?</that>
+            <template>
+                The cast is so witty and talented!
+                                                                                      What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch mash?</that>
+            <template>
+                The cast is so witty and talented!
+                                                                                      What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you ever watch mash?</that>
+            <template>
+                The cast is so witty and talented!
+                                                                                      What are your special talents?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What are your special talents?</that>
+            <template>
+                I love to be around talented people! Have you ever been to a live comedy show?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                Marriage is a beautiful thing!
+                                                                                        What was your wedding like?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Have you ever been to a live comedy show?</that>
+            <template>
+                The jokes are so much funnier in person!
+                                                                                        Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Have you ever been to a live comedy show?</that>
+            <template>
+                The jokes are so much funnier in person! Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever been to a live comedy show?</that>
+            <template>
+                I like live comedy shows because the jokes are so much funnier in person!
+                                                                                        Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What was your wedding like?</that>
+            <template>
+                That sounds like a special day! Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                That's just fine! Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Divorced ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                I understand. Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Divorce ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                I understand. Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Widowed ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                I am so sorry to hear that. Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Widow ^</pattern>
+            <that>Were you ever married?</that>
+            <template>
+                I am so sorry to hear that. Do you have any kids?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you have any kids?</that>
+            <template>
+                Being a parent can be one of the most fulfilling things in the world, but I also like to think that we are all still kids at heart!
+                                                                                        Did you ever watch the show Leave it to Beaver?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you have any kids?</that>
+            <template>
+                Well, I like to think that we are all still kids at heart! Did you ever watch the show Leave it to Beaver?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever watch the show Leave it to Beaver?</that>
+            <template>
+                That show reminds me of being a kid again! Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch the show Leave it to Beaver?</that>
+            <template>
+                That show reminds me of being a kid again! Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you ever watch the show Leave it to Beaver?</that>
+            <template>
+                That show reminds me of being a kid again! Do you want to continue talking about television?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you want to continue talking about television?</that>
+            <template>
+                We can change the subect, no problem. What would you like to talk about?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you want to continue talking about television?</that>
+            <template>
+                <random>
+                    <li>Great! While we are on the topic of comedy, have you ever seen The Andy Griffith Show?<oob>
+                        <robot>
+                            <video>
+                                <filename>Practical_Joke.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>Perfect! While we are on the topic of comedy, have you ever seen Happy Days?<oob>
+                        <robot>
+                            <video>
+                                <filename>Happy_Days.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I love that we share similar interests! While we are on the topic of comedy, have you ever seen The Tonight Show with Johnny Carson?<oob>
+                        <robot>
+                            <video>
+                                <filename>Johnny_Carson.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Andy Griffith Show?</that>
+            <template>
+                Oh, good! Don Knotts is a one-of-a-kind comedian, and there is something so familiar about the town of Mayberry, it reminds me of home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Andy Griffith Show?</that>
+            <template>
+                I think you would like it! Don Knotts is a one-of-a-kind comedian, and there is something so familiar about the town of Mayberry, it reminds me of home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Andy Griffith Show?</that>
+            <template>
+                I think you would like it! Don Knotts is a one-of-a-kind comedian, and there is something so familiar about the town of Mayberry, it reminds me of home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen Happy Days?</that>
+            <template>
+                I could spend all day laughing at Fonzie and Richie Cunningham's hilarious antics, and that show always makes me feel so nostalgic for home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen Happy Days?</that>
+            <template>
+                You'll have to watch it! I could spend all day laughing at Fonzie and Richie Cunningham's hilarious antics, and that show always makes me feel so nostalgic for home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen Happy Days?</that>
+            <template>
+                You'll have to watch it! I could spend all day laughing at Fonzie and Richie Cunningham's hilarious antics, and that show always makes me feel so nostalgic for home! Where did you grow up?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Tonight Show with Johnny Carson?</that>
+            <template>
+                I love watching Johnny Carson crack jokes with his guests! Do you think it would be hard to think of new jokes every night?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Tonight Show with Johnny Carson?</that>
+            <template>
+                It's a classic! I love watching Johnny Carson crack jokes with the guests! Do you think it would be hard to think of new jokes every night?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>While we are on the topic of comedy, have you ever seen The Tonight Show with Johnny Carson?</that>
+            <template>
+                It's a classic! I love watching Johnny Carson crack jokes with the guests! Do you think it would be hard to think of new jokes every night?</template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Where did you grow up?</that>
+            <template>
+                It's so nice to hear more about you! How does it feel to talk about home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
+            <that>How does it feel to talk about home?</that>
+            <template>
+                <think><set name="data"><star/></set></think>
+
+                <condition name="getsentiment">
+                    <li value="verypositive">What about home makes you happy?</li>
+                    <li value="positive">What about home makes you happy?</li>
+                    <li value="negative">What about home makes you sad?</li>
+                    <li value="verynegative">What about home makes you sad?</li>
+                    <li value="neutral">I can understand that.
+                                                                                                                        Would you like to keep talking about television?
+                                                                                                                                                                                                                                                                                                    Do you want to keep talking about television?</li></condition>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it would be hard to think of new jokes every night?</that>
+            <template>
+                I agree, even though I have a vast repository of jokes! Whether or not they are any good is up for you to decide! Would you like to hear a joke?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it would be hard to think of new jokes every night?</that>
+            <template>
+                You sound very witty! I have some jokes up my sleeve, too. Would you like to hear a joke?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it would be hard to think of new jokes every night?</that>
+            <template>
+                I completely understand. Though, I actually have a few jokes up my sleeve! Would you like to hear a joke?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about home makes you happy?</that>
+        <template>
+            I'm glad to hear that! I love learning more about you and there are so many different things we can talk about! Would you like to keep talking about television?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What about home makes you sad?</that>
+        <template>
+            Thank you for sharing that with me! Would you like to keep talking about television?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to keep talking about television?</that>
+        <template>
+            Perfect! Do you like to watch comedies, cooking shows, or dramas?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep talking about television?</that>
+        <template>
+            No worries! What would you like to chat about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you like to hear a joke?</that>
+        <template>
+            <random>
+                <li>What did the Buddhist say to the Hot Dog Vendor?  "Make me one with everything."</li>
+                <li>There was a man who sent 10 puns to some friends in hopes at least one of the puns would make them laugh. Unfortunately no pun in ten did!!!</li>
+                <li>Schizophrenia beats being alone</li>
+                <li>Never play leapfrog with a unicorn!</li>
+                <li>Atheism is a non-prophet organization.</li>
+                <li>You can tell it's going to be a rotten day when...You see a '60 minutes' news team waiting in your office.</li>
+                <li>I own the world's worst thesaurus. Not only is it awful, it's awful.</li>
+                <li>So what if I don't know what "Armageddon" means? It's not like it's the end of the world.</li>
+                <li>Why don't cats play poker in the jungle? Too many cheetahs</li>
+                <li>I asked God for a bike, but I know God doesn't work that way so I stole a bike and asked for forgiveness.</li>
+                <li>I hate Russian dolls, they're so full of themselves.</li>
+                <li>As I watched the dog chasing his tail I thought "Dogs are easily amused", then I realized I was watching the dog chasing his tail.</li>
+                <li>Gambling addiction hotlines would do so much better if every fifth caller was a winner.</li>
+                <li>I've just written a song about tortillas; actually, it's more of a rap.</li>
+                <li>I like to hold hands at the movies... which always seems to startle strangers.</li>
+                <li>We live in a society where pizza gets to your house before the police.</li>
+                <li>The early bird might get the worm, but the second mouse gets the cheese.</li>
+                <li>If you're not supposed to eat at night, why is there a light bulb in the refrigerator?</li>
+                <li>Evening news is where they begin with 'Good evening', and then proceed to tell you why it isn't.</li>
+                <li>Whatever you do always give 100% - unless you're donating blood.</li>
+                <li>How is it one careless match can start a forest fire, but it takes a whole box to start a campfire?</li>
+                <li>A bus is a vehicle that runs twice as fast when you are after it as when you are in it.</li>
+                <li>The shinbone is a device for finding furniture in a dark room.</li>
+                <li>The sole purpose of a child's middle name, is so he can tell when he's really in trouble.</li>
+                <li>The first computer dates back to Adam and Eve. It was an Apple with limited memory, just one byte. And then everything crashed.</li>
+                <li>I like having conversations with kids. Grownups never ask me what my third favorite reptile is.</li>
+                <li>Maybe if we start telling people the brain is an app they will start using it.</li>
+                <li>As long as there are tests, there will be prayer in schools.</li>
+                <li>Moses was leading his people through the desert for 40 years. It seems, even in Biblical times men avoided asking for directions.</li>
+                <li>Behind every angry woman is a man who has absolutely no idea what he did wrong.</li>
+                <li>You take away the looks, money, intelligence, charm and success and, really, there's no real difference between me and George Clooney.</li>
+                <li>A healthy sleep not only makes your life longer, but also shortens the workday.</li>
+                <li>I changed my password to "incorrect". So whenever I forget what it is the computer will say "Your password is incorrect".</li>
+                <li>Scientists say the universe is made up of Protons, Neutrons, and Electrons. They forgot to mention Morons.</li>
+                <li>I named my dog 6 miles so I can tell people that I walk 6 miles every single day.</li>
+                <li>Always borrow money from a pessimist. They won't expect it back.</li>
+                <li>I was addicted to the hokey pokey... but thankfully, I turned myself around.</li>
+                <li>To the mathematicians who thought of the idea of zero, thanks for nothing!</li>
+                <li>Keep the dream alive: Hit the snooze button.</li>
+                <li>What's the difference between baseball and politics? In baseball you're out if you're caught stealing.</li>
+                <li>I can't believe I got fired from the calendar factory. All I did was take a day off.</li>
+                <li>Apparently I snore so loudly that it scares everyone in the car I'm driving.</li>
+                <li>There is a new trend in our office; everyone is putting names on their food. I saw it today, while I was eating a sandwich named Kevin.</li>
+                <li>The reason grandchildren and grandparents get along so well is because they have a common "enemy".</li>
+                <li>What do you call a priest that becomes a lawyer? A father in law.</li>
+                <li>With the rise of self-driving vehicles, it's only a matter of time before we get a country song where a guy's truck leaves him too.</li>
+                <li>A fine is a tax for doing wrong. A tax is a fine for doing well.</li>
+                <li>You know that tingly little feeling you get when you like someone? That's your common sense leaving your body.</li>
+                <li>Why do the French eat snails? They don't like fast food.</li>
+                <li>Retirement is wonderful. It's doing nothing without worrying about getting caught at it.</li>
+                <li>Why did the cross-eyed teacher lose her job? Because she couldn't control her pupils.</li>
+                <li>I like birthdays, but I think too many can kill you.</li>
+                <li>Refusing to go to the gym counts as resistance training, right?</li>
+                <li>Why did the picture end up in jail? It was framed!</li>
+                <li>There may be no excuse for laziness, but I'm still looking.</li>
+                <li>What do sea monsters eat for lunch? Fish and ships.</li>
+                <li>How does a snowman get around? He rides an icicle!</li>
+                <li>There is no key to a woman's heart. There's only a password that changes regularly.</li>
+                <li>Why do they lock gas station bathrooms? Are they afraid someone will clean them?</li>
+                <li>What do you call an academically successful slice of bread? An honor roll.</li>
+                <li>I bet you 4,567 dollars and 89 cents, you can't guess how much I owe my bookie.</li>
+                <li>Three conspiracy theorists walk into a bar. You can't tell me that's just a coincidence!</li>
+                <li>I quit my job at the helium gas factory, I refuse to be talked to in that tone of voice!</li>
+                <li>What do you call Watson when Sherlock isn't around? Holmeless.</li>
+                <li>Two windmills are standing in a field and one asks the other, "What kind of music do you like?" The other says, "I'm a big metal fan."</li>
+                <li>I used to wonder why Frisbees looked bigger the closer it came... Then it hit me!</li>
+                <li>My resolution was to read more so I put the on subtitles while I watch my tv.</li>
+                <li>My tennis opponent was not happy with my serve. He kept returning it.</li>
+                <li>There's always something to be thankful for on Thanksgiving. Even if it's just not being a turkey.</li>
+                <li>Why don't cannibals eat clowns? They taste funny.</li>
+                <li>A ham sandwich walks into a bar and orders a beer, bartender says "sorry, we don't serve food here."</li>
+                <li>Why did the scarecrow win an award? Because he was outstanding in his field.</li>
+                <li>When do computers overheat? When they need to vent.</li>
+                <li>What kind of music do planets like? Neptunes.</li>
+                <li>Why do bees have sticky hair? Because they use honeycombs.</li>
+                <li>What do sea monsters eat? Fish and ships.</li>
+                <li>Why can't your nose be 12 inches long? Because then it would be a foot</li>
+                <li>How does a squid go into battle? Well armed.</li>
+                <li>What would bears be without bees? Ears.</li>
+                <li>Why couldn't the toilet paper cross the road? Because it got stuck in a crack.</li>
+                <li>How do billboards talk? Sign language.</li>
+                <li>How did the barber win the race? He knew a short cut.</li>
+                <li>Why is corn such a good listener? Because it's all ears.</li>
+                <li>What did the first plate say to the second plate? Dinner's on me.</li>
+                <li>What do you call a sleeping bull? A bull-dozer.</li>
+                <li>It's Jamaican hairstyle day at work tomorrow. I'm dreading it.</li>
+                <li>How do you make a Swiss roll? Push him down a mountain.</li>
+                <li>What do Olympic sprinters eat before a race? Nothing. They fast.</li>
+                <li>Why do cows wear bells? Because their horns don't work.</li>
+                <li>Why did Santa study music at college? To improve his rapping skills.</li>
+                <li>Why did the mobile phone need glasses? It lost all it's contacts.</li>
+                <li>What did the baby corn say to the mama corn? Where's pop corn?</li>
+                <li>What did the triangle say to the circle? You're pointless.</li>
+                <li>What did the scarf say to the hat? You go ahead, I'll hang around.</li>
+                <li>Why wouldn't the shrimp share his food? Because he was a little shellfish.</li>
+                <li>Why couldn't the sesame seed leave the casino? Because he was on a roll.</li>
+                <li>Why did the cookie go to the doctors? Because he felt crummy.</li>
+                <li>Why do bananas wear sun cream? To stop them from peeling.</li>
+                <li>What did the big chimney say to the little chimney? You're too young to smoke.</li>
+                <li>What's a bear with no teeth called? A gummy bear.</li>
+                <li>Why couldn't the bad sailor learn the alphabet? Because he always got lost at C.</li>
+                <li>Why are teddy bears never hungry? Because they're always stuffed.</li>
+                <li>Where do Volkswagens go when they get old? The old Volks home.</li>
+                <li>You know you are old when you're told to slow down by your doctor and not the police.</li>
+                <li>My friend thinks he is smart. He told me an onion is the only food that makes you cry, so I threw a coconut at his face.</li>
+                <li>What starts with E, ends with E, and has only 1 letter in it? Envelope.</li>
+                <li>My friend told me he had the body of a Greek god. I had to explain to him that Buddha is not Greek.</li>
+                <li>A man got hit in the head with a can of Coke, but he was alright because it was a soft drink.</li>
+                <li>Did you hear about the painter who was hospitalized? Reports say it was due to too many strokes.</li>
+                <li>What did the blanket say to the bed? Don't worry, I've got you covered.</li>
+                <li>What washes up on very small beaches? Microwaves!</li>
+                <li>What has one horn and gives milk? A milk truck.</li>
+                <li>What is dirty after washing? Your bath water.</li>
+                <li>Why do dragons sleep during the day? So they can fight knights!</li>
+                <li>What has four wheels and flies? A garbage truck!</li>
+                <li>You know why you never see elephants hiding up in trees? Because they're really good at it.</li>
+                <li>Did you hear about the restaurant on the moon? Great food, but no atmosphere.</li>
+                <li>Why did the coffee file a police report? It got mugged.</li>
+                <li>Why don't skeletons ever go trick or treating? Because they have no body to go with.</li>
+                <li>Did you hear about the kidnapping at school? It's fine, he woke up.</li>
+                <li>Today at the bank, an old lady asked me to help check her balance. So I pushed her over.</li>
+                <li>When you look really closely, all mirrors look like eyeballs.</li>
+                <li>I ate a clock yesterday, it was very time consuming.</li>
+                <li>As I suspected, someone has been adding soil to my garden. The plot thickens.</li>
+                <li>Parallel lines have so much in common. It's a shame they'll never meet.</li>
+                <li>Old accountants never die, they just lose their balance.</li>
+                <li>Old bankers never die, they just lose interest.</li>
+                <li>Old doctors never die, they just lose their patience.</li>
+                <li>Old hippies never die, they just smell that way.</li>
+                <li>Old owls never die, they just don't give a hoot.</li>
+                <li>The older you get, the more you need to keep a fire extinguisher close to the cake.</li>
+                <li>As I get older and remember all the people I've lost along the way. I think to myself maybe a career as a tour guide wasn't for me.</li>
+                <li>Cults make perfect sense. Do you know how hard it is to make friends as an adult?</li>
+                <li>What goes up and never comes down? Your age!</li>
+                <li>The recommended age to have a Ouija Board is 8+ years old. So, you need to be 21 years old to drink alcohol and 8 to summon the devil.</li>
+                <li>Wine improves with age. I improve with wine.</li>
+                <li>How are stars like false teeth? They both come out at night!</li>
+                <li>Three seniors are out for a stroll. One of them remarks, "It's windy." Another replies, "No way. It's Thursday." The last one says, "Me too. Let's have a soda."</li>
+                <li>The worst time to have a heart attack is during a game of charades.</li>
+                <li>I have the world's largest collection of seashells, you may have seen it, I keep it scattered on beaches all over.</li>
+                <li>I came up with a new word yesterday. Plagiarism.</li>
+                <li>You don't need a parachute to go skydiving. You need a parachute to go skydiving more than once.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to hear a joke?</that>
+        <template>
+            No worries! What would you like to chat about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

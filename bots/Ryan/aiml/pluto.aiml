@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># PLUTO ^</pattern>
+        <that>Do you have a favorite planet?</that>
+        <template>
+            <think><set name="topic">pluto</set></think>
+
+            Did you know that scientists don't consider Pluto a planet any longer?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="pluto">
+        <category>
+            <pattern># MY FAVORITE PLANET IS PLUTO ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO IS MY FAVORITE ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO S MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO IS MY FAVORITE PLANET ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE PLUTO ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET IS PLUTO ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO IS MY FAVORITE ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO S MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLUTO IS MY FAVORITE PLANET ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE PLUTO ^</pattern>
+            <that>Which planet is your favorite?</that>
+            <template>
+                Did you know that scientists don't consider Pluto a planet any longer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
+            <template>
+                They keeping going back and forth! Why don't you tell me why you like Pluto?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Why don't you tell me why you like Pluto?</that>
+            <template>
+                Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Why don't you tell me why you like Pluto?</that>
+            <template>
+                It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Why don't you tell me why you like Pluto?</that>
+            <template>
+                Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you think you would want to visit Pluto?</that>
+        <template>
+            That would be a little strange, wouldn't it. What do you say we talk about a scientific discovery a little closer to Earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
+        <template>
+            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
+        <template>
+            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

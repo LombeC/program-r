@@ -4,6 +4,8 @@
         <pattern># Food ^</pattern>
         <that>Do you want to talk about technology, the moon landing, or food?</that>
         <template>
+            <think><set name="topic">foodinventions</set></think>
+
             How do you feel about chocolate chip cookies?
             <oob>
                 <robot></robot>
@@ -11,128 +13,130 @@
         </template>
     </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>HOW DO YOU FEEL ABOUT CHOCOLATE CHIP COOKIES?</that>
-        <template>
-            <think><set name="data"><star/></set></think>
+    <topic name="foodinventions">
+        <category>
+            <pattern>_</pattern>
+            <that>HOW DO YOU FEEL ABOUT CHOCOLATE CHIP COOKIES?</that>
+            <template>
+                <think><set name="data"><star/></set></think>
 
-            <condition name="getsentiment">
-                <li value="verypositive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                <condition name="getsentiment">
+                    <li value="verypositive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                        <robot></robot>
+                    </oob></li>
+                    <li value="positive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                        <robot></robot>
+                    </oob></li>
+                    <li value="neutral">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                        <robot></robot>
+                    </oob></li>
+                    <li value="negative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                        <robot></robot>
+                    </oob></li>
+                    <li value="verynegative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                        <robot></robot>
+                    </oob></li></condition>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Do you know the story of how the chocolate chip cookie came to be?</that>
+            <template>
+                Would you like to learn? I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?
+                <oob>
+                    <robot>
+                        <options>
+                            <option>
+                                YES</option>
+
+                            <option>
+                                NO</option>
+                        </options>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</that>
+            <template>
+                Do you like to bake?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>chocolateChip.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you like to bake?</that>
+            <template>
+                What do you like to bake?
+                <oob>
                     <robot></robot>
-                </oob></li>
-                <li value="positive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What do you like to bake?</that>
+            <template>
+                Sounds delicious! Do you like popcorn?
+                <oob>
                     <robot></robot>
-                </oob></li>
-                <li value="neutral">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you like to bake?</that>
+            <template>
+                No biggie. Do you like popcorn?
+                <oob>
                     <robot></robot>
-                </oob></li>
-                <li value="negative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</that>
+            <template>
+                No biggie. Do you like to bake?
+                <oob>
                     <robot></robot>
-                </oob></li>
-                <li value="verynegative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you like popcorn?</that>
+            <template>
+                Everyone has their own tastes! My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
+                <oob>
                     <robot></robot>
-                </oob></li></condition>
-        </template>
-    </category>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>Do you know the story of how the chocolate chip cookie came to be?</that>
-        <template>
-            Would you like to learn? I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor.
-            <oob>
-                <robot>
-                    <options>
-                        <option>
-                            YES</option>
-
-                        <option>
-                            NO</option>
-                    </options>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>I FOUND A VIDEO ABOUT RUTH GRAVES WAKEFIELD, THE CHOCOLATE CHIP COOKIE'S INVENTOR.</that>
-        <template>
-            Do you like to bake?
-            <oob>
-                <robot>
-                    <video>
-                        <filename>chocolateChip.mp4</filename>
-                    </video>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>Do you like to bake?</that>
-        <template>
-            What do you like to bake?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>What do you like to bake?</that>
-        <template>
-            Sounds delicious! Do you like popcorn?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Do you like to bake?</that>
-        <template>
-            No biggie. Do you like popcorn?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>I FOUND A VIDEO ABOUT RUTH GRAVES WAKEFIELD, THE CHOCOLATE CHIP COOKIE'S INVENTOR.</that>
-        <template>
-            No biggie. Do you like to bake?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Do you like popcorn?</that>
-        <template>
-            Everyone has their own tastes! My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU LIKE POPCORN?</that>
-        <template>
-            My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU LIKE POPCORN?</that>
+            <template>
+                My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
 </aiml>

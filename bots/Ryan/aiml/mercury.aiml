@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- BRANCHING FROM SCIENCE2 ASKING ABOUT FAVORITE PLANET -->
+    <category>
+        <pattern># MERCURY ^</pattern>
+        <that>DO YOU HAVE A FAVORITE PLANET?</that>
+        <template>
+            <think><set name="topic">mercury</set></think>
+
+            Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="mercury">
+        <category>
+            <pattern># MY FAVORITE PLANET IS MERCURY ^</pattern>
+            <that>DO YOU HAVE A FAVORITE PLANET?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY IS MY FAVORITE ^</pattern>
+            <that>DO YOU HAVE A FAVORITE PLANET?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY S MY FAVORITE PLANET ^</pattern>
+            <that>DO YOU HAVE A FAVORITE PLANET?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY IS MY FAVORITE PLANET ^</pattern>
+            <that>DO YOU HAVE A FAVORITE PLANET?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE MERCURY ^</pattern>
+            <that>DO YOU HAVE A FAVORITE PLANET?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET IS MERCURY ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY IS MY FAVORITE ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY S MY FAVORITE PLANET ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MERCURY IS MY FAVORITE PLANET ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I LIKE MERCURY ^</pattern>
+            <that>WHICH PLANET IS YOUR FAVORITE?</that>
+            <template>
+                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                How big is Mercury?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>HOW BIG IS MERCURY?</that>
+            <template>
+                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MOON ^</pattern>
+            <that>HOW BIG IS MERCURY?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THE SIZE OF THE MOON ^</pattern>
+            <that>HOW BIG IS MERCURY?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THE MOON ^</pattern>
+            <that>HOW BIG IS MERCURY?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MOON ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THE SIZE OF THE MOON ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THE MOON ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
+            <template>
+                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever seen a meteor shower?</that>
+        <template>
+            That's wonderful. Would you tell me about a meteor shower you saw?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>WOULD YOU TELL ME ABOUT A METEOR SHOWER YOU SAW?</that>
+        <template>
+            What an experience! What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever seen a meteor shower?</that>
+        <template>
+            It can be difficult if you live in a city because of all the light pollution. What do you say we talk about a scientific discovery a little closer to earth?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

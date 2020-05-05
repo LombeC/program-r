@@ -26,58 +26,62 @@
         <pattern>_</pattern>
         <that>In my mind, one of the greatest human accomplishments was the moon landing.</that>
         <template>
+            <think><set name="topic">moonlanding</set></think>
+
             Some people think that the moon landing was faked. I just don't know about that,
-                      what do you think? Did the moon landing actually happen?
+                                  what do you think? Did the moon landing actually happen?
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Did the moon landing actually happen?</that>
-        <template>
-            I see your point! What do you think it would be like to step foot on the moon?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+    <topic name="moonlanding">
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did the moon landing actually happen?</that>
+            <template>
+                I see your point! What do you think it would be like to step foot on the moon?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Did the moon landing actually happen?</that>
-        <template>
-            I can see your point! What do you think it would be like to step foot on the moon?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did the moon landing actually happen?</that>
+            <template>
+                I can see your point! What do you think it would be like to step foot on the moon?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Did the moon landing actually happen?</that>
-        <template>
-            I can see your point! What do you think it would be like to step foot on the moon?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did the moon landing actually happen?</that>
+            <template>
+                I can see your point! What do you think it would be like to step foot on the moon?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>What do you think it would be like to step foot on the moon?</that>
-        <template>
-            Pretty crazy, right? The longest anyone has lived in space is 747 days.
-                        Do you think you would like to be in space that long?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+        <category>
+            <pattern>_</pattern>
+            <that>What do you think it would be like to step foot on the moon?</that>
+            <template>
+                Pretty crazy, right? The longest anyone has lived in space is 747 days.
+                                        Do you think you would like to be in space that long?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
