@@ -39,16 +39,19 @@ class ConversationMongodbStorage(ConversationStorage):
         try:
             last_sentiment_value = client_context.bot.sentiment.last_sentiment_value
         except Exception as e:
+            print("Exception caught for last_sentiment_value: {}".format(e))
             last_sentiment_value = None
 
         try:
             last_fer_value = client_context.bot.facial_expression_recognition.last_fer_value
         except Exception as e:
+            print("Exception caught for last_fer_value: {}".format(e))
             last_fer_value = None
 
         try:
             last_final_sentiment_value = client_context.bot.sentiment.last_final_sentiment_value
         except Exception as e:
+            print("Exception caught for last_final_sentiment_value: {}".format(e))
             last_final_sentiment_value = None
 
         try:

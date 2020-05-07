@@ -5,6 +5,7 @@ from abc import ABCMeta, abstractmethod
 
 from programr.clients.client import BotClient
 from programr.clients.restful.config import RestConfiguration
+from programr.robot.sentimentdata import SentimentData
 
 class RestBotClient(BotClient):
     __metaclass__ = ABCMeta
@@ -75,6 +76,12 @@ class RestBotClient(BotClient):
             #      Not sure what Rohola meant by above comment.
             print(question)
             response, options = client_context.bot.ask_question_with_options(client_context, question)
+            
+            sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
+            client_context.bot.sentiment.append_sentiment(sentiment_value)
+            client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
+            print("Sentiment: {}".format(sentiment_value))
+            print("Sentiment Distribution: {}".format(sentiment_distribution))
             client_context.bot.save_conversation(client_context)
             # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
             # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)

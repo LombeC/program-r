@@ -1,6 +1,6 @@
 
 
-class Sentiment():
+class SentimentData():
 
     def __init__(self):
         self._sentiment_values = []

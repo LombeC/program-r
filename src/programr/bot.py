@@ -1,7 +1,7 @@
 import logging
 
 from programr.robot.facial_expression_recognition import FacialExpressionRecognition
-from programr.robot.sentiment import Sentiment
+from programr.robot.sentimentdata import SentimentData
 from programr.utils.logging.ylogger import YLogger
 
 from programr.brain import Brain
@@ -95,7 +95,7 @@ class Bot(object):
 
         self._facial_expression_recognition = FacialExpressionRecognition()
 
-        self._sentiment = Sentiment()
+        self._sentiment_data = SentimentData()
 
         self.initiate_conversation_storage()
 
@@ -124,7 +124,7 @@ class Bot(object):
 
     @property
     def sentiment(self):
-        return self._sentiment
+        return self._sentiment_data
 
     @property
     def brain_factory(self):

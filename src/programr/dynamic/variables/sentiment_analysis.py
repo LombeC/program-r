@@ -78,5 +78,5 @@ class GetSentiment(DynamicVariable):
             YLogger.info(self, "bot is in non emotive mode")
             sentiment = "neutral"
 
-        print(sentiment)
+        print("In GetSentiment sentiment: {}".format(sentiment))
         return sentiment
