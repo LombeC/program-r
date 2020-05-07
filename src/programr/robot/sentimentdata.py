@@ -1,13 +1,16 @@
 import numpy as np
 
+DISTRIBUTION_SIZE = 10
+NEGATIVE_THRESHOLD = -0.8
+
 class SentimentData():
 
     def __init__(self):
-        self._sentiment_values = np.zeros(10)
+        self._sentiment_values = np.zeros(DISTRIBUTION_SIZE)
         self._sentiment_distributions = []
         self._final_sentiment_values = []
         self._rolling_sentiment = 0
-        self._neg_thresh = -0.7
+        self._neg_thresh = NEGATIVE_THRESHOLD
         self._threshold_reached = False
 
     @property
@@ -38,7 +41,7 @@ class SentimentData():
                 return
 
             self._sentiment_values = np.append(self._sentiment_values, sentiment)
-            if len(self._sentiment_values) > 10:
+            if len(self._sentiment_values) > DISTRIBUTION_SIZE:
                 self._sentiment_values = np.delete(self._sentiment_values, 0)
                 self.update_rolling()
         except Exception as ex:
@@ -61,7 +64,7 @@ class SentimentData():
                     dampening += 0.1
             
             # Trigger for a low sentiment
-            if self._rolling_sentiment < self._neg_thresh:
+            if self._rolling_sentiment <= self._neg_thresh:
                 self.threshold_reached()
             else:
                 self._threshold_reached = False
@@ -72,5 +75,3 @@ class SentimentData():
     def threshold_reached(self):
         print("THRESHOLD REACHED: {}".format(self._rolling_sentiment))
         self._threshold_reached = True
-
-
