@@ -68,26 +68,37 @@ class RestBotClient(BotClient):
         client_context = self.create_client_context(userid)
         return {"question": question, "answer": client_context.bot.default_response, "userid": userid, "error": error}
 
+    def process_sentiment(self, client_context, question):
+        # Calculating and saving sentiment
+        sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
+        numerical_sentiment = client_context.brain.nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
+
+        client_context.bot.sentiment.append_sentiment(numerical_sentiment)
+        client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
+        
+        # print("Sentiment: {}".format(sentiment_value))
+        print("Sentiment for current sentence: {}".format(numerical_sentiment))
+        # print("Sentiment Distribution: {}".format(sentiment_distribution))
+        print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
+        print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
+
+        return client_context, client_context.bot.sentiment._threshold_reached
+
     def ask_question(self, userid, question):
         response = ""
         try:
             client_context = self.create_client_context(userid)
             #TODO: add logic of the new changes here.
             #      Not sure what Rohola meant by above comment.
-            print(question)
+            print("###########################################")
+            print("Ryan heard: {}".format(question))
+            print("###########################################\n")
+            # print(question)
             response, options = client_context.bot.ask_question_with_options(client_context, question)
             
-            # Calculating and saving sentiment
-            sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
-            numerical_sentiment = client_context.brain.nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
-
-            client_context.bot.sentiment.append_sentiment(numerical_sentiment)
-            client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
-            
-            print("Sentiment: {}".format(sentiment_value))
-            print("Sentiment number value: {}".format(numerical_sentiment))
-            print("Sentiment Distribution: {}".format(sentiment_distribution))
-            print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
+            client_context, threshold_reached = self.process_sentiment(client_context, question)
+            if threshold_reached:
+                response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
             client_context.bot.save_conversation(client_context)
 
             # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)

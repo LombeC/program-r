@@ -7,6 +7,8 @@ class SentimentData():
         self._sentiment_distributions = []
         self._final_sentiment_values = []
         self._rolling_sentiment = 0
+        self._neg_thresh = -0.7
+        self._threshold_reached = False
 
     @property
     def values(self):
@@ -34,8 +36,7 @@ class SentimentData():
             if sentiment is None:
                 print("None sentiment trying to be added. Ignore")
                 return
-                
-            print("In SentimentData: {}".format(sentiment))
+
             self._sentiment_values = np.append(self._sentiment_values, sentiment)
             if len(self._sentiment_values) > 10:
                 self._sentiment_values = np.delete(self._sentiment_values, 0)
@@ -58,7 +59,18 @@ class SentimentData():
                 else:
                     self._rolling_sentiment += sent * dampening
                     dampening += 0.1
+            
+            # Trigger for a low sentiment
+            if self._rolling_sentiment < self._neg_thresh:
+                self.threshold_reached()
+            else:
+                self._threshold_reached = False
+
         except Exception as ex:
             print("Error updating rolling sentiment: {}".format(ex))
+
+    def threshold_reached(self):
+        print("THRESHOLD REACHED: {}".format(self._rolling_sentiment))
+        self._threshold_reached = True
 
 

@@ -660,6 +660,19 @@
     </category>
 
 
+    <category>
+        <pattern>XTHRESHOLD REACHED</pattern>
+        <template>
+            <random>
+                <li>Why are you so sad?</li>
+                <li>It seems like you are upset.</li>
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+    <!-- This might be obsolete -->
     <!-- CATEGORY THAT SHOULD GET CAUGHT ON INITIAL MESSAGE SENT FROM EMOTION TABLET CONTROLLER -->
     <category>
         <pattern>START PROGRAMR</pattern>
