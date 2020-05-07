@@ -77,12 +77,19 @@ class RestBotClient(BotClient):
             print(question)
             response, options = client_context.bot.ask_question_with_options(client_context, question)
             
+            # Calculating and saving sentiment
             sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
-            client_context.bot.sentiment.append_sentiment(sentiment_value)
+            numerical_sentiment = client_context.brain.nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
+
+            client_context.bot.sentiment.append_sentiment(numerical_sentiment)
             client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
+            
             print("Sentiment: {}".format(sentiment_value))
+            print("Sentiment number value: {}".format(numerical_sentiment))
             print("Sentiment Distribution: {}".format(sentiment_distribution))
+            print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
             client_context.bot.save_conversation(client_context)
+
             # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
             # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)
         except Exception as e:
