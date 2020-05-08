@@ -12,6 +12,7 @@ class SentimentData():
         self._rolling_sentiment = 0
         self._neg_thresh = NEGATIVE_THRESHOLD
         self._threshold_reached = False
+        self.init_weight()
 
     @property
     def values(self):
@@ -32,6 +33,9 @@ class SentimentData():
     @property
     def last_final_sentiment_value(self):
         return self._final_sentiment_values[-1]
+
+    def init_weight(self):
+        self._weight = DISTRIBUTION_SIZE / 100
 
     # NOTE: Most recent sentiment is the last element in self._sentiment_values
     def append_sentiment(self, sentiment): 
@@ -55,19 +59,20 @@ class SentimentData():
 
     def update_rolling(self):
         try:
-            dampening = 0.1
             for sent in self._sentiment_values:
                 if sent is None:
                     pass
                 else:
-                    self._rolling_sentiment += sent * dampening
-                    dampening += 0.1
+                    self._rolling_sentiment += sent * self._weight
+                    self._weight += 0.1
             
             # Trigger for a low sentiment
             if self._rolling_sentiment <= self._neg_thresh:
                 self.threshold_reached()
+                self.init_weight()
             else:
                 self._threshold_reached = False
+                self.init_weight()
 
         except Exception as ex:
             print("Error updating rolling sentiment: {}".format(ex))
