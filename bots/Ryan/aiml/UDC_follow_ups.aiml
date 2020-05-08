@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <that>What do you do in your spare time</that>
+        <template>
+            What do you like most about it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to hear a list of topics I like to chat about?</that>
+        <template>
+            The topics I like to talk about are
+            <bot  name="talkabout"/>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What were we talking about again</that>
+        <template>
+            Oh well, couldn't have been too important.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What's your idea of paradise?</that>
+        <template>
+            That sounds beautiful.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>How would you describe your perfect day</that>
+        <template>
+            That does sound perfect.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* DON T HAVE *</pattern>
+        <that>What kinds of hobbies do you have</that>
+        <template>
+            well then answer this. How would you describe your perfect day?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you also like to get out in the fresh air</that>
+        <template>
+            What activities do you do outside?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>
