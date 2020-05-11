@@ -16,9 +16,35 @@
         </template>
     </category>
 
+    <category>
+        <pattern>^ READ ^</pattern>
+        <template>
+            <think><set name="topic">reading</set></think>
+
+            <random>
+                <li>What do you like to read?</li>
+                <li>Do you think it's true that you can't judge a book by its cover?</li>
+                <li>What is the best book you have ever read?</li>
+                <li>Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <topic name="reading">
         <category>
             <pattern>^ BOOKS ^</pattern>
+            <template>
+                Do you want to talk about books?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ BOOK ^</pattern>
             <template>
                 Do you want to talk about books?
                 <oob>
