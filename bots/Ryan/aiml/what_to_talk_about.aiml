@@ -3,14 +3,20 @@
 
     <!-- ATOMIC -->
     <category>
+        <pattern>WHAT CAN YOU TALK ABOUT</pattern>
+        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHAT WOULD YOU LIKE TO TALK ABOUT</pattern>
-        <template>My favorite subjects are <bot name="talkabout"/>.
+        <template>We can talk about whatever you want! My favorite subjects are <bot name="talkabout"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU WANT TO TALK ABOUT</pattern>
-        <template>I'll talk about whatever with you. As a reminder some of my favorite topics are <bot name="talkabout"/>.
+        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -21,12 +27,12 @@
     </category>
     <category>
         <pattern>WHAT ELSE CAN WE TALK ABOUT</pattern>
-        <template>Let's talk about you.<oob><robot></robot></oob>
+        <template>Let's talk about you. What do you like to do for fun?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN WE TALK ABOUT SOMETHING ELSE</pattern>
-        <template>Sure we can talk about whatever you want.<oob><robot></robot></oob>
+        <template>Sure, we can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -36,7 +42,7 @@
     </category>
     <category>
         <pattern>WHAT DO YOU TALK ABOUT</pattern>
-        <template>I talk about all the important things in life: clothes, food, and gossip. But my favorite subjects are <bot name="talkabout"/><oob><robot></robot></oob>
+        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.<oob><robot></robot></oob>
         </template>
     </category>
 
@@ -84,6 +90,26 @@
     <category>
         <pattern>WHAT DO WANT TO TALK ABOUT</pattern>
         <template><srai>WHAT WOULD YOU LIKE TO TALK ABOUT</srai>
+        </template>
+    </category>
+
+    <!-- REDIRECT FROM UDC -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to hear a list of topics I like to chat about?</that>
+        <template>
+          My favorite subjects are <bot name="talkabout"/>.
+                <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to hear a list of topics I like to chat about?</that>
+        <template>
+          No worries. Let's talk about you. What do you like to do for fun?
+                <oob><robot></robot></oob>
         </template>
     </category>
 
