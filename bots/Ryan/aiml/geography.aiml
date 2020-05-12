@@ -54,6 +54,7 @@
     <category>
         <pattern>WHAT IS THE CAPITAL _ <set>places</set></pattern>
         <template>
+            The capital of <star index="2" /> is 
             <map name="capitalsofplaces"><star index="2"/></map>
             <think><set name="it"><set name="topic"><star index="2"/></set></set></think>
             <oob><robot></robot></oob>
@@ -62,6 +63,7 @@
     <category>
         <pattern>WHAT IS THE CAPITOL _ <set>places</set></pattern>
         <template>
+            The capital of <star index="2" /> is 
             <map name="capitalsofplaces"><star index="2"/></map>
             <think><set name="it"><set name="topic"><star index="2"/></set></set></think>
             <oob><robot></robot></oob>
