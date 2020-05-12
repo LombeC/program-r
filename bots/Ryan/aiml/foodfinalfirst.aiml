@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- FOOD -->
+    <category>
+        <pattern>FOOD</pattern>
+        <template>
+            Would you like to talk about food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <template>
+            <random>
+                <li>How do you feel about healthy food?</li>
+                <li>Do you want to see a recipe that you could easily prepare at home?</li>
+                <li>Do you like fruit?</li>
+                <li>Do you like vegetables?</li>
+                <li>Why don't we talk about comfort food?</li>
+                <li>Is going out to eat something you enjoy doing?</li>
+                <!-- <li>What is your favorite foreign cuisine?</li> -->
+                <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to talk about food?</that>
+        <template>
+            No worries! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Is going out to eat something you enjoy doing?</that>
+        <template>
+            It is fun, isn't it! When you go out to eat, do you prefer to eat foreign or American cuisine?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Is going out to eat something you enjoy doing?</that>
+        <template>
+            Do you want to see a recipe that you could easily prepare at home?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you want to see a recipe that you could easily prepare at home?</that>
+        <template>
+            Do you think you would enjoying preparing cauliflower like this for yourself?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>buffalowings.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO VEGETABLES DIALOGUE -->
+    <category>
+        <pattern># FOREIGN ^</pattern>
+        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <template>
+            <random>
+                <li>Do you like Asian food?</li>
+                <li>Do you like Mexican food?</li>
+                <!-- <li>Do you like European Food?</li> --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE ASIAN FOOD?</that>
+        <template>
+            <random>
+                <li>How do you feel about Chinese food?</li>
+                <li>How do you feel about Thai food?</li>
+                <li>How do you feel about Indian food?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN ^</pattern>
+        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <template>
+            When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN CUISINE ^</pattern>
+        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <template>
+            When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>When was the last time you had a hamburger and fries?</that>
+        <template>
+            Personally I think there's nothing better than going to the diner for hamburger, fries and a shake, of course!
+                                  Do you like your hamburger plain or with all the fixings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PLAIN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            You're making me hungry! What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I LIKE IT PLAIN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            You're making me hungry! What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            You're making me hungry! What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ALL THE FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            You're making me hungry! What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I LIKE ALL THE FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            You're making me hungry! What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            What do you like to order when you go to a diner?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NEITHER ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            In that case, how about we talk about eating healthy?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NONE ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            In that case, how about we talk about eating healthy?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            In that case, how about we talk about eating healthy?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># VEGETARIAN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I AM A VEGETARIAN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I M A VEGETARIAN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I AM VEGETARIAN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I M VEGETARIAN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to order when you go to a diner?</that>
+        <template>
+            Sounds so tasty! What do you think tastes better, chicken fried steak or fried pork tenderloin?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CHICKEN ^</pattern>
+        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <template>
+            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># CHICKEN FRIED STEAK ^</pattern>
+        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <template>
+            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PORK ^</pattern>
+        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <template>
+            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># PORK TENDERLOIN ^</pattern>
+        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <template>
+            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FRIED PORK TENDERLOIN ^</pattern>
+        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <template>
+            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>How do you feel about healthy food?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">Excellent! What is one of your favorite healthy meals?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="positive">Excellent! What is one of your favorite healthy meals?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="neutral">What is one of your favorite healthy meals?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?<oob>
+                    <robot></robot>
+                </oob></li>
+                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?<oob>
+                    <robot></robot>
+                </oob></li></condition>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO COMFORT FOOD DIALOGUE --></aiml>

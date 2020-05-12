@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <!-- BEGIN VEGETABLES -->
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU LIKE VEGETABLES?</that>
+      <template>
+          Not a single one? Well, in that case, maybe you can help me out with this instead. Are tomatoes a fruit or a vegetable?
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>DO YOU LIKE VEGETABLES?</that>
+      <template>
+          Well, in that case, maybe you can help me out with this instead. Are tomatoes a fruit or a vegetable?
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DO YOU LIKE VEGETABLES?</that>
+              <template>
+                  I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+                      <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>HAVE YOU EVER TRIED BUFFALO CAULIFLOWER WINGS?</that>
+        <template>
+          Buffalo cauliflower wings are a vegetarian alternative to chicken wings. Spicy and delicious. Would you like to see a recipe for how to make this type of wing?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
+        <template>
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How about we talk about eating healthy?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
+        <template>
+          <think><set name="topic">wings</set></think>
+          Do you think you would enjoy preparing cauliflower like this for yourself?
+            <oob>
+                <robot>
+                  <video>
+                    <filename>buffalowings.mp4</filename>
+                  </video>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <topic name="wings">
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
+        <template>
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How about we talk about eating healthy?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD ENJOY PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
+        <template>
+          Shall I show you the ingredients for these wings to write down?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+    <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>SHALL I SHOW YOU THE INGREDIENTS FOR THESE WINGS TO WRITE DOWN?</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. How about we talk about eating healthy?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>SHALL I SHOW YOU THE INGREDIENTS FOR THESE WINGS TO WRITE DOWN?</that>
+        <template>
+          Here you go! When you have finished taking them down, let me know by saying done!
+            <oob>
+              <robot>
+                <image>
+                  <filename>buffalowingsingredients.jpg</filename>
+                </image>
+                <options>
+                  <option>DONE</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># DONE ^</pattern>
+      <that>WHEN YOU HAVE FINISHED TAKING THEM DOWN, LET ME KNOW BY SAYING DONE!</that>
+        <template>
+          This recipe for cauliflower wings has a few steps, would it be helpful to see the recipe to write down?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>THIS RECIPE FOR CAULIFLOWER WINGS HAS A FEW STEPS, WOULD IT BE HELPFUL TO SEE THE RECIPE TO WRITE DOWN?</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>THIS RECIPE FOR CAULIFLOWER WINGS HAS A FEW STEPS, WOULD IT BE HELPFUL TO SEE THE RECIPE TO WRITE DOWN?</that>
+        <template>
+          Just say done when you have finished copying the wing recipe.
+            <oob>
+              <robot>
+                <image>
+                  <filename>buffalowingsrecipe.jpg</filename>
+                </image>
+                <options>
+                  <option>DONE</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># DONE ^</pattern>
+      <that>JUST SAY DONE WHEN YOU HAVE FINISHED COPYING THE WING RECIPE.</that>
+        <template>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>Have you ever tried buffalo cauliflower wings?</that>
+        <template>
+          What do you think of buffalo cauliflower wings?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <!-- CAULIFLOWER WINGS SENTIMENT -->
+
+    <category>
+    <pattern>*</pattern>
+     <that>What do you think of buffalo cauliflower wings?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "positive">
+                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+               </li>
+              <li value = "neutral">
+                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "negative">
+                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                      <oob>
+                          <robot>
+                              <options>
+                                    <option>*</option>
+                              </options>
+                          </robot>
+                      </oob>
+              </li>
+              <li value = "verynegative">
+                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>^ VEGETABLE ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>^ FRUIT ^</pattern>
+      <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
+        <template>
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+</topic>
+
+
+  <!-- REDIRECT TO FRUIT DIALOGUE -->
+
+</aiml>

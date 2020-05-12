@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- REDIRECT FROM FOODFINALFIRST -->
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            What is one of your favorite healthy meals?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            Ha ha, I don't blame you. Healthy foods are so boring! Is going out to eat something you enjoy doing?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            Ha ha, I don't blame you. Healthy foods are so boring! Is going out to eat something you enjoy doing?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+        <template>
+            <think><set name="topic">healthyfood</set></think>
+
+            What is one of your favorite healthy meals?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="healthyfood">
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
+            <template>
+                What is one of your favorite healthy meals?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What is one of your favorite healthy meals?</that>
+            <template>
+                Do you think that pizza can be healthy if you put veggies on it?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think that pizza can be healthy if you put veggies on it?</that>
+            <template>
+                I like to think so too, ha ha! Do you like to make pizza from scratch or do delivery?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think that pizza can be healthy if you put veggies on it?</that>
+            <template>
+                I think you make a good point! Do you like to make pizza from scratch or do delivery?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think that pizza can be healthy if you put veggies on it?</that>
+            <template>
+                I think you make a good point! Do you like to make pizza from scratch or do delivery?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SCRATCH ^</pattern>
+            <that>Do you like to make pizza from scratch or do delivery?</that>
+            <template>
+                Well then I'm coming over to your house for dinner! Ha ha!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FROM SCRATCH ^</pattern>
+            <that>Do you like to make pizza from scratch or do delivery?</that>
+            <template>
+                Well then I'm coming over to your house for dinner! Ha ha!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DELIVERY ^</pattern>
+            <that>Do you like to make pizza from scratch or do delivery?</that>
+            <template>
+                Well then I'm coming over to your house for dinner! Ha ha!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Ha ha!</that>
+            <template>
+                Would you like to hear a very simple recipe for veggie pizza?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to hear a very simple recipe for veggie pizza?</that>
+            <template>
+                Ok! It's super simple! All it takes is whole wheat pita bread, vegetables, pesto sauce and parmesan cheese!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to hear a very simple recipe for veggie pizza?</that>
+            <template>
+                Sure! Shall we keep talking about food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Shall we keep talking about food?</that>
+            <template>
+                I read recently that our food preferences might be based on our genetics. Do you like vegetables?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Shall we keep talking about food?</that>
+            <template>
+                Sure! What should we talk about?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>All it takes is whole wheat pita bread, vegetables, pesto sauce and parmesan cheese!</that>
+            <template>
+                Simple enough, right?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Simple enough, right?</that>
+            <template>
+                Just cut up whatever veggies you want on your pizza, spread the pesto sauce, and put in the oven with cheese on top!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Just cut up whatever veggies you want on your pizza, spread the pesto sauce, and put in the oven with cheese on top!</that>
+            <template>
+                There you have it. A healthy pizza. Do you want to see another recipe that you could easily prepare at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <!-- REDIRECT TO HEALTHYRECIPES --></aiml>

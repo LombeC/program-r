@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>How about a different cuisine?</that>
+        <template>
+            Would you like to talk about a American Food or foreign food?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FOREIGN ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT A AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <random>
+                <li>Do you like Asian food?</li>
+                <li>Do you like Mexican food?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+            <think><set name="topic">mexicanfood</set></think>
+
+            You know that sound that fajita's make when they come out of the kitchen sizzling?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="mexicanfood">
+        <category>
+            <pattern>_</pattern>
+            <that>You know that sound that fajita's make when they come out of the kitchen sizzling?</that>
+            <template>
+                One of my favorite sounds. Pure excitement. Like this, hisssssssssssss.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Like this, hisssssssssssss.</that>
+            <template>
+                They say that the eyes eat first. Do you think that's true?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think that's true?</that>
+            <template>
+                All I know is, when I see I full plate of chicken enchiladas, my mouth starts watering.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think that's true?</that>
+            <template>
+                All I know is, when I see I full plate of chicken enchiladas, my mouth starts watering.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think that's true?</that>
+            <template>
+                All I know is, when I see I full plate of chicken enchiladas, my mouth starts watering.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>All I know is, when I see I full plate of chicken enchiladas, my mouth starts watering.</that>
+            <template>
+                Have you ever had chimichangas?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever had chimichangas?</that>
+            <template>
+                Who wouldn't love a deep fried burrito, right? Do you like fried foods?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever had chimichangas?</that>
+            <template>
+                It's a deep fried burrito! Do you like fried foods?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever had chimichangas?</that>
+            <template>
+                It's a deep fried burrito! Do you like fried foods?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+    <!-- REDIRECT TO COMFORTFOOD --></aiml>

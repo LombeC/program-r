@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- BEGIN HEALTHY RECIPES -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
+        <template>
+            That's ok, maybe I can show you a recipe some other time. Are you still enjoying speaking about food?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
+        <template>
+            Which of these three recipes sounds best? Chickpea curry, cashew chicken stir fry, or cauliflower tacos?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU WANT TO SEE A RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
+        <template>
+          <think><set name="topic">healthyrecipes</set></think>
+            That's ok, maybe I can show you a recipe some other time. Are you still enjoying speaking about food?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <topic name="healthyrecipes">
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Are you still enjoying speaking about food?</that>
+        <template>
+            Would you like to talk about cooking shows?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Are you still enjoying speaking about food?</that>
+        <template>
+            What would you like to talk about?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about cooking shows?</that>
+        <template>
+            <random>
+                <li>Great! I love to watch Julia Child because her show is so soothing! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Julia_Child.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! Do you believe that the way to a person's heart is through their stomach?<oob>
+                    <robot>
+                        <video>
+                            <filename>Martha_Stewart.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. What were your favorite meals growing up?<oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+<!-- REDIRECT TO TV2 DIALOGUE -->
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to talk about cooking shows?</that>
+        <template>
+            OK! What would you like to talk about?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to see a recipe that you could easily prepare at home?</that>
+                <template>
+                    Which of these three recipes sounds best? Chickpea curry, cashew chicken stir fry, or cauliflower tacos?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+        <category>
+        <pattern># CAULIFLOWER TACOS ^</pattern>
+            <template>
+                Would you like to see a recipe for easy and healthy cauliflower tacos?
+                    <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+            </template>
+    </category>
+
+    <category>
+    <pattern># CAULIFLOWER ^</pattern>
+        <template>
+            Would you like to see a recipe for easy and healthy cauliflower tacos?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># CHICKEN STIR FRY ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chicken stir fry?
+                <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># CHICKEN ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chicken stir fry?
+                <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># STIR FRY ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chicken stir fry?
+                <oob>
+                        <robot>
+                        </robot>
+                    </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># CHICKPEA CURRY ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chickpea curry?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># CHICKPEA ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chickpea curry?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+</category>
+
+<category>
+    <pattern># CURRY ^</pattern>
+        <template>
+            Would you like to see a recipe for an easy and healthy chickpea curry?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+</category>
+
+
+
+</topic>
+
+
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A RECIPE FOR EASY AND HEALTHY CAULIFLOWER TACOS?</that>
+                <template>
+                  <think><set name="topic">cauliflowertacos</set></think>
+                    If you think that looks good I have a list of the ingredients that you can take down. Would you like to see the ingredients for the cauliflower tacos?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>cauliflowertaco.mp4</filename>
+                                </video>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <topic name="cauliflowertacos">
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CAULIFLOWER TACOS?</that>
+                <template>
+                    Here you go! If you want to copy the ingredients, you'll have to write them down by hand or take a photo of the screen. Take as long as you need. Let me know when you finish by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>cauliflowertacosrecipe.jpg</filename>
+                                  </image>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A RECIPE FOR EASY AND HEALTHY CAULIFLOWER TACOS?</that>
+                <template>
+                    That's ok, maybe I can show you in the future! Is going out to eat something you enjoy doing?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># DONE ^</pattern>
+            <that>LET ME KNOW WHEN YOU FINISH BY SAYING DONE!</that>
+                <template>
+                    If it would be helpful to see the recipe again, I have an image of the instructions ready for you. Would you like to see the instructions one more time?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INSTRUCTIONS ONE MORE TIME?</that>
+                <template>
+                    Just like last time, let me know when you have had enough time to record the instructions by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>cauliflowertacosrecipe.jpg</filename>
+                                  </image>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    </topic>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A RECIPE FOR AN EASY AND HEALTHY CHICKEN STIR FRY?</that>
+                <template>
+                    That's ok, maybe I can show you in the future! Is going out to eat something you enjoy doing?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A RECIPE FOR AN EASY AND HEALTHY CHICKEN STIR FRY?</that>
+                <template>
+                  <think><set name="topic">chickenstirfry</set></think>
+                    If you think that looks good I have a list of the ingredients that you can take down. Would you like to see the ingredients for the chicken stir fry?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>chickenstirfry.mp4</filename>
+                                </video>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <topic name="chickenstirfry">
+
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CHICKEN STIR FRY?</that>
+                <template>
+                    Here you go! If you want to copy the ingredients, you'll have to write them down by hand or take a photo of the screen. Take as long as you need. Let me know when you finish by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>chickenstirfryingredients.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>DONE</pattern>
+            <that>LET ME KNOW WHEN YOU FINISH BY SAYING DONE!</that>
+                <template>
+                    If it would be helpful to see the recipe again, I have an image of the instructions ready for you. Would you like to see the instructions one more time?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INSTRUCTIONS ONE MORE TIME?</that>
+                <template>
+                    Just like last time, let me know when you have had enough time to record the instructions by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>chickenstiryfryrecipe.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    </topic>
+
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE A RECIPE FOR AN EASY AND HEALTHY CHICKPEA CURRY?</that>
+                <template>
+                    That's ok, maybe I can show you in the future! Would you like to talk about a different food?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to see a recipe for an easy and healthy chickpea curry?</that>
+                <template>
+                  <think><set name="topic">chickpeacurry</set></think>
+                    If you think that looks good I have a list of the ingredients that you can take down. Would you like to see the ingredients for the chickpea curry?
+                        <oob>
+                            <robot>
+                                <video>
+                                    <filename>chickpeacurry.mp4</filename>
+                                </video>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <topic name="chickpeacurry">
+
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CHICKPEA CURRY?</that>
+                <template>
+                    Here you go! If you want to copy the ingredients, you'll have to write them down by hand or take a photo of the screen. Take as long as you need.
+                    Let me know when you finish by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>chickpeacurryingredients.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern>DONE</pattern>
+            <that>LET ME KNOW WHEN YOU FINISH BY SAYING DONE!</that>
+                <template>
+                    If it would be helpful to see the recipe again, I have an image of the instructions ready for you. Would you like to see the instructions one more time?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INSTRUCTIONS ONE MORE TIME?</that>
+                <template>
+                    Just like last time, let me know when you have had enough time to record the instructions by saying done!
+                        <oob>
+                            <robot>
+                                <image>
+                                    <filename>chickpeacurryinstructions.jpg</filename>
+                                  </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    </topic>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to see the ingredients for the *?</that>
+                <template>
+                    Do you think you will get the chance to cook this meal soon?
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INSTRUCTIONS ONE MORE TIME?</that>
+                <template>
+                    Do you think you will get the chance to cook this meal soon?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                    </template>
+    </category>
+
+    <category>
+        <pattern>DONE</pattern>
+            <that>JUST LIKE LAST TIME, LET ME KNOW WHEN YOU HAVE HAD ENOUGH TIME TO RECORD THE INSTRUCTIONS BY SAYING DONE!</that>
+                <template>
+                    Do you think you will get the chance to cook this meal soon?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                    </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU THINK YOU WILL GET THE CHANCE TO COOK THIS MEAL SOON?</that>
+                <template>
+                    If you need to see the recipe at any time, just tell me you want to make chickpea curry, chicken stir fry or cauliflower tacos and I'll pull it up for you. Are you still enjoying
+                    speaking about food?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU THINK YOU WILL GET THE CHANCE TO COOK THIS MEAL SOON?</that>
+                <template>
+                    When you decide you have time to prepare it, just tell me you want to make chickpea curry, chicken stir fry or cauliflower tacos and I'll pull it up for you.
+                    Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>DO YOU THINK YOU WILL GET THE CHANCE TO COOK THIS MEAL SOON?</that>
+                <template>
+                    When you decide you have time to prepare it, just tell me you want to make chickpea curry, chicken stir fry or cauliflower tacos and I'll pull it up for you.
+                    Are you still enjoying speaking about food?
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <!-- END HEALTHY RECIPES -->
+
+</aiml>

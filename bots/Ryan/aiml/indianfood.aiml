@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Has it been long since the last time you ate Indian food?</that>
+        <template>
+            Do you remember trying naan? It's a type of Indian flatbread.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Has it been long since the last time you ate Indian food?</that>
+        <template>
+            You must love Indian food, in that case! Have you ever tried naan? It's a type of Indian flatbread.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Has it been long since the last time you ate Indian food?</that>
+        <template>
+            Do you remember trying naan? It's a type of Indian flatbread.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW DO YOU FEEL ABOUT INDIAN FOOD?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">indianfood</set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">I love it too! Has it been long since the last time you ate Indian food?</li>
+                <li value="neutral">Has it been long since the last time you ate Indian food?</li>
+                <li value="negative">Has it been long since the last time you ate Indian food?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="indianfood">
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>It's a type of Indian flatbread.</that>
+            <template>
+                Honestly, I think I could eat a whole basket by myself! Mmm delicious.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>It's a type of Indian flatbread.</that>
+            <template>
+                You must try it! Honestly, I think I could eat a whole basket by myself! Mmm delicious.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>It's a type of Indian flatbread.</that>
+            <template>
+                You must try it! Honestly, I think I could eat a whole basket by myself! Mmm delicious.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>MMM DELICIOUS.</that>
+            <template>
+                Honestly, I think I could eat a whole basket by myself!
+                            Would you order plain naan or get garlic naan? I mean, if you had to pick just one kind.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GARLIC ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                I would too. It's totally worth the bad breath.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLAIN ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                It's not bad because it's plain! A classic for a reason.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># BOTH ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+            
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GARLIC AND ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+	           
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLAIN AND ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+            
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GARLIC NAAN AND ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+            
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PLAIN NAAN AND ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+            
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>I mean, if you had to pick just one kind.</that>
+            <template>
+                You raise a good point. Why should we have to limit ourselves?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>A classic for a reason.</that>
+            <template>
+                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>It's totally worth the bad breath.</that>
+            <template>
+                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Why should we have to limit ourselves?</that>
+            <template>
+                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NAAN ^</pattern>
+            <template>
+                Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NAAN RECIPE ^</pattern>
+            <template>
+                Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MAKE NAAN ^</pattern>
+            <template>
+                Would you like to see an easy recipe for making naan at home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to see an easy recipe for making naan at home?</that>
+            <template>
+                Ok, first you should gather your ingredients. When you're done looking at the ingredient list, just say DONE. If you need, I can read the ingredients to you if you say READ.
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>NaanIngredients.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># READ ^</pattern>
+            <that>If you need, I can read the ingredients to you if you say READ.</that>
+            <template>
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... Do you need me to repeat the list of ingredients?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>NaanIngredients.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you need me to repeat the list of ingredients?</that>
+            <template>
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... Do you need me to repeat the list of ingredients?
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>NaanIngredients.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you need me to repeat the list of ingredients?</that>
+            <template>
+                Are you ready for the naan recipe?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Do you need me to repeat the list of ingredients?</that>
+            <template>
+                Are you ready for the naan recipe?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to see an easy recipe for making naan at home?</that>
+            <template>
+                Maybe some other time. If you ever want to see the naan recipe in the future, just let me know.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>If you ever want to see the naan recipe in the future, just let me know.</that>
+            <template>
+                So tell me. How do you feel about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEVER ^</pattern>
+            <that>If you ever want to see the naan recipe in the future, just let me know.</that>
+            <template>
+                That's ok. So tell me. How do you feel about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DONE ^</pattern>
+            <that>If you need, I can read the ingredients to you if you say READ.</that>
+            <template>
+                Are you ready for the naan recipe?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Are you ready for the naan recipe?</that>
+            <template>
+                When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>naanrecipe.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Are you ready for the naan recipe?</that>
+            <template>
+                Whenever you're ready to see the Naan recipe just say OK. If you'd rather return to it some other time, just say DONE.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># OK ^</pattern>
+            <that>If you'd rather return to it some other time, just say DONE.</that>
+            <template>
+                When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>naanrecipe.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DONE ^</pattern>
+            <that>If you'd rather return to it some other time, just say DONE.</that>
+            <template>
+                If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># READ ^</pattern>
+            <that>If you would like me to read the naan recipe to you, say READ.</that>
+            <template>
+                It's a bit long, so I'll read each step individually. Ready?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Ready?</that>
+            <template>
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Let me know when you are ready for step 2.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GO BACK ^</pattern>
+            <that>Let me know when you are ready for step 2.</that>
+            <template>
+                Should I reread step 1?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEXT ^</pattern>
+            <that>Let me know when you are ready for step 2.</that>
+            <template>
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># READY ^</pattern>
+            <that>Let me know when you are ready for step 2.</that>
+            <template>
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># STEP ^</pattern>
+            <that>Let me know when you are ready for step 2.</that>
+            <template>
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GO BACK ^</pattern>
+            <that>Let me know when you are ready for step 3.</that>
+            <template>
+                Should I reread step 2?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEXT ^</pattern>
+            <that>Let me know when you are ready for step 3.</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># READY ^</pattern>
+            <that>Let me know when you are ready for step 3.</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># STEP ^</pattern>
+            <that>Let me know when you are ready for step 3.</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GO BACK ^</pattern>
+            <that>Let me know when you are ready for step 4.</that>
+            <template>
+                Should I reread step 3?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEXT ^</pattern>
+            <that>Let me know when you are ready for step 4.</that>
+            <template>
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># READY ^</pattern>
+            <that>Let me know when you are ready for step 4.</that>
+            <template>
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># STEP ^</pattern>
+            <that>Let me know when you are ready for step 4.</that>
+            <template>
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Should I reread step 1?</that>
+            <template>
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Should I reread step 1?</that>
+            <template>
+                Would you like me to continue reading the recipe?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like me to continue reading the recipe?</that>
+            <template>
+                If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like me to continue reading the recipe?</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Should I reread step 2?</that>
+            <template>
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume. Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Should I reread step 2?</that>
+            <template>
+                Would you like me to reread an earlier step?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like me to reread an earlier step?</that>
+            <template>
+                Should I reread step 1?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like me to reread an earlier step?</that>
+            <template>
+                No problem. Lets do it some other time. If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Should I reread step 3?</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Should I reread step 3?</that>
+            <template>
+                Should I reread step 2?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Can I repeat any of the other steps for you?</that>
+            <template>
+                Which step would you like to hear again?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Can I repeat any of the steps for you?</that>
+            <template>
+                Which step would you like to hear again?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ONE ^</pattern>
+            <that>Which step would you like to hear again?</that>
+            <template>
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># TWO ^</pattern>
+            <that>Which step would you like to hear again?</that>
+            <template>
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THREE ^</pattern>
+            <that>Which step would you like to hear again?</that>
+            <template>
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. Can I repeat any of the other steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># FOUR ^</pattern>
+            <that>Which step would you like to hear again?</that>
+            <template>
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Can I repeat any of the steps for you?</that>
+            <template>
+                If you make naan, I hope you'll tell me how it was.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Can I repeat any of the other steps for you?</that>
+            <template>
+                If you make naan, I hope you'll tell me how it was. If you say naan recipe, I can show you the recipe whenever you want.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THANK ^</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                You're welcome. In my opinion, we can never have too many good meals.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THANK YOU ^</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                You're welcome. In my opinion, we can never have too many good meals.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THANKS ^</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                You're welcome. In my opinion, we can never have too many good meals.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>OK</set> ^</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                In my opinion, we can never have too many good meals.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                In my opinion, we can never have too many good meals.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>In my opinion, we can never have too many good meals.</that>
+            <template>
+                So tell me. How do you feel about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+</aiml>

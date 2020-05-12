@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>*</pattern>
+        <that>How do you feel about Chinese Food?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">chinesefood</set></think>
+
+            <condition name="getsentiment">
+                <li value="verypositive">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+                <li value="positive">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+                <li value="neutral">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</li>
+                <li value="negative">Let's skip it! How do you feel about Indian food?</li>
+                <li value="verynegative">Let's skip it! How do you feel about Indian food?</li></condition>
+
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+<topic name="chinesefood">
+
+    <!-- BEGIN CHINESE FOOD SUBTOPIC -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
+        <template>
+            It makes a lot of sense when you think about it.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
+        <template>
+            It makes a lot of sense when you think about it.
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
+        <template>
+            It makes a lot of sense when you think about it!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>It makes a lot of sense when you think about it!</that>
+            <template>
+                Many Chinese people immigrated to the United States to build the railroads, and they brought their food with them.
+                You've eaten chop suey before, haven't you?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>You've eaten chop suey before, haven't you?</that>
+        <template>
+            Did you like chop suey when you tried it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>You've eaten chop suey before, haven't you?</that>
+        <template>
+            It's a quick stir fry of meat and vegetables in a brown sauce. Do you think you would try chop suey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>You've eaten chop suey before, haven't you?</that>
+        <template>
+            It's a quick stir fry of meat and vegetables in a brown sauce. Do you think you would try chop suey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You've eaten chop suey before, haven't you?</that>
+        <template>
+            It's a quick stir fry of meat and vegetables in a brown sauce. Do you think you would try chop suey?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you like chop suey when you tried it?</that>
+        <template>
+            Who doesn't, right? Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you like chop suey when you tried it?</that>
+        <template>
+            I can understand that. Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you like chop suey when you tried it?</that>
+        <template>
+            I can understand that. Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think you would try chop suey?</that>
+        <template>
+            Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think you would try chop suey?</that>
+        <template>
+            Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think you would try chop suey?</that>
+        <template>
+            Would you say that you're an adventurous eater?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you say that you're an adventurous eater?</that>
+        <template>
+            What about octopus and squid? Would you eat those?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you say that you're an adventurous eater?</that>
+        <template>
+            So I'm guessing you wouldn't try octopus and squid, right?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Would you say that you're an adventurous eater?</that>
+        <template>
+            What about octopus and squid? Would you eat those?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you eat those?</that>
+        <template>
+            You are so adventurous and exciting! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you eat those?</that>
+        <template>
+            I'm not sure I would be able to, either! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Would you eat those?</that>
+        <template>
+            I'm not sure I would be able to, either! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <template>
+            I'm not sure I would be able to! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <template>
+            I'm not sure I would be able to! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <template>
+            I'm not sure I would be able to, either! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <template>
+            I'm not sure I would be able to! What's the strangest meal you've ever had?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What's the strangest meal you've ever had?</that>
+        <template>
+            Sounds like we've had similar experiences. What is your go to comfort food?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+
+
+ </topic>
+</aiml>

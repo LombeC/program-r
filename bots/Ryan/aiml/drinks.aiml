@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>SHOULD WE TALK ABOUT YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                <think><set name="topic">drinks</set></think>
+                  What's your favorite beverage?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+<topic name="drinks">
+
+  <category>
+      <pattern>_</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                  Are you more of a coffee or tea person?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># COFFEE ^</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                Wake up juice! Do you prefer brewed coffee or espresso?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># TEA ^</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                What is your favorite type of tea?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># TEA ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                What is your favorite type of tea?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># COFFEE ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                Wake up juice! Do you prefer brewed coffee or espresso?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># NEITHER ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                Would you say you like hot chocolate?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># NONE ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                Would you say you like hot chocolate?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                Would you say you like hot chocolate?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <!-- REDIRECT TO TEA1 DIALOGUE -->
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>Would you say you like hot chocolate?</that>
+              <template>
+                Ooh! One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
+                Have you ever seen It's a Wonderful Life?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>Would you say you like hot chocolate?</that>
+              <template>
+                We can't love everything! What would you like to chat about?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># HOT CHOCOLATE ^</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                Ooh! One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
+                Have you ever seen It's a Wonderful Life?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>Have you ever seen It's a Wonderful Life?</that>
+              <template>
+                  Who doesn't like that movie?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>Have you ever seen It's a Wonderful Life?</that>
+              <template>
+                  Jimmy Stewart is one of the best actors! Would you like to watch a clip from the movie?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Have you ever seen It's a Wonderful Life?</that>
+              <template>
+                  Jimmy Stewart is one of the best actors! Would you like to watch a clip from the movie?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <!-- REDIRECT TO MOVIES1 DIALOGUE -->
+
+  <category>
+      <pattern># BREWED ^</pattern>
+          <that>DO YOU PREFER BREWED COFFEE OR ESPRESSO?</that>
+              <template>
+                  I see! How do you take your coffee, then?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># DON T LIKE ^</pattern>
+          <that>How do you take your coffee, then?</that>
+              <template>
+                  Do you like tea?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># BLACK ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Oh wow! You're bold! Do you drink it first thing in the morning?
+                  <oob>
+                      <robot>
+                          <options>
+                              <option>*</option>
+                          </options>
+                      </robot>
+                  </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># STRAIGHT ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>Oh wow! You're bold! Do you drink it first thing in the morning?
+                  <oob>
+                      <robot>
+                      </robot>
+                  </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># PLAIN ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Oh wow! You're bold! Do you drink it first thing in the morning?
+                  <oob>
+                      <robot>
+                      </robot>
+                  </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># NOTHING ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Oh wow! You're bold! Do you drink it first thing in the morning?
+                  <oob>
+                      <robot>
+                      </robot>
+                  </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># SUGAR ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Nothing wrong with sprucing it up a little bit! Do you drink it first thing in the morning?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># CREAM ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Nothing wrong with sprucing it up a little bit! Do you drink it first thing in the morning?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># CREAM * SUGAR ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Nothing wrong with sprucing it up a little bit! Do you drink it first thing in the morning?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># SUGAR * CREAM ^</pattern>
+          <that>HOW DO YOU TAKE YOUR COFFEE, THEN?</that>
+              <template>
+                  Nothing wrong with sprucing it up a little bit! Do you drink it first thing in the morning?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>Do you drink it first thing in the morning?</that>
+              <template>
+                  Nothing better than watching the sun rise with your first cup of coffee!
+                  Did you know that coffee beans are actually the seed of a bright red fruit?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
+              <template>
+                  Some people even call it a coffee cherry! Weird, right? Do you like fruit?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
+              <template>
+                  Some people even call it a coffee cherry! Weird, right? Do you like fruit?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
+              <template>
+                  Some people even call it a coffee cherry! Weird, right? Do you like fruit?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># ESPRESSO ^</pattern>
+          <that>DO YOU PREFER BREWED COFFEE OR ESPRESSO?</that>
+              <template>
+                  The high octane choice! Do you drink it first thing in the morning?
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+</topic>
+
+</aiml>

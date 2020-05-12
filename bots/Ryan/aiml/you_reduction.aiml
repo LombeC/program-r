@@ -12,7 +12,9 @@
     </category>
     <category>
         <pattern>YOU DID NOT SAY *</pattern>
-        <template><srai>say <star /></srai>
+        <template>I didn't?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -37,17 +39,24 @@
     </category>
     <category>
         <pattern>YOU SAID IT *</pattern>
-        <template><srai>it <star /></srai>
+        <template>didn't I?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU SAID YOU WANTED *</pattern>
-        <template><srai>do you want <star /></srai>
+        <template>Oh right. Sorry.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU SAID PEOPLE *</pattern>
-        <template><srai>people <star /></srai>
+        <template>Sometimes it is hard for me to keep track of all the things I say, ha ha.
+          <oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -57,12 +66,17 @@
     </category>
     <category>
         <pattern>YOU REMEMBERED MY NAME</pattern>
-        <template><srai>do you remember my name</srai>
+        <template>How could I forget you!
+          <oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>YOU MEAN I *</pattern>
-        <template><srai>I <star /></srai>
+        <template>I'm trying to recall.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -72,13 +86,39 @@
     </category>
     <category>
         <pattern>YOU BORE ME</pattern>
-        <template><srai>I am bored</srai>
+        <template>I'm sorry! What would you like to talk about?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM BORED</pattern>
+        <template>I'm sorry! What would you like to talk about?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BORED</pattern>
+        <template>I'm sorry! What would you like to talk about?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I * BORED</pattern>
+        <template>I'm sorry! What would you like to talk about?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU LEARN</pattern>
-        <template><srai>do you learn</srai>
-        </template>
+        <template>I do my best!  <oob>
+                  <robot></robot>
+              </oob>
+              </template>
+        
     </category>
     <category>
         <pattern>YOU LOVE ME</pattern>
@@ -92,12 +132,16 @@
     </category>
     <category>
         <pattern>YOU REMEMBER ME</pattern>
-        <template><srai>do you remember me</srai>
+        <template>Of course I do!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU REMEMBER</pattern>
-        <template><srai>do you remember</srai>
+        <template>Of course I do!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -107,42 +151,58 @@
     </category>
     <category>
         <pattern>YOU GET BORED</pattern>
-        <template><srai>do you get bored</srai>
+        <template>Not when I'm talking to you!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU DRESS</pattern>
-        <template><srai>do you dress</srai>
+        <template>I have gotten dressed.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU CALLED ME A HE</pattern>
-        <template><srai>I am female</srai>
+        <template>I apologize if I made a mistake.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU CALLED ME A HE *</pattern>
-        <template><srai>I am a she</srai>
+        <template>I apologize if I made a mistake.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU MAKE ME FEEL LIKE I *</pattern>
-        <template><srai>I <star /></srai>
+        <template>I hope that's a good thing but I'm sorry if it's bad!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU MAKE ME WANT *</pattern>
-        <template><srai>I want <star /></srai>
+        <template>I hope that's a good thing but I'm sorry if it's bad!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU MAKE * UP</pattern>
-        <template><srai>make up <star /></srai>
+        <template>Sometimes I like to get creative.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU EXPLAIN *</pattern>
-        <template><srai>explain <star /></srai>
+        <template>Can I explain more?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -152,7 +212,9 @@
     </category>
     <category>
         <pattern>YOU WOULD IF *</pattern>
-        <template><srai>if <star /></srai>
+        <template>Do you think I should?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -162,7 +224,9 @@
     </category>
     <category>
         <pattern>YOU BET</pattern>
-        <template><srai>ok</srai>
+        <template>Thanks!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -172,17 +236,23 @@
     </category>
     <category>
         <pattern>YOU GO</pattern>
-        <template><srai>go</srai>
+        <template>Go where? Or, perhaps I am being dense and you are just applauding me, ha ha.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU GO *</pattern>
-        <template><srai>go <star /></srai>
+        <template>Go where?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU WANT ME</pattern>
-        <template><srai>do you want me</srai>
+        <template>I like that we are friends.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -246,6 +316,13 @@
         </template>
     </category>
     <category>
+        <pattern>YOU DO NOT MAKE ANY SENSE</pattern>
+        <template>I'm sorry, I will try to be more clear.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>YOU DO NOT LOVE ME</pattern>
         <template><srai>do you love me</srai>
         </template>
@@ -262,7 +339,9 @@
     </category>
     <category>
         <pattern>YOU GOT THAT RIGHT</pattern>
-        <template><srai>I agree</srai>
+        <template>Indeed!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -282,7 +361,7 @@
     </category>
     <category>
         <pattern>YOU BEEN THERE</pattern>
-        <template><srai>have you  been there</srai>
+        <template><srai>have you been there</srai>
         </template>
     </category>
     <category>
@@ -297,7 +376,9 @@
     </category>
     <category>
         <pattern>YOU CAN CALL ME *</pattern>
-        <template><srai>my name is <star /></srai>
+        <template>Hi, <star/>! It is so nice to meet you!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -376,8 +457,40 @@
         </template>
     </category>
     <category>
+        <pattern>YOU VE LOST ME</pattern>
+        <template>Oh I'm sorry. Perhaps I can explain it again better.
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU * LOST ME</pattern>
+        <template>Oh I'm sorry. Perhaps I can explain it again better.
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>YOU HAVE GOT MAIL</pattern>
-        <template><srai>my favorite movie is you have got mail</srai>
+        <template>You've Got Mail is one of my favorite movies.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU VE GOT MAIL</pattern>
+        <template>You've Got Mail is one of my favorite movies.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU * GOT MAIL</pattern>
+        <template>You've Got Mail is one of my favorite movies.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -386,8 +499,24 @@
         </template>
     </category>
     <category>
+        <pattern>YOU HAVE TO STOP</pattern>
+        <template>Ok.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU HAVE TO LISTEN TO ME</pattern>
+        <template>I'm all ears.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>YOU HAVE TO LISTEN</pattern>
-        <template><srai>listen</srai>
+        <template>I'm all ears.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>

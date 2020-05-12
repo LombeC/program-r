@@ -2,7 +2,9 @@
 <aiml version="2.0">
     <category>
         <pattern>HAVE I TALKED TO YOU *</pattern>
-        <template><srai>do you remember me</srai>
+        <template>Of course I remember you! <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -12,7 +14,9 @@
     </category>
     <category>
         <pattern>HAVE YOU PROVED *</pattern>
-        <template><srai>prove <star /></srai>
+        <template>Do you think I should prove it?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -162,12 +166,16 @@
     </category>
     <category>
         <pattern>HAVE YOU READ SHAKESPEARE *</pattern>
-        <template><srai>have you read shakespeare</srai>
+        <template>What do you like most about that work?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HAVE YOU READ THE BOOK *</pattern>
-        <template><srai>have you read <star /></srai>
+        <template>What do you like most about that book?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -182,7 +190,9 @@
     </category>
     <category>
         <pattern>HAVE YOU HAD SEX</pattern>
-        <template><srai>SEX</srai>
+        <template>Robots have no need.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -202,7 +212,16 @@
     </category>
     <category>
         <pattern>HAVE SEX</pattern>
-        <template><srai>SEX</srai>
+        <template>Robots have no need.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE SEX</pattern>
+        <template>Robots have no need.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>

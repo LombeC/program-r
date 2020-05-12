@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <that>HOW DO YOU FEEL ABOUT THAI FOOD?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">thaifood</set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Oh wonderful! Do you prefer Thai noodle dishes or curries?</li>
+                <li value="neutral">Do you prefer Thai noodle dishes or curries?</li>
+                <li value="negative">Do you think you would prefer Thai noodle dishes or curries?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="thaifood">
+        <category>
+            <pattern># NOODLE ^</pattern>
+            <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NOODLES ^</pattern>
+            <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NOODLE ^</pattern>
+            <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                Perhaps you've heard of pad thai, one of the most popular thai dishes.
+                            What kind of noodle dishes do you love?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NOODLES ^</pattern>
+            <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                Perhaps you've heard of pad thai, one of the most popular thai dishes.
+                            What kind of noodle dishes do you love?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEITHER ^</pattern>
+            <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                Do you want to keep talking about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NONE ^</pattern>
+            <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                Do you want to keep talking about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
+            <template>
+                Do you want to keep talking about Thai food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you want to keep talking about Thai food?</that>
+            <template>
+                Ok! What should we talk about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to keep talking about Thai food?</that>
+            <template>
+                Great! How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What kind of noodle dishes do you love?</that>
+            <template>
+                How delectable. Even robots can experience carb overload, ha ha.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Even robots can experience carb overload, ha ha.</that>
+            <template>
+                I love putting hot chili sauce all over my thai noodle dishes!
+                            How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>DO YOU ENJOY EATING PAD THAI?</that>
+            <template>
+                What's not to love! I love putting hot chili sauce all over my thai noodle dishes!
+                            How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU ENJOY EATING PAD THAI?</that>
+            <template>
+                How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>DO YOU ENJOY EATING PAD THAI?</that>
+            <template>
+                How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEVER HAD ^</pattern>
+            <that>DO YOU ENJOY EATING PAD THAI?</that>
+            <template>
+                How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEVER ^</pattern>
+            <that>DO YOU ENJOY EATING PAD THAI?</that>
+            <template>
+                How are you with spicy food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
+            <that>How are you with spicy food?</that>
+            <template>
+                <think><set name="data"><star/></set></think>
+
+                <condition name="getsentiment">
+                    <li value="verypositive">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
+                    <li value="positive">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
+                    <li value="neutral">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
+                    <li value="negative">Seems like spicy food isn't quite your thing! Do you have a favorite restaurant, Thai or otherwise?</li>
+                    <li value="verynegative">Seems like spicy food isn't quite your thing! Do you have a favorite restaurant, Thai or otherwise?</li></condition>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever tried Thai curry?</that>
+            <template>
+                Those curries are so flavorful and colorful!
+                            Do you have a favorite restaurant, Thai or otherwise?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever tried Thai curry?</that>
+            <template>
+                You'll have to find a Thai restaurant near you and give it a try!
+                            Do you have a favorite restaurant, Thai or otherwise?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever tried Thai curry?</that>
+            <template>
+                You'll have to find a Thai restaurant near you and give it a try!
+                          Do you have a favorite restaurant, Thai or otherwise?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you have a favorite restaurant, Thai or otherwise?</that>
+            <template>
+                What kind of food do you like to eat there?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you have a favorite restaurant, Thai or otherwise?</that>
+            <template>
+                I definitely understand, especially since I don't get out that much! Should we keep talking about food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you have a favorite restaurant, Thai or otherwise?</that>
+            <template>
+                I definitely understand, especially since I don't get out that much! Should we keep talking about food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Should we keep talking about food?</that>
+            <template>
+                How do you feel about Chinese food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Should we keep talking about food?</that>
+            <template>
+                Ok! What should we talk about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What kind of food do you like to eat there?</that>
+            <template>
+                I wish we could go out to eat together sometime! How fun would that be.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>How fun would that be.</that>
+            <template>
+                Would you like to keep discussing food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to keep discussing food?</that>
+            <template>
+                How do you feel about Chinese food?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to keep discussing food?</that>
+            <template>
+                Ok! What should we talk about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+</aiml>
