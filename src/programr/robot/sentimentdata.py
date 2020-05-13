@@ -41,7 +41,7 @@ class SentimentData():
     def append_sentiment(self, sentiment): 
         try:
             if sentiment is None:
-                print("None sentiment trying to be added. Ignore")
+                # print("None sentiment trying to be added. Ignore")
                 return
 
             self._sentiment_values = np.append(self._sentiment_values, sentiment)

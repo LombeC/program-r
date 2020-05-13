@@ -25,8 +25,11 @@ class ConsoleBotClient(EventBotClient):
         return
 
     def get_question(self, client_context, input_func=input):
-        ask = "%s " % self.get_client_configuration().prompt
-        return input_func(ask)
+        try:
+            ask = "%s " % self.get_client_configuration().prompt
+            return input_func(ask)
+        except Exception as excep:
+            YLogger.debug(client_context, "Exception caught in get_question !", excep)
 
     def display_startup_messages(self, client_context):
         self.process_response(client_context, client_context.bot.get_version_string(client_context))
@@ -46,9 +49,9 @@ class ConsoleBotClient(EventBotClient):
         self._renderer.render(client_context, response)
 
     def process_response(self, client_context, response):
-        print("\n")
+        # print("\n")
         print(response)
-        print("\n")
+        # print("\n")
 
     def process_question_answer(self, client_context):
         question = self.get_question(client_context)
@@ -59,9 +62,10 @@ class ConsoleBotClient(EventBotClient):
         try:
             YLogger.debug(client_context, "before get_question")
             question = self.get_question(client_context)
+            YLogger.debug(client_context, "after get_question")
             # FIXME: Right now nothing is being done with the options being returned.
             response, options = self.process_question_with_options(client_context, question)
-
+            YLogger.debug(client_context, "before render_response")
             self.render_response(client_context, response)
         except Exception as ex:
             YLogger.exception(client_context, "Exception caught in process_question_answer_with_options !", ex)

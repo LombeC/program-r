@@ -9,10 +9,15 @@ class TemplatePersonNode(TemplateNode):
         TemplateNode.__init__(self)
 
     def resolve_to_string(self, client_context):
-        string = self.resolve_children_to_string(client_context)
-        resolved = client_context.brain.persons.personalise_string(string)
-        YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
-        return resolved
+        try:
+            string = self.resolve_children_to_string(client_context)
+            print("string: {}".format(string))
+            resolved = client_context.brain.persons.personalise_string(string)
+            YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
+            return resolved
+        except Exception as excep:
+            YLogger.exception(client_context, "Failed to resolve", excep)
+            return ""
 
     def resolve(self, client_context):
         try:

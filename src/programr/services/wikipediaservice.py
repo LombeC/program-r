@@ -10,7 +10,6 @@ class WikipediaAPI(object):
 
     # Provide a summary of a single article
     def summary(self, title, sentences=0, chars=0, auto_suggest=False, redirect=True):
-        print("Title to search for: {}".format(title))
         return wikipedia.summary(title, sentences, chars, auto_suggest, redirect)
 
     # Provide a list of articles matching the query

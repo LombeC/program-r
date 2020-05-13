@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>GIVE * A WORD</pattern>
+        <template>
+            I Don't want to give  <person><star/></person> a word.
+            <oob><robot></robot></oob>
+        </template>  
+    </category>
+
+    <category>
+        <pattern>I AM *</pattern>  
+        <template>You are <person><star/></person></template>  
+        <oob><robot></robot></oob>
+    </category>
+
+    <category>  
+        <pattern>GIVE THE * TO *</pattern>
+        <template>
+            User has asked me to give the <star/> to <person2><star index="2"/></person2>
+            <oob><robot></robot></oob>
+        </template>  
+    </category>
+</aiml>
