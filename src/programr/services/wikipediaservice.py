@@ -9,7 +9,8 @@ from programr.services.service import Service
 class WikipediaAPI(object):
 
     # Provide a summary of a single article
-    def summary(self, title, sentences=0, chars=0, auto_suggest=True, redirect=True):
+    def summary(self, title, sentences=0, chars=0, auto_suggest=False, redirect=True):
+        print("Title to search for: {}".format(title))
         return wikipedia.summary(title, sentences, chars, auto_suggest, redirect)
 
     # Provide a list of articles matching the query
@@ -32,6 +33,8 @@ class WikipediaService(Service):
         # NOTE: Often wikipedia articles will have a listen plug-in in the summary.
         #       We need to make sure to get rid of extraneous characters
         #       so Ryan sounds natural, hence the cleaning.
+        print("BEFORE CLEANING")
+        print("summary: {}".format(summary))
         summary = summary.replace("(listen);", "")
         summary = summary.replace("(listen),", "")
         summary = summary.replace("(listen)", "")
@@ -48,7 +51,9 @@ class WikipediaService(Service):
             question = " ".join(words[1:])
             if words[0] == 'SUMMARY':
                 search = self._api.summary(question, sentences=1)
-                search = self.clean_summary(search)
+                search = "According to wikipedia, " + self.clean_summary(search)
+                # if search == "".join(search.split()):
+                #     print("True")
                 YLogger.debug(client_context, f"search in wikipediaservice: {search}")
             elif words[0] == 'SEARCH':
                 results = self._api.search(question)
@@ -58,11 +63,11 @@ class WikipediaService(Service):
                 search = ""
             return search
         except wikipedia.exceptions.DisambiguationError:
-            YLogger.error(client_context, "Wikipedia search is ambiguous for question [%s]", question)
-            search = f"Wikipedia search is ambiguous for your question: {question}"
+            YLogger.error(client_context, "Wikipedia search is ambiguous for your question [%s]", question)
+            search = "Sorry, but I couldn't find anything on Wikipedia for your question: " + question
             return search
         except wikipedia.exceptions.PageError:
-            YLogger.error(client_context, "No page on Wikipedia for question [%s]", question)
+            YLogger.error(client_context, "No page on Wikipedia for your question [%s]", question)
         except Exception:
-            YLogger.error(client_context, "General error querying Wikipedia for question [%s]", question)
-        return ""
+            YLogger.error(client_context, "General error querying Wikipedia for your question [%s]", question)
+        return "Sorry, but I couldn't find anything on Wikipedia for your question, " + question
