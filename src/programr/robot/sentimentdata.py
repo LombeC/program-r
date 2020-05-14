@@ -70,6 +70,7 @@ class SentimentData():
             if self._rolling_sentiment <= self._neg_thresh:
                 self.threshold_reached()
                 self.init_weight()
+                self._neg_thresh = self._weight
             else:
                 self._threshold_reached = False
                 self.init_weight()
