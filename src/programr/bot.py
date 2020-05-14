@@ -412,7 +412,7 @@ class Bot(object):
         sentence_no = 0
         for sentence in question.sentences:
             question.set_current_sentence_no(sentence_no)
-            answer_sentence = self.process_sentence(client_context, sentence, srai, responselogger)
+            answer_sentence, options = self.process_sentence(client_context, sentence, srai, responselogger)
             answer_sentences.append(answer_sentence)
             sentence_no += 1
 
@@ -433,6 +433,7 @@ class Bot(object):
 
         if srai is True:
             conversation.pop_dialog()
+
 
         response = answer.sentences_text()
 
@@ -525,7 +526,6 @@ class Bot(object):
         response = client_context.brain.ask_question(client_context, sentence, srai)
         #response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
 
-
         if response is None and srai is False:
             response = self.check_spelling_and_retry(client_context, sentence)
 
@@ -551,7 +551,7 @@ class Bot(object):
         if response is not None:
             return self.handle_response(client_context, sentence, response, srai, responselogger, options)
         else:
-            return self.handle_none_response(client_context, sentence, responselogger, options)
+            return self.handle_none_response(client_context, sentence, responselogger, options)   
 
 
     def handle_response(self, client_context, sentence, response, srai, responselogger, options=[]):
@@ -563,7 +563,7 @@ class Bot(object):
         response_text = response_sentence.text()
         self.log_answer(client_context, sentence.text, response_text, responselogger)
         if len(options) == 0:
-            return response_sentence
+            return response_sentence, None
         else:
             YLogger.debug(client_context, "Returning response_sentence and options.")
             return response_sentence, options

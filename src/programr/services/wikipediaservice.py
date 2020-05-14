@@ -69,4 +69,4 @@ class WikipediaService(Service):
             YLogger.error(client_context, "No page on Wikipedia for your question [%s]", question)
         except Exception:
             YLogger.error(client_context, "General error querying Wikipedia for your question [%s]", question)
-        return "Sorry, but I couldn't find anything on Wikipedia for your question, " + question
+        return "Sorry, but I couldn't find anything on Wikipedia for your question about, " + question

@@ -11,7 +11,6 @@ class TemplatePersonNode(TemplateNode):
     def resolve_to_string(self, client_context):
         try:
             string = self.resolve_children_to_string(client_context)
-            print("string: {}".format(string))
             resolved = client_context.brain.persons.personalise_string(string)
             YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             return resolved
