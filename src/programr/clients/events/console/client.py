@@ -77,12 +77,10 @@ class ConsoleBotClient(EventBotClient):
 
     def process_question_answer_with_options(self, client_context):
         try:
-            YLogger.debug(client_context, "before get_question")
             question = self.get_question(client_context)
-            YLogger.debug(client_context, "after get_question")
+
             # FIXME: Right now nothing is being done with the options being returned.
             response, options = self.process_question_with_options(client_context, question)
-            YLogger.debug(client_context, "before render_response")
             
             client_context, threshold_reached = self.process_sentiment(client_context, question)
             if threshold_reached:

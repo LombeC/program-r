@@ -11,6 +11,22 @@
     </category>
 
     <category>
+        <pattern>IS IT HOT OUTSIDE</pattern>
+        <template>
+            Is <sraix service="WEATHER">TEMPERATURE Denver, USA</sraix> hot to you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS IT COLD OUTSIDE</pattern>
+        <template>
+            Is <sraix service="WEATHER">TEMPERATURE Denver, USA</sraix> cold to you?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>WHAT S THE TEMPERATURE</pattern>
         <template><srai>WHAT IS THE TEMPERATURE RIGHT NOW</srai></template>
     </category>
