@@ -35,7 +35,7 @@ class SentimentData():
         return self._final_sentiment_values[-1]
 
     def init_weight(self):
-        self._weight = DISTRIBUTION_SIZE / 100
+        self._weight = (DISTRIBUTION_SIZE*2) / 100
 
     # NOTE: Most recent sentiment is the last element in self._sentiment_values
     def append_sentiment(self, sentiment): 
@@ -71,6 +71,7 @@ class SentimentData():
                 self.threshold_reached()
                 self.init_weight()
                 self._rolling_sentiment = 0
+                # self.append_sentiment(0.5)
             else:
                 self._threshold_reached = False
                 self.init_weight()
@@ -79,5 +80,5 @@ class SentimentData():
             print("Error updating rolling sentiment: {}".format(ex))
 
     def threshold_reached(self):
-        print("THRESHOLD REACHED: {}".format(self._rolling_sentiment))
+        # print("THRESHOLD REACHED: {}".format(self._rolling_sentiment))
         self._threshold_reached = True
