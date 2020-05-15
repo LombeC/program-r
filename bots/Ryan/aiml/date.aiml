@@ -106,11 +106,28 @@
         <template><srai>WHAT TIME IS IT</srai></template>
     </category>
     <category>
+        <pattern>WHAT TIME IS IT</pattern>
+        <template><srai>WHAT TIME IS IT</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT TIME IS IT</pattern>
+        <template><srai>WHAT TIME IS IT</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT TIME IS IT *</pattern>
+        <template><srai>WHAT TIME IS IT</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT TIME IS IT *</pattern>
+        <template><srai>WHAT TIME IS IT</srai></template>
+    </category>
+    <category>
         <pattern>WHAT IS THE HOUR *</pattern>
         <template><date format="%I %p"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
+    
 
     <!--DISPLAYING THE DAY OF THE WEEK-->
     <category>

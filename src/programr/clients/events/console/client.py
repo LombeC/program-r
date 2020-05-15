@@ -3,6 +3,7 @@ import re
 from programr.utils.logging.ylogger import YLogger
 from programr.clients.events.client import EventBotClient
 from programr.clients.events.console.config import ConsoleConfiguration
+from programr.robot.sentimentdata import SentimentData
 
 
 class ConsoleBotClient(EventBotClient):
@@ -53,6 +54,22 @@ class ConsoleBotClient(EventBotClient):
         print(response)
         # print("\n")
 
+    def process_sentiment(self, client_context, question):
+        # Calculating and saving sentiment
+        sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
+        numerical_sentiment = client_context.brain.nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
+
+        client_context.bot.sentiment.append_sentiment(numerical_sentiment)
+        client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
+        
+        # print("Sentiment: {}".format(sentiment_value))
+        print("Sentiment for current sentence: {}".format(numerical_sentiment))
+        # print("Sentiment Distribution: {}".format(sentiment_distribution))
+        print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
+        print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
+
+        return client_context, client_context.bot.sentiment._threshold_reached
+
     def process_question_answer(self, client_context):
         question = self.get_question(client_context)
         response = self.process_question(client_context, question)
@@ -66,6 +83,12 @@ class ConsoleBotClient(EventBotClient):
             # FIXME: Right now nothing is being done with the options being returned.
             response, options = self.process_question_with_options(client_context, question)
             YLogger.debug(client_context, "before render_response")
+            
+            client_context, threshold_reached = self.process_sentiment(client_context, question)
+            if threshold_reached:
+                response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
+            client_context.bot.save_conversation(client_context)
+            
             self.render_response(client_context, response)
         except Exception as ex:
             YLogger.exception(client_context, "Exception caught in process_question_answer_with_options !", ex)
