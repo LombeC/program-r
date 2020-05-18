@@ -88,8 +88,8 @@ class RestBotClient(BotClient):
         response = ""
         try:
             client_context = self.create_client_context(userid)
-            #TODO: add logic of the new changes here.
-            #      Not sure what Rohola meant by above comment.
+     
+            # question = question.lower()
             print("###########################################")
             print("Ryan heard: {}".format(question))
             print("###########################################\n")

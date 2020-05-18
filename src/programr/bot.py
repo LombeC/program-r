@@ -346,6 +346,7 @@ class Bot(object):
             return self.exit_response
 
     def pre_process_text(self, client_context, text, srai):
+        text = text.upper()
         if srai is False:
             pre_processed = client_context.brain.pre_process_question(client_context, text)
             YLogger.debug(client_context, "Pre Processed (%s): %s", client_context.userid, pre_processed)
