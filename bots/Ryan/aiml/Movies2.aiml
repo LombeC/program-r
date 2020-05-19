@@ -4,7 +4,7 @@
         <pattern># Comedy ^</pattern>
         <that>Do you like to watch drama, action, comedy, or musicals?</that>
         <template>
-            Great! When it comes to comedy, nothing beats Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
+            Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -15,7 +15,7 @@
         <pattern># Comedies ^</pattern>
         <that>Do you like to watch drama, action, comedy, or musicals?</that>
         <template>
-            Great! When it comes to comedy, nothing beats Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
+            Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?
             <oob>
                 <robot></robot>
             </oob>
@@ -55,6 +55,51 @@
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Speaking of Christmas movies, have you ever seen Christmas Vacation with Chevy Chase?</that>
+        <template>
+            You've got to watch it! How funny was that scene?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Christmas_Vacation.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
+        <template>
+            Who hasn't! Do you remember that scene?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Christmas_Vacation.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
+        <template>
+            You've got to watch it! How funny was that scene?
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Christmas_Vacation.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever seen National Lampoon's Christmas Vacation?</that>
         <template>
             You've got to watch it! How funny was that scene?
             <oob>
@@ -157,7 +202,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</that>
         <template>
-            Do you want to keep talking about film?
+            Should we keep talking about film?
             <oob>
                 <robot>
                     <video>
@@ -167,4 +212,30 @@
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Should we keep talking about film?</that>
+        <template>
+            OK! Do you like to watch drama, action, comedy, or musicals?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Should we keep talking about film?</that>
+        <template>
+            No worries! What do you want to talk about next?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
 </aiml>

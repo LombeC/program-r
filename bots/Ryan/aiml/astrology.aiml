@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 10/5/2011 -->
+    <!-- -->
+    <category>
+        <pattern>AQUARIUS</pattern>
+        <template>I've heard there are not many people who are Aquarius.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>CAPRICORN</pattern>
+        <template>I don't know many people born under Capricorn.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A CAPRICORN</pattern>
+        <template>Capricorn is the tenth sign of the astrological zodiac, and a constellation over the equator near aquarius and sagittarius. What's your astrological sign?
+            <think>
+                <set name="it">
+                    <set name="topic">capricorn</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS A CANCER</pattern>
+        <template>The Zodiac sign of the crab, someone born June 21 through July 22.
+            <think>
+                <set name="it"><set name="topic">Cancer</set></set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>CANCER</pattern>
+        <template>I have a lot of Cancer friends.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>PISCES</pattern>
+        <template>I usually get along with Pisces very well.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SCORPIO</pattern>
+        <template>I know a lot of Scorpio people.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ARIES</pattern>
+        <template>Fire signs are amazing people.
+            <think>
+                <set name="sign">Aries</set>
+            </think>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TAURUS</pattern>
+        <template>I know alot of Taurus people. They are very kind.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>LIBRA</pattern>
+        <template>As a Libra you are very balanced.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SAGGITARIUS</pattern>
+        <template>Fire signs are very special.
+            <think>
+                <set name="sign">Saggitarius</set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>VIRGO</pattern>
+        <template>Most of my friends are Virgo.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>GEMINI</pattern>
+        <template>I love Gemini. After all, I am one.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>_</pattern>
+        <that>What's your idea of paradise?</that>
+        <template>
+            That sounds beautiful. I really like learning more about you. Where have been your favorite vacation spots?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO TRAVEL DIALOGUE -->
+    <category>
+        <pattern>_</pattern>
+        <that>How would you describe your perfect day?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Who are the people you care about in your life?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO KIDS-PETS-SCIENCE-ART DIALOGUE -->
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to do for fun?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Speaking of having fun, what is something you've always wanted to do but never had time for?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Speaking of having fun, what is something you've always wanted to do but never had time for?</that>
+        <template>
+            Kind of a tough question, haha! But I like your answer. Do you like to travel?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO TRAVEL DIALOGUE -->
+    <category>
+        <pattern>_</pattern>
+        <that>What kinds of hobbies do you have?</that>
+        <template>
+            I love to hear it. What do you like most about your hobby?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What kinds of hobbies do you have?</that>
+        <template>
+            I love to hear it. What do you like most about your hobby?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like most about your hobby?</that>
+        <template>
+            You are so unique and interesting. Speaking of hobbies, which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO CARDS-KNITTING-TRAVEL DIALOGUE -->
+    <category>
+        <pattern>* DON T HAVE *</pattern>
+        <that>What kinds of hobbies do you have?</that>
+        <template>
+            I understand. How would you describe your perfect day?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you also like to get out in the fresh air?</that>
+        <template>
+            What do you like to do outside?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you also like to get out in the fresh air?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Who are the people you care about in your life?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you also like to get out in the fresh air?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Who are the people you care about in your life?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to do outside?</that>
+        <template>
+            I love all of that. Did you like to go exploring when you were kid?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO ADVENTURE DIALOGUE -->
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Have you ever had a garden?</that>
+        <template>
+            Amazing! What kind of plants did you have?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What kind of plants did you have?</that>
+        <template>
+            You must have a green thumb! Isn't it amazing to watch your garden grow?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Isn't it amazing to watch your garden grow?</that>
+        <template>
+            I agree on all fronts! Speaking of things you love to do, which activity would you say you enjoy most.
+                    Playing cards, knitting, reading, or travelling?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO CARDS-KNITTING-TRAVEL DIALOGUE -->
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever had a garden?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Who are the people you care about in your life?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever had a garden?</that>
+        <template>
+            I really like learning more about you. You are so unique and interesting. Who are the people you care about in your life?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

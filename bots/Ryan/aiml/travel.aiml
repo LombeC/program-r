@@ -67,6 +67,17 @@
         </category>
 
         <category>
+            <pattern>_</pattern>
+            <that>WHERE HAVE BEEN YOUR FAVORITE VACATION SPOTS?</that>
+            <template>
+                Oh that must have been quite the experience! If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU LIKE TO TRAVEL?</that>
             <template>
@@ -148,4 +159,6 @@
         </template>
     </category>
 
-    <!-- REDIRECT TO ROMANCE DIALOGUE --></aiml>
+    <!-- REDIRECT TO ROMANCE DIALOGUE -->
+
+  </aiml>

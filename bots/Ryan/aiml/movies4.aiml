@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern># ACTION ^</pattern>
+        <that>Do you like to watch drama, action, comedy, or musicals?</that>
+        <template>
+            <think><set name="topic">action</set></think>
+
+            Excellent! Would you say you prefer James Bond or Indiana Jones?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="action">
+        <category>
+            <pattern># JAMES BOND ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Ah, so you love a good spy thriller! Well then, you must be a fan of Bond, James Bond?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># BOND ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Ah, so you love a good spy thriller! Well then, you must be a fan of Bond, James Bond?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Perhaps you like a good adventure story instead? Have you ever read The Adventures of Tom Sawyer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Perhaps you like a good adventure story instead? Have you ever read The Adventures of Tom Sawyer?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Well then, you must be a fan of Bond, James Bond?</that>
+            <template>
+                Who is your favorite Bond actor to date?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Well then, you must be a fan of Bond, James Bond?</that>
+            <template>
+                Interesting! Who is your favorite Bond actor to date?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Well then, you must be a fan of Bond, James Bond?</that>
+            <template>
+                Interesting! Who is your favorite Bond actor to date?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SEAN CONNERY ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># CONNERY ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SEAN ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DAVID NIVEN ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NIVEN ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DAVID ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GEORGE LAZENBY ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># LAZENBY ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># GEORGE ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ROGER MOORE ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MOORE ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ROGER ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># TIMOTHY DALTON ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DALTON ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># TIMOTHY ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PIERCE BROSNAN ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># BROSNAN ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PIERCE ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DANIEL CRAIG ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># CRAIG ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DANIEL ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                The man, the myth, the legend! Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                My favorite is Sean Connery. Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Who is your favorite Bond actor to date?</that>
+            <template>
+                It can be pretty hard to choose from all those actors!
+                                                  Mine's Sean Connery. Do you think it would be hard to be a spy?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think it would be hard to be a spy?</that>
+            <template>
+                What do you think it would feel like to be on a mission and have secret orders to carry out?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it would be hard to be a spy?</that>
+            <template>
+                What do you think it would feel like to be on a mission and have secret orders to carry out?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it would be hard to be a spy?</that>
+            <template>
+                What do you think it would feel like to be on a mission and have secret orders to carry out?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What do you think it would feel like to be on a mission and have secret orders to carry out?</that>
+            <template>
+                I am definitely no expert on spies, but I think you have a good point.
+                              Should we keep talking about film?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Should we keep talking about film?</that>
+            <template>
+                No worries! What do you want to talk about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Should we keep talking about film?</that>
+            <template>
+                OK! Do you like to watch drama, action, comedy, or musicals?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># INDIANA JONES ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Ah, so you love a good adventure! Well then, you must be a fan of Raiders of the Lost Ark?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Indiana_Jones.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># JONES ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Ah, so you love a good adventure! Well then, you must be a fan of Raiders of the Lost Ark?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Indiana_Jones.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># INDIANA ^</pattern>
+            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <template>
+                Ah, so you love a good adventure! Well then, you must be a fan of Raiders of the Lost Ark?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>Indiana_Jones.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                Do you think you'd ever want to go into a booby-trapped temple?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                Do you think you'd ever want to go into a booby-trapped temple?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                Do you think you'd ever want to go into a booby-trapped temple?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                How brave you are! Ancient pyramids are so mysterious! Did you know that ancient Egyptians believed in eternal life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                I don't blame you! Ancient pyramids are so mysterious! Did you know that ancient Egyptians believed in eternal life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Well then, you must be a fan of Raiders of the Lost Ark?</that>
+            <template>
+                I don't blame you! Ancient pyramids are so mysterious! Did you know that ancient Egyptians believed in eternal life?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Did you know that ancient Egyptians believed in eternal life?</that>
+            <template>
+                Yes, that's why they buried mummies with food and treasures!
+                                                      Would you like to see a trailer for a movie on ancient Egypt?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Would you like to see a trailer for a movie on ancient Egypt?</that>
+            <template>
+                You should watch the whole film if you haven't seen it yet! Should we keep talking about film?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>The_Mummy.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to see a trailer for a movie on ancient Egypt?</that>
+            <template>
+                No worries! Should we keep talking about film?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+</aiml>

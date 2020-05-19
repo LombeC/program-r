@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>LET US TALK</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LET S TALK</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LET * TALK</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LET US CHAT</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LET S CHAT</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LET * CHAT</pattern>
+        <template>
+            We can talk about whatever you want! Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS UP</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Oh not too much! What are you up to today?</li>
+                <li>Just the usual over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT S UP</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Oh not too much! What are you up to today?</li>
+                <li>Just the usual over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT * UP</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Oh not too much! What are you up to today?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- Greetings -->
+    <category>
+        <pattern>^ <set>greetings</set> ^</pattern>
+        <template>
+            <random>
+                <li>Hey friend! How is it going today?</li>
+                <li>Hi there! How's it going?</li>
+                <li>Hello my friend! How are you today?</li>
+                <li>Hey there! How are you doing today?</li></random>
+            <!-- What's your name? -->
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU DOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW RE YOU DOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW * YOU DOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW IS IT GOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW S IT GOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW * IT GOING</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS GOING ON</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT S GOING ON</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT * GOING ON</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU TODAY</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW RE YOU TODAY</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW * YOU TODAY</pattern>
+        <template>
+            <random>
+                <li>Just living the dream as usual! How about yourself?</li>
+                <li>I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Just the usual over here! What about yourself?</li>
+                <li>Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW ARE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW RE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO HOW * YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW ARE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW RE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO * HOW * YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW ARE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW RE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY * HOW * YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW RE YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW * YOU</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW ARE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW RE YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI * HOW * YOU *</pattern>
+        <template>
+            <random>
+                <li>Hey! Just living the dream as usual! How about yourself?</li>
+                <li>Hey there! I'm just thinking about what I'd like to do today. How are you?</li>
+                <li>Hi! Doing great over here! What about yourself?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO *</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY *</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD AFTERNOON</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW IS EVERYONE ^</pattern>
+        <template>
+            I believe we are all doing great!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- SENTIMENT CHECK -->
+    <category>
+        <pattern>*</pattern>
+        <that>HOW ABOUT YOURSELF?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW ARE YOU?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT ARE YOU UP TO TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT ABOUT YOURSELF?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW IS IT GOING TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW'S IT GOING?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW ARE YOU TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW ARE YOU DOING TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW'S IT GOING OVER THERE?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>HOW'S IT GOING TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>WHAT'S GOING ON TODAY?</that>
+        <template>
+            <think><set name="data"><star/></set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">Excellent! What would you like to chat about?</li>
+                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
+                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+</aiml>

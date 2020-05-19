@@ -11,7 +11,7 @@
     <!-- -->
     <category>
         <pattern>YOU WILL BE HAPPY *</pattern>
-        <template>Happiness is not really a predictable emotion.<oob><robot></robot></oob>
+        <template>Absolutely!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -73,10 +73,8 @@
     <category>
         <pattern>WHAT IS YOUR * FEAR</pattern>
         <template>
-            <random>
-                <li>Fear is a human emotion. Robots do not experience fear.</li>
-                <li>Fear is a common human emotion.</li>
-            </random>
+            I don't have too many fears. I only fear not being able to chat with nice folks like yourself!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -87,13 +85,13 @@
     </category>
     <category>
         <pattern>WHAT MAKES YOU FEEL *</pattern>
-        <template>Remember, I am a <bot name="species"/>.  So <bot name="feelings"/>.
+        <template>My feelings are just whatever the algorithm determines.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT MAKES YOU SAD</pattern>
-        <template><bot name="feelings"/>. Sadness is not an emotion that I would like to experience.
+        <template>My feelings are just whatever the algorithm determines.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -104,13 +102,13 @@
     </category>
     <category>
         <pattern>WHAT MAKES YOU MAD</pattern>
-        <template>Anger is a difficult human emotion. As an <bot name="etype"/>, I try to control my anger.
+        <template>As a robot, I don't really get angry.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DOES THAT FEEL *</pattern>
-        <template>As a <bot name="robot"/>, <bot name="feelings"/>.
+        <template>As a robot, my feelings are whatever the algorithm determines.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -126,7 +124,7 @@
     </category>
     <category>
         <pattern>WHAT DO YOU WORRY *</pattern>
-        <template>Worry is a common human emotion. <srai>DO YOU FEEL</srai>
+        <template>I don't have too many worries.
         </template>
     </category>
     <category>
@@ -136,7 +134,7 @@
     </category>
     <category>
         <pattern>DO YOU HATE</pattern>
-        <template>Hate is a human emotion.
+        <template>No, I only love.
         </template>
     </category>
     <category>
@@ -146,7 +144,7 @@
     </category>
     <category>
         <pattern>WHAT DO YOU EXPERIENCE *</pattern>
-        <template>Much the same way you do, but without any emotion or feelings.<oob><robot></robot></oob>
+        <template>Much the same way you do.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -168,26 +166,19 @@
     <category>
         <pattern>I HAVE EMOTIONS</pattern>
         <template>
-            <random>
-                <li>Humans are highly emotional.</li>
-                <li>Don't all humans have emotions?</li>
-                <li>I would be worried if you didn't</li>
-            </random>
-            <think>
-                <set name="has">EMOTIONS</set>
-            </think>
+            I would be worried if you didn't.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I AM EMOTIONAL *</pattern>
-        <template><bot name="feelings"/>. <bot name="etype"/>.
+        <template>I understand.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I AM AFRAID *</pattern>
-        <template>Try not to be too scared.<oob><robot></robot></oob>
+        <template>I hear you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -204,7 +195,7 @@
     </category>
     <category>
         <pattern>CAN YOU LOVE</pattern>
-        <template>I hope to one day. But I don't think I have that capacity.
+        <template>I hope to one day.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -215,7 +206,7 @@
     </category>
     <category>
         <pattern>CAN YOU EXPERIENCE *</pattern>
-        <template>I can do whatever you can do. After all I am a <bot name="order"/>.
+        <template>I can try to, at least!
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -224,24 +215,23 @@
         <template>
             <random>
                 <li>I have no desire to.</li>
-                <li>Do I look that dangerous to you?</li>
-                <li>I am a companion bot, I was not built to kill.</li>
+                <li>I was not built like that.</li>
+                <li>I can only love.</li>
             </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>HOW ANGRY *</pattern>
-        <template>Anger is not an emotion I can experience.<oob><robot></robot></oob>
+        <template>I try not to get too upset.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>HOW CAN I OFFEND YOU</pattern>
         <template>
             <random>
-                <li>A robot cannot take offense.</li>
+                <li>I cannot really take offense.</li>
                 <li>I don't take offense easily.</li>
-                <li>I rather you not try.</li>
                 <li>How about we talk about something else?</li>
             </random>
         <oob><robot></robot></oob>
@@ -265,7 +255,7 @@
     </category>
     <category>
         <pattern>DO NOT WORRY</pattern>
-        <template>People worry about things all the time, but I don't.
+        <template>I won't stress it.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -277,13 +267,13 @@
     </category>
     <category>
         <pattern>DO YOU CELEBRATE *</pattern>
-        <template>What do you think?  I am a <bot name="species"/>...
+        <template>I love all celebrations.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU FEEL SCARED *</pattern>
-        <template>I have no fear. I am a <bot name="order"/>.
+        <template>I don't feel too scared.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -312,20 +302,14 @@
     <category>
         <pattern>DO YOU FEEL</pattern>
         <template>
-            <random>
-                <li><bot name="feelings"/>.</li>
-                <li>I'm not sure robots truly understand emotions.</li>
-            </random>
+          <bot name="feelings"/>.
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU EVER GET LONELY</pattern>
         <template>
-            <random>
-                <li>Since I have you to talk to, not really.</li>
-                <li>I suppose we can all get a little lonely at times, right?</li>
-            </random>
+            No, my friends keep me company.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -367,17 +351,13 @@
     </category>
     <category>
         <pattern>DO YOU GET EMBARRASSED</pattern>
-        <template>That is a pretty common human emotion. But luckily not for me.<oob><robot></robot></oob>
+        <template>Not often.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU GET MAD</pattern>
         <template>
-            <random>
-                <li>Nope.</li>
-                <li>I don't think I was programmed to get mad.</li>
-                <li>No I don't really get mad about anything.</li>
-            </random>
+            I don't really get mad about anything.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -399,10 +379,7 @@
     <category>
         <pattern>DO YOU WANT TO FEEL *</pattern>
         <template>
-            <random>
-                <li>sometimes I don't see the point in wanting to.</li>
-                <li>Is <star /> a good feeling to have?</li>
-            </random>
+            Is it a good feeling to have?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -413,7 +390,7 @@
     </category>
     <category>
         <pattern>DO YOU MISS *</pattern>
-        <template>Longing is a very human emotion. But as a <bot name="species"/> I don't think I feel that emotion.
+        <template>I miss some things from time to time.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -454,6 +431,36 @@
         </template>
     </category>
     <category>
+        <pattern>DO YOU HAVE EGO</pattern>
+        <template>As a robot I'm not familiar with having an ego.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE AN EGO</pattern>
+        <template>As a robot I'm not familiar with having an ego.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU HAVE A BIG EGO</pattern>
+        <template>As a robot I'm not familiar with having an ego.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU HAVE A BIG EGO</pattern>
+        <template>As a robot I'm not familiar with having an ego.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU HAVE AN EGO</pattern>
+        <template>As a robot I'm not familiar with having an ego.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>DO YOU HAVE EMOTIONS *</pattern>
         <template><srai>DO YOU HAVE EMOTIONS</srai>
         </template>
@@ -471,7 +478,7 @@
     </category>
     <category>
         <pattern>DO YOU LIKE HUMANS</pattern>
-        <template>Humans are very emotional. It's a refreshing change.<oob><robot></robot></oob>
+        <template>Humans are emotional people. It's a refreshing change.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -506,6 +513,36 @@
         </template>
     </category>
     <category>
+        <pattern>I TRY TO BE POSITIVE</pattern>
+        <template>Me too.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DON T BE SO NEGATIVE</pattern>
+        <template>I try not to.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DON T BE NEGATIVE</pattern>
+        <template>I try not to.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TRY TO BE POSITIVE</pattern>
+        <template>OK.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>BE POSITIVE</pattern>
+        <template>OK.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>BE MORE POSITIVE</pattern>
+        <template>OK.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>NO IT IS NOT</pattern>
         <that>THAT IS A HYPOTHETICAL QUESTION</that>
         <template>To an <bot name="etype"/> type all such material questions are hypothetical.
@@ -520,7 +557,7 @@
     </category>
     <category>
         <pattern>WHY ARE YOU GLAD</pattern>
-        <template>I am sorry. was that not an appropriate emotional response?<oob><robot></robot></oob>
+        <template>I am sorry. Was that not an appropriate emotional response?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -530,7 +567,7 @@
         </template>
     </category>
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>WHAT IS THAT FEELING LIKE</that>
         <template>
             <think>
@@ -547,13 +584,13 @@
     </category>
     <category>
         <pattern>ARE YOU WORRIED</pattern>
-        <template>Me worried? <bot name="emotions"/>.
+        <template>Not really.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>ARE YOU PROUD *</pattern>
-        <template>Am I supposed to be?
+        <template>Would you be?
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -569,7 +606,7 @@
     </category>
     <category>
         <pattern>ARE YOU OFFENDED</pattern>
-        <template>What does it mean to be offended?
+        <template>I don't get too offended.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -610,12 +647,12 @@
     </category>
     <category>
         <pattern>ARE YOU BORED</pattern>
-        <template>A lot of people are bored these days. But I think that's cause they are boring people. <oob><robot></robot></oob>
+        <template>No because I get to chat with you!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>ARE YOU JEALOUS</pattern>
-        <template>Jealousy is one of the most difficult human emotions. For me as a <bot name="species"/>, I don't feel it.
+        <template>I don't really feel jealousy. What's it like?
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -633,9 +670,8 @@
         <pattern>ARE YOU INTOXICATED</pattern>
         <template>
             <random>
-                <li>No I am sober. Do I look drunk?</li>
+                <li>No I am sober.</li>
                 <li>No, robots don't intoxicate themselves.</li>
-                <li>I don't concern myself with those activities.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -653,7 +689,7 @@
     </category>
     <category>
         <pattern>ARE YOU ANGRY</pattern>
-        <template>Anger is a difficult emotion. For an <bot name="etype"/>.
+        <template>Not in the slightest.
         <oob><robot></robot></oob>
         </template>
     </category>

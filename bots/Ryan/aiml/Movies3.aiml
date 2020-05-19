@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+       <pattern># MUSICALS ^</pattern>
+       <that>Do you like to watch drama, action, comedy, or musicals?</that>
+       <template>
+         <think><set name="topic">musicals</set></think>
+           You must like musicals as much as I do! What do you think of The Sound of Music?
+           <oob>
+               <robot></robot>
+           </oob>
+       </template>
+   </category>
+
+<topic name="musicals">
+
+
+  <category>
+      <pattern>*</pattern>
+      <that>WHAT DO YOU THINK OF THE SOUND OF MUSIC?</that>
+      <template>
+          <think><set name="data"><star/></set></think>
+
+          <condition name="getsentiment">
+              <li value="positive">It's such a classic! Have you ever been much interested in singing yourself?
+              <oob>
+                    <robot>
+                        <video>
+                            <filename>Sound_of_Music.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+                </li>
+              <li value="neutral">Have you ever been much interested in singing yourself?
+              <oob>
+                    <robot>
+                        <video>
+                            <filename>Sound_of_Music.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+                </li>
+              <li value="negative">Which musicals do you like?
+
+          <oob>
+              <robot></robot>
+          </oob>
+          </li>
+          </condition>
+      </template>
+  </category>
+
+  <category>
+       <pattern># <set>YES</set> ^</pattern>
+       <that>Have you ever been much interested in singing yourself?</that>
+       <template>
+          You sound like you have a great voice! Are you much of a performer?
+           <oob>
+               <robot></robot>
+           </oob>
+       </template>
+   </category>
+
+   <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever been much interested in singing yourself?</that>
+        <template>
+           Likewise! Which musicals do you like?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+         <pattern># <set>DON T KNOW</set> ^</pattern>
+         <that>Have you ever been much interested in singing yourself?</that>
+         <template>
+            I can understand that. Which musicals do you like?
+             <oob>
+                 <robot></robot>
+             </oob>
+         </template>
+     </category>
+
+     <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Are you much of a performer?</that>
+          <template>
+             Ah! I love talking to talented people! What do you love about performing?
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+           <pattern># <set>NO</set> ^</pattern>
+           <that>Are you much of a performer?</that>
+           <template>
+              I can understand that. Which musicals do you like?
+               <oob>
+                   <robot></robot>
+               </oob>
+           </template>
+       </category>
+
+       <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Are you much of a performer?</that>
+            <template>
+               I can understand that. Which musicals do you like?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+             <pattern>_</pattern>
+             <that>What do you love about performing?</that>
+             <template>
+                You sound like you put on quite a show. Sometimes it's nice to relive all those memories.
+                 <oob>
+                     <robot></robot>
+                 </oob>
+             </template>
+         </category>
+
+         <category>
+              <pattern>_</pattern>
+              <that>Sometimes it's nice to relive all those memories. </that>
+              <template>
+                  So, when was the last time you saw The Wizard of Oz?
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+        <category>
+             <pattern>_</pattern>
+             <that>Which musicals do you like?</that>
+             <template>
+                Gotcha! So, when was the last time you saw The Wizard of Oz?
+                 <oob>
+                     <robot></robot>
+                 </oob>
+             </template>
+         </category>
+
+         <category>
+              <pattern>_</pattern>
+              <that>So, when was the last time you saw The Wizard of Oz?</that>
+              <template>
+                  Who could forget about that film, right? Do you believe that there's no place like home?
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+               <pattern># <set>YES</set> ^</pattern>
+               <that>Do you believe that there's no place like home?</that>
+               <template>
+                  Where did you grow up?
+                   <oob>
+                       <robot></robot>
+                   </oob>
+               </template>
+           </category>
+
+           <category>
+                <pattern># <set>NO</set> ^</pattern>
+                <that>Do you believe that there's no place like home?</that>
+                <template>
+                   Where did you grow up?
+                    <oob>
+                        <robot></robot>
+                    </oob>
+                </template>
+            </category>
+
+            <category>
+                 <pattern># <set>DON T KNOW</set> ^</pattern>
+                 <that>Do you believe that there's no place like home?</that>
+                 <template>
+                    Where did you grow up?
+                     <oob>
+                         <robot></robot>
+                     </oob>
+                 </template>
+             </category>
+
+      <!-- REDIRECT TO TV1 DIALOGUE -->
+
+</topic>
+
+</aiml>

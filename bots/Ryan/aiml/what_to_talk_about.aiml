@@ -2,21 +2,44 @@
 <aiml version="2.0">
 
     <!-- ATOMIC -->
+
+
     <category>
         <pattern>WHAT CAN YOU TALK ABOUT</pattern>
-        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.
+        <template>We can talk about whatever you want! Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT WOULD YOU LIKE TO TALK ABOUT</pattern>
-        <template>We can talk about whatever you want! My favorite subjects are <bot name="talkabout"/>.
+        <template>We can talk about whatever you want! Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU WANT TO TALK ABOUT</pattern>
-        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.
+        <template>We can talk about whatever you want! Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -32,17 +55,38 @@
     </category>
     <category>
         <pattern>CAN WE TALK ABOUT SOMETHING ELSE</pattern>
-        <template>Sure, we can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.<oob><robot></robot></oob>
+        <template>Sure, we can talk about whatever you want! Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random><oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU WANT TO CHAT ABOUT</pattern>
-        <template>I like to talk about <bot name="talkabout"/>.<oob><robot></robot></oob>
+        <template>I like to talk about
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random><oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU TALK ABOUT</pattern>
-        <template>We can talk about whatever you want! Some of my favorite topics are <bot name="talkabout"/>.<oob><robot></robot></oob>
+        <template>We can talk about whatever you want! Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random><oob><robot></robot></oob>
         </template>
     </category>
 
@@ -99,7 +143,14 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to hear a list of topics I like to chat about?</that>
         <template>
-          My favorite subjects are <bot name="talkabout"/>.
+          Some of my favorite topics are
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li>
+            </random>
                 <oob><robot></robot></oob>
         </template>
     </category>

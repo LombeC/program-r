@@ -528,6 +528,13 @@
         </template>
     </category>
     <category>
+        <pattern>I MOVED FROM * TO *</pattern>
+        <template>
+            What was your favorite place?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>I BUILD BOTS</pattern>
         <template>Do you use AIML?<oob><robot></robot></oob>
         </template>
@@ -548,6 +555,792 @@
         <oob><robot></robot></oob>
         </template>
     </category>
+    <category>
+        <pattern>TODAY IS MY BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday! How will you be celebrating?
+        <oob><robot><image>
+              <filename>Happy_Birthday.jpg</filename>
+          </image></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>_</pattern>
+        <that>How will you be celebrating?</that>
+        <template>I hope you have a great time!
+        <oob><robot><image>
+              <filename>CLRSCR</filename>
+          </image></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday! How will you be celebrating?
+        <oob><robot><image>
+              <filename>Happy_Birthday.jpg</filename>
+          </image></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday! How will you be celebrating?
+        <oob><robot><image>
+              <filename>Happy_Birthday.jpg</filename>
+          </image></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY BIRTHDAY IS *</pattern>
+        <template>What a special day!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY BIRTHDAY S *</pattern>
+        <template>What a special day!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY SON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY SON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY SON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY DAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY DAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY DAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY HUSBAND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY HUSBAND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY HUSBAND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY WIFE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY WIFE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY WIFE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY PARTNER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY PARTNER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY PARTNER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY SPOUSE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY SPOUSE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY SPOUSE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY NEICE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY NEICE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY NEICE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY NEPHEW S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY NEPHEW S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY NEPHEW S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY BOYFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY BOYFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY BOYFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY GIRLFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GIRLFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GIRLFRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY LOVER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY LOVER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY LOVER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDMA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDMOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDPA S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY * GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDFATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY MOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY MOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY MOTHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY MOM S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY MOM S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY MOM S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY FATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY FATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY FATHER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY IS MY DAD S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY DAD S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY DAD S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY FRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY FRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY FRIEND S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY COUSIN S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY COUSIN S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY COUSIN S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to them!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * AUNT S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * UNCLE S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY GRANDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY GRANDDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY GRANDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY * GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDDAUGHTER S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS MY * GRANDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S MY * GRANDDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * MY * GRANDSON S BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS HIS BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S HIS BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * HIS BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to him!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TODAY IS HER BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY S HER BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TODAY * HER BIRTHDAY</pattern>
+        <template>Hoorah! Happy birthday to her!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY ANNIVERSARY IS TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY ANNIVERSARY S TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY ANNIVERSARY * TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OUR ANNIVERSARY IS TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>OUR ANNIVERSARY S TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>OUR ANNIVERSARY * TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT S MY ANNIVERSARY TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT * MY ANNIVERSARY TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT S OUR ANNIVERSARY TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>IT * OUR ANNIVERSARY TODAY</pattern>
+        <template>Oh, that's so wonderful! Happy anniversary! I bet you two have had such a great story.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
     <category>
         <pattern>I DO NOT HAVE A CAMERA ON MY COMPUTER</pattern>
         <template>You don't really need a camera on your computer anyway.<oob><robot></robot></oob>

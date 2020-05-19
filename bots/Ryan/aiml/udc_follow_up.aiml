@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <category>
-        <pattern>*</pattern>
-        <that>What do you do in your spare time</that>
+        <pattern>_</pattern>
+        <that>What do you do in your spare time?</that>
         <template>
             What do you like most about it?
             <oob>
@@ -16,8 +16,45 @@
         <that>Would you like to hear a list of topics I like to chat about?</that>
         <template>
             The topics I like to talk about are
-            <bot  name="talkabout"/>
+            <random>
+                <li>television and movies.</li>
+                <li>science and sports.</li>
+                <li>food and cooking.</li>
+                <li>museums and inventions.</li>
+                <li>books and reading.</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
+    <category>
+        <pattern>_</pattern>
+        <that>What were we talking about again?</that>
+        <template>
+            Gotcha!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like to do for fun?</that>
+        <template>
+            What do you like most about it?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What do you do in your spare time</that>
+        <template>
+            What do you like most about it?
             <oob>
                 <robot></robot>
             </oob>
