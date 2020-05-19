@@ -1,8 +1,13 @@
-from programr.utils.logging.ylogger import YLogger
-from flask import Flask, jsonify, request, make_response, abort
 import json
-from programr.clients.restful.client import RestBotClient
+import datetime
+
+from flask import Flask, jsonify, request, make_response, abort, session, g
+import flask_login
 # from werkzeug.contrib.profiler import ProfilerMiddleware
+
+from programr.utils.logging.ylogger import YLogger
+from programr.clients.restful.client import RestBotClient
+
 
 # PROFILER = False
 
@@ -24,18 +29,15 @@ class FlaskRestBotClient(RestBotClient):
         abort(error_code)
 
     def get_question(self, rest_request):
-        YLogger.debug(self, f"In get_question, rest_request.data: {rest_request.data.decode('utf-8')}")
-        YLogger.debug(self, f"rest_request type: {type(rest_request)}")
+        # YLogger.debug(self, f"In get_question, rest_request.data: {rest_request.data.decode('utf-8')}")
+        # YLogger.debug(self, f"rest_request type: {type(rest_request)}")
         rest_request = json.loads(rest_request.data.decode('utf-8'))
-        YLogger.debug(self, f"after json.loads, rest_request: {rest_request}")
+        # YLogger.debug(self, f"after json.loads, rest_request: {rest_request}")
+
         if "question" not in rest_request or rest_request["question"] is None:
             YLogger.error(self, "'question' missing from request")
             self.server_abort(400)
         return rest_request["question"]
-        # if 'question' not in rest_request.args or rest_request.args['question'] is None:
-        #     YLogger.error(self, "'question' missing from request")
-        #     self.server_abort(400)
-        # return rest_request.args['question']
 
     def get_userid(self, rest_request):
         rest_request = json.loads(rest_request.data.decode('utf-8'))
@@ -77,6 +79,14 @@ class FlaskRestBotClient(RestBotClient):
     def dump_request(self, request):
         YLogger.debug(self, str(request))
 
+# @app.before_request
+# def before_request():
+#     session.permanent = True
+#     app.permanent_session_lifetime = datetime.timedelta(minutes=5)
+#     session.modified = True
+#     g.user = flask_login.current_user
+
+
 if __name__ == '__main__':
     rest_client = None
 
@@ -86,10 +96,15 @@ if __name__ == '__main__':
     #     app.config['PROFILE'] = True
     #     app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
 
+    
+
     @app.route('/api/rest/v1.0/ask', methods=['POST'])
     def ask():
         response_data, status = rest_client.process_request(request)
         return rest_client.create_response(response_data, status)
+
+    
+    
 
     print("Loading, please wait...")
     rest_client = FlaskRestBotClient("flask")

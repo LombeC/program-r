@@ -89,7 +89,6 @@ class RestBotClient(BotClient):
         try:
             client_context = self.create_client_context(userid)
      
-            # question = question.lower()
             print("###########################################")
             print("Ryan heard: {}".format(question))
             print("###########################################\n")
