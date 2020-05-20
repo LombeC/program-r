@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>HOW DO YOU FEEL ABOUT THAI FOOD?</that>
         <template>
             <think><set name="data"><star/></set><set name="topic">thaifood</set></think>
@@ -199,7 +199,7 @@
         </category>
 
         <category>
-            <pattern>*</pattern>
+            <pattern>_</pattern>
             <that>How are you with spicy food?</that>
             <template>
                 <think><set name="data"><star/></set></think>

@@ -94,6 +94,50 @@
     </category>
 
     <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+          I see! When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+          I see! When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Asian food?</that>
+        <template>
+          I see! When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like Asian food?</that>
+        <template>
+          I see! When was the last time you had a hamburger and fries?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU LIKE ASIAN FOOD?</that>
         <template>
@@ -145,7 +189,7 @@
         <pattern># PLAIN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go to a diner?
+            Me too! Sometimes simple is better! What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -156,7 +200,7 @@
         <pattern># I LIKE IT PLAIN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go to a diner?
+            Me too! Sometimes simple is better! What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -167,7 +211,7 @@
         <pattern># FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go to a diner?
+            You're making me hungry! What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -178,7 +222,7 @@
         <pattern># ALL THE FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go to a diner?
+            You're making me hungry! What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -189,7 +233,7 @@
         <pattern># I LIKE ALL THE FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go to a diner?
+            You're making me hungry! What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -200,7 +244,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            What do you like to order when you go to a diner?
+            What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -211,7 +255,7 @@
         <pattern>_</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            What do you like to order when you go to a diner?
+            What do you like to order when you go out?
             <oob>
                 <robot></robot>
             </oob>
@@ -255,7 +299,7 @@
         <pattern># VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
             <oob>
                 <robot></robot>
             </oob>
@@ -266,7 +310,7 @@
         <pattern># I AM A VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
             <oob>
                 <robot></robot>
             </oob>
@@ -277,7 +321,7 @@
         <pattern># I M A VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
             <oob>
                 <robot></robot>
             </oob>
@@ -288,7 +332,7 @@
         <pattern># I AM VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
             <oob>
                 <robot></robot>
             </oob>
@@ -299,7 +343,7 @@
         <pattern># I M VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
             <oob>
                 <robot></robot>
             </oob>
@@ -308,9 +352,9 @@
 
     <category>
         <pattern>_</pattern>
-        <that>What do you like to order when you go to a diner?</that>
+        <that>What do you like to order when you go out?</that>
         <template>
-            Sounds so tasty! What do you think tastes better, chicken fried steak or fried pork tenderloin?
+            So tasty! What do you think tastes better, chicken fried steak or fried pork tenderloin?
             <oob>
                 <robot></robot>
             </oob>
@@ -373,27 +417,21 @@
     </category>
 
     <category>
-        <pattern>*</pattern>
+        <pattern>_</pattern>
         <that>How do you feel about healthy food?</that>
         <template>
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="verypositive">Excellent! What is one of your favorite healthy meals?<oob>
+                <li value="verypositive">Excellent! What is one of your favorite healthy meals?</li>
+                <li value="positive">Excellent! What is one of your favorite healthy meals?</li>
+                <li value="neutral">What is one of your favorite healthy meals?</li>
+                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?</li>
+                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?</li>
+            </condition>
+                <oob>
                     <robot></robot>
-                </oob></li>
-                <li value="positive">Excellent! What is one of your favorite healthy meals?<oob>
-                    <robot></robot>
-                </oob></li>
-                <li value="neutral">What is one of your favorite healthy meals?<oob>
-                    <robot></robot>
-                </oob></li>
-                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?<oob>
-                    <robot></robot>
-                </oob></li>
-                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?<oob>
-                    <robot></robot>
-                </oob></li></condition>
+                </oob>
         </template>
     </category>
 

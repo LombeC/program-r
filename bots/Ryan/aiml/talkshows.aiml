@@ -1,192 +1,664 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
     <category>
-        <pattern>^ TALK SHOWS ^</pattern>
-        <template>
-            Do you watch any talk shows?
+        <pattern>^ FOOD NETWORK ^</pattern>
+        <template>Do you watch the food network?
             <oob>
-                <robot></robot>
-            </oob>
+               <robot>
+               </robot>
+           </oob>
         </template>
     </category>
 
     <category>
-        <pattern>^ TALK SHOW ^</pattern>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU WATCH THE FOOD NETWORK?</that>
+          <template>
+            <think><set name="topic">foodnetwork</set></think>
+            What do you think of the Food Network's shows?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <topic name="foodnetwork">
+
+    <!-- FOOD SENTIMENT 1 - FOOD NETWORK PROGRAMS INTRO -->
+
+    <category>
+      <pattern>_</pattern>
+      <that>WHAT DO YOU THINK OF THE FOOD NETWORK'S SHOWS?</that>
+      <template>
+        Do you have a favorite food network show?
+                  <oob>
+                      <robot>
+                      </robot>
+                  </oob>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you have a favorite food network show?</that>
+    <template>
+        What is your favorite show called?
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+    </template>
+</category>
+
+<category>
+  <pattern># <set>NO</set> ^</pattern>
+  <that>Do you have a favorite food network show?</that>
+  <template>
+      That's fair! There isn't enough time in the day for everything. Have you heard of Ina Garten?
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+  </template>
+</category>
+
+<category>
+  <pattern># <set>DON T KNOW</set> ^</pattern>
+  <that>Do you have a favorite food network show?</that>
+  <template>
+      That's fair! There isn't enough time in the day for everything. Have you heard of Ina Garten?
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+  </template>
+</category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU HAVE A FAVORITE FOOD NETWORK SHOW?</that>
+      <template>
+          What is your favorite show called?
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+      </template>
+    </category>
+
+
+  <category>
+    <pattern>_</pattern>
+      <that>What is your favorite show called?</that>
         <template>
-            Do you watch any talk shows?
+            Well, it must be a nice show to watch while relaxing! Have you heard of Ina Garten?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+
+
+  <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HAVE YOU HEARD OF INA GARTEN?</that>
+        <template>
+            She is a popular chef who many viewers adore, including myself. You might have heard of her famous cooking show, Barefoot Contessa?
             <oob>
-                <robot></robot>
-            </oob>
+               <robot>
+               </robot>
+           </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>DO YOU WATCH ANY TALK SHOWS?</that>
+        <that>HAVE YOU HEARD OF INA GARTEN?</that>
         <template>
-            <think><set name="topic">talkshows</set></think>
-
-            Which talk show do you like to watch?
+            I just love her and her show. You might have heard of her famous cooking show, Barefoot Contessa?
             <oob>
-                <robot></robot>
-            </oob>
+               <robot>
+               </robot>
+           </oob>
         </template>
     </category>
 
-    <topic name="talkshows">
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>DO YOU WATCH ANY TALK SHOWS?</that>
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>HAVE YOU HEARD OF INA GARTEN?</that>
+        <template>
+            I just love her and her show. You might have heard of her famous cooking show, Barefoot Contessa?
+            <oob>
+               <robot>
+               </robot>
+           </oob>
+        </template>
+    </category>
+
+    <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>YOU MIGHT HAVE HEARD OF HER FAMOUS COOKING SHOW, BAREFOOT CONTESSA?</that>
             <template>
-                I really enjoy watching Johnny Carson. Have you seen his show?
-                <oob>
-                    <robot></robot>
-                </oob>
+            I have heard that the macaroni and cheese recipe she shared on her show is absolutely fantastic. Would you like to watch her prepare it?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
             </template>
-        </category>
+    </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>WHICH TALK SHOW DO YOU LIKE TO WATCH?</that>
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+        <that>YOU MIGHT HAVE HEARD OF HER FAMOUS COOKING SHOW, BAREFOOT CONTESSA?</that>
+          <template>
+            I found a clip of her making her famous macaroni and cheese. Would you like to watch her prepare it?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>YOU MIGHT HAVE HEARD OF HER FAMOUS COOKING SHOW, BAREFOOT CONTESSA?</that>
+          <template>
+            I found a clip of her making her famous macaroni and cheese. Would you like to watch her prepare it?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+          <that>WOULD YOU LIKE TO WATCH HER PREPARE IT?</that>
             <template>
-                And what do you think of that talk show in particular?
+              What did you think of Ina's Garten's meal?
                 <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>AND WHAT DO YOU THINK OF THAT TALK SHOW IN PARTICULAR?</that>
-            <template>
-                <think><set name="data"><star/></set></think>
-
-                <condition name="getsentiment">
-                    <li value="verypositive">It must be entertaining! I really enjoy watching Johnny Carson. Have you seen his show?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="positive">It must be entertaining! I really enjoy watching Johnny Carson. Have you seen his show?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="neutral">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="negative">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="verynegative">I really enjoy watching Johnny Carson. Have you seen his show?<oob>
-                        <robot></robot>
-                    </oob></li></condition>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Have you seen his show?</that>
-            <template>
-                Oh cool! How about we watch a quick clip from 1981?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you seen his show?</that>
-            <template>
-                I find his show to be very entertaining. I would love to show it to you!
-                            How about we watch a quick clip from 1981?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>HOW ABOUT WE WATCH A QUICK CLIP FROM 1981?</that>
-            <template>
-                I love talk shows and game shows. Have you ever seen the show Jeopardy?
-                <oob>
-                    <robot>
+                   <robot>
                         <video>
-                            <filename>Robin.mp4</filename>
+                            <filename>Ina.mp4</filename>
                         </video>
+                   </robot>
+               </oob>
+            </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+          <that>Would you like to watch her prepare it?</that>
+            <template>
+              No problem! Would you say you like cooking for other people?
+                <oob>
+                  <robot>
+                  </robot>
+                </oob>
+            </template>
+    </category>
+
+  <!-- FOOD SENTIMENT 3 - INA'S MACARONI -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>WHAT DID YOU THINK OF INA GARTEN'S MEAL?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                   I am getting hungry just thinking about it. Do you know what Ina Garten's job was before she was on television?
+
+              </li>
+              <li value = "positive">
+                    I am getting hungry just thinking about it. Do you know what Ina Garten's job was before she was on television?
+
+               </li>
+              <li value = "neutral">
+                  I am getting hungry just thinking about it. Do you know what Ina Garten's job was before she was on television?
+                    <oob>
+                      <robot>
+                      </robot>
+                    </oob>
+              </li>
+              <li value = "negative">
+                Do you know what Ina Garten's job was before she was on television?
+
+              </li>
+              <li value = "verynegative">
+                Do you know what Ina Garten's job was before she was on television?
+
+              </li>
+          </condition>
+          <oob>
+            <robot>
+            </robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU KNOW WHAT INA GARTEN'S JOB WAS BEFORE SHE WAS ON TELEVISION?</that>
+          <template>
+            She worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>DO YOU KNOW WHAT INA GARTEN'S JOB WAS BEFORE SHE WAS ON TELEVISION?</that>
+          <template>
+            She worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU KNOW WHAT INA GARTEN'S JOB WAS BEFORE SHE WAS ON TELEVISION?</that>
+        <template>
+          Tell me!
+            <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>TELL ME!</that>
+        <template>
+          I think it's very cool that she worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+            <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># NUCLEAR ^</pattern>
+        <that>DO YOU KNOW WHAT INA GARTEN'S JOB WAS BEFORE SHE WAS ON TELIVISION?</that>
+          <template>
+            I think it's very cool that she worked in the White House for President Nixon, where she managed the budget for the Nuclear Regulatory Commission. Neat, huh?
+              <oob>
+                <robot>
+                  <options>
+                    <option>*</option>
+                  </options>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern>_</pattern>
+      <that>Neat, huh?</that>
+        <template>
+          Do you watch any cooking competitions on Food Network?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Do you watch any cooking competitions on Food Network?</that>
+        <template>
+          Maybe you are more of a doer! Would you say you like cooking for other people?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>Yes</set> ^</pattern>
+      <that>Do you watch any cooking competitions on Food Network?</that>
+        <template>
+          Would you ever compete on a cooking show?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Do you watch any cooking competitions on Food Network?</that>
+        <template>
+          Would you ever compete on a cooking show?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>WOULD YOU EVER COMPETE ON A COOKING SHOW?</that>
+          <template>
+            I bet you're a good cook! Do you think you could win?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU EVER COMPETE ON A COOKING SHOW?</that>
+          <template>
+            Would you say you like cooking for other people?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>WOULD YOU EVER COMPETE ON A COOKING SHOW?</that>
+          <template>
+            Would you say you like cooking for other people?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD WIN?</that>
+        <template>
+          I'm sure you would too! What would your winning dish be?
+            <oob>
+                <robot>
+                  </robot>
+                </oob>
+        </template>
+  </category>
+
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU THINK YOU WOULD WIN?</that>
+        <template>
+          Nonsense! After all this time talking to you I'm confident you would win! What would your winning dish be?
+            <oob>
+                <robot>
+                  </robot>
+                </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+        <that>What would your winning dish be?</that>
+          <template>
+            If I were a judge on the show I would definitely vote for you! Would you say you like cooking for other people?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>WOULD YOU SAY YOU LIKE COOKING FOR OTHER PEOPLE?</that>
+        <template>
+          What about cooking for yourself? Do you enjoy doing that?
+            <oob>
+                <robot>
+                </robot>
+              </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Do you enjoy doing that?</that>
+        <template>
+          If you could only eat one meal for the rest of your life, what would it be?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Do you enjoy doing that?</that>
+        <template>
+          If you could only eat one meal for the rest of your life, what would it be?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>DO YOU ENJOY DOING THAT?</that>
+        <template>
+          If you could only eat one meal for the rest of your life, what would it be?
+            <oob>
+              <robot>
+                <options>
+                  <option>*</option>
+                </options>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE COOKING FOR OTHER PEOPLE?</that>
+          <template>
+              How do you feel after you have cooked a meal and shared it with people?
+                <oob>
+                  <robot>
+                  </robot>
+                </oob>
+          </template>
+  </category>
+
+  <!-- FOOD SENTIMENT 3 - COOKING FOR SELF -->
+
+  <category>
+      <pattern>_</pattern>
+      <that>How do you feel after you have cooked a meal and shared it with people?</that>
+      <template>
+          <think>
+              <set name = "data"> <star/> </set>
+          </think>
+          <condition name="getsentiment">
+              <li value = "verypositive">
+                It's one of my favorite things, too! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
                     </robot>
+                  </oob>
+              </li>
+              <li value = "positive">
+                It's one of my favorite things, too! Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                    </robot>
+                  </oob>
+               </li>
+              <li value = "neutral">
+                Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                   <oob>
+                    <robot>
+                  </robot>
                 </oob>
-            </template>
-        </category>
+              </li>
+              <li value = "negative">
+                Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                    </robot>
+                  </oob>
+              </li>
+              <li value = "verynegative">
+                Here's a fun question. If you could only eat one meal for the rest of your life, what would it be?
+                  <oob>
+                    <robot>
+                    </robot>
+                  </oob>
+              </li>
+          </condition>
+      </template>
+  </category>
 
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>HOW ABOUT WE WATCH A QUICK CLIP FROM 1981?</that>
-            <template>
-                I love talk shows and game shows. Have you ever seen the show Jeopardy?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+  <category>
+    <pattern># DON'T KNOW ^</pattern>
+      <that>IF YOU COULD ONLY EAT ONE MEAL FOR THE REST OF YOUR LIFE, WHAT WOULD IT BE?</that>
+        <template>
+          Mine would be hamburger. When was the last time you had a hamburger?
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
 
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
-            <template>
-                It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
-                            Could you imagine winning that much money?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
-            <template>
-                It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
-                                                      Could you imagine winning that much money?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Dont know</set> ^</pattern>
-            <that>HAVE YOU EVER SEEN THE SHOW JEOPARDY?</that>
-            <template>
-                It is one of my favorite shows ever! The record for the highest amount of money won by a single player is over three million dollars!
-                            Could you imagine winning that much money?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-    </topic>
+  <category>
+    <pattern>_</pattern>
+      <that>IF YOU COULD ONLY EAT ONE MEAL FOR THE REST OF YOUR LIFE, WHAT WOULD IT BE?</that>
+        <template>
+          <set name = "desert island food"><star/></set> sounds delicious! Mine would be hamburger. When was the last time you had a hamburger?
+            <oob>
+              <robot>
+             </robot>
+           </oob>
+       </template>
+  </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>COULD YOU IMAGINE WINNING THAT MUCH MONEY?</that>
+      <pattern>_</pattern>
+      <that>WHEN WAS THE LAST TIME YOU HAD A HAMBURGER?</that>
         <template>
-            I don't know what I would do with that much money! How would you spend it?
+          I love a good cook out! Do you enjoy cooking out and grilling?
             <oob>
-                <robot></robot>
+              <robot>
+              </robot>
             </oob>
         </template>
     </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>HOW WOULD YOU SPEND IT?</that>
-        <template>
-            I think I would buy an island, and spend all day basking in the sun and enjoying the view.
-                        Do you like to travel?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
+      <pattern># <set>YES</set> ^</pattern>
+        <that>Do you enjoy cooking out and grilling?</that>
+          <template>
+            What do you usually like to grill?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
     </category>
+
+    <category>
+      <pattern># <set>NO</set> ^</pattern>
+        <that>Do you enjoy cooking out and grilling?</that>
+          <template>
+            I've never head anyone say they don't like cooking out and grilling, ha ha!
+            Should we continue talking about television cooking shows?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+    <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you enjoy cooking out and grilling?</that>
+          <template>
+            I've never head anyone say they don't like cooking out and grilling, ha ha! Should we continue talking about television cooking shows?
+              <oob>
+                <robot>
+                </robot>
+              </oob>
+          </template>
+    </category>
+
+<category>
+  <pattern>_</pattern>
+    <that>What do you usually like to grill?</that>
+      <template>
+        Nothing beats that!
+        Should we continue talking about television cooking shows?
+          <oob>
+            <robot>
+            </robot>
+          </oob>
+      </template>
+</category>
+
+</topic>
+
+<category>
+  <pattern># <set>YES</set> ^</pattern>
+    <that>Should we continue talking about television cooking shows?</that>
+    <template>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! Do you believe that the way to a person's heart is through their stomach?<oob>
+        <robot>
+            <video>
+                <filename>Martha_Stewart.mp4</filename>
+            </video>
+            </robot>
+          </oob>
+      </template>
+</category>
+
+  <!-- REDIRECT TO TV2 DIALOGUE-->
+
+<category>
+  <pattern># <set>NO</set> ^</pattern>
+    <that>Should we continue talking about television cooking shows?</that>
+      <template>
+        What would you like to chat about?
+          <oob>
+            <robot>
+            </robot>
+          </oob>
+      </template>
+</category>
+
+
 </aiml>

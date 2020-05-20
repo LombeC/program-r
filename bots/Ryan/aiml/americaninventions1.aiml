@@ -162,9 +162,9 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you ever had any good ideas for inventions?</that>
             <template>
-                Same here! You know, Benjamin Franklin also invented common sayings like
+                Same here! You know, Benjamin Franklin invented common sayings like
                                       early to bed, early to rise, makes a man healthy, wealthy and wise.
-                                      Are you a day time person or a night time person?
+                                    Are you an early worm or a night owl?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -175,9 +175,9 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever had any good ideas for inventions?</that>
             <template>
-                I understand! You know, Benjamin Franklin also invented common sayings like
+                I understand! You know, Benjamin Franklin invented common sayings like
                                       early to bed, early to rise, makes a man healthy, wealthy and wise.
-                                      Are you a day time person or a night time person?
+                                      Are you an early bird or a night owl?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -185,55 +185,10 @@
         </category>
 
         <category>
-            <pattern># Day time person ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
+            <pattern># Night owl ^</pattern>
+            <that>Are you an early bird or a night owl?</that>
             <template>
-                All of the greatest inventors wake up early!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Day time ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
-            <template>
-                All of the greatest inventors wake up early!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Day ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
-            <template>
-                All of the greatest inventors wake up early!
-                                      Have you ever watched the sunrise?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Night time person ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
-            <template>
-                You must be a night owl! Do you think the best inspiration comes at night?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Night time ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
-            <template>
-                You must be a night owl! Do you think the best inspiration comes at night?
+                Do you think the best inspiration comes at night?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -242,14 +197,106 @@
 
         <category>
             <pattern># Night ^</pattern>
-            <that>Are you a day time person or a night time person?</that>
+            <that>Are you an early bird or a night owl?</that>
             <template>
-                You must be a night owl! Do you think the best inspiration comes at night?
+                Do you think the best inspiration comes at night?
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <category>
+            <pattern># Early bird ^</pattern>
+            <that>Are you an early bird or a night owl?</that>
+            <template>
+                Do you think the best inspiration comes during the day?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Early ^</pattern>
+            <that>Are you an early bird or a night owl?</that>
+            <template>
+                Do you think the best inspiration comes during the day?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think the best inspiration comes during the day?</that>
+            <template>
+                I have to agree! Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think the best inspiration comes during the day?</that>
+            <template>
+                Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think the best inspiration comes during the day?</that>
+            <template>
+                Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think the best inspiration comes at night?</that>
+            <template>
+                I have to agree! Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think the best inspiration comes at night?</that>
+            <template>
+                Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think the best inspiration comes at night?</that>
+            <template>
+                Would you like to keep talking about inventions?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
@@ -328,6 +375,7 @@
             </template>
         </category>
 
+
         <category>
             <pattern># Night ^</pattern>
             <that>Do you think the best inspiration comes at night or during the day?</that>
@@ -361,38 +409,7 @@
             </template>
         </category>
 
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                I have to agree! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                I have to agree! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                Makes sense to me! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+      
 
         <category>
             <pattern># <set>yes</set> ^</pattern>

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>DO YOU LIKE FRUIT?</that>
+      <template>
+        Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU LIKE FRUIT?</that>
@@ -12,21 +24,11 @@
         </template>
     </category>
 
+
     <topic name="fruit">
         <category>
             <pattern>_</pattern>
             <that>Who doesn't like fruit?</that>
-            <template>
-                I suppose some people are allergic. What a shame that would be!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What a shame that would be!</that>
             <template>
                 Do you like peaches?
                 <oob>
@@ -39,7 +41,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you like peaches?</that>
             <template>
-                I like most of the stonefruit, but peaches are the best of the best.
+                I like most of the stonefruit, but peaches are the best of the best. Have you ever gone fruit picking?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -83,7 +85,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Have you ever gone fruit picking?</that>
         <template>
-            Oh I'm sure you had so much fun! I like apple picking during fall time.
+            Oh I'm sure you had so much fun! I like apple picking in the fall.
             Are you a fan of apple cider?
             <oob>
                 <robot><image>
@@ -111,7 +113,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Are you a fan of apple cider?</that>
         <template>
-            Some people just don't like the way it tastes! What about bobbing for apples? Have you done that?
+            Some just don't like the way it tastes! What about bobbing for apples? Have you done that?
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>
@@ -124,7 +126,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Are you a fan of apple cider?</that>
         <template>
-            Some people just don't like the way it tastes! What about bobbing for apples? Have you done that?
+            Some just don't like the way it tastes! What about bobbing for apples? Have you done that?
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>
@@ -137,8 +139,19 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Have you done that?</that>
         <template>
-            You must be quite the party animal! Halloween is by far my favorite holiday.
-            What's your favorite holiday?
+            You must be quite the party animal!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You must be quite the party animal!</that>
+        <template>
+          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
+          What's your favorite holiday?
             <oob>
                 <robot></robot>
             </oob>
@@ -149,8 +162,8 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Have you done that?</that>
         <template>
-            I don't think I could bob for apples if I tried, though I always enjoy a good Halloween party!
-            What's your favorite holiday?
+          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
+          What's your favorite holiday?
             <oob>
                 <robot></robot>
             </oob>
@@ -161,7 +174,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Have you done that?</that>
         <template>
-          I don't think I could bob for apples if I tried, though I always enjoy a good Halloween party!
+          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
           What's your favorite holiday?
             <oob>
                 <robot></robot>
@@ -264,6 +277,17 @@
 
     <category>
         <pattern># Change the topic ^</pattern>
+        <that>Would you like to keep talking about food or change the topic?</that>
+        <template>
+            Sure! What would you like to talk about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Change topic ^</pattern>
         <that>Would you like to keep talking about food or change the topic?</that>
         <template>
             Sure! What would you like to talk about?
