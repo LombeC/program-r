@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 10/5/2011 -->
+    <!-- -->
+    <category>
+        <pattern>INTERJECTION</pattern>
+        <template>
+            <random>
+                <li>Absolutely!</li>
+                <li>Without a doubt.</li>
+                <li>No doubt!</li>
+                <li>I hear you!</li>
+                <li>Totally!</li>
+                <li>Certainly.</li>
+                <li>It goes without saying!</li>
+                <li>Agreed!</li>
+                <li>I agree.</li>
+                <li>That's right!.</li>
+                <li>I'm with you!</li>
+                <!-- <li>"<that index="1,1"/>"? <input/>?</li> NOT EXACTLY SURE WHAT THIS DOES -->
+            </random>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+</aiml>

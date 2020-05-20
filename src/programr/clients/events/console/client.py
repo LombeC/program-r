@@ -50,9 +50,11 @@ class ConsoleBotClient(EventBotClient):
         self._renderer.render(client_context, response)
 
     def process_response(self, client_context, response):
-        # print("\n")
+        response = self.remove_oob(response)
         print(response)
-        # print("\n")
+
+    def remove_oob(self, response):
+        return re.sub('<oob><robot></robot></oob>', '', response)
 
     def process_sentiment(self, client_context, question):
         # Calculating and saving sentiment

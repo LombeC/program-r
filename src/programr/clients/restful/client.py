@@ -68,6 +68,9 @@ class RestBotClient(BotClient):
         client_context = self.create_client_context(userid)
         return {"question": question, "answer": client_context.bot.default_response, "userid": userid, "error": error}
 
+    def remove_oob(self, response):
+        return re.sub('<oob><robot></robot></oob>', '', response)
+    
     def process_sentiment(self, client_context, question):
         # Calculating and saving sentiment
         sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
@@ -99,6 +102,8 @@ class RestBotClient(BotClient):
             if threshold_reached:
                 response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
             client_context.bot.save_conversation(client_context)
+
+            response = self.remove_oob(response)
 
             # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
             # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)

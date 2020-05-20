@@ -1,7 +1,7 @@
 import numpy as np
 
 DISTRIBUTION_SIZE = 10
-NEGATIVE_THRESHOLD = -0.8
+NEGATIVE_THRESHOLD = -2
 
 class SentimentData():
 
@@ -35,7 +35,9 @@ class SentimentData():
         return self._final_sentiment_values[-1]
 
     def init_weight(self):
-        self._weight = (DISTRIBUTION_SIZE*2) / 100
+        # self._weight = (DISTRIBUTION_SIZE*2) / 100
+        self._weight = np.arange(0.1, 1.1, 0.1)
+        print("Weight: {}".format(self._weight))        
 
     # NOTE: Most recent sentiment is the last element in self._sentiment_values
     def append_sentiment(self, sentiment): 
@@ -59,12 +61,14 @@ class SentimentData():
 
     def update_rolling(self):
         try:
-            for sent in self._sentiment_values:
-                if sent is None:
-                    pass
-                else:
-                    self._rolling_sentiment += sent * self._weight
-                    self._weight += 0.1
+            self._rolling_sentiment = np.sum(np.multiply(self._sentiment_values, self._weight))
+
+            # for sent in self._sentiment_values:
+            #     if sent is None:
+            #         pass
+            #     else:
+            #         self._rolling_sentiment += sent * self._weight
+            #         self._weight += 0.1
             
             # Trigger for a low sentiment
             if self._rolling_sentiment <= self._neg_thresh:
