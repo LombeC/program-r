@@ -73,7 +73,9 @@
 </category>
 <category>
     <pattern>BOOKS</pattern>
-    <template>Do you want to talk about books?<oob><robot></robot></oob>
+    <template>
+        <think><set name="topic">reading</set></think>
+        Do you want to talk about books?<oob><robot></robot></oob>
     </template>
 </category>
 <category>

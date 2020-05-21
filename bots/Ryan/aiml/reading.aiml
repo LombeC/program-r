@@ -32,32 +32,47 @@
         </template>
     </category>
 
-    <topic name="reading">
-        <category>
-            <pattern>^ BOOKS ^</pattern>
-            <template>
-                Do you want to talk about books?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+    <category>
+        <pattern>^ BOOKS ^</pattern>
+        <template>
+        <think><set name="topic">reading</set></think>
+            Do you want to talk about books?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-        <category>
-            <pattern>^ BOOK ^</pattern>
-            <template>
-                Do you want to talk about books?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+    <category>
+        <pattern>^ BOOK ^</pattern>
+        <template>
+        <think><set name="topic">reading</set></think>
+            Do you want to talk about books?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="reading">
+        
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you want to talk about books?</that>
             <template>
                 Do you prefer adventure, horror, drama, or mystery?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you want to talk about books?</that>
+            <template>
+                Okay! Do you want to continue talking about television?
                 <oob>
                     <robot></robot>
                 </oob>
