@@ -35,8 +35,7 @@
         <pattern># Comedies ^</pattern>
         <that>Do you like to watch comedies, cooking shows, or dramas?</that>
         <template>
-            <think><set name="topic">televisioncomedies</set></think>
-
+          <think><set name="topic">comedy</set></think>
             <random>
                 <li>I think one of the greatest comedies ever made is I Love Lucy!
                                                                                                                       Did you ever watch I Love Lucy?<oob>
@@ -63,36 +62,39 @@
                 </oob></li></random></template>
     </category>
 
-    <topic name="televisioncomedies">
-        <category>
-            <pattern># Comedy ^</pattern>
-            <that>Do you like to watch comedies, cooking shows, or dramas?</that>
-            <template>
-                <random>
-                    <li>I think one of the greatest comedies ever made is I Love Lucy!
-                                                                                                                          Did you ever watch I Love Lucy?<oob>
-                        <robot>
-                            <video>
-                                <filename>I_Love_Lucy.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    <li>I always get a kick out of variety shows!
-                                                                                                                        Did you ever watch the Ed Sullivan Show?<oob>
-                        <robot>
-                            <video>
-                                <filename>Topo_Gigio.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    <li>My favorite comedy is mash! The cast is so funny together! Did you ever watch mash?<oob>
-                        <robot>
-                            <video>
-                                <filename>MASH.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li></random></template>
-        </category>
+
+    <category>
+        <pattern># Comedy ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+            <think><set name="topic">comedy</set></think>
+            <random>
+                <li>I think one of the greatest comedies ever made is I Love Lucy!
+                                                                                                                        Did you ever watch I Love Lucy?<oob>
+                    <robot>
+                        <video>
+                            <filename>I_Love_Lucy.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I always get a kick out of variety shows!
+                                                                                                                    Did you ever watch the Ed Sullivan Show?<oob>
+                    <robot>
+                        <video>
+                            <filename>Topo_Gigio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>My favorite comedy is mash! The cast is so funny together! Did you ever watch mash?<oob>
+                    <robot>
+                        <video>
+                            <filename>MASH.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+        <topic name="comedy">
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
@@ -215,7 +217,7 @@
             <that>Were you ever married?</that>
             <template>
                 Marriage is a beautiful thing!
-                What was your wedding like?
+                                                                                        What was your wedding like?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -577,7 +579,8 @@
                 </oob>
             </template>
         </category>
-    </topic>
+
+  </topic>
 
     <category>
         <pattern>_</pattern>

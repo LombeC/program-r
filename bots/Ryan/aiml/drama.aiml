@@ -79,70 +79,12 @@
             <pattern>_</pattern>
             <that>Do you remember the Dust Bowl?</that>
             <template>
-                It was such a difficult time in American history during the Great Depression.
-                            Were you alive during the Great Depression?
+                It was such a difficult time in American history,
+                and John Steinbeck created a fictionalized drama based on real life experiences.
+                          Would you like to watch a short video about The Grapes of Wrath?
                 <oob>
                     <robot>
-                        <video>
-                            <filename>Dust_Bowl.mp4</filename>
-                        </video>
                     </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Were you alive during the Great Depression?</that>
-            <template>
-                What was it like?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Were you alive during the Great Depression?</that>
-            <template>
-                You must have been born after the Great Depression!
-                            Would you like to watch a short video about The Grapes of Wrath?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What was it like?</that>
-            <template>
-                Thank you for sharing with me. History is so important. Would you like to keep talking about books?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Would you like to keep talking about books?</that>
-            <template>
-                Great! Would you like to watch a short video about The Grapes of Wrath?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>no</set> ^</pattern>
-            <that>Would you like to keep talking about books?</that>
-            <template>
-                Okay! What should we talk about?
-                <oob>
-                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -191,17 +133,39 @@
         <pattern>_</pattern>
         <that>What real life problem do you think should be written about in a book?</that>
         <template>
-            I hear you! Dramatic films are also very good at tackling real life issues. What do you say we talk about movies?
+            I love hearing your thoughts! Maybe you could write a book someday!
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <!-- REDIRECT TO MOVIES DIALOGUE -->
+    <category>
+        <pattern>_</pattern>
+        <that>Maybe you could write a book someday!</that>
+        <template>
+            Would you like to keep talking about books?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to keep talking about books?</that>
+        <template>
+            Do you prefer adventure, horror, drama, or mystery?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>What do you say we talk about movies?</that>
+        <that>Would you like to keep talking about books?</that>
         <template>
             No worries! What should we talk about next?
             <oob>

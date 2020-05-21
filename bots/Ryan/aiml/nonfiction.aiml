@@ -180,9 +180,21 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Which version do you usually like more, the book or the movie?</that>
+        <that>Do you like it when books are made into movies?</that>
         <template>
             Movies are usually more exciting, I agree.
+                        A good example is the Grapes of Wrath, set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like it when books are made into movies?</that>
+        <template>
+            Personally I think movies are usually more exciting.
                         A good example is the Grapes of Wrath, set during the time of the Dust Bowl. Do you remember the Dust Bowl?
             <oob>
                 <robot></robot>

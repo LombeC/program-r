@@ -73,7 +73,7 @@
 
         <category>
             <pattern># Ancient Egypt ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
                         Would you like to see a video on a newly-discovered pyramid?
@@ -85,7 +85,7 @@
 
         <category>
             <pattern># Ancient ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
                         Would you like to see a video on a newly-discovered pyramid?
@@ -97,7 +97,7 @@
 
         <category>
             <pattern># Egypt ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
                       Would you like to see a video on a newly-discovered pyramid?
@@ -109,7 +109,7 @@
 
         <category>
             <pattern># Egyptian ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
                       Would you like to see a video on a newly-discovered pyramid?
@@ -197,6 +197,17 @@
         </category>
 
         <category>
+            <pattern># Museums ^</pattern>
+            <that>If you want to keep talking about museums, just say museums.</that>
+            <template>
+                OK. Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># Movies ^</pattern>
             <that>If you want to keep talking about museums, just say museums.</that>
             <template>
@@ -220,7 +231,7 @@
 
         <category>
             <pattern># Mammal ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
                 <oob>
@@ -231,7 +242,7 @@
 
         <category>
             <pattern># Mammals ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
                 <oob>
@@ -242,7 +253,7 @@
 
         <category>
             <pattern># Mammalia ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
                 <oob>
@@ -253,7 +264,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 Let's talk about ancient Egypt, then! Would you like to see a video on a newly-discovered pyramid?
                 <oob>
@@ -264,7 +275,7 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to discuss mammals or ancient Egypt next?</that>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
                 OK! What would you like to discuss?
                 <oob>
@@ -303,61 +314,13 @@
             <pattern>_</pattern>
             <that>What are your thoughts on evolution?</that>
             <template>
-                I love to hear about what you think! Speaking of mammals, do you have a favorite animal?
+                I really love hearing what you think! Would you like to keep discussing museums?
                 <oob>
                     <robot>
-                        <video>
-                            <filename>Evolution_exhibit.mp4</filename>
-                        </video>
                     </robot>
                 </oob>
             </template>
         </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Speaking of mammals, do you have a favorite animal?</that>
-            <template>
-                What's your favorite animal?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-    </topic>
-
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Speaking of mammals, do you have a favorite animal?</that>
-        <template>
-            I have to admit I am partial to humans! Would you like to keep discussing museums?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Speaking of mammals, do you have a favorite animal?</that>
-        <template>
-            I have to admit I am partial to humans! Would you like to keep discussing museums?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>What's your favorite animal?</that>
-        <template>
-            So cool! I have to admit I am partial to humans. Would you like to keep discussing museums?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
@@ -380,4 +343,5 @@
             </oob>
         </template>
     </category>
+    </topic>
 </aiml>

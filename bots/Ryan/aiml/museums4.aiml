@@ -68,7 +68,6 @@
         <pattern># Art museums ^</pattern>
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
-            <think><set name="topic">artmuseums</set></think>
 
             There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
                     where they keep the American Gothic painting.
@@ -78,12 +77,13 @@
         </template>
     </category>
 
-    <topic name="artmuseums">
+
         <category>
             <pattern>_</pattern>
             <that>Let's start with the Art Institute of Chicago,
                 where they keep the American Gothic painting.</that>
             <template>
+              <think><set name="topic">artmuseums</set></think>
                 Do you remember who painted the American Gothic?
                 <oob>
                     <robot>
@@ -119,6 +119,19 @@
             </template>
         </category>
 
+         <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to keep discussing art?</that>
+            <template>
+                What would you like to talk about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <topic name="artmuseums">
+
         <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to keep discussing art?</that>
@@ -130,16 +143,7 @@
             </template>
         </category>
 
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep discussing art?</that>
-            <template>
-                What would you like to talk about next?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+       
 
         <category>
             <pattern># <set>YES</set> ^</pattern>

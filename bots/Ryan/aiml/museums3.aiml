@@ -36,7 +36,6 @@
     <pattern># Cowboy museum ^</pattern>
     <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
     <template>
-      <think><set name="topic">cowboymuseum</set></think>
         I love the National Cowboy Museum! Would you like to take a tour of the museum?
         <oob>
             <robot></robot>
@@ -44,12 +43,11 @@
     </template>
 </category>
 
-<topic name="cowboymuseum">
-
 <category>
     <pattern># <set>YES</set> ^</pattern>
     <that>Would you like to take a tour of the museum?</that>
     <template>
+      <think><set name="topic">cowboymuseum</set></think>
         How cool is that! I would love to visit and see what it was like to live back in the Wild West!
         <oob>
             <robot><video>
@@ -58,6 +56,8 @@
         </oob>
     </template>
 </category>
+
+<topic name="cowboymuseum">
 
 <category>
     <pattern># <set>No</set> ^</pattern>
