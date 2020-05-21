@@ -65,10 +65,10 @@ class ConsoleBotClient(EventBotClient):
         client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
         
         # print("Sentiment: {}".format(sentiment_value))
-        print("Sentiment for current sentence: {}".format(numerical_sentiment))
+        # print("Sentiment for current sentence: {}".format(numerical_sentiment))
         # print("Sentiment Distribution: {}".format(sentiment_distribution))
-        print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
-        print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
+        # print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
+        # print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
 
         return client_context, client_context.bot.sentiment._threshold_reached
 

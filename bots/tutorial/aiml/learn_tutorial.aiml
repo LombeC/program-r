@@ -5,7 +5,7 @@
     <pattern>bad answer</pattern>
     <template>
     <think>
-        <set name="badanswer-input"><input index="2" /></set>
+        <set name="badanswer-input"><input index="1" /></set>
         </think>
         Would you like to teach me a new answer for <get name="badanswer-input"/>?
         <oob><robot></robot></oob>
@@ -32,9 +32,9 @@
 
 <category>
     <pattern>*</pattern>
-    <that>Ok, what should I have said</that>
+    <that>Ok, what should I have said?</that>
     <template>
-        <think>
+        <!-- <think> -->
             <learn>
                 <category>
                     <pattern>
@@ -42,13 +42,11 @@
                     </pattern>
                     <template>
                         <eval><star/></eval>
-                        <oob><robot></robot></oob>
                     </template>
                 </category>
             </learn>
-        </think>
+        <!-- </think> -->
         I will try to remember that.
-        <oob><robot></robot></oob>
     </template>
 </category>
 

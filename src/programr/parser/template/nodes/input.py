@@ -24,9 +24,22 @@ class TemplateInputNode(TemplateIndexedNode):
         if self.index == 0:
             resolved = question.combine_sentences()
         else:
-            resolved = question.previous_nth_sentence(self.index).text()
+            # resolved = question.previous_nth_sentence(self.index).text()
+            resolved = conversation.previous_nth_question(self.index).combine_sentences()
+            print("resolved type: {}".format(type(resolved)))
+            print("resolved: {}".format(resolved))
         YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
+
+    
+    # def resolve_to_string(self, client_context):
+    #     conversation = client_context.bot.get_conversation(client_context)
+    #     int_index = int(self.index.resolve(client_context))
+    #     question = conversation.previous_nth_question(int_index)
+    #     resolved = question.combine_sentences(client_context)
+
+    #     YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
+    #     return resolved
 
     def resolve(self, client_context):
         try:

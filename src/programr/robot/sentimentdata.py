@@ -37,7 +37,7 @@ class SentimentData():
     def init_weight(self):
         # self._weight = (DISTRIBUTION_SIZE*2) / 100
         self._weight = np.arange(0.1, 1.1, 0.1)
-        print("Weight: {}".format(self._weight))        
+        # print("Weight: {}".format(self._weight))        
 
     # NOTE: Most recent sentiment is the last element in self._sentiment_values
     def append_sentiment(self, sentiment): 

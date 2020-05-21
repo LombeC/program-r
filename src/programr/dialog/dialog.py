@@ -202,6 +202,7 @@ class Question(object):
         return self._sentences[self._current_sentence_no]
 
     def previous_nth_sentence(self, num):
+        # print("sentences in conversation: {}".format(self._sentences))
         if len(self._sentences) < num:
             print("size of sentences array: " + str(len(self._sentences)))
             for sentences in self._sentences:
@@ -263,6 +264,7 @@ class Conversation(object):
         raise Exception("Invalid question index")
 
     def previous_nth_question(self, num: int):
+        print("questions: {}".format(self._questions))
         if len(self._questions) < num:
             raise Exception("Num question array violation !")
         previous = -1 - num
