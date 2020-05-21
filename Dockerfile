@@ -20,5 +20,5 @@ RUN pip install --upgrade setuptools
 RUN pip install spacy
 RUN pip install -r requirements.txt
 RUN python -m spacy download en
-RUN mkdir bots/ryan/session_data
+RUN mkdir bots/Ryan/session_data
 RUN chmod +x run.sh
