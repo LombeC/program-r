@@ -207,10 +207,12 @@ brain:
       nltk_data_dir: /home/rohola/Codes/Python/program-r/libs/nltk_data
 
       sentiment_analysis:
-        method: corenlp
+        method: distilbert
+        # method: corenlp
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
+        model_dir: libs/pretrain_distillbert_full_sst/
 
       tokenizer:
         libname: nltk

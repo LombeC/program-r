@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
-<!-- <category>
+<category>
     <pattern>bad answer</pattern>
     <template>
     <think>
@@ -50,16 +50,16 @@
         I will try to remember that.
         <oob><robot></robot></oob>
     </template>
-</category> -->
+</category>
 
-<!-- <category>
+<category>
     <pattern>REMEMBER * IS MY PET *</pattern>
     <template>
+    <think>
+        <set var="name"><star /></set>
+        <set var="animal"><star index="2" /></set>
+    </think>
     <learn>
-      <think>
-          <set var="name"><star /></set>
-          <set var="animal"><star index="2" /></set>
-      </think>
       <category>
         <pattern>WHO IS
             <eval>
@@ -74,7 +74,8 @@
         </template>
       </category>
     </learn>
+    Ok I will try to remember that.
   </template>
-</category> -->
+</category>
 
 </aiml>
