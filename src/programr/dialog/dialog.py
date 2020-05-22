@@ -264,7 +264,7 @@ class Conversation(object):
         raise Exception("Invalid question index")
 
     def previous_nth_question(self, num: int):
-        print("questions: {}".format(self._questions))
+        # print("questions: {}".format(self._questions))
         if len(self._questions) < num:
             raise Exception("Num question array violation !")
         previous = -1 - num

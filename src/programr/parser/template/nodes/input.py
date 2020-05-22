@@ -26,8 +26,8 @@ class TemplateInputNode(TemplateIndexedNode):
         else:
             # resolved = question.previous_nth_sentence(self.index).text()
             resolved = conversation.previous_nth_question(self.index).combine_sentences()
-            print("resolved type: {}".format(type(resolved)))
-            print("resolved: {}".format(resolved))
+            # print("resolved type: {}".format(type(resolved)))
+            # print("resolved: {}".format(resolved))
         YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
 

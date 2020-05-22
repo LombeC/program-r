@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <category>
-        <pattern>GIVE * A WORD</pattern>
+        <pattern>GIVE * A HAND</pattern>
         <template>
             I Don't want to give  <person><star index="1"/></person> a word.
             <oob><robot></robot></oob>
         </template>  
     </category>
 
-    <category>
+    <!-- <category>
         <pattern>I AM *</pattern>  
         <template>You are <person><star index="1"/></person></template>  
         <oob><robot></robot></oob>
-    </category>
+    </category> -->
 
     <category>  
         <pattern>GIVE THE * TO *</pattern>

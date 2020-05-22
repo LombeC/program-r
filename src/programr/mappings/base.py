@@ -189,6 +189,37 @@ class DoubleStringPatternSplitCollection(BaseCollection):
             return True
         return False
 
+    # def replace_by_pattern(self, replacable):
+    #     alreadys = []
+    #     print("alreadys: {}".format(alreadys))
+    #     for key, pair in self._pairs.items():
+    #         print("key: {}".format(key))
+    #         print("pair: {}".format(pair))
+    #         try:
+    #             pattern = pair[0]
+    #             if pattern.findall(replacable):
+    #                 print("Found pattern")
+    #                 found = False
+    #                 for already in alreadys:
+    #                     stripped = key.strip()
+    #                     if stripped in already:
+    #                         found = True
+    #                 if found is not True:
+    #                     if pair[1].endswith("."):
+    #                         print("in if")
+    #                         replacable = pattern.sub(pair[1], replacable)
+    #                         print("replacable: {}".format(replacable))
+    #                     else:
+    #                         print("in else")
+    #                         replacable = pattern.sub(pair[1]+" ", replacable)
+    #                         print("replacable: {}".format(replacable))
+    #                     alreadys.append(pair[1])
+
+    #         except Exception as excep:
+    #             YLogger.exception(self, "Invalid regular expression [%s]"%str(pair[0]), excep)
+
+    #     return re.sub(' +', ' ', replacable.strip())
+
     def replace_by_pattern(self, replacable):
         alreadys = []
         for key, pair in self._pairs.items():
@@ -200,15 +231,21 @@ class DoubleStringPatternSplitCollection(BaseCollection):
                         stripped = key.strip()
                         if stripped in already:
                             found = True
+
                     if found is not True:
+                        to_replace = pair[1]
+                        to_replace = self.match_case(replacable, to_replace)
+
                         if pair[1].endswith("."):
-                            replacable = pattern.sub(pair[1], replacable)
+                            replacable = pattern.sub(to_replace, replacable)
+
                         else:
-                            replacable = pattern.sub(pair[1]+" ", replacable)
+                            replacable = pattern.sub(to_replace+" ", replacable)
+
                         alreadys.append(pair[1])
 
             except Exception as excep:
-                YLogger.exception(self, "Invalid regular expression [%s]"%str(pair[0]), excep)
+                YLogger.exception(self, "Invalid regular expression [%s]", excep, str(pair[0]))
 
         return re.sub(' +', ' ', replacable.strip())
 
