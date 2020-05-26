@@ -21,32 +21,45 @@ class BotAIMLTests(unittest.TestCase):
         client = BotAIMLTestClient()
         self._client_context = client.create_client_context("testid")
 
-        self._client_context.bot.brain.properties.load_from_text("""
-            url:http://www.keithsterling.com/aiml
-            name:KeiffBot 1.0
-            firstname:Keiff
-            middlename:AIML
-            lastname:BoT
-            fullname:KeiffBot
-            email:info@keiffbot.org
-            gender:male
-            botmaster:Keith Sterling
-            organization:keithsterling.com
-            version:0.0.1
-            birthplace:Edinburgh, Scotland
-            job:mobile virtual assistant
-            species:robot
-            birthday:September 9th
-            birthdate:September 9th, 2016
-            sign:Virgo
-            logo:<img src="http://www.keithsterling.com/aiml/logo.png" width="128"/>
-            religion:Atheist
-            default-get:unknown
-            default-property:unknown
-            default-map:unknown
-            learn-filename:learn.aiml
-        """)
+        self._client_context.bot.brain.properties.load_from_filename("./properties.txt")
+        # load_from_text("""
+        #     url:http://www.keithsterling.com/aiml
+        #     name:KeiffBot 1.0
+        #     firstname:Keiff
+        #     middlename:AIML
+        #     lastname:BoT
+        #     fullname:KeiffBot
+        #     email:info@keiffbot.org
+        #     gender:male
+        #     botmaster:Keith Sterling
+        #     organization:keithsterling.com
+        #     version:0.0.1
+        #     birthplace:Edinburgh, Scotland
+        #     job:mobile virtual assistant
+        #     species:robot
+        #     birthday:September 9th
+        #     birthdate:September 9th, 2016
+        #     sign:Virgo
+        #     logo:<img src="http://www.keithsterling.com/aiml/logo.png" width="128"/>
+        #     religion:Atheist
+        #     default-get:unknown
+        #     default-property:unknown
+        #     default-map:unknown
+        #     learn-filename:learn.aiml
+        # """)
 
+    
+    def test_bot_youare_lazy(self):
+        response = self._client_context.bot.ask_question(self._client_context,  "YOU ARE LAZY")
+        self.assertIsNotNone(response)
+        self.assertEqual(response, "Only on Sunday mornings!")
+
+    def test_bot_whats_your_hobby(self):
+        response = self._client_context.bot.ask_question(self._client_context,  "WHAT S YOUR HOBBY")
+        self.assertIsNotNone(response)
+        self.assertEqual(response, "My hobby is chatting online with nice folks like yourself.")
+
+    
     def test_bot_property_xxx(self):
         response = self._client_context.bot.ask_question(self._client_context,  "BOT PROPERTY XXX")
         self.assertIsNotNone(response)
