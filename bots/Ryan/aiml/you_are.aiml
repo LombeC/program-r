@@ -1145,19 +1145,29 @@
     </category>
     <category>
         <pattern>YOU ARE IT</pattern>
-        <template>Thanks, <get name="name"/>.
+        <template>
+            <condition name="name">
+                <li value="uknown">Thanks</li>
+                <li>Thanks, <get name="name"/>.</li>
+            </condition>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU RE IT</pattern>
-        <template>Thanks, <get name="name"/>.
+        <template><condition name="name">
+                <li value="uknown">Thanks</li>
+                <li>Thanks, <get name="name"/>.</li>
+            </condition>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU * IT</pattern>
-        <template>Thanks, <get name="name"/>.
+        <template><condition name="name">
+                <li value="uknown">Thanks</li>
+                <li>Thanks, <get name="name"/>.</li>
+            </condition>
         <oob><robot></robot></oob>
         </template>
     </category>

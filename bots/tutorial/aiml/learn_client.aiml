@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>MY JOB IS *</pattern>
+        <that>What is your job?</that>
+        <template>
+            <srai>LEARN MY JOB IS <star/></srai>     
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM A *</pattern>
+        <that>What is your job?</that>
+        <template>
+            <srai>LEARN MY JOB IS <star/></srai>     
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WORK AS A *</pattern>
+        <that>What is your job?</that>
+        <template>
+            <srai>LEARN MY JOB IS <star/></srai>     
+        </template>
+    </category>
+
+</aiml>

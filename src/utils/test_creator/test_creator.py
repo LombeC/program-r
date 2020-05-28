@@ -98,8 +98,10 @@ if __name__ == '__main__':
                         pattern_text += replace_wildcards(text, texts)
                         pattern_text += " "
 
+                
                 question = '"%s",'%pattern_text.strip()
                 question = question.ljust(ljust)
+                
 
 
                 if default is not None:
@@ -107,7 +109,8 @@ if __name__ == '__main__':
 
                 else:
                     template = category.find('template')
-                    test_line = '%s "answer"'%(question)
+                    print("Template: {}".format(template.text))
+                    test_line = '%s "%s"'%(question, template.text)
 
                 output_file.write(test_line)
                 output_file.write("\n")
