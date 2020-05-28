@@ -122,11 +122,11 @@
             <pattern># BOTH ^</pattern>
             <that>I mean, if you had to pick just one kind.</that>
             <template>
-                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
-
-                <oob>
-                    <robot></robot>
-                </oob>
+                <condition name="name">
+                    <li value="Uknown">you've read my mind! Why should we have to limit ourselves?</li>
+                    <li><get name="name" />, you've read my mind! Why should we have to limit ourselves?</li>
+                </condition>
+                <oob><robot></robot></oob>
             </template>
         </category>
 
@@ -134,7 +134,10 @@
             <pattern># GARLIC AND ^</pattern>
             <that>I mean, if you had to pick just one kind.</that>
             <template>
-                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+                <condition name="name">
+                    <li value="Uknown">you've read my mind! Why should we have to limit ourselves?</li>
+                    <li><get name="name" />, you've read my mind! Why should we have to limit ourselves?</li>
+                </condition>
 
                 <oob>
                     <robot></robot>
@@ -146,7 +149,10 @@
             <pattern># PLAIN AND ^</pattern>
             <that>I mean, if you had to pick just one kind.</that>
             <template>
-                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+                <condition name="name">
+                    <li value="Uknown">you've read my mind! Why should we have to limit ourselves?</li>
+                    <li><get name="name" />, you've read my mind! Why should we have to limit ourselves?</li>
+                </condition>
 
                 <oob>
                     <robot></robot>
@@ -158,7 +164,10 @@
             <pattern># GARLIC NAAN AND ^</pattern>
             <that>I mean, if you had to pick just one kind.</that>
             <template>
-                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+                <condition name="name">
+                    <li value="Uknown">you've read my mind! Why should we have to limit ourselves?</li>
+                    <li><get name="name" />, you've read my mind! Why should we have to limit ourselves?</li>
+                </condition>
 
                 <oob>
                     <robot></robot>
@@ -170,7 +179,10 @@
             <pattern># PLAIN NAAN AND ^</pattern>
             <that>I mean, if you had to pick just one kind.</that>
             <template>
-                <get name="name" />, you've read my mind! Why should we have to limit ourselves?
+                <condition name="name">
+                    <li value="Uknown">you've read my mind! Why should we have to limit ourselves?</li>
+                    <li><get name="name" />, you've read my mind! Why should we have to limit ourselves?</li>
+                </condition>
 
                 <oob>
                     <robot></robot>
