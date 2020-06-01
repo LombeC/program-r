@@ -88,6 +88,7 @@ class FlaskRestBotClient(RestBotClient):
 
 
 if __name__ == '__main__':
+
     rest_client = None
 
     print("Initiating Flask REST Service...")

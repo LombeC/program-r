@@ -37,6 +37,10 @@ class BaseCollection(object):
 
         return count
 
+    #TODO: Write load_from_database
+    def load_from_database(self):
+        pass
+
     def load_from_text(self, text):
         count = 0
         lines = text.split("\n")

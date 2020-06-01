@@ -116,9 +116,15 @@ class ConversationMongodbStorage(ConversationStorage):
 
         }
         try:
+            # writing to db
             self.db[self._config.collection_name].insert_one(document)
         except Exception as e:
             YLogger.error(self, e)
+
+    def load_client_properties(self):
+        user_info = self.db['user_info'].find(  )
+        print("USER_INFO: {}".format(user_info))
+        return user_info
 
     def load_conversation(self, conversation, clientid, restore_last_topic=False):
         # todo needs loading the whole conversation with properties

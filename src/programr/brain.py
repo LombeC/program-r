@@ -50,6 +50,9 @@ class Brain(object):
         self._properties_collection = PropertiesCollection()
         self._variables_collection = PropertiesCollection()
 
+        #TODO: Write class for loading client variables from Mongo
+        # self._user_collection = UserCollection()
+
         self._preprocessors = ProcessorLoader()
         self._postprocessors = ProcessorLoader()
 
@@ -338,11 +341,14 @@ class Brain(object):
 
     def _load_variables(self, configuration):
         if configuration.files.variables is not None:
-            self._variables_collection.empty ()
+            self._variables_collection.empty()
             total = self._variables_collection.load_from_filename(configuration.files.variables)
             YLogger.info(self, "Loaded a total of %d variables", total)
         else:
             YLogger.warning(self, "No configuration setting for variables")
+
+    def _load_client_properties(self):
+        print("in brain.py, client properties: {}".format(self._bot.load_client_properties()))
 
     def _load_maps(self, configuration):
         self._maps_collection.empty()
@@ -409,6 +415,7 @@ class Brain(object):
         self._load_maps(configuration)
         self._load_preprocessors(configuration)
         self._load_postprocessors(configuration)
+        # self._load_client_properties()
 
     def load_services(self, configuration):
         YLogger.debug(self, "Loading Services.")
