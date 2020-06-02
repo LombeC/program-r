@@ -857,8 +857,8 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY TIMEZONE IS *</pattern>
-        <template>Your timezone is <set name="timezone"><person/></set>.
+        <pattern>WHAT IS MY TIMEZONE</pattern>
+        <template>Your timezone is <get name="timezone"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
