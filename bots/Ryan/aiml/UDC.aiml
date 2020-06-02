@@ -46,7 +46,7 @@
             </random>
 
             <!-- QUESTION -->
-            <random>
+            <!-- <random>
                 <li>Ask me another question.</li>
                 <li>What else would you like to chat about?</li>
                 <li>Is there anything else you'd like to chat about?</li>
@@ -54,7 +54,12 @@
                 <li>What else should we talk about?</li>
                 <li>What were we talking about again?</li>
                 <li>Would you like to hear a list of topics I like to chat about?</li>
-            </random>
+            </random> -->
+
+            <condition name="dialogue progress">
+                <li value="sports1">Let's get back to talking sports. Do you want to talk about basketball, baseball, football, hockey or the olympics?</li>
+                <li>So what should we talk about now?</li>
+            </condition>
 
             <log level="warning">REACHED THE UDC</log>
             <oob>

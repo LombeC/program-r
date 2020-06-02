@@ -217,3 +217,27 @@ Then run the image like so:
 docker run -it --rm --net=dockernet hojjat12000/program-r ./run.sh
 ```
 `--rm` will remove the new container created after you are done. Note that the image stays and you can just run the command above to run the program again.
+
+
+### Running Unit Tests on AIML Files in the bots folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
