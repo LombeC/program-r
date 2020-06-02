@@ -73,7 +73,8 @@ bot:
     #this is for mongodb configuration
     database_config:
       # host: "127.0.0.1"
-      host: "mongodb"
+      # host: "mongodb"
+      host: "localhost"
       port: 27017
       password: "password"
       # root: "/home/jarid/mongodbtest-data"
@@ -106,6 +107,7 @@ brain:
       variables:
           gettime: programr.dynamic.variables.datetime.GetTime
           getsentiment: programr.dynamic.variables.sentiment_analysis.GetSentiment
+          name: programr.dynamic.variables.name.Name
 
     # Binary
     binaries:

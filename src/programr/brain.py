@@ -347,9 +347,6 @@ class Brain(object):
         else:
             YLogger.warning(self, "No configuration setting for variables")
 
-    def _load_client_properties(self):
-        print("in brain.py, client properties: {}".format(self._bot.load_client_properties()))
-
     def _load_maps(self, configuration):
         self._maps_collection.empty()
         total = self._maps_collection.load(configuration.files.map_files)
@@ -415,7 +412,6 @@ class Brain(object):
         self._load_maps(configuration)
         self._load_preprocessors(configuration)
         self._load_postprocessors(configuration)
-        # self._load_client_properties()
 
     def load_services(self, configuration):
         YLogger.debug(self, "Loading Services.")

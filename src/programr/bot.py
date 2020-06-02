@@ -99,6 +99,8 @@ class Bot(object):
 
         self.initiate_conversation_storage()
 
+        self.load_client_properties()
+
     def ylogger_type(self):
         return "bot"
 
