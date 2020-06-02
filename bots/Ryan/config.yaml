@@ -107,7 +107,9 @@ brain:
       variables:
           gettime: programr.dynamic.variables.datetime.GetTime
           getsentiment: programr.dynamic.variables.sentiment_analysis.GetSentiment
-          name: programr.dynamic.variables.name.Name
+          name: programr.dynamic.variables.client_variables.Name
+          location: programr.dynamic.variables.client_variables.Location
+          time zone: programr.dynamic.variables.client_variables.TimeZone
 
     # Binary
     binaries:
