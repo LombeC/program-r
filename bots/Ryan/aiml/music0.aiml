@@ -14,7 +14,7 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>Do you want to talk about music?</that>
         <template>
-            <think><set name="topic">music</set></think>
+            <think><set name="topic">music</set><set name="dialogue">music</set></think>
 
             The short clip I just played shows how researchers are looking at music as a way to help memory and physical health! What did you think about it?
             <oob>
@@ -32,7 +32,7 @@
             <pattern>_</pattern>
             <that>What did you think about it?</that>
             <template>
-                The clip is very informative! Do you like going to concerts?
+                The clip is very informative! <set name="most recent dialogue question">Do you like going to concerts?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -258,7 +258,7 @@
             <pattern>_</pattern>
             <that>What concerts have you gone to?</that>
             <template>
-                Amazing! I love reliving memories. Would you like to continue talking about music?
+                Amazing! I love reliving memories. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
                 <oob>
                     <robot></robot>
                 </oob>

@@ -24,8 +24,8 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to talk about sports?</that>
         <template>
-            Great! Do you want to talk about basketball, baseball, football, hockey or the olympics?
-            <think><set name="dialogue progress">sports1</set></think>
+            Great! <set name="most recent dialogue question">Do you want to talk about basketball, baseball, football, hockey or the olympics?</set>
+            <think><set name="dialogue">sports</set></think>
             <oob>
                 <robot></robot>
             </oob>
@@ -50,7 +50,7 @@
             <think><set name="topic">basketball</set></think>
 
             How fun! I wanted to show you a short video about the history of basketball, so we both could learn something new, or remember something again!
-                                                                                                                        What do you love about watching basketball?
+            <set name="most recent dialogue question">What do you love about watching basketball?</set>
             <oob>
                 <robot>
                     <video>
@@ -66,7 +66,7 @@
             <pattern>_</pattern>
             <that>What do you love about watching basketball?</that>
             <template>
-                I agree! What sports did you play growing up?
+                I agree! <set name="most recent dialogue question">What sports did you play growing up?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -89,7 +89,7 @@
             <that>While we're on the topic of basketball, who are your favorite baseketball players?</that>
             <template>
                 I see! I have to say my favorite player of all time is Larry Bird, who played for the Boston Celtics!
-                                                                                                                                                            Do you remember the infamous rivalry between the Celtics and the Lakers?
+                <set name="most recent dialogue question">Do you remember the infamous rivalry between the Celtics and the Lakers?</set>
                 <oob>
                     <robot>
                         <image>

@@ -56,8 +56,9 @@
                 <li>Would you like to hear a list of topics I like to chat about?</li>
             </random> -->
 
-            <condition name="dialogue progress">
-                <li value="sports1">Let's get back to talking sports. Do you want to talk about basketball, baseball, football, hockey or the olympics?</li>
+            <condition name="dialogue">
+                <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
                 <li>So what should we talk about now?</li>
             </condition>
 
