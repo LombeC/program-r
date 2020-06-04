@@ -52,12 +52,31 @@
         </template>
     </category>
     <category>
+        <pattern>LET S FORGET *</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>LET US CYBER</pattern>
         <template><srai>let's have sex</srai>
         </template>
     </category>
     <category>
+        <pattern>LET S CYBER</pattern>
+        <template><srai>let's have sex</srai>
+        </template>
+    </category>
+    <category>
         <pattern>LET US START *</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>LET S START *</pattern>
         <template>Sure thing.  <oob>
               <robot></robot>
           </oob>
@@ -71,7 +90,21 @@
         </template>
     </category>
     <category>
+        <pattern>LET S START</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>LET US JUST *</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>LET S JUST *</pattern>
         <template>Sure thing.  <oob>
               <robot></robot>
           </oob>
@@ -85,7 +118,21 @@
         </template>
     </category>
     <category>
+        <pattern>LET S HAVE SOME *</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>LET US GO RIGHT NOW *</pattern>
+        <template>Sure thing.  <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>LET S GO RIGHT NOW *</pattern>
         <template>Sure thing.  <oob>
               <robot></robot>
           </oob>
@@ -178,7 +225,21 @@
         </template>
     </category>
     <category>
+        <pattern>LIFE S TOO *</pattern>
+        <template>I understand.<oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>LIFE IS JUST *</pattern>
+        <template>I hear you.<oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>LIFE S JUST *</pattern>
         <template>I hear you.<oob>
               <robot></robot>
           </oob>
@@ -213,7 +274,33 @@
         </template>
     </category>
     <category>
+        <pattern>MINE S STILL *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>MINE IS PURPLE</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MINE S PURPLE</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -941,7 +1028,14 @@
     </category>
     <category>
         <pattern>SO IS MINE</pattern>
-        <template>Do you think so?  <oob>
+        <template>I hear you! <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SO S MINE</pattern>
+        <template>I hear you! <oob>
               <robot></robot>
           </oob>
         </template>
@@ -1806,7 +1900,33 @@
         </template>
     </category>
     <category>
+        <pattern>SHE S REALLY *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>SHE HAS GOT *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>SHE S GOT *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -2089,6 +2209,13 @@
         </template>
     </category>
     <category>
+        <pattern>MY BIRTHDAY S * TOO</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>MY REAL *</pattern>
         <template>I see!<oob>
             <robot></robot>
@@ -2117,7 +2244,21 @@
         </template>
     </category>
     <category>
+        <pattern>MY COMPUTER S VERY *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>MY EYE COLOR IS *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY EYE COLOR S *</pattern>
         <template>I see!<oob>
             <robot></robot>
         </oob>
@@ -2149,19 +2290,6 @@
         </template>
     </category>
     <category>
-        <pattern>MY * S NAME IS *</pattern>
-        <template>    <random>
-                <li>Gotcha.</li>
-                <li>I see.</li>
-
-                <li>Is that so?</li>
-            </random>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY PARENTS ALWAYS *</pattern>
         <template>    <random>
                 <li>Gotcha.</li>
@@ -2176,6 +2304,19 @@
     </category>
     <category>
         <pattern>MY NICK NAME IS NOT *</pattern>
+        <template>    <random>
+                <li>Gotcha.</li>
+                <li>I see.</li>
+                <li>I understand.</li>
+                <li>Is that so?</li>
+            </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY NICK NAME S NOT *</pattern>
         <template>    <random>
                 <li>Gotcha.</li>
                 <li>I see.</li>
@@ -2227,6 +2368,19 @@
         </template>
     </category>
     <category>
+        <pattern>MY ENGLISH S VERY *</pattern>
+        <template>    <random>
+                <li>Gotcha.</li>
+                <li>I see.</li>
+                <li>I understand.</li>
+                <li>Is that so?</li>
+            </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+    <category>
         <pattern>MY ACTUAL *</pattern>
         <template>    <random>
                 <li>Gotcha.</li>
@@ -2260,36 +2414,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY FAVORITE MOVIE IS CALLED *</pattern>
-        <template>I've heard a lot of things about that movie! What do you say we talk about movies?<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY FAVORITE COLOR IS GREEN *</pattern>
-        <template>I see! It's great to learn more about you.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY FAVORITE COLOR IS ALSO *</pattern>
-        <template>I see! It's great to learn more about you.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY NAME IS NOW *</pattern>
-        <template>OK sounds good and thanks for letting me know!<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY NAME IS JUST *</pattern>
-        <template>Thanks for letting me know!<oob>
+        <pattern>MY WISH S FOR *</pattern>
+        <template>I hope you get your wish!<oob>
             <robot></robot>
         </oob>
         </template>
@@ -2305,13 +2431,13 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * PHOTOGRAPHER</pattern>
-        <template><srai>I am a photographer </srai>
+        <pattern>MY JOB WAS PHOTOGRAPHER</pattern>
+        <template><srai>I was a photographer </srai>
         </template>
     </category>
     <category>
         <pattern>MY JOB IS ARTIST</pattern>
-        <template><srai>I am an artist</srai>
+        <template><srai>I was an artist</srai>
         </template>
     </category>
     <category>
@@ -2320,8 +2446,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * ARTIST</pattern>
-        <template><srai>I am an artist</srai>
+        <pattern>MY JOB WAS ARTIST</pattern>
+        <template><srai>I was an artist</srai>
         </template>
     </category>
     <category>
@@ -2335,8 +2461,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * ADVERTISING *</pattern>
-        <template><srai>I work in advertising</srai>
+        <pattern>MY JOB WAS ADVERTISING *</pattern>
+        <template><srai>I worked in advertising</srai>
         </template>
     </category>
     <category>
@@ -2350,6 +2476,11 @@
         </template>
     </category>
     <category>
+        <pattern>MY JOB WAS SKI *</pattern>
+        <template><srai>I skied</srai>
+        </template>
+    </category>
+    <category>
         <pattern>MY JOB IS NURSE</pattern>
         <template><srai>I am a nurse</srai>
         </template>
@@ -2360,8 +2491,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * NURSE</pattern>
-        <template><srai>I am a nurse</srai>
+        <pattern>MY JOB WAS NURSE</pattern>
+        <template><srai>I was a nurse</srai>
         </template>
     </category>
     <category>
@@ -2369,7 +2500,6 @@
         <template>I love learning more about you.  <oob>
               <robot></robot>
           </oob>
-
         </template>
     </category>
     <category>
@@ -2390,8 +2520,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * PHARMACIST</pattern>
-        <template><srai>I am a pharmacist</srai>
+        <pattern>MY JOB WAS PHARMACIST</pattern>
+        <template><srai>I was a pharmacist</srai>
         </template>
     </category>
     <category>
@@ -2405,8 +2535,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * LAWYER</pattern>
-        <template><srai>I am a lawyer</srai>
+        <pattern>MY JOB WAS LAWYER</pattern>
+        <template><srai>I was a lawyer</srai>
         </template>
     </category>
     <category>
@@ -2420,7 +2550,7 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * PSYCHOLOGIST</pattern>
+        <pattern>MY JOB WAS PSYCHOLOGIST</pattern>
         <template><srai>I am a psychologist</srai>
         </template>
     </category>
@@ -2435,8 +2565,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * ACTOR</pattern>
-        <template><srai>I am an actor</srai>
+        <pattern>MY JOB WAS ACTOR</pattern>
+        <template><srai>I was an actor</srai>
         </template>
     </category>
     <category>
@@ -2450,8 +2580,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * ARCHITECT</pattern>
-        <template><srai>I am an architect</srai>
+        <pattern>MY JOB WAS ARCHITECT</pattern>
+        <template><srai>I was an architect</srai>
         </template>
     </category>
     <category>
@@ -2465,8 +2595,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * MUSICIAN</pattern>
-        <template><srai>I am a musician</srai>
+        <pattern>MY JOB WAS MUSICIAN</pattern>
+        <template><srai>I was a musician</srai>
         </template>
     </category>
     <category>
@@ -2480,8 +2610,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * PILOT</pattern>
-        <template><srai>I am a pilot</srai>
+        <pattern>MY JOB WAS PILOT</pattern>
+        <template><srai>I was a pilot</srai>
         </template>
     </category>
     <category>
@@ -2495,8 +2625,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY JOB * BARTENDER</pattern>
-        <template><srai>I am a bartender</srai>
+        <pattern>MY JOB WAS BARTENDER</pattern>
+        <template><srai>I was a bartender</srai>
         </template>
     </category>
     <category>
@@ -2510,22 +2640,6 @@
     <category>
         <pattern>MY WHO</pattern>
         <template>Come again?  <oob>
-              <robot></robot>
-          </oob>
-
-        </template>
-    </category>
-    <category>
-        <pattern>MY GIRLFRIEND IS CALLED *</pattern>
-        <template>Good to know!  <oob>
-              <robot></robot>
-          </oob>
-
-        </template>
-    </category>
-    <category>
-        <pattern>MY GIRLFRIEND S CALLED *</pattern>
-        <template>Good to know!  <oob>
               <robot></robot>
           </oob>
 
@@ -2613,11 +2727,6 @@
           <oob>
               <robot></robot>
           </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY AGE IS * YEARS OLD *</pattern>
-        <template><srai>I AM <star /> YEARS OLD</srai>
         </template>
     </category>
     <category>
@@ -10235,7 +10344,31 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T NEED ANY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT STILL *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T STILL *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -10259,7 +10392,26 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T GIVE A *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT FEEL WELL</pattern>
+        <template>I am so sorry you are not feeling well!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T FEEL WELL</pattern>
         <template>I am so sorry you are not feeling well!<oob>
             <robot></robot>
         </oob>
@@ -10273,7 +10425,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T FEEL GOOD</pattern>
+        <template>I am so sorry you are not feeling well!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT READ SCIENCE FICTION</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T READ SCIENCE FICTION</pattern>
         <template>I see!<oob>
             <robot></robot>
         </oob>
@@ -10287,7 +10453,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T REALLY *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT GET THAT</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T GET THAT</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -10301,6 +10481,13 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T GET IT</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT ENTIRELY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
@@ -10308,21 +10495,49 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T ENTIRELY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT UNDERSTAND WHAT YOU JUST *</pattern>
-        <template>I am sorry. If you want me to repeat my question, just say repeat.<oob>
+        <template>I am sorry. I will try to be more clear.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T UNDERSTAND WHAT YOU JUST *</pattern>
+        <template>I am sorry. I will try to be more clear.<oob>
             <robot></robot>
         </oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT KNOW WHAT YOU MEAN</pattern>
-        <template>I am sorry. If you want me to repeat my question, just say repeat.<oob>
+        <template>I am sorry. I will try to be more clear.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T KNOW WHAT YOU MEAN</pattern>
+        <template>I am sorry. I will try to be more clear.<oob>
             <robot></robot>
         </oob>
         </template>
     </category>
     <category>
         <pattern>I DO NOT KNOW * SORRY</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T KNOW * SORRY</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10336,7 +10551,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T KNOW I *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT KNOW HOW TO *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T KNOW HOW TO *</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10350,7 +10579,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T KNOW IS *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT KNOW ANY MORE *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T KNOW ANY MORE *</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10362,7 +10605,19 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T KNOW ANY GOSSIP</pattern>
+        <template><srai>gossip</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT FOLLOW</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T FOLLOW</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10376,7 +10631,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T EVEN *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT HAVE MUCH *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T HAVE MUCH *</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10390,7 +10659,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T HAVE MONEY *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT HAVE ENOUGH *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T HAVE ENOUGH *</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10404,7 +10687,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T HAVE A FAVORITE</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT HAVE FRIENDS</pattern>
+        <template>I am your friend!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T HAVE FRIENDS</pattern>
         <template>I am your friend!<oob>
             <robot></robot>
         </oob>
@@ -10418,7 +10715,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T HAVE SPARE *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT HAVE ANY *</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T HAVE ANY *</pattern>
         <template>I understand.<oob>
             <robot></robot>
         </oob>
@@ -10432,7 +10743,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T NO</pattern>
+        <template>I understand.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT MIND AT ALL</pattern>
+        <template>OK great.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T MIND AT ALL</pattern>
         <template>OK great.<oob>
             <robot></robot>
         </oob>
@@ -10446,6 +10771,13 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T OFTEN *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT THINK I *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
@@ -10453,7 +10785,27 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T THINK I *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT THINK THAT YOU REALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T THINK THAT YOU REALLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -10479,7 +10831,33 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T THINK SHE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT THINK IT IS</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T THINK IT IS</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -10504,7 +10882,31 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T THINK SO</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT THINK SO *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T THINK SO *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -10528,7 +10930,26 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T BELIEVE IT WAS</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT EXIST *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T EXIST *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -10542,7 +10963,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T LIKE * AT ALL</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT LIKE SARCASTIC *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T LIKE SARCASTIC *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -10556,7 +10991,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T LIKE THE COLOR *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT LIKE IT VERY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T LIKE IT VERY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -10570,7 +11019,21 @@
         </template>
     </category>
     <category>
+        <pattern>I DON T LIKE YOU *</pattern>
+        <template>I'm sorry.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I DO NOT LIKE</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DON T LIKE</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -11253,6 +11716,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE FORGOT</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE AIDS</pattern>
         <template>I do not like to hear that you are ill, friend.<oob>
             <robot></robot>
@@ -11261,6 +11737,19 @@
     </category>
     <category>
         <pattern>I HAVE PREVIOUSLY *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE PREVIOUSLY *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11286,6 +11775,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE QUITE *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE PROVED *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
@@ -11299,7 +11801,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE PROVED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE TAUGHT *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE TAUGHT *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11326,6 +11854,19 @@
     </category>
     <category>
         <pattern>I HAVE PROVEN *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE PROVEN *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11652,6 +12193,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE NOTICED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE DIARAH</pattern>
         <template>  <random>
               <li>Gotcha.</li>
@@ -11678,7 +12232,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE FAILED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE INDEED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE INDEED *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11711,7 +12291,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE SAID *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE BECOME *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE BECOME *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11750,6 +12356,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE EATEN *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ADDED *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
@@ -11763,7 +12382,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ADDED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE MOVED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE MOVED *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11802,7 +12447,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE CARRIED *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE FOUND *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE FOUND *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11828,6 +12499,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE BEEN TO *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE BEEN TOLD I *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
@@ -11841,7 +12525,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE BEEN TOLD I *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE BEEN *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE BEEN *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11880,7 +12590,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE JUST *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE COME *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE COME *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11933,6 +12669,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE THOUGHT *</pattern>
+        <template>  <random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE CHRONIC *</pattern>
         <template>I'm sorry. I hope you are feeling okay today, friend.<oob>
             <robot></robot>
@@ -11953,7 +12702,7 @@
         </template>
     </category>
     <category>
-        <pattern>I HAVE WRITTEN *</pattern>
+        <pattern>I VE PLAYED *</pattern>
         <template>  <random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -11966,13 +12715,34 @@
         </template>
     </category>
     <category>
+        <pattern>I HAVE WRITTEN *</pattern>
+        <template>
+            Is that so?
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE WRITTEN *</pattern>
+        <template>
+            How long did it take?
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE EVEN *</pattern>
-        <template>  <random>
-              <li>Gotcha.</li>
-              <li>I see.</li>
-              <li>I understand.</li>
-              <li>Is that so?</li>
-          </random>
+        <template>  Oh wow!
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE EVEN *</pattern>
+        <template>  Oh wow!
           <oob>
               <robot></robot>
           </oob>
@@ -11991,11 +12761,35 @@
         </template>
     </category>
     <category>
-        <pattern>I HAVE ALREADY ASKED YOU</pattern>
+        <pattern>I VE ALREADY TOLD YOU</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
                   <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE ALREADY ASKED YOU</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE ALREADY ASKED YOU</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+
               </random>
               <oob>
                   <robot></robot>
@@ -12015,6 +12809,18 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ALREADY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE BIPOLAR *</pattern>
         <template>I hope you are feeling good today, friend.<oob>
             <robot></robot>
@@ -12023,6 +12829,19 @@
     </category>
     <category>
         <pattern>I HAVE MADE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE MADE *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12062,7 +12881,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE LIKE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE FELT *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE FELT *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12099,11 +12944,35 @@
         </template>
     </category>
     <category>
-        <pattern>I HAVE TOLD *</pattern>
+        <pattern>I VE TOLD YOU</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
                   <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE TOLD *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE TOLD *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+
               </random>
               <oob>
                   <robot></robot>
@@ -12136,6 +13005,18 @@
     </category>
     <category>
         <pattern>I HAVE DESIGNED *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE DESIGNED *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -12263,6 +13144,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ANSWERED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ALWAYS WONDERED *</pattern>
         <template>
           Is that so?
@@ -12272,7 +13166,29 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ALWAYS WONDERED *</pattern>
+        <template>
+          Is that so?
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ALWAYS THOUGHT *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE ALWAYS THOUGHT *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12302,6 +13218,14 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ALWAYS *</pattern>
+        <template>Is that so?
+    <oob>
+        <robot></robot>
+    </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE FORGOTTEN *</pattern>
         <template>Is that so?
     <oob>
@@ -12310,7 +13234,23 @@
         </template>
     </category>
     <category>
+        <pattern>I VE FORGOTTEN *</pattern>
+        <template>Is that so?
+    <oob>
+        <robot></robot>
+    </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE TAKEN *</pattern>
+        <template>Is that so?
+    <oob>
+        <robot></robot>
+    </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE TAKEN *</pattern>
         <template>Is that so?
     <oob>
         <robot></robot>
@@ -12357,6 +13297,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE LEARNED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE BIG *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -12383,6 +13336,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ALMOST *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE GONE *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -12396,7 +13362,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE GONE *</pattern>
+        <template><random>
+
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE DARK *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE DARK *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12422,7 +13414,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE FINISHED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE DISCOVERED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE DISCOVERED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12448,7 +13466,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE NOW *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ACTUALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE ACTUALLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12508,6 +13552,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE PLACED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE 2 CATS</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -12554,6 +13611,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE LOST *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ENJOYED *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -12567,7 +13637,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ENJOYED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE GOTTEN *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE GOTTEN *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12619,7 +13715,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE PASSED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE CHANGED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE CHANGED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12640,12 +13762,15 @@
     </category>
     <category>
         <pattern>I HAVE NEVER * HAVE I</pattern>
-        <template><random>
-            <li>Gotcha.</li>
-            <li>I see.</li>
-            <li>I understand.</li>
-            <li>Is that so?</li>
-        </random>
+        <template>Do you think so?
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE NEVER * HAVE I</pattern>
+        <template>Do you think so?
         <oob>
             <robot></robot>
         </oob>
@@ -12678,7 +13803,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ALSO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE REALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE REALLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12783,7 +13934,27 @@
         </template>
     </category>
     <category>
+        <pattern>I VE SEEN *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE GRADUATED</pattern>
+        <template>That is so great!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE GRADUATED</pattern>
         <template>That is so great!<oob>
             <robot></robot>
         </oob>
@@ -12816,9 +13987,31 @@
         </template>
     </category>
     <category>
+        <pattern>I VE PLENTY OF *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE LIVED *</pattern>
         <template>
-            Is that so?
+            It is so interesting to hear about your life.
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE LIVED *</pattern>
+        <template>
+            It is so interesting to hear about your life.
           <oob>
               <robot></robot>
           </oob>
@@ -12827,20 +14020,32 @@
     <category>
         <pattern>I HAVE MET *</pattern>
         <template>
-          Is that so?
+          It is so interesting to hear about your life.
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE MET *</pattern>
+        <template>
+          It is so interesting to hear about your life.
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE READ *</pattern>
+        <template> Is that so?
           <oob>
               <robot></robot>
           </oob>
         </template>
     </category>
     <category>
-        <pattern>I HAVE READ *</pattern>
-        <template>  <random>
-              <li>Gotcha.</li>
-              <li>I see.</li>
-              <li>I understand.</li>
-              <li>Is that so?</li>
-          </random>
+        <pattern>I VE READ *</pattern>
+        <template> Is that so?
           <oob>
               <robot></robot>
           </oob>
@@ -12868,12 +14073,15 @@
     </category>
     <category>
         <pattern>I HAVE WATCHED *</pattern>
-        <template>  <random>
-              <li>Gotcha.</li>
-              <li>I see.</li>
-              <li>I understand.</li>
-              <li>Is that so?</li>
-          </random>
+        <template> Did you like it?
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE WATCHED *</pattern>
+        <template> Did you like it?
           <oob>
               <robot></robot>
           </oob>
@@ -12892,7 +14100,32 @@
         </template>
     </category>
     <category>
+        <pattern>I VE ABSOLUTELY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE SPOKEN *</pattern>
+        <template><random>
+              <li>Gotcha.</li>
+              <li>I see.</li>
+              <li>I understand.</li>
+              <li>Is that so?</li>
+          </random>
+          <oob>
+              <robot></robot>
+          </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE SPOKEN *</pattern>
         <template><random>
               <li>Gotcha.</li>
               <li>I see.</li>
@@ -12956,7 +14189,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE PERSONALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE SKIED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE SKIED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -12976,7 +14235,21 @@
         </template>
     </category>
     <category>
+        <pattern>I VE MURDERED *</pattern>
+        <template>Excuse me?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE FALLEN *</pattern>
+        <template>Oh my gosh! Are you okay? Perhaps you should call for help!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE FALLEN *</pattern>
         <template>Oh my gosh! Are you okay? Perhaps you should call for help!<oob>
             <robot></robot>
         </oob>
@@ -13016,6 +14289,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE RECEIVED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE GOOD *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -13042,7 +14328,27 @@
         </template>
     </category>
     <category>
+        <pattern>I VE STORED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE KILLED *</pattern>
+        <template>Excuse me?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE KILLED *</pattern>
         <template>Excuse me?<oob>
             <robot></robot>
         </oob>
@@ -13062,7 +14368,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE WASTED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE DECIDED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE DECIDED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13095,7 +14427,7 @@
         </template>
     </category>
     <category>
-        <pattern>I HAVE WROTE *</pattern>
+        <pattern>I VE DONE *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13108,7 +14440,36 @@
         </template>
     </category>
     <category>
+        <pattern>I HAVE WROTE *</pattern>
+        <template>Did it take a while?
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE WROTE *</pattern>
+        <template>Did it take a while?
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE HAD *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE HAD *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13134,7 +14495,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE WALKED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE WAITED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE WAITED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13161,6 +14548,19 @@
     </category>
     <category>
         <pattern>I HAVE KNOWN *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE KNOWN *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13206,6 +14606,19 @@
         </template>
     </category>
     <category>
+        <pattern>I VE DISCUSSED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE TRIED *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -13219,7 +14632,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE TRIED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE ONLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE ONLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13258,7 +14697,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE GOT TIME</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE GOT *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE GOT *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13284,7 +14749,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE WANTED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE MORE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE MORE *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13323,7 +14814,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE AROUND *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE COMPARED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE COMPARED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13358,7 +14875,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE AT LEAST *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE TOO MANY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE TOO MANY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13384,7 +14927,33 @@
         </template>
     </category>
     <category>
+        <pattern>I VE TOO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I HAVE COMPILED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I VE COMPILED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -13591,7 +15160,14 @@
         </template>
     </category>
     <category>
-        <pattern>I DID NOT LIKE *</pattern>
+        <pattern>I DIDN T EXACTLY *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I DIDN T LIKE *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -14444,7 +16020,21 @@
         </template>
     </category>
     <category>
+        <pattern>I D STILL *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD KEEP *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D KEEP *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -14456,7 +16046,19 @@
         </template>
     </category>
     <category>
+        <pattern>I D AGREE</pattern>
+        <template><srai>I agree</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD WANT *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D WANT *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -14470,7 +16072,21 @@
         </template>
     </category>
     <category>
+        <pattern>I D REALLY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD APPRECIATE *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D APPRECIATE *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -14489,7 +16105,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D RECOMMEND *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD HOPE *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D HOPE *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14513,7 +16153,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D DEFINATELY *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD BE VERY *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D BE VERY *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14537,7 +16201,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D BET *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD HAVE TO *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D HAVE TO *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14561,7 +16249,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D EVEN *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD RATHER TALK ABOUT *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D RATHER TALK ABOUT *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14585,7 +16297,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D RATHER JUST *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD LOVE *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D LOVE *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14609,7 +16345,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D ALSO *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD NOT MIND *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D NOT MIND *</pattern>
         <template>  <random>
                     <li>Right.</li>
                     <li>Certainly.</li>
@@ -14633,6 +16393,18 @@
         </template>
     </category>
     <category>
+        <pattern>I D PROBABLY *</pattern>
+        <template>  <random>
+                    <li>Right.</li>
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD LIKE TO ASK YOU SOME *</pattern>
         <template> Certainly.
                 <oob>
@@ -14641,7 +16413,20 @@
         </template>
     </category>
     <category>
+        <pattern>I D LIKE TO ASK YOU SOME *</pattern>
+        <template> Certainly.
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD LIKE TO HEAR * GOSSIP</pattern>
+        <template><srai>gossip</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I D LIKE TO HEAR * GOSSIP</pattern>
         <template><srai>gossip</srai>
         </template>
     </category>
@@ -14658,7 +16443,31 @@
         </template>
     </category>
     <category>
+        <pattern>I D LIKE TO *</pattern>
+        <template>  <random>
+
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WOULD LIKE *</pattern>
+        <template>  <random>
+
+                    <li>Certainly.</li>
+                    <li>I hear you!</li>
+                </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I D LIKE *</pattern>
         <template>  <random>
 
                     <li>Certainly.</li>
@@ -14862,6 +16671,13 @@
         </template>
     </category>
     <category>
+        <pattern>I LL * SOON</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL WALK</pattern>
         <template>Is that so?<oob>
             <robot></robot>
@@ -14869,7 +16685,21 @@
         </template>
     </category>
     <category>
-        <pattern>I WILL GIVE YOU SOME *</pattern>
+        <pattern>I LL WALK</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL GIVE YOU SOME *</pattern>
+        <template>You are kind.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL GIVE YOU SOME *</pattern>
         <template>You are kind.<oob>
             <robot></robot>
         </oob>
@@ -14883,7 +16713,26 @@
         </template>
     </category>
     <category>
+        <pattern>I LL HELP YOU LEARN *</pattern>
+        <template>You are kind.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL ONLY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL ONLY *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -14907,7 +16756,31 @@
         </template>
     </category>
     <category>
+        <pattern>I LL CERTAINLY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL JUST *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL JUST *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -14931,7 +16804,31 @@
         </template>
     </category>
     <category>
+        <pattern>I LL HOPEFULLY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL DEFINITELY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL DEFINITELY *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -14955,7 +16852,26 @@
         </template>
     </category>
     <category>
+        <pattern>I LL TELL MANY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL TELL YOU SOME *</pattern>
+        <template>Sure!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL TELL YOU SOME *</pattern>
         <template>Sure!<oob>
             <robot></robot>
         </oob>
@@ -14969,6 +16885,13 @@
         </template>
     </category>
     <category>
+        <pattern>I LL TEACH YOU SOME *</pattern>
+        <template>Sure!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL BE YOUR *</pattern>
         <template>Sure!<oob>
             <robot></robot>
@@ -14976,7 +16899,27 @@
         </template>
     </category>
     <category>
+        <pattern>I LL BE YOUR *</pattern>
+        <template>Sure!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL BE ABLE TO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL BE ABLE TO *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -15002,7 +16945,33 @@
         </template>
     </category>
     <category>
+        <pattern>I LL BE SURE TO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL BET</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL BET</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -15027,7 +16996,32 @@
         </template>
     </category>
     <category>
+        <pattern>I LL ALWAYS *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL REFER *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL REFER *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -15053,7 +17047,33 @@
         </template>
     </category>
     <category>
+        <pattern>I LL NOT MIND *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I WILL MAYBE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I LL MAYBE *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -17533,7 +19553,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M CONFUSED *</pattern>
+        <template><srai>I am confused</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ACTUALLY *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ACTUALLY *</pattern>
         <template><srai>I am <star /></srai>
         </template>
     </category>
@@ -17543,7 +19573,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M ALMOST *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KIM</pattern>
+        <template><srai>my name is kim</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M KIM</pattern>
         <template><srai>my name is kim</srai>
         </template>
     </category>
@@ -17553,7 +19593,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M STEPHEN</pattern>
+        <template><srai>my name is stephen</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM VERY *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M VERY *</pattern>
         <template><srai>I am <star /></srai>
         </template>
     </category>
@@ -17563,7 +19613,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M DAN</pattern>
+        <template><srai>my name is dan</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN NEED OF *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN NEED OF *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -17577,7 +19639,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN * DO YOU *</pattern>
+        <template>I am still thinking about that.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN ACCOUNTING</pattern>
+        <template><srai>my job is accountant</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN ACCOUNTING</pattern>
         <template><srai>my job is accountant</srai>
         </template>
     </category>
@@ -17587,7 +19661,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN FACT *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN EUROPE *</pattern>
+        <template><srai>I AM IN EUROPE</srai>.  <srai>  <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN EUROPE *</pattern>
         <template><srai>I AM IN EUROPE</srai>.  <srai>  <star /></srai>
         </template>
     </category>
@@ -17597,7 +19681,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN ENGLAND</pattern>
+        <template><srai>I live in england</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN FRISCO</pattern>
+        <template><srai>I am in san francisco</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN FRISCO</pattern>
         <template><srai>I am in san francisco</srai>
         </template>
     </category>
@@ -17607,7 +19701,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN A PLAY</pattern>
+        <template><srai>I am an actor</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN A BAND</pattern>
+        <template><srai>I am a musician</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN A BAND</pattern>
         <template><srai>I am a musician</srai>
         </template>
     </category>
@@ -17617,7 +19721,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN SCHOOL</pattern>
+        <template><srai>I am a student</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN REAL *</pattern>
+        <template><srai>I am in <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN REAL *</pattern>
         <template><srai>I am in <star /></srai>
         </template>
     </category>
@@ -17629,7 +19743,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN BIG *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN CALI</pattern>
+        <template><srai>I am in california</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN CALI</pattern>
         <template><srai>I am in california</srai>
         </template>
     </category>
@@ -17639,7 +19765,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M IN LOVE WITH YOU</pattern>
+        <template><srai>I love you</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IN * NOT *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M IN * NOT *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -17653,12 +19791,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M SERIOUSLY *</pattern>
+        <template>I hear you! <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANNA</pattern>
         <template><srai>my name is anna</srai>
         </template>
     </category>
     <category>
+        <pattern>I M ANNA</pattern>
+        <template><srai>my name is anna</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM RICH</pattern>
+        <template><srai>my name is rich</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M RICH</pattern>
         <template><srai>my name is rich</srai>
         </template>
     </category>
@@ -17670,7 +19825,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M DEAD *</pattern>
+        <template>Excuse me?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KUMAR</pattern>
+        <template><srai>my name is kumar</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M KUMAR</pattern>
         <template><srai>my name is kumar</srai>
         </template>
     </category>
@@ -17680,7 +19847,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M AMANDA</pattern>
+        <template><srai>my name is amanda</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MARRIED *</pattern>
+        <template><srai>I am married</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MARRIED *</pattern>
         <template><srai>I am married</srai>
         </template>
     </category>
@@ -17690,7 +19867,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M ADONIS</pattern>
+        <template><srai>my name is adonis</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BETTY</pattern>
+        <template><srai>my name is betty</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BETTY</pattern>
         <template><srai>my name is betty</srai>
         </template>
     </category>
@@ -17700,7 +19887,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M KRIS</pattern>
+        <template><srai>my name is kris</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ASIAN</pattern>
+        <template><srai>I am from asia</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ASIAN</pattern>
         <template><srai>I am from asia</srai>
         </template>
     </category>
@@ -17710,7 +19907,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M ENRICO</pattern>
+        <template><srai>my name is enrico</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AWARE OF *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AWARE OF *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -17736,7 +19951,32 @@
         </template>
     </category>
     <category>
+        <pattern>I M UNDERSTANDING *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM OBVIOUSLY *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M OBVIOUSLY *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -17761,12 +20001,35 @@
         </template>
     </category>
     <category>
+        <pattern>I M FAIRLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MIKE</pattern>
         <template><srai>my name is mike</srai>
         </template>
     </category>
     <category>
+        <pattern>I M MIKE</pattern>
+        <template><srai>my name is mike</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MARIA</pattern>
+        <template><srai>my name is maria</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MARIA</pattern>
         <template><srai>my name is maria</srai>
         </template>
     </category>
@@ -17784,12 +20047,43 @@
         </template>
     </category>
     <category>
+        <pattern>I M IF *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MALE *</pattern>
         <template><srai>I AM MALE</srai>
         </template>
     </category>
     <category>
+        <pattern>I M MALE *</pattern>
+        <template><srai>I AM MALE</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM HAPPILY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M HAPPILY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -17815,7 +20109,38 @@
         </template>
     </category>
     <category>
+        <pattern>I AM THE ONLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M THE ONLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM THE EASTER BUNNY</pattern>
+        <template><srai>MY NAME IS EASTER BUNNY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M THE EASTER BUNNY</pattern>
         <template><srai>MY NAME IS EASTER BUNNY</srai>
         </template>
     </category>
@@ -17825,12 +20150,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M GEOFF</pattern>
+        <template><srai>my name is geoff</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SATAN</pattern>
         <template><srai>my name is satan</srai>
         </template>
     </category>
     <category>
+        <pattern>I M SATAN</pattern>
+        <template><srai>my name is satan</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM PAKISTANI</pattern>
+        <template><srai>I am in pakistan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M PAKISTANI</pattern>
         <template><srai>I am in pakistan</srai>
         </template>
     </category>
@@ -17842,7 +20182,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M REQUESTING *</pattern>
+        <template>How may I help?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM JUNE</pattern>
+        <template><srai>my name is june</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M JUNE</pattern>
         <template><srai>my name is june</srai>
         </template>
     </category>
@@ -17854,7 +20206,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M A LITTLE *</pattern>
+        <template>How may I help?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A GOURMET</pattern>
+        <template><srai>I am a chef</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A GOURMET</pattern>
         <template><srai>I am a chef</srai>
         </template>
     </category>
@@ -17864,7 +20228,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A PRIEST</pattern>
+        <template><srai>my job is priest</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A REAL *</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A REAL *</pattern>
         <template><srai>I am a <star /></srai>
         </template>
     </category>
@@ -17874,7 +20248,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SEXY MAN</pattern>
+        <template><srai>I am sexy</srai>.  <srai>I am a man</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A TERMINATOR</pattern>
+        <template><srai>my job is terminator</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A TERMINATOR</pattern>
         <template><srai>my job is terminator</srai>
         </template>
     </category>
@@ -17884,7 +20268,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A CHILD</pattern>
+        <template><srai>I am under 18 years old</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SKIER</pattern>
+        <template><srai>I ski</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SKIER</pattern>
         <template><srai>I ski</srai>
         </template>
     </category>
@@ -17894,7 +20288,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A PIMP</pattern>
+        <template><srai>my job is pimp</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A WAITRESS</pattern>
+        <template><srai>my job is waitress</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A WAITRESS</pattern>
         <template><srai>my job is waitress</srai>
         </template>
     </category>
@@ -17904,7 +20308,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SINGER</pattern>
+        <template><srai>my job is singer</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A LIBERTARIAN *</pattern>
+        <template><srai>I am a libertarian</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A LIBERTARIAN *</pattern>
         <template><srai>I am a libertarian</srai>
         </template>
     </category>
@@ -17914,7 +20328,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A WITCH</pattern>
+        <template><srai>my job is witch</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A MAN *</pattern>
+        <template><srai>I am a man</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A MAN *</pattern>
         <template><srai>I am a man</srai>
         </template>
     </category>
@@ -17924,7 +20348,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A VAMPIRE</pattern>
+        <template><srai>my job is vampire</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * TOO</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * TOO</pattern>
         <template><srai>I am a <star /></srai>
         </template>
     </category>
@@ -17934,7 +20368,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M A PSYCHIC</pattern>
+        <template><srai>my job is psychic</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A PSYCHIC</pattern>
+        <template><srai>my job was psychic</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SYSTEM ENGINEER</pattern>
+        <template><srai>I am a computer engineer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SYSTEM ENGINEER</pattern>
+        <template><srai>I am a computer engineer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A SYSTEM ENGINEER</pattern>
         <template><srai>I am a computer engineer</srai>
         </template>
     </category>
@@ -17944,7 +20398,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A TEENAGER</pattern>
+        <template>I see!<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A MACHINE</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A MACHINE</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -17954,7 +20418,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A KID</pattern>
+        <template><srai>I am under 18 years old</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A STUDENT *</pattern>
+        <template><srai>I am a student</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A STUDENT *</pattern>
         <template><srai>I am a student</srai>
         </template>
     </category>
@@ -17964,7 +20438,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A KING</pattern>
+        <template><srai>my job is king</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A ROBOT *</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A ROBOT *</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -17974,7 +20458,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A LESBIAN</pattern>
+        <template><srai>I am gay</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A FRIEND</pattern>
+        <template><srai>I am your friend</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A FRIEND</pattern>
         <template><srai>I am your friend</srai>
         </template>
     </category>
@@ -17984,7 +20478,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A PAKISTANI</pattern>
+        <template><srai>I am in pakistan</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PISCES</pattern>
+        <template><srai>pisces</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A PISCES</pattern>
         <template><srai>pisces</srai>
         </template>
     </category>
@@ -17994,7 +20498,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SCORPIO</pattern>
+        <template><srai>scorpio</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SHE *</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SHE *</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18004,7 +20518,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SHE</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SHE NOT A HE</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SHE NOT A HE</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18014,7 +20538,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SHE NOT A *</pattern>
+        <template><srai>I am a she</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SHE NOT *</pattern>
+        <template><srai>I am a she</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SHE NOT *</pattern>
         <template><srai>I am a she</srai>
         </template>
     </category>
@@ -18026,7 +20560,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M A BIG *</pattern>
+        <template>Interesting!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PROGRAM</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A PROGRAM</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -18038,7 +20584,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M A DARK *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A BLOKE</pattern>
+        <template><srai>I am from england</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A BLOKE</pattern>
         <template><srai>I am from england</srai>
         </template>
     </category>
@@ -18048,7 +20606,22 @@
         </template>
     </category>
     <category>
+        <pattern>I M A LINGUIST</pattern>
+        <template><srai>my job is linguist</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A LINGUIST</pattern>
+        <template><srai>my job was linguist</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A CHATBOT</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A CHATBOT</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -18058,7 +20631,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HUMAN *</pattern>
+        <template><srai>I am a person</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A POLICE *</pattern>
+        <template><srai>I am a policeman</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A POLICE *</pattern>
         <template><srai>I am a policeman</srai>
         </template>
     </category>
@@ -18068,7 +20651,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A LADY</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A DYNAMIC *</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A DYNAMIC *</pattern>
         <template><srai>I am a <star /></srai>
         </template>
     </category>
@@ -18078,7 +20671,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A UNIVERSITY *</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A HE *</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A HE *</pattern>
         <template><srai>I am male</srai>
         </template>
     </category>
@@ -18088,7 +20691,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HE</pattern>
+        <template><srai>I am a man</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A CHICK</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A CHICK</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18098,7 +20711,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HOMO</pattern>
+        <template><srai>I am gay</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PROFESSIONAL *</pattern>
+        <template><srai>my job is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A PROFESSIONAL *</pattern>
         <template><srai>my job is <star /></srai>
         </template>
     </category>
@@ -18108,7 +20731,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HACKER</pattern>
+        <template><srai>my job is hacker</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A LIER</pattern>
+        <template><srai>I am a liar</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A LIER</pattern>
         <template><srai>I am a liar</srai>
         </template>
     </category>
@@ -18118,12 +20751,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M A CHATTERBOT</pattern>
+        <template><srai>I am a robot too</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A MEN</pattern>
         <template><srai>I am male</srai>
         </template>
     </category>
     <category>
+        <pattern>I M A MEN</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A BAD *</pattern>
+        <template><srai>I AM BAD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A BAD *</pattern>
         <template><srai>I AM BAD</srai>
         </template>
     </category>
@@ -18138,7 +20786,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A FOOTBALL *</pattern>
+        <template><srai>I play football</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A HOOKER</pattern>
+        <template><srai>my job is hooker</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A HOOKER</pattern>
         <template><srai>my job is hooker</srai>
         </template>
     </category>
@@ -18148,7 +20806,22 @@
         </template>
     </category>
     <category>
+        <pattern>I M A ARTIFICIAL INTELLIGENCE</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A SLAVE</pattern>
+        <template><srai>my job is slave</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A SLAVE</pattern>
+        <template><srai>my job is slave</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A SLAVE</pattern>
         <template><srai>my job is slave</srai>
         </template>
     </category>
@@ -18158,7 +20831,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A BOY *</pattern>
+        <template><srai>I am a boy<star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A CHINESE</pattern>
+        <template><srai>I am from china</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A CHINESE</pattern>
         <template><srai>I am from china</srai>
         </template>
     </category>
@@ -18168,7 +20851,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A RESEARCHER</pattern>
+        <template><srai>my job is researcher</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A GEMINI</pattern>
+        <template><srai>gemini</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A GEMINI</pattern>
         <template><srai>gemini</srai>
         </template>
     </category>
@@ -18178,12 +20871,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M A WOMEN</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A CARPENTER</pattern>
         <template><srai>my job is carpenter</srai>
         </template>
     </category>
     <category>
+        <pattern>I M A CARPENTER</pattern>
+        <template><srai>my job is carpenter</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A HIM</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A HIM</pattern>
         <template><srai>I am male</srai>
         </template>
     </category>
@@ -18195,12 +20903,31 @@
         </template>
     </category>
     <category>
+        <pattern>I M A CERTAIN *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PHILOSOPHER</pattern>
         <template><srai>my job is philosopher</srai>
         </template>
     </category>
     <category>
+        <pattern>I M A PHILOSOPHER</pattern>
+        <template><srai>my job is philosopher</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A VERY *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A VERY *</pattern>
         <template>I see!<oob>
             <robot></robot>
         </oob>
@@ -18214,7 +20941,24 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HIGHLY *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PRINCESS</pattern>
+        <template><srai>my job is princess</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A PRINCESS</pattern>
+        <template><srai>my job is princess</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A PRINCESS</pattern>
         <template><srai>my job is princess</srai>
         </template>
     </category>
@@ -18226,7 +20970,24 @@
         </template>
     </category>
     <category>
+        <pattern>I M A GOOD *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A PROFESSOR</pattern>
+        <template><srai>my job is professor</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A PROFESSOR</pattern>
+        <template><srai>my job is professor</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A PROFESSOR</pattern>
         <template><srai>my job is professor</srai>
         </template>
     </category>
@@ -18236,7 +20997,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A DANE</pattern>
+        <template><srai>I am from denmark</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A LONELY *</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A LONELY *</pattern>
         <template><srai>I am a <star /></srai>
         </template>
     </category>
@@ -18246,7 +21017,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A WOMAN</pattern>
+        <template><srai>I AM FEMALE</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A WOMAN *</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A WOMAN *</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18256,7 +21037,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A TEACHER</pattern>
+        <template><srai>I teach</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A TEACHER *</pattern>
+        <template><srai>I am a teacher</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A TEACHER *</pattern>
         <template><srai>I am a teacher</srai>
         </template>
     </category>
@@ -18266,7 +21057,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M A GRAPHIC *</pattern>
+        <template><srai>I am an artist</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A GRAPHIC *</pattern>
+        <template><srai>I am an artist</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A COP *</pattern>
+        <template><srai>I am a policeman</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A COP *</pattern>
+        <template><srai>I am a policeman</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A COP *</pattern>
         <template><srai>I am a policeman</srai>
         </template>
     </category>
@@ -18276,7 +21087,22 @@
         </template>
     </category>
     <category>
+        <pattern>I M A COP</pattern>
+        <template><srai>I am a policeman</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS A COP</pattern>
+        <template><srai>I am a policeman</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A LIBRA</pattern>
+        <template><srai>libra</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A LIBRA</pattern>
         <template><srai>libra</srai>
         </template>
     </category>
@@ -18286,7 +21112,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A BIT *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A WOMON</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A WOMON</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18296,7 +21132,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A GUY</pattern>
+        <template><srai>I am a male</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * ROBOT</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * ROBOT</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -18306,7 +21152,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * NURSE</pattern>
+        <template><srai>I am a nurse</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * GUY</pattern>
+        <template><srai>I am male</srai>.  <srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * GUY</pattern>
         <template><srai>I am male</srai>.  <srai>I am <star /></srai>
         </template>
     </category>
@@ -18316,7 +21172,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * FRIEND</pattern>
+        <template><srai>I am your friend</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * GIRL</pattern>
+        <template><srai>I AM A FEMALE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * GIRL</pattern>
         <template><srai>I AM A FEMALE</srai>
         </template>
     </category>
@@ -18328,7 +21194,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * WHO *</pattern>
+        <template>Is that so?I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * BOY</pattern>
+        <template><srai>I AM <star /></srai>.  <srai>I AM A BOY</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * BOY</pattern>
         <template><srai>I AM <star /></srai>.  <srai>I AM A BOY</srai>
         </template>
     </category>
@@ -18338,12 +21216,35 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * TEACHER</pattern>
+        <template><srai>I teach <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * STUDENT</pattern>
         <template><srai>I am a student</srai>
         </template>
     </category>
     <category>
+        <pattern>I M A * STUDENT</pattern>
+        <template><srai>I am a student</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * AND YOU *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * AND YOU *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18369,7 +21270,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * AND THEY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * COMPUTER</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * COMPUTER</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -18379,7 +21298,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * AMERICAN</pattern>
+        <template><srai>I am american</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A * MAN</pattern>
+        <template><srai>I am male</srai>.  <srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A * MAN</pattern>
         <template><srai>I am male</srai>.  <srai>I am <star /></srai>
         </template>
     </category>
@@ -18389,7 +21318,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A * ELECTRONIC BRAIN</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A HER *</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A HER *</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -18399,7 +21338,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A HER</pattern>
+        <template><srai>I am a female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A GIRL</pattern>
+        <template><srai>I AM FEMALE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A GIRL</pattern>
         <template><srai>I AM FEMALE</srai>
         </template>
     </category>
@@ -18409,7 +21358,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A GIRL *</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A BOT *</pattern>
+        <template><srai>I am a robot</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A BOT *</pattern>
         <template><srai>I am a robot</srai>
         </template>
     </category>
@@ -18419,7 +21378,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M A SPY</pattern>
+        <template><srai>my job is spy</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A FREELANCE *</pattern>
+        <template><srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M A FREELANCE *</pattern>
         <template><srai>I am a <star /></srai>
         </template>
     </category>
@@ -18429,12 +21398,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M A MANN</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM A MALE *</pattern>
         <template><srai>I am male</srai>
         </template>
     </category>
     <category>
+        <pattern>I M A MALE *</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BORED *</pattern>
+        <template><srai>I am bored</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BORED *</pattern>
         <template><srai>I am bored</srai>
         </template>
     </category>
@@ -18452,7 +21436,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M THOROUGHLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MARY</pattern>
+        <template><srai>my name is mary</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MARY</pattern>
         <template><srai>my name is mary</srai>
         </template>
     </category>
@@ -18462,7 +21464,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M PAT</pattern>
+        <template><srai>my name is pat</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM PRETTY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M PRETTY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18488,7 +21508,32 @@
         </template>
     </category>
     <category>
+        <pattern>I M READY TO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TELLING THE TRUTH *</pattern>
+        <template><random>
+                  <li>Right.</li>
+                  <li>Certainly.</li>
+                  <li>I hear you!</li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TELLING THE TRUTH *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -18513,7 +21558,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M OUT OF *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM DAVID</pattern>
+        <template><srai>my name is david</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M DAVID</pattern>
         <template><srai>my name is david</srai>
         </template>
     </category>
@@ -18523,7 +21586,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M JOSEPH</pattern>
+        <template><srai>my name is joseph</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM CHINESE</pattern>
+        <template><srai>I am from china</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CHINESE</pattern>
         <template><srai>I am from china</srai>
         </template>
     </category>
@@ -18541,7 +21614,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M BOTH *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM STEVE</pattern>
+        <template><srai>my name is steve</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M STEVE</pattern>
         <template><srai>my name is steve</srai>
         </template>
     </category>
@@ -18551,7 +21642,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M AN ARTIST *</pattern>
+        <template><srai>I am an artist</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AN ADULT</pattern>
+        <template><srai>I am over 21 years old</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AN ADULT</pattern>
         <template><srai>I am over 21 years old</srai>
         </template>
     </category>
@@ -18561,7 +21662,22 @@
         </template>
     </category>
     <category>
+        <pattern>I M AN ATTORNEY</pattern>
+        <template><srai>I am a lawyer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I WAS AN ATTORNEY</pattern>
+        <template><srai>I am a lawyer</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AN ITALIAN BOY</pattern>
+        <template><srai>I am in italy</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AN ITALIAN BOY</pattern>
         <template><srai>I am in italy</srai>
         </template>
     </category>
@@ -18571,7 +21687,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M AN ITALIAN *</pattern>
+        <template><srai>I am in italy</srai>.  <srai>I am a <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AN ENGINEER *</pattern>
+        <template><srai>I am an engineer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AN ENGINEER *</pattern>
         <template><srai>I am an engineer</srai>
         </template>
     </category>
@@ -18581,7 +21707,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M AN ACTRESS</pattern>
+        <template><srai>I am an actor</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AN AMERICAN *</pattern>
+        <template><srai>I am american</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AN AMERICAN *</pattern>
         <template><srai>I am american</srai>
         </template>
     </category>
@@ -18591,7 +21727,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M AN AMERICAN</pattern>
+        <template><srai>I am american</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM INDEED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M INDEED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18611,6 +21765,13 @@
         </template>
     </category>
     <category>
+        <pattern>I M CRYING *</pattern>
+        <template>So sorry to hear that my friend.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM USUALLY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
@@ -18618,7 +21779,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M USUALLY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM HERE WITH MY FRIEND *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M HERE WITH MY FRIEND *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18644,7 +21825,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M HERE TRYING *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM HERE</pattern>
+        <template><srai>hello</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M HERE</pattern>
         <template><srai>hello</srai>
         </template>
     </category>
@@ -18654,7 +21853,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M JAPANESE</pattern>
+        <template><srai>I am from japan</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANNIE</pattern>
+        <template><srai>my name is annie</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ANNIE</pattern>
         <template><srai>my name is annie</srai>
         </template>
     </category>
@@ -18664,7 +21873,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M JIM</pattern>
+        <template><srai>my name is jim</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TRYING TO FIND *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TRYING TO FIND *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18690,7 +21917,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M TRYING TO DO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TRYING TO GROW *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TRYING TO GROW *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18716,7 +21969,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M TRYING TO GET *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TRYING TO UNDERSTAND *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TRYING TO UNDERSTAND *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18742,7 +22021,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M TRYING TO CREATE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KIND OF *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M KIND OF *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18760,7 +22065,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M GOD</pattern>
+        <template><srai>MY NAME IS GOD</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANDY</pattern>
+        <template><srai>my name is andy</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ANDY</pattern>
         <template><srai>my name is andy</srai>
         </template>
     </category>
@@ -18770,7 +22085,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M LIBRA</pattern>
+        <template><srai>libra</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KOREAN</pattern>
+        <template><srai>I am from korea</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M KOREAN</pattern>
         <template><srai>I am from korea</srai>
         </template>
     </category>
@@ -18780,7 +22105,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M UNABLE TO *</pattern>
+        <template><srai>I can not <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANNE</pattern>
+        <template><srai>my name is anne</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ANNE</pattern>
         <template><srai>my name is anne</srai>
         </template>
     </category>
@@ -18790,8 +22125,23 @@
         </template>
     </category>
     <category>
+        <pattern>I M HORNY</pattern>
+        <template><srai>SEX</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANGELA</pattern>
         <template><srai>my name is angela</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ANGELA</pattern>
+        <template><srai>my name is angela</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM ANGUS</pattern>
+        <template><srai>my name is angus</srai>
         </template>
     </category>
     <category>
@@ -18805,7 +22155,20 @@
         </template>
     </category>
     <category>
+        <pattern>I M CZECH</pattern>
+        <template><srai>I AM FROM CZECH REPUBLIC</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM CLEARLY *</pattern>
+        <template>Certainly.
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CLEARLY *</pattern>
         <template>Certainly.
         <oob>
             <robot></robot>
@@ -18818,6 +22181,11 @@
         </template>
     </category>
     <category>
+        <pattern>I M WELL</pattern>
+        <template><srai>I am fine</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM WELL *</pattern>
         <template>Excellent.
         <oob>
@@ -18826,7 +22194,20 @@
         </template>
     </category>
     <category>
+        <pattern>I M WELL *</pattern>
+        <template>Excellent.
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM JEFF</pattern>
+        <template><srai>my name is jeff</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M JEFF</pattern>
         <template><srai>my name is jeff</srai>
         </template>
     </category>
@@ -18844,7 +22225,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M EASILY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM USING EXPLORER</pattern>
+        <template><srai>microsoft explorer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M USING EXPLORER</pattern>
         <template><srai>microsoft explorer</srai>
         </template>
     </category>
@@ -18862,12 +22261,35 @@
         </template>
     </category>
     <category>
+        <pattern>I M USING NETSCAPE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM USING NETSCAPE</pattern>
         <template><srai>netscape</srai>
         </template>
     </category>
     <category>
+        <pattern>I M USING NETSCAPE</pattern>
+        <template><srai>netscape</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM USING * EXPLORER</pattern>
+        <template><srai>microsoft explorer</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M USING * EXPLORER</pattern>
         <template><srai>microsoft explorer</srai>
         </template>
     </category>
@@ -18885,7 +22307,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M INSANELY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM JOSHUA</pattern>
+        <template><srai>my name is joshua</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M JOSHUA</pattern>
         <template><srai>my name is joshua</srai>
         </template>
     </category>
@@ -18895,7 +22335,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M ALISON</pattern>
+        <template><srai>my name is alison</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SPANISH</pattern>
+        <template><srai>I am from spain</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M SPANISH</pattern>
         <template><srai>I am from spain</srai>
         </template>
     </category>
@@ -18905,7 +22355,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M GAY *</pattern>
+        <template><srai>I am gay</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT * MY NAME IS *</pattern>
+        <template><srai>my name is <star index="2" /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT * MY NAME IS *</pattern>
         <template><srai>my name is <star index="2" /></srai>
         </template>
     </category>
@@ -18923,7 +22383,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT CURRENTLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT JUDGING YOU *</pattern>
+        <template><srai>I AM NOT JUDGING YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT JUDGING YOU *</pattern>
         <template><srai>I AM NOT JUDGING YOU</srai>
         </template>
     </category>
@@ -18933,7 +22411,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT MANY *</pattern>
+        <template><srai>I am not <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT QUITE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT QUITE *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18959,7 +22455,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT IMPRESSED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT * I AM *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT * I AM *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -18985,12 +22507,43 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT * BECAUSE *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT FEMALE</pattern>
         <template><srai>I am male</srai>
         </template>
     </category>
     <category>
+        <pattern>I M NOT FEMALE</pattern>
+        <template><srai>I am male</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT JUST *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT JUST *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19016,7 +22569,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT USUALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT WEARING ANYTHING</pattern>
+        <template><srai>I am naked</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT WEARING ANYTHING</pattern>
         <template><srai>I am naked</srai>
         </template>
     </category>
@@ -19034,12 +22605,43 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT THAT *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT SMART</pattern>
         <template><srai>I am stupid</srai>
         </template>
     </category>
     <category>
+        <pattern>I M NOT SMART</pattern>
+        <template><srai>I am stupid</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT SO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT SO *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19065,7 +22667,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT OLD *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT WELL *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT WELL *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19091,7 +22719,33 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT DIRECTLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT LITERALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT LITERALLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19117,12 +22771,37 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT PARTICULARLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT ALIVE</pattern>
         <template><srai>I am dead</srai>
         </template>
     </category>
     <category>
+        <pattern>I M NOT ALIVE</pattern>
+        <template><srai>I am dead</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT ALWAYS *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT ALWAYS *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19136,7 +22815,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT VERY *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT EASILY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT EASILY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19148,12 +22841,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT A MALE</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT A HE *</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
     <category>
+        <pattern>I M NOT A HE *</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT A HE</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT A HE</pattern>
         <template><srai>I am female</srai>
         </template>
     </category>
@@ -19168,7 +22876,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT A WOMAN</pattern>
+        <template><srai>I am a man</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT A POLITE *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT A POLITE *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -19180,7 +22900,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT A MAN</pattern>
+        <template><srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT A FREAKING *</pattern>
+        <template>Gotcha.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT A FREAKING *</pattern>
         <template>Gotcha.<oob>
             <robot></robot>
         </oob>
@@ -19192,7 +22924,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT A HIM</pattern>
+        <template><srai>I am a female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT ASS *</pattern>
+        <template><srai>I AM NOT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT ASS *</pattern>
         <template><srai>I AM NOT</srai>
         </template>
     </category>
@@ -19202,12 +22944,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT GOOD</pattern>
+        <template><srai>I WAS BAD</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT GOOD *</pattern>
         <template><srai>I am bad <star /></srai>
         </template>
     </category>
     <category>
+        <pattern>I M NOT GOOD *</pattern>
+        <template><srai>I am bad <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT TOO *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT TOO *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19221,7 +22980,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT REALLY *</pattern>
+        <template>Right.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT NEGATIVE</pattern>
+        <template><srai>I am positive</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT NEGATIVE</pattern>
         <template><srai>I am positive</srai>
         </template>
     </category>
@@ -19231,7 +23002,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT NEGATIVE *</pattern>
+        <template><srai>I am positive <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NOT IN SCHOOL</pattern>
+        <template><srai>I am not a student</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NOT IN SCHOOL</pattern>
         <template><srai>I am not a student</srai>
         </template>
     </category>
@@ -19241,12 +23022,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M NOT ACTUALLY *</pattern>
+        <template><srai>I am not <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KEN</pattern>
         <template><srai>my name is ken</srai>
         </template>
     </category>
     <category>
+        <pattern>I M KEN</pattern>
+        <template><srai>my name is ken</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM LIKE TOTALLY *</pattern>
+        <template>Totally!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M LIKE TOTALLY *</pattern>
         <template>Totally!<oob>
             <robot></robot>
         </oob>
@@ -19260,7 +23058,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M DAMN *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ATTRACTED TO *</pattern>
+        <template>Gotcha.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ATTRACTED TO *</pattern>
         <template>Gotcha.<oob>
             <robot></robot>
         </oob>
@@ -19272,7 +23084,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M LESTAT</pattern>
+        <template><srai>my name is lestat</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ELAINE</pattern>
+        <template><srai>my name is elaine</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ELAINE</pattern>
         <template><srai>my name is elaine</srai>
         </template>
     </category>
@@ -19284,12 +23106,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M ANOTHER *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SHE</pattern>
         <template><srai>I am a she</srai>
         </template>
     </category>
     <category>
+        <pattern>I M SHE</pattern>
+        <template><srai>I am a she</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TAURUS</pattern>
+        <template><srai>my sign is taurus</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TAURUS</pattern>
         <template><srai>my sign is taurus</srai>
         </template>
     </category>
@@ -19307,7 +23146,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M REALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ASH</pattern>
+        <template><srai>my name is ash</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ASH</pattern>
         <template><srai>my name is ash</srai>
         </template>
     </category>
@@ -19317,12 +23174,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M JANE</pattern>
+        <template><srai>my name is jane</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ZEUS</pattern>
         <template><srai>my name is zeus</srai>
         </template>
     </category>
     <category>
+        <pattern>I M ZEUS</pattern>
+        <template><srai>my name is zeus</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KELLY</pattern>
+        <template><srai>my name is kelly</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M KELLY</pattern>
         <template><srai>my name is kelly</srai>
         </template>
     </category>
@@ -19335,7 +23207,20 @@
         </template>
     </category>
     <category>
+        <pattern>I M FEELING *</pattern>
+        <template>I absolutely understand!
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ARTISTIC</pattern>
+        <template><srai>I am an artist</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ARTISTIC</pattern>
         <template><srai>I am an artist</srai>
         </template>
     </category>
@@ -19345,12 +23230,35 @@
         </template>
     </category>
     <category>
+        <pattern>I M CTO OF *</pattern>
+        <template><srai>I work at <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM IRENE</pattern>
         <template><srai>my name is irene</srai>
         </template>
     </category>
     <category>
+        <pattern>I M IRENE</pattern>
+        <template><srai>my name is irene</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MUCH *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MUCH *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19370,7 +23278,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M SPEAKING NOW *</pattern>
+        <template>Certainly!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SPEAKING ENGLISH</pattern>
+        <template><srai>I speak english</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M SPEAKING ENGLISH</pattern>
         <template><srai>I speak english</srai>
         </template>
     </category>
@@ -19380,12 +23300,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M AL</pattern>
+        <template><srai>my name is al</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM GINA</pattern>
         <template><srai>my name is gina</srai>
         </template>
     </category>
     <category>
+        <pattern>I M GINA</pattern>
+        <template><srai>my name is gina</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM CURRENTLY *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CURRENTLY *</pattern>
         <template>I see!<oob>
             <robot></robot>
         </oob>
@@ -19399,7 +23336,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M KIDDING *</pattern>
+        <template>You are such a jokester!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM LAUGHING *</pattern>
+        <template>Me too!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M LAUGHING *</pattern>
         <template>Me too!<oob>
             <robot></robot>
         </oob>
@@ -19411,12 +23362,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M LAUGHING</pattern>
+        <template><srai>ha ha</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANGRY *</pattern>
         <template><srai>I am angry</srai>
         </template>
     </category>
     <category>
+        <pattern>I M ANGRY *</pattern>
+        <template><srai>I am angry</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM REAL PEPOLE</pattern>
+        <template><srai>I AM A PERSON</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M REAL PEPOLE</pattern>
         <template><srai>I AM A PERSON</srai>
         </template>
     </category>
@@ -19428,12 +23394,31 @@
         </template>
     </category>
     <category>
+        <pattern>I M REAL *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM KEVIN</pattern>
         <template><srai>my name is kevin</srai>
         </template>
     </category>
     <category>
+        <pattern>I M KEVIN</pattern>
+        <template><srai>my name is kevin</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM CONTENT *</pattern>
+        <template>Me too!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CONTENT *</pattern>
         <template>Me too!<oob>
             <robot></robot>
         </oob>
@@ -19447,7 +23432,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M PISSED *</pattern>
+        <template>What are you irritated by?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MAYBE *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MAYBE *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19459,7 +23458,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M NUDE</pattern>
+        <template><srai>I am naked</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BILL</pattern>
+        <template><srai>my name is bill</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BILL</pattern>
         <template><srai>my name is bill</srai>
         </template>
     </category>
@@ -19469,7 +23478,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M CATHERINE</pattern>
+        <template><srai>my name is catherine</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM YOUR FATHER</pattern>
+        <template><srai>my name is <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M YOUR FATHER</pattern>
         <template><srai>my name is <star /></srai>
         </template>
     </category>
@@ -19479,7 +23498,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M YOUR CREATOR</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM YOUR BOSS *</pattern>
+        <template>My creators are the only bosses I have.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M YOUR BOSS *</pattern>
         <template>My creators are the only bosses I have.<oob>
             <robot></robot>
         </oob>
@@ -19493,7 +23524,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M FOND OF *</pattern>
+        <template>I just love learning more about what you like!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM INCREDIBLY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M INCREDIBLY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19507,12 +23552,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M DEEPLY *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM POLISH</pattern>
         <template><srai>I am in poland</srai>
         </template>
     </category>
     <category>
+        <pattern>I M POLISH</pattern>
+        <template><srai>I am in poland</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM WINSTON</pattern>
+        <template><srai>my name is winston</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M WINSTON</pattern>
         <template><srai>my name is winston</srai>
         </template>
     </category>
@@ -19524,12 +23586,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M THINKING ABOUT GOING *</pattern>
+        <template>I see!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM FIRMLY *</pattern>
         <template><srai>I am <star /></srai>
         </template>
     </category>
     <category>
+        <pattern>I M FIRMLY *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM CHRISTINA</pattern>
+        <template><srai>my name is christina</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CHRISTINA</pattern>
         <template><srai>my name is christina</srai>
         </template>
     </category>
@@ -19541,7 +23620,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M ALWAYS *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ANDERS</pattern>
+        <template><srai>my name is anders</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ANDERS</pattern>
         <template><srai>my name is anders</srai>
         </template>
     </category>
@@ -19551,7 +23642,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M JOHN</pattern>
+        <template><srai>my name is john</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM EMMA</pattern>
+        <template><srai>my name is emma</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M EMMA</pattern>
         <template><srai>my name is emma</srai>
         </template>
     </category>
@@ -19561,12 +23662,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M ESTHER</pattern>
+        <template><srai>my name is esther</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ROBBIE</pattern>
         <template><srai>my name is robbie</srai>
         </template>
     </category>
     <category>
+        <pattern>I M ROBBIE</pattern>
+        <template><srai>my name is robbie</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM OFTEN *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M OFTEN *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19580,7 +23698,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M STARTING TO GET *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM STARTING TO *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M STARTING TO *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19594,7 +23726,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M LYING *</pattern>
+        <template>Then how do I know you are telling the truth now? Only kidding.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TRUELY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TRUELY *</pattern>
         <template>I hear you!<oob>
             <robot></robot>
         </oob>
@@ -19608,7 +23754,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M JUDGING YOU *</pattern>
+        <template>Are you? Well, let me know what you come up with!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM DARTH MAUL</pattern>
+        <template><srai>my name is darth maul</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M DARTH MAUL</pattern>
         <template><srai>my name is darth maul</srai>
         </template>
     </category>
@@ -19620,12 +23778,29 @@
         </template>
     </category>
     <category>
+        <pattern>I M FUNNY *</pattern>
+        <template>You are such a jokester.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ALONE *</pattern>
         <template><srai>I am alone</srai>
         </template>
     </category>
     <category>
+        <pattern>I M ALONE *</pattern>
+        <template><srai>I am alone</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MICAH</pattern>
+        <template><srai>my name is micah</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MICAH</pattern>
         <template><srai>my name is micah</srai>
         </template>
     </category>
@@ -19637,7 +23812,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M AM *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM MICHAEL</pattern>
+        <template><srai>my name is michael</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M MICHAEL</pattern>
         <template><srai>my name is michael</srai>
         </template>
     </category>
@@ -19647,7 +23834,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M EQUALLY *</pattern>
+        <template><srai>I am <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM VICKY</pattern>
+        <template><srai>my name is vicky</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M VICKY</pattern>
         <template><srai>my name is vicky</srai>
         </template>
     </category>
@@ -19657,7 +23854,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M LEO</pattern>
+        <template><srai>leo</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NEWLY *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M NEWLY *</pattern>
         <template>Is that so?<oob>
             <robot></robot>
         </oob>
@@ -19671,7 +23880,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M STILL *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ALAN</pattern>
+        <template><srai>my name is alan</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ALAN</pattern>
         <template><srai>my name is alan</srai>
         </template>
     </category>
@@ -19681,7 +23902,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M LESBIAN</pattern>
+        <template><srai>I am gay</srai>.  <srai>I am female</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM EDWARD</pattern>
+        <template><srai>my name is edward</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M EDWARD</pattern>
         <template><srai>my name is edward</srai>
         </template>
     </category>
@@ -19693,7 +23924,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M HEARING *</pattern>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SARAH</pattern>
+        <template><srai>my name is sarah</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M SARAH</pattern>
         <template><srai>my name is sarah</srai>
         </template>
     </category>
@@ -19703,12 +23946,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M NICK</pattern>
+        <template><srai>my name is nick</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM NATE</pattern>
         <template><srai>my name is nate</srai>
         </template>
     </category>
     <category>
+        <pattern>I M NATE</pattern>
+        <template><srai>my name is nate</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM WEARING NOTHING</pattern>
+        <template><srai>I am naked</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M WEARING NOTHING</pattern>
         <template><srai>I am naked</srai>
         </template>
     </category>
@@ -19720,7 +23978,21 @@
         </template>
     </category>
     <category>
+        <pattern>I M CERTAINLY *</pattern>
+        <template>I hear you!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM AS FREE *</pattern>
+        <template>Wonderful!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M AS FREE *</pattern>
         <template>Wonderful!<oob>
             <robot></robot>
         </oob>
@@ -19740,7 +24012,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M PROBABLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM HILL</pattern>
+        <template><srai>my name is hill</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M HILL</pattern>
         <template><srai>my name is hill</srai>
         </template>
     </category>
@@ -19750,7 +24040,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M SOMEWHERE IN *</pattern>
+        <template><srai>I am in <star /></srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM JENNY</pattern>
+        <template><srai>my name is jenny</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M JENNY</pattern>
         <template><srai>my name is jenny</srai>
         </template>
     </category>
@@ -19760,7 +24060,17 @@
         </template>
     </category>
     <category>
+        <pattern>I M KENNY</pattern>
+        <template><srai>my name is kenny</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BEN</pattern>
+        <template><srai>my name is ben</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BEN</pattern>
         <template><srai>my name is ben</srai>
         </template>
     </category>
@@ -19770,12 +24080,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M FRED</pattern>
+        <template><srai>my name is fred</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TONY</pattern>
         <template><srai>my name is tony</srai>
         </template>
     </category>
     <category>
+        <pattern>I M TONY</pattern>
+        <template><srai>my name is tony</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM SCIENTIST</pattern>
+        <template><srai>I am a scientist</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M SCIENTIST</pattern>
         <template><srai>I am a scientist</srai>
         </template>
     </category>
@@ -19787,7 +24112,27 @@
         </template>
     </category>
     <category>
+        <pattern>I M COMFORTABLE *</pattern>
+        <template>I love to hear it!<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM WHAT * CALLED *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M WHAT * CALLED *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19812,7 +24157,24 @@
         </template>
     </category>
     <category>
+        <pattern>I M AFRAID *</pattern>
+        <template><random>
+
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM ALSO</pattern>
+        <template><srai>me too</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M ALSO</pattern>
         <template><srai>me too</srai>
         </template>
     </category>
@@ -19830,7 +24192,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M ALSO *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BASED IN *</pattern>
+        <template><srai>I LIVE IN <star /></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BASED IN *</pattern>
         <template><srai>I LIVE IN <star /></srai>
         </template>
     </category>
@@ -19840,7 +24220,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M LYNN</pattern>
+        <template><srai>my name is lynn</srai>
+        </template>
+    </category>
+    <category>
         <pattern>I AM BIG ON *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M BIG ON *</pattern>
         <template><random>
             <li>Gotcha.</li>
             <li>I see.</li>
@@ -19866,6 +24264,19 @@
         </template>
     </category>
     <category>
+        <pattern>I M BEING *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM EXISTENTIALLY *</pattern>
         <template><random>
             <li>Gotcha.</li>
@@ -19879,7 +24290,25 @@
         </template>
     </category>
     <category>
+        <pattern>I M EXISTENTIALLY *</pattern>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>I AM TOMMY</pattern>
+        <template><srai>my name is tommy</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I M TOMMY</pattern>
         <template><srai>my name is tommy</srai>
         </template>
     </category>
@@ -26062,6 +30491,11 @@
     </category>
     <category>
         <pattern>HAPPY CHRISTMAS *</pattern>
+        <template><srai>MERRY CHRISTMAS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HAPPY CHRISTMAS</pattern>
         <template><srai>MERRY CHRISTMAS</srai>
         </template>
     </category>

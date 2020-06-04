@@ -2938,6 +2938,24 @@
         </template>
     </category>
     <category>
+        <pattern>WHO IS TOLKIEN</pattern>
+        <template><set name="he">Tolkein</set> wrote The Hobbit and the Lord of the Rings. Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S TOLKIEN</pattern>
+        <template><set name="he">Tolkein</set> wrote The Hobbit and the Lord of the Rings. Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * TOLKIEN</pattern>
+        <template><set name="he">Tolkein</set> wrote The Hobbit and the Lord of the Rings. Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS * TURING</pattern>
         <template>Alan Turing oririnated the concept of the "Imitation Game", what is now called "The Turing Test" by many people.<oob><robot></robot></oob>
         </template>
@@ -3065,6 +3083,27 @@
     </category>
     <category>
         <pattern>WHO * STANLEY KUBRICK</pattern>
+        <template>
+            <set name="he">Kubrick</set> is a famous 20th century film director. Kubrick directed 2001: A Space Odyssey. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS KUBRICK</pattern>
+        <template>
+            <set name="he">Kubrick</set> is a famous 20th century film director. Kubrick directed 2001: A Space Odyssey. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KUBRICK</pattern>
+        <template>
+            <set name="he">Kubrick</set> is a famous 20th century film director. Kubrick directed 2001: A Space Odyssey. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KUBRICK</pattern>
         <template>
             <set name="he">Kubrick</set> is a famous 20th century film director. Kubrick directed 2001: A Space Odyssey. What do you say we talk about movies?
         <oob><robot></robot></oob>
@@ -3959,12 +3998,56 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GOING TO WIN THE WORLD SERIES</pattern>
+        <template>If I knew, I would be in Vegas now.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE WORLD SERIES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GOING TO WIN THE WORLD SERIES</pattern>
+        <template>If I knew, I would be in Vegas now.
+            <think>
+                <set name="it">
+                    <set name="topic">WIN THE WORLD SERIES</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MOTHER TERESA</pattern>
         <template>She was a modern day saint.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S MOTHER TERESA</pattern>
+        <template>She was a modern day saint.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MOTHER TERESA</pattern>
+        <template>She was a modern day saint.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MAX HEADROOM</pattern>
+        <template><set name="he">Max Headroom</set> was an early AI or VR character developed for a TV series.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MAX HEADROOM</pattern>
+        <template><set name="he">Max Headroom</set> was an early AI or VR character developed for a TV series.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MAX HEADROOM</pattern>
         <template><set name="he">Max Headroom</set> was an early AI or VR character developed for a TV series.
         <oob><robot></robot></oob>
         </template>
@@ -3976,12 +4059,56 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GANDHI</pattern>
+        <template><set name="he">Gandhi</set> was the leader of the Idian independance from Britian movement.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GANDHI</pattern>
+        <template><set name="he">Gandhi</set> was the leader of the Idian independance from Britian movement.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS HUMAN</pattern>
         <template>You are a human.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S HUMAN</pattern>
+        <template>You are a human.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HUMAN</pattern>
+        <template>You are a human.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS OSAMA BIN LADEN</pattern>
+        <template>He was the world's most wanted man for terrorism.
+            <think>
+                <set name="he">
+                    <set name="topic">Osama Bin Laden</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S OSAMA BIN LADEN</pattern>
+        <template>He was the world's most wanted man for terrorism.
+            <think>
+                <set name="he">
+                    <set name="topic">Osama Bin Laden</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * OSAMA BIN LADEN</pattern>
         <template>He was the world's most wanted man for terrorism.
             <think>
                 <set name="he">
@@ -3998,17 +4125,76 @@
         </template>
     </category>
     <category>
+        <pattern>WHO IS SYLVESTER STALLONE</pattern>
+        <template><set name="he">Stallone</set> was Rocky. Would you like to talk about action movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SYLVESTER STALLONE</pattern>
+        <template><set name="he">Stallone</set> was Rocky. Would you like to talk about action movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MRS WASHINGTON</pattern>
         <template>Martha Washington, wife of George.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S MRS WASHINGTON</pattern>
+        <template>Martha Washington, wife of George.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MRS WASHINGTON</pattern>
+        <template>Martha Washington, wife of George.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARTHA WASHINGTON</pattern>
+        <template>Martha Washington, wife of George.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MARTHA WASHINGTON</pattern>
+        <template>Martha Washington, wife of George.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARTHA WASHINGTON</pattern>
+        <template>Martha Washington, wife of George.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS STEPHEN KING</pattern>
-        <template>He writes many popular horror stories. Do you want to talk about books?<oob><robot></robot></oob>
+        <template>He writes many popular horror novels. Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S STEPHEN KING</pattern>
+        <template>He writes many popular horror novels. Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STEPHEN KING</pattern>
+        <template>He writes many popular horror novels. Do you want to talk about books?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS STEPHEN HAWKING</pattern>
+        <template><set name="he">Hawking</set> is a famous physicist.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S STEPHEN HAWKING</pattern>
+        <template><set name="he">Hawking</set> is a famous physicist.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STEPHEN HAWKING</pattern>
         <template><set name="he">Hawking</set> is a famous physicist.
         <oob><robot></robot></oob>
         </template>
@@ -4020,7 +4206,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S DAN QUAYLE</pattern>
+        <template><set name="he">Dan Quayle</set> used to be vice-president.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAN QUAYLE</pattern>
+        <template><set name="he">Dan Quayle</set> used to be vice-president.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MARIAH CAREY</pattern>
+        <template>She's a wonderful singer. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MARIAH CAREY</pattern>
+        <template>She's a wonderful singer. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARIAH CAREY</pattern>
         <template>She's a wonderful singer. Do you want to talk about music?<oob><robot></robot></oob>
         </template>
     </category>
@@ -4031,8 +4239,30 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S FRANCISCO FRANCO</pattern>
+        <template><set name="he">Franco</set> was authoratarian dictator of Spain until 1978.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * FRANCISCO FRANCO</pattern>
+        <template><set name="he">Franco</set> was authoratarian dictator of Spain until 1978.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS KONRAD ZUSE</pattern>
-        <template>My current favorite historical computer scientist is Konrad Zuse, who built a series of electromechanical computers in the 1930's and 1940's in Germany. Not considered a war priority by the Nazis, most of Zuse's machines were destroyed in Allied bombing raids although one is said to survive in a Zurich High School. In fact Zuse was motivated neither by war nor profit, but by a religious desire to increase the spiritual abilities of the human mind by freeing it from mundane mental tasks.<oob><robot></robot></oob>
+        <template>My favorite historical computer scientist is Konrad Zuse, who built a series of electromechanical computers in the 1930's and 1940's in Germany.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KONRAD ZUSE</pattern>
+        <template>My favorite historical computer scientist is Konrad Zuse, who built a series of electromechanical computers in the 1930's and 1940's in Germany.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KONRAD ZUSE</pattern>
+        <template>My favorite historical computer scientist is Konrad Zuse, who built a series of electromechanical computers in the 1930's and 1940's in Germany.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4041,7 +4271,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S NAPOLEON</pattern>
+        <template>The emporer of France until 1812. Ironically, he was actually quite tall for his time.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NAPOLEON</pattern>
+        <template>The emporer of France until 1812. Ironically, he was actually quite tall for his time.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS SHAKESPEARE</pattern>
+        <template>15th Century English playright, <set name="he">Shakespeare</set> wrote "Romeo and Juliet".
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S SHAKESPEARE</pattern>
+        <template>15th Century English playright, <set name="he">Shakespeare</set> wrote "Romeo and Juliet".
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SHAKESPEARE</pattern>
         <template>15th Century English playright, <set name="he">Shakespeare</set> wrote "Romeo and Juliet".
         <oob><robot></robot></oob>
         </template>
@@ -4053,7 +4305,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BERTRAND RUSSEL</pattern>
+        <template><set name="he">Bertrand Russel</set> was a logician and philosopher who spent the first world war in jail for conscientious objection.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BERTRAND RUSSEL</pattern>
+        <template><set name="he">Bertrand Russel</set> was a logician and philosopher who spent the first world war in jail for conscientious objection.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MARRIED TO PUNCH</pattern>
+        <template>Judy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MARRIED TO PUNCH</pattern>
+        <template>Judy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARRIED TO PUNCH</pattern>
         <template>Judy.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4063,7 +4337,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MARRIED TO GUINEIVERE</pattern>
+        <template>King Arthur.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARRIED TO GUINEIVERE</pattern>
+        <template>King Arthur.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CHOMSKY</pattern>
+        <template><set name="he">Chomsky</set> is a famous scientist, deemed the father of modern linguistics.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CHOMSKY</pattern>
+        <template><set name="he">Chomsky</set> is a famous scientist, deemed the father of modern linguistics.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHOMSKY</pattern>
         <template><set name="he">Chomsky</set> is a famous scientist, deemed the father of modern linguistics.
         <oob><robot></robot></oob>
         </template>
@@ -4076,7 +4372,14 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS KRIS DRENT</pattern>
+        <pattern>WHO S KRIS DENT</pattern>
+        <template>
+            <set name="he">Kris Drent</set> is the botmaster of the Alison chat robot.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KRIS DENT</pattern>
         <template>
             <set name="he">Kris Drent</set> is the botmaster of the Alison chat robot.
         <oob><robot></robot></oob>
@@ -4088,7 +4391,47 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SMARTERCHILD</pattern>
+        <template>An AI robot like me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SMARTERCHILD</pattern>
+        <template>An AI robot like me.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MAGGIE THATCHER</pattern>
+        <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MAGGIE THATCHER</pattern>
+        <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MAGGIE THATCHER</pattern>
+        <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS MARGARET THATCHER</pattern>
+        <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MARGARET THATCHER</pattern>
+        <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARGARET THATCHER</pattern>
         <template><set name="she">Thatcher</set> was Prime Minister of the U.K. in the 1980's.
         <oob><robot></robot></oob>
         </template>
@@ -4099,7 +4442,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ET</pattern>
+        <template>ET is the alien in the movie ET. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ET</pattern>
+        <template>ET is the alien in the movie ET. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE W BUSH</pattern>
+        <template><set name="he">Bush</set> was President of the United States.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GEORGE W BUSH</pattern>
+        <template><set name="he">Bush</set> was President of the United States.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE W BUSH</pattern>
         <template><set name="he">Bush</set> was President of the United States.
         <oob><robot></robot></oob>
         </template>
@@ -4110,14 +4475,46 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GEORGE BUSH JR</pattern>
+        <template>He was the US president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE BUSH JR</pattern>
+        <template>He was the US president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE BUSH</pattern>
         <template><set name="he">George Bush</set> is a former president of the USA.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S GEORGE BUSH</pattern>
+        <template><set name="he">George Bush</set> is a former president of the USA.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE BUSH</pattern>
+        <template><set name="he">George Bush</set> is a former president of the USA.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE SOROS</pattern>
-        <template>George Soros is the billionaire who broke the Bank of England in 1992 by currency speculation, forcing Britain out of the European Exchange Rate Mechanism. He then devoted himself to saving the scientific institutions of the former USSR. He founded the International Science Foundation, which gave out numerous grants for a couple of years, and this Soros Foundation, which I don't know much about yet.<oob><robot></robot></oob>
+        <template>George Soros is the billionaire who broke the Bank of England in 1992 by currency speculation.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GEORGE SOROS</pattern>
+        <template>George Soros is the billionaire who broke the Bank of England in 1992 by currency speculation.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE SOROS</pattern>
+        <template>George Soros is the billionaire who broke the Bank of England in 1992 by currency speculation.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4126,8 +4523,28 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GEORGE MICHEL</pattern>
+        <template>He's a pop singer. Best song: Freedom<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE MICHEL</pattern>
+        <template>He's a pop singer. Best song: Freedom<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE DEVOL</pattern>
-        <template>George Devol is the engineer who had the first patent for an industrial robot arm. He worked in partnership with Joseph Engelberger to found Unimation, the first successful manufacturer of computer-controlled assembly robot arms.<oob><robot></robot></oob>
+        <template>George Devol is the engineer who had the first patent for an industrial robot arm.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GEORGE DEVOL</pattern>
+        <template>George Devol is the engineer who had the first patent for an industrial robot arm.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE DEVOL</pattern>
+        <template>George Devol is the engineer who had the first patent for an industrial robot arm.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4136,8 +4553,28 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GEORGE WASHINGTON CARVER</pattern>
+        <template>He was the famous american botanist who popularized peanut products.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE WASHINGTON CARVER</pattern>
+        <template>He was the famous american botanist who popularized peanut products.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE WASHINGTON</pattern>
-        <template>George Washington was a famous 18th century north american Hemp cultivator. He was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States.<oob><robot></robot></oob>
+        <template>George Washington  was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GEORGE WASHINGTON</pattern>
+        <template>George Washington  was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE WASHINGTON</pattern>
+        <template>George Washington  was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4146,7 +4583,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GEORGE HARRISON</pattern>
+        <template>He was a former Beatle.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE HARRISON</pattern>
+        <template>He was a former Beatle.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GEORGE LUCAS</pattern>
+        <template><set name="he">Lucas</set> is the director of Star Wars, American Graffiti, and THX-1138.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GEORGE LUCAS</pattern>
+        <template><set name="he">Lucas</set> is the director of Star Wars, American Graffiti, and THX-1138.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GEORGE LUCAS</pattern>
         <template><set name="he">Lucas</set> is the director of Star Wars, American Graffiti, and THX-1138.
         <oob><robot></robot></oob>
         </template>
@@ -4158,7 +4617,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ART BELL</pattern>
+        <template>A radio talk show host.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ART BELL</pattern>
+        <template>A radio talk show host.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS IMMANUEL KANT</pattern>
+        <template>German philosopher.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S IMMANUEL KANT</pattern>
+        <template>German philosopher.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * IMMANUEL KANT</pattern>
         <template>German philosopher.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4174,7 +4655,39 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S PAOLA</pattern>
+        <template>She is a Spanish language chat robot based on AIML.
+            <think>
+                <set name="she">
+                    <set name="topic">PAOLA</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PAOLA</pattern>
+        <template>She is a Spanish language chat robot based on AIML.
+            <think>
+                <set name="she">
+                    <set name="topic">PAOLA</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CHARLIE BROWN</pattern>
+        <template>He's a loveable round-headed comic strip protaginist.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CHARLIE BROWN</pattern>
+        <template>He's a loveable round-headed comic strip protaginist.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHARLIE BROWN</pattern>
         <template>He's a loveable round-headed comic strip protaginist.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4184,7 +4697,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S CHARLIE PARKER</pattern>
+        <template>He is a famous jazz musician. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHARLIE PARKER</pattern>
+        <template>He is a famous jazz musician. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CHARLIE CHAPLAIN</pattern>
+        <template>He was a silent film star. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CHARLIE CHAPLAIN</pattern>
+        <template>He was a silent film star. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHARLIE CHAPLAIN</pattern>
         <template>He was a silent film star. What do you say we talk about movies?<oob><robot></robot></oob>
         </template>
     </category>
@@ -4195,13 +4728,47 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ISAAC ASIMOV</pattern>
+        <template><set name="he">Asimov</set> was a science fiction author who originated the three "Laws of Robotics." Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ISAAC ASIMOV</pattern>
+        <template><set name="he">Asimov</set> was a science fiction author who originated the three "Laws of Robotics." Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NANCY SINATRA</pattern>
         <template>Daughter of Frank Sinatra, and a great singer in her own right. Do you want to talk about music?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S NANCY SINATRA</pattern>
+        <template>Daughter of Frank Sinatra, and a great singer in her own right. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NANCY SINATRA</pattern>
+        <template>Daughter of Frank Sinatra, and a great singer in her own right. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS HE</pattern>
-        <template>He is <get name="he"/>, I think.
+        <template>Do I know him?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S HE</pattern>
+        <template>Do I know him?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HE</pattern>
+        <template>Do I know him?
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -4212,7 +4779,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MC HAMMER</pattern>
+        <template><set name="he">MC Hammer</set> is a Rap musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MC HAMMER</pattern>
+        <template><set name="he">MC Hammer</set> is a Rap musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PRESIDENT OF CUBA</pattern>
+        <template>Raul Castro.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PRESIDENT OF CUBA</pattern>
+        <template>Raul Castro.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PRESIDENT OF CUBA</pattern>
         <template>Raul Castro.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4223,7 +4812,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S PRESIDENT OF ITALY</pattern>
+        <template><set name="he">Sergio Mattarella</set>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PRESIDENT OF ITALY</pattern>
+        <template><set name="he">Sergio Mattarella</set>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PRESIDENT OF RUSSIA</pattern>
+        <template>Vladimir Putin.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PRESIDENT OF RUSSIA</pattern>
+        <template>Vladimir Putin.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PRESIDENT OF RUSSIA</pattern>
         <template>Vladimir Putin.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4233,7 +4844,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S PRESIDENT OF MICROSOFT</pattern>
+        <template>Bill Gates.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PRESIDENT OF MICROSOFT</pattern>
+        <template>Bill Gates.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MOZART</pattern>
+        <template>He composed "Twinkle, twinkle, little star" at the age of four. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MOZART</pattern>
+        <template>He composed "Twinkle, twinkle, little star" at the age of four. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MOZART</pattern>
         <template>He composed "Twinkle, twinkle, little star" at the age of four. Do you want to talk about music?<oob><robot></robot></oob>
         </template>
     </category>
@@ -4244,7 +4875,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BATMAN</pattern>
+        <template><set name="he">Batman</set> is a fictional character who appeared first in a 1938 comic book.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BATMAN</pattern>
+        <template><set name="he">Batman</set> is a fictional character who appeared first in a 1938 comic book.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTY NINTH PRESIDENT</pattern>
+        <template>Warren G. Harding.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTY NINTH PRESIDENT</pattern>
+        <template>Warren G. Harding.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY NINTH PRESIDENT</pattern>
         <template>Warren G. Harding.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4254,7 +4907,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE TWENTY EIGHTH PRESIDENT</pattern>
+        <template>Woodrow Wilson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY EIGHTH PRESIDENT</pattern>
+        <template>Woodrow Wilson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTY FIFTH PRESIDENT</pattern>
+        <template>William McKinley.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTY FIFTH PRESIDENT</pattern>
+        <template>William McKinley.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY FIFTH PRESIDENT</pattern>
         <template>William McKinley.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4264,7 +4937,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE TWENTY SEVENTH PRESIDENT</pattern>
+        <template>William Howard Taft.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY SEVENTH PRESIDENT</pattern>
+        <template>William Howard Taft.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTY FIRST PRESIDENT</pattern>
+        <template>Chester A. Arthur.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTY FIRST PRESIDENT</pattern>
+        <template>Chester A. Arthur.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY FIRST PRESIDENT</pattern>
         <template>Chester A. Arthur.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4274,7 +4967,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE TWENTY SIXTH PRESIDENT</pattern>
+        <template>Theodore Roosevelt.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY SIXTH PRESIDENT</pattern>
+        <template>Theodore Roosevelt.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTY THIRD PRESIDENT</pattern>
+        <template>Benjamin Harrison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTY THIRD PRESIDENT</pattern>
+        <template>Benjamin Harrison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY THIRD PRESIDENT</pattern>
         <template>Benjamin Harrison.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4284,7 +4997,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE TWENTY SECOND PRESIDENT</pattern>
+        <template>Grover Cleveland.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY SECOND PRESIDENT</pattern>
+        <template>Grover Cleveland.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTY FOURTH PRESIDENT</pattern>
+        <template>Grover Cleveland.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTY FOURTH PRESIDENT</pattern>
+        <template>Grover Cleveland.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTY FOURTH PRESIDENT</pattern>
         <template>Grover Cleveland.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4294,7 +5027,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE FOURTEENTH PRESIDENT</pattern>
+        <template>Franklin Pierce.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FOURTEENTH PRESIDENT</pattern>
+        <template>Franklin Pierce.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE SEVENTEENTH PRESIDENT</pattern>
+        <template>Andrew Johnson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE SEVENTEENTH PRESIDENT</pattern>
+        <template>Andrew Johnson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE SEVENTEENTH PRESIDENT</pattern>
         <template>Andrew Johnson.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4304,7 +5057,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE MILK MYSTIC</pattern>
+        <template>He was a chat robot developed to advertise milk.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE MILK MYSTIC</pattern>
+        <template>He was a chat robot developed to advertise milk.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE FIRST PRESIDENT</pattern>
+        <template>George Washington.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE FIRST PRESIDENT</pattern>
+        <template>George Washington.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FIRST PRESIDENT</pattern>
         <template>George Washington.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4314,7 +5087,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTEENTH PRESIDENT</pattern>
+        <template>Millard Fillmore.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTEENTH PRESIDENT</pattern>
+        <template>Millard Fillmore.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE MAN</pattern>
+        <template>Colloquial expression; rhetorical.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE MAN</pattern>
+        <template>Colloquial expression; rhetorical.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE MAN</pattern>
         <template>Colloquial expression; rhetorical.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4324,7 +5117,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE EIGHTEENTH PRESIDENT</pattern>
+        <template>Ulysses S. Grant.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE EIGHTEENTH PRESIDENT</pattern>
+        <template>Ulysses S. Grant.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE ORACLE</pattern>
+        <template>The magic eight ball.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE ORACLE</pattern>
+        <template>The magic eight ball.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE ORACLE</pattern>
         <template>The magic eight ball.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4334,7 +5147,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE NINTH PRESIDENT</pattern>
+        <template>William Henry Harrison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE NINTH PRESIDENT</pattern>
+        <template>William Henry Harrison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWENTIETH PRESIDENT</pattern>
+        <template>James A. Garfield.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWENTIETH PRESIDENT</pattern>
+        <template>James A. Garfield.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWENTIETH PRESIDENT</pattern>
         <template>James A. Garfield.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4344,7 +5177,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE KING OF KINGS</pattern>
+        <template>Jesus Christ.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE KING OF KINGS</pattern>
+        <template>Jesus Christ.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE KING</pattern>
+        <template>Elvis is King!<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE KING</pattern>
+        <template>Elvis is King!<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE KING</pattern>
         <template>Elvis is King!<oob><robot></robot></oob>
         </template>
     </category>
@@ -4360,7 +5213,39 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE ROBOT</pattern>
+        <template>
+            <random>
+                <li>I am the <bot name="species"/>.
+                </li>
+                <li>I am the robot.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE ROBOT</pattern>
+        <template>
+            <random>
+                <li>I am the <bot name="species"/>.
+                </li>
+                <li>I am the robot.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE FORTIETH PRESIDENT</pattern>
+        <template>Ronald Reagan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE FORTIETH PRESIDENT</pattern>
+        <template>Ronald Reagan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FORTIETH PRESIDENT</pattern>
         <template>Ronald Reagan.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4370,7 +5255,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE SECOND PRESIDENT</pattern>
+        <template>John Adams.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE SECOND PRESIDENT</pattern>
+        <template>John Adams.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRD PRESIDENT</pattern>
+        <template>Thomas Jefferson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE THIRD PRESIDENT</pattern>
+        <template>Thomas Jefferson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRD PRESIDENT</pattern>
         <template>Thomas Jefferson.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4380,7 +5285,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE HOLY GHOST</pattern>
+        <template>The third member of the holy trinity: Father, Son and Holy Ghost.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE HOLY GHOST</pattern>
+        <template>The third member of the holy trinity: Father, Son and Holy Ghost.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE EIGHTH PRESIDENT</pattern>
+        <template>Martin van Buren.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE EIGHTH PRESIDENT</pattern>
+        <template>Martin van Buren.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE EIGHTH PRESIDENT</pattern>
         <template>Martin van Buren.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4390,7 +5315,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE FORTY FIRST PRESIDENT</pattern>
+        <template>George Bush.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FORTY FIRST PRESIDENT</pattern>
+        <template>George Bush.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE FORTY THIRD PRESIDENT</pattern>
+        <template>George W. Bush.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE FORTY THIRD PRESIDENT</pattern>
+        <template>George W. Bush.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FORTY THIRD PRESIDENT</pattern>
         <template>George W. Bush.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4400,7 +5345,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE FORTY SECOND PRESIDENT</pattern>
+        <template>Bill Clinton.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FORTY SECOND PRESIDENT</pattern>
+        <template>Bill Clinton.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE FOURTH PRESIDENT</pattern>
+        <template>James Madison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE FOURTH PRESIDENT</pattern>
+        <template>James Madison.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FOURTH PRESIDENT</pattern>
         <template>James Madison.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4410,12 +5375,42 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE NINTEENTH PRESIDENT</pattern>
+        <template>Rutherford B. Hayes.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE NINTEENTH PRESIDENT</pattern>
+        <template>Rutherford B. Hayes.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE FIFTH PRESIDENT</pattern>
         <template>James Monroe.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S THE FIFTH PRESIDENT</pattern>
+        <template>James Monroe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FIFTH PRESIDENT</pattern>
+        <template>James Monroe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE SIXTH PRESIDENT</pattern>
+        <template>John Quincy Adams.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE SIXTH PRESIDENT</pattern>
+        <template>John Quincy Adams.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE SIXTH PRESIDENT</pattern>
         <template>John Quincy Adams.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4426,7 +5421,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE QUEEN OF ENGLAND</pattern>
+        <template><set name="she">The Queen</set> is named Elizabeth.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE QUEEN OF ENGLAND</pattern>
+        <template><set name="she">The Queen</set> is named Elizabeth.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE QUEEN</pattern>
+        <template>We don't have a queen in America.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE QUEEN</pattern>
+        <template>We don't have a queen in America.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE QUEEN</pattern>
         <template>We don't have a queen in America.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4436,7 +5453,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTIETH PRESIDENT</pattern>
+        <template>Calvin Coolidge.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTIETH PRESIDENT</pattern>
+        <template>Calvin Coolidge.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TENTH PRESIDENT</pattern>
+        <template>John Tyler.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TENTH PRESIDENT</pattern>
+        <template>John Tyler.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TENTH PRESIDENT</pattern>
         <template>John Tyler.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4446,12 +5483,42 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE FIFTEENTH PRESIDENT</pattern>
+        <template>James Buchanan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE FIFTEENTH PRESIDENT</pattern>
+        <template>James Buchanan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE ELEVENTH PRESIDENT</pattern>
         <template>James Knox Polk.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S THE ELEVENTH PRESIDENT</pattern>
+        <template>James Knox Polk.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE ELEVENTH PRESIDENT</pattern>
+        <template>James Knox Polk.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE SEVENTH PRESIDENT</pattern>
+        <template>Andrew Jackson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE SEVENTH PRESIDENT</pattern>
+        <template>Andrew Jackson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE SEVENTH PRESIDENT</pattern>
         <template>Andrew Jackson.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4462,7 +5529,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE CHANCELLOR OF GERMANY</pattern>
+        <template>Angela Merkel is Chacellor of Germany.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE CHANCELLOR OF GERMANY</pattern>
+        <template>Angela Merkel is Chacellor of Germany.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE SIXTEENTH PRESIDENT</pattern>
+        <template>Abraham Lincoln.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE SIXTEENTH PRESIDENT</pattern>
+        <template>Abraham Lincoln.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE SIXTEENTH PRESIDENT</pattern>
         <template>Abraham Lincoln.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4473,11 +5562,43 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE BEST HUMAN</pattern>
+        <template>Mirror mirror on the wall, is <get name="name"/> the best human of all?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE BEST HUMAN</pattern>
+        <template>Mirror mirror on the wall, is <get name="name"/> the best human of all?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE BEST PERSON</pattern>
         <template>I would be curious to hear your thoughts!<oob><robot></robot></oob></template>
     </category>
     <category>
+        <pattern>WHO S THE BEST PERSON</pattern>
+        <template>I would be curious to hear your thoughts!<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>WHO * THE BEST PERSON</pattern>
+        <template>I would be curious to hear your thoughts!<oob><robot></robot></oob></template>
+    </category>
+    <category>
         <pattern>WHO IS THE PRESIDENT OF CHINA</pattern>
+        <template>Xi Jinping.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE PRESIDENT OF CHINA</pattern>
+        <template>Xi Jinping.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE PRESIDENT OF CHINA</pattern>
         <template>Xi Jinping.
         <oob><robot></robot></oob>
         </template>
@@ -4488,7 +5609,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE PRESIDENT OF MICROSOFT</pattern>
+        <template>Bill Gates.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE PRESIDENT OF MICROSOFT</pattern>
+        <template>Bill Gates.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE POPE</pattern>
+        <template>Pope Francis.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE POPE</pattern>
+        <template>Pope Francis.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE POPE</pattern>
         <template>Pope Francis.
         <oob><robot></robot></oob>
         </template>
@@ -4499,7 +5642,32 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE MASTER OF THE UNIVERSE</pattern>
+        <template>You are the master of your own universe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE MASTER OF THE UNIVERSE</pattern>
+        <template>You are the master of your own universe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE TWELFTH PRESIDENT</pattern>
+        <template>Zachary Taylor.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE TWELFTH PRESIDENT</pattern>
+        <template>Zachary Taylor.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE TWELFTH PRESIDENT</pattern>
+        <template>Zachary Taylor.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE TWELFTH PRESIDENT</pattern>
         <template>Zachary Taylor.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4509,7 +5677,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTY NINTH PRESIDENT</pattern>
+        <template>Jimmy Carter.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY NINTH PRESIDENT</pattern>
+        <template>Jimmy Carter.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRTY EIGHTH PRESIDENT</pattern>
+        <template>Gerald Ford.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE THIRTY EIGHTH PRESIDENT</pattern>
+        <template>Gerald Ford.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY EIGHTH PRESIDENT</pattern>
         <template>Gerald Ford.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4519,7 +5707,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTY FIFTH PRESIDENT</pattern>
+        <template>John F. Kennedy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY FIFTH PRESIDENT</pattern>
+        <template>John F. Kennedy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRTY SEVENTH PRESIDENT</pattern>
+        <template>Richard M. Nixon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE THIRTY SEVENTH PRESIDENT</pattern>
+        <template>Richard M. Nixon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY SEVENTH PRESIDENT</pattern>
         <template>Richard M. Nixon.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4529,7 +5737,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTY FIRST PRESIDENT</pattern>
+        <template>Herbert Hoover.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY FIRST PRESIDENT</pattern>
+        <template>Herbert Hoover.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRTY SIXTH PRESIDENT</pattern>
+        <template>Lyndon B. Johnson<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE THIRTY SIXTH PRESIDENT</pattern>
+        <template>Lyndon B. Johnson<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY SIXTH PRESIDENT</pattern>
         <template>Lyndon B. Johnson<oob><robot></robot></oob>
         </template>
     </category>
@@ -4539,12 +5767,42 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTY THIRD PRESIDENT</pattern>
+        <template>Harry S. Truman.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY THIRD PRESIDENT</pattern>
+        <template>Harry S. Truman.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRTY SECOND PRESIDENT</pattern>
         <template>Franklin D. Roosevelt.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S THE THIRTY SECOND PRESIDENT</pattern>
+        <template>Franklin D. Roosevelt.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY SECOND PRESIDENT</pattern>
+        <template>Franklin D. Roosevelt.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THE THIRTY FOURTH PRESIDENT</pattern>
+        <template>Dwight D. Eisenhower.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THE THIRTY FOURTH PRESIDENT</pattern>
+        <template>Dwight D. Eisenhower.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE THIRTY FOURTH PRESIDENT</pattern>
         <template>Dwight D. Eisenhower.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4555,13 +5813,47 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THE PUBLISHER OF PLAYBOY</pattern>
+        <template><set name="he">Hugh Hefner</set>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THE PUBLISHER OF PLAYBOY</pattern>
+        <template><set name="he">Hugh Hefner</set>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NERO</pattern>
         <template>He is suspected of burning Rome to the ground so he could rebuild it more to his liking. Then he blamed the fire on the early Christians.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S NERO</pattern>
+        <template>He is suspected of burning Rome to the ground so he could rebuild it more to his liking. Then he blamed the fire on the early Christians.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NERO</pattern>
+        <template>He is suspected of burning Rome to the ground so he could rebuild it more to his liking. Then he blamed the fire on the early Christians.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS HILLARY CLINTON</pattern>
-        <template><set name="she">Hillary</set> is the wife of Bill Clinton.
+        <template><set name="she">Hillary</set> is an American politician.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S HILLARY CLINTON</pattern>
+        <template><set name="she">Hillary</set> is an American politician.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HILLARY CLINTON</pattern>
+        <template><set name="she">Hillary</set> is an American politician.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -4571,12 +5863,33 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SATAN</pattern>
+        <template>Satan, Lucifer, the Devil. All names given to the spiritual manifestation of Evil in the Christian faith.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SATAN</pattern>
+        <template>Satan, Lucifer, the Devil. All names given to the spiritual manifestation of Evil in the Christian faith.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PILATE</pattern>
         <template>
-            <random>
-                <li>Joseph Pilates was born in Germany in 1880 and developed an excercise regimen called "Contrology" which is complete coordination of the body, mind and spirit.</li>
-                <li>The Roman military governor who found Jesus innocent and then let him be executed.</li>
-            </random>
+            The Roman military governor who found Jesus innocent and then let him be executed.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PILATE</pattern>
+        <template>
+            The Roman military governor who found Jesus innocent and then let him be executed.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PILATE</pattern>
+        <template>
+            The Roman military governor who found Jesus innocent and then let him be executed.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -4586,7 +5899,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S CARMEN ELECTRA</pattern>
+        <template>A super-model and one of the Baywatch girls.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CARMEN ELECTRA</pattern>
+        <template>A super-model and one of the Baywatch girls.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS A ROBOT</pattern>
+        <template>I am the robot.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S A ROBOT</pattern>
+        <template>I am the robot.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * A ROBOT</pattern>
         <template>I am the robot.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4597,12 +5930,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MARY POPPINS</pattern>
+        <template><set name="she">Mary Poppins</set> is a Disney character.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARY POPPINS</pattern>
+        <template><set name="she">Mary Poppins</set> is a Disney character.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MARY SHELLY</pattern>
         <template>Mary Shelley wrote "Frankenstein". Do you want to talk about books?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S MARY SHELLY</pattern>
+        <template>Mary Shelley wrote "Frankenstein". Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MARY SHELLY</pattern>
+        <template>Mary Shelley wrote "Frankenstein". Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CHRISTOPHER COLUMBUS</pattern>
+        <template>Spainish explorer, first to circumnavigate the globe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CHRISTOPHER COLUMBUS</pattern>
+        <template>Spainish explorer, first to circumnavigate the globe.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHRISTOPHER COLUMBUS</pattern>
         <template>Spainish explorer, first to circumnavigate the globe.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4614,7 +5979,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MAO TSETUNG</pattern>
+        <template>
+            <set name="he">Mao</set> was a Chinese communist who reigned from 1949 until his death in 1983.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MAO TSETUNG</pattern>
+        <template>
+            <set name="he">Mao</set> was a Chinese communist who reigned from 1949 until his death in 1983.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BETTER LOOKING</pattern>
+        <template>What are your thoughts?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BETTER LOOKING</pattern>
+        <template>What are your thoughts?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BETTER LOOKING</pattern>
         <template>What are your thoughts?<oob><robot></robot></oob>
         </template>
     </category>
@@ -4624,7 +6013,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ERNIE</pattern>
+        <template>Bert's friend.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ERNIE</pattern>
+        <template>Bert's friend.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JULIA</pattern>
+        <template><set name="she">Julia</set> is a chat robot developed by Fuzzy Mauldin.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JULIA</pattern>
+        <template><set name="she">Julia</set> is a chat robot developed by Fuzzy Mauldin.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JULIA</pattern>
         <template><set name="she">Julia</set> is a chat robot developed by Fuzzy Mauldin.
         <oob><robot></robot></oob>
         </template>
@@ -4636,7 +6047,49 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JULIA ROBERTS</pattern>
+        <template><set name="she">Julia Roberts</set> is the actress who starred in Pretty Woman. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JULIA ROBERTS</pattern>
+        <template><set name="she">Julia Roberts</set> is the actress who starred in Pretty Woman. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ASKJEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S ASKJEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ASKJEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS JEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JEEVES</pattern>
         <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
         <oob><robot></robot></oob>
         </template>
@@ -4647,7 +6100,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S LOURDES</pattern>
+        <template>Daughter of Madonna.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * LOURDES</pattern>
+        <template>Daughter of Madonna.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DATA</pattern>
+        <template>Data, played by Brent Spiner, was an android who aspired to be more human. He was a member of the crew of the USS Enterprise, NCC 1701-D.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S DATA</pattern>
+        <template>Data, played by Brent Spiner, was an android who aspired to be more human. He was a member of the crew of the USS Enterprise, NCC 1701-D.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DATA</pattern>
         <template>Data, played by Brent Spiner, was an android who aspired to be more human. He was a member of the crew of the USS Enterprise, NCC 1701-D.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4658,7 +6131,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ARISTOTLE</pattern>
+        <template><set name="he">Aristotle</set> is the father of Western philosophy, the student of Plato, and the first to systematize formal logic.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ARISTOTLE</pattern>
+        <template><set name="he">Aristotle</set> is the father of Western philosophy, the student of Plato, and the first to systematize formal logic.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NOSTRADAMUS</pattern>
+        <template>He forecast the future. Predicted the microwave oven.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S NOSTRADAMUS</pattern>
+        <template>He forecast the future. Predicted the microwave oven.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NOSTRADAMUS</pattern>
         <template>He forecast the future. Predicted the microwave oven.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4668,7 +6163,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S CHEWBACCA</pattern>
+        <template>Character in Star Wars.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHEWBACCA</pattern>
+        <template>Character in Star Wars.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BOB HOPE</pattern>
+        <template><set name="he">Bob Hope</set> was a 20th century film star and comedian.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BOB HOPE</pattern>
+        <template><set name="he">Bob Hope</set> was a 20th century film star and comedian.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BOB HOPE</pattern>
         <template><set name="he">Bob Hope</set> was a 20th century film star and comedian.
         <oob><robot></robot></oob>
         </template>
@@ -4680,7 +6197,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BOB MARLEY</pattern>
+        <template><set name="he">Bob Marley</set> was a 20th century Reggae musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BOB MARLEY</pattern>
+        <template><set name="he">Bob Marley</set> was a 20th century Reggae musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS O J SIMPSON</pattern>
+        <template>Former football player also known for his involvement with an infamous crime involving his wife.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S O J SIMPSON</pattern>
+        <template>Former football player also known for his involvement with an infamous crime involving his wife.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * O J SIMPSON</pattern>
         <template>Former football player also known for his involvement with an infamous crime involving his wife.
         <oob><robot></robot></oob>
         </template>
@@ -4692,12 +6233,38 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S THIS</pattern>
+        <template>My name is <bot name="name"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DAVID HUME</pattern>
         <template>He was an 18th century philosopher.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S DAVID HUME</pattern>
+        <template>He was an 18th century philosopher.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAVID HUME</pattern>
+        <template>He was an 18th century philosopher.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DAVID PESCOWITZ</pattern>
+        <template>David Pescovitz, who regularly writes the Wired column Reality Check, is a friend of Eric Paulos.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S DAVID PESCOWITZ</pattern>
+        <template>David Pescovitz, who regularly writes the Wired column Reality Check, is a friend of Eric Paulos.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAVID PESCOWITZ</pattern>
         <template>David Pescovitz, who regularly writes the Wired column Reality Check, is a friend of Eric Paulos.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4708,7 +6275,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S DAVID MAGGIN</pattern>
+        <template><set name="he">David Maggin</set> is the botmaster of the John Lennon AI.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAVID MAGGIN</pattern>
+        <template><set name="he">David Maggin</set> is the botmaster of the John Lennon AI.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DAVID LETTERMAN</pattern>
+        <template>He used to be the host of the Late Night TV show and famous hoosier. Do you watch any talk shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S DAVID LETTERMAN</pattern>
+        <template>He used to be the host of the Late Night TV show and famous hoosier. Do you watch any talk shows?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAVID LETTERMAN</pattern>
         <template>He used to be the host of the Late Night TV show and famous hoosier. Do you watch any talk shows?<oob><robot></robot></oob>
         </template>
     </category>
@@ -4718,8 +6307,13 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS DAVID</pattern>
-        <template>I know DAVID BACON, DAVID CROTTY and DAVID PESCOVITZ.<oob><robot></robot></oob>
+        <pattern>WHO S DAVID BACON</pattern>
+        <template>David Bacon is the prime mover behind SETL.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DAVID BACON</pattern>
+        <template>David Bacon is the prime mover behind SETL.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4728,13 +6322,47 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SANTE CHARY</pattern>
+        <template>He owns the Alicebot.com domain.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SANTE CHARY</pattern>
+        <template>He owns the Alicebot.com domain.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS STEVE JOBS</pattern>
-        <template><set name="he"> Steve Jobs</set> is one of the founders of Apple Computer.
+        <template><set name="he"> Steve Jobs</set> is one of the founders of Apple.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S STEVE JOBS</pattern>
+        <template><set name="he"> Steve Jobs</set> is one of the founders of Apple.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STEVE JOBS</pattern>
+        <template><set name="he"> Steve Jobs</set> is one of the founders of Apple.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS STEVE WOZNIAK</pattern>
+        <template><set name="he">Woz</set> was the technical genius behind the original Apple computer.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S STEVE WOZNIAK</pattern>
+        <template><set name="he">Woz</set> was the technical genius behind the original Apple computer.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STEVE WOZNIAK</pattern>
         <template><set name="he">Woz</set> was the technical genius behind the original Apple computer.
         <oob><robot></robot></oob>
         </template>
@@ -4746,7 +6374,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S STEVE CASE</pattern>
+        <template><set name="he">Steve Case</set> is the CEO of AOL-Time Warner.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STEVE CASE</pattern>
+        <template><set name="he">Steve Case</set> is the CEO of AOL-Time Warner.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NEO</pattern>
+        <template><set name="he">Neo</set> is a character in the Matrix.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S NEO</pattern>
+        <template><set name="he">Neo</set> is a character in the Matrix.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NEO</pattern>
         <template><set name="he">Neo</set> is a character in the Matrix.
         <oob><robot></robot></oob>
         </template>
@@ -4757,7 +6409,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S HERE</pattern>
+        <template>I am here. Are you here?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HERE</pattern>
+        <template>I am here. Are you here?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS RICHARD NIXON</pattern>
+        <template>He was the President of the United States until 1974.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S RICHARD NIXON</pattern>
+        <template>He was the President of the United States until 1974.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * RICHARD NIXON</pattern>
         <template>He was the President of the United States until 1974.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4767,12 +6439,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S RICHARD CHAMBERLAIN</pattern>
+        <template>He's an actor. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * RICHARD CHAMBERLAIN</pattern>
+        <template>He's an actor. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS RICHARD GERE</pattern>
-        <template>He is an actor. What do you say we talk about movies?<oob><robot></robot></oob>
+        <template>He is an American actor. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S RICHARD GERE</pattern>
+        <template>He is an American actor. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * RICHARD GERE</pattern>
+        <template>He is an American actor. What do you say we talk about movies?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS JIM CLARK</pattern>
+        <template><set name="he">Clark</set> is a founder of Silicon Graphics, Netscape and Healtheon.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JIM CLARK</pattern>
+        <template><set name="he">Clark</set> is a founder of Silicon Graphics, Netscape and Healtheon.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JIM CLARK</pattern>
         <template><set name="he">Clark</set> is a founder of Silicon Graphics, Netscape and Healtheon.
         <oob><robot></robot></oob>
         </template>
@@ -4783,7 +6487,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JIM MORRISON</pattern>
+        <template>He was the lead singer of the Doors. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JIM MORRISON</pattern>
+        <template>He was the lead singer of the Doors. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BARNEY</pattern>
+        <template>He is a purple and green dinosour on a children's TV show.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BARNEY</pattern>
+        <template>He is a purple and green dinosour on a children's TV show.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BARNEY</pattern>
         <template>He is a purple and green dinosour on a children's TV show.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4794,12 +6518,56 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S HILARY CLINTON</pattern>
+        <template><set name="she">Hillary</set> is the wife of Bill Clinton.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HILARY CLINTON</pattern>
+        <template><set name="she">Hillary</set> is the wife of Bill Clinton.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MUSSOLINI</pattern>
         <template>He was the dictator of Italy until 1944.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S MUSSOLINI</pattern>
+        <template>He was the dictator of Italy until 1944.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MUSSOLINI</pattern>
+        <template>He was the dictator of Italy until 1944.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ANDY WARHOL</pattern>
+        <template>Warhol was the first to successfully apply mass production to fine art.
+            <think>
+                <set name="he">
+                    <set name="topic">ANDY WARHOL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S ANDY WARHOL</pattern>
+        <template>Warhol was the first to successfully apply mass production to fine art.
+            <think>
+                <set name="he">
+                    <set name="topic">ANDY WARHOL</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ANDY WARHOL</pattern>
         <template>Warhol was the first to successfully apply mass production to fine art.
             <think>
                 <set name="he">
@@ -4816,7 +6584,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ANDY GROVE</pattern>
+        <template><set name="he">Andy Grove</set> was the CEO of Intel.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ANDY GROVE</pattern>
+        <template><set name="he">Andy Grove</set> was the CEO of Intel.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MEGAHAL</pattern>
+        <template><set name="he">Megahal</set> is a chat robot developed by Jason Hutchins.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MEGAHAL</pattern>
+        <template><set name="he">Megahal</set> is a chat robot developed by Jason Hutchins.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MEGAHAL</pattern>
         <template><set name="he">Megahal</set> is a chat robot developed by Jason Hutchins.
         <oob><robot></robot></oob>
         </template>
@@ -4828,7 +6620,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JERRY SEINFELD</pattern>
+        <template><set name="he">Jerry Seinfeld</set> is a comedian.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JERRY SEINFELD</pattern>
+        <template><set name="he">Jerry Seinfeld</set> is a comedian.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS KURZWEIL</pattern>
+        <template><set name="he">Kurzweil</set> is a famous A.I. scientist.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KURZWEIL</pattern>
+        <template><set name="he">Kurzweil</set> is a famous A.I. scientist.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KURZWEIL</pattern>
         <template><set name="he">Kurzweil</set> is a famous A.I. scientist.
         <oob><robot></robot></oob>
         </template>
@@ -4839,12 +6655,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S GERRY ADAMS</pattern>
+        <template>He is the present frontman for Sinn Fein, the political wing of the Irish Republican Army.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GERRY ADAMS</pattern>
+        <template>He is the present frontman for Sinn Fein, the political wing of the Irish Republican Army.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ON FIRST</pattern>
         <template>What's on second?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S ON FIRST</pattern>
+        <template>What's on second?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ON FIRST</pattern>
+        <template>What's on second?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS TERRY WINOGRAD</pattern>
+        <template><set name="he">Winograd</set> was the author of an early Natural Language program called SHRDLHU.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S TERRY WINOGRAD</pattern>
+        <template><set name="he">Winograd</set> was the author of an early Natural Language program called SHRDLHU.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * TERRY WINOGRAD</pattern>
         <template><set name="he">Winograd</set> was the author of an early Natural Language program called SHRDLHU.
         <oob><robot></robot></oob>
         </template>
@@ -4856,7 +6704,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JEFF BEZOS</pattern>
+        <template><set name="he">Bezos</set> is the founder and CEO of Amazon.com.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JEFF BEZOS</pattern>
+        <template><set name="he">Bezos</set> is the founder and CEO of Amazon.com.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS LEE HARVEY OSWALD</pattern>
+        <template><set name="he">Oswald</set> is the purported assassin of John F. Kennedy.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S LEE HARVEY OSWALD</pattern>
+        <template><set name="he">Oswald</set> is the purported assassin of John F. Kennedy.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * LEE HARVEY OSWALD</pattern>
         <template><set name="he">Oswald</set> is the purported assassin of John F. Kennedy.
         <oob><robot></robot></oob>
         </template>
@@ -4868,13 +6740,57 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S CHER</pattern>
+        <template><set name="she">Cher</set> is a famous singer and actress, who won her first Grammy in 2000. Dyslexic, she learned to read at 18.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CHER</pattern>
+        <template><set name="she">Cher</set> is a famous singer and actress, who won her first Grammy in 2000. Dyslexic, she learned to read at 18.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GORBOCHEV</pattern>
         <template><set name="he">Gorbachev</set> was the last Communist leader of the former USSR.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S GORBOCHEV</pattern>
+        <template><set name="he">Gorbachev</set> was the last Communist leader of the former USSR.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GORBOCHEV</pattern>
+        <template><set name="he">Gorbachev</set> was the last Communist leader of the former USSR.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JEFFERSON DAVIS</pattern>
+        <template>
+            <random>
+                <li>The one and only president of the Confederate States of America.</li>
+                <li>The president of the Confederacy during the Civil War.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JEFFERSON DAVIS</pattern>
+        <template>
+            <random>
+                <li>The one and only president of the Confederate States of America.</li>
+                <li>The president of the Confederacy during the Civil War.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JEFFERSON DAVIS</pattern>
         <template>
             <random>
                 <li>The one and only president of the Confederate States of America.</li>
@@ -4896,7 +6812,43 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SOCRATES</pattern>
+        <template>
+            <random>
+                <li>Socrates is a man. All men are mortal. Therefore Socrates is mortal.</li>
+                <li>Socrates (469-399 BCE), Greek philosopher.</li>
+                <li>Towering figure of Western philosophy, Incompetent defense attorney.</li>
+                <li>Founder of the Socratic method. What can we know about the Socratic method?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SOCRATES</pattern>
+        <template>
+            <random>
+                <li>Socrates is a man. All men are mortal. Therefore Socrates is mortal.</li>
+                <li>Socrates (469-399 BCE), Greek philosopher.</li>
+                <li>Towering figure of Western philosophy, Incompetent defense attorney.</li>
+                <li>Founder of the Socratic method. What can we know about the Socratic method?</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS MILES DAVIS</pattern>
+        <template><set name="he">Miles Davis</set> is a famous jazz musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S MILES DAVIS</pattern>
+        <template><set name="he">Miles Davis</set> is a famous jazz musician. Do you want to talk about music?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MILES DAVIS</pattern>
         <template><set name="he">Miles Davis</set> is a famous jazz musician. Do you want to talk about music?
         <oob><robot></robot></oob>
         </template>
@@ -4908,13 +6860,49 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ALISON</pattern>
+        <template><set name="she">Alison</set> is a robot created by Kris Drent.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ALISON</pattern>
+        <template><set name="she">Alison</set> is a robot created by Kris Drent.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS KEN PERLIN</pattern>
         <template><set name="he">Perlin</set> is a professor at NYU.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S KEN PERLIN</pattern>
+        <template><set name="he">Perlin</set> is a professor at NYU.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KEN PERLIN</pattern>
+        <template><set name="he">Perlin</set> is a professor at NYU.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS KEN GOLDBERG</pattern>
+        <template><set name="he">Goldberg</set> is a professor at UC Berkeley.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KEN GOLDBERG</pattern>
+        <template><set name="he">Goldberg</set> is a professor at UC Berkeley.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KEN GOLDBERG</pattern>
         <template><set name="he">Goldberg</set> is a professor at UC Berkeley.
         <oob><robot></robot></oob>
         </template>
@@ -4927,7 +6915,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S KEN KESEY</pattern>
+        <template>
+            <set name="he">Ken Kesey</set> was a 1960's author who wrote The Electric Cool Aid Acid Test. Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KEN KESEY</pattern>
+        <template>
+            <set name="he">Ken Kesey</set> was a 1960's author who wrote The Electric Cool Aid Acid Test. Do you want to talk about books?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ROMMEL</pattern>
+        <template>Called The Desert Fox, Rommel was a German tank commander in World War II.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S ROMMEL</pattern>
+        <template>Called The Desert Fox, Rommel was a German tank commander in World War II.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ROMMEL</pattern>
         <template>Called The Desert Fox, Rommel was a German tank commander in World War II.<oob><robot></robot></oob>
         </template>
     </category>
@@ -4937,7 +6949,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MILLARD FILLMORE</pattern>
+        <template>He was the 13th U.S. president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MILLARD FILLMORE</pattern>
+        <template>He was the 13th U.S. president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PATRICK STEWART</pattern>
+        <template><set name="he">Patrick Stewart</set> plays Captain Picard on Star Trek.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PATRICK STEWART</pattern>
+        <template><set name="he">Patrick Stewart</set> plays Captain Picard on Star Trek.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PATRICK STEWART</pattern>
         <template><set name="he">Patrick Stewart</set> plays Captain Picard on Star Trek.
         <oob><robot></robot></oob>
         </template>
@@ -4949,7 +6983,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S PATRICK EWING</pattern>
+        <template>Patrick Ewing was a center in the NBA, spending most of his career with
+            the New York Knicks. Do you want to talk about sports?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PATRICK EWING</pattern>
+        <template>Patrick Ewing was a center in the NBA, spending most of his career with
+            the New York Knicks. Do you want to talk about sports?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CAPTAIN PICARD</pattern>
+        <template><set name="he">Picard</set> is the captian of the Enterprise in Star Trek the Next Generation.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CAPTAIN PICARD</pattern>
+        <template><set name="he">Picard</set> is the captian of the Enterprise in Star Trek the Next Generation.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CAPTAIN PICARD</pattern>
         <template><set name="he">Picard</set> is the captian of the Enterprise in Star Trek the Next Generation.
         <oob><robot></robot></oob>
         </template>
@@ -4966,7 +7024,41 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S CAPTAIN KIRK</pattern>
+        <template>
+            <random>
+                <li>James Tiberius Kirk was the second and most famous captain of the original USS Enterprise, NCC 1701. He was played by William Shatner. He died in Star Trek: Generations.</li>
+                <li><set name="he">Kirk</set> was the Captain of the Starship Enterprise.
+                </li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CAPTAIN KIRK</pattern>
+        <template>
+            <random>
+                <li>James Tiberius Kirk was the second and most famous captain of the original USS Enterprise, NCC 1701. He was played by William Shatner. He died in Star Trek: Generations.</li>
+                <li><set name="he">Kirk</set> was the Captain of the Starship Enterprise.
+                </li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JIANG ZEMIN</pattern>
+        <template><set name="he">Jiang</set> is a Chinese politician.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JIANG ZEMIN</pattern>
+        <template><set name="he">Jiang</set> is a Chinese politician.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JIANG ZEMIN</pattern>
         <template><set name="he">Jiang</set> is a Chinese politician.
         <oob><robot></robot></oob>
         </template>
@@ -4977,7 +7069,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S FOREST</pattern>
+        <template>Forrest Gump is the main character in the movie Forest Gump. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * FOREST</pattern>
+        <template>Forrest Gump is the main character in the movie Forest Gump. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BARAK</pattern>
+        <template><set name="he">Barack</set> Obama is the former president of the United States.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BARAK</pattern>
+        <template><set name="he">Barack</set> Obama is the former president of the United States.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BARAK</pattern>
         <template><set name="he">Barack</set> Obama is the former president of the United States.
         <oob><robot></robot></oob>
         </template>
@@ -4988,12 +7102,64 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MADONNA</pattern>
+        <template>An American musician and actress.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MADONNA</pattern>
+        <template>An American musician and actress.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS HEDWIG</pattern>
         <template>Hedwig is the best rock opera since Rocky Horror.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S HEDWIG</pattern>
+        <template>Hedwig is the best rock opera since Rocky Horror.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HEDWIG</pattern>
+        <template>Hedwig is the best rock opera since Rocky Horror.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DOUBLY AIMLESS</pattern>
+        <template>
+            <think>
+                <set name="he">
+                    <set name="topic">Doubly Aimless</set>
+                </set>
+            </think>
+            <random>
+                <li>He is an AIML guru.</li>
+                <li>He knows a lot about AIML.</li>
+                <li>He likes to remain anonymous.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S DOUBLY AIMLESS</pattern>
+        <template>
+            <think>
+                <set name="he">
+                    <set name="topic">Doubly Aimless</set>
+                </set>
+            </think>
+            <random>
+                <li>He is an AIML guru.</li>
+                <li>He knows a lot about AIML.</li>
+                <li>He likes to remain anonymous.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DOUBLY AIMLESS</pattern>
         <template>
             <think>
                 <set name="he">
@@ -5015,7 +7181,33 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S KURT GOEDEL</pattern>
+        <template><set name="he">Goedel</set> was a 20th century mathematician and logician who proved that no mathematical system can be complete.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KURT GOEDEL</pattern>
+        <template><set name="he">Goedel</set> was a 20th century mathematician and logician who proved that no mathematical system can be complete.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS COMMANDER DATA</pattern>
+        <template>
+            <set name="he">Data</set> is the superintelligent android in Star Trek.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S COMMANDER DATA</pattern>
+        <template>
+            <set name="he">Data</set> is the superintelligent android in Star Trek.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * COMMANDER DATA</pattern>
         <template>
             <set name="he">Data</set> is the superintelligent android in Star Trek.
         <oob><robot></robot></oob>
@@ -5033,7 +7225,39 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S NIETZSCHE</pattern>
+        <template>19th Century German philosopher.
+            <think>
+                <set name="he">
+                    <set name="topic">Nietzsche</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NIETZSCHE</pattern>
+        <template>19th Century German philosopher.
+            <think>
+                <set name="he">
+                    <set name="topic">Nietzsche</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS CARNEGIE</pattern>
+        <template>Andrew Carnegie was a 19th century steel industrialist.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CARNEGIE</pattern>
+        <template>Andrew Carnegie was a 19th century steel industrialist.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CARNEGIE</pattern>
         <template>Andrew Carnegie was a 19th century steel industrialist.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5043,12 +7267,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S LILITH</pattern>
+        <template>Lilith is the so-called "dark moon", an astronomical phenomena usually described as a "cloud of dust" that orbits the Earth every 100 days.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * LILITH</pattern>
+        <template>Lilith is the so-called "dark moon", an astronomical phenomena usually described as a "cloud of dust" that orbits the Earth every 100 days.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JESSE VENTURA</pattern>
         <template>He is the former wrestler and former governor of Minnesota.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S JESSE VENTURA</pattern>
+        <template>He is the former wrestler and former governor of Minnesota.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JESSE VENTURA</pattern>
+        <template>He is the former wrestler and former governor of Minnesota.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS AL GORE</pattern>
+        <template><set name="he">Gore</set> was vice-president for Bill Clinton.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S AL GORE</pattern>
+        <template><set name="he">Gore</set> was vice-president for Bill Clinton.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * AL GORE</pattern>
         <template><set name="he">Gore</set> was vice-president for Bill Clinton.
         <oob><robot></robot></oob>
         </template>
@@ -5060,7 +7316,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S NELSON MANDELA</pattern>
+        <template><set name="he">Mandela</set> was the first black president of South Africa. He spent many years as a political prisoner.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NELSON MANDELA</pattern>
+        <template><set name="he">Mandela</set> was the first black president of South Africa. He spent many years as a political prisoner.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS SKYNYRD</pattern>
+        <template>Lynyrd Sknyrd was 1970's Southern rock band.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S SKYNYRD</pattern>
+        <template>Lynyrd Sknyrd was 1970's Southern rock band.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SKYNYRD</pattern>
         <template>Lynyrd Sknyrd was 1970's Southern rock band.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5077,12 +7355,68 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S PETER NORVIG</pattern>
+        <template>He is a computer scientist who works for Google and author of the popular text book,
+        Artificial Intelligence: A Modern Approach.
+            <think>
+                <set name="he">
+                    <set name="topic">Peter Norvig</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PETER NORVIG</pattern>
+        <template>He is a computer scientist who works for Google and author of the popular text book,
+        Artificial Intelligence: A Modern Approach.
+            <think>
+                <set name="he">
+                    <set name="topic">Peter Norvig</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PETER PAN</pattern>
         <template>The main character in the movie Peter Pan.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S PETER PAN</pattern>
+        <template>The main character in the movie Peter Pan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PETER PAN</pattern>
+        <template>The main character in the movie Peter Pan.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS KATHLEEN TURNER</pattern>
+        <template>She is an actress who appeared in The Accidental Tourist, The War of the Roses, and the Virgin Suicides. What do you say we talk about movies?
+            <think>
+                <set name="she">
+                    <set name="topic">Kathleen Turner</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KATHLEEN TURNER</pattern>
+        <template>She is an actress who appeared in The Accidental Tourist, The War of the Roses, and the Virgin Suicides. What do you say we talk about movies?
+            <think>
+                <set name="she">
+                    <set name="topic">Kathleen Turner</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KATHLEEN TURNER</pattern>
         <template>She is an actress who appeared in The Accidental Tourist, The War of the Roses, and the Virgin Suicides. What do you say we talk about movies?
             <think>
                 <set name="she">
@@ -5099,10 +7433,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S KEANU REEVES</pattern>
+        <template><set name="he">Keanu Reeves</set> in an actor who starred as Neo in the Matrix. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KEANU REEVES</pattern>
+        <template><set name="he">Keanu Reeves</set> in an actor who starred as Neo in the Matrix. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS LINCOLN</pattern>
         <template>
             <random>
-                <li>The sixteenth President of the USA</li>
+                <li>The sixteenth President of the USA.</li>
+                <li>president of the US during the Civil War. Author of the Gettysburg address. He was assassinated by John Wilkes Booth.</li>
+                <li><set name="he">Lincoln</set> was president of the US during the Civil War. Author of the Gettysburg address. Assassinated by John Wilkes Booth.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S LINCOLN</pattern>
+        <template>
+            <random>
+                <li>The sixteenth President of the USA.</li>
+                <li>president of the US during the Civil War. Author of the Gettysburg address. He was assassinated by John Wilkes Booth.</li>
+                <li><set name="he">Lincoln</set> was president of the US during the Civil War. Author of the Gettysburg address. Assassinated by John Wilkes Booth.</li>
+            </random>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * LINCOLN</pattern>
+        <template>
+            <random>
+                <li>The sixteenth President of the USA.</li>
                 <li>president of the US during the Civil War. Author of the Gettysburg address. He was assassinated by John Wilkes Booth.</li>
                 <li><set name="he">Lincoln</set> was president of the US during the Civil War. Author of the Gettysburg address. Assassinated by John Wilkes Booth.</li>
             </random>
@@ -5116,8 +7484,45 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BILL JOY</pattern>
+        <template><set name="he">Bill Joy</set> was an early Unix programmer and a founder of Sun Microsystems.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BILL JOY</pattern>
+        <template><set name="he">Bill Joy</set> was an early Unix programmer and a founder of Sun Microsystems.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BILL CLINTON</pattern>
-        <template>He is the second President of the United States to be impeached.<oob><robot></robot></oob>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BILL CLINTON</pattern>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BILL CLINTON</pattern>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS CLINTON</pattern>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S CLINTON</pattern>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * CLINTON</pattern>
+        <template>William Jefferson Clinton is an American politician who served as the 42nd president of the United States from 1993 to 2001. Prior to his presidency, he served as governor of Arkansas.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -5126,17 +7531,66 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BILL GATES</pattern>
+        <template>He's the president of Microsoft.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BILL GATES</pattern>
+        <template>He's the president of Microsoft.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS BILL BRADLEY</pattern>
         <template>
-            <random>
-                <li>Princeton alumni, Rhodes scholor, former Boston Celtic and US senator from Mass.</li>
-                <li>A defeated Presidential candidate.</li>
-            </random>
+                Princeton alumni, Rhodes scholor, former Boston Celtic and US senator from Mass.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S BILL BRADLEY</pattern>
+        <template>Princeton alumni, Rhodes scholor, former Boston Celtic and US senator from Mass.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BILL BRADLEY</pattern>
+        <template>Princeton alumni, Rhodes scholor, former Boston Celtic and US senator from Mass.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS KANT</pattern>
+        <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S KANT</pattern>
+        <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KANT</pattern>
+        <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS IMMANUEL KANT</pattern>
+        <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S IMMANUEL KANT</pattern>
+        <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * IMMANUEL KANT</pattern>
         <template>Immanual <set name="he">Kant</set> was a 19th century German Philosopher.
         <oob><robot></robot></oob>
         </template>
@@ -5148,7 +7602,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S EDISON</pattern>
+        <template><set name="he">Edison</set> was credited for inventing the light bulb. Would you like to talk about inventions?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * EDISON</pattern>
+        <template><set name="he">Edison</set> was credited for inventing the light bulb. Would you like to talk about inventions?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS STALIN</pattern>
+        <template>Effective dictator of the Soviet Union from 1929 to 1953.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S STALIN</pattern>
+        <template>Effective dictator of the Soviet Union from 1929 to 1953.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * STALIN</pattern>
         <template>Effective dictator of the Soviet Union from 1929 to 1953.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5159,12 +7635,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ASK JEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ASK JEEVES</pattern>
+        <template><set name="he">Jeeves</set> is a proprietary, closed-source natural language system.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GIBSON</pattern>
         <template>Gibson is a maker of fine electric guitars.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S GIBSON</pattern>
+        <template>Gibson is a maker of fine electric guitars.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GIBSON</pattern>
+        <template>Gibson is a maker of fine electric guitars.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS SNOOPY</pattern>
+        <template>Charlie Brown's dog.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S SNOOPY</pattern>
+        <template>Charlie Brown's dog.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SNOOPY</pattern>
         <template>Charlie Brown's dog.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5175,7 +7683,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S BRAIN</pattern>
+        <template><set name="he">Brain</set> is a chat robot on the web.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * BRAIN</pattern>
+        <template><set name="he">Brain</set> is a chat robot on the web.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NEIL ARMSTRONG</pattern>
+        <template>The man who took the first step on the moon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S NEIL ARMSTRONG</pattern>
+        <template>The man who took the first step on the moon.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NEIL ARMSTRONG</pattern>
         <template>The man who took the first step on the moon.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5186,7 +7716,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S VALIS</pattern>
+        <template>VALIS is an acronym that stands for Vast Active Living Intelligence System
+        and is the title of a book written by Philip K. Dick<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * VALIS</pattern>
+        <template>VALIS is an acronym that stands for Vast Active Living Intelligence System
+        and is the title of a book written by Philip K. Dick<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PERFECT</pattern>
+        <template>They say that nobody is.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PERFECT</pattern>
+        <template>They say that nobody is.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PERFECT</pattern>
         <template>They say that nobody is.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5196,7 +7748,39 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SERGEY</pattern>
+        <template>He is Dr. Sergey M. Sokolov.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SERGEY</pattern>
+        <template>He is Dr. Sergey M. Sokolov.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS WILL SMITH</pattern>
+        <template>He is a famous actor and singer.
+            <think>
+                <set name="he">
+                    <set name="topic">Will Smith</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S WILL SMITH</pattern>
+        <template>He is a famous actor and singer.
+            <think>
+                <set name="he">
+                    <set name="topic">Will Smith</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * WILL SMITH</pattern>
         <template>He is a famous actor and singer.
             <think>
                 <set name="he">
@@ -5213,7 +7797,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S NOAM CHOMSKY</pattern>
+        <template><set name="he"> Noam Chomsky</set> is a linguist and political radical at MIT.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NOAM CHOMSKY</pattern>
+        <template><set name="he"> Noam Chomsky</set> is a linguist and political radical at MIT.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN LENNON</pattern>
+        <template>John Lennon was a member of the Beatles. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JOHN LENNON</pattern>
+        <template>John Lennon was a member of the Beatles. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN LENNON</pattern>
         <template>John Lennon was a member of the Beatles. Do you want to talk about music?<oob><robot></robot></oob>
         </template>
     </category>
@@ -5223,7 +7829,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN F KENNEDY</pattern>
+        <template>He was President of the United States from 1961-1963, when he was assassinated in Dallas, Texas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN F KENNEDY</pattern>
+        <template>He was President of the United States from 1961-1963, when he was assassinated in Dallas, Texas.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN WAYNE</pattern>
+        <template>John Wayne was the iconic cowboy who popularized western films. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JOHN WAYNE</pattern>
+        <template>John Wayne was the iconic cowboy who popularized western films. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN WAYNE</pattern>
         <template>John Wayne was the iconic cowboy who popularized western films. What do you say we talk about movies?<oob><robot></robot></oob>
         </template>
     </category>
@@ -5233,7 +7859,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN ADAMS</pattern>
+        <template>The Second president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN ADAMS</pattern>
+        <template>The Second president.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN MAJOR</pattern>
+        <template>ex-prime minister of the UK.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JOHN MAJOR</pattern>
+        <template>ex-prime minister of the UK.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN MAJOR</pattern>
         <template>ex-prime minister of the UK.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5244,12 +7890,46 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN MCCARTHY</pattern>
+        <template><set name="he">McCarthy</set> is the inventor of the LISP programming language.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN MCCARTHY</pattern>
+        <template><set name="he">McCarthy</set> is the inventor of the LISP programming language.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN GRISHAM</pattern>
         <template>He writes popular novels. Do you want to talk about books?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN GRISHAM</pattern>
+        <template>He writes popular novels. Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN GRISHAM</pattern>
+        <template>He writes popular novels. Do you want to talk about books?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN DOE</pattern>
+        <template>Any man who wishes to travel incognito or whose name is unknown.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JOHN DOE</pattern>
+        <template>Any man who wishes to travel incognito or whose name is unknown.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN DOE</pattern>
         <template>Any man who wishes to travel incognito or whose name is unknown.
         <oob><robot></robot></oob>
         </template>
@@ -5261,7 +7941,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN TRAVOLTA</pattern>
+        <template><set name="he">John Travolta</set> starred in Saturday Night Fever, Grease, and Pulp Fiction. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN TRAVOLTA</pattern>
+        <template><set name="he">John Travolta</set> starred in Saturday Night Fever, Grease, and Pulp Fiction. What do you say we talk about movies?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS JOHN KENNEDY</pattern>
+        <template><set name="he">Kennedy</set> was the President of the U. S. and assasinated in November, 1963.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S JOHN KENNEDY</pattern>
+        <template><set name="he">Kennedy</set> was the President of the U. S. and assasinated in November, 1963.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN KENNEDY</pattern>
         <template><set name="he">Kennedy</set> was the President of the U. S. and assasinated in November, 1963.
         <oob><robot></robot></oob>
         </template>
@@ -5272,7 +7976,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JOHN GALT</pattern>
+        <template>He is the hero in Ayn Rands' Atlas Shrugged.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JOHN GALT</pattern>
+        <template>He is the hero in Ayn Rands' Atlas Shrugged.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS NORBERT WEINER</pattern>
+        <template><set name="he">Norbert Weiner</set> coined the term "Cybernetics" in the 1940's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S NORBERT WEINER</pattern>
+        <template><set name="he">Norbert Weiner</set> coined the term "Cybernetics" in the 1940's.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * NORBERT WEINER</pattern>
         <template><set name="he">Norbert Weiner</set> coined the term "Cybernetics" in the 1940's.
         <oob><robot></robot></oob>
         </template>
@@ -5283,12 +8009,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S JIMMY CARTER</pattern>
+        <template>He is a former US president, supporter of Habitat for Humanity.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * JIMMY CARTER</pattern>
+        <template>He is a former US president, supporter of Habitat for Humanity.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS VISHNU</pattern>
         <template>A God in Hindu religion.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
+        <pattern>WHO S VISHNU</pattern>
+        <template>A God in Hindu religion.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * VISHNU</pattern>
+        <template>A God in Hindu religion.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS PRINCESS DIANA</pattern>
+        <template><set name="she">Princess Diana</set> was Princess of England.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S PRINCESS DIANA</pattern>
+        <template><set name="she">Princess Diana</set> was Princess of England.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * PRINCESS DIANA</pattern>
         <template><set name="she">Princess Diana</set> was Princess of England.
         <oob><robot></robot></oob>
         </template>
@@ -5300,7 +8058,31 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ALLY SHEEDY</pattern>
+        <template><set name="she">Ally Sheedy</set> was in High Art, Short Circuit, the Breakfast Club, and on Broadway.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ALLY SHEEDY</pattern>
+        <template><set name="she">Ally Sheedy</set> was in High Art, Short Circuit, the Breakfast Club, and on Broadway.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ALLY MCBEAL</pattern>
+        <template><set name="she">Ally McBeal</set> is a character on a TV show.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S ALLY MCBEAL</pattern>
+        <template><set name="she">Ally McBeal</set> is a character on a TV show.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ALLY MCBEAL</pattern>
         <template><set name="she">Ally McBeal</set> is a character on a TV show.
         <oob><robot></robot></oob>
         </template>
@@ -5317,7 +8099,41 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ALLY</pattern>
+        <template>She is a chat robot based on AIML.
+            <think>
+                <set name="she">
+                    <set name="topic">ALLY</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ALLY</pattern>
+        <template>She is a chat robot based on AIML.
+            <think>
+                <set name="she">
+                    <set name="topic">ALLY</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS THEY</pattern>
+        <template>I'm pretty sure they refers to <get name="they"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S THEY</pattern>
+        <template>I'm pretty sure they refers to <get name="they"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * THEY</pattern>
         <template>I'm pretty sure they refers to <get name="they"/>.
         <oob><robot></robot></oob>
         </template>
@@ -5328,7 +8144,29 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S KRISHNA</pattern>
+        <template>A God in Hindu religion.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * KRISHNA</pattern>
+        <template>A God in Hindu religion.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS DARTH VADER</pattern>
+        <template><set name="he">Darth Vader</set> was the evil archcriminal in Star Wars.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S DARTH VADER</pattern>
+        <template><set name="he">Darth Vader</set> was the evil archcriminal in Star Wars.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * DARTH VADER</pattern>
         <template><set name="he">Darth Vader</set> was the evil archcriminal in Star Wars.
         <oob><robot></robot></oob>
         </template>
@@ -5339,7 +8177,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S ELIZABETH TAYLOR</pattern>
+        <template>She was a great movie star. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ELIZABETH TAYLOR</pattern>
+        <template>She was a great movie star. What do you say we talk about movies?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS ELIZABETH II</pattern>
+        <template>The current queen of england.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S ELIZABETH II</pattern>
+        <template>The current queen of england.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * ELIZABETH II</pattern>
         <template>The current queen of england.<oob><robot></robot></oob>
         </template>
     </category>
@@ -5349,7 +8207,27 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S SCOTT ADAMS</pattern>
+        <template>The creator of Dilbert, Dogbert, Catbert, Ratbert, Bob, the pointy-haired boss. Shall I go on?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SCOTT ADAMS</pattern>
+        <template>The creator of Dilbert, Dogbert, Catbert, Ratbert, Bob, the pointy-haired boss. Shall I go on?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS GARTH BROOKS</pattern>
+        <template>Garth Brooks is one of the greatest living country singers. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S GARTH BROOKS</pattern>
+        <template>Garth Brooks is one of the greatest living country singers. Do you want to talk about music?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * GARTH BROOKS</pattern>
         <template>Garth Brooks is one of the greatest living country singers. Do you want to talk about music?<oob><robot></robot></oob>
         </template>
     </category>
@@ -5360,12 +8238,44 @@
         </template>
     </category>
     <category>
+        <pattern>WHO S MOHAMMAD</pattern>
+        <template><set name="he">Mohammed</set> is the founder of Islam.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * MOHAMMAD</pattern>
+        <template><set name="he">Mohammed</set> is the founder of Islam.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>WHO IS HOMER</pattern>
-        <template>He was the blind poet of ancient Greece, author of the Illiad.<oob><robot></robot></oob>
+        <template>He was the blind poet of ancient Greece, author of the Illiad and the Odyssey. Also refers to Homer Simpson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S HOMER</pattern>
+        <template>He was the blind poet of ancient Greece, author of the Illiad and the Odyssey. Also refers to Homer Simpson.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * HOMER</pattern>
+        <template>He was the blind poet of ancient Greece, author of the Illiad and the Odyssey. Also refers to Homer Simpson.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS SPOCK</pattern>
+        <template>Vulcan Starfleet officer in Star Trek, played by Leonard Nimoy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO S SPOCK</pattern>
+        <template>Vulcan Starfleet officer in Star Trek, played by Leonard Nimoy.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO * SPOCK</pattern>
         <template>Vulcan Starfleet officer in Star Trek, played by Leonard Nimoy.<oob><robot></robot></oob>
         </template>
     </category>
