@@ -16,6 +16,7 @@
         <pattern>GET BBC NEWS</pattern>
         <template>
             <sraix service="NEWS">SOURCE bbc-news</sraix>
+            SHOULD I READ THE FULL ARTICLE?
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -67,7 +68,7 @@
 
     <category>
         <pattern>BACK</pattern>
-        <that>OTHER WISE WE CAN TALK ABOUT SOMETHING ELSE?</that>
+        <that>OTHER WISE WE CAN TALK ABOUT SOMETHING ELSE.</that>
         <template>
             <sraix service="NEWS">PREVIOUS us</sraix>
             <oob><robot></robot></oob>

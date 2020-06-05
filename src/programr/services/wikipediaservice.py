@@ -9,12 +9,12 @@ from programr.services.service import Service
 class WikipediaAPI(object):
 
     # Provide a summary of a single article
-    def summary(self, title, sentences=0, chars=0, auto_suggest=False, redirect=True):
+    def summary(self, title, sentences=2, chars=0, auto_suggest=True, redirect=False):
         return wikipedia.summary(title, sentences, chars, auto_suggest, redirect)
 
     # Provide a list of articles matching the query
     # Use summary to return the neccassary action
-    def search(self, query, results=10, suggestion=False):
+    def search(self, query, results=10, suggestion=True):
         return wikipedia.search(query, results, suggestion)
 
 
