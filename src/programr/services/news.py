@@ -1,3 +1,5 @@
+import requests
+import json
 from newsapi import NewsApiClient
 
 from programr.utils.logging.ylogger import YLogger
@@ -5,13 +7,11 @@ from programr.services.service import Service
 
 
 class NewsAPI(object):
-
     # NOTE: website of the news api
     # https://newsapi.org
 
     def __init__(self, api_key):
         self.api_key = api_key
-
 
     # NOTE: sources is a str to identify what news source to pull from
     #       ex: 'bbc-news'
@@ -21,16 +21,54 @@ class NewsAPI(object):
         return NewsApiClient(self.api_key).get_top_headlines(sources=sources, country=country)
 
 
-class NewsService(Service):
+class BingAPI(object):
+    def __init__(self, url, headers, params=None):
+        self.url = url 
+        self.headers = headers
+        self.params = params
+        self._current_article = 0
 
+    def bing_headlines(self):
+        try:
+            # print("url: {}".format(self.url))
+            # print("headers: {}".format(self.headers))
+            # print("params: {}".format(self.params))
+            response = requests.request("GET", url=self.url, headers=self.headers, params=self.params)
+            headline_dict = response.json()
+            headline = headline_dict['value'][self._current_article]['name']
+            return headline
+        except Exception as ex:
+            print("error getting request. {}".format(ex))
+            return ""
+
+
+
+class NewsService(Service):
     def __init__(self, config=None, api=None):
         Service.__init__(self, config)
 
-        api_key = '6516eee2cc744675849e70aa63cf1f39'
+        # api_key = '6516eee2cc744675849e70aa63cf1f39'
 
-        if api is None:
-            self._api = NewsAPI(api_key)
+        # if api is None:
+        #     self._api = NewsAPI(api_key)
+        # else:
+        #     self._api = api
+
+
+        url = "https://microsoft-azure-bing-news-search-v1.p.rapidapi.com/"
+
+        # params = {"Category":"sports"}
+
+        headers = {
+            'x-rapidapi-host': "microsoft-azure-bing-news-search-v1.p.rapidapi.com",
+            'x-rapidapi-key': "2d82bb5d95msh2a4e5c2a45a8eb3p18b00ejsn98308d90b548"
+            }
+
+        if url is not None and headers is not None:
+            print("in the if")
+            self._api = BingAPI(url, headers)
         else:
+            print("in the else")
             self._api = api
 
         self._current_article = 0
@@ -68,40 +106,25 @@ class NewsService(Service):
         try:
             words  = question.split()
             question = " ".join(words[1:])
-            if words[0] == 'SOURCE':
-                top_headlines = self._api.headlines(sources=question)
-                YLogger.debug(client_context, f"top_headlines: {top_headlines}")
-
-                description = self.get_description_info(top_headlines)
-                title = self.get_title_info(top_headlines)
-                
-                YLogger.debug(client_context, f"article description: {description}")
-
-                search = f"The title of the article is {title}, here is a quick summary...{description}"
-
-                # YLogger.debug(client_context, f"search: {search}")
-                # YLogger.debug(client_context, f"search type: {type(search)}")
-            elif words[0] == 'COUNTRY':
-                top_headlines = self._api.headlines(country=question)
-                search = self.format_response(top_headlines)
-            elif words[0] == 'ARTICLE':
-                top_headlines = self._api.headlines(country=question)
-                search = self.get_content_info(top_headlines)
-                search = self.clean_text(search)
+            if words[0] == 'HEADLINES':
+                search = self._api.bing_headlines()
             elif words[0] == 'NEXT':
-                top_headlines = self._api.headlines(country=question)
-                YLogger.debug(client_context, f"top_headlines: {top_headlines}")
+                # top_headlines = self._api.headlines(country=question)
+                # YLogger.debug(client_context, f"top_headlines: {top_headlines}")
 
-                self._current_article += 1
-                YLogger.debug(client_context, f"current_article index: {self._current_article}")
-                search = self.format_response(top_headlines)
+                self._api._current_article += 1
+                # YLogger.debug(client_context, f"current_article index: {self._current_article}")
+                # search = self.format_response(top_headlines)
+
+                search = self._api.bing_headlines()
             elif words[0] == 'PREVIOUS':
-                top_headlines = self._api.headlines(country=question)
-                YLogger.debug(client_context, f"top_headlines: {top_headlines}")
+                # top_headlines = self._api.headlines(country=question)
+                # YLogger.debug(client_context, f"top_headlines: {top_headlines}")
 
-                self._current_article -= 1
-                YLogger.debug(client_context, f"current_article index: {self._current_article}")
-                search = self.format_response(top_headlines)
+                self._api._current_article -= 1
+                # YLogger.debug(client_context, f"current_article index: {self._current_article}")
+                # search = self.format_response(top_headlines)
+                search = self._api.bing_headlines()
             else:
                 YLogger.error(client_context, "Unknown News API command [%s]", words[0])
                 search = ""

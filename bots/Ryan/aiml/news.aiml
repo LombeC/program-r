@@ -11,8 +11,9 @@
         </template>
     </category> -->
 
-    <!-- This is the service method -->
-    <category>
+    
+    
+    <!-- <category>
         <pattern>GET BBC NEWS</pattern>
         <template>
             <sraix service="NEWS">SOURCE bbc-news</sraix>
@@ -27,9 +28,9 @@
             <sraix service="NEWS">COUNTRY us</sraix>
             <oob><robot></robot></oob>
         </template>
-    </category>
+    </category> -->
 
-    <category>
+    <!-- <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>SHOULD I READ THE FULL ARTICLE?</that>
         <template>
@@ -42,23 +43,32 @@
         <pattern>^ NO ^</pattern>
         <that>SHOULD I READ THE FULL ARTICLE?</that>
         <template>
-            Ok should we go on to the next article?
+            OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?
+            <oob><robot></robot></oob>
+        </template>
+    </category> -->
+
+    <!-- This is the service method -->
+    <category>
+        <pattern>GET THE NEWS</pattern>
+        <template>
+            <sraix service="NEWS">HEADLINES</sraix>. OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?
             <oob><robot></robot></oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE?</that>
+        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?</that>
         <template>
-            <sraix service="NEWS">NEXT us</sraix>
+            <sraix service="NEWS">NEXT us</sraix>. OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?
             <oob><robot></robot></oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE?</that>
+        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?</that>
         <template>
             If you want me to go back to the last article say, back.
             Other wise we can talk about something else.
