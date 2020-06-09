@@ -169,9 +169,9 @@ class TestRunnerBotClient(BotClient):
         file_finder = TestFileFileFinder()
         if self.test_dir is not None:
             print("Loading Tests from directory [%s]" % self.test_dir)
-            questions = file_finder.load_dir_contents(self.test_dir, extension=".tests", subdir=True)
+            questions, other = file_finder.load_dir_contents(self.test_dir, extension=".tests", subdir=True)
         else:
-            questions = file_finder.load_single_file_contents(self.test_file)
+            questions, other = file_finder.load_single_file_contents(self.test_file)
 
         question_and_answers = open(self.qna_file, "w+")
 
@@ -179,6 +179,8 @@ class TestRunnerBotClient(BotClient):
         failures = []
         warnings = 0
         start = datetime.datetime.now()
+        print("Questions: {}".format(questions))
+        print("Other: {}".format(other))
         for category in questions.keys():
             for test in questions[category]:
                 test.category = category

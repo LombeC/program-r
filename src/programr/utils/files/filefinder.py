@@ -33,8 +33,10 @@ class FileFinder(object):
         return sorted(found_files, key=lambda element: (element[1], element[0]))
 
     def load_dir_contents(self, paths, subdir=False, extension=".txt", filename_as_userid=False):
-
+        # print("Paths: {}".format(paths))
+        # print("Subdir: {}".format(subdir))
         files = self.find_files(paths, subdir, extension)
+        # print("Files: {}".format(files))
 
         collection = {}
         file_maps = {}
