@@ -99,7 +99,8 @@ class Bot(object):
 
         self.initiate_conversation_storage()
 
-        self.load_client_properties()
+        # TODO: This needs to be moved to somewhere to depend on userid
+        # self.load_client_properties()
 
     def ylogger_type(self):
         return "bot"
@@ -279,9 +280,9 @@ class Bot(object):
                 self._conversation_storage.load_conversation(conversation, clientid,
                                                              self.configuration.conversations.restore_last_topic)
 
-    def load_client_properties(self):
+    def load_client_properties(self, userid):
         if self._conversation_storage is not None:
-            return self._conversation_storage.load_client_properties()
+            return self._conversation_storage.load_client_properties(userid)
 
     def save_conversation(self, client_context):
         if self._conversation_storage is not None:

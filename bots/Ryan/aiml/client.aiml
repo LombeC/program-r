@@ -58,8 +58,13 @@
     </category>
     <category>
         <pattern>WHAT IS MY LOCATION</pattern>
-        <template><get name="location"/>, Earth.
-        <oob><robot></robot></oob>
+        <template>
+            <condition name="location">
+                <li name="Uknown">I don't know you haven't told me.</li>
+                <li><get name="location"/></li>
+            </condition>
+            
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>

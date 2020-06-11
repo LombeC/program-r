@@ -121,13 +121,22 @@ class ConversationMongodbStorage(ConversationStorage):
         except Exception as e:
             YLogger.error(self, e)
 
-    def load_client_properties(self):
-        user_info = self.db['user_info'].find_one()
-        print("USER_INFO: {}".format(type(user_info)))
-        print("USER_INFO: {}".format(user_info))
-        self.user_name = user_info['name']
-        self.location = user_info['location']
-        self.time_zone = user_info['time zone']
+    def load_client_properties(self, userid):
+        if self.db['user_info'].find_one({'userid': userid}) is not None:
+            user_info = self.db['user_info'].find_one()
+            # print("USER_INFO: {}".format(type(user_info)))
+            # print("USER_INFO: {}".format(user_info))
+            self.user_name = user_info['name']
+            self.location = user_info['location']
+            self.time_zone = user_info['time zone']
+        else:
+            document = {
+                "userid": userid,
+                "name": "Uknown",
+                "location": "Uknown", 
+                "time zone": "Uknown"
+            }
+            self.db['user_info'].insert_one(document)
         # return user_info
 
     def load_conversation(self, conversation, clientid, restore_last_topic=False):
