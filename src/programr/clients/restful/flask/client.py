@@ -31,7 +31,9 @@ class FlaskRestBotClient(RestBotClient):
     def get_question(self, rest_request):
         # YLogger.debug(self, f"In get_question, rest_request.data: {rest_request.data.decode('utf-8')}")
         # YLogger.debug(self, f"rest_request type: {type(rest_request)}")
+        # TODO: Save userid to MongoDB with rest of user info
         rest_request = json.loads(rest_request.data.decode('utf-8'))
+
         # YLogger.debug(self, f"after json.loads, rest_request: {rest_request}")
 
         if "question" not in rest_request or rest_request["question"] is None:

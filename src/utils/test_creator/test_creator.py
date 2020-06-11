@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
                 else:
                     template = category.find('template')
-                    print("Template: {}".format(template.text))
+                    # print("Template: {}".format(template.text))
                     test_line = '%s "%s"'%(question, template.text)
 
                 output_file.write(test_line)

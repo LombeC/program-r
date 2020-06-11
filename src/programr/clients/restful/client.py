@@ -90,7 +90,9 @@ class RestBotClient(BotClient):
     def ask_question(self, userid, question):
         response = ""
         try:
+            #TODO: check if userid is same as one being sent in curl message
             client_context = self.create_client_context(userid)
+            print("userid: {}".format(userid))
      
             print("###########################################")
             print("Ryan heard: {}".format(question))

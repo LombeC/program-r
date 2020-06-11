@@ -1,10 +1,12 @@
 import csv
 import re
 import datetime
+import os
 
 from programr.clients.client import BotClient
 from programr.utils.files.filefinder import FileFinder
 from programr.clients.events.console.config import ConsoleConfiguration
+from programr.utils.logging.ylogger import YLogger
 
 class TestQuestion(object):
 
@@ -128,6 +130,68 @@ class TestFileFileFinder(FileFinder):
         return questions
 
 
+    def get_just_filename_from_filepath(self, filepath):
+
+        if os.sep in filepath:
+            pathsplits = filepath.split(os.sep)
+            filename_ext = pathsplits[-1]
+        else:
+            filename_ext = filepath
+
+        if "." in filename_ext:
+            filesplits = filename_ext.split(".")
+            filename = filesplits[0]
+        else:
+            filename = filename_ext
+
+        return filename
+
+    def find_files(self, path, subdir=False, extension=None):
+        # print("Path: {}".format(path))
+        found_files = []
+        try:
+            if subdir is False:
+                paths = os.listdir(path)
+                for filename in paths:
+                    if filename.endswith(extension):
+                        found_files.append((filename, os.path.join(path, filename)))
+            else:
+                for dirpath, _, filenames in os.walk(path):
+                    # print("filenames: {}".format(filenames))
+                    for filename in [f for f in filenames if f.endswith(extension)]:
+                        found_files.append((filename, os.path.join(dirpath, filename)))
+        except FileNotFoundError:
+            YLogger.error(self, "No directory found [%s]", path)
+
+        return sorted(found_files, key=lambda element: (element[1], element[0]))
+
+    def load_dir_contents(self, paths, subdir=False, extension=".txt", filename_as_userid=False):
+        print("Paths: {}".format(paths))
+        print("Subdir: {}".format(subdir))
+        files = self.find_files(paths, subdir, extension)
+        # print("Files: {}".format(files))
+
+        collection = {}
+        file_maps = {}
+        num = 0
+        for file in files:
+            just_filename = self.get_just_filename_from_filepath(file[0])
+            try:
+                if filename_as_userid is True:
+                    userid = just_filename
+                else:
+                    userid = "*"
+                print("#################file[1]: {}".format(file[1]))
+                collection[just_filename.upper()] = self.load_file_contents(file[1], num)
+                file_maps[just_filename.upper()] = file[1]
+                num += 1
+            except Exception as excep:
+                print(excep)
+                YLogger.exception(self, "Failed to load file contents for file [%s]"% file[1], excep)
+
+        return collection, file_maps
+
+
 class TestRunnerBotClient(BotClient):
 
     def __init__(self):
@@ -152,6 +216,29 @@ class TestRunnerBotClient(BotClient):
     def get_description(self):
         return 'ProgramR Test Runner Client'
 
+    def ask_question(self, userid, question):
+        response = ""
+        try:
+            #TODO: check if userid is same as one being sent in curl message
+            client_context = self.create_client_context(userid)
+            print("userid: {}".format(userid))
+     
+            print("###########################################")
+            print("Ryan heard: {}".format(question))
+            print("###########################################\n")
+            # print(question)
+            response, options = client_context.bot.ask_question_with_options(client_context, question)
+
+            response = self.remove_oob(response)
+
+            # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
+            # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)
+            return response, options
+        except Exception as e:
+            print(e)
+            return "", ""
+        
+
     def add_client_arguments(self, parser=None):
         if parser is not None:
             parser.add_argument('--test_dir', dest='test_dir', help='directory containing test files to run against grammar')
@@ -169,20 +256,26 @@ class TestRunnerBotClient(BotClient):
         file_finder = TestFileFileFinder()
         if self.test_dir is not None:
             print("Loading Tests from directory [%s]" % self.test_dir)
-            questions, other = file_finder.load_dir_contents(self.test_dir, extension=".tests", subdir=True)
+            questions = file_finder.load_dir_contents(self.test_dir, extension=".tests", subdir=False)
         else:
-            questions, other = file_finder.load_single_file_contents(self.test_file)
+            questions = file_finder.load_single_file_contents(self.test_file)
 
         question_and_answers = open(self.qna_file, "w+")
+        print("Question and answers: {}.".format(type(question_and_answers)))
+
+        # out = dict(list(questions[1].keys())[0: 2])
 
         successes = []
         failures = []
         warnings = 0
         start = datetime.datetime.now()
-        print("Questions: {}".format(questions))
-        print("Other: {}".format(other))
-        for category in questions.keys():
-            for test in questions[category]:
+        print("Questions: {}".format(type(questions[0])))
+        print("Questions: {}".format(questions[0]))
+        print("Questions: {}".format(type(questions[1])))
+        # print("Questions: {}".format(out))
+        # print("Other: {}".format(other))
+        for category in questions[0].keys():
+            for test in questions[0][category]:
                 test.category = category
 
                 if any((c in '$*_^#') for c in test.question):
@@ -190,13 +283,13 @@ class TestRunnerBotClient(BotClient):
                     warnings = warnings +1
 
                 if test.topic is not None:
-                    conversation = self.bot.get_conversation(self.clientid)
+                    conversation = self.get_conversation(0)
                     conversation.set_property("topic", test.topic)
 
                 if test.that is not None:
-                    response = self.bot.ask_question(self.clientid, test.that, responselogger=self)
+                    response, options = self.ask_question(0, test.that)
 
-                response = self.bot.ask_question(self.clientid, test.question, responselogger=self)
+                response, options = self.ask_question(0, test.question)
                 success = False
                 test.response = response
 

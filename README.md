@@ -220,9 +220,9 @@ docker run -it --rm --net=dockernet hojjat12000/program-r ./run.sh
 
 
 ### Running Unit Tests on AIML Files in the bots folder
-- To Create test files run ```./create_tests.sh```
+- To Create test files run ```bash ./create_tests.sh```
     - This creates .test files from the Ryan Bot and stores them in test_files directory.
-- To run the Unittests run ```./run_tests.sh```
+- To run the Unittests run ```bash ./run_tests.sh```
 
 
 

@@ -1,1 +1,1 @@
-python ./src/utils/test_runner/test_runner.py --test_dir /test_files --qna_file ./src/utils/test_runner/qna-file --verbose
+python ./src/utils/test_runner/test_runner.py --test_dir ./test_files --qna_file ./src/utils/test_runner/qna-file --verbose
