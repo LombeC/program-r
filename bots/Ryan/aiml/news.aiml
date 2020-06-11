@@ -88,9 +88,42 @@
         <pattern>* WHAT S THE NEWS</pattern>
         <template><srai>GET THE NEWS</srai></template>
     </category>
+    <category>
+        <pattern>CAN I * NEWS</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>* CAN I GET THE NEWS</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>CAN I GET THE NEWS *</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT S TODAYS NEWS</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT S TODAYS NEWS</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT S TODAYS NEWS *</pattern>
+        <template><srai>GET THE NEWS</srai></template>
+    </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
+        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?</that>
+        <template>
+            <sraix service="NEWS">NEXT us</sraix>. OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NEXT ^</pattern>
         <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?</that>
         <template>
             <sraix service="NEWS">NEXT us</sraix>. OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?
@@ -109,7 +142,16 @@
     </category>
 
     <category>
-        <pattern>BACK</pattern>
+        <pattern># BACK ^</pattern>
+        <that>OK SHOULD WE GO ON TO THE NEXT ARTICLE HEADLINE?</that>
+        <template>
+            <sraix service="NEWS">PREVIOUS us</sraix>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BACK ^</pattern>
         <that>OTHER WISE WE CAN TALK ABOUT SOMETHING ELSE.</that>
         <template>
             <sraix service="NEWS">PREVIOUS us</sraix>
