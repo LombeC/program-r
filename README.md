@@ -143,8 +143,14 @@ There are different ways to run the programr based on your needs:
 
 ### Console run
 Here we run tutorial bot in console mode:
+
+- #### Tutorial Bot
 ```
 python ./src/programr/clients/events/console/client.py --config ./bots/tutorial/config.yaml --cformat yaml --logging ./bots/tutorial/logging.yaml
+```
+- #### Ryan Bot
+```
+python ./src/programr/clients/events/console/client.py --config ./bots/Ryan/config.yaml --cformat yaml --logging ./bots/Ryan/logging.yaml
 ```
 ### Majordomo run
 
