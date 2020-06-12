@@ -22,7 +22,7 @@ class ClientPropertiesCollection(DoubleStringCharSplitCollection):
         else:
             self.pairs.append([key, value])
 
-    #TODO: Write load_from_database
+    # TODO: Write load_from_database
     def load_from_database(self):
         pass
 
