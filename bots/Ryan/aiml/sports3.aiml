@@ -5,8 +5,8 @@
         <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
         <template>
             <think><set name="topic">football</set></think>
-
-            Great! Football fans know how to have the most fun! What is your favorite professional football team?
+            Right on!
+            <set name="most recent dialogue question">Football fans know how to have the most fun, don't you think?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -14,11 +14,53 @@
     </category>
 
     <topic name="football">
+
+      <category>
+          <pattern># <set>Yes</set> ^</pattern>
+          <that>Football fans know how to have the most fun, don't you think?</that>
+          <template>
+              Nothing quite like tailgating or cheering on your favorite team from the stands!
+              Now that will really get your blood pumping!
+              <set name="most recent dialogue question">What's your favorite professional football team?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>No</set> ^</pattern>
+          <that>Football fans know how to have the most fun, don't you think?</that>
+          <template>
+              Well, there's nothing quite like tailgating or cheering on your favorite team from the stands!
+              Now that will really get your blood pumping!
+              <set name="most recent dialogue question">What's your favorite professional football team?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Football fans know how to have the most fun, don't you think?</that>
+          <template>
+              Well, there's nothing quite like tailgating or cheering on your favorite team from the stands!
+              Now that will really get your blood pumping!
+              <set name="most recent dialogue question">What's your favorite professional football team?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
         <category>
             <pattern># New England Patriots ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The New England Patriots have won a lot of Super Bowls in the past decade! Did you ever play football?
+              <think><set name="favorite football team">New England Patriots</set></think>
+                Awesome. The New England Patriots have won a lot of Super Bowls in the past decade!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Patriots fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -27,9 +69,11 @@
 
         <category>
             <pattern># Patriots ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The New England Patriots have won a lot of Super Bowls in the past decade! Did you ever play football?
+              <think><set name="favorite football team">New England Patriots</set></think>
+                Awesome. The New England Patriots have won a lot of Super Bowls in the past decade!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Patriots fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -38,9 +82,11 @@
 
         <category>
             <pattern># The Patriots ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The New England Patriots have won a lot of Super Bowls in the past decade! Did you ever play football?
+              <think><set name="favorite football team">New England Patriots</set></think>
+                Awesome. The New England Patriots have won a lot of Super Bowls in the past decade!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Patriots fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -49,10 +95,11 @@
 
         <category>
             <pattern># Dallas Cowboys ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Cowboys, I think of Emmitt Smith and Troy Aikman!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Dallas Cowboys</set></think>
+                The Cowboys? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cowboys fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -61,10 +108,11 @@
 
         <category>
             <pattern># Cowboys ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Cowboys, I think of Emmitt Smith and Troy Aikman!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Dallas Cowboys</set></think>
+                The Cowboys? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cowboys fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -73,10 +121,11 @@
 
         <category>
             <pattern># The Cowboys ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Cowboys, I think of Emmitt Smith and Troy Aikman!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Dallas Cowboys</set></think>
+                The Cowboys? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cowboys fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,9 +134,11 @@
 
         <category>
             <pattern># Philadelphia Eagles ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Eagles have a passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Philadelphia Eagles</set></think>
+                The Eagles? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be an Eagles fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,9 +147,11 @@
 
         <category>
             <pattern># Eagles ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Eagles have a passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Philadelphia Eagles</set></think>
+                The Eagles? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be an Eagles fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,9 +160,11 @@
 
         <category>
             <pattern># The Eagles ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Eagles have a passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Philadelphia Eagles</set></think>
+                The Eagles? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be an Eagles fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,9 +173,11 @@
 
         <category>
             <pattern># Green Bay Packers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I think a lot of football fans have a special place in their heart for the Packers! Did you ever play football?
+              <think><set name="favorite football team">Green Bay Packers</set></think>
+                The Packers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Packers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,9 +186,11 @@
 
         <category>
             <pattern># Packers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I think a lot of football fans have a special place in their heart for the Packers! Did you ever play football?
+              <think><set name="favorite football team">Green Bay Packers</set></think>
+                The Packers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Packers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -140,9 +199,11 @@
 
         <category>
             <pattern># The Packers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I think a lot of football fans have a special place in their heart for the Packers! Did you ever play football?
+              <think><set name="favorite football team">Green Bay Packers</set></think>
+                The Packers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Packers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -151,9 +212,11 @@
 
         <category>
             <pattern># Oakland Raiders ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                When I think of the Radiers, I always think of their passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Oakland Raiders</set></think>
+                When I think of the Radiers, I always think of their passionate fan base!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Raiders fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -162,9 +225,11 @@
 
         <category>
             <pattern># Raiders ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                When I think of the Radiers, I always think of their passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Oakland Raiders</set></think>
+                When I think of the Radiers, I always think of their passionate fan base!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Raiders fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,9 +238,11 @@
 
         <category>
             <pattern># The Raiders ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                When I think of the Radiers, I always think of their passionate fan base! Did you ever play football?
+              <think><set name="favorite football team">Oakland Raiders</set></think>
+                When I think of the Radiers, I always think of their passionate fan base!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Raiders fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -184,9 +251,11 @@
 
         <category>
             <pattern># Los Angeles Rams ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Rams were called the greatest show on turf! Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Rams</set></think>
+                Ah yes, the greatest show on turf!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Rams fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,9 +264,11 @@
 
         <category>
             <pattern># Rams ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Rams were called the greatest show on turf! Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Rams</set></think>
+                Ah yes, the greatest show on turf!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Rams fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -206,9 +277,11 @@
 
         <category>
             <pattern># The Rams ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Rams were called the greatest show on turf! Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Rams</set></think>
+                Ah yes, the greatest show on turf!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Rams fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -217,9 +290,11 @@
 
         <category>
             <pattern># San Francisco Forty Niners ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of players like Joe Montana and Dwight Clark! Did you ever play football?
+              <think><set name="favorite football team">San Francisco Forty Niners</set></think>
+                You must be a fan of players like Joe Montana and Dwight Clark in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Forty Niners fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -228,9 +303,11 @@
 
         <category>
             <pattern># Forty Niners ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of players like Joe Montana and Dwight Clark! Did you ever play football?
+              <think><set name="favorite football team">San Francisco Forty Niners</set></think>
+              You must be a fan of players like Joe Montana and Dwight Clark in that case!
+              <set name="most recent dialogue question">Do you think it's a good time to be a Forty Niners fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -239,9 +316,11 @@
 
         <category>
             <pattern># The Forty Niners ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of players like Joe Montana and Dwight Clark! Did you ever play football?
+              <think><set name="favorite football team">San Francisco Forty Niners</set></think>
+              You must be a fan of players like Joe Montana and Dwight Clark in that case!
+              <set name="most recent dialogue question">Do you think it's a good time to be a Forty Niners fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -250,9 +329,11 @@
 
         <category>
             <pattern># Minnesota Vikings ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Minnesotans sure love their Vikings! Did you ever play football?
+              <think><set name="favorite football team">Minnesota Vikings</set></think>
+                The Vikings? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Vikings fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -261,9 +342,11 @@
 
         <category>
             <pattern># Vikings ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Minnesotans sure love their Vikings! Did you ever play football?
+              <think><set name="favorite football team">Minnesota Vikings</set></think>
+                The Vikings? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Vikings fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -272,9 +355,11 @@
 
         <category>
             <pattern># The Vikings ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Minnesotans sure love their Vikings! Did you ever play football?
+              <think><set name="favorite football team">Minnesota Vikings</set></think>
+                The Vikings? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Vikings fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -283,9 +368,11 @@
 
         <category>
             <pattern># Pittsburgh Steelers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Steelers are probably the best team of the 1970s! I love quarterback Terry Bradshaw! Did you ever play football?
+              <think><set name="favorite football team">Pittsburgh Steelers</set></think>
+                The Steelers were probably the best team of the 1970s! I love quarterback Terry Bradshaw!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Steelers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -294,9 +381,11 @@
 
         <category>
             <pattern># Steelers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Steelers are probably the best team of the 1970s! I love quarterback Terry Bradshaw! Did you ever play football?
+              <think><set name="favorite football team">Pittsburgh Steelers</set></think>
+                The Steelers were probably the best team of the 1970s! I love quarterback Terry Bradshaw!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Steelers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -305,9 +394,11 @@
 
         <category>
             <pattern># The Steelers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Steelers are probably the best team of the 1970s! I love quarterback Terry Bradshaw! Did you ever play football?
+              <think><set name="favorite football team">Pittsburgh Steelers</set></think>
+                The Steelers were probably the best team of the 1970s! I love quarterback Terry Bradshaw!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Steelers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -316,9 +407,11 @@
 
         <category>
             <pattern># Cleveland Browns ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Cleveland Browns are a great team! Did you ever play football?
+              <think><set name="favorite football team">Cleveland Browns</set></think>
+                The Browns? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Browns fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -327,9 +420,11 @@
 
         <category>
             <pattern># Browns ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Cleveland Browns are a great team! Did you ever play football?
+              <think><set name="favorite football team">Cleveland Browns</set></think>
+                The Browns? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Browns fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -338,9 +433,11 @@
 
         <category>
             <pattern># The Browns ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Cleveland Browns are a great team! Did you ever play football?
+              <think><set name="favorite football team">Cleveland Browns</set></think>
+                The Browns? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Browns fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -349,9 +446,11 @@
 
         <category>
             <pattern># New Orleans Saints ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in New Orleans sure love the Saints! Did you ever play football?
+              <think><set name="favorite football team">New Orleans Saints</set></think>
+                The Saints? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Saints fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -360,9 +459,11 @@
 
         <category>
             <pattern># Saints ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in New Orleans sure love the Saints! Did you ever play football?
+              <think><set name="favorite football team">New Orleans Saints</set></think>
+                The Saints? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Saints fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -371,9 +472,11 @@
 
         <category>
             <pattern># The Saints ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in New Orleans sure love the Saints! Did you ever play football?
+              <think><set name="favorite football team">New Orleans Saints</set></think>
+                The Saints? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Saints fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -382,9 +485,11 @@
 
         <category>
             <pattern># Seattle Seahawks ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Seattle sure love the Seahawks! Did you ever play football?
+              <think><set name="favorite football team">Seattle Seahawks</set></think>
+                The Seahawks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Seahawks fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -393,9 +498,11 @@
 
         <category>
             <pattern># Seahawks ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Seattle sure love the Seahawks! Did you ever play football?
+              <think><set name="favorite football team">Seattle Seahawks</set></think>
+                The Seahawks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Seahawks fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -404,9 +511,11 @@
 
         <category>
             <pattern># The Seahawks ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Seattle sure love the Seahawks! Did you ever play football?
+              <think><set name="favorite football team">Seattle Seahawks</set></think>
+                The Seahawks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Seahawks fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -415,9 +524,11 @@
 
         <category>
             <pattern># New York Giants ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                They had a great Super Bowl win over the New England Patriots a few years ago! Did you ever play football?
+              <think><set name="favorite football team">New York Giants</set></think>
+                The Giants had a great Super Bowl win over the New England Patriots a few years ago!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Giants fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -426,9 +537,11 @@
 
         <category>
             <pattern># Giants ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                They had a great Super Bowl win over the New England Patriots a few years ago! Did you ever play football?
+              <think><set name="favorite football team">New York Giants</set></think>
+                The Giants had a great Super Bowl win over the New England Patriots a few years ago!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Giants fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -437,9 +550,11 @@
 
         <category>
             <pattern># The Giants ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                They had a great Super Bowl win over the New England Patriots a few years ago! Did you ever play football?
+              <think><set name="favorite football team">New York Giants</set></think>
+                The Giants had a great Super Bowl win over the New England Patriots a few years ago!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Giants fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -448,9 +563,11 @@
 
         <category>
             <pattern># Chicago Bears ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Talk about an iconic team, I love da Bears! Everyone knows Soldier Field! Did you ever play football?
+              <think><set name="favorite football team">Chicago Bears</set></think>
+                Da Bears? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bears fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -459,9 +576,11 @@
 
         <category>
             <pattern># Bears ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Talk about an iconic team, I love da Bears! Everyone knows Soldier Field! Did you ever play football?
+              <think><set name="favorite football team">Chicago Bears</set></think>
+                Da Bears? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bears fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -470,9 +589,11 @@
 
         <category>
             <pattern># The Bears ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Talk about an iconic team, I love da Bears! Everyone knows Soldier Field! Did you ever play football?
+              <think><set name="favorite football team">Chicago Bears</set></think>
+                Da Bears? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bears fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -481,9 +602,11 @@
 
         <category>
             <pattern># Buffalo Bills ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a big fan of Doug Flutie! Did you ever play football?
+              <think><set name="favorite football team">Buffalo Bills</set></think>
+                You must be a big fan of Doug Flutie in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buffalo Bills fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -492,9 +615,11 @@
 
         <category>
             <pattern># Buffalo ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a big fan of Doug Flutie! Did you ever play football?
+              <think><set name="favorite football team">Buffalo Bills</set></think>
+                You must be a big fan of Doug Flutie in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buffalo Bills fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -503,9 +628,11 @@
 
         <category>
             <pattern># Bills ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a big fan of Doug Flutie! Did you ever play football?
+              <think><set name="favorite football team">Buffalo Bills</set></think>
+                You must be a big fan of Doug Flutie in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buffalo Bills fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -514,9 +641,11 @@
 
         <category>
             <pattern># The Buffalo Bills ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a big fan of Doug Flutie! Did you ever play football?
+              <think><set name="favorite football team">Buffalo Bills</set></think>
+                You must be a big fan of Doug Flutie in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buffalo Bills fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -525,9 +654,11 @@
 
         <category>
             <pattern># The Bills ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a big fan of Doug Flutie! Did you ever play football?
+              <think><set name="favorite football team">Buffalo Bills</set></think>
+                You must be a big fan of Doug Flutie in that case!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buffalo Bills fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -536,9 +667,11 @@
 
         <category>
             <pattern># Washington Redskins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Can you believe quarterback Joe Theisman's career ended with that broken leg! What a memorable moment! Did you ever play football?
+              <think><set name="favorite football team">Washington Redskins</set></think>
+                The Redskins? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Redskins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -547,9 +680,11 @@
 
         <category>
             <pattern># Redskins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Can you believe quarterback Joe Theisman's career ended with that broken leg! What a memorable moment! Did you ever play football?
+              <think><set name="favorite football team">Washington Redskins</set></think>
+                The Redskins? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Redskins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -558,9 +693,11 @@
 
         <category>
             <pattern># The Redskins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Can you believe quarterback Joe Theisman's career ended with that broken leg! What a memorable moment! Did you ever play football?
+              <think><set name="favorite football team">Washington Redskins</set></think>
+                The Redskins? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Redskins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -569,10 +706,11 @@
 
         <category>
             <pattern># Denver Broncos ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I love the Mile High Team!
-                                                                            Did you ever play football?
+              <think><set name="favorite football team">Denver Broncos</set></think>
+                The Broncos? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Broncos fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -581,10 +719,11 @@
 
         <category>
             <pattern># Broncos ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I love the Mile High Team!
-                                                                            Did you ever play football?
+              <think><set name="favorite football team">Denver Broncos</set></think>
+                The Broncos? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Broncos fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -593,10 +732,11 @@
 
         <category>
             <pattern># The Broncos ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I love the Mile High Team!
-                                                                            Did you ever play football?
+              <think><set name="favorite football team">Denver Broncos</set></think>
+                The Broncos? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Broncos fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -605,10 +745,11 @@
 
         <category>
             <pattern># Kansas City Chiefs ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I bet it was exciting to see the Chiefs finally win a Super Bowl after all those years!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Kansas City Chiefs</set></think>
+                It was so exciting to see the Chiefs finally win a Super Bowl after all those years, wasn't it!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chiefs fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -617,10 +758,11 @@
 
         <category>
             <pattern># Chiefs ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I bet it was exciting to see the Chiefs finally win a Super Bowl after all those years!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Kansas City Chiefs</set></think>
+                It was so exciting to see the Chiefs finally win a Super Bowl after all those years, wasn't it!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chiefs fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -629,10 +771,11 @@
 
         <category>
             <pattern># The Chiefs ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                I bet it was exciting to see the Chiefs finally win a Super Bowl after all those years!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Kansas City Chiefs</set></think>
+                It was so exciting to see the Chiefs finally win a Super Bowl after all those years, wasn't it!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chiefs fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -641,10 +784,11 @@
 
         <category>
             <pattern># Arizona Cardinals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Arizona Cardinals are the oldest team in football history!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Arizona Cardinals</set></think>
+                The Cardinals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cardinals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -653,10 +797,11 @@
 
         <category>
             <pattern># Cardinals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Arizona Cardinals are the oldest team in football history!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Arizona Cardinals</set></think>
+                The Cardinals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cardinals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -665,10 +810,11 @@
 
         <category>
             <pattern># The Cardinals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Arizona Cardinals are the oldest team in football history!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Arizona Cardinals</set></think>
+                The Cardinals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Cardinals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -677,10 +823,11 @@
 
         <category>
             <pattern># Detroit Lions ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
+              <think><set name="favorite football team">Detroit Lions</set></think>
                 You must be a fan of Barry Sanders, the greatest running back of all time!
-                                                                                        Did you ever play football?
+                <set name="most recent dialogue question">Do you think it's a good time to be a Lions fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -689,10 +836,11 @@
 
         <category>
             <pattern># Lions ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
+              <think><set name="favorite football team">Detroit Lions</set></think>
                 You must be a fan of Barry Sanders, the greatest running back of all time!
-                                                                                        Did you ever play football?
+                <set name="most recent dialogue question">Do you think it's a good time to be a Lions fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -701,10 +849,11 @@
 
         <category>
             <pattern># The Lions ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
+              <think><set name="favorite football team">Detroit Lions</set></think>
                 You must be a fan of Barry Sanders, the greatest running back of all time!
-                                                                                        Did you ever play football?
+                <set name="most recent dialogue question">Do you think it's a good time to be a Lions fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -713,10 +862,11 @@
 
         <category>
             <pattern># Carolina Panthers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Carolina Panthers are one of the newest teams in the league!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Carolina Panthers</set></think>
+                The Panthers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Panthers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -725,10 +875,11 @@
 
         <category>
             <pattern># Panthers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Carolina Panthers are one of the newest teams in the league!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Carolina Panthers</set></think>
+                The Panthers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Panthers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -737,10 +888,11 @@
 
         <category>
             <pattern># The Panthers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                The Carolina Panthers are one of the newest teams in the league!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Carolina Panthers</set></think>
+                The Panthers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Panthers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -749,10 +901,11 @@
 
         <category>
             <pattern># Baltimore Ravens ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must love their star quarterback Lamar Jackson!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Baltimore Ravens</set></think>
+                The Ravens? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Ravens fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -761,10 +914,11 @@
 
         <category>
             <pattern># Ravens ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must love their star quarterback Lamar Jackson!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Baltimore Ravens</set></think>
+                The Ravens? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Ravens fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -773,10 +927,11 @@
 
         <category>
             <pattern># The Ravens ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must love their star quarterback Lamar Jackson!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Baltimore Ravens</set></think>
+                The Ravens? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Ravens fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -785,9 +940,11 @@
 
         <category>
             <pattern># Miami Dolphins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of star quarterback Dan Marino! Did you ever play football?
+              <think><set name="favorite football team">Miami Dolphins</set></think>
+                Well then you must be a fan of star quarterback Dan Marino!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Dolphins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -796,9 +953,11 @@
 
         <category>
             <pattern># Dolphins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of star quarterback Dan Marino! Did you ever play football?
+              <think><set name="favorite football team">Miami Dolphins</set></think>
+                Well then you must be a fan of star quarterback Dan Marino!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Dolphins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -807,9 +966,11 @@
 
         <category>
             <pattern># The Dolphins ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                You must be a fan of star quarterback Dan Marino! Did you ever play football?
+              <think><set name="favorite football team">Miami Dolphins</set></think>
+                Well then you must be a fan of star quarterback Dan Marino!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Dolphins fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -818,9 +979,11 @@
 
         <category>
             <pattern># New York Jets ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Their former quarterback Joe Namath is a legend! Did you ever play football?
+              <think><set name="favorite football team">New York Jets</set></think>
+                The Jets former quarterback Joe Namath is a legend!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jets fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -829,9 +992,11 @@
 
         <category>
             <pattern># Jets ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Their former quarterback Joe Namath is a legend! Did you ever play football?
+              <think><set name="favorite football team">New York Jets</set></think>
+                The Jets former quarterback Joe Namath is a legend!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jets fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -840,9 +1005,11 @@
 
         <category>
             <pattern># The Jets ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Their former quarterback Joe Namath is a legend! Did you ever play football?
+              <think><set name="favorite football team">New York Jets</set></think>
+                The Jets former quarterback Joe Namath is a legend!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jets fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -851,9 +1018,11 @@
 
         <category>
             <pattern># Houston Texans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Houston sure love the Texans! Did you ever play football?
+              <think><set name="favorite football team">Houston Texans</set></think>
+                The Texans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Texans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -862,9 +1031,11 @@
 
         <category>
             <pattern># Texans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Houston sure love the Texans! Did you ever play football?
+              <think><set name="favorite football team">Houston Texans</set></think>
+                The Texans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Texans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -873,9 +1044,11 @@
 
         <category>
             <pattern># The Texans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Houston sure love the Texans! Did you ever play football?
+              <think><set name="favorite football team">Houston Texans</set></think>
+                The Texans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Texans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -884,10 +1057,11 @@
 
         <category>
             <pattern># Atlanta Falcons ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Atlanta sure love the Falcons!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Atlanta Falcons</set></think>
+                The Falcons? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Falcons fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -896,10 +1070,11 @@
 
         <category>
             <pattern># Falcons ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Atlanta sure love the Falcons!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Atlanta Falcons</set></think>
+                The Falcons? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Falcons fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -908,10 +1083,11 @@
 
         <category>
             <pattern># The Falcons ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Atlanta sure love the Falcons!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Atlanta Falcons</set></think>
+                The Falcons? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Falcons fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -920,10 +1096,11 @@
 
         <category>
             <pattern># Los Angeles Chargers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Los Angeles sure love the Chargers!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Chargers</set></think>
+                The Chargers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chargers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -932,10 +1109,11 @@
 
         <category>
             <pattern># Chargers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Los Angeles sure love the Chargers!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Chargers</set></think>
+                The Chargers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chargers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -944,10 +1122,11 @@
 
         <category>
             <pattern># The Chargers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Los Angeles sure love the Chargers!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Los Angeles Chargers</set></think>
+                The Chargers? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Chargers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -956,10 +1135,11 @@
 
         <category>
             <pattern># Indianapolis Colts ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Chargers, I always think of the star quarterback Peyton Manning!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Indianapolis Colts</set></think>
+                Whenever I think of the Colts, I always think of the star quarterback Peyton Manning!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Colts fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -968,10 +1148,11 @@
 
         <category>
             <pattern># Colts ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Chargers, I always think of the star quarterback Peyton Manning!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Indianapolis Colts</set></think>
+                Whenever I think of the Colts, I always think of the star quarterback Peyton Manning!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Colts fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -980,10 +1161,11 @@
 
         <category>
             <pattern># The Colts ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Whenever I think of the Chargers, I always think of the star quarterback Peyton Manning!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Indianapolis Colts</set></think>
+                Whenever I think of the Colts, I always think of the star quarterback Peyton Manning!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Colts fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -992,10 +1174,11 @@
 
         <category>
             <pattern># Cincinatti Bengals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Cincinatti sure love their Bengals!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Cincinatti Bengals</set></think>
+                The Bengals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bengals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1004,10 +1187,11 @@
 
         <category>
             <pattern># Bengals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Cincinatti sure love their Bengals!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Cincinatti Bengals</set></think>
+                The Bengals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bengals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1016,10 +1200,11 @@
 
         <category>
             <pattern># The Bengals ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Cincinatti sure love their Bengals!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Cincinatti Bengals</set></think>
+                The Bengals? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Bengals fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1028,10 +1213,11 @@
 
         <category>
             <pattern># Tennessee Titans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tennessee sure love the Titans!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tennessee Titans</set></think>
+                The Titans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Titans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1040,10 +1226,11 @@
 
         <category>
             <pattern># Titans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tennessee sure love the Titans!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tennessee Titans</set></think>
+                The Titans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Titans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1052,10 +1239,11 @@
 
         <category>
             <pattern># The Titans ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tennessee sure love the Titans!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tennessee Titans</set></think>
+                The Titans? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Titans fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1064,10 +1252,11 @@
 
         <category>
             <pattern># Jacksonville Jaguars ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Jacksonville sure love the Jaguars!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Jacksonville Jaguars</set></think>
+                The Jaguars? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jaguars fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1076,10 +1265,11 @@
 
         <category>
             <pattern># Jaguars ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Jacksonville sure love the Jaguars!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Jacksonville Jaguars</set></think>
+                The Jaguars? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jaguars fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1088,10 +1278,11 @@
 
         <category>
             <pattern># The Jaguars ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Jacksonville sure love the Jaguars!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Jacksonville Jaguars</set></think>
+                The Jaguars? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Jaguars fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1100,10 +1291,11 @@
 
         <category>
             <pattern># Tampa Bay Buccaneers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tampa sure love their Bucks!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tampa Bay Buccaneers</set></think>
+                The Bucks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buccaneers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1112,10 +1304,11 @@
 
         <category>
             <pattern># Buccaneers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tampa sure love their Bucks!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tampa Bay Buccaneers</set></think>
+                The Bucks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buccaneers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1124,10 +1317,11 @@
 
         <category>
             <pattern># The Buccaneers ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tampa sure love their Bucks!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tampa Bay Buccaneers</set></think>
+                The Bucks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buccaneers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1136,10 +1330,11 @@
 
         <category>
             <pattern># Bucks ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tampa sure love their Bucks!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tampa Bay Buccaneers</set></think>
+                The Bucks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buccaneers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1148,10 +1343,11 @@
 
         <category>
             <pattern># The Bucks ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                People in Tampa sure love their Bucks!
-                                                                                        Did you ever play football?
+              <think><set name="favorite football team">Tampa Bay Buccaneers</set></think>
+                The Bucks? Who are they? Only kidding!
+                <set name="most recent dialogue question">Do you think it's a good time to be a Buccaneers fan?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1160,7 +1356,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
                 That's okay! Did you ever play football?
                 <oob>
@@ -1171,9 +1367,9 @@
 
         <category>
             <pattern>_</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Did you ever play football?
+                I don't think I've heard of that team before! Did you ever play football?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1182,9 +1378,9 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>What is your favorite professional football team?</that>
+            <that>What's your favorite professional football team?</that>
             <template>
-                Did you ever play football?
+                I understand. Did you ever play football?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1193,9 +1389,10 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you ever play football?</that>
+            <that>Do you think it's a good time to be a Patriots fan?</that>
             <template>
-                That's great! Did you play offense, defense, or special teams?
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1204,36 +1401,9 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Did you ever play football?</that>
+            <that>Do you think it's a good time to be a Patriots fan?</that>
             <template>
-                Sometimes it is better to cheer on from the stands!
-                                                                                        Did you ever watch football games in high school?
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>Football_Stadium.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you ever watch football games in high school?</that>
-            <template>
-                What good memories! Have you ever watched your favorite team win the Super Bowl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you ever watch football games in high school?</that>
-            <template>
-                I understand! Would you like to keep talking about football?
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1242,9 +1412,1194 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you ever watch football games in high school?</that>
+            <that>Do you think it's a good time to be a Patriots fan?</that>
             <template>
-                I understand! Would you like to keep talking about football?
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cowboys fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cowboys fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cowboys fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be an Eagles fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be an Eagles fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be an Eagles fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Packers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Packers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Packers fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Raiders fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Raiders fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Raiders fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Rams fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Rams fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Rams fan?</that>
+            <template>
+             <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Forty Niners fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Forty Niners fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Forty Niners fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Vikings fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Vikings fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Vikings fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Steelers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Steelers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Steelers fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Browns fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Browns fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Browns fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Saints fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Saints fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Saints fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Seahawks fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Seahawks fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Seahawks fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Giants fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Giants fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Giants fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bears fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bears fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bears fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buffalo Bills fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buffalo Bills fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buffalo Bills fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Redskins fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Redskins fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Redskins fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Broncos fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Broncos fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Broncos fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chiefs fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chiefs fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chiefs fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cardinals fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cardinals fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Cardinals fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Lions fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Lions fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Lions fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Panthers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Panthers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Panthers fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Ravens fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Ravens fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Ravens fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Dolphins fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Dolphins fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Dolphins fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jets fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jets fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jets fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Texans fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Texans fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Texans fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Falcons fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Falcons fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Falcons fan?</that>
+            <template>
+               <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chargers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chargers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Chargers fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Colts fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Colts fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Colts fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bengals fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bengals fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Bengals fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Titans fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Titans fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Titans fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jaguars fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jaguars fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Jaguars fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+                I can't argue with you on that!
+                <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+              <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think it's a good time to be a Buccaneers fan?</that>
+            <template>
+              You think so? <set name="most recent dialogue question">What are you expecting for this season?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What are you expecting for this season?</that>
+            <template>
+              I'll take your word for it! Hopefully it's a good one!
+              <set name="most recent dialogue question">Seeing as how you're a football fan, did you ever play football?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Seeing as how you're a football fan, did you ever play football?</that>
+            <template>
+                How did I know!
+                <set name="most recent dialogue question">So did you play offense, defense, or special teams?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever play football?</that>
+            <template>
+              How did I know!
+              <set name="most recent dialogue question">So did you play offense, defense, or special teams?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Seeing as how you're a football fan, did you ever play football?</that>
+            <template>
+                <set name="most recent dialogue question">Sometimes it's better to cheer on from the couch, don't you think?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever play football?</that>
+            <template>
+                <set name="most recent dialogue question">Sometimes it's better to cheer on from the couch, don't you think?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Sometimes it's better to cheer on from the couch, don't you think?</that>
+            <template>
+                Heck yes!
+                <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Sometimes it's better to cheer on from the couch, don't you think?</that>
+            <template>
+                I may have to politely disagree, especially when it comes to Super Bowl season!
+                <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Sometimes it's better to cheer on from the couch, don't you think?</that>
+            <template>
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1253,9 +2608,11 @@
 
         <category>
             <pattern># Offense ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <that>So did you play offense, defense, or special teams?</that>
             <template>
-                You must be very competitve! Offense is where you get to have the most fun! Do you remember your jersey number?
+              <think><set name="football position">Offense</set></think>
+                Wow! You must be very competitive to play <get name="football position"/>!
+                <set name="most recent dialogue question">What was your position?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1264,9 +2621,11 @@
 
         <category>
             <pattern># Defense ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <that>So did you play offense, defense, or special teams?</that>
             <template>
-                You must be very competitve! Defense would be the most fun to play! Do you remember your jersey number?
+              <think><set name="football position">Defense</set></think>
+                Wow! <get name="football position"/> would be the most fun to play!
+                  <set name="most recent dialogue question">What was your position?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1274,10 +2633,11 @@
         </category>
 
         <category>
-            <pattern># Special Teams ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Quarter Back ^</pattern>
+            <that>What was your position?</that>
             <template>
-                You must be very competitve! You get to have the most fun on special teams! Do you remember your jersey number?
+              Oh wow I am so impressed! You were the star of the show! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1285,10 +2645,11 @@
         </category>
 
         <category>
-            <pattern># Special ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Running Back ^</pattern>
+            <that>What was your position?</that>
             <template>
-                You must be very competitve! You get to have the most fun on special teams! Do you remember your jersey number?
+              Oh wow I am so impressed! You must be a quick runner! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1296,10 +2657,11 @@
         </category>
 
         <category>
-            <pattern># Team ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Halfback ^</pattern>
+            <that>What was your position?</that>
             <template>
-                You must be very competitve! You get to have the most fun on special teams! Do you remember your jersey number?
+              Oh wow I am so impressed! You must be a quick runner! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1307,10 +2669,11 @@
         </category>
 
         <category>
-            <pattern># Special Team ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Fullback ^</pattern>
+            <that>What was your position?</that>
             <template>
-                You must be very competitve! You get to have the most fun on special teams! Do you remember your jersey number?
+              Oh wow I am so impressed! You must be a good runner! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1318,10 +2681,11 @@
         </category>
 
         <category>
-            <pattern># Coach ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Offensive Line ^</pattern>
+            <that>What was your position?</that>
             <template>
-                That's amazing! Did you keep any of your old sports memorabilia?
+              Oh wow I am so impressed! You must have some strength behind you! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1329,10 +2693,11 @@
         </category>
 
         <category>
-            <pattern># Coached ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Wide Receiver ^</pattern>
+            <that>What was your position?</that>
             <template>
-                That's amazing! Did you keep any of your old sports memorabilia?
+              Oh wow I am so impressed! Being a wide receiver is pretty crucial. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1340,10 +2705,11 @@
         </category>
 
         <category>
-            <pattern># Managed ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Tight End ^</pattern>
+            <that>What was your position?</that>
             <template>
-                That's amazing! Did you keep any of your old sports memorabilia?
+              Oh wow I am so impressed! You must have some strength behind you! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1351,10 +2717,11 @@
         </category>
 
         <category>
-            <pattern># Manager ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Defensive Line ^</pattern>
+            <that>What was your position?</that>
             <template>
-                That's amazing! Did you keep any of your old sports memorabilia?
+              Oh wow I am so impressed! You must be very strong. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1362,10 +2729,119 @@
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you play offense, defense, or special teams?</that>
+            <pattern># Defensive End ^</pattern>
+            <that>What was your position?</that>
             <template>
-                I see. Did you keep any of your old sports memorabilia?
+              Oh wow I am so impressed! You must be very strong. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Defensive Tackle ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow I am so impressed! You must be very strong. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Linebacker ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow I am so impressed! You must be very strong and fast. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Cornerback ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow I am so impressed! You must be very good at tackling. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Safety ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow I am so impressed! You must be very strong and fast. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Kicker ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Wow! You must be a really good kicker! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Punter ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Wow! You must be a really good punter! I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Return ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow! Return specialist is an honestly crucial position. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Return Specialist ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow! Return specialist is an honestly crucial position. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Long Snapper ^</pattern>
+            <that>What was your position?</that>
+            <template>
+              Oh wow! Long Snapper is an honestly crucial position. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1374,20 +2850,10 @@
 
         <category>
             <pattern>_</pattern>
-            <that>Do you remember your jersey number?</that>
+            <that>What was your position?</that>
             <template>
-                Those numbers can be so meaningful! And the letterman jackets were iconic! Did you keep any of your old sports memorabila?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you keep any of your old sports memorabilia?</that>
-            <template>
-                Oh wow, that's impressive! What kind of sports memorabilia do you have?
+              Oh wow! That's an honestly crucial position. I can't play but love to watch from the couch.
+              <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1396,10 +2862,10 @@
 
         <category>
             <pattern>_</pattern>
-            <that>What kind of sports memorabilia do you have?</that>
+            <that>What are your Super Bowl traditions?</that>
             <template>
-                You must like to save things that are special! Would you like to see
-                                                                                        a short video on football memorabilia?
+              Love to hear it! Mine involve buffalo chicken dip, chips, and an ice cold beverage.
+              Maybe we could watch together sometime!
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1407,132 +2873,23 @@
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you keep any of your old sports memorabilia?</that>
+            <pattern>_</pattern>
+            <that>Maybe we could watch together sometime!</that>
             <template>
-                I don't blame you! Would you like to see
-                                                                                        a short video on football memorabilia?
+              <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you keep any of your old sports memorabilia?</that>
-            <template>
-                I don't blame you! Would you like to see
-                                                                                        a short video on football memorabilia?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Would you like to see a short video on football memorabilia?</that>
-            <template>
-                Talk about a piece of football history! Would you like to keep talking about football?
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>Pawn_Stars.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to see a short video on football memorabilia?</that>
-            <template>
-                No worries! Would you like to keep talking about football?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Would you like to keep talking about football?</that>
-            <template>
-                <random>
-                    <li>I love chatting about pigskin with you! Not only am I a fan of the game, but I love watching football movies! Have you ever seen
-                                                                                                                      The Longest Yard with Burt Reynolds?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li>I love talking about pigskin with you! Did you know that President Teddy Roosevelt threatened to abolish football?<oob>
-                        <robot>
-                            <image>
-                                <filename>Teddy_Roosevelt.jpg</filename>
-                            </image>
-                        </robot>
-                    </oob></li>
-                    <li>I love talking about pigskin with you! Did you know that the game of football orginated from rugby?<oob>
-                        <robot>
-                            <image>
-                                <filename>Football_Rugby.jpg</filename>
-                            </image>
-                        </robot>
-                    </oob></li></random></template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep talking about football?</that>
-            <template>
-                No worries! What would you like to talk about?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Have you ever watched your favorite team win the Super Bowl?</that>
-            <template>
-                It truly is an exciting experience! Did you know that the Green Bay Packers
-                                                                                        won the very first Super Bowl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Have you ever watched your favorite team win the Super Bowl?</that>
-            <template>
-                It truly is an exciting experience! Did you know that the Green Bay Packers
-                                                                                        won the very first Super Bowl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever watched your favorite team win the Super Bowl?</that>
-            <template>
-                It truly is an exciting experience! Did you know that the Green Bay Packers
-                                                                                        won the very first Super Bowl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
             <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
             <template>
-                Yes! The excitement was palpable! Would you like to see a short recap of the game?
+                Indeed!
+                <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1543,7 +2900,8 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
             <template>
-                The excitement was palpable! Would you like to see a short recap of the game?
+              Indeed!
+              <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1554,7 +2912,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
             <template>
-                The excitement was palpable! Would you like to see a short recap of the game?
+              Indeed! <set name="most recent dialogue question">Would you like to see a short recap of the game??</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1565,8 +2923,8 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to see a short recap of the game?</that>
             <template>
-                There's no denying that Vince Lombardi was a great coach!
-                                                                                        Would you like to keep talking about football?
+                What a game! There's no denying that Vince Lombardi was a great coach!
+                Would you like to keep talking about sports?
                 <oob>
                     <robot>
                         <video>
@@ -1581,177 +2939,12 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to see a short recap of the first Super Bowl?</that>
             <template>
-                That's just fine! Would you like to keep talking about football?
+                That's just fine! Would you like to keep talking about sports?
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Have you ever seen The Longest Yard with Burt Reynolds?</that>
-            <template>
-                It's great to see the underdogs win the game, though you have to admit the competition looks rather physical!
-                                                                                        Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>Longest_Yard.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Have you ever seen The Longest Yard with Burt Reynolds?</that>
-            <template>
-                It's great to see the underdogs win the game, though you have to admit the competition looks rather physical!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>Longest_Yard.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever seen The Longest Yard with Burt Reynolds?</that>
-            <template>
-                It's great to see the underdogs win the game, though you have to admit the competition looks rather physical!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>Longest_Yard.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you know that President Teddy Roosevelt threatened to abolish football in the early 1900s?</that>
-            <template>
-                Roosevelt was concerned over the game's violence, since twenty-five players died in 1903 alone!
-                                                                                        Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you know that President Teddy Roosevelt threatened to abolish football in the early 1900s?</that>
-            <template>
-                Roosevelt was concerned over the game's violence, since twenty-five players died in 1903 alone!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you know that President Teddy Roosevelt threatened to abolish football in the early 1900s?</that>
-            <template>
-                Roosevelt was concerned over the game's violence, since twenty-five players died in 1903 alone!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you know that the game of football orginated from rugby?</that>
-            <template>
-                Football's origins in rugby attests to the physical nature of the game we know today!
-                                                                                        Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you know that the game of football orginated from rugby?</that>
-            <template>
-                Football's origins in rugby attests to the physical nature of the game we know today!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you know that the game of football orginated from rugby?</that>
-            <template>
-                Football's origins in rugby attests to the physical nature of the game we know today!
-                                                                                      Do you think it would be difficult to be a professional football player?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Do you think it would be difficult to be a professional football player?</that>
-            <template>
-                There are a lot of injuries involved with playing the game!
-                                                                                        What are your thoughts on the recent studies on football brain injuries?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-    </topic>
-
-    <category>
-        <pattern>_</pattern>
-        <that>What are your thoughts on the recent studies on football brain injuries?</that>
-        <template>
-            There is definitely growing awareness surrounding the CTE brain disease in athletes today!
-                                                                                  Would you like to continue discussing sports?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Would you like to continue discussing sports?</that>
-        <template>
-            Great! Do you want to talk about basketball, baseball, football, hockey or the olympics?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Would you like to continue discussing sports?</that>
-        <template>
-            Sure thing! What would you like to talk about?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+</topic>
 </aiml>

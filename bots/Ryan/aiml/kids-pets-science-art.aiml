@@ -304,7 +304,30 @@
     </category>
 
     <category>
+        <pattern>YES *</pattern>
+        <that>DO YOU HAVE PETS?</that>
+        <template>
+            Aw, I bet you love them. What kind of pet do you have?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>I HAVE A *</pattern>
+        <that>DO YOU HAVE PETS?</that>
+        <template>
+            Aw, I bet you love them. You know, I love learning more about you.
+            How would you describe yourself?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES I HAVE A *</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
             Aw, I bet you love them. You know, I love learning more about you.
@@ -351,6 +374,8 @@
             </oob>
         </template>
     </category>
+
+  </topic>
 
     <category>
         <pattern>_</pattern>
@@ -470,8 +495,6 @@
             </oob>
         </template>
     </category>
-
-  </topic>
 
     <category>
         <pattern># ART ^</pattern>

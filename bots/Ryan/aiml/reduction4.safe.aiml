@@ -5685,6 +5685,13 @@
         </template>
     </category>
     <category>
+        <pattern>GET ME *</pattern>
+        <template>Sure thing.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
         <pattern>YER *</pattern>
         <template>I see.<oob>
             <robot></robot>
@@ -15995,7 +16002,14 @@
     </category>
     <category>
         <pattern>WHAT ARE YOU INTERESTED IN</pattern>
-        <template><srai>INTERESTS</srai>  <!-- REDUCTION -->
+        <template>Some of my favorite topics are
+          <random>
+              <li>television and movies.</li>
+              <li>science and sports.</li>
+              <li>food and cooking.</li>
+              <li>museums and inventions.</li>
+              <li>books and reading.</li>
+          </random>  <!-- REDUCTION -->
         </template>
     </category>
     <category>

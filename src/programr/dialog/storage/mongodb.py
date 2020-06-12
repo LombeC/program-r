@@ -123,6 +123,7 @@ class ConversationMongodbStorage(ConversationStorage):
 
     def load_client_properties(self, userid):
         if self.db['user_info'].find_one({'userid': userid}) is not None:
+            print("Found user")
             user_info = self.db['user_info'].find_one()
             # print("USER_INFO: {}".format(type(user_info)))
             # print("USER_INFO: {}".format(user_info))
@@ -130,6 +131,7 @@ class ConversationMongodbStorage(ConversationStorage):
             self.location = user_info['location']
             self.time_zone = user_info['time zone']
         else:
+            print("Writing new user to database")
             document = {
                 "userid": userid,
                 "name": "Uknown",

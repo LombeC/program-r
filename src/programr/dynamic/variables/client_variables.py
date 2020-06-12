@@ -10,7 +10,6 @@ class Name(DynamicVariable):
         return client_context.bot._conversation_storage.user_name
 
 
-
 class Location(DynamicVariable):
 
     def __init__(self, config):
