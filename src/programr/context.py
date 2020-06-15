@@ -14,6 +14,10 @@ class ClientContext(object):
         self._question_depth = 0
         self._id = uuid.uuid1()
 
+        self.user_name = "Uknown"
+        self.location = "Uknown"
+        self.time_zone = "Uknown"
+
 
     def ylogger_type(self):
         return "context"
@@ -45,6 +49,20 @@ class ClientContext(object):
     @brain.setter
     def brain(self, id):
         self._brain = id
+
+    def load_client_properties(self, user_name, location, time_zone):
+        self.user_name = user_name
+        self.location = location
+        self.time_zone = time_zone
+
+    def get_user_name(self):
+        return self.user_name
+
+    def get_location(self):
+        return self.location
+
+    def get_time_zone(self):
+        return self.time_zone
 
     def check_max_recursion(self):
         if self.bot.configuration.max_question_recursion != -1:

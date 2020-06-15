@@ -7,7 +7,8 @@ class Name(DynamicVariable):
         DynamicVariable.__init__(self, config)
 
     def get_value(self, client_context, value=None):
-        return client_context.bot._conversation_storage.user_name
+        return client_context.get_user_name()
+        # return client_context.bot._conversation_storage.user_name
 
 
 class Location(DynamicVariable):
@@ -16,7 +17,8 @@ class Location(DynamicVariable):
         DynamicVariable.__init__(self, config)
 
     def get_value(self, client_context, value=None):
-        return client_context.bot._conversation_storage.location
+        # TODO: Make location a variable of client_context matched by userid
+        return client_context.get_location()
 
 
 class TimeZone(DynamicVariable):
@@ -25,4 +27,5 @@ class TimeZone(DynamicVariable):
         DynamicVariable.__init__(self, config)
 
     def get_value(self, client_context, value=None):
-        return client_context.bot._conversation_storage.time_zone
+        return client_context.get_time_zone()
+        # return client_context.bot._conversation_storage.time_zone

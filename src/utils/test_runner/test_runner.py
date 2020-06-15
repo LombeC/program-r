@@ -319,6 +319,7 @@ class TestRunnerBotClient(BotClient):
         stop = datetime.datetime.now()
         diff = stop-start
         total_tests = len(successes)+len(failures)
+        percentage = total_tests/len(successes)
 
         
         if warnings > 0:
@@ -329,6 +330,7 @@ class TestRunnerBotClient(BotClient):
         print("Thats approx %f aiml_tests per sec"%(total_tests/diff.total_seconds()))
         print("Successes: %d" % len(successes))
         print("Failures:  %d" % len(failures))
+        print("Percentage: %d" % percentage)
 
 if __name__ == '__main__':
 
