@@ -369,6 +369,7 @@ class Bot(object):
 
         if srai is False:
             #return Question.create_from_text(client_context.brain.tokenizer, pre_processed, srai=srai)
+            # print("client_context.brain.nlp: {}".format(client_context.brain.nlp))
             return Question.create_from_text(client_context.brain.nlp, pre_processed, srai=srai)
         else:
             return Question.create_from_text(client_context.brain.nlp, pre_processed, srai=srai)

@@ -32,8 +32,8 @@ class WikipediaService(Service):
         # NOTE: Often wikipedia articles will have a listen plug-in in the summary.
         #       We need to make sure to get rid of extraneous characters
         #       so Ryan sounds natural, hence the cleaning.
-        print("BEFORE CLEANING")
-        print("summary: {}".format(summary))
+        # print("BEFORE CLEANING")
+        # print("summary: {}".format(summary))
         summary = summary.replace("(listen);", "")
         summary = summary.replace("(listen),", "")
         summary = summary.replace("(listen)", "")

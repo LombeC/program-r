@@ -88,7 +88,7 @@ class BotClient(ResponseLogger):
         self._id = id
 
         self._arguments = self.parse_arguments(argument_parser=argument_parser)
-
+        print("self._arguments: {}".format(self._arguments))
         self.initiate_logging(self.arguments)
 
         self._configuration = None

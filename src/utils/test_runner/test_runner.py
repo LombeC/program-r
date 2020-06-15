@@ -6,7 +6,7 @@ import os
 from programr.clients.client import BotClient
 from programr.utils.files.filefinder import FileFinder
 from programr.clients.events.console.config import ConsoleConfiguration
-from programr.utils.logging.ylogger import YLogger
+# from programr.utils.logging.ylogger import YLogger
 
 class TestQuestion(object):
 
@@ -161,13 +161,14 @@ class TestFileFileFinder(FileFinder):
                     for filename in [f for f in filenames if f.endswith(extension)]:
                         found_files.append((filename, os.path.join(dirpath, filename)))
         except FileNotFoundError:
-            YLogger.error(self, "No directory found [%s]", path)
+            # YLogger.error(self, "No directory found [%s]", path)
+            a = 0
 
         return sorted(found_files, key=lambda element: (element[1], element[0]))
 
     def load_dir_contents(self, paths, subdir=False, extension=".txt", filename_as_userid=False):
-        print("Paths: {}".format(paths))
-        print("Subdir: {}".format(subdir))
+        # print("Paths: {}".format(paths))
+        # print("Subdir: {}".format(subdir))
         files = self.find_files(paths, subdir, extension)
         # print("Files: {}".format(files))
 
@@ -181,13 +182,13 @@ class TestFileFileFinder(FileFinder):
                     userid = just_filename
                 else:
                     userid = "*"
-                print("#################file[1]: {}".format(file[1]))
+                # print("#################file[1]: {}".format(file[1]))
                 collection[just_filename.upper()] = self.load_file_contents(file[1], num)
                 file_maps[just_filename.upper()] = file[1]
                 num += 1
             except Exception as excep:
                 print(excep)
-                YLogger.exception(self, "Failed to load file contents for file [%s]"% file[1], excep)
+                # YLogger.exception(self, "Failed to load file contents for file [%s]"% file[1], excep)
 
         return collection, file_maps
 
@@ -221,23 +222,18 @@ class TestRunnerBotClient(BotClient):
         try:
             #TODO: check if userid is same as one being sent in curl message
             client_context = self.create_client_context(userid)
-            print("userid: {}".format(userid))
+            # print("userid: {}".format(userid))
      
-            print("###########################################")
-            print("Ryan heard: {}".format(question))
-            print("###########################################\n")
-            # print(question)
-            response, options = client_context.bot.ask_question_with_options(client_context, question)
-
+            # print("Ryan heard: {}".format(question))
+            response = client_context.bot.ask_question(client_context, question)
             response = self.remove_oob(response)
-
-            # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
-            # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)
-            return response, options
+            return response
         except Exception as e:
-            print(e)
-            return "", ""
+            # print(e)
+            return ""
         
+    def remove_oob(self, response):
+        return re.sub('<oob><robot></robot></oob>', '', response)
 
     def add_client_arguments(self, parser=None):
         if parser is not None:
@@ -261,7 +257,7 @@ class TestRunnerBotClient(BotClient):
             questions = file_finder.load_single_file_contents(self.test_file)
 
         question_and_answers = open(self.qna_file, "w+")
-        print("Question and answers: {}.".format(type(question_and_answers)))
+        # print("Question and answers: {}.".format(type(question_and_answers)))
 
         # out = dict(list(questions[1].keys())[0: 2])
 
@@ -269,9 +265,9 @@ class TestRunnerBotClient(BotClient):
         failures = []
         warnings = 0
         start = datetime.datetime.now()
-        print("Questions: {}".format(type(questions[0])))
-        print("Questions: {}".format(questions[0]))
-        print("Questions: {}".format(type(questions[1])))
+        # print("Questions: {}".format(type(questions[0])))
+        # print("Questions: {}".format(questions[0]))
+        # print("Questions: {}".format(type(questions[1])))
         # print("Questions: {}".format(out))
         # print("Other: {}".format(other))
         for category in questions[0].keys():
@@ -287,9 +283,9 @@ class TestRunnerBotClient(BotClient):
                     conversation.set_property("topic", test.topic)
 
                 if test.that is not None:
-                    response, options = self.ask_question(0, test.that)
+                    response = self.ask_question(0, test.that)
 
-                response, options = self.ask_question(0, test.question)
+                response = self.ask_question(0, test.question)
                 success = False
                 test.response = response
 
@@ -324,14 +320,15 @@ class TestRunnerBotClient(BotClient):
         diff = stop-start
         total_tests = len(successes)+len(failures)
 
-        print("Successes: %d" % len(successes))
-        print("Failures:  %d" % len(failures))
+        
         if warnings > 0:
             print("Warnings:  %d" % warnings)
         for failure in failures:
             print("\t%s: [%s] expected [%s], got [%s]" % (failure.category, failure.question, failure.answers_string, failure.response))
         print("Total processing time %f.2 secs"%diff.total_seconds())
         print("Thats approx %f aiml_tests per sec"%(total_tests/diff.total_seconds()))
+        print("Successes: %d" % len(successes))
+        print("Failures:  %d" % len(failures))
 
 if __name__ == '__main__':
 
