@@ -122,11 +122,12 @@ class ConversationMongodbStorage(ConversationStorage):
             YLogger.error(self, e)
 
     def load_client_properties(self, client_context):
-        if self.db['user_info'].find_one({'userid': client_context._userid}) is not None:
+        if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:
             print("Found user")
             user_info = self.db['user_info'].find_one()
-            # print("USER_INFO: {}".format(type(user_info)))
-            # print("USER_INFO: {}".format(user_info))
+            print("user name: {}".format(user_info['name']))
+            print("user location: {}".format(user_info['location']))
+            print("user time zone: {}".format(user_info['time zone']))
             client_context.load_client_properties(user_info['name'], user_info['location'], user_info['time zone'])
             # self.user_name = user_info['name']
             # self.location = user_info['location']
@@ -134,7 +135,7 @@ class ConversationMongodbStorage(ConversationStorage):
         else:
             print("Writing new user to database")
             document = {
-                "userid": client_context._userid,
+                "userid": client_context.userid,
                 "name": "Uknown",
                 "location": "Uknown", 
                 "time zone": "Uknown"

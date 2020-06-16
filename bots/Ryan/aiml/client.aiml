@@ -60,7 +60,7 @@
         <pattern>WHAT IS MY LOCATION</pattern>
         <template>
             <condition name="location">
-                <li name="Uknown">I don't know you haven't told me.</li>
+                <li name="Uknown">I don't know you haven't told me. <get name="location"/> </li>
                 <li><get name="location"/></li>
             </condition>
             
