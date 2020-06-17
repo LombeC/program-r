@@ -2,6 +2,9 @@ from programr.utils.logging.ylogger import YLogger
 import re
 from abc import ABCMeta, abstractmethod
 
+from programr.dialog.storage.mongodb import ConversationMongodbStorage
+from programr.dialog.storage.factory import ConversationStorageFactory
+
 class BaseCollection(object):
     __metaclass__ = ABCMeta
 

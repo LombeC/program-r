@@ -5,7 +5,8 @@
         <pattern># EARTH ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
-            Of course I am partial to the earth as well! What do you think of space exploration?
+            Of course I am partial to the earth as well!
+            <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -16,7 +17,7 @@
         <pattern># <set>no</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
-            What do you think of space exploration?
+            <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -27,7 +28,7 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
-            Which planet is your favorite?
+            <set name="most recent dialogue question">Which planet is your favorite?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -38,18 +39,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
-            What do you think of space exploration?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># I DON T KNOW IF I HAVE A FAVORITE PLANET ^</pattern>
-        <that>Do you have a favorite planet?</that>
-        <template>
-            What do you think of space exploration?
+            <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -62,7 +52,8 @@
         <template>
             <think><set name="topic">saturn</set></think>
 
-            Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+            Saturn is a tremendously gorgeous planet!
+            <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -74,7 +65,18 @@
             <pattern># MY FAVORITE PLANET IS SATURN ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># MY FAVORITE PLANET S SATURN ^</pattern>
+            <that>Do you have a favorite planet?</that>
+            <template>
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +87,7 @@
             <pattern># SATURN IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +98,7 @@
             <pattern># SATURN S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +109,7 @@
             <pattern># SATURN IS MY FAVORITE PLANET^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,73 +120,7 @@
             <pattern># I LIKE SATURN ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Saturn is a tremendously gorgeous planet! Did you know that Saturn has an eternal hexagonal hurricane at its north pole?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># SATURN ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># MY FAVORITE PLANET IS SATURN ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># SATURN IS MY FAVORITE ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># SATURN S MY FAVORITE PLANET ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># SATURN IS MY FAVORITE PLANET ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I LIKE SATURN ^</pattern>
-            <that>Which planet is your favorite?</that>
-            <template>
-                Saturn is a tremendously gorgeous planet! Would you like to watch a video about Saturn?
+                <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,7 +131,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</that>
             <template>
-                Of course you did! Would you like to watch a video about Saturn?
+                Of course you did! <set name="most recent dialogue question">Would you like to watch a video about Saturn?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -206,7 +142,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</that>
             <template>
-                Would you like to watch a video about Saturn?
+                <set name="most recent dialogue question">Would you like to watch a video about Saturn?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -217,7 +153,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to watch a video about Saturn?</that>
             <template>
-                So interesting! Do you think they'll find life on one of Saturn's moons someday?
+                So interesting! <set name="most recent dialogue question">Do you think they'll find life on one of Saturn's moons someday?</set>
                 <oob>
                     <robot>
                         <video>
@@ -232,18 +168,18 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to watch a video about Saturn?</that>
             <template>
-                Ok! No worries! Do you think they'll find life on one of Saturn's moons someday?</template>
+                Ok! No worries! <set name="most recent dialogue question">Do you think they'll find life on one of Saturn's moons someday?</set></template>
         </category>
-    </topic>
 
     <category>
         <pattern>_</pattern>
         <that>Do you think they ll find life on one of Saturn's moons someday?</that>
         <template>
-            It would be amazing! What do you say we talk about a scientific discovery a little closer to earth?
+            It would be amazing! <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+  </topic>
 </aiml>

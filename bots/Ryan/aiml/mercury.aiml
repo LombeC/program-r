@@ -7,7 +7,7 @@
         <template>
             <think><set name="topic">mercury</set></think>
 
-            Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+            <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -19,7 +19,7 @@
             <pattern># MY FAVORITE PLANET IS MERCURY ^</pattern>
             <that>DO YOU HAVE A FAVORITE PLANET?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -30,7 +30,7 @@
             <pattern># MERCURY IS MY FAVORITE ^</pattern>
             <that>DO YOU HAVE A FAVORITE PLANET?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -41,7 +41,7 @@
             <pattern># MERCURY S MY FAVORITE PLANET ^</pattern>
             <that>DO YOU HAVE A FAVORITE PLANET?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+              <set name="most recent dialogue question">  Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -52,7 +52,7 @@
             <pattern># MERCURY IS MY FAVORITE PLANET ^</pattern>
             <that>DO YOU HAVE A FAVORITE PLANET?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -63,7 +63,7 @@
             <pattern># I LIKE MERCURY ^</pattern>
             <that>DO YOU HAVE A FAVORITE PLANET?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -74,7 +74,7 @@
             <pattern># MERCURY ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +85,7 @@
             <pattern># MY FAVORITE PLANET IS MERCURY ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +96,7 @@
             <pattern># MERCURY IS MY FAVORITE ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +107,7 @@
             <pattern># MERCURY S MY FAVORITE PLANET ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,7 +118,7 @@
             <pattern># MERCURY IS MY FAVORITE PLANET ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+                <set name="most recent dialogue question">Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,7 +129,7 @@
             <pattern># I LIKE MERCURY ^</pattern>
             <that>WHICH PLANET IS YOUR FAVORITE?</that>
             <template>
-                Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?
+              <set name="most recent dialogue question">  Mercury is the planet closest to the sun. It's very small! Do you know just how small it is?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -140,7 +140,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                How big is Mercury?
+                <set name="most recent dialogue question">How big is Mercury?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -151,7 +151,7 @@
             <pattern>_</pattern>
             <that>HOW BIG IS MERCURY?</that>
             <template>
-                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -162,7 +162,7 @@
             <pattern># MOON ^</pattern>
             <that>HOW BIG IS MERCURY?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,7 +173,7 @@
             <pattern># THE SIZE OF THE MOON ^</pattern>
             <that>HOW BIG IS MERCURY?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -184,7 +184,7 @@
             <pattern># THE MOON ^</pattern>
             <that>HOW BIG IS MERCURY?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,7 +195,7 @@
             <pattern>_</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -206,7 +206,7 @@
             <pattern># MOON ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -217,7 +217,7 @@
             <pattern># THE SIZE OF THE MOON ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -228,7 +228,7 @@
             <pattern># THE MOON ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                That's right! Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                That's right! Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -239,7 +239,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -250,7 +250,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>DO YOU KNOW JUST HOW SMALL IT IS?</that>
             <template>
-                Mercury is about the same size as Earth's moon. Have you ever seen a meteor shower?
+                Mercury is about the same size as Earth's moon. <set name="most recent dialogue question">Have you ever seen a meteor shower?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -262,7 +262,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Have you ever seen a meteor shower?</that>
         <template>
-            That's wonderful. Would you tell me about a meteor shower you saw?
+            That's wonderful. <set name="most recent dialogue question">Would you tell me about a meteor shower you saw?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -273,7 +273,7 @@
         <pattern>_</pattern>
         <that>WOULD YOU TELL ME ABOUT A METEOR SHOWER YOU SAW?</that>
         <template>
-            What an experience! What do you say we talk about a scientific discovery a little closer to earth?
+            What an experience! <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -284,7 +284,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Have you ever seen a meteor shower?</that>
         <template>
-            It can be difficult if you live in a city because of all the light pollution. What do you say we talk about a scientific discovery a little closer to earth?
+            It can be difficult if you live in a city because of all the light pollution. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>

@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+
+  <topic name="music">
+
     <category>
         <pattern># Jazz ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
             <random>
 
-                <li>Ah! Jazz just makes you want to move and smile, especially Latin Jazz! What did you think of the jazz clip?<oob>
+                <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
                     <robot>
                         <video>
                             <filename>desafinado.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>That is so wonderful to hear! Billy Holiday is one of the best! What did you think of the jazz clip?<oob>
+                <li>Billy Holiday is one of the best! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>billieHoliday.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Jazz ^</pattern>
+        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+
+                <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>desafinado.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Billy Holiday is one of the best! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
                     <robot>
                         <video>
                             <filename>billieHoliday.mp3</filename>
@@ -28,14 +54,36 @@
         <template>
             <random>
 
-                <li>Ah! Jazz just makes you want to move and smile, especially Latin Jazz! What did you think of the jazz clip?<oob>
+                <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
                     <robot>
                         <video>
                             <filename>desafinado.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>That is so wonderful to hear! Billy Holiday is one of the best! What did you think of the jazz clip?<oob>
+                <li>Billy Holiday is one of the best! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>billieHoliday.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Jazz Music ^</pattern>
+        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+
+                <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>desafinado.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Billy Holiday is one of the best! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
                     <robot>
                         <video>
                             <filename>billieHoliday.mp3</filename>
@@ -48,10 +96,20 @@
         <pattern>_</pattern>
         <that>What did you think of the jazz clip?</that>
         <template>
-            Jazz music pulls on my heartstrings! I'm curious, did you ever play an instrument?
+          <think><set name="data"><star/></set></think>
+
+          <condition name="getsentiment">
+              <li value="verypositive">Jazz pulls on my heartstrings!<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="positive">Jazz pulls on my heartstrings! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="negative">I feel you! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="verynegative">I feel you! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="neutral">For sure! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              </condition>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    </topic>
 </aiml>

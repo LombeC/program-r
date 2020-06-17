@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+
+  <topic name="music">
+
     <category>
         <pattern># Rock ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
             <random>
-                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>blackbird.mp3</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>jimiBio.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Rock ^</pattern>
+        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>elvisJailhouse.mp4</filename>
@@ -33,21 +65,49 @@
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
             <random>
-                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>blackbird.mp3</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>jimiBio.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Rock Music ^</pattern>
+        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>elvisJailhouse.mp4</filename>
@@ -61,21 +121,49 @@
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
             <random>
-                <li>I love rock music as well! What did you think of the rock clip?<oob>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>blackbird.mp3</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>What fun! I hope you are also a fan of Jimi Hendrix! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>jimiBio.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love talking with a fellow rock fan! What did you think of the rock clip?<oob>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>elvisJailhouse.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># Rock and Roll ^</pattern>
+        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
+        <template>
+            <random>
+                <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>blackbird.mp3</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Jimi Hendrix! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>jimiBio.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
                         <video>
                             <filename>elvisJailhouse.mp4</filename>
@@ -88,10 +176,20 @@
         <pattern>_</pattern>
         <that>What did you think of the rock clip?</that>
         <template>
-            There's nothing in the world like rock music! I'm curious, did you ever play an instrument?
+          <think><set name="data"><star/></set></think>
+
+          <condition name="getsentiment">
+              <li value="verypositive">It's great to listen to the oldies with you!<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="positive">It's great to listen to the oldies with you! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="negative">Not a problem. Maybe it wasn't your favorite! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="verynegative">Not a problem. Maybe it wasn't your favorite!<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="neutral">I hear that, but you've got to admit it's nice to listen to music together! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              </condition>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    </topic>
 </aiml>

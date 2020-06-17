@@ -3,19 +3,24 @@
     <category>
         <pattern>^ Science ^</pattern>
         <template>
-            I would love to continue discussing science! There have been a number of groundbreaking scientific discoveries this year, did you know that?
+            I would love to continue discussing science!
+            <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries lately, did you know that?</set>
+            <think><set name="dialogue">science</set></think>
+            <think><set name="topic">science</set></think>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
+    <topic name="science">
+
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <that>There have been a number of groundbreaking scientific discoveries lately, did you know that?</that>
         <template>
-            Scientists recently discovered an alien planet that may be able to support human life.
-                                    Do you think you would volunteer to live on a planet alone?
+            You're up on it! <set name="most recent dialogue question">I'm not exactly Einstein or Steven Hawking, but I do like to keep up on science news.
+            What about yourself?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -24,10 +29,10 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <that>There have been a number of groundbreaking scientific discoveries lately, did you know that?</that>
         <template>
-            Scientists recently discovered an alien planet that may be able to support human life.
-                                    Do you think you would volunteer to live on a planet alone?
+            I'm not exactly Einstein or Steven Hawking, but I do like to keep up on science news.
+            <set name="most recent dialogue question">Have you seen the first image of a black hole that was all over the internet recently?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -36,10 +41,10 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>There have been a number of groundbreaking scientific discoveries this year, did you know that?</that>
+        <that>There have been a number of groundbreaking scientific discoveries lately, did you know that?</that>
         <template>
-            Scientists recently discovered an alien planet that may be able to support human life.
-                                    Do you think you would volunteer to live on a planet alone?
+            <set name="most recent dialogue question">I'm not exactly Einstein or Steven Hawking, but I do like to keep up on science news.
+            What about yourself?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -48,9 +53,9 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <that>What about yourself?</that>
         <template>
-            You would? Do you believe that there is life on other planets?
+            I love that we have similar interests! <set name="most recent dialogue question">Have you seen the first image of a black hole that was all over the internet recently?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -59,9 +64,9 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <that>What about yourself?</that>
         <template>
-            I totally get that! Do you believe that there is life on other planets?
+            <set name="most recent dialogue question">Have you seen the first image of a black hole that was all over the internet recently?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -70,9 +75,9 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Do you think you would volunteer to live on a planet alone?</that>
+        <that>What about yourself?</that>
         <template>
-            I totally get that! Do you believe that there is life on other planets?
+            <set name="most recent dialogue question">Have you seen the first image of a black hole that was all over the internet recently?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -81,9 +86,82 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>Do you believe that there is life on other planets?</that>
+        <that>Have you seen the first image of a black hole that was all over the internet recently?</that>
         <template>
-            Interesting! What makes you say that?
+            Pretty crazy, right? Apparently capturing this picture was previously thought impossible.
+            <set name="most recent dialogue question">Why do you think people are so fascinated by black holes?</set>
+            <oob>
+                <robot><image>
+                    <filename>Black_Hole.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Have you seen the first image of a black hole that was all over the internet recently?</that>
+        <template>
+          Pretty crazy, right? Apparently capturing this picture was previously thought impossible.
+          <set name="most recent dialogue question">Why do you think people are so fascinated by black holes?</set>
+            <oob>
+                <robot><image>
+                    <filename>Black_Hole.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you seen the first image of a black hole that was all over the internet recently?</that>
+        <template>
+          Pretty crazy, right? Apparently capturing this picture was previously thought impossible.
+          <set name="most recent dialogue question">Why do you think people are so fascinated by black holes?</set>
+            <oob>
+                <robot><image>
+                    <filename>Black_Hole.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Why do you think people are so fascinated by black holes?</that>
+        <template>
+            I mean, that makes a whole lot of sense to me.
+            <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
+            Does that ever happen to you?</set>
+            <oob>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Why do you think people are so fascinated by black holes?</that>
+        <template>
+            Me neither but they are pretty mysterious.
+            <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
+            Does that ever happen to you?</set>
+            <oob>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Does that ever happen to you?</that>
+        <template>
+            Glad to know I'm not the only one!
+            <set name="most recent dialogue question">What else would you say you're interested in learning about, other than science?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -92,9 +170,20 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>Do you believe that there is life on other planets?</that>
+        <that>Does that ever happen to you?</that>
         <template>
-            Interesting! What makes you say that?
+          <set name="most recent dialogue question">What else would you say you're interested in learning about, other than science?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Does that ever happen to you?</that>
+        <template>
+          <set name="most recent dialogue question">What else would you say you're interested in learning about, other than science?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -103,9 +192,22 @@
 
     <category>
         <pattern>_</pattern>
-        <that>What makes you say that?</that>
+        <that>What else would you say you're interested in learning about?</that>
         <template>
-            The universe is such a mysterious place! Do you want to keep talking about space?
+          I'll remember that! You seem really smart. I'm no rocket scientist, but learning about technology is something that's always interested me.
+          <set name="most recent dialogue question">Do you think technology enhances our lives for the better?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You seem really smart.</that>
+        <template>
+          I'm no rocket scientist, but learning about technology is something that's always interested me.
+          <set name="most recent dialogue question">Do you think technology enhances our lives for the better?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -114,9 +216,10 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>Do you want to keep talking about space?</that>
+        <that>Do you think technology enhances our lives for the better?</that>
         <template>
-            Did you see that nasa successfully sent a spacecraft to the furthest object in the universe ever visited?
+            It's great to hear your take!
+            Why do you say that?
             <oob>
                 <robot></robot>
             </oob>
@@ -125,12 +228,114 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>Do you want to keep talking about space?</that>
+        <that>Do you think technology enhances our lives for the better?</that>
         <template>
-            What do you say we talk about a scientific discovery a little closer to Earth?
+          It's good to hear your take!
+          Why do you say that?
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think technology enhances our lives for the better?</that>
+        <template>
+          It's good to hear your take!
+          Why do you say that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Why do you say that?</that>
+        <template>
+          Well I think I tend to agree with you there.
+          <set name="most recent dialogue question">What are your thoughts on smart phones and social media? Do you think people spend too much time on their phones?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you think people spend too much time on their phones?</that>
+        <template>
+            <set name="most recent dialogue question">Sometimes it seems like people spend so much time on their phone that they're missing out on real life. But it's a great way to keep in touch with family and friends.
+            Don't you think?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Do you think people spend too much time on their phones?</that>
+        <template>
+          You're right. And it's a great way to keep in touch with family and friends. Don't you think?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think people spend too much time on their phones?</that>
+        <template>
+          Sometimes it seems like people spend so much time on their phone they're missing out on real life. But it's a great way to keep in touch with family and friends.
+          Don't you think?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Don't you think?</that>
+        <template>
+            We are on the same page, per usual!
+            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Don't you think?</that>
+        <template>
+          I definitely hear what you're saying.
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Don't you think?</that>
+        <template>
+          I definitely hear what you're saying.
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+<!-- REDIRECT TO SCIENCE2 AND SCIENCE3 DIALOGUES -->
+
+
+  </topic>
 </aiml>

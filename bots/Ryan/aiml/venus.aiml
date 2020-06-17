@@ -7,7 +7,7 @@
         <template>
             <think><set name="topic">venus</set></think>
 
-            Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+            Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -19,7 +19,7 @@
             <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -30,7 +30,7 @@
             <pattern># VENUS IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -41,7 +41,7 @@
             <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -52,7 +52,7 @@
             <pattern># I LIKE VENUS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -63,7 +63,7 @@
             <pattern># VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -74,7 +74,7 @@
             <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +85,7 @@
             <pattern># VENUS IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +96,7 @@
             <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +107,7 @@
             <pattern># I LIKE VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?
+                Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,7 +118,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
             <template>
-                Of course you did. But. Did you know that Venus spins in the the opposite direction of most other planets?
+                Of course you did. But. <set name="most recent dialogue question">Did you know that Venus spins in the the opposite direction of most other planets?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,7 +129,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
             <template>
-                I should have known I couldn't stump you. What's your favorite thing about Venus?
+                I should have known I couldn't stump you. <set name="most recent dialogue question">What's your favorite thing about Venus?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -140,7 +140,7 @@
             <pattern>_</pattern>
             <that>What's your favorite thing about Venus?</that>
             <template>
-                Thanks for telling me that. What do you say we talk about a scientific discovery a little closer to earth?
+                Super interesting. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -151,19 +151,18 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>What's your favorite thing about Venus?</that>
             <template>
-                Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+                Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
         <template>
-            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -174,7 +173,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you know that Venus spins in the the opposite direction of most other planets?</that>
         <template>
-            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. What do you say we talk about a scientific discovery a little closer to earth?
+            Because Venus spins in the opposite direction of earth, the sun would rise in the west and set in the east. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -185,7 +184,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
         <template>
-            It's true! Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            It's true! <set name="most recent dialogue question">Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -196,10 +195,11 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you know that Venus is the hottest planet in our solar system, no pun intended?</that>
         <template>
-            It's true! Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?
+            It's true! <set name="most recent dialogue question">Did you know that Venus spins on its axis in the the opposite direction of most of the other planets?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+  </topic>
 </aiml>

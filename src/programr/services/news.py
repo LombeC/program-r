@@ -65,10 +65,8 @@ class NewsService(Service):
             }
 
         if url is not None and headers is not None:
-            print("in the if")
             self._api = BingAPI(url, headers)
         else:
-            print("in the else")
             self._api = api
 
         self._current_article = 0

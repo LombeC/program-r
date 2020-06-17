@@ -7,7 +7,7 @@
         <template>
             <think><set name="topic">neptune</set></think>
 
-            Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+            Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -19,7 +19,7 @@
             <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -30,7 +30,7 @@
             <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -41,7 +41,7 @@
             <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -52,7 +52,7 @@
             <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -63,7 +63,7 @@
             <pattern># I LIKE NEPTUNE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -74,7 +74,7 @@
             <pattern># NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +85,7 @@
             <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +96,7 @@
             <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +107,7 @@
             <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,7 +118,7 @@
             <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,7 +129,7 @@
             <pattern># I LIKE NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Ah yes, Neptune. Named for the Roman god of the sea. What do you like about Neptune?
+                Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -140,7 +140,7 @@
             <pattern>_</pattern>
             <that>What do you like about Neptune?</that>
             <template>
-                I see! Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
+                I see! Because Neptune is so far away, we don't know very much about it. <set name="most recent dialogue question">Do you know why Neptune spins so fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -151,7 +151,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>What do you like about Neptune?</that>
             <template>
-                Because Neptune is so far away, we don't know very much about it. Do you know why Neptune spins so fast?
+                Because Neptune is so far away, we don't know very much about it. <set name="most recent dialogue question">Do you know why Neptune spins so fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -162,7 +162,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you know why Neptune spins so fast?</that>
             <template>
-                Why does Neptune spin so fast?
+                <set name="most recent dialogue question">Why does Neptune spin so fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,7 +173,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you know why Neptune spins so fast?</that>
             <template>
-                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                Apparently it has to do with its gravitational pull! <set name="most recent dialogue question">Would you want to go to Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -184,7 +184,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you know why Neptune spins so fast?</that>
             <template>
-                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                Apparently it has to do with its gravitational pull! <set name="most recent dialogue question">Would you want to go to Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,7 +195,7 @@
             <pattern>_</pattern>
             <that>Why does Neptune spin so fast?</that>
             <template>
-                Apparently it has to do with its gravitational pull! Would you want to go to Neptune?
+                Apparently it has to do with its gravitational pull! <set name="most recent dialogue question">Would you want to go to Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -240,18 +240,7 @@
         <pattern>_</pattern>
         <that>Still, it's kind of fun to think about, right?</that>
         <template>
-            What do you say we talk about a scientific discovery a little closer to earth?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>It's kind of fun to think about, right?</that>
-        <template>
-            What do you say we talk about a scientific discovery a little closer to earth?
+            <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>

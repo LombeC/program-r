@@ -7,7 +7,7 @@
         <template>
             <think><set name="topic">pluto</set></think>
 
-            Did you know that scientists don't consider Pluto a planet any longer?
+            <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -19,7 +19,7 @@
             <pattern># MY FAVORITE PLANET IS PLUTO ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -30,7 +30,7 @@
             <pattern># PLUTO IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -41,7 +41,7 @@
             <pattern># PLUTO S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -52,7 +52,7 @@
             <pattern># PLUTO IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -63,7 +63,7 @@
             <pattern># I LIKE PLUTO ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -74,7 +74,7 @@
             <pattern># PLUTO ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +85,7 @@
             <pattern># MY FAVORITE PLANET IS PLUTO ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +96,7 @@
             <pattern># PLUTO IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +107,7 @@
             <pattern># PLUTO S MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,7 +118,7 @@
             <pattern># PLUTO IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,7 +129,7 @@
             <pattern># I LIKE PLUTO ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
-                Did you know that scientists don't consider Pluto a planet any longer?
+                <set name="most recent dialogue question">Did you know that scientists don't consider Pluto a planet any longer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -140,7 +140,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
             <template>
-                They keeping going back and forth! Why don't you tell me why you like Pluto?
+                They keeping going back and forth! <set name="most recent dialogue question">Why don't you tell me why you like Pluto?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -151,7 +151,7 @@
             <pattern>_</pattern>
             <that>Why don't you tell me why you like Pluto?</that>
             <template>
-                Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                Pluto truly is fascinating. It has blue skies, just like earth! <set name="most recent dialogue question">Do you think you would want to visit Pluto?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -162,7 +162,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Why don't you tell me why you like Pluto?</that>
             <template>
-                It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                It has blue skies, just like earth! <set name="most recent dialogue question">Do you think you would want to visit Pluto?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,19 +173,18 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Why don't you tell me why you like Pluto?</that>
             <template>
-                Pluto truly is fascinating. It has blue skies, just like earth! Do you think you would want to visit Pluto?
+                Pluto truly is fascinating. It has blue skies, just like earth! <set name="most recent dialogue question">Do you think you would want to visit Pluto?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
 
     <category>
         <pattern>_</pattern>
         <that>Do you think you would want to visit Pluto?</that>
         <template>
-            That would be a little strange, wouldn't it. What do you say we talk about a scientific discovery a little closer to Earth?
+            That would be a little strange, wouldn't it. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to Earth?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -196,7 +195,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
         <template>
-            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            They keeping going back and forth! <set name="most recent dialogue question">Why don't you tell me why you like Pluto?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -207,10 +206,11 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you know that scientists don't consider Pluto a planet any longer?</that>
         <template>
-            They keeping going back and forth! Why don't you tell me why you like Pluto?
+            They keeping going back and forth! <set name="most recent dialogue question">Why don't you tell me why you like Pluto?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+  </topic>
 </aiml>
