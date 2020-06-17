@@ -232,7 +232,9 @@ class BotClient(ResponseLogger):
     def create_client_context(self, userid):
         client_context = ClientContext(self, userid)
         client_context.bot = self._bot_factory.select_bot()
+        #TODO: here is where we need to load in variables
         client_context.brain = client_context.bot._brain_factory.select_brain()
+        client_context.brain._load_variables(client_context)
         return client_context
 
     def load_client_context(self, userid, session_pickle_dir):

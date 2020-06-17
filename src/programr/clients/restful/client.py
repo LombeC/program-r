@@ -94,7 +94,6 @@ class RestBotClient(BotClient):
             #       gets saved to client context.
             client_context = self.create_client_context(userid)
             print("userid: {}".format(userid))
-            client_context.bot._conversation_storage.load_client_properties(client_context)
             # print("location: {}".format(client_context.location))
      
             print("###########################################")

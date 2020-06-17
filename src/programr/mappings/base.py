@@ -41,8 +41,8 @@ class BaseCollection(object):
         return count
 
     #TODO: Write load_from_database
-    def load_from_database(self, id=None):
-        pass
+    def load_from_database(self, client_context, id=None):
+        client_context.bot._conversation_storage.load_client_properties(client_context)
 
     def load_from_text(self, text):
         count = 0
