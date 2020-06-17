@@ -34,6 +34,67 @@ def replace_wildcards(text, texts):
     text = replace_wildcard(text, texts, "_")
     return text
 
+def parse_categories(categories):
+    for category in categories:
+        pattern_text = ""
+
+        pattern = category.find("pattern")
+        for elt in pattern.iter():
+
+            if elt.tag == "pattern":
+                text = elt.text.strip().upper()
+                pattern_text += replace_wildcards(text, texts)
+
+            elif elt.tag == "set":
+                if 'name' in elt.attrib:
+                    name = elt.attrib['name']
+                else:
+                    name = elt.text.strip()
+
+                if name in sets:
+                    pattern_text += sets[name]
+                else:
+                    pattern_text += "SET[%s]"%name
+
+            elif elt.tag == "bot":
+                if 'name' in elt.attrib:
+                    name = elt.attrib['name']
+                else:
+                    name = elt.text.strip()
+
+                if name in bots:
+                    pattern_text += bots[name]
+                else:
+                    pattern_text += "BOT[%s]" % name
+
+            pattern_text += " "
+
+            if elt.tail is not None and elt.tail.strip() != "":
+                text = elt.tail.strip().upper()
+                pattern_text += replace_wildcards(text, texts)
+                pattern_text += " "
+
+        
+        question = '"%s",'%pattern_text.strip()
+        question = question.ljust(ljust)
+        
+
+
+        if default is not None:
+            test_line = '%s $DEFAULT'%(question)
+
+        else:
+            template = category.find('template')
+            # print("Template: {}".format(template.text))
+            test_line = '%s "%s"'%(question, template.text)
+
+        output_file.write(test_line)
+        output_file.write("\n")
+
+    topics = aiml.findall('topic')
+    if len(topics) > 0:
+        print("I dont handle topics yet!")
+
 if __name__ == '__main__':
 
     aiml_file = sys.argv[1]
@@ -45,10 +106,10 @@ if __name__ == '__main__':
     if len(sys.argv) > 5:
         default = sys.argv[5]
 
-    print("aiml_file:", aiml_file)
-    print("test_file:", test_file)
-    print("replace_file:", replace_file)
-    print("Default:", default)
+    print("loading in file: " + aiml_file + "...")
+    # print("test_file:", test_file)
+    # print("replace_file:", replace_file)
+    # print("Default:", default)
 
     texts, sets, bots = load_replacements(replace_file)
 
@@ -117,11 +178,69 @@ if __name__ == '__main__':
 
             topics = aiml.findall('topic')
             if len(topics) > 0:
-                print("I dont handle topics yet!")
+                for category in topics:
+                    pattern_text = ""
 
+                    pattern = category.find("pattern")
+                    for elt in pattern.iter():
+
+                        if elt.tag == "pattern":
+                            text = elt.text.strip().upper()
+                            pattern_text += replace_wildcards(text, texts)
+
+                        elif elt.tag == "set":
+                            if 'name' in elt.attrib:
+                                name = elt.attrib['name']
+                            else:
+                                name = elt.text.strip()
+
+                            if name in sets:
+                                pattern_text += sets[name]
+                            else:
+                                pattern_text += "SET[%s]"%name
+
+                        elif elt.tag == "bot":
+                            if 'name' in elt.attrib:
+                                name = elt.attrib['name']
+                            else:
+                                name = elt.text.strip()
+
+                            if name in bots:
+                                pattern_text += bots[name]
+                            else:
+                                pattern_text += "BOT[%s]" % name
+
+                        pattern_text += " "
+
+                        if elt.tail is not None and elt.tail.strip() != "":
+                            text = elt.tail.strip().upper()
+                            pattern_text += replace_wildcards(text, texts)
+                            pattern_text += " "
+
+                    
+                    question = '"%s",'%pattern_text.strip()
+                    question = question.ljust(ljust)
+                    
+
+
+                    if default is not None:
+                        test_line = '%s $DEFAULT'%(question)
+
+                    else:
+                        template = category.find('template')
+                        # print("Template: {}".format(template.text))
+                        test_line = '%s "%s"'%(question, template.text)
+
+                    output_file.write(test_line)
+                    output_file.write("\n")
+            print("completed")
         except Exception as e:
             print(e)
-
+            line = "failed to load file: " + aiml_file + "\n"
+            f = open("results/failed_loads.txt", "a")
+            f.write(line)
+            f.close()
+        
         exit(0)
 
 

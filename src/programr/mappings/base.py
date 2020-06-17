@@ -38,7 +38,7 @@ class BaseCollection(object):
         return count
 
     #TODO: Write load_from_database
-    def load_from_database(self):
+    def load_from_database(self, id=None):
         pass
 
     def load_from_text(self, text):

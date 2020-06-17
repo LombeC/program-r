@@ -1,26 +1,9 @@
-from programr.mappings.base import DoubleStringCharSplitCollection
+from programr.mappings.properties import PropertiesCollection
 
-class ClientPropertiesCollection(DoubleStringCharSplitCollection):
+class ClientPropertiesCollection(PropertiesCollection):
 
     def __init__(self):
-        DoubleStringCharSplitCollection.__init__(self)
-
-    def get_split_char(self):
-        return ":"
-
-    def has_property(self, key):
-        return self.has_key(key)
-
-    def property(self, key):
-        return self.value(key)
-
-    def add_property(self, key, value):
-        key = key.strip()
-        value = value.strip()
-        if self.has_property(key):
-            self.set_value(key, value)
-        else:
-            self.pairs.append([key, value])
+        PropertiesCollection.__init__(self)
 
     # TODO: Write load_from_database
     def load_from_database(self):

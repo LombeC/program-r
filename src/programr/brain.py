@@ -51,7 +51,7 @@ class Brain(object):
         self._variables_collection = PropertiesCollection()
 
         #TODO: Write class for loading client variables from Mongo
-        # self._user_collection = UserCollection()
+        # self._user_collection = ClientPropertiesCollection()
 
         self._preprocessors = ProcessorLoader()
         self._postprocessors = ProcessorLoader()
@@ -342,6 +342,7 @@ class Brain(object):
             YLogger.warning(self, "No configuration setting for properties")
 
     def _load_variables(self, configuration):
+        # TODO: Add in load from db here, need to find a way to retrieve proper clientid
         if configuration.files.variables is not None:
             self._variables_collection.empty()
             total = self._variables_collection.load_from_filename(configuration.files.variables)

@@ -248,6 +248,13 @@ class TestRunnerBotClient(BotClient):
     def get_client_configuration(self):
         return ConsoleConfiguration()
 
+    def write_to_file(self, tag, filename):
+        line = "\t%s: [%s] expected [%s], got [%s]\n" % (tag.category, tag.question, tag.answers_string, tag.response)
+        s = "results/" + filename
+        f = open(s, "a")
+        f.write(line)
+        f.close()
+
     def run(self):
         file_finder = TestFileFileFinder()
         if self.test_dir is not None:
@@ -319,18 +326,33 @@ class TestRunnerBotClient(BotClient):
         stop = datetime.datetime.now()
         diff = stop-start
         total_tests = len(successes)+len(failures)
-        percentage = total_tests/len(successes)
 
         
         if warnings > 0:
             print("Warnings:  %d" % warnings)
         for failure in failures:
             print("\t%s: [%s] expected [%s], got [%s]" % (failure.category, failure.question, failure.answers_string, failure.response))
+            if failure.answers_string is "None" or failure.answers_string is "":
+                line = "\t%s: [%s] expected [%s], got [%s]\n" % (failure.category, failure.question, failure.answers_string, failure.response)
+                f = open("results/empty.txt", "a")
+                f.write(line)
+                f.close()
+            else:
+                line = "\t%s: [%s] expected [%s], got [%s]\n" % (failure.category, failure.question, failure.answers_string, failure.response)
+                f = open("results/errors.txt", "a")
+                f.write(line)
+                f.close()
+
+        for success in successes:
+            line = "\t%s: [%s] expected [%s], got [%s]\n" % (success.category, success.question, success.answers_string, success.response)
+            f = open("results/successes.txt", "a")
+            f.write(line)
+            f.close()
+
         print("Total processing time %f.2 secs"%diff.total_seconds())
         print("Thats approx %f aiml_tests per sec"%(total_tests/diff.total_seconds()))
         print("Successes: %d" % len(successes))
         print("Failures:  %d" % len(failures))
-        print("Percentage: %d" % percentage)
 
 if __name__ == '__main__':
 

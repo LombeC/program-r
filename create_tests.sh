@@ -7,6 +7,6 @@ do
     filename="_test_file.tests"
     path="./test_files/"
     test_file=$path$i$filename
-    python ./src/utils/test_creator/test_creator.py $f $test_file 40 ./src/utils/test_creator/replace_file.txt 
+    python ./src/utils/test_creator/test_creator.py $f $test_file 40 ./src/utils/test_creator/replace_file.txt
     ((i=i+1))
 done
