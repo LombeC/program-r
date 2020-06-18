@@ -342,10 +342,11 @@ class Brain(object):
             YLogger.warning(self, "No configuration setting for properties")
 
     def _load_variables(self, client_context):
+        # TODO ROHOLA: Refactor this funciton
         # TODO: Add in load from db here, need to find a way to retrieve proper clientid        
         # if configuration.files.variables is not None:
 
-
+        print("Loading variables")
         self._variables_collection.empty()
         self._variables_collection.load_from_database(client_context)
         # YLogger.info(self, "Loaded a total of %d variables", total)

@@ -124,7 +124,7 @@ class ConversationMongodbStorage(ConversationStorage):
     def load_client_properties(self, client_context):
         if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:
             print("Found user")
-            user_info = self.db['user_info'].find_one()
+            user_info = self.db['user_info'].find_one({'userid': client_context.userid})
             print("user name: {}".format(user_info['name']))
             print("user location: {}".format(user_info['location']))
             print("user time zone: {}".format(user_info['time zone']))
