@@ -123,24 +123,24 @@ class ConversationMongodbStorage(ConversationStorage):
 
     def load_client_properties(self, client_context):
         if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:
-            print("Found user")
+            # print("Found user")
             user_info = self.db['user_info'].find_one({'userid': client_context.userid})
-            print("user name: {}".format(user_info['name']))
-            print("user location: {}".format(user_info['location']))
-            print("user time zone: {}".format(user_info['time zone']))
+            # print("user name: {}".format(user_info['name']))
+            # print("user location: {}".format(user_info['location']))
+            # print("user time zone: {}".format(user_info['time zone']))
             client_context.load_client_properties(user_info['name'], user_info['location'], user_info['time zone'])
             # self.user_name = user_info['name']
             # self.location = user_info['location']
             # self.time_zone = user_info['time zone']
         else:
-            print("Writing new user to database")
+            # print("Writing new user to database")
             document = {
                 "userid": client_context.userid,
                 "name": "Uknown",
                 "location": "Uknown", 
                 "time zone": "Uknown"
             }
-            self.db['user_info'].insert_one(document)
+            # self.db['user_info'].insert_one(document)
         # return user_info
 
     def load_conversation(self, conversation, clientid, restore_last_topic=False):

@@ -60,39 +60,31 @@
         <pattern>WHAT IS MY LOCATION</pattern>
         <template>
             <condition name="location">
-                <li value="Uknown">I don't know you haven't told me. <get name="location"/> </li>
-                <li><get name="location"/></li>
+                <li value="Uknown">I don't know you haven't told me.</li>
+                <li>you told me it was <get name="location"/></li>
             </condition>
-            
             <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S MY LOCATION</pattern>
-        <template><get name="location"/>, Earth.
-        <oob><robot></robot></oob>
-        </template>
+        <template><srai>WHAT IS MY LOCATION</srai></template>
     </category>
     <category>
         <pattern>WHAT * MY LOCATION</pattern>
-        <template><get name="location"/>, Earth.
-        <oob><robot></robot></oob>
-        </template>
+        <template><srai>WHAT IS MY LOCATION</srai></template>
     </category>
     <category>
         <pattern>WHAT IS MY HOMETOWN</pattern>
-        <template>You told me you are in <get name="location"/>.<oob><robot></robot></oob>
-        </template>
+        <template><srai>WHAT IS MY LOCATION</srai></template>
     </category>
     <category>
         <pattern>WHAT S MY HOMETOWN</pattern>
-        <template>You told me you are in <get name="location"/>.<oob><robot></robot></oob>
-        </template>
+        <template><srai>WHAT IS MY LOCATION</srai></template>
     </category>
     <category>
         <pattern>WHAT * MY HOMETOWN</pattern>
-        <template>You told me you are in <get name="location"/>.<oob><robot></robot></oob>
-        </template>
+        <template><srai>WHAT IS MY LOCATION</srai></template>
     </category>
     <category>
         <pattern>WHAT IS MY JOB</pattern>

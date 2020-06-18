@@ -151,6 +151,65 @@ if __name__ == '__main__':
                             pattern_text += bots[name]
                         else:
                             pattern_text += "BOT[%s]" % name
+                    
+                    elif elt.tag == "topic":
+                        topic_cats = elt.tag.findall("category")
+                        for category in topic_cats:
+                            print("category?: {}".format(category))
+                            pattern_text = ""
+
+                            pattern = category.find("pattern")
+                            for elt in pattern.iter():
+
+                                if elt.tag == "pattern":
+                                    text = elt.text.strip().upper()
+                                    pattern_text += replace_wildcards(text, texts)
+
+                                elif elt.tag == "set":
+                                    if 'name' in elt.attrib:
+                                        name = elt.attrib['name']
+                                    else:
+                                        name = elt.text.strip()
+
+                                    if name in sets:
+                                        pattern_text += sets[name]
+                                    else:
+                                        pattern_text += "SET[%s]"%name
+
+                                elif elt.tag == "bot":
+                                    if 'name' in elt.attrib:
+                                        name = elt.attrib['name']
+                                    else:
+                                        name = elt.text.strip()
+
+                                    if name in bots:
+                                        pattern_text += bots[name]
+                                    else:
+                                        pattern_text += "BOT[%s]" % name
+
+                                pattern_text += " "
+
+                                if elt.tail is not None and elt.tail.strip() != "":
+                                    text = elt.tail.strip().upper()
+                                    pattern_text += replace_wildcards(text, texts)
+                                    pattern_text += " "
+
+                            
+                            question = '"%s",'%pattern_text.strip()
+                            question = question.ljust(ljust)
+                            
+
+
+                            if default is not None:
+                                test_line = '%s $DEFAULT'%(question)
+
+                            else:
+                                template = category.find('template')
+                                # print("Template: {}".format(template.text))
+                                test_line = '%s "%s"'%(question, template.text)
+
+                            output_file.write(test_line)
+                            output_file.write("\n")
 
                     pattern_text += " "
 
@@ -170,74 +229,32 @@ if __name__ == '__main__':
 
                 else:
                     template = category.find('template')
-                    # print("Template: {}".format(template.text))
-                    test_line = '%s "%s"'%(question, template.text)
+                    # # print("Template: {}".format(template.text))
+                    # # TODO: Need to parse bot, set, get tags
+                    # string = ""
+                    # for elt in template.iter(): 
+                    #     tag = elt.tag
+                    #     if tag == "random":
+                    #         lis = tag.findall("li")
+                    #         for li in lis.iter():
+                    #             string += li.text + ", "
 
+                    # if len(li) > 0:
+                    #     test_line = '%s "%s"'%(question, string)
+                    # else:
+                    #     test_line = '%s "%s"'%(question, template.text)
+
+                    test_line = '%s "%s"'%(question, template.text)
                 output_file.write(test_line)
                 output_file.write("\n")
 
-            topics = aiml.findall('topic')
-            if len(topics) > 0:
-                print("topic found")
-                print("Topic: {}".format(topics))
+            # topics = aiml.findall('topic')
+            # if len(topics) > 0:
+            #     print("topic found")
+            #     print("Topic: {}".format(topics))
                 # topic_cats = topics.findall('category')
                 # print("topic_cats: {}".format(topic_cats))
-                for category in topics:
-                    print("category?: {}".format(category))
-                #     pattern_text = ""
-
-                #     pattern = category.find("pattern")
-                #     for elt in pattern.iter():
-
-                #         if elt.tag == "pattern":
-                #             text = elt.text.strip().upper()
-                #             pattern_text += replace_wildcards(text, texts)
-
-                #         elif elt.tag == "set":
-                #             if 'name' in elt.attrib:
-                #                 name = elt.attrib['name']
-                #             else:
-                #                 name = elt.text.strip()
-
-                #             if name in sets:
-                #                 pattern_text += sets[name]
-                #             else:
-                #                 pattern_text += "SET[%s]"%name
-
-                #         elif elt.tag == "bot":
-                #             if 'name' in elt.attrib:
-                #                 name = elt.attrib['name']
-                #             else:
-                #                 name = elt.text.strip()
-
-                #             if name in bots:
-                #                 pattern_text += bots[name]
-                #             else:
-                #                 pattern_text += "BOT[%s]" % name
-
-                #         pattern_text += " "
-
-                #         if elt.tail is not None and elt.tail.strip() != "":
-                #             text = elt.tail.strip().upper()
-                #             pattern_text += replace_wildcards(text, texts)
-                #             pattern_text += " "
-
-                    
-                #     question = '"%s",'%pattern_text.strip()
-                #     question = question.ljust(ljust)
-                    
-
-
-                #     if default is not None:
-                #         test_line = '%s $DEFAULT'%(question)
-
-                #     else:
-                #         template = category.find('template')
-                #         # print("Template: {}".format(template.text))
-                #         test_line = '%s "%s"'%(question, template.text)
-
-                #     output_file.write(test_line)
-                #     output_file.write("\n")
+                
             print("completed")
         except Exception as e:
             print(e)

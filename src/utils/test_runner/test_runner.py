@@ -282,8 +282,11 @@ class TestRunnerBotClient(BotClient):
                 test.category = category
 
                 if any((c in '$*_^#') for c in test.question):
-                    print("WARNING: Wildcards in question! [%s]"%test.question)
-                    warnings = warnings +1
+                    try:
+                        test.question = test.question.replace("", any((c in '$*_^#')))
+                    except Exception as e:
+                        print("WARNING: Wildcards in question! [%s]"%test.question)
+                        warnings = warnings +1
 
                 if test.topic is not None:
                     conversation = self.get_conversation(0)
