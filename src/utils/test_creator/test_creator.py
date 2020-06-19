@@ -1,5 +1,38 @@
 import xml.etree.ElementTree as ET
 import sys
+from programr.parser.template.nodes.bot import TemplateBotNode
+from programr.clients.client import BotClient
+
+class TestCreatorBotClient(BotClient):
+
+    def __init__(self):
+        BotClient.__init__(self, "TestCreator")
+
+    @property
+    def test_dir(self):
+        return self.arguments.args.test_dir
+
+    @property
+    def test_file(self):
+        return self.arguments.args.test_file
+
+    @property
+    def qna_file(self):
+        return self.arguments.args.qna_file
+
+    @property
+    def verbose(self):
+        return self.arguments.args.verbose
+
+    def get_description(self):
+        return 'ProgramR Test Creator Client'
+
+    # def add_client_arguments(self, parser=None):
+    #     if parser is not None:
+    #         parser.add_argument('--aiml_file', dest='aiml_file', help='AIML File to create tests from')
+    #         parser.add_argument('--test_file', dest='test_file', help='Test file to create with associated unit tests')
+    #         parser.add_argument('--replace_file', dest='replace_file', help='When creating tests you can specify replacements certain data types')
+    #         parser.add_argument('--ljust', dest='ljust', action='store_true', help='Left justifies the first csv column, a good value is 40 or 80')
 
 def load_replacements(replace_file):
     texts = {}
@@ -101,6 +134,10 @@ if __name__ == '__main__':
     test_file = sys.argv[2]
     ljust = int(sys.argv[3])
     replace_file = sys.argv[4]
+
+    client = TestCreatorBotClient()
+    client_context = client.create_client_context(1, load_variables=False)
+    bot_node = TemplateBotNode()
 
     default = None
     if len(sys.argv) > 5:
@@ -229,20 +266,24 @@ if __name__ == '__main__':
 
                 else:
                     template = category.find('template')
-                    # # print("Template: {}".format(template.text))
-                    # # TODO: Need to parse bot, set, get tags
-                    # string = ""
-                    # for elt in template.iter(): 
-                    #     tag = elt.tag
-                    #     if tag == "random":
-                    #         lis = tag.findall("li")
-                    #         for li in lis.iter():
-                    #             string += li.text + ", "
+                    # print("Template: {}".format(template.text))
+                    # TODO: Need to parse bot, set, get tags
+                    string = ""
+                    for elt in template.iter(): 
+                        tag = elt.tag
+                        
+                        if tag == "bot":
+                            bot_text = bot_node.get_bot_variable(client_context)
+                        
+                        # elif tag == "random":
+                        #     lis = tag.findall("li")
+                        #     for li in lis.iter():
+                        #         string += li.text + ", "
 
-                    # if len(li) > 0:
-                    #     test_line = '%s "%s"'%(question, string)
-                    # else:
-                    #     test_line = '%s "%s"'%(question, template.text)
+                    if len(li) > 0:
+                        test_line = '%s "%s"'%(question, string)
+                    else:
+                        test_line = '%s "%s"'%(question, template.text)
 
                     test_line = '%s "%s"'%(question, template.text)
                 output_file.write(test_line)

@@ -88,7 +88,7 @@ class BotClient(ResponseLogger):
         self._id = id
 
         self._arguments = self.parse_arguments(argument_parser=argument_parser)
-        print("self._arguments: {}".format(self._arguments))
+        # print("self._arguments: {}".format(self._arguments))
         self.initiate_logging(self.arguments)
 
         self._configuration = None
@@ -229,12 +229,12 @@ class BotClient(ResponseLogger):
             self._scheduler = ProgramrScheduler(self, self.configuration.client_configuration.scheduler)
             self._scheduler.start()
 
-    def create_client_context(self, userid):
+    def create_client_context(self, userid, load_variables=True):
         client_context = ClientContext(self, userid)
         client_context.bot = self._bot_factory.select_bot()
         #TODO: here is where we need to load in variables
         client_context.brain = client_context.bot._brain_factory.select_brain()
-        client_context.brain._load_variables(client_context)
+        if load_variables: client_context.brain._load_variables(client_context)
         return client_context
 
     def load_client_context(self, userid, session_pickle_dir):

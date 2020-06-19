@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <topic name="basketball">
+        <category>
+            <pattern>_</pattern>
+            <that>How long have you been following the Celtics?</that>
+            <template>
+                A true fan!
+                <set name="most recent dialogue question">I'm guessing you remember the infamous rivalry between the Celtics and Lakers?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>I'm guessing you remember the infamous rivalry between the Celtics and Lakers?</that>
+            <template>
+                With players like Larry Bird and Magic Johnson, of course the competition would be fierce, right?
+                <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>I'm guessing you remember the infamous rivalry between the Celtics and Lakers?</that>
+            <template>
+                Well, with players like Larry Bird and Magic Johnson, of course the competition would be fierce, right? <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>I'm guessing you remember the infamous rivalry between the Celtics and Lakers?</that>
+            <template>
+                Well, with players like Larry Bird and Magic Johnson, of course the competition would be fierce, right? <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>How long have you been following the Hawks?</that>
+            <template>
+                A true fan!
+                <set name="most recent dialogue question">Did you know that the Hawks won the championship in 1958?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Did you know that the Hawks won the championship in 1958?</that>
+            <template>
+                You know your stuff! They ended up defeating the Celtics with Bob Pettit, of course.
+                <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Did you know that the Hawks won the championship in 1958?</that>
+            <template>
+                Yep! They ended up defeating the Celtics with Bob Pettit, of course. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you know that the Hawks won the championship in 1958?</that>
+            <template>
+                Yep! They ended up defeating the Celtics with Bob Pettit, of course. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern><set>NBAPlayers</set></pattern>
+            <that>Who would you say is the best player in the history of the game?</that>
+            <template>
+                You know, I can't disagree with you there. <star /> is basically a legend.
+                <set name="most recent dialogue question">Can you imagine all that hard work and dedication?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Who would you say is the best player in the history of the game?</that>
+            <template>
+                I don't believe I've heard of them! You will have to enlighten me sometime.
+                <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Can you imagine all that hard work and dedication?</that>
+            <template>
+                <think><set name="most recent dialogue question">What's been your most difficult challenge do you think?</set></think>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What's been your most difficult challenge do you think?</that>
+            <template>
+                Wow. I think I can definitely relate. It's actually funny how much we have in common when you think about it.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>It's actually funny how much we have in common when you think about it.</that>
+            <template>
+                <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
+
+</aiml>
