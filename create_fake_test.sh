@@ -1,0 +1,1 @@
+python ./src/utils/test_creator/test_creator.py --config ./bots/Ryan/config.yaml --aiml_file ./src/utils/test_runner/bot_test.aiml --test_file ./test_files/example.test --replace_file ./src/utils/test_creator/replace_file.txt --cformat yaml --logging ./bots/Ryan/logging.yaml

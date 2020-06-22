@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import sys
 from programr.parser.template.nodes.bot import TemplateBotNode
 from programr.clients.client import BotClient
+from programr.clients.events.console.config import ConsoleConfiguration
 
 class TestCreatorBotClient(BotClient):
 
@@ -27,12 +28,16 @@ class TestCreatorBotClient(BotClient):
     def get_description(self):
         return 'ProgramR Test Creator Client'
 
-    # def add_client_arguments(self, parser=None):
-    #     if parser is not None:
-    #         parser.add_argument('--aiml_file', dest='aiml_file', help='AIML File to create tests from')
-    #         parser.add_argument('--test_file', dest='test_file', help='Test file to create with associated unit tests')
-    #         parser.add_argument('--replace_file', dest='replace_file', help='When creating tests you can specify replacements certain data types')
-    #         parser.add_argument('--ljust', dest='ljust', action='store_true', help='Left justifies the first csv column, a good value is 40 or 80')
+    def add_client_arguments(self, parser=None):
+        if parser is not None:
+            parser.add_argument('--aiml_file', dest='aiml_file', help='AIML File to create tests from')
+            parser.add_argument('--test_file', dest='test_file', help='Test file to create with associated unit tests')
+            parser.add_argument('--ljust', dest='ljust', action='store_true', help='Left justifies the first csv column, a good value is 40 or 80')
+            parser.add_argument('--replace_file', dest='replace_file', help='When creating tests you can specify replacements certain data types')
+
+    def get_client_configuration(self):
+        return ConsoleConfiguration()
+            
 
 def load_replacements(replace_file):
     texts = {}
@@ -67,7 +72,8 @@ def replace_wildcards(text, texts):
     text = replace_wildcard(text, texts, "_")
     return text
 
-def parse_categories(categories):
+def parse_categories(categories, output_file):
+    questions = []
     for category in categories:
         pattern_text = ""
 
@@ -99,6 +105,10 @@ def parse_categories(categories):
                     pattern_text += bots[name]
                 else:
                     pattern_text += "BOT[%s]" % name
+            
+            elif elt.tag == "topic":
+                topic_cats = elt.tag.findall("category")
+                topic_questions = parse_categories(topic_cats, output_file)
 
             pattern_text += " "
 
@@ -111,37 +121,64 @@ def parse_categories(categories):
         question = '"%s",'%pattern_text.strip()
         question = question.ljust(ljust)
         
+        
+        template = category.find('template')
+        # print("Template: {}".format(template.text))
+        # TODO: Need to parse bot, set, get tags
+        string = ""
+        for elt in template.iter(): 
+            tag = elt.tag
+            
+            if tag == "bot":
+                string = bot_node.get_bot_variable(client_context, elt.attrib['name'])
+                # print("Text after bot: {}".format(elt.tail))
+                tail = elt.tail
+            
+            # elif tag == "random":
+            #     lis = tag.findall("li")
+            #     for li in lis.iter():
+            #         string += li.text + ", "
 
-
-        if default is not None:
-            test_line = '%s $DEFAULT'%(question)
-
+        # if len(li) > 0:
+        #     test_line = '%s "%s"'%(question, string)
+        # else:
+        #     test_line = '%s "%s"'%(question, template.text)
+        if template.text is None:
+            response = string
+            test_line = '%s "%s"'%(question, response)
         else:
-            template = category.find('template')
-            # print("Template: {}".format(template.text))
-            test_line = '%s "%s"'%(question, template.text)
-
+            if tail is not None:
+                response = template.text + string + tail
+            else:
+                response = template.text + string
+            test_line = '%s "%s"'%(question, response)
+        
         output_file.write(test_line)
         output_file.write("\n")
-
-    topics = aiml.findall('topic')
-    if len(topics) > 0:
-        print("I dont handle topics yet!")
+        
+    print("completed")
+    return questions
 
 if __name__ == '__main__':
 
-    aiml_file = sys.argv[1]
-    test_file = sys.argv[2]
-    ljust = int(sys.argv[3])
-    replace_file = sys.argv[4]
+    aiml_file = sys.argv[4]
+    test_file = sys.argv[6]
+    # ljust = int(sys.argv[3])
+    ljust = 20
+    replace_file = sys.argv[8]
+
+    print("aiml_file: {}".format(aiml_file))
+    print("test_file: {}".format(test_file))
+    print("ljust: {}".format(ljust))
+    print("replace_file: {}".format(replace_file))
 
     client = TestCreatorBotClient()
     client_context = client.create_client_context(1, load_variables=False)
     bot_node = TemplateBotNode()
 
     default = None
-    if len(sys.argv) > 5:
-        default = sys.argv[5]
+    # if len(sys.argv) > 5:
+    #     default = sys.argv[5]
 
     print("loading in file: " + aiml_file + "...")
     # print("test_file:", test_file)
@@ -151,152 +188,15 @@ if __name__ == '__main__':
     texts, sets, bots = load_replacements(replace_file)
 
     with open(test_file, "w+") as output_file:
-        if default is not None:
-            output_file.write('$DEFAULT, "%s"\n\n'%default)
+        # if default is not None:
+        #     output_file.write('$DEFAULT, "%s"\n\n'%default)
         try:
             tree = ET.parse(aiml_file)
             aiml = tree.getroot()
             categories = aiml.findall('category')
-            for category in categories:
-                pattern_text = ""
 
-                pattern = category.find("pattern")
-                for elt in pattern.iter():
+            questions = parse_categories(categories, output_file)
 
-                    if elt.tag == "pattern":
-                        text = elt.text.strip().upper()
-                        pattern_text += replace_wildcards(text, texts)
-
-                    elif elt.tag == "set":
-                        if 'name' in elt.attrib:
-                            name = elt.attrib['name']
-                        else:
-                            name = elt.text.strip()
-
-                        if name in sets:
-                            pattern_text += sets[name]
-                        else:
-                            pattern_text += "SET[%s]"%name
-
-                    elif elt.tag == "bot":
-                        if 'name' in elt.attrib:
-                            name = elt.attrib['name']
-                        else:
-                            name = elt.text.strip()
-
-                        if name in bots:
-                            pattern_text += bots[name]
-                        else:
-                            pattern_text += "BOT[%s]" % name
-                    
-                    elif elt.tag == "topic":
-                        topic_cats = elt.tag.findall("category")
-                        for category in topic_cats:
-                            print("category?: {}".format(category))
-                            pattern_text = ""
-
-                            pattern = category.find("pattern")
-                            for elt in pattern.iter():
-
-                                if elt.tag == "pattern":
-                                    text = elt.text.strip().upper()
-                                    pattern_text += replace_wildcards(text, texts)
-
-                                elif elt.tag == "set":
-                                    if 'name' in elt.attrib:
-                                        name = elt.attrib['name']
-                                    else:
-                                        name = elt.text.strip()
-
-                                    if name in sets:
-                                        pattern_text += sets[name]
-                                    else:
-                                        pattern_text += "SET[%s]"%name
-
-                                elif elt.tag == "bot":
-                                    if 'name' in elt.attrib:
-                                        name = elt.attrib['name']
-                                    else:
-                                        name = elt.text.strip()
-
-                                    if name in bots:
-                                        pattern_text += bots[name]
-                                    else:
-                                        pattern_text += "BOT[%s]" % name
-
-                                pattern_text += " "
-
-                                if elt.tail is not None and elt.tail.strip() != "":
-                                    text = elt.tail.strip().upper()
-                                    pattern_text += replace_wildcards(text, texts)
-                                    pattern_text += " "
-
-                            
-                            question = '"%s",'%pattern_text.strip()
-                            question = question.ljust(ljust)
-                            
-
-
-                            if default is not None:
-                                test_line = '%s $DEFAULT'%(question)
-
-                            else:
-                                template = category.find('template')
-                                # print("Template: {}".format(template.text))
-                                test_line = '%s "%s"'%(question, template.text)
-
-                            output_file.write(test_line)
-                            output_file.write("\n")
-
-                    pattern_text += " "
-
-                    if elt.tail is not None and elt.tail.strip() != "":
-                        text = elt.tail.strip().upper()
-                        pattern_text += replace_wildcards(text, texts)
-                        pattern_text += " "
-
-                
-                question = '"%s",'%pattern_text.strip()
-                question = question.ljust(ljust)
-                
-
-
-                if default is not None:
-                    test_line = '%s $DEFAULT'%(question)
-
-                else:
-                    template = category.find('template')
-                    # print("Template: {}".format(template.text))
-                    # TODO: Need to parse bot, set, get tags
-                    string = ""
-                    for elt in template.iter(): 
-                        tag = elt.tag
-                        
-                        if tag == "bot":
-                            bot_text = bot_node.get_bot_variable(client_context)
-                        
-                        # elif tag == "random":
-                        #     lis = tag.findall("li")
-                        #     for li in lis.iter():
-                        #         string += li.text + ", "
-
-                    if len(li) > 0:
-                        test_line = '%s "%s"'%(question, string)
-                    else:
-                        test_line = '%s "%s"'%(question, template.text)
-
-                    test_line = '%s "%s"'%(question, template.text)
-                output_file.write(test_line)
-                output_file.write("\n")
-
-            # topics = aiml.findall('topic')
-            # if len(topics) > 0:
-            #     print("topic found")
-            #     print("Topic: {}".format(topics))
-                # topic_cats = topics.findall('category')
-                # print("topic_cats: {}".format(topic_cats))
-                
-            print("completed")
         except Exception as e:
             print(e)
             line = "failed to load file: " + aiml_file + "\n"
