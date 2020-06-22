@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import sys
 from programr.parser.template.nodes.bot import TemplateBotNode
+from programr.parser.template.nodes.get import TemplateGetNode
 from programr.clients.client import BotClient
 from programr.clients.events.console.config import ConsoleConfiguration
 
@@ -72,7 +73,7 @@ def replace_wildcards(text, texts):
     text = replace_wildcard(text, texts, "_")
     return text
 
-def parse_categories(categories, output_file):
+def parse_categories(categories, output_file, bot_node, get_node):
     questions = []
     for category in categories:
         pattern_text = ""
@@ -106,9 +107,10 @@ def parse_categories(categories, output_file):
                 else:
                     pattern_text += "BOT[%s]" % name
             
+            # NOTE: Is this condition needed?
             elif elt.tag == "topic":
                 topic_cats = elt.tag.findall("category")
-                topic_questions = parse_categories(topic_cats, output_file)
+                topic_questions = parse_categories(topic_cats, output_file, bot_node, get_node)
 
             pattern_text += " "
 
@@ -125,19 +127,31 @@ def parse_categories(categories, output_file):
         template = category.find('template')
         # print("Template: {}".format(template.text))
         # TODO: Need to parse bot, set, get tags
-        string = ""
+        string = "["
+        tail = ""
         for elt in template.iter(): 
             tag = elt.tag
             
             if tag == "bot":
                 string = bot_node.get_bot_variable(client_context, elt.attrib['name'])
                 # print("Text after bot: {}".format(elt.tail))
-                tail = elt.tail
+                tail += elt.tail
+
+            elif tag == "get":
+                string = get_node.get_property_value(client_context, False, elt.attrib['name'])
+                # print("Text after bot: {}".format(elt.tail))
+                tail += elt.tail    
             
             # elif tag == "random":
-            #     lis = tag.findall("li")
-            #     for li in lis.iter():
-            #         string += li.text + ", "
+            #     lis = elt.findall("li")
+            #     for li in lis:
+            #         print("li: {}".format(type(li)))
+            #         for elt in li.iter():
+
+            #             if li.text is not None:
+            #                 string += li.text + ", "
+            #                 string = string[:-2]
+            #                 string += "]"
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)
@@ -148,9 +162,9 @@ def parse_categories(categories, output_file):
             test_line = '%s "%s"'%(question, response)
         else:
             if tail is not None:
-                response = template.text + string + tail
+                response = template.text.strip() + string + tail
             else:
-                response = template.text + string
+                response = template.text.strip() + string
             test_line = '%s "%s"'%(question, response)
         
         output_file.write(test_line)
@@ -175,6 +189,7 @@ if __name__ == '__main__':
     client = TestCreatorBotClient()
     client_context = client.create_client_context(1, load_variables=False)
     bot_node = TemplateBotNode()
+    get_node = TemplateGetNode()
 
     default = None
     # if len(sys.argv) > 5:
@@ -195,7 +210,7 @@ if __name__ == '__main__':
             aiml = tree.getroot()
             categories = aiml.findall('category')
 
-            questions = parse_categories(categories, output_file)
+            questions = parse_categories(categories, output_file, bot_node, get_node)
 
         except Exception as e:
             print(e)
@@ -205,5 +220,3 @@ if __name__ == '__main__':
             f.close()
         
         exit(0)
-
-

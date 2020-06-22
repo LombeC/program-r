@@ -165,8 +165,8 @@ class Brain(object):
 
 
     def load_nlp(self):
-        print("self.configuration.nlp.classname: {}".format(self.configuration.nlp.classname))
-        print("self.configuration: {}".format(self.configuration))
+        # print("self.configuration.nlp.classname: {}".format(self.configuration.nlp.classname))
+        # print("self.configuration: {}".format(self.configuration))
         if self.configuration and self.configuration.nlp.classname:
             nlp = ClassLoader.instantiate_class(self.configuration.nlp.classname)
             return nlp(self.configuration.nlp)
