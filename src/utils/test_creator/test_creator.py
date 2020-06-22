@@ -142,16 +142,38 @@ def parse_categories(categories, output_file, bot_node, get_node):
                 # print("Text after bot: {}".format(elt.tail))
                 tail += elt.tail    
             
-            # elif tag == "random":
-            #     lis = elt.findall("li")
-            #     for li in lis:
-            #         print("li: {}".format(type(li)))
-            #         for elt in li.iter():
+            elif tag == "random":
+                lis = elt.findall("li")
+                for li in lis:
+                    print("li: {}".format(type(li)))
+                    li_string = ""
+                    for elem in li.iter():
+                        bot_tail = ""
+                        get_tail = ""
+                        if elem.tag == "bot":
+                            li_string += bot_node.get_bot_variable(client_context, elem.attrib['name'])
+                            bot_tail = elt.tail  
 
-            #             if li.text is not None:
-            #                 string += li.text + ", "
-            #                 string = string[:-2]
-            #                 string += "]"
+                        elif elem.tag == "get":
+                            li_string += get_node.get_property_value(client_context, False, elem.attrib['name'])
+                            get_tail = elem.tail
+
+                    if li.text is not None:
+                        string += li.text
+                        if bot_tail is not None and get_tail is not None:
+                            string += li_string + bot_tail + get_tail + "; "
+                        
+                        elif bot_tail is not None and get_tail is None:
+                            string += li_string + bot_tail + "; "
+
+                        elif bot_tail is None and get_tail is not None:
+                            string += li_string + get_tail + "; "
+                        
+                        else:
+                            string += li.text + "; "
+                            
+                        string = string[:-2]
+                        string += "]"
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)
