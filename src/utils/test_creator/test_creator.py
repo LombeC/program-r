@@ -127,67 +127,119 @@ def parse_categories(categories, output_file, bot_node, get_node):
         template = category.find('template')
         # print("Template: {}".format(template.text))
         # TODO: Need to parse bot, set, get tags
-        string = "["
+        string = ""
         tail = ""
+        random_exists = False
         for elt in template.iter(): 
             tag = elt.tag
             
             if tag == "bot":
-                string = bot_node.get_bot_variable(client_context, elt.attrib['name'])
+                string = " " + bot_node.get_bot_variable(client_context, elt.attrib['name'])
                 # print("Text after bot: {}".format(elt.tail))
-                tail += elt.tail
+                try:
+                    tail += elt.tail.strip()
+                except Exception as excep:
+                    print("failed getting tail: {}".format(excep))
+                    tail = None
 
             elif tag == "get":
-                string = get_node.get_property_value(client_context, False, elt.attrib['name'])
+                string = " " + get_node.get_property_value(client_context, False, elt.attrib['name'])
                 # print("Text after bot: {}".format(elt.tail))
-                tail += elt.tail    
+                try:
+                    tail += elt.tail.strip()  
+                except Exception as excep:
+                    print("failed getting tail: {}".format(excep))
+                    tail = None
             
             elif tag == "random":
+                random_exists = True
                 lis = elt.findall("li")
+                random_string = ""
+                bot_tail = None
+                get_tail = None
                 for li in lis:
                     print("li: {}".format(type(li)))
                     li_string = ""
                     for elem in li.iter():
-                        bot_tail = ""
-                        get_tail = ""
+                        print("elem: {} - {}".format(elem.tag, type(elem)))
+                        
                         if elem.tag == "bot":
-                            li_string += bot_node.get_bot_variable(client_context, elem.attrib['name'])
-                            bot_tail = elt.tail  
+                            print("Found bot tag!")
+                            li_string += " " + bot_node.get_bot_variable(client_context, elem.attrib['name'])
+                            bot_tail = elt.tail.strip()
 
                         elif elem.tag == "get":
-                            li_string += get_node.get_property_value(client_context, False, elem.attrib['name'])
-                            get_tail = elem.tail
+                            print("Found get tag!")
+                            li_string += " " + get_node.get_property_value(client_context, False, elem.attrib['name'])
+                            get_tail = elem.tail.strip()
 
                     if li.text is not None:
-                        string += li.text
+                        random_string += li.text.strip()
                         if bot_tail is not None and get_tail is not None:
-                            string += li_string + bot_tail + get_tail + "; "
+                            print("Both are not none")
+                            random_string += li_string + bot_tail.strip() + get_tail.strip()
+                            print("random_string: {}".format(random_string))
                         
                         elif bot_tail is not None and get_tail is None:
-                            string += li_string + bot_tail + "; "
+                            print("bot is not none")
+                            print("bot_tail: {}".format(bot_tail))
+                            print("li_string: {}".format(li_string))
+                            print("random_string: {}".format(random_string))
+                            random_string += li_string + bot_tail.strip()
+                            print("random_string: {}".format(random_string))
 
                         elif bot_tail is None and get_tail is not None:
-                            string += li_string + get_tail + "; "
+                            print("get is not none")
+                            random_string += li_string + get_tail.strip()
                         
                         else:
-                            string += li.text + "; "
+                            print("in else")
+                            random_string += li.text.strip()
+                            print("random_string: {}".format(random_string))
+
+                    random_string += "; "
+
+                        
                             
-                        string = string[:-2]
-                        string += "]"
+                print("Cleaning string")
+                random_string = random_string[:-2]
+                random_string += "]"
+                print("random_string: {}".format(random_string))
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)
         # else:
         #     test_line = '%s "%s"'%(question, template.text)
-        if template.text is None:
-            response = string
-            test_line = '%s "%s"'%(question, response)
-        else:
-            if tail is not None:
-                response = template.text.strip() + string + tail
+        if random_exists:
+            if template.text is None:
+                print("template.text is None")
+                response = "[" + string + random_string
+                test_line = '%s "%s"'%(question, response)
             else:
-                response = template.text.strip() + string
-            test_line = '%s "%s"'%(question, response)
+                if tail is not None:
+                    print("there is a tail")
+                    response = template.text.strip() + "[" + string + random_string +tail
+                else:
+                    print("tail is None")
+                    response = template.text.strip() + "[" + string + random_string
+                    print("response: {}".format(response))
+                test_line = '%s "%s"'%(question, response)
+                print("test_line: {}".format(test_line))
+        else:
+            if template.text is None:
+                print("template.text is None")
+                response = string
+                test_line = '%s "%s"'%(question, response)
+            else:
+                if tail is not None:
+                    print("there is a tail")
+                    response = template.text.strip() + string + tail
+                else:
+                    print("tail is None")
+                    response = template.text.strip() + string
+                    print("response: {}".format(response))
+                test_line = '%s "%s"'%(question, response)
+                print("test_line: {}".format(test_line))
         
         output_file.write(test_line)
         output_file.write("\n")
