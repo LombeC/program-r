@@ -150,6 +150,14 @@ def parse_categories(categories, output_file, bot_node, get_node):
                 except Exception as excep:
                     print("failed getting tail: {}".format(excep))
                     tail = None
+
+            elif tag == "set":
+                string = elt.text + " "
+                try:
+                    tail += elt.tail.strip()
+                except Exception as excep:
+                    print("failed getting tail: {}".format(excep))
+                    tail = None
             
             elif tag == "random":
                 random_exists = True

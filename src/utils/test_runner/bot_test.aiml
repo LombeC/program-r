@@ -15,6 +15,27 @@
     </category>
 
     <category>
+        <pattern>LIVERPOOL ENGLAND</pattern>
+        <template>
+            <set name="location">Liverpool</set> is the home of the Beatles.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LIVERPOOL ENGLAND</pattern>
+        <template>
+            <set name="location">Liverpool</set> is the home of the Beatles.  
+            <think>
+                <set name="it">
+                    <set name="topic">Liverpool</set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>WHAT S YOUR NAME</pattern>
         <template>
             <random>
