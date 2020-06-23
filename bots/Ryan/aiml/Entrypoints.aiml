@@ -4,27 +4,27 @@
 <!-- ATOMIC CATEGORIES THAT LEAD INTO IN-DEPTH CONVERSATIONS -->
 <category>
     <pattern>ACTION</pattern>
-    <template>Would you like to talk about action movies?<oob><robot></robot></oob>
+    <template>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>ACTION MOVIES</pattern>
-    <template>Would you like to talk about action movies?<oob><robot></robot></oob>
+    <template>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>ACTION MOVIE</pattern>
-    <template>Would you like to talk about action movies?<oob><robot></robot></oob>
+    <template>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>ACTION FILMS</pattern>
-    <template>Would you like to talk about action movies?<oob><robot></robot></oob>
+    <template>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>ACTION FILM</pattern>
-    <template>Would you like to talk about action movies?<oob><robot></robot></oob>
+    <template>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
@@ -63,12 +63,12 @@
 </category>
 <category>
     <pattern>BASEBALL</pattern>
-    <template>What is your favorite position, pitcher, catcher, in field, or outfield?<oob><robot></robot></oob>
+    <template>Have you ever played baseball?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>BASKETBALL</pattern>
-    <template>What do you love about watching basketball?<oob><robot></robot></oob>
+    <template>What NBA team do you like to watch?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
@@ -77,9 +77,19 @@
     </template>
 </category>
 <category>
+    <pattern>BIG BAND</pattern>
+    <template>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+        <robot>
+            <video>
+                <filename>dukeEllington.mp4</filename>
+            </video>
+        </robot>
+    </oob>
+    </template>
+</category>
+<category>
     <pattern>BOOKS</pattern>
     <template>
-        <think><set name="topic">reading</set></think>
         Do you want to talk about books?<oob><robot></robot></oob>
     </template>
 </category>
@@ -106,17 +116,66 @@
     <template>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
 </category>
 <category>
+    <pattern>COMEDY</pattern>
+    <template>When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase. Have you seen Christmas Vacation?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>COMFORT FOOD</pattern>
+    <template>Why don't we talk about comfort food?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>CONCERTS</pattern>
+    <template>Do you like going to concerts?<oob><robot></robot></oob></template>
+</category>
+<category>
     <pattern>COWBOY</pattern>
-    <template>I love the National Cowboy Museum! Would you like to take a tour of the museum?<oob><robot></robot></oob>
+    <template>Have you ever been to a rodeo?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>COWBOYS</pattern>
-    <template>I love the National Cowboy Museum! Would you like to take a tour of the museum?<oob><robot></robot></oob>
+    <template>Have you ever been to a rodeo?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CROONER</pattern>
+    <template>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+        <robot>
+            <video>
+                <filename>bingCrosby.mp3</filename>
+            </video></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>THE CROONERS</pattern>
+    <template>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+        <robot>
+            <video>
+                <filename>bingCrosby.mp3</filename>
+            </video></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CROONERS</pattern>
+    <template>I love crooners! So romantic! What did you think of the crooner clip?<oob>
+        <robot>
+            <video>
+                <filename>bingCrosby.mp3</filename>
+            </video></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>DANCING</pattern>
+    <template>You ever gone dancing?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>DRINK</pattern>
+    <template>Should we talk about your favorite beverage?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>DRINKS</pattern>
     <template>Should we talk about your favorite beverage?<oob><robot></robot></oob>
     </template>
 </category>
@@ -148,7 +207,7 @@
 </category>
 <category>
   <pattern>FOOTBALL</pattern>
-  <template>Football fans know how to have the most fun! What is your favorite professional football team?<oob><robot></robot></oob>
+  <template>Football fans know how to have the most fun! What's your favorite professional football team?<oob><robot></robot></oob>
   </template>
 </category>
 <category>
@@ -182,7 +241,7 @@
 </category>
 <category>
   <pattern>HOCKEY</pattern>
-  <template>What do you like about watching hockey?<oob><robot></robot></oob>
+  <template>What's your favorite NHL team, if you had to say?<oob><robot></robot></oob>
   </template>
 </category>
 <category>
@@ -206,9 +265,24 @@
     </template>
 </category>
 <category>
+    <pattern>JAZZ</pattern>
+    <template>Jazz just makes you want to move and smile, especially Latin Jazz! What did you think of the jazz clip?<oob>
+        <robot>
+            <video>
+                <filename>desafinado.mp4</filename>
+            </video>
+        </robot>
+    </oob>
+    </template>
+</category>
+<category>
     <pattern>JUPITER</pattern>
     <template>Jupiter is the oldest planet in our solar system! Did you know that?<oob><robot></robot></oob>
     </template>
+</category>
+<category>
+    <pattern>KARAOKE</pattern>
+    <template>I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>KIDS</pattern>
@@ -286,6 +360,11 @@
     </template>
 </category>
 <category>
+    <pattern>MUSICALS</pattern>
+    <template>What do you think of The Sound of Music?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>NATIONAL SMITHSONIAN</pattern>
     <template>The Smithsonian is a marvel of natural history! Would you like to see a video on its dinosaur exhibit?<oob><robot></robot></oob>
     </template>
@@ -306,6 +385,10 @@
 <category>
     <pattern>NON-FICTION</pattern>
     <template>Do you read any non-fiction?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>OLYMPICS</pattern>
+    <template>What do you think is the most impressive olympic sport?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>PET</pattern>
@@ -366,6 +449,26 @@
         <pattern>RADIOS</pattern>
         <template>Have you ever heard of the radio show War of the Worlds?<oob><robot></robot></oob>
         </template>
+    </category>
+    <category>
+        <pattern>ROCK</pattern>
+        <template>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+            <robot>
+                <video>
+                    <filename>elvisJailhouse.mp4</filename>
+                </video>
+            </robot>
+        </oob></template>
+    </category>
+    <category>
+        <pattern>ROCK MUSIC</pattern>
+        <template>I hope you are also a fan of Elvis! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
+            <robot>
+                <video>
+                    <filename>elvisJailhouse.mp4</filename>
+                </video>
+            </robot>
+        </oob></template>
     </category>
     <category>
         <pattern>ROMANCE</pattern>

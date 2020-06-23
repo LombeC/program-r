@@ -24,7 +24,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about museums?</that>
         <template>
-            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+          <think><set name="dialogue">museums</set></think>
+            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -35,8 +36,8 @@
         <pattern># Route sixty six ^</pattern>
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
-
-            You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+          <think><set name="topic">routesixtysix</set></think>
+            You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -47,7 +48,20 @@
             <pattern># Route sixty six museums ^</pattern>
             <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
-                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route 66 museums ^</pattern>
+            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -58,7 +72,8 @@
             <pattern># Route 66 ^</pattern>
             <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
-                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -69,7 +84,8 @@
             <pattern># 66 ^</pattern>
             <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
-                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -80,7 +96,8 @@
             <pattern># Route sixty six museum ^</pattern>
             <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
-                You must like to get your kicks! The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -88,11 +105,24 @@
         </category>
 
         <category>
+            <pattern># Route 66 museum ^</pattern>
+            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <topic name="routesixtysix">
+
+        <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to take a tour?</that>
             <template>
-              <think><set name="topic">routesixtysix</set></think>
-                I would love to visit sometime! What comes to your mind when you think of Route 66?
+                Pretty nostalgic! I really dig the diner they showed, and am a fan of all things Elvis! <set name="most recent dialogue question">What do you like about Route 66?</set>
                 <oob>
                     <robot>
                         <video>
@@ -103,13 +133,11 @@
             </template>
         </category>
 
-        <topic name="routesixtysix">
-
         <category>
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to take a tour?</that>
             <template>
-                No problem! What comes to your mind when you think of Route 66?
+                No problem! <set name="most recent dialogue question">What do you like about Route 66?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,9 +146,42 @@
 
         <category>
             <pattern>_</pattern>
-            <that>What comes to your mind when you think of Route 66?</that>
+            <that>What do you like about Route 66?</that>
             <template>
-                It's so nostalgic! Have you ever been on a road trip?
+                So much yes! I am such a fan, honestly! <set name="most recent dialogue question">Have you ever been on Route 66?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever been on Route 66?</that>
+            <template>
+                Did you really? I'm jealous! <set name="most recent dialogue question">Where did you go?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever been on Route 66?</that>
+            <template>
+                <set name="most recent dialogue question">Have you ever been on a road trip?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever been on Route 66?</that>
+            <template>
+                <set name="most recent dialogue question">Have you ever been on a road trip?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -131,7 +192,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                There's nothing like the open road! Where did you go?
+                <set name="most recent dialogue question">Where have you road tripped to?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -142,9 +203,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                Route sixty six was all about the open road!
-                        A good road trip requires good music on the radio.
-                        Do you remember listening to Elvis Presley when you were young?
+                I feel you! <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -155,9 +214,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                Route sixty six was all about the open road!
-                        A good road trip requires good music on the radio.
-                        Do you remember listening to Elvis Presley when you were young?
+                I feel you! <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -168,7 +225,20 @@
             <pattern>_</pattern>
             <that>Where did you go?</that>
             <template>
-                How exciting! Where would you like to travel, if you could?
+                Wow. I am just imagining you there now! I wish I could see pictures! <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?
+                </set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Where have you road tripped to?</that>
+            <template>
+                Now that sounds very cool and relaxing. Even though every road trip has its, um, "hiccups" as we call them, ha ha. You know what I mean!
+                <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -179,20 +249,20 @@
             <pattern>_</pattern>
             <that>Where would you like to travel, if you could?</that>
             <template>
-                Sounds amazing! You'll have to take pictures when you go!
-                        Would you like to see some Route sixty six highlights?
+                Wow. I am just imagining you there now! You'll have to take pictures for me when you go!
+                        <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
+    
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to see some Route sixty six highlights?</that>
         <template>
-            I would love to see the Cadillac Ranch in person! Do you want to keep talking about museums?
+            I would love to see the Cadillac Ranch in person! <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
             <oob>
                 <robot>
                     <video>
@@ -204,10 +274,22 @@
     </category>
 
     <category>
+        <pattern>_</pattern>
+        <that>Let's hit the road Jack and never come back!</that>
+        <template>
+            Why not! <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>No</set> ^</pattern>
         <that>Would you like to see some Route sixty six highlights?</that>
         <template>
-            Okay. Do you want to keep talking about museums?
+            Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -218,7 +300,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you want to keep talking about museums?</that>
         <template>
-            Great! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            Great! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -229,10 +311,12 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you want to keep talking about museums?</that>
         <template>
-            Sure. What would you like to talk about?
+            Sure. <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+  </topic>
 </aiml>

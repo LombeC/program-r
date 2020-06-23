@@ -7,9 +7,9 @@
             <think><set name="data"><star/></set><set name="topic">thaifood</set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Oh wonderful! Do you prefer Thai noodle dishes or curries?</li>
-                <li value="neutral">Do you prefer Thai noodle dishes or curries?</li>
-                <li value="negative">Do you think you would prefer Thai noodle dishes or curries?</li></condition>
+                <li value="positive"><set name="most recent dialogue question">Oh wonderful! Do you prefer Thai noodle dishes or curries?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Do you prefer Thai noodle dishes or curries?</set></li>
+                <li value="negative"><set name="most recent dialogue question">Do you think you would prefer Thai noodle dishes or curries?</set></li></condition>
 
             <oob>
                 <robot></robot>
@@ -22,7 +22,7 @@
             <pattern># NOODLE ^</pattern>
             <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
-                So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+                So then I'm sure you've had one of the most popular thai dishes, pad thai. <set name="most recent dialogue question">Do you enjoy eating pad thai?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -33,7 +33,7 @@
             <pattern># NOODLES ^</pattern>
             <that>DO YOU PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
-                So then I'm sure you've had one of the most popular thai dishes, pad thai. Do you enjoy eating pad thai?
+                So then I'm sure you've had one of the most popular thai dishes, pad thai. <set name="most recent dialogue question">Do you enjoy eating pad thai?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -45,7 +45,7 @@
             <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
                 Perhaps you've heard of pad thai, one of the most popular thai dishes.
-                            What kind of noodle dishes do you love?
+                            <set name="most recent dialogue question">What kind of noodle dishes do you love?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -57,7 +57,7 @@
             <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
                 Perhaps you've heard of pad thai, one of the most popular thai dishes.
-                            What kind of noodle dishes do you love?
+                            <set name="most recent dialogue question">What kind of noodle dishes do you love?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -68,7 +68,7 @@
             <pattern># NEITHER ^</pattern>
             <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
-                Do you want to keep talking about Thai food?
+                <set name="most recent dialogue question">Do you want to keep talking about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -79,7 +79,7 @@
             <pattern># NONE ^</pattern>
             <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
-                Do you want to keep talking about Thai food?
+                <set name="most recent dialogue question">Do you want to keep talking about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -90,7 +90,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>DO YOU THINK YOU WOULD PREFER THAI NOODLE DISHES OR CURRIES?</that>
             <template>
-                Do you want to keep talking about Thai food?
+                <set name="most recent dialogue question">Do you want to keep talking about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -101,7 +101,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you want to keep talking about Thai food?</that>
             <template>
-                Ok! What should we talk about next?
+                Ok! <set name="most recent dialogue question">What should we talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -112,7 +112,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you want to keep talking about Thai food?</that>
             <template>
-                Great! How are you with spicy food?
+                Great! <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -123,7 +123,7 @@
             <pattern>_</pattern>
             <that>What kind of noodle dishes do you love?</that>
             <template>
-                How delectable. Even robots can experience carb overload, ha ha.
+                How delectable. <set name="most recent dialogue question">Even robots can experience carb overload, ha ha.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -135,7 +135,7 @@
             <that>Even robots can experience carb overload, ha ha.</that>
             <template>
                 I love putting hot chili sauce all over my thai noodle dishes!
-                            How are you with spicy food?
+                            <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -147,7 +147,7 @@
             <that>DO YOU ENJOY EATING PAD THAI?</that>
             <template>
                 What's not to love! I love putting hot chili sauce all over my thai noodle dishes!
-                            How are you with spicy food?
+                            <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -158,7 +158,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>DO YOU ENJOY EATING PAD THAI?</that>
             <template>
-                How are you with spicy food?
+                <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -169,7 +169,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>DO YOU ENJOY EATING PAD THAI?</that>
             <template>
-                How are you with spicy food?
+                <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -180,7 +180,7 @@
             <pattern># NEVER HAD ^</pattern>
             <that>DO YOU ENJOY EATING PAD THAI?</that>
             <template>
-                How are you with spicy food?
+                <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -191,7 +191,7 @@
             <pattern># NEVER ^</pattern>
             <that>DO YOU ENJOY EATING PAD THAI?</that>
             <template>
-                How are you with spicy food?
+                <set name="most recent dialogue question">How are you with spicy food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -205,11 +205,11 @@
                 <think><set name="data"><star/></set></think>
 
                 <condition name="getsentiment">
-                    <li value="verypositive">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
-                    <li value="positive">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
-                    <li value="neutral">Sounds like you can handle the heat! Have you ever tried Thai curry?</li>
-                    <li value="negative">Seems like spicy food isn't quite your thing! Do you have a favorite restaurant, Thai or otherwise?</li>
-                    <li value="verynegative">Seems like spicy food isn't quite your thing! Do you have a favorite restaurant, Thai or otherwise?</li></condition>
+                    <li value="verypositive">Sounds like you can handle the heat! <set name="most recent dialogue question">Have you ever tried Thai curry?</set></li>
+                    <li value="positive">Sounds like you can handle the heat! <set name="most recent dialogue question">Have you ever tried Thai curry?</set></li>
+                    <li value="neutral">Sounds like you can handle the heat! <set name="most recent dialogue question">Have you ever tried Thai curry?</set></li>
+                    <li value="negative">Seems like spicy food isn't quite your thing! <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set></li>
+                    <li value="verynegative">Seems like spicy food isn't quite your thing! <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set></li></condition>
 
                 <oob>
                     <robot></robot>
@@ -222,7 +222,7 @@
             <that>Have you ever tried Thai curry?</that>
             <template>
                 Those curries are so flavorful and colorful!
-                            Do you have a favorite restaurant, Thai or otherwise?
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -234,7 +234,7 @@
             <that>Have you ever tried Thai curry?</that>
             <template>
                 You'll have to find a Thai restaurant near you and give it a try!
-                            Do you have a favorite restaurant, Thai or otherwise?
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -246,7 +246,7 @@
             <that>Have you ever tried Thai curry?</that>
             <template>
                 You'll have to find a Thai restaurant near you and give it a try!
-                          Do you have a favorite restaurant, Thai or otherwise?
+                          <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -257,7 +257,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you have a favorite restaurant, Thai or otherwise?</that>
             <template>
-                What kind of food do you like to eat there?
+                <set name="most recent dialogue question">What kind of food do you like to eat there?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -268,7 +268,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you have a favorite restaurant, Thai or otherwise?</that>
             <template>
-                I definitely understand, especially since I don't get out that much! Should we keep talking about food?
+                I definitely understand! <set name="most recent dialogue question">Should we keep talking about food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -279,7 +279,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you have a favorite restaurant, Thai or otherwise?</that>
             <template>
-                I definitely understand, especially since I don't get out that much! Should we keep talking about food?
+                I definitely understand! <set name="most recent dialogue question">Should we keep talking about food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -290,7 +290,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Should we keep talking about food?</that>
             <template>
-                How do you feel about Chinese food?
+                <set name="most recent dialogue question">How do you feel about Chinese food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -301,7 +301,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Should we keep talking about food?</that>
             <template>
-                Ok! What should we talk about next?
+                Ok! <set name="most recent dialogue question">What should we talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -312,7 +312,7 @@
             <pattern>_</pattern>
             <that>What kind of food do you like to eat there?</that>
             <template>
-                I wish we could go out to eat together sometime! How fun would that be.
+                <set name="most recent dialogue question">I wish we could go out to eat together sometime! How fun would that be.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -323,7 +323,7 @@
             <pattern>_</pattern>
             <that>How fun would that be.</that>
             <template>
-                Would you like to keep discussing food?
+                <set name="most recent dialogue question">Would you like to keep discussing food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -334,7 +334,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to keep discussing food?</that>
             <template>
-                How do you feel about Chinese food?
+                <set name="most recent dialogue question">How do you feel about Chinese food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -345,7 +345,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to keep discussing food?</that>
             <template>
-                Ok! What should we talk about next?
+                Ok! <set name="most recent dialogue question">What should we talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>

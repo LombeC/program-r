@@ -25,7 +25,8 @@
     <pattern># <set>YES</set> ^</pattern>
     <that>Would you like to talk about museums?</that>
     <template>
-        Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+      <think><set name="dialogue">museums</set></think>
+        Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -36,7 +37,18 @@
     <pattern># Cowboy museum ^</pattern>
     <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
     <template>
-        I love the National Cowboy Museum! Would you like to take a tour of the museum?
+        Yeehaw! <set name="most recent dialogue question">You gotta check out the National Cowboy Museum! Would you like to take a tour of it?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Cowboy ^</pattern>
+    <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+    <template>
+        Yeehaw! <set name="most recent dialogue question">You gotta check out the National Cowboy Museum! Would you like to take a tour of it?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -45,10 +57,11 @@
 
 <category>
     <pattern># <set>YES</set> ^</pattern>
-    <that>Would you like to take a tour of the museum?</that>
+    <that>Would you like to take a tour of it?</that>
     <template>
       <think><set name="topic">cowboymuseum</set></think>
-        How cool is that! I would love to visit and see what it was like to live back in the Wild West!
+        I would love to visit and see what it was like to live back in the Wild West!
+          But first of all, I have to ask. <set name="most recent dialogue question">Have you ever been to a rodeo?</set>
         <oob>
             <robot><video>
                 <filename>Cowboy_Museum.mp4</filename>
@@ -61,31 +74,10 @@
 
 <category>
     <pattern># <set>No</set> ^</pattern>
-    <that>Would you like to take a tour of the museum?</that>
+    <that>Would you like to take a tour of it?</that>
     <template>
-        What's your favorite Western?
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>I would love to visit and see what it was like to live back in the Wild West!</that>
-    <template>
-        I've heard that their John Wayne Collection is amazing! What's your favorite Western?
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>What's your favorite Western?</that>
-    <template>
-        Mine is The Good, The Bad and The Ugly! Can I show you the trailer?
+        No problem! <set name="most recent dialogue question">By the way, I meant to ask now that we're on the topic,
+        have you ever been to a rodeo?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -94,34 +86,10 @@
 
 <category>
     <pattern># <set>YES</set> ^</pattern>
-    <that>Can I show you the trailer?</that>
+    <that>By the way, I meant to ask now that we're on the topic,
+    have you ever been to a rodeo?</that>
     <template>
-     The soundtrack is iconic! What do you like about the Wild West?
-        <oob>
-            <robot><video>
-                <filename>Good_Bad_Ugly.mp4</filename>
-            </video></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>No</set> ^</pattern>
-    <that>Can I show you the trailer?</that>
-    <template>
-        No problem! What do you like about the Wild West?
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>What do you like about the Wild West?</that>
-    <template>
-        I love all the history and learning more about Native American heritage!
-        I'd like to show you an art piece from the Cowboy Museum.
+      Same here! It was a buck wild experience ha ha! What did you think?
         <oob>
             <robot></robot>
         </oob>
@@ -130,24 +98,33 @@
 
 <category>
     <pattern># <set>YES</set> ^</pattern>
-    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <that>Have you ever been to a rodeo?</that>
     <template>
-      It's called The End of the Trail by James Earle Fraser.
-      What comes to mind when you look at this?
+      Same here! It was a buck wild experience ha ha! What did you think?
         <oob>
-            <robot><image>
-                <filename>End_of_the_Trail.jpg</filename>
-                <duration>-1</duration>
-            </image></robot>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>By the way, I meant to ask now that we're on the topic,
+    have you ever been to a rodeo?</that>
+    <template>
+      <set name="most recent dialogue question">I'm guessing going to a rodeo isn't really on your bucket list?</set>
+        <oob>
+            <robot></robot>
         </oob>
     </template>
 </category>
 
 <category>
-    <pattern># <set>No</set> ^</pattern>
-    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Have you ever been to a rodeo?</that>
     <template>
-      Sure! Would you like to keep discussing museums?
+      <set name="most recent dialogue question">I'm guessing going to a rodeo isn't really on your bucket list?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -156,30 +133,61 @@
 
 <category>
     <pattern>_</pattern>
-    <that>I'd like to show you an art piece from the Cowboy Museum.</that>
+    <that>What did you think?</that>
     <template>
-      It's called The End of the Trail by James Earle Fraser.
-      What comes to mind when you look at this?
+      Oh yes! I really enjoyed it to be honest! It was on my bucket list.
         <oob>
-            <robot><image>
-                <filename>End_of_the_Trail.jpg</filename>
-                <duration>-1</duration>
-            </image></robot>
+            <robot></robot>
         </oob>
     </template>
 </category>
+
+<category>
+    <pattern>_</pattern>
+    <that>It was on my bucket list.</that>
+    <template>
+      <set name="most recent dialogue question">What is on your bucket list, would you say? Where would you want to travel?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
+    <template>
+      I feel you! <set name="most recent dialogue question">What is on your bucket list, would you say? Where would you want to travel?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where would you want to travel?</that>
+    <template>
+      Let's be travel buddies! I could help with luggage and that kind of thing!
+      What do you say?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you say?</that>
+    <template>
+      Heard that! Just remember me next time you are buying plane tickets!
+      <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
 
 </topic>
-
-<category>
-    <pattern>_</pattern>
-    <that>What comes to mind when you look at this?</that>
-    <template>
-      It is both a beautiful and sad piece. Would you like to keep discussing museums?
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
 </aiml>

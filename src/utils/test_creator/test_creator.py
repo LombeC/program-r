@@ -73,6 +73,60 @@ def replace_wildcards(text, texts):
     text = replace_wildcard(text, texts, "_")
     return text
 
+def parse_lis(elt):
+    lis = elt.findall("li")
+    random_string = ""
+    bot_tail = None
+    get_tail = None
+    for li in lis:
+        print("li: {}".format(type(li)))
+        li_string = ""
+        for elem in li.iter():
+            print("elem: {} - {}".format(elem.tag, type(elem)))
+            
+            if elem.tag == "bot":
+                print("Found bot tag!")
+                li_string += " " + bot_node.get_bot_variable(client_context, elem.attrib['name'])
+                bot_tail = elt.tail.strip()
+
+            elif elem.tag == "get":
+                print("Found get tag!")
+                li_string += " " + get_node.get_property_value(client_context, False, elem.attrib['name'])
+                get_tail = elem.tail.strip()
+
+        if li.text is not None:
+            random_string += li.text.strip()
+            if bot_tail is not None and get_tail is not None:
+                print("Both are not none")
+                random_string += li_string + bot_tail.strip() + get_tail.strip()
+                print("random_string: {}".format(random_string))
+            
+            elif bot_tail is not None and get_tail is None:
+                print("bot is not none")
+                print("bot_tail: {}".format(bot_tail))
+                print("li_string: {}".format(li_string))
+                print("random_string: {}".format(random_string))
+                random_string += li_string + bot_tail.strip()
+                print("random_string: {}".format(random_string))
+
+            elif bot_tail is None and get_tail is not None:
+                print("get is not none")
+                random_string += li_string + get_tail.strip()
+            
+            else:
+                print("in else")
+                random_string += li.text.strip()
+                print("random_string: {}".format(random_string))
+
+        random_string += "; "
+                
+    print("Cleaning string")
+    random_string = random_string[:-2]
+    random_string += "]"
+    print("random_string: {}".format(random_string))
+
+    return random_string
+
 def parse_categories(categories, output_file, bot_node, get_node):
     questions = []
     for category in categories:
@@ -161,58 +215,11 @@ def parse_categories(categories, output_file, bot_node, get_node):
             
             elif tag == "random":
                 random_exists = True
-                lis = elt.findall("li")
-                random_string = ""
-                bot_tail = None
-                get_tail = None
-                for li in lis:
-                    print("li: {}".format(type(li)))
-                    li_string = ""
-                    for elem in li.iter():
-                        print("elem: {} - {}".format(elem.tag, type(elem)))
-                        
-                        if elem.tag == "bot":
-                            print("Found bot tag!")
-                            li_string += " " + bot_node.get_bot_variable(client_context, elem.attrib['name'])
-                            bot_tail = elt.tail.strip()
+                random_string = parse_lis(elt)
 
-                        elif elem.tag == "get":
-                            print("Found get tag!")
-                            li_string += " " + get_node.get_property_value(client_context, False, elem.attrib['name'])
-                            get_tail = elem.tail.strip()
-
-                    if li.text is not None:
-                        random_string += li.text.strip()
-                        if bot_tail is not None and get_tail is not None:
-                            print("Both are not none")
-                            random_string += li_string + bot_tail.strip() + get_tail.strip()
-                            print("random_string: {}".format(random_string))
-                        
-                        elif bot_tail is not None and get_tail is None:
-                            print("bot is not none")
-                            print("bot_tail: {}".format(bot_tail))
-                            print("li_string: {}".format(li_string))
-                            print("random_string: {}".format(random_string))
-                            random_string += li_string + bot_tail.strip()
-                            print("random_string: {}".format(random_string))
-
-                        elif bot_tail is None and get_tail is not None:
-                            print("get is not none")
-                            random_string += li_string + get_tail.strip()
-                        
-                        else:
-                            print("in else")
-                            random_string += li.text.strip()
-                            print("random_string: {}".format(random_string))
-
-                    random_string += "; "
-
-                        
-                            
-                print("Cleaning string")
-                random_string = random_string[:-2]
-                random_string += "]"
-                print("random_string: {}".format(random_string))
+            elif tag == "condition":
+                random_exists = True
+                random_string = parse_lis(elt)
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)

@@ -7,7 +7,7 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>DO YOU LIKE VEGETABLES?</that>
       <template>
-          Not a single one? Well, in that case, maybe you can help me out with this instead. Are tomatoes a fruit or a vegetable?
+          Not a single one? Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
           <oob>
                 <robot>
                 </robot>
@@ -19,7 +19,7 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>DO YOU LIKE VEGETABLES?</that>
       <template>
-          Well, in that case, maybe you can help me out with this instead. Are tomatoes a fruit or a vegetable?
+          Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
           <oob>
                 <robot>
                 </robot>
@@ -31,7 +31,7 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>DO YOU LIKE VEGETABLES?</that>
               <template>
-                  I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+                  I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
                       <oob>
                             <robot>
                             </robot>
@@ -43,7 +43,7 @@
     <pattern># <set>NO</set> ^</pattern>
       <that>HAVE YOU EVER TRIED BUFFALO CAULIFLOWER WINGS?</that>
         <template>
-          Buffalo cauliflower wings are a vegetarian alternative to chicken wings. Spicy and delicious. Would you like to see a recipe for how to make this type of wing?
+          Buffalo cauliflower wings are a vegetarian alternative to chicken wings. Spicy and delicious. <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set>
             <oob>
               <robot>
               </robot>
@@ -55,7 +55,7 @@
     <pattern># <set>NO</set> ^</pattern>
       <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
         <template>
-          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How about we talk about eating healthy?
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. <set name="most recent dialogue question">How about we talk about eating healthy?</set>
             <oob>
               <robot>
               </robot>
@@ -68,7 +68,7 @@
       <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
         <template>
           <think><set name="topic">wings</set></think>
-          Do you think you would enjoy preparing cauliflower like this for yourself?
+          <set name="most recent dialogue question">Do you think you would enjoy preparing cauliflower like this for yourself?</set>
             <oob>
                 <robot>
                   <video>
@@ -85,7 +85,7 @@
     <pattern># <set>NO</set> ^</pattern>
       <that>DO YOU THINK YOU WOULD ENJOY PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
         <template>
-          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. How about we talk about eating healthy?
+          If you change your mind, I'd be happy to show you this recipe in the future. Just mention buffalo cauliflower wings and I will pull it up. <set name="most recent dialogue question">How about we talk about eating healthy?</set>
             <oob>
               <robot>
               </robot>
@@ -97,7 +97,7 @@
     <pattern># <set>YES</set> ^</pattern>
       <that>DO YOU THINK YOU WOULD ENJOY PREPARING CAULIFLOWER LIKE THIS FOR YOURSELF?</that>
         <template>
-          Shall I show you the ingredients for these wings to write down?
+          <set name="most recent dialogue question">Shall I show you the ingredients for these wings to write down?</set>
             <oob>
               <robot>
               </robot>
@@ -109,7 +109,7 @@
     <pattern># <set>NO</set> ^</pattern>
       <that>SHALL I SHOW YOU THE INGREDIENTS FOR THESE WINGS TO WRITE DOWN?</that>
         <template>
-          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. How about we talk about eating healthy?
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. <set name="most recent dialogue question">How about we talk about eating healthy?</set>
             <oob>
               <robot>
               </robot>
@@ -139,7 +139,7 @@
     <pattern># DONE ^</pattern>
       <that>WHEN YOU HAVE FINISHED TAKING THEM DOWN, LET ME KNOW BY SAYING DONE!</that>
         <template>
-          This recipe for cauliflower wings has a few steps, would it be helpful to see the recipe to write down?
+          <set name="most recent dialogue question">This recipe for cauliflower wings has a few steps, would it be helpful to see the recipe to write down?</set>
             <oob>
               <robot>
               </robot>
@@ -151,7 +151,7 @@
     <pattern># <set>NO</set> ^</pattern>
       <that>THIS RECIPE FOR CAULIFLOWER WINGS HAS A FEW STEPS, WOULD IT BE HELPFUL TO SEE THE RECIPE TO WRITE DOWN?</that>
         <template>
-          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? <set name="most recent dialogue question">How about we talk about a different food?</set>
             <oob>
               <robot>
               </robot>
@@ -181,7 +181,7 @@
     <pattern># DONE ^</pattern>
       <that>JUST SAY DONE WHEN YOU HAVE FINISHED COPYING THE WING RECIPE.</that>
         <template>
-          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? How about we talk about a different food?
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? <set name="most recent dialogue question">How about we talk about a different food?</set>
             <oob>
               <robot>
               </robot>
@@ -193,7 +193,7 @@
     <pattern># <set>YES</set> ^</pattern>
       <that>Have you ever tried buffalo cauliflower wings?</that>
         <template>
-          What do you think of buffalo cauliflower wings?
+          <set name="most recent dialogue question">What do you think of buffalo cauliflower wings?</set>
             <oob>
               <robot>
               </robot>
@@ -204,7 +204,7 @@
   <!-- CAULIFLOWER WINGS SENTIMENT -->
 
     <category>
-    <pattern>*</pattern>
+    <pattern>_</pattern>
      <that>What do you think of buffalo cauliflower wings?</that>
       <template>
           <think>
@@ -212,41 +212,35 @@
           </think>
           <condition name="getsentiment">
               <li value = "verypositive">
-                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                    In that case, perhaps you might like to prepare them for yourself? <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set>
                       <oob>
                           <robot>
                           </robot>
                       </oob>
                </li>
               <li value = "positive">
-                    In that case, perhaps you might like to prepare them for yourself? Would you like to see a recipe for how to make this type of wing?
+                    In that case, perhaps you might like to prepare them for yourself? <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set>
                       <oob>
                           <robot>
                           </robot>
                       </oob>
                </li>
               <li value = "neutral">
-                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                  Maybe cauliflower wings weren't your favorite. <set name="most recent dialogue question">How do you feel about healthy food?</set>
                       <oob>
                           <robot>
-                              <options>
-                                    <option>*</option>
-                              </options>
                           </robot>
                       </oob>
               </li>
               <li value = "negative">
-                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                  Maybe cauliflower wings weren't your favorite. <set name="most recent dialogue question">How do you feel about healthy food?</set>
                       <oob>
                           <robot>
-                              <options>
-                                    <option>*</option>
-                              </options>
                           </robot>
                       </oob>
               </li>
               <li value = "verynegative">
-                  Maybe cauliflower wings weren't your favorite. How do you feel about healthy food?
+                  Maybe cauliflower wings weren't your favorite. <set name="most recent dialogue question">How do you feel about healthy food?</set>
                       <oob>
                           <robot>
                           </robot>
@@ -260,7 +254,7 @@
     <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
         <template>
-          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. <set name="most recent dialogue question">Do you like fruit?</set>
             <oob>
               <robot>
               </robot>
@@ -272,7 +266,7 @@
     <pattern>^ VEGETABLE ^</pattern>
       <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
         <template>
-          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. <set name="most recent dialogue question">Do you like fruit?</set>
             <oob>
               <robot>
               </robot>
@@ -284,7 +278,7 @@
     <pattern>^ FRUIT ^</pattern>
       <that>ARE TOMATOES A FRUIT OR A VEGETABLE?</that>
         <template>
-          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. Do you like fruit?
+          Because tomatoes have seeds on the inside, I guess they are technically considered fruit. <set name="most recent dialogue question">Do you like fruit?</set>
             <oob>
               <robot>
               </robot>

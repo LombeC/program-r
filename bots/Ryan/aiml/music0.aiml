@@ -13,7 +13,7 @@
     <category>
         <pattern># What kind of music do you * ^</pattern>
         <template>
-          My favorite band is The Beatles! What's one of your favorite bands or musicians?
+          My favorite band is The Beatles! What's your favorite band?
             <oob>
                 <robot>
                 </robot>
@@ -24,13 +24,94 @@
     <category>
         <pattern># What music do you * ^</pattern>
         <template>
-          My favorite band is The Beatles! What's one of your favorite bands or musicians?
+          My favorite band is The Beatles! What's your favorite band?
             <oob>
                 <robot>
                 </robot>
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern># WHAT IS YOUR FAVORITE BAND ^</pattern>
+        <template>
+          My favorite band is The Beatles! What's your favorite band?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S YOUR FAVORITE BAND ^</pattern>
+        <template>
+          My favorite band is The Beatles! What's your favorite band?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE BAND IS *</pattern>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY FAVORITE BAND S *</pattern>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE BAND IS *</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY FAVORITE BAND S *</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE IS *</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>MY FAVORITE S *</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+        Only kidding!
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
@@ -161,20 +242,7 @@
         <pattern>_</pattern>
         <that>I'm here to entertain!</that>
         <template>
-          So I have to ask! <set name="most recent dialogue question">What's one of your favorite bands or musicians?</set>
-            <oob>
-                <robot>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>What's one of your favorite bands or musicians?</that>
-        <template>
-          Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-          Only kidding!
+          So I have to ask! <set name="most recent dialogue question">What's your favorite band?</set>
             <oob>
                 <robot>
                 </robot>
@@ -873,7 +941,7 @@
                 </oob>
             </template>
         </category>
-    </topic>
+
 
     <category>
         <pattern>_</pattern>
@@ -930,4 +998,6 @@
             </oob>
         </template>
     </category>
+
+  </topic>
 </aiml>

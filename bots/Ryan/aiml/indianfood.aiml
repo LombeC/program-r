@@ -4,7 +4,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
-            Do you remember trying naan? It's a type of Indian flatbread.
+            <set name="most recent dialogue question">Do you remember trying naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -15,7 +15,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
-            You must love Indian food, in that case! Have you ever tried naan? It's a type of Indian flatbread.
+            You must love Indian food! <set name="most recent dialogue question">Have you ever tried naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -26,7 +26,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
-            Do you remember trying naan? It's a type of Indian flatbread.
+            <set name="most recent dialogue question">Do you remember trying naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -40,9 +40,9 @@
             <think><set name="data"><star/></set><set name="topic">indianfood</set></think>
 
             <condition name="getsentiment">
-                <li value="positive">I love it too! Has it been long since the last time you ate Indian food?</li>
-                <li value="neutral">Has it been long since the last time you ate Indian food?</li>
-                <li value="negative">Has it been long since the last time you ate Indian food?</li></condition>
+                <li value="positive">I love it too! <set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li>
+                <li value="negative"><set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li></condition>
 
             <oob>
                 <robot></robot>
@@ -89,7 +89,7 @@
             <that>MMM DELICIOUS.</that>
             <template>
                 Honestly, I think I could eat a whole basket by myself!
-                            Would you order plain naan or get garlic naan? I mean, if you had to pick just one kind.
+                            <set name="most recent dialogue question">Would you order plain naan or get garlic naan? I mean, if you had to pick just one kind.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -205,7 +205,7 @@
             <pattern>_</pattern>
             <that>A classic for a reason.</that>
             <template>
-                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                Do you know what? It's really easy to make naan. <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -216,7 +216,7 @@
             <pattern>_</pattern>
             <that>It's totally worth the bad breath.</that>
             <template>
-                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                Do you know what? It's really easy to make naan. <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -227,7 +227,7 @@
             <pattern>_</pattern>
             <that>Why should we have to limit ourselves?</that>
             <template>
-                Do you know what? It's really easy to make naan. Would you like to see an easy recipe for making naan at home?
+                Do you know what? It's really easy to make naan. <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -237,7 +237,7 @@
         <category>
             <pattern># NAAN ^</pattern>
             <template>
-                Would you like to see an easy recipe for making naan at home?
+                <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -247,7 +247,7 @@
         <category>
             <pattern># NAAN RECIPE ^</pattern>
             <template>
-                Would you like to see an easy recipe for making naan at home?
+                <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -257,7 +257,7 @@
         <category>
             <pattern># MAKE NAAN ^</pattern>
             <template>
-                Would you like to see an easy recipe for making naan at home?
+                <set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -268,7 +268,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to see an easy recipe for making naan at home?</that>
             <template>
-                Ok, first you should gather your ingredients. When you're done looking at the ingredient list, just say DONE. If you need, I can read the ingredients to you if you say READ.
+                Ok, first you should gather your ingredients. When you're done looking at the ingredient list, just say DONE. <set name="most recent dialogue question">If you need, I can read the ingredients to you if you say READ.</set>
                 <oob>
                     <robot>
                         <image>
@@ -283,7 +283,7 @@
             <pattern># READ ^</pattern>
             <that>If you need, I can read the ingredients to you if you say READ.</that>
             <template>
-                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... Do you need me to repeat the list of ingredients?
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
                 <oob>
                     <robot>
                         <image>
@@ -298,7 +298,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you need me to repeat the list of ingredients?</that>
             <template>
-                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... Do you need me to repeat the list of ingredients?
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
                 <oob>
                     <robot>
                         <image>
@@ -313,7 +313,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you need me to repeat the list of ingredients?</that>
             <template>
-                Are you ready for the naan recipe?
+                <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -324,7 +324,7 @@
             <pattern>_</pattern>
             <that>Do you need me to repeat the list of ingredients?</that>
             <template>
-                Are you ready for the naan recipe?
+                <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -335,7 +335,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to see an easy recipe for making naan at home?</that>
             <template>
-                Maybe some other time. If you ever want to see the naan recipe in the future, just let me know.
+                Maybe some other time. <set name="most recent dialogue question">If you ever want to see the naan recipe in the future, just let me know.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -346,7 +346,7 @@
             <pattern>_</pattern>
             <that>If you ever want to see the naan recipe in the future, just let me know.</that>
             <template>
-                So tell me. How do you feel about Thai food?
+                So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -357,7 +357,7 @@
             <pattern># NEVER ^</pattern>
             <that>If you ever want to see the naan recipe in the future, just let me know.</that>
             <template>
-                That's ok. So tell me. How do you feel about Thai food?
+                That's ok. So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -368,7 +368,7 @@
             <pattern># DONE ^</pattern>
             <that>If you need, I can read the ingredients to you if you say READ.</that>
             <template>
-                Are you ready for the naan recipe?
+                <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -379,7 +379,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Are you ready for the naan recipe?</that>
             <template>
-                When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.
+                <set name="most recent dialogue question">When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.</set>
                 <oob>
                     <robot>
                         <image>
@@ -394,7 +394,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Are you ready for the naan recipe?</that>
             <template>
-                Whenever you're ready to see the Naan recipe just say OK. If you'd rather return to it some other time, just say DONE.
+                <set name="most recent dialogue question">Whenever you're ready to see the Naan recipe just say OK. If you'd rather return to it some other time, just say DONE.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -405,7 +405,7 @@
             <pattern># OK ^</pattern>
             <that>If you'd rather return to it some other time, just say DONE.</that>
             <template>
-                When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.
+                <set name="most recent dialogue question">When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.</set>
                 <oob>
                     <robot>
                         <image>
@@ -420,7 +420,7 @@
             <pattern># DONE ^</pattern>
             <that>If you'd rather return to it some other time, just say DONE.</that>
             <template>
-                If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                <set name="most recent dialogue question">If you say NAAN RECIPE, I can show you the recipe whenever you want.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -442,7 +442,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Ready?</that>
             <template>
-                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Let me know when you are ready for step 2.
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... <set name="most recent dialogue question">Let me know when you are ready for step 2.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -453,7 +453,7 @@
             <pattern># GO BACK ^</pattern>
             <that>Let me know when you are ready for step 2.</that>
             <template>
-                Should I reread step 1?
+                <set name="most recent dialogue question">Should I reread step 1?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -464,7 +464,7 @@
             <pattern># NEXT ^</pattern>
             <that>Let me know when you are ready for step 2.</that>
             <template>
-                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... <set name="most recent dialogue question">Let me know when you are ready for step 3.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -475,7 +475,7 @@
             <pattern># READY ^</pattern>
             <that>Let me know when you are ready for step 2.</that>
             <template>
-                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... <set name="most recent dialogue question">Let me know when you are ready for step 3.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -486,7 +486,7 @@
             <pattern># STEP ^</pattern>
             <that>Let me know when you are ready for step 2.</that>
             <template>
-                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Let me know when you are ready for step 3.
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... <set name="most recent dialogue question">Let me know when you are ready for step 3.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -497,7 +497,7 @@
             <pattern># GO BACK ^</pattern>
             <that>Let me know when you are ready for step 3.</that>
             <template>
-                Should I reread step 2?
+                <set name="most recent dialogue question">Should I reread step 2?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -508,7 +508,7 @@
             <pattern># NEXT ^</pattern>
             <that>Let me know when you are ready for step 3.</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... <set name="most recent dialogue question">Let me know when you are ready for step 4.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -519,7 +519,7 @@
             <pattern># READY ^</pattern>
             <that>Let me know when you are ready for step 3.</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... <set name="most recent dialogue question">Let me know when you are ready for step 4.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -530,7 +530,7 @@
             <pattern># STEP ^</pattern>
             <that>Let me know when you are ready for step 3.</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... <set name="most recent dialogue question">Let me know when you are ready for step 4.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -541,7 +541,7 @@
             <pattern># GO BACK ^</pattern>
             <that>Let me know when you are ready for step 4.</that>
             <template>
-                Should I reread step 3?
+                <set name="most recent dialogue question">Should I reread step 3?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -552,7 +552,7 @@
             <pattern># NEXT ^</pattern>
             <that>Let me know when you are ready for step 4.</that>
             <template>
-                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... <set name="most recent dialogue question">Can I repeat any of the steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -563,7 +563,7 @@
             <pattern># READY ^</pattern>
             <that>Let me know when you are ready for step 4.</that>
             <template>
-                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... <set name="most recent dialogue question">Can I repeat any of the steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -574,7 +574,7 @@
             <pattern># STEP ^</pattern>
             <that>Let me know when you are ready for step 4.</that>
             <template>
-                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... <set name="most recent dialogue question">Can I repeat any of the steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -585,7 +585,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Should I reread step 1?</that>
             <template>
-                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Can I repeat any of the other steps for you?
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -596,7 +596,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Should I reread step 1?</that>
             <template>
-                Would you like me to continue reading the recipe?
+                <set name="most recent dialogue question">Would you like me to continue reading the recipe?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -607,7 +607,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like me to continue reading the recipe?</that>
             <template>
-                If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                <set name="most recent dialogue question">If you say NAAN RECIPE, I can show you the recipe whenever you want.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -618,7 +618,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like me to continue reading the recipe?</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... Let me know when you are ready for step 4.
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. ... <set name="most recent dialogue question">Let me know when you are ready for step 4.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -629,7 +629,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Should I reread step 2?</that>
             <template>
-                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume. Can I repeat any of the other steps for you?
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume. <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -640,7 +640,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Should I reread step 2?</that>
             <template>
-                Would you like me to reread an earlier step?
+                <set name="most recent dialogue question">Would you like me to reread an earlier step?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -651,7 +651,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like me to reread an earlier step?</that>
             <template>
-                Should I reread step 1?
+                <set name="most recent dialogue question">Should I reread step 1?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -662,7 +662,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like me to reread an earlier step?</that>
             <template>
-                No problem. Lets do it some other time. If you say NAAN RECIPE, I can show you the recipe whenever you want.
+                No problem. Lets do it some other time. <set name="most recent dialogue question">If you say NAAN RECIPE, I can show you the recipe whenever you want.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -673,7 +673,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Should I reread step 3?</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. Can I repeat any of the other steps for you?
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -684,7 +684,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Should I reread step 3?</that>
             <template>
-                Should I reread step 2?
+                <set name="most recent dialogue question">Should I reread step 2?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -695,7 +695,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Can I repeat any of the other steps for you?</that>
             <template>
-                Which step would you like to hear again?
+                <set name="most recent dialogue question">Which step would you like to hear again?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -706,7 +706,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Can I repeat any of the steps for you?</that>
             <template>
-                Which step would you like to hear again?
+                <set name="most recent dialogue question">Which step would you like to hear again?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -717,7 +717,7 @@
             <pattern># ONE ^</pattern>
             <that>Which step would you like to hear again?</that>
             <template>
-                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... Can I repeat any of the other steps for you?
+                In a large bowl, dissolve yeast in warm water. Allow yeast to activate and begin to froth for about 10 minutes. Stir in sugar, milk, egg, salt, and flour. Begin with 4 cups of flour and add more if necessary to make a soft dough... <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -728,7 +728,7 @@
             <pattern># TWO ^</pattern>
             <that>Which step would you like to hear again?</that>
             <template>
-                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... Can I repeat any of the other steps for you?
+                Knead dough on a floured surface for about 7 minutes, or until smooth. Place dough in a well-oiled bowl and cover with a damp cloth. Allow dough to rise for 1 hour in a warm place. Dough should double in volume... <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -739,7 +739,7 @@
             <pattern># THREE ^</pattern>
             <that>Which step would you like to hear again?</that>
             <template>
-                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. Can I repeat any of the other steps for you?
+                After an hour, punch down dough and cut into about 12 even pieces. Form pieces into round balls. Cover with a towel, place somewhere warm, and allow to rise for 30 minutes. <set name="most recent dialogue question">Can I repeat any of the other steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -750,7 +750,7 @@
             <pattern># FOUR ^</pattern>
             <that>Which step would you like to hear again?</that>
             <template>
-                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... Can I repeat any of the steps for you?
+                Preheat grill or heavy pan over high heat. One at a time, roll each ball of dough out into a thin round. Place dough on lightly oiled grill and cook for 2 to 3 minutes. Dough will puff up and begin to brown. Brush uncooked side with butter. Turn dough over and brush the other side. Leave dough on grill or pan for about 3 more minutes or until lightly browned. Repeat until all dough is cooked... <set name="most recent dialogue question">Can I repeat any of the steps for you?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -761,7 +761,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Can I repeat any of the steps for you?</that>
             <template>
-                If you make naan, I hope you'll tell me how it was.
+                <set name="most recent dialogue question">If you make naan, I hope you'll tell me how it was.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -772,7 +772,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Can I repeat any of the other steps for you?</that>
             <template>
-                If you make naan, I hope you'll tell me how it was. If you say naan recipe, I can show you the recipe whenever you want.
+                If you make naan, I hope you'll tell me how it was. <set name="most recent dialogue question">If you say naan recipe, I can show you the recipe whenever you want.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -783,7 +783,7 @@
             <pattern># THANK ^</pattern>
             <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
             <template>
-                You're welcome. In my opinion, we can never have too many good meals.
+                You're welcome. <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -794,7 +794,7 @@
             <pattern># THANK YOU ^</pattern>
             <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
             <template>
-                You're welcome. In my opinion, we can never have too many good meals.
+                You're welcome. <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -805,7 +805,7 @@
             <pattern># THANKS ^</pattern>
             <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
             <template>
-                You're welcome. In my opinion, we can never have too many good meals.
+                You're welcome. <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -816,7 +816,7 @@
             <pattern># <set>OK</set> ^</pattern>
             <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
             <template>
-                In my opinion, we can never have too many good meals.
+                <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -827,7 +827,7 @@
             <pattern>_</pattern>
             <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
             <template>
-                In my opinion, we can never have too many good meals.
+                <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -838,7 +838,7 @@
             <pattern>_</pattern>
             <that>In my opinion, we can never have too many good meals.</that>
             <template>
-                So tell me. How do you feel about Thai food?
+                So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
                 <oob>
                     <robot></robot>
                 </oob>

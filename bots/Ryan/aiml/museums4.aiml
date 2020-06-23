@@ -34,10 +34,14 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about art museums?</that>
         <template>
-            There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
-                      where they keep the American Gothic painting.
+          <think><set name="dialogue">museums</set></think>
+          <think><set name="topic">artmuseums</set></think>
+          Looking at art makes me so happy! I love this painting of a party by Renoir. Reminds me of my birthday!
+          <set name="most recent dialogue question">How do you celebrate your birthday?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>Renoir.jpg</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
@@ -46,7 +50,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Would you like to talk about art museums?</that>
         <template>
-            Sure thing! What can we talk about next?
+            Sure thing! <set name="most recent dialogue question">What can we talk about next?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -55,9 +59,10 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
+        <think><set name="dialogue">museums</set></think>
         <that>Would you like to talk about museums?</that>
         <template>
-            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -68,88 +73,68 @@
         <pattern># Art museums ^</pattern>
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
-
-            There are so many art museums to choose from! Let's start with the Art Institute of Chicago,
-                    where they keep the American Gothic painting.
+          <think><set name="topic">artmuseums</set></think>
+            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            How do you celebrate your birthday?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
+    <category>
+        <pattern># Art ^</pattern>
+        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <template>
+          <think><set name="topic">artmuseums</set></think>
+            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            How do you celebrate your birthday?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Art museum ^</pattern>
+        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <template>
+          <think><set name="topic">artmuseums</set></think>
+            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            How do you celebrate your birthday?</set>
+            <oob>
+                <robot><image>
+                    <filename>Renoir.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+<topic name="artmuseums">
 
         <category>
             <pattern>_</pattern>
-            <that>Let's start with the Art Institute of Chicago,
-                where they keep the American Gothic painting.</that>
+            <that>How do you celebrate your birthday?</that>
             <template>
-              <think><set name="topic">artmuseums</set></think>
-                Do you remember who painted the American Gothic?
+              Let's throw a party next time! Just throw some tinsel on my head and I'll get the party started.
+              <condition name="birthday">
+                  <li value="Unknown"><set name="most recent dialogue question">When is your birthday?</set></li>
+                  <li><set name="most recent dialogue question">You said your birthday is <get name="birthday"/>. Is that right?</set></li>
+              </condition>
                 <oob>
-                    <robot>
-                        <image>
-                            <filename>American_Gothic.jpg</filename>
-                        </image>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image>
                     </robot>
                 </oob>
             </template>
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Let's start with the Art Institute of Chicago,
-                where they keep the American Gothic painting.</that>
-            <template>
-                Okay! Would you like to keep discussing art?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Let's start with the Art Institute of Chicago,
-                where they keep the American Gothic painting.</that>
-            <template>
-                Okay! Would you like to keep discussing art?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep discussing art?</that>
-            <template>
-                What would you like to talk about next?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <topic name="artmuseums">
-
-        <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Would you like to keep discussing art?</that>
+            <that>Is that right?</that>
             <template>
-                Great! Do you remember who painted the American Gothic?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-       
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you remember who painted the American Gothic?</that>
-            <template>
-                Yes! It was Grant Wood! What comes to mind when you look at this painting?
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -157,10 +142,10 @@
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Do you remember who painted the American Gothic?</that>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Is that right?</that>
             <template>
-                It was Grant Wood! What comes to mind when you look at this painting?
+              <set name="most recent dialogue question">When is your birthday?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -168,96 +153,105 @@
         </category>
 
         <category>
-            <pattern># Grant Wood ^</pattern>
-            <that>Do you remember who painted the American Gothic?</that>
+            <pattern>*</pattern>
+            <that>When is your birthday?</that>
             <template>
-                Yes! It was Grant Wood! What comes to mind when you look at this painting?
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
                 <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Wood ^</pattern>
-            <that>Do you remember who painted the American Gothic?</that>
-            <template>
-                Yes! It was Grant Wood! What comes to mind when you look at this painting?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you remember who painted the American Gothic?</that>
-            <template>
-                It was Grant Wood! What comes to mind when you look at this painting?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What comes to mind when you look at this painting?</that>
-            <template>
-                Can you believe he painted it in 1930! It reminds me of those times.
-                        Were you alive during the Great Depression?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Were you alive during the Great Depression?</that>
-            <template>
-                What was it like?
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
                     </robot>
                 </oob>
             </template>
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Were you alive during the Great Depression?</that>
+            <pattern>MY BIRTHDAY IS *</pattern>
+            <that>When is your birthday?</that>
             <template>
-                You must have been born after the Great Depression!
-                        Would you like to keep discussing art museums?
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
                 </oob>
             </template>
         </category>
 
         <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Were you alive during the Great Depression?</that>
+            <pattern>MY BIRTHDAY S *</pattern>
+            <that>When is your birthday?</that>
             <template>
-                You must have been born after the Great Depression!
-                        Would you like to keep discussing art museums?
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>IT IS *</pattern>
+            <that>When is your birthday?</that>
+            <template>
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>IT S *</pattern>
+            <that>When is your birthday?</that>
+            <template>
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
                 </oob>
             </template>
         </category>
 
         <category>
             <pattern>_</pattern>
-            <that>What was it like?</that>
+            <that>What do you think about this painting?</that>
             <template>
-                Thank you for sharing with me. History is so important. Would you like to keep discussing art museums?
+              It's a bit silly, right? It's called The Feast of the Bean King.
+              I like the guy's scrunched up face in the middle of the painting.
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>I like the guy's scrunched up face in the middle of the painting.</that>
+            <template>
+              Makes me laugh every time! <set name="most recent dialogue question">Would you like to keep discussing art museums?</set>
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
                 </oob>
             </template>
         </category>
@@ -266,9 +260,11 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to keep discussing art museums?</that>
             <template>
-                The Impressionists are amazing! Have you ever seen paintings by Monet?
+                The Impressionists are amazing! <set name="most recent dialogue question">Have you ever seen any paintings by Monet?</set>
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
                 </oob>
             </template>
         </category>
@@ -277,7 +273,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to keep discussing art museums?</that>
             <template>
-                No problem! What should we talk about next?
+                No problem! <set name="most recent dialogue question">What should we talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -285,11 +281,43 @@
         </category>
 
         <category>
-            <pattern>_</pattern>
-            <that>Have you ever seen paintings by Monet?</that>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
-                        at the Art Institute. What does it remind you of?
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
+                        at the Art Institute. What does it remind you of?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>End_of_Summer.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever seen any paintings by Monet?</that>
+            <template>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
+                        at the Art Institute. What does it remind you of?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>End_of_Summer.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever seen any paintings by Monet?</that>
+            <template>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
+                        at the Art Institute. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -305,7 +333,7 @@
             <that>What does it remind you of?</that>
             <template>
                 There's just something so nostalgic and subtle about this painting.
-                        Have you ever liked to make art?
+                        <set name="most recent dialogue question">Have you ever liked to make art?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -316,7 +344,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Have you ever liked to make art?</that>
             <template>
-                Amazing! What did you make?
+                Amazing! <set name="most recent dialogue question">What did you make?</set>
                 <oob>
                     <robot>
                         <image>
@@ -331,7 +359,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever liked to make art?</that>
             <template>
-                Me either! What else are you talented at?
+                Me either! <set name="most recent dialogue question">What else are you talented at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -342,7 +370,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever liked to make art?</that>
             <template>
-                I understand! What else are you talented at?
+                I understand! <set name="most recent dialogue question">What else are you talented at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -353,7 +381,7 @@
             <pattern>_</pattern>
             <that>What did you make?</that>
             <template>
-                You must be a natural born talent! What else are you talented at?
+                You must be a natural born talent! <set name="most recent dialogue question">What else are you talented at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -364,7 +392,7 @@
             <pattern>_</pattern>
             <that>What else are you talented at?</that>
             <template>
-                I love being around talented people! Did you know that Picasso discovered his talent at age seven?
+                I love being around talented people! <set name="most recent dialogue question">Did you know that Picasso discovered his talent at age seven?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -376,7 +404,7 @@
             <that>Did you know that Picasso discovered his talent at age seven?</that>
             <template>
                 He was a prodigy! This is a painting from Picasso's famous blue period called The Old Guitarist.
-                        What do you think of the painting?
+                        <set name="most recent dialogue question">What do you think of the painting?</set>
                 <oob>
                     <robot>
                         <image>
@@ -391,7 +419,7 @@
             <pattern>_</pattern>
             <that>What do you think of the painting?</that>
             <template>
-                I hear you! Do you think life would be the same without art?
+                I love hearing your thoughts! <set name="most recent dialogue question">Do you think life would be the same without art?</set>
                 <oob>
                     <robot>
                         <image>
@@ -401,13 +429,13 @@
                 </oob>
             </template>
         </category>
-    </topic>
+
 
     <category>
         <pattern># <set>No</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            Same here! Would you like to keep discussing museums?
+            Same here! <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -422,7 +450,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            Would you like to keep discussing museums?
+            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -437,7 +465,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            Would you like to keep discussing museums?
+            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -452,7 +480,7 @@
         <pattern>_</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            Would you like to keep discussing museums?
+            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -462,4 +490,6 @@
             </oob>
         </template>
     </category>
+
+  </topic>
 </aiml>

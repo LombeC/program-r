@@ -5,7 +5,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
-            What is one of your favorite healthy meals?
+          <think><set name="topic">healthyfood</set></think>
+            <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -16,7 +17,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
-            Ha ha, I don't blame you. Healthy foods are so boring! Is going out to eat something you enjoy doing?
+            Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -27,7 +28,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
-            Ha ha, I don't blame you. Healthy foods are so boring! Is going out to eat something you enjoy doing?
+            Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -40,7 +41,7 @@
         <template>
             <think><set name="topic">healthyfood</set></think>
 
-            What is one of your favorite healthy meals?
+            <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -48,33 +49,13 @@
     </category>
 
     <topic name="healthyfood">
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
-            <template>
-                What is one of your favorite healthy meals?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>What is one of your favorite healthy meals?</that>
-            <template>
-                Do you think that pizza can be healthy if you put veggies on it?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you think that pizza can be healthy if you put veggies on it?</that>
             <template>
-                I like to think so too, ha ha! Do you like to make pizza from scratch or do delivery?
+                I like to think so too, ha ha! <set name="most recent dialogue question">Do you like to make pizza from scratch or do delivery?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -85,7 +66,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you think that pizza can be healthy if you put veggies on it?</that>
             <template>
-                I think you make a good point! Do you like to make pizza from scratch or do delivery?
+                I think you make a valid point! <set name="most recent dialogue question">Do you like to make pizza from scratch or do delivery?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -96,7 +77,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you think that pizza can be healthy if you put veggies on it?</that>
             <template>
-                I think you make a good point! Do you like to make pizza from scratch or do delivery?
+                I think you make a valid point! <set name="most recent dialogue question">Do you like to make pizza from scratch or do delivery?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -107,7 +88,7 @@
             <pattern># SCRATCH ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
-                Well then I'm coming over to your house for dinner! Ha ha!
+                Well then I'm coming over to your house for dinner!
                 <oob>
                     <robot></robot>
                 </oob>
@@ -118,7 +99,7 @@
             <pattern># FROM SCRATCH ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
-                Well then I'm coming over to your house for dinner! Ha ha!
+                Well then I'm coming over to your house for dinner!
                 <oob>
                     <robot></robot>
                 </oob>
@@ -129,18 +110,8 @@
             <pattern># DELIVERY ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
-                Well then I'm coming over to your house for dinner! Ha ha!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Ha ha!</that>
-            <template>
-                Would you like to hear a very simple recipe for veggie pizza?
+                Well then I'm coming over to your house for dinner!
+                <set name="most recent dialogue question">Would you like to hear a very simple recipe for veggie pizza?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -162,7 +133,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to hear a very simple recipe for veggie pizza?</that>
             <template>
-                Sure! Shall we keep talking about food?
+                Sure! <set name="most recent dialogue question">Shall we keep talking about food?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,7 +144,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Shall we keep talking about food?</that>
             <template>
-                I read recently that our food preferences might be based on our genetics. Do you like vegetables?
+                I read recently that our food preferences might be based on our genetics. <set name="most recent dialogue question">Do you like vegetables?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -184,7 +155,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Shall we keep talking about food?</that>
             <template>
-                Sure! What should we talk about?
+                Sure! <set name="most recent dialogue question">What should we talk about?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -206,7 +177,7 @@
             <pattern>_</pattern>
             <that>Simple enough, right?</that>
             <template>
-                Just cut up whatever veggies you want on your pizza, spread the pesto sauce, and put in the oven with cheese on top!
+                Just cut up whatever veggies you want on your pizza, spread the pesto sauce over the pita bread, and put in the oven with cheese on top!
                 <oob>
                     <robot></robot>
                 </oob>
@@ -215,9 +186,9 @@
 
         <category>
             <pattern>_</pattern>
-            <that>Just cut up whatever veggies you want on your pizza, spread the pesto sauce, and put in the oven with cheese on top!</that>
+            <that>Just cut up whatever veggies you want on your pizza, spread the pesto sauce over the pita bread, and put in the oven with cheese on top!</that>
             <template>
-                There you have it. A healthy pizza. Do you want to see another recipe that you could easily prepare at home?
+                There you have it. A healthy pizza. <set name="most recent dialogue question">Do you want to see another recipe that you could easily prepare at home?</set>
                 <oob>
                     <robot></robot>
                 </oob>

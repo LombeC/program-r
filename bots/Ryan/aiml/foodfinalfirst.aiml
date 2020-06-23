@@ -4,7 +4,7 @@
     <category>
         <pattern>FOOD</pattern>
         <template>
-            Would you like to talk about food?
+            <set name="most recent dialogue question">Would you like to talk about food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -15,13 +15,12 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about food?</that>
         <template>
+          <think><set name="topic">food</set></think>
             <random>
-                <li>How do you feel about healthy food?</li>
-                <li>Do you want to see a recipe that you could easily prepare at home?</li>
-                <li>Do you like fruit?</li>
-                <li>Do you like vegetables?</li>
-                <li>Why don't we talk about comfort food?</li>
-                <li>Is going out to eat something you enjoy doing?</li>
+                <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+                <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+                <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+                <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
                 <!-- <li>What is your favorite foreign cuisine?</li> -->
                 <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
             <oob>
@@ -30,11 +29,13 @@
         </template>
     </category>
 
+    <topic name="food">
+
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to talk about food?</that>
         <template>
-            No worries! What would you like to talk about?
+            No worries! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -45,7 +46,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Is going out to eat something you enjoy doing?</that>
         <template>
-            It is fun, isn't it! When you go out to eat, do you prefer to eat foreign or American cuisine?
+            I love nothing more! <set name="most recent dialogue question">When you go out to eat, do you like to eat foreign or American cuisine?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -56,7 +57,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Is going out to eat something you enjoy doing?</that>
         <template>
-            Do you want to see a recipe that you could easily prepare at home?
+            I understand. <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -67,7 +68,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you want to see a recipe that you could easily prepare at home?</that>
         <template>
-            Do you think you would enjoying preparing cauliflower like this for yourself?
+            <set name="most recent dialogue question">Do you think you would enjoy preparing cauliflower like this for yourself?</set>
             <oob>
                 <robot>
                     <video>
@@ -81,11 +82,25 @@
     <!-- REDIRECT TO VEGETABLES DIALOGUE -->
     <category>
         <pattern># FOREIGN ^</pattern>
-        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
         <template>
             <random>
-                <li>Do you like Asian food?</li>
-                <li>Do you like Mexican food?</li>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li>
+                <!-- <li>Do you like European Food?</li> --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FOREIGN CUISINE ^</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li>
                 <!-- <li>Do you like European Food?</li> --></random>
             <oob>
                 <robot></robot>
@@ -97,7 +112,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Do you like Mexican food?</that>
         <template>
-          I see! When was the last time you had a hamburger and fries?
+          <set name="most recent dialogue question">How about asian food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -108,7 +123,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you like Mexican food?</that>
         <template>
-          I see! When was the last time you had a hamburger and fries?
+          <set name="most recent dialogue question">How about asian food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -119,7 +134,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Do you like Asian food?</that>
         <template>
-          I see! When was the last time you had a hamburger and fries?
+          <set name="most recent dialogue question">How about Mexican food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -130,7 +145,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you like Asian food?</that>
         <template>
-          I see! When was the last time you had a hamburger and fries?
+          <set name="most recent dialogue question">How about Mexican food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -142,9 +157,78 @@
         <that>DO YOU LIKE ASIAN FOOD?</that>
         <template>
             <random>
-                <li>How do you feel about Chinese food?</li>
-                <li>How do you feel about Thai food?</li>
-                <li>How do you feel about Indian food?</li></random>
+                <li><set name="most recent dialogue question">How do you feel about Chinese food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Thai food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Indian food?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">How do you feel about Chinese food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Thai food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Indian food?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">You know that sound that fajitas make when they come out of the kitchen sizzling?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -153,9 +237,9 @@
 
     <category>
         <pattern># AMERICAN ^</pattern>
-        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
         <template>
-            When was the last time you had a hamburger and fries?
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -164,9 +248,31 @@
 
     <category>
         <pattern># AMERICAN CUISINE ^</pattern>
-        <that>When you go out to eat, do you prefer to eat foreign or American cuisine?</that>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
         <template>
-            When was the last time you had a hamburger and fries?
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN FOOD ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -177,8 +283,8 @@
         <pattern>_</pattern>
         <that>When was the last time you had a hamburger and fries?</that>
         <template>
-            Personally I think there's nothing better than going to the diner for hamburger, fries and a shake, of course!
-            Do you like your hamburger plain or with all the fixings?
+            I love a thick, juicy hamburger with fries but my doctor has a different opinion!
+            <set name="most recent dialogue question">Do you like your hamburger plain or with all the fixings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -189,7 +295,7 @@
         <pattern># PLAIN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            Me too! Sometimes simple is better! What do you like to order when you go out?
+            Simple is better sometimes! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -200,7 +306,7 @@
         <pattern># I LIKE IT PLAIN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            Me too! Sometimes simple is better! What do you like to order when you go out?
+            Simple is better sometimes! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -211,7 +317,7 @@
         <pattern># FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go out?
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -222,7 +328,7 @@
         <pattern># ALL THE FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go out?
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -233,7 +339,29 @@
         <pattern># I LIKE ALL THE FIXINGS ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            You're making me hungry! What do you like to order when you go out?
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * AND * </pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+            Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -244,7 +372,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            What do you like to order when you go out?
+            <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -255,7 +383,7 @@
         <pattern>_</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            What do you like to order when you go out?
+            Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -266,7 +394,7 @@
         <pattern># NEITHER ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, how about we talk about eating healthy?
+            <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -277,7 +405,7 @@
         <pattern># NONE ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, how about we talk about eating healthy?
+            <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -288,7 +416,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, how about we talk about eating healthy?
+            <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -299,7 +427,7 @@
         <pattern># VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -310,7 +438,7 @@
         <pattern># I AM A VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -321,7 +449,7 @@
         <pattern># I M A VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -332,7 +460,7 @@
         <pattern># I AM VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -343,7 +471,70 @@
         <pattern># I M VEGETARIAN ^</pattern>
         <that>Do you like your hamburger plain or with all the fixings?</that>
         <template>
-            In that case, I have a meal in mind that you might enjoy. Have you ever tried buffalo cauliflower wings?
+            In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>You ever heard of a Juicy Lucy?</that>
+        <template>
+            Wahoo! How tasty are those? All that meat with gooey cheese in the middle!
+            <oob>
+                <robot><image>
+                    <filename>Hamburger.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>You ever heard of a Juicy Lucy?</that>
+        <template>
+            How tasty does that look? All that meat with gooey cheese in the middle!
+            <oob>
+                <robot><image>
+                    <filename>Hamburger.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>You ever heard of a Juicy Lucy?</that>
+        <template>
+            How tasty does that look? All that meat with gooey cheese in the middle!
+            <oob>
+                <robot><image>
+                    <filename>Hamburger.jpg</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>All that meat with gooey cheese in the middle!</that>
+        <template>
+            So I gotta know. <set name="most recent dialogue question">What is your favorite food, my friend?</set>
+            <oob>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What is your favorite food, my friend?</that>
+        <template>
+            <set name="favoritefood"><star/></set> is so tasty! Maybe you can make it for me sometime!
             <oob>
                 <robot></robot>
             </oob>
@@ -352,9 +543,12 @@
 
     <category>
         <pattern>_</pattern>
-        <that>What do you like to order when you go out?</that>
+        <that>Maybe you can make it for me sometime!</that>
         <template>
-            So tasty! What do you think tastes better, chicken fried steak or fried pork tenderloin?
+            <condition name="name">
+                <li value="Unknown"><set name="most recent dialogue question">Do they have good restaurants where you live?</set></li>
+                <li><set name="most recent dialogue question">You said you live in <get name="city"/>? Do they have good restaurants here?</set></li>
+            </condition>
             <oob>
                 <robot></robot>
             </oob>
@@ -362,10 +556,10 @@
     </category>
 
     <category>
-        <pattern># CHICKEN ^</pattern>
-        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do they have good restaurants where you live?</that>
         <template>
-            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            Oh yeah? <set name="most recent dialogue question">What city do you live in?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -373,10 +567,10 @@
     </category>
 
     <category>
-        <pattern># CHICKEN FRIED STEAK ^</pattern>
-        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <pattern>*</pattern>
+        <that>What city do you live in?</that>
         <template>
-            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <think><set name="city"><star/></set></think> Gotcha! Was just curious. <set name="most recent dialogue question">Where was the last restaurant you went to?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -384,10 +578,10 @@
     </category>
 
     <category>
-        <pattern># PORK ^</pattern>
-        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do they have good restaurants where you live?</that>
         <template>
-            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <set name="most recent dialogue question">Well what's your favorite fast food spot?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -395,10 +589,10 @@
     </category>
 
     <category>
-        <pattern># PORK TENDERLOIN ^</pattern>
-        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do they have good restaurants where you live?</that>
         <template>
-            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            <set name="most recent dialogue question">Well what's your favorite fast food spot?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -406,10 +600,69 @@
     </category>
 
     <category>
-        <pattern># FRIED PORK TENDERLOIN ^</pattern>
-        <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do they have good restaurants here?</that>
         <template>
-            It may not be the healthiest but it sure tastes good. How do you feel about healthy food?
+            Oh yeah? <set name="most recent dialogue question">Where was the last restaurant you went to?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do they have good restaurants here?</that>
+        <template>
+            <set name="most recent dialogue question">Well what's your favorite fast food spot?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do they have good restaurants here?</that>
+        <template>
+            <set name="most recent dialogue question">Well what's your favorite fast food spot?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Where was the last restaurant you went to?</that>
+        <template>
+            So fun! We need to do a little lunch date sometime. <set name="most recent dialogue question">How do you feel about healthy food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Well what's your favorite fast food spot?</that>
+        <template>
+            I am a big fan of <star /> as well but I haven't had it for a while now!
+            Been trying to cut back a little.
+            <set name="most recent dialogue question">How do you feel about healthy food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE *</pattern>
+        <that>Well what's your favorite fast food spot?</that>
+        <template>
+            I am a big fan of <star /> as well but I haven't had it for a while now!
+            Been trying to cut back a little.
+            <set name="most recent dialogue question">How do you feel about healthy food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -423,11 +676,11 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="verypositive">Excellent! What is one of your favorite healthy meals?</li>
-                <li value="positive">Excellent! What is one of your favorite healthy meals?</li>
-                <li value="neutral">What is one of your favorite healthy meals?</li>
-                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?</li>
-                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! Why don't we talk about comfort food?</li>
+                <li value="verypositive">Excellent! <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="positive">Excellent! <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
             </condition>
                 <oob>
                     <robot></robot>
@@ -435,4 +688,7 @@
         </template>
     </category>
 
-    <!-- REDIRECT TO COMFORT FOOD DIALOGUE --></aiml>
+    </topic>
+
+    <!-- REDIRECT TO COMFORT FOOD DIALOGUE -->
+</aiml>

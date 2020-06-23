@@ -32,7 +32,7 @@
           <pattern>_</pattern>
           <that>What do you like about watching hockey?</that>
           <template>
-              Honestly it's a fascinating sport! Not to mention how fun it must be to ride a Zamboni.
+              Love to hear that. Honestly it's a fascinating sport! Not to mention how fun it must be to ride a Zamboni.
               <oob>
                   <robot></robot>
               </oob>
@@ -44,7 +44,8 @@
           <that>Not to mention how fun it must be to ride a Zamboni.</that>
           <template>
               Right?
-              <set name="most recent dialogue question">Who needs a car when you can drive a Zamboni?</set>
+              I read a news article once about a man who drove one through a McDonald's drive-thru,
+              but that's neither here nor there!
               <oob>
                   <robot></robot>
               </oob>
@@ -53,10 +54,9 @@
 
       <category>
           <pattern>_</pattern>
-          <that>Who needs a car when you can drive a Zamboni?</that>
+          <that>I read a news article once about a man who drove one through a McDonald's drive-thru,
+          but that's neither here nor there!</that>
           <template>
-            I read a news article once about a man who drove one through a McDonald's drive-thru,
-            but that's neither here nor there!
               <set name="most recent dialogue question">What's your favorite NHL team, if you had to say?</set>
               <oob>
                   <robot></robot>
@@ -65,12 +65,11 @@
       </category>
 
       <category>
-          <pattern><set>NHLTeams</set></pattern>
+          <pattern># <set>NHLTeams</set> ^</pattern>
           <that>What's your favorite NHL team, if you had to say?</that>
           <template>
-            <think><set name="favorite hockey team"><star /></set></think>
-            You really do know your hockey! <get name="favorite hockey team"/><star /> are a great team!
-            What got you interested in hockey?
+            You really do know your hockey! <set name="favorite hockey team"><star /></set> are a great team!
+            <set name="most recent dialogue question">Have you ever witnessed any tussles on the ice?</set>
               <oob>
                   <robot></robot>
               </oob>
@@ -90,22 +89,10 @@
       </category>
 
       <category>
-          <pattern>_</pattern>
-          <that>What got you interested in hockey?</that>
-          <template>
-            That's super cool!
-            <set name="most recent dialogue question">Have you ever witnessed any tussles on the ice?</set>
-              <oob>
-                  <robot></robot>
-              </oob>
-          </template>
-      </category>
-
-      <category>
           <pattern># <set>YES</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of heated competition.
+            I believe they have changed the rules so the game is a bit more tame now! But speaking of competition.
             <set name="most recent dialogue question">Do you remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -117,7 +104,7 @@
           <pattern># <set>NO</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of heated competition.
+            I believe they have changed the rules so the game is a bit more tame now! But speaking of competition.
             <set name="most recent dialogue question">Do you remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -129,7 +116,7 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of heated competition.
+            I believe they have changed the rules so the game is a bit more tame now! But speaking of competition.
             <set name="most recent dialogue question">Do you remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -153,7 +140,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>Maybe I could show you a little clip about my favorite team, the Chicago Blackhawks?</that>
           <template>
-            <set name="most recent dialogue question">What do you think it felt like to win the Stanley Cup after forty-nine years?</set>
+            <set name="most recent dialogue question">What do you think it would be like to win the Stanley Cup after forty-nine years?</set>
               <oob>
                   <robot><video>
                         <filename>Blackhawks.mp4</filename>
@@ -178,7 +165,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>May I show you a video on them?</that>
           <template>
-            <set name="most recent dialogue question">What do you think it felt like to win the Stanley Cup after forty-nine years?</set>
+            <set name="most recent dialogue question">What do you think it would be like to win the Stanley Cup after forty-nine years?</set>
               <oob>
                   <robot><video>
                         <filename>Blackhawks.mp4</filename>
@@ -201,7 +188,7 @@
 
       <category>
         <pattern>_</pattern>
-        <that>What do you think it felt like to win the Stanley Cup after forty-nine years?</that>
+        <that>What do you think it would be like to win the Stanley Cup after forty-nine years?</that>
         <template>
             Victory is pretty sweet, isn't it?
             <oob>
@@ -214,7 +201,7 @@
         <pattern>_</pattern>
         <that>Victory is pretty sweet, isn't it?</that>
         <template>
-            Speaking of victories. Do you remember the Miracle on Ice?
+            Speaking of victories. <set name="most recent dialogue question">Do you remember the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -225,7 +212,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you remember the Miracle on Ice?</that>
         <template>
-            Which team were you rooting for during the Miracle on Ice?
+            <set name="most recent dialogue question">Which team were you rooting for during the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -237,7 +224,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                      Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                      <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -249,7 +236,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -261,7 +248,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -273,7 +260,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -285,7 +272,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -297,7 +284,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -309,7 +296,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -321,7 +308,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -333,7 +320,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -345,7 +332,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -357,7 +344,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -369,7 +356,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -381,7 +368,7 @@
         <that>Do you remember the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                        Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                        <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -393,7 +380,7 @@
         <pattern># United States ^</pattern>
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            It was a magical game! You must have been so happy when they won! Would you like to keep talking about sports?
+            It was a magical game! You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -404,7 +391,7 @@
         <pattern># The United States ^</pattern>
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            It was a magical game! You must have been so happy when they won! Would you like to keep talking about sports?
+            It was a magical game! You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -439,7 +426,7 @@
         <pattern># Soviet Union ^</pattern>
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            Both teams put up a great fight! Would you like to keep talking about sports?
+            Both teams put up a great fight! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -450,7 +437,7 @@
         <pattern># Soviet ^</pattern>
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            Both teams put up a great fight! Would you like to keep talking about sports?
+            Both teams put up a great fight! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -534,7 +521,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -546,7 +533,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -558,7 +545,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -570,7 +557,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -582,7 +569,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -594,7 +581,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -606,7 +593,7 @@
         <that>Which team were you rooting for during the Miracle on Ice?</that>
         <template>
             The United States ice hockey team played against the Soviet Union during the olympics!
-                                                                    Would you like to see a short clip with the athletes from the Miracle on Ice?
+                                                                    <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -617,14 +604,71 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Would you like to see a short clip with the athletes from the Miracle on Ice?</that>
         <template>
-            What a victory!
-            Would you like to keep talking about sports?
+            <set name="most recent dialogue question">Do you think those guys are still proud of their victory today?</set>
             <oob>
                 <robot>
                     <video>
                         <filename>Miracle_On_Ice.mp4</filename>
                     </video>
                 </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you think those guys are still proud of their victory today?</that>
+        <template>
+            Who wouldn't be, right? <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you think those guys are still proud of their victory today?</that>
+        <template>
+            Maybe you have a point. <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think those guys are still proud of their victory today?</that>
+        <template>
+            Maybe you have a point. <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to keep talking about sports?</that>
+        <template>
+            <set name="most recent dialogue question">Do you want to talk about basketball, baseball, football, hockey or the olympics?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to keep talking about sports?</that>
+        <template>
+            Sure! <set name="most recent dialogue question">What should we talk about next?</set>
+            <oob>
+                <robot></robot>
             </oob>
         </template>
     </category>

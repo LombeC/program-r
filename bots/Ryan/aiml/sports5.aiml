@@ -16,7 +16,7 @@
     <topic name="olympics">
 
     <category>
-        <pattern><set>OlympicSports</set></pattern>
+        <pattern># <set>OlympicSports</set> ^</pattern>
         <that>What do you think is the most impressive olympic sport?</that>
         <template>
             I certaintly couldn't do <star />, that's for sure!
@@ -28,11 +28,11 @@
     </category>
 
     <category>
-        <pattern><set>OlympicSports</set></pattern>
+        <pattern>_</pattern>
         <that>What do you think is the most impressive olympic sport?</that>
         <template>
-            That's a new one for me! I don't think I've heard of that event before.
-            <set name="most recent dialogue question">Do you think you'd be any good at it? Scale of one to ten.</set>
+            <set name="most recent dialogue question">That's a new one for me! I don't think I've heard of that event before.
+            Do you think you'd be any good at it? On a scale of one to ten.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -40,8 +40,101 @@
     </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>Scale of one to ten.</that>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What do you think is the most impressive olympic sport?</that>
+        <template>
+            <set name="most recent dialogue question">What about acrobatic gymnastics?
+            Do you think you'd be any good at it? On a scale of one to ten.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS ACROBATIC GYMNASTICS ^</pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+          It basically combines dance, gymnastics and calisthenics. You probably have to be pretty flexible.
+          <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S ACROBATIC GYMNASTICS ^</pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+            It basically combines dance, gymnastics and calisthenics. You probably have to be pretty flexible.
+            <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS * </pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+          It basically combines dance, gymnastics and calisthenics. You probably have to be pretty flexible.
+          <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT S * </pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+          It basically combines dance, gymnastics and calisthenics. You probably have to be pretty flexible.
+          <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Would you be any good?</that>
+        <template>
+            <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>On a scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>On a scale of one to ten.</that>
         <template>
             Let's start training now! Ready?
             <oob>
@@ -54,8 +147,52 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Ready?</that>
         <template>
-            Sounds like you are always up for a good challenge! Maybe one day I'll be a fully functional exercise bot.
-            <set name="most recent dialogue question">What kind of exercise do you like to do?</set>
+            Sounds like you are always up for a good challenge!
+            <set name="most recent dialogue question">What about acrobatic gymnastics? You think you would be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT IS ACROBATIC GYMNASTICS ^</pattern>
+        <that>You think you would be any good?</that>
+        <template>
+          <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WHAT S ACROBATIC GYMNASTICS ^</pattern>
+        <that>You think you would be any good?</that>
+        <template>
+            <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS * </pattern>
+        <that>You think you would be any good?</that>
+        <template>
+          <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT S * </pattern>
+        <that>You think you would be any good?</that>
+        <template>
+          <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -66,8 +203,8 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Ready?</that>
         <template>
-            Ha ha! I was just playing around. Maybe one day I'll be a fully functional exercise bot.
-            <set name="most recent dialogue question">What kind of exercise do you like to do?</set>
+            Ha ha! I was just playing around.
+            <set name="most recent dialogue question">What about acrobatic gymnastics? You think you would be any good?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -78,8 +215,91 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Ready?</that>
         <template>
-            Ha ha! I was just playing around. Maybe one day I'll be a fully functional exercise bot.
+            Ha ha! I was just playing around.
+            <set name="most recent dialogue question">What about acrobatic gymnastics? You think you would be any good?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Are you telling me you're not able to do the full splits standing up?</that>
+        <template>
+          <set name="most recent dialogue question">Are you telling me you're not able to do the full splits standing up?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Are you telling me you're not able to do the full splits standing up?</that>
+        <template>
+            You make me laugh!
             <set name="most recent dialogue question">What kind of exercise do you like to do?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Are you telling me you're not able to do the full splits standing up?</that>
+        <template>
+          You make me laugh!
+          <set name="most recent dialogue question">What kind of exercise do you like to do?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Are you telling me you're not able to do the full splits standing up?</that>
+        <template>
+          You make me laugh!
+          <set name="most recent dialogue question">What kind of exercise do you like to do?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Exercises</set> ^</pattern>
+        <that>What kind of exercise do you like to do?</that>
+        <template>
+            They say it's important to stay active and healthy! I have to admit I am somewhat of a couch potato.
+            <set name="most recent dialogue question">What do you think olympic workouts would be like?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND *</pattern>
+        <that>What kind of exercise do you like to do?</that>
+        <template>
+            They say it's important to stay active and healthy! I have to admit I am somewhat of a couch potato.
+            <set name="most recent dialogue question">What do you think olympic workouts would be like?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND * AND *</pattern>
+        <that>What kind of exercise do you like to do?</that>
+        <template>
+            They say it's important to stay active and healthy! I have to admit I am somewhat of a couch potato.
+            <set name="most recent dialogue question">What do you think olympic workouts would be like?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -99,12 +319,11 @@
     </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>What do you think olympic workouts would be like?</that>
+        <pattern># <set>No</set> ^</pattern>
+        <that>What kind of exercise do you like to do?</that>
         <template>
-            I don't know about you, but I would be huffing and puffing the whole way and someone would have to carry me home!
-            I prefer just watching.
-            <set name="most recent dialogue question">What olympic sport do you like watching most?</set>
+            They say it's important to stay active and healthy! I have to admit I am somewhat of a couch potato.
+            <set name="most recent dialogue question">What do you think olympic workouts would be like?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -112,18 +331,29 @@
     </category>
 
     <category>
-        <pattern><set>OlympicSports</set></pattern>
-        <that>What olympic sport do you like watching most?</that>
+        <pattern>_</pattern>
+        <that>What do you think olympic workouts would be like?</that>
         <template>
-            <star /> is totally exciting to watch! I myself love a good round of ice hockey.
-            <set name="most recent dialogue question">Do you remember the Miracle on Ice?</set>
+            I don't know about you, but I would be huffing and puffing the whole way and someone would have to carry me home!
+            I prefer just watching the olympics on TV.
+            <set name="most recent dialogue question">What olympic sport do you like watching?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-<!-- REDIRECT TO HOCKEY DIALOGUE -->
+    <category>
+        <pattern># <set>OlympicSports</set> ^</pattern>
+        <that>What olympic sport do you like watching?</that>
+        <template>
+            <star /> is totally exciting to watch! Would you like to keep talking about sports?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
 
 
 

@@ -24,7 +24,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about museums?</that>
         <template>
-            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+          <think><set name="dialogue">museums</set></think>
+            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -36,8 +37,19 @@
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
             <think><set name="topic">smithsonian</set></think>
+            The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-            The Smithsonian is a marvel of natural history! Would you like to see a video on its dinosaur exhibit?
+    <category>
+        <pattern># Smithsonian museum ^</pattern>
+        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <template>
+            <think><set name="topic">smithsonian</set></think>
+            The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -45,11 +57,12 @@
     </category>
 
     <topic name="smithsonian">
+
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Would you like to see a video on its dinosaur exhibit?</that>
+            <that>Would you like to see a video on the dinosaur exhibit?</that>
             <template>
-                Those dinosaurs look so lifelike! Would you like to discuss mammals or ancient Egypt?
+                You know what's crazy is that scientists recently discovered that dinosaurs had feathers. <set name="most recent dialogue question">Do you want to see a picture?</set>
                 <oob>
                     <robot>
                         <video>
@@ -61,10 +74,241 @@
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to see a video on its dinosaur exhibit?</that>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to see a picture?</that>
             <template>
-                The dinosaurs look so lifelike! Would you like to discuss mammals or ancient Egypt next?
+                <set name="most recent dialogue question">So you can see the dinosaur feathers here, but do you have an idea of what that bug is? Just guess.</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Dinosaur_Feathers.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># LICE ^</pattern>
+            <that>Just guess.</that>
+            <template>
+                You got it! You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Dinosaur_Feathers.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># INSECT ^</pattern>
+            <that>Just guess.</that>
+            <template>
+                You got it! It's lice. You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Dinosaur_Feathers.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Just guess.</that>
+            <template>
+                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Dinosaur_Feathers.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Guess.</that>
+            <template>
+                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>Dinosaur_Feathers.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SEVEN ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+                Yes indeed! Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+                <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ALL SEVEN ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+              Yes indeed! Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+              <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ALL OF THEM ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+              Yes indeed! Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+              <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># ALL SEVEN OF THEM ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+              Yes indeed! Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+              <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+              Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+              <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>How many continents have dinosaur fossis been found on?</that>
+            <template>
+              Dinosaur fossils have been found on all seven continents. Kind of a trick question.
+              <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you want to see a picture?</that>
+            <template>
+                Sure thing! <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to see a video on the dinosaur exhibit?</that>
+            <template>
+                Sure thing! <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
+            <template>
+                No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NEITHER ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
+            <template>
+                No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NONE ^</pattern>
+            <that>Would you like to discuss mammals or ancient Egypt?</that>
+            <template>
+                No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -75,8 +319,8 @@
             <pattern># Ancient Egypt ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
-                        Would you like to see a video on a newly-discovered pyramid?
+                I find ancient Egypt fascinating!
+                        <set name="most recent dialogue question">Would you like to see a video on a newly-discovered pyramid?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -87,8 +331,8 @@
             <pattern># Ancient ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
-                        Would you like to see a video on a newly-discovered pyramid?
+                I find ancient Egypt fascinating!
+                        <set name="most recent dialogue question">Would you like to see a video on a newly-discovered pyramid?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -99,8 +343,8 @@
             <pattern># Egypt ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
-                      Would you like to see a video on a newly-discovered pyramid?
+                I find ancient Egypt fascinating!
+                      <set name="most recent dialogue question">Would you like to see a video on a newly-discovered pyramid?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -111,8 +355,8 @@
             <pattern># Egyptian ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I find ancient Egypt to be fascinating with all the tombs, mummies, and pyramids!
-                      Would you like to see a video on a newly-discovered pyramid?
+                I find ancient Egypt fascinating!
+                      <set name="most recent dialogue question">Would you like to see a video on a newly-discovered pyramid?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -123,7 +367,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to see a video on a newly-discovered pyramid?</that>
             <template>
-                Ancient pyramids are so mysterious! Did you know ancient Egyptians believed in eternal life?
+                <set name="most recent dialogue question">Did you know ancient Egyptians believed in eternal life?</set>
                 <oob>
                     <robot>
                         <video>
@@ -138,7 +382,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to see a video on a newly-discovered pyramid?</that>
             <template>
-                Ancient pyramids are so mysterious! Did you know ancient Egyptians believed in eternal life?
+                <set name="most recent dialogue question">Did you know ancient Egyptians believed in eternal life?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -146,11 +390,35 @@
         </category>
 
         <category>
-            <pattern>_</pattern>
+            <pattern># <set>YES</set> ^</pattern>
             <that>Did you know ancient Egyptians believed in eternal life?</that>
             <template>
                 That's why they buried mummies with food and treasures!
-                        Would you like to see a trailer for a movie on ancient Egypt? It's called The Mummy.
+                        <set name="most recent dialogue question">Would you like to see a trailer for a movie on ancient Egypt? It's called The Mummy.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Did you know ancient Egyptians believed in eternal life?</that>
+            <template>
+                That's why they buried mummies with food and treasures!
+                        <set name="most recent dialogue question">Would you like to see a trailer for a movie on ancient Egypt? It's called The Mummy.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you know ancient Egyptians believed in eternal life?</that>
+            <template>
+                That's why they buried mummies with food and treasures!
+                        <set name="most recent dialogue question">Would you like to see a trailer for a movie on ancient Egypt? It's called The Mummy.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -161,8 +429,8 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>It's called The Mummy.</that>
             <template>
-                You should watch the whole film if you haven't seen it yet! What do you say we talk about movies?
-                        If you want to keep talking about museums, just say museums.
+                You should watch the whole film if you haven't seen it yet! <set name="most recent dialogue question">What do you say we talk about movies?
+                        If you want to keep talking about museums, just say museums.</set>
                 <oob>
                     <robot>
                         <video>
@@ -177,8 +445,8 @@
             <pattern># <set>No</set> ^</pattern>
             <that>It's called The Mummy.</that>
             <template>
-                You should watch it sometime if you haven't seen it yet! What do you say we talk about movies?
-                      If you want to keep talking about museums, just say museums.
+                You should watch it sometime if you haven't seen it yet! <set name="most recent dialogue question">What do you say we talk about movies?
+                      If you want to keep talking about museums, just say museums.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -189,7 +457,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>If you want to keep talking about museums, just say museums.</that>
             <template>
-                OK. Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+                OK. <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -200,7 +468,7 @@
             <pattern># Museums ^</pattern>
             <that>If you want to keep talking about museums, just say museums.</that>
             <template>
-                OK. Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+                OK. <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -211,7 +479,7 @@
             <pattern># Movies ^</pattern>
             <that>If you want to keep talking about museums, just say museums.</that>
             <template>
-                Do you like to watch drama, action, comedy, or musicals?
+                <set name="most recent dialogue question">What's one of your favorite movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -222,7 +490,7 @@
             <pattern># Movie ^</pattern>
             <that>If you want to keep talking about museums, just say museums.</that>
             <template>
-                Do you like to watch drama, action, comedy, or musicals?
+                <set name="most recent dialogue question">What's one of your favorite movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -233,7 +501,7 @@
             <pattern># Mammal ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <set name="most recent dialogue question">I dig the Smithsonian's evolution exhibit! Would you like to tour the exhibit?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -244,7 +512,7 @@
             <pattern># Mammals ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <set name="most recent dialogue question">I dig the Smithsonian's evolution exhibit! Would you like to tour the exhibit?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -255,7 +523,7 @@
             <pattern># Mammalia ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                I love the Smithsonian's evolution exhibit! Would you like to tour the exhibit?
+                <set name="most recent dialogue question">I dig the Smithsonian's evolution exhibit! Would you like to tour the exhibit?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -266,7 +534,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                Let's talk about ancient Egypt, then! Would you like to see a video on a newly-discovered pyramid?
+                OK! <set name="most recent dialogue question">What would you like to discuss?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -277,7 +545,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to discuss mammals or ancient Egypt?</that>
             <template>
-                OK! What would you like to discuss?
+                OK! <set name="most recent dialogue question">What would you like to discuss?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -288,7 +556,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to tour the exhibit?</that>
             <template>
-                That's okay! What are your thoughts on evolution?
+                That's okay! <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -299,7 +567,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to tour the exhibit?</that>
             <template>
-                What are your thoughts on evolution?
+                <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
                 <oob>
                     <robot>
                         <video>
@@ -310,23 +578,11 @@
             </template>
         </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>What are your thoughts on evolution?</that>
-            <template>
-                I really love hearing what you think! Would you like to keep discussing museums?
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
     <category>
         <pattern># <set>Yes</set> ^</pattern>
         <that>Would you like to keep discussing museums?</that>
         <template>
-            Excellent! Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?
+            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -337,7 +593,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Would you like to keep discussing museums?</that>
         <template>
-            Sure! What would you like to talk about?
+            Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>

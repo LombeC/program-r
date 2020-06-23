@@ -4,7 +4,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>How about a different cuisine?</that>
         <template>
-            Would you like to talk about a American Food or foreign food?
+            <set name="most recent dialogue question">Would you like to talk about American Food or foreign food?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -13,11 +13,24 @@
 
     <category>
         <pattern># FOREIGN ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT A AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
         <template>
             <random>
-                <li>Do you like Asian food?</li>
-                <li>Do you like Mexican food?</li></random>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FOREIGN FOOD ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li></random>
             <oob>
                 <robot></robot>
             </oob>
@@ -30,7 +43,7 @@
         <template>
             <think><set name="topic">mexicanfood</set></think>
 
-            You know that sound that fajita's make when they come out of the kitchen sizzling?
+            <set name="most recent dialogue question">You know that sound that fajitas make when they come out of the kitchen sizzling?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -40,9 +53,9 @@
     <topic name="mexicanfood">
         <category>
             <pattern>_</pattern>
-            <that>You know that sound that fajita's make when they come out of the kitchen sizzling?</that>
+            <that>You know that sound that fajitas make when they come out of the kitchen sizzling?</that>
             <template>
-                One of my favorite sounds. Pure excitement. Like this, hisssssssssssss.
+                Like this, hisssssssssssss. One of my favorite sounds. Pure excitement.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -51,9 +64,9 @@
 
         <category>
             <pattern>_</pattern>
-            <that>Like this, hisssssssssssss.</that>
+            <that>Pure excitement. </that>
             <template>
-                They say that the eyes eat first. Do you think that's true?
+                <set name="most recent dialogue question">They say that the eyes eat first. Do you think that's true?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -97,7 +110,7 @@
             <pattern>_</pattern>
             <that>All I know is, when I see I full plate of chicken enchiladas, my mouth starts watering.</that>
             <template>
-                Have you ever had chimichangas?
+                <set name="most recent dialogue question">Have you ever had chimichangas?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -108,7 +121,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever had chimichangas?</that>
             <template>
-                Who wouldn't love a deep fried burrito, right? Do you like fried foods?
+                Who wouldn't love a deep fried burrito, right? <set name="most recent dialogue question">Do you think you would like deep fried twinkies and oreos?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -119,7 +132,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you ever had chimichangas?</that>
             <template>
-                It's a deep fried burrito! Do you like fried foods?
+                It's a deep fried burrito! <set name="most recent dialogue question">Do you think you would like deep fried twinkies and oreos?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -130,12 +143,15 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever had chimichangas?</that>
             <template>
-                It's a deep fried burrito! Do you like fried foods?
+                It's a deep fried burrito! <set name="most recent dialogue question">Do you think you would like deep fried twinkies and oreos?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
+
+      
+
+</topic>
 
     <!-- REDIRECT TO COMFORTFOOD --></aiml>

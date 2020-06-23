@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name="football">
+
+<category>
+    <pattern>_</pattern>
+    <that>What are you expecting for this season?</that>
+    <template>
+      I'll take your word for it! Hopefully it's a good one!
+      <set name="most recent dialogue question">Seeing as how you're a football fan, did you ever play football?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Seeing as how you're a football fan, did you ever play football?</that>
+    <template>
+        How did I know!
+        <set name="most recent dialogue question">So did you play offense, defense, or special teams?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Did you ever play football?</that>
+    <template>
+      How did I know!
+      <set name="most recent dialogue question">So did you play offense, defense, or special teams?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Seeing as how you're a football fan, did you ever play football?</that>
+    <template>
+        <set name="most recent dialogue question">Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Did you ever play football?</that>
+    <template>
+        <set name="most recent dialogue question">Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</that>
+    <template>
+        Heck yes!
+        <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</that>
+    <template>
+        I may have to politely disagree, especially when it comes to Super Bowl season!
+        <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</that>
+    <template>
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Offense ^</pattern>
+    <that>So did you play offense, defense, or special teams?</that>
+    <template>
+        Wow! You must be very competitive to play <set name="football position">Offense</set>!
+        <set name="most recent dialogue question">What was your position?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Defense ^</pattern>
+    <that>So did you play offense, defense, or special teams?</that>
+    <template>
+
+        Wow! <set name="football position">Defense</set> would be the most fun to play!
+          <set name="most recent dialogue question">What was your position?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Special Teams ^</pattern>
+    <that>So did you play offense, defense, or special teams?</that>
+    <template>
+
+        Wow! <set name="football position">Special Teams</set> would be so fun to play!
+          <set name="most recent dialogue question">What was your position?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Quarter Back ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! You were the star of the show! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Running Back ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! You must be a quick runner! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Halfback ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! You must be a quick runner! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Fullback ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! You must be a good runner! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Offensive Line ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! You must have some strength behind you! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Wide Receiver ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am impressed! Being a wide receiver is pretty crucial. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Tight End ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must have some strength behind you! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Defensive Line ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must have some strength behind you! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Defensive End ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must have some strength behind you! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Defensive Tackle ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must have some strength behind you! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Linebacker ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must be strong and fast. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Cornerback ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must be good at tackling. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Safety ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must be strong and fast. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Kicker ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must be a really good kicker! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Punter ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! You must be a really good punter! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Return ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! Return specialist is honestly a crucial position. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Return Specialist ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! Return specialist is an honestly crucial position. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Long Snapper ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! Long Snapper is honestly a crucial position. I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What was your position?</that>
+    <template>
+      I am so impressed! I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      I can't play but love to watch from the comfortable confines of the couch.
+      <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What are your Super Bowl traditions?</that>
+    <template>
+      Love to hear it! Mine involve buffalo chicken dip, chips, and an ice cold beverage.
+      Maybe we could watch together sometime!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Maybe we could watch together sometime!</that>
+    <template>
+      <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
+    <template>
+        Indeed!
+        <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
+    <template>
+      Indeed!
+      <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
+    <template>
+      Indeed! <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Would you like to see a short recap of the game?</that>
+    <template>
+        What a game! There's no denying that Vince Lombardi was a great coach!
+        <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+        <oob>
+            <robot>
+                <video>
+                    <filename>Super_Bowl.mp4</filename>
+                </video>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Would you like to see a short recap of the first Super Bowl?</that>
+    <template>
+        That's just fine! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to keep talking about sports?</that>
+    <template>
+        <set name="most recent dialogue question">Do you want to talk about basketball, baseball, football, hockey or the olympics?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Would you like to keep talking about sports?</that>
+    <template>
+        Sure! <set name="most recent dialogue question">What should we talk about next?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+</topic>
+</aiml>
