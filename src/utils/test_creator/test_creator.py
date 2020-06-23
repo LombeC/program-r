@@ -96,6 +96,7 @@ def parse_lis(elt):
 
         if li.text is not None:
             random_string += li.text.strip()
+            print("random_string with added li.text: {}".format(random_string))
             if bot_tail is not None and get_tail is not None:
                 print("Both are not none")
                 random_string += li_string + bot_tail.strip() + get_tail.strip()
@@ -114,9 +115,9 @@ def parse_lis(elt):
                 random_string += li_string + get_tail.strip()
             
             else:
-                print("in else")
-                random_string += li.text.strip()
-                print("random_string: {}".format(random_string))
+                print("in else, do nothing...")
+                # random_string += li.text.strip()
+                # print("random_string: {}".format(random_string))
 
         random_string += "; "
                 
@@ -131,6 +132,7 @@ def parse_categories(categories, output_file, bot_node, get_node):
     questions = []
     for category in categories:
         pattern_text = ""
+        random_exists = False
 
         pattern = category.find("pattern")
         for elt in pattern.iter():
@@ -183,7 +185,6 @@ def parse_categories(categories, output_file, bot_node, get_node):
         # TODO: Need to parse bot, set, get tags
         string = ""
         tail = ""
-        random_exists = False
         for elt in template.iter(): 
             tag = elt.tag
             
@@ -258,6 +259,7 @@ def parse_categories(categories, output_file, bot_node, get_node):
         
         output_file.write(test_line)
         output_file.write("\n")
+
         
     print("completed")
     return questions

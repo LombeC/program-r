@@ -19,24 +19,18 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>DO YOU LIKE VEGETABLES?</that>
       <template>
-          Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
-          <oob>
-                <robot>
-                </robot>
-            </oob>
+        Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
+        <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern># <set>YES</set> ^</pattern>
-          <that>DO YOU LIKE VEGETABLES?</that>
-              <template>
-                  I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
-                      <oob>
-                            <robot>
-                            </robot>
-                        </oob>
-                </template>
+      <that>DO YOU LIKE VEGETABLES?</that>
+      <template>
+        I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
+        <oob><robot></robot></oob>
+      </template>
   </category>
 
   <category>
