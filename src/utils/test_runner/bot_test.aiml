@@ -72,6 +72,21 @@
           <robot></robot>
       </oob>
       </template>
-  </category>
+    </category>
+
+    <category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, drama, or mystery?</that>
+        <template>
+            <think><set name="topic">adventure</set></think>
+            There's nothing like a good adventure story to liven things up! Have you ever read The Adventures of Tom Sawyer?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASK ME A NEW QUESTION</pattern>
+        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
+    </category>
 
 </aiml>

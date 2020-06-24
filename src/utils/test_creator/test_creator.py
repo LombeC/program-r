@@ -128,6 +128,23 @@ def parse_lis(elt):
 
     return random_string
 
+def check_for_think(template):
+    think = template.find("think")
+
+    if think is None:
+        return template
+
+    else:
+        # template_list = list(template.iter())
+        # print("template before removing think: {}".format(template_list))
+        text = think.tail
+        template.remove(think)
+        template.text += text
+        # template_list = list(template.iter())
+        # print("template after removing think: {}".format(template_list))
+        return template
+
+
 def parse_categories(categories, output_file, bot_node, get_node):
     questions = []
     for category in categories:
@@ -181,6 +198,10 @@ def parse_categories(categories, output_file, bot_node, get_node):
         
         
         template = category.find('template')
+        # TODO: Write function to remove children in think tag
+        template = check_for_think(template)
+
+
         # print("Template: {}".format(template.text))
         # TODO: Need to parse bot, set, get tags
         string = ""
@@ -190,29 +211,19 @@ def parse_categories(categories, output_file, bot_node, get_node):
             
             if tag == "bot":
                 string = " " + bot_node.get_bot_variable(client_context, elt.attrib['name'])
-                # print("Text after bot: {}".format(elt.tail))
-                try:
+                if elt.tail is not None:
                     tail += elt.tail.strip()
-                except Exception as excep:
-                    print("failed getting tail: {}".format(excep))
-                    tail = None
 
             elif tag == "get":
                 string = " " + get_node.get_property_value(client_context, False, elt.attrib['name'])
-                # print("Text after bot: {}".format(elt.tail))
-                try:
-                    tail += elt.tail.strip()  
-                except Exception as excep:
-                    print("failed getting tail: {}".format(excep))
-                    tail = None
+                if elt.tail is not None:
+                    tail += elt.tail.strip()
 
             elif tag == "set":
+                print("found set tag")
                 string = elt.text + " "
-                try:
+                if elt.tail is not None:
                     tail += elt.tail.strip()
-                except Exception as excep:
-                    print("failed getting tail: {}".format(excep))
-                    tail = None
             
             elif tag == "random":
                 random_exists = True
@@ -221,6 +232,11 @@ def parse_categories(categories, output_file, bot_node, get_node):
             elif tag == "condition":
                 random_exists = True
                 random_string = parse_lis(elt)
+
+            elif tag == "think":
+                print("found think tag")
+                if elt.tail is not None:
+                    tail += elt.tail.strip()
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)
@@ -234,7 +250,7 @@ def parse_categories(categories, output_file, bot_node, get_node):
             else:
                 if tail is not None:
                     print("there is a tail")
-                    response = template.text.strip() + "[" + string + random_string +tail
+                    response = template.text.strip() + "[" + string + random_string + tail
                 else:
                     print("tail is None")
                     response = template.text.strip() + "[" + string + random_string
