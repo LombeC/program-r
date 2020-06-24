@@ -195,15 +195,10 @@ def parse_categories(categories, output_file, bot_node, get_node):
         
         question = '"%s",'%pattern_text.strip()
         question = question.ljust(ljust)
-        
-        
+                
         template = category.find('template')
-        # TODO: Write function to remove children in think tag
         template = check_for_think(template)
 
-
-        # print("Template: {}".format(template.text))
-        # TODO: Need to parse bot, set, get tags
         string = ""
         tail = ""
         for elt in template.iter(): 
@@ -237,6 +232,11 @@ def parse_categories(categories, output_file, bot_node, get_node):
                 print("found think tag")
                 if elt.tail is not None:
                     tail += elt.tail.strip()
+            
+            elif tag == "srai":
+                string = "<srai>" + elt.text + "</srai>"
+                if elt.tail is not None:
+                    tail += elt.tail
 
         # if len(li) > 0:
         #     test_line = '%s "%s"'%(question, string)
