@@ -1,0 +1,1 @@
+python ./src/utils/test_runner/test_runner.py --config ./bots/Ryan/config.yaml --cformat yaml --logging ./bots/Ryan/logging.yaml --test_file ./test_files/example.test --qna_file ./src/utils/test_runner/qna-file

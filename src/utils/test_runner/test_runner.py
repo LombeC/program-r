@@ -193,6 +193,21 @@ class TestFileFileFinder(FileFinder):
         return collection, file_maps
 
 
+    def load_single_file_contents(self, filename):
+        just_filename = self.get_just_filename_from_filepath(filename)
+
+        collection = {}
+        file_maps = {}
+        try:
+            collection[just_filename.upper()] = self.load_file_contents(filename)
+            # file_maps[just_filename.upper()] = filename
+        except Exception as excep:
+            print(excep)
+            # YLogger.exception(self, "Failed to load file contents for file [%s]"%filename, excep)
+
+        return collection, file_maps
+
+
 class TestRunnerBotClient(BotClient):
 
     def __init__(self):
@@ -220,16 +235,12 @@ class TestRunnerBotClient(BotClient):
     def ask_question(self, userid, question):
         response = ""
         try:
-            #TODO: check if userid is same as one being sent in curl message
             client_context = self.create_client_context(userid)
-            # print("userid: {}".format(userid))
-     
-            # print("Ryan heard: {}".format(question))
             response = client_context.bot.ask_question(client_context, question)
             response = self.remove_oob(response)
             return response
         except Exception as e:
-            # print(e)
+            print(e)
             return ""
         
     def remove_oob(self, response):
@@ -261,6 +272,7 @@ class TestRunnerBotClient(BotClient):
             print("Loading Tests from directory [%s]" % self.test_dir)
             questions = file_finder.load_dir_contents(self.test_dir, extension=".tests", subdir=False)
         else:
+            print("Loading single file: {}".format(self.test_file))
             questions = file_finder.load_single_file_contents(self.test_file)
 
         question_and_answers = open(self.qna_file, "w+")
@@ -294,8 +306,9 @@ class TestRunnerBotClient(BotClient):
 
                 if test.that is not None:
                     response = self.ask_question(0, test.that)
-
-                response = self.ask_question(0, test.question)
+                else:
+                    response = self.ask_question(0, test.question)
+    
                 success = False
                 test.response = response
 
@@ -308,6 +321,7 @@ class TestRunnerBotClient(BotClient):
                         break
                 else:
                     for expected_regex in test.answers_regex:
+                        # print("test.answers_regex: {}".format(test.answers_regex))
                         regex_type = expected_regex[0]
                         expression = expected_regex[1]
                         match = expression.search(response)
