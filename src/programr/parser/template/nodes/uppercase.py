@@ -6,7 +6,7 @@ from programr.parser.template.nodes.base import TemplateNode
 class TemplateUppercaseNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
 
     def resolve_to_string(self, client_context):
         resolved = self.resolve_children_to_string(client_context)

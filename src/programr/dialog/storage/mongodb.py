@@ -9,7 +9,7 @@ from pymongo import MongoClient, IndexModel
 class ConversationMongodbStorage(ConversationStorage):
 
     def __init__(self, config: BotConversationsMongodbStorageConfiguration):
-        ConversationStorage.__init__(self, config)
+        super().__init__(config)
         # client = MongoClient("10.0.75.2", 27017)
         client = MongoClient(config.host, config.port, serverSelectionTimeoutMS=2000)
         self._config = config

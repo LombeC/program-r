@@ -3,7 +3,7 @@ from programr.mappings.base import DoubleStringPatternSplitCollection
 class DenormalCollection(DoubleStringPatternSplitCollection):
 
     def __init__(self):
-        DoubleStringPatternSplitCollection.__init__(self)
+        super().__init__()
 
     def denormalise(self, normal):
         if self.has_key(normal):

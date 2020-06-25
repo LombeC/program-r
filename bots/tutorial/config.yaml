@@ -56,7 +56,7 @@ bot:
       max_histories: 100
       initial_topic: "*"
       restore_last_topic: false
-      type: nn
+      type: "mongodb"
       config_name: database_config
       empty_on_start: false
 
@@ -212,7 +212,7 @@ brain:
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
-        model_dir: libs/pretrain_distillbert_full_sst/
+        model_dir: /home/rohola/Codes/Python/program-r/libs/pretrain_distillbert_full_sst/
 
       tokenizer:
         libname: nltk
@@ -224,10 +224,3 @@ brain:
       #embedding
       semantic_similarity:
         method: ""
-
-
-      corenlp:
-        classname: programr.nlp.corenlp.client.Client
-        ip: "http://localhost"
-        port: 9000
-        jar_dir: libs/stanford-corenlp-full-2018-10-05/*

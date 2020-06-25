@@ -4,7 +4,7 @@ from programr.dynamic.variables.variable import DynamicVariable
 class GetSentiment(DynamicVariable):
 
     def __init__(self, config):
-        DynamicVariable.__init__(self, config)
+        super().__init__(config)
 
     def get_value(self, client_context, value=None):
         userid = client_context.userid

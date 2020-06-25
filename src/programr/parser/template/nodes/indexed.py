@@ -9,7 +9,7 @@ from programr.parser.template.nodes.attrib import TemplateAttribNode
 class TemplateIndexedNode(TemplateAttribNode):
 
     def __init__(self, index=1):
-        TemplateAttribNode.__init__(self)
+        super().__init__()
         self._index = index
 
     def get_default_index(self):
@@ -56,7 +56,7 @@ class TemplateIndexedNode(TemplateAttribNode):
 class TemplateDoubleIndexedNode(TemplateAttribNode):
 
     def __init__(self, question=1, sentence=1):
-        TemplateAttribNode.__init__(self)
+        super().__init__()
         self._question = question
         self._sentence = sentence
 

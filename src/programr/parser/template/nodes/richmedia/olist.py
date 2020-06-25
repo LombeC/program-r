@@ -6,7 +6,7 @@ from programr.parser.template.nodes.richmedia.list import TemplateListNode
 class TemplateOrderedListNode(TemplateListNode):
 
     def __init__(self):
-        TemplateListNode.__init__(self)
+        super().__init__()
 
     def resolve_to_string(self, client_context):
         str = "<olist>"

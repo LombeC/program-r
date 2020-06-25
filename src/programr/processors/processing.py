@@ -6,7 +6,7 @@ from programr.utils.classes.loader import ClassLoader
 class ProcessorLoader(ClassLoader):
 
     def __init__(self):
-        ClassLoader.__init__(self)
+        super().__init__()
         self.processors = []
 
     def empty(self):
@@ -53,7 +53,7 @@ class Processor:
 class PreProcessor(Processor):
 
     def __init__(self):
-        Processor.__init__(self)
+        super().__init__()
 
     @abstractmethod
     def process(self, client_context, word_string):
@@ -63,7 +63,7 @@ class PreProcessor(Processor):
 #
 class PostProcessor(Processor):
     def __init__(self):
-        Processor.__init__(self)
+        super().__init__()
 
     @abstractmethod
     def process(self, client_context, word_string):

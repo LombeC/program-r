@@ -47,7 +47,6 @@ class BrainSentimentAnalysisConfiguration(BaseConfigurationData):
 
     def to_yaml(self, data, defaults=True):
         if defaults:
-            data['method'] = "corenlp"
             data['positive_threshold'] = 0.2
             data['negative_threshold'] = -0.2
             data['alpha'] = 0.1

@@ -56,7 +56,7 @@ class BaseCollection(object):
 class SingleStringCollection(BaseCollection):
 
     def __init__(self):
-        BaseCollection.__init__(self)
+        super().__init__()
         self._strings = []
 
     def empty(self):
@@ -77,7 +77,7 @@ class SingleStringCollection(BaseCollection):
 class DoubleStringCharSplitCollection(BaseCollection):
 
     def __init__(self):
-        BaseCollection.__init__(self)
+        super().__init__()
         self._pairs = []
 
     def empty(self):
@@ -133,7 +133,7 @@ class DoubleStringPatternSplitCollection(BaseCollection):
     RE_OF_SPLIT_PATTERN = re.compile("\"(.*?)\",\"(.*?)\"")
 
     def __init__(self):
-        BaseCollection.__init__(self)
+        super().__init__()
         self._pairs = {}
 
     def empty(self):
@@ -260,7 +260,7 @@ class DoubleStringPatternSplitCollection(BaseCollection):
 class TripleStringCollection(BaseCollection):
 
     def __init__(self):
-        BaseCollection.__init__(self)
+        super().__init__()
         self.triples = {}
 
     def empty(self):

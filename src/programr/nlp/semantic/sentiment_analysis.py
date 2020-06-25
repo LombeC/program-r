@@ -1,8 +1,6 @@
-from programr.config.brain.corenlp import BrainCoreNLPConfiguration
 from programr.config.brain.nlp import BrainNLPConfiguration
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
 from programr.config.brain.sentiment_analysis import BrainSentimentAnalysisConfiguration
-from programr.nlp.corenlp.client import Client
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline
 import torch
 import numpy as np
@@ -17,8 +15,7 @@ class SentimentAnalysis():
     @staticmethod
     def factory(config: BrainNLPConfiguration):
         if config.sentiment_analysis.method == "corenlp":
-            print("Using corenlp for sentiment analysis")
-            return CoreNLPSentimentAnalysis(config.sentiment_analysis, config.corenlp)
+            print("corenlp is not supported anymore")
         elif config.sentiment_analysis.method == "distilbert":
             print("Using distilbert for sentiment analysis")
             return DistilBertSentimentAnalysis(config.sentiment_analysis)
@@ -39,41 +36,6 @@ class SentimentAnalysis():
 
     def negative_threshold(self):
         raise NotImplementedError("Should be override to be used.")
-
-
-class CoreNLPSentimentAnalysis(SentimentAnalysis):
-
-    def __init__(self, semantic_analysis_config: BrainSentimentAnalysisConfiguration,
-                 corenlp_config: BrainCoreNLPConfiguration):
-        super().__init__()
-        self.client = Client(corenlp_config)
-        self._semantic_analysis_config = semantic_analysis_config
-
-    def get_sentence_sentiment(self, sentence):
-        return self.client.get_sentence_sentiment(sentence)
-
-    def get_sentences_sentiments(self, sentences):
-        return self.client.get_sentences_sentiments(sentences)
-
-    def expected_sentiment_value(self, sentiment_distribution):
-        shorten_sentiment_distribution = [sentiment_distribution[0] + sentiment_distribution[1],
-                                          sentiment_distribution[2],
-                                          sentiment_distribution[3] + sentiment_distribution[4]]
-        value = -shorten_sentiment_distribution[0] + shorten_sentiment_distribution[2]
-
-        return value
-
-    @property
-    def alpha(self):
-        return self._semantic_analysis_config.alpha
-
-    @property
-    def positive_threshold(self):
-        return self._semantic_analysis_config.positive_threshold
-
-    @property
-    def negative_threshold(self):
-        return self._semantic_analysis_config.negative_threshold
 
 
 class SentimentClassifer:

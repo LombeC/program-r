@@ -29,7 +29,7 @@ class Tokenizer(object):
 class CjkTokenizer(Tokenizer):
 
     def __init__(self, split_chars=' '):
-        Tokenizer.__init__(self, split_chars)
+        super().__init__(split_chars)
 
     @staticmethod
     def _is_chinese_word(word):

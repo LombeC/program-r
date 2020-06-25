@@ -96,18 +96,13 @@ if __name__ == '__main__':
 
     print("Initiating Flask REST Service...")
     app = Flask(__name__)
-    # if PROFILER:
-    #     app.config['PROFILE'] = True
-    #     app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
 
-    
 
     @app.route('/api/rest/v1.0/ask', methods=['POST'])
     def ask():
         response_data, status = rest_client.process_request(request)
         return rest_client.create_response(response_data, status)
 
-    
     
 
     print("Loading, please wait...")

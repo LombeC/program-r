@@ -9,7 +9,7 @@ from programr.utils.text.text import TextUtils
 class TemplateCardNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
         self._image = None
         self._title = None
         self._subtitle = None

@@ -1,6 +1,6 @@
 from programr.utils.logging.ylogger import YLogger
 
-from bs4 import BeautifulSoup as Soup
+from bs4 import BeautifulSoup
 from bs4.element import Tag, NavigableString
 
 
@@ -11,7 +11,7 @@ class RichMediaRenderer(object):
 
     def render(self, client_context, message):
         if message:
-            soup = Soup(message, "lxml-xml")
+            soup = BeautifulSoup(message, "lxml")
             parsed = False
             if soup.children:
                     for child in soup.children:
@@ -73,7 +73,7 @@ class RichMediaRenderer(object):
         return self.handle_text(client_context, {"type": "text", "text": text})
 
     def parse_xml(self, client_context, tag):
-        text = str(tag)
+        text = tag.text
         return self.handle_text(client_context, {"type": "text", "text": text})
 
     def extract_button_info(self, tag):

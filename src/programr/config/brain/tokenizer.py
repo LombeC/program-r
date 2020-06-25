@@ -6,7 +6,7 @@ from programr.config.base import BaseConfigurationData
 class BrainTokenizerConfiguration(BaseConfigurationData):
 
     def __init__(self):
-        BaseConfigurationData.__init__(self, name="tokenizer")
+        super().__init__(name="tokenizer")
         self._libname = None
         self._split_chars = " "
 

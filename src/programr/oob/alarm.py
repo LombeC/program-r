@@ -15,7 +15,7 @@ class AlarmOutOfBandProcessor(OutOfBandProcessor):
     """
 
     def __init__(self):
-        OutOfBandProcessor.__init__(self)
+        super().__init__()
         self._hour = None
         self._min = None
         self._message = None

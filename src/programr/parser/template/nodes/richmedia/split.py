@@ -8,7 +8,7 @@ from programr.utils.text.text import TextUtils
 class TemplateSplitNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
 
     def resolve_to_string(self, client_context):
         str = "<split />"

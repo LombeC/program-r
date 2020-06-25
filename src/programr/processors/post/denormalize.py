@@ -6,7 +6,7 @@ DEBUG = False
 class DenormalizePostProcessor(PostProcessor):
 
     def __init__(self):
-        PostProcessor.__init__(self)
+        super().__init__()
 
     def process(self, context, word_string):
         denormalized = context.brain.denormals.denormalise_string(word_string)

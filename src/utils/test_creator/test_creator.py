@@ -8,7 +8,7 @@ from programr.clients.events.console.config import ConsoleConfiguration
 class TestCreatorBotClient(BotClient):
 
     def __init__(self):
-        BotClient.__init__(self, "TestCreator")
+        super().__init__("TestCreator")
 
     @property
     def test_dir(self):

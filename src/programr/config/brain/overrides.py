@@ -6,7 +6,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainOverridesConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "overrides")
+        super().__init__("overrides")
         self._allow_system_aiml = False
         self._allow_learn_aiml = False
         self._allow_learnf_aiml = False

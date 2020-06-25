@@ -8,7 +8,7 @@ from programr.utils.text.text import TextUtils
 class TemplateListNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
         self._items = []
 
     def resolve_list_items(self, client_context):

@@ -14,7 +14,7 @@ class TemplateConditionVariable(TemplateNode):
     BOT = 3
 
     def __init__(self, name=None, value=None, var_type=GLOBAL, loop=False):
-        TemplateNode.__init__(self)
+        super().__init__()
         self._name = name
         self._value = value
         self._var_type = var_type
@@ -44,7 +44,7 @@ class TemplateConditionVariable(TemplateNode):
 class TemplateConditionListItemNode(TemplateConditionVariable):
 
     def __init__(self, name=None, value=None, var_type=TemplateConditionVariable.GLOBAL, loop=False):
-        TemplateConditionVariable.__init__(self, name, value, var_type, loop)
+        super().__init__(name, value, var_type, loop)
 
     def is_default(self):
         return bool(self.value is None)
@@ -97,7 +97,7 @@ class TemplateConditionNode(TemplateConditionVariable):
     MULTIPLE = 3
 
     def __init__(self, name=None, value=None, var_type=TemplateConditionVariable.GLOBAL, loop=False, condition_type=BLOCK):
-        TemplateConditionVariable.__init__(self, name, value, var_type, loop)
+        super().__init__(name, value, var_type, loop)
         self._condition_type = condition_type
 
     def get_default(self):

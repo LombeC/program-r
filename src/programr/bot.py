@@ -91,7 +91,6 @@ class Bot(object):
 
         self._conversations = {}
         self._conversation_storage = None
-        self._corenlp = None
 
         self._facial_expression_recognition = FacialExpressionRecognition()
 
@@ -116,10 +115,6 @@ class Bot(object):
     @property
     def configuration(self):
         return self._configuration
-
-    @property
-    def corenlp(self):
-        return self._corenlp
 
     @property
     def facial_expression_recognition(self):

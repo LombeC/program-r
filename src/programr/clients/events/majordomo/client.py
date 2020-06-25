@@ -12,7 +12,7 @@ class MajorDomoBotClient(EventBotClient):
     def __init__(self, argument_parser=None):
         self.running = False
         self.service = None
-        EventBotClient.__init__(self, "majordomo", argument_parser)
+        super().__init__("majordomo", argument_parser)
 
     def get_description(self):
         return 'ProgramR AIML2.0 MajorDomo Client'

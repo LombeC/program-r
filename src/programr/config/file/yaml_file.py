@@ -7,7 +7,7 @@ from programr.config.programr import ProgramrConfiguration
 class YamlConfigurationFile(BaseConfigurationFile):
 
     def __init__(self):
-        BaseConfigurationFile.__init__(self)
+        super().__init__()
         self.yaml_data = None
 
     def load_from_text(self, text, client_configuration, bot_root):

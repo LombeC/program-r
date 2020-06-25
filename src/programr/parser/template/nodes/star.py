@@ -5,7 +5,7 @@ from programr.parser.template.nodes.indexed import TemplateIndexedNode
 class TemplateStarNode(TemplateIndexedNode):
 
     def __init__(self, index=1):
-        TemplateIndexedNode.__init__(self, index)
+        super().__init__(index)
 
     def resolve_to_string(self, client_context):
         conversation = client_context.bot.get_conversation(client_context)

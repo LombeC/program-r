@@ -6,7 +6,7 @@ from programr.config.base import BaseConfigurationData
 class BrainSemanticSimilarityConfiguration(BaseConfigurationData):
 
     def __init__(self):
-        BaseConfigurationData.__init__(self, name="semantic_similarity")
+        super().__init__(name="semantic_similarity")
         self._method = None
 
     @property

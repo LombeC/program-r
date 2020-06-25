@@ -8,7 +8,7 @@ from programr.utils.text.text import TextUtils
 class TemplateLinkNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
         self._text = None
         self._url = None
 

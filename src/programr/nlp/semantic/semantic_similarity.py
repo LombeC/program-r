@@ -1,5 +1,3 @@
-import tensorflow as tf
-import tensorflow_hub as hub
 import numpy as np
 import time
 from programr.utils.logging.ylogger import YLogger
@@ -32,21 +30,23 @@ class SemanticSimilarity():
 class EmbeddingSemanticSimilarity(SemanticSimilarity):
 
     def __init__(self):
-        super().__init__()
-        module_url = "https://tfhub.dev/google/universal-sentence-encoder/2"
-        t1 = time.time()
-        embed = hub.Module(module_url)
-        self.similarity_input_placeholder = tf.placeholder(tf.string, shape=(None))
-        self.similarity_message_encodings = embed(self.similarity_input_placeholder)
-        self.session = tf.Session()
-        t2 = time.time()
-        self.session.run(tf.global_variables_initializer())
-        t3 = time.time()
-        self.session.run(tf.tables_initializer())
-        t4 = time.time()
-        print(t2 - t1)
-        print(t3 - t2)
-        print(t4 - t3)
+        ## todo we need to re-implement the semantic similarity with torch, tf is no longer supported in programr
+        pass
+        # super().__init__()
+        # module_url = "https://tfhub.dev/google/universal-sentence-encoder/2"
+        # t1 = time.time()
+        # embed = hub.Module(module_url)
+        # self.similarity_input_placeholder = tf.placeholder(tf.string, shape=(None))
+        # self.similarity_message_encodings = embed(self.similarity_input_placeholder)
+        # self.session = tf.Session()
+        # t2 = time.time()
+        # self.session.run(tf.global_variables_initializer())
+        # t3 = time.time()
+        # self.session.run(tf.tables_initializer())
+        # t4 = time.time()
+        # print(t2 - t1)
+        # print(t3 - t2)
+        # print(t4 - t3)
 
     def similarity_with_concepts(self, text, concepts):
         text_embedding = self.session.run(self.similarity_message_encodings,

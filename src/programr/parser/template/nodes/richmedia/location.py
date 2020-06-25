@@ -7,7 +7,7 @@ from programr.parser.exceptions import ParserException
 class TemplateLocationNode(TemplateNode):
 
     def __init__(self):
-        TemplateNode.__init__(self)
+        super().__init__()
 
     def resolve_to_string(self, client_context):
         str = "<location />"

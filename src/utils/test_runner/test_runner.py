@@ -68,7 +68,7 @@ class TestQuestion(object):
 class TestFileFileFinder(FileFinder):
 
     def __init__(self):
-        FileFinder.__init__(self)
+        super().__init__()
 
     def empty_row(self, row):
         return bool(len(row) < 2)
@@ -211,7 +211,7 @@ class TestFileFileFinder(FileFinder):
 class TestRunnerBotClient(BotClient):
 
     def __init__(self):
-        BotClient.__init__(self, "TestRunner")
+        super().__init__("TestRunner")
 
     @property
     def test_dir(self):

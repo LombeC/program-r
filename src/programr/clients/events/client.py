@@ -12,7 +12,7 @@ class EventBotClient(BotClient):
     def __init__(self, id, argument_parser=None):
         self._running = False
         self._first_time = True
-        BotClient.__init__(self, id, argument_parser=argument_parser)
+        super().__init__(id, argument_parser=argument_parser)
 
     def prior_to_run_loop(self):
         pass
