@@ -292,13 +292,15 @@ class TestRunnerBotClient(BotClient):
         for category in questions[0].keys():
             for test in questions[0][category]:
                 test.category = category
-                print("test.answers_regex: {}".format(test.answers_regex[0][1].pattern))
-                # print("test.answers_regex[0][1]: {}".format(type(test.answers_regex[0][1])))
-                pattern = test.answers_regex[0][1].pattern
-                if pattern[0:6] == "<srai>":
-                    print("SRAI tag detected!!")
-                    test.answers_regex[0][1].pattern = re.sub('<srai>', '', pattern)
-                    print("test.answers_regex after removal: {}".format(test.answers_regex[0][1]))
+                
+                # TODO: Still need way to handle srai tag
+                # print("test.answers_regex: {}".format(test.answers_regex[0][1].pattern))
+                # # print("test.answers_regex[0][1]: {}".format(type(test.answers_regex[0][1])))
+                # pattern = test.answers_regex[0][1].pattern
+                # if pattern[0:6] == "<srai>":
+                #     print("SRAI tag detected!!")
+                #     test.answers_regex[0][1].pattern = re.sub('<srai>', '', pattern)
+                #     print("test.answers_regex after removal: {}".format(test.answers_regex[0][1]))
 
                 if any((c in '$*_^#') for c in test.question):
                     try:
