@@ -375,6 +375,39 @@
   </category>
 
   <category>
+      <pattern># I PLAYED * ^</pattern>
+      <that>You ever play sports?</that>
+      <template>
+           Why do I get the feeling you were pretty good! What did you like about playing?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># I PLAYED * AND * ^</pattern>
+      <that>You ever play sports?</that>
+      <template>
+           Why do I get the feeling you were pretty good! What did you like about playing those sports?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># I PLAYED * AND * AND * ^</pattern>
+      <that>You ever play sports?</that>
+      <template>
+           Why do I get the feeling you were pretty good! What did you like about playing all those sports?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
       <pattern>_</pattern>
       <that>You ever play sports?</that>
       <template>
@@ -390,6 +423,28 @@
       <that>What did you like about playing?</that>
       <template>
            No doubt those are some good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>What did you like about playing those sports?</that>
+      <template>
+           No doubt those are good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>What did you like about playing all those sports?</that>
+      <template>
+           No doubt those are good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
           <oob>
               <robot></robot>
           </oob>

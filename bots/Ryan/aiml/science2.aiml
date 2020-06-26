@@ -8,8 +8,8 @@
         <pattern># OUTER SPACE ^</pattern>
         <that>Which would you prefer to continue chatting about, outer space or technology?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
           <set name="most recent dialogue question">Do you believe that there is life on other planets?</set>
-          <think><set name="topic">science 2</set></think>
             <oob>
                 <robot></robot>
             </oob>
@@ -20,16 +20,13 @@
         <pattern># SPACE ^</pattern>
         <that>Which would you prefer to continue chatting about, outer space or technology?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
           <set name="most recent dialogue question">Do you believe that there is life on other planets?</set>
-          <think><set name="topic">science 2</set></think>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
-    </topic>
-
-    <topic name="science 2">
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
@@ -47,6 +44,7 @@
         <that>Do you believe that there is life on other planets?</that>
         <template>
             You seem like you have a healthy dose of skepticism!
+            Does it pay to be skeptical rather than believing everything you hear?
             <oob>
                 <robot></robot>
             </oob>
@@ -58,6 +56,7 @@
         <that>Do you believe that there is life on other planets?</that>
         <template>
             You seem like you have a healthy dose of skepticism!
+            Does it pay to be skeptical rather than believing everything you hear?
             <oob>
                 <robot></robot>
             </oob>
@@ -68,18 +67,7 @@
         <pattern>_</pattern>
         <that>What kind of life forms do you think could be out there?</that>
         <template>
-            Very interesing! Well then, let's see what you think about this one. <set name="most recent dialogue question">In 2019 the US Navy spotted an Unidentifiable Flying Object. Want to watch the video?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>You seem like you have a healthy dose of skepticism!</that>
-        <template>
-            Does it pay to be skeptical rather than believing everything you hear?
+            Very interesing! Well then, let's see what you think about this one. <set name="most recent dialogue question">In 2019 the US Navy spotted an Unidentifiable Flying Object. Want to watch a video?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -147,7 +135,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you think it looks like a flying saucer?</that>
         <template>
-            It kind of has that look, doesn't it? But who knows. <set name="most recent dialogue question">What do you think of space exploration?</set>
+            It kind of has that look, doesn't it? But what do I know! <set name="most recent dialogue question">What do you think of space exploration?</set>
             <oob>
                 <robot><video>
                         <filename>UFO.mp4</filename>

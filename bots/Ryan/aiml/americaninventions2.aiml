@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <category>
-        <pattern># Food ^</pattern>
-        <that>Do you want to talk about technology, the moon landing, or food?</that>
-        <template>
-            <think><set name="topic">foodinventions</set></think>
 
-            How do you feel about chocolate chip cookies?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+<topic name="inventions">
 
-    <topic name="foodinventions">
+  <category>
+      <pattern># Food inventions ^</pattern>
+      <that>Do you want to talk about food inventions or the moon landing?</that>
+      <template>
+          <think><set name="dialogue">inventions</set></think>
+          I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># Food ^</pattern>
+      <that>Do you want to talk about food inventions or the moon landing?</that>
+      <template>
+        <think><set name="dialogue">inventions</set></think>
+          I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+      <category>
+          <pattern>_</pattern>
+          <that>Cookies. </that>
+          <template>
+              One of the greatest inventions without which man could not live! <set name="most recent dialogue question">How do you feel about chocolate chip cookies?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
         <category>
             <pattern>_</pattern>
             <that>HOW DO YOU FEEL ABOUT CHOCOLATE CHIP COOKIES?</that>
@@ -21,38 +45,55 @@
                 <think><set name="data"><star/></set></think>
 
                 <condition name="getsentiment">
-                    <li value="verypositive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                    <li value="verypositive">I don't even know why I asked! Everyone loves chocolate chip cookies! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="positive">I don't even know why I asked! Everyone loves chocolate chip cookies! Do you know the story of how the chocolate chip cookie came to be?<oob>
+                    <li value="positive">I don't even know why I asked! Everyone loves chocolate chip cookies! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="neutral">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                    <li value="neutral"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="negative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                    <li value="negative"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="verynegative">Do you know the story of how the chocolate chip cookie came to be?<oob>
+                    <li value="verynegative"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li></condition>
             </template>
         </category>
 
         <category>
-            <pattern>_</pattern>
+            <pattern># <set>YES</set> ^</pattern>
             <that>Do you know the story of how the chocolate chip cookie came to be?</that>
             <template>
-                Would you like to learn? I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?
+                <set name="most recent dialogue question">I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</set>
                 <oob>
                     <robot>
-                        <options>
-                            <option>
-                                YES</option>
+                    </robot>
+                </oob>
+            </template>
+        </category>
 
-                            <option>
-                                NO</option>
-                        </options>
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you know the story of how the chocolate chip cookie came to be?</that>
+            <template>
+                <set name="most recent dialogue question">I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you know the story of how the chocolate chip cookie came to be?</that>
+            <template>
+                <set name="most recent dialogue question">I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</set>
+                <oob>
+                    <robot>
                     </robot>
                 </oob>
             </template>
@@ -62,7 +103,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</that>
             <template>
-                Do you like to bake?
+                <set name="most recent dialogue question">Do you like to bake?</set>
                 <oob>
                     <robot>
                         <video>
@@ -77,7 +118,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you like to bake?</that>
             <template>
-                What do you like to bake?
+                <set name="most recent dialogue question">What do you like to bake?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -88,7 +129,7 @@
             <pattern>_</pattern>
             <that>What do you like to bake?</that>
             <template>
-                Sounds delicious! Do you like popcorn?
+                Sounds delicious! <set name="most recent dialogue question">Do you like popcorn?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -99,7 +140,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you like to bake?</that>
             <template>
-                No biggie. Do you like popcorn?
+                No biggie. <set name="most recent dialogue question">Do you like popcorn?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -110,7 +151,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>I found a video about Ruth Graves Wakefield, the chocolate chip cookie's inventor, should we watch it?</that>
             <template>
-                No biggie. Do you like to bake?
+                No biggie. <set name="most recent dialogue question">Do you like to bake?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -121,7 +162,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you like popcorn?</that>
             <template>
-                Everyone has their own tastes! My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
+                Everyone has their own tastes! My favorite thing is to eat popcorn and watch movies. <set name="most recent dialogue question">What do you say we talk about movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -132,7 +173,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU LIKE POPCORN?</that>
             <template>
-                My favorite thing is to eat popcorn and watch movies. What do you say we talk about movies?
+                My favorite thing is to eat popcorn and watch movies. <set name="most recent dialogue question">What do you say we talk about movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+  <topic name="inventions">
+
     <category>
         <pattern># Moon landing ^</pattern>
-        <that>Do you want to talk about technology, the moon landing, or food?</that>
+        <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
-            In my mind, one of the greatest human accomplishments was the moon landing.
+          <think><set name="dialogue">inventions</set></think>
+          Some people think that the moon landing was faked. I just don't know about that,
+                                what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -13,9 +18,11 @@
 
     <category>
         <pattern># Moon ^</pattern>
-        <that>Do you want to talk about technology, the moon landing, or food?</that>
+        <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
-            In my mind, one of the greatest human accomplishments was the moon landing.
+          <think><set name="dialogue">inventions</set></think>
+          Some people think that the moon landing was faked. I just don't know about that,
+                                what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -23,27 +30,47 @@
     </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>In my mind, one of the greatest human accomplishments was the moon landing.</that>
+        <pattern># None ^</pattern>
+        <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
-            <think><set name="topic">moonlanding</set></think>
-
-            Some people think that the moon landing was faked. I just don't know about that,
-                                  what do you think? Did the moon landing actually happen?
+            No worries! <set name="most recent dialogue question">What would you like to chat about next?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <topic name="moonlanding">
+    <category>
+        <pattern># Neither ^</pattern>
+        <that>Do you want to talk about food inventions or the moon landing?</that>
+        <template>
+            No worries! <set name="most recent dialogue question">What would you like to chat about next?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you want to talk about food inventions or the moon landing?</that>
+        <template>
+            No worries! <set name="most recent dialogue question">What would you like to chat about next?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
         <category>
             <pattern># <set>Yes</set> ^</pattern>
             <that>Did the moon landing actually happen?</that>
             <template>
-                I see your point! What do you think it would be like to step foot on the moon?
+                I see your point, of course! <set name="most recent dialogue question">Here's that infamous photo everyone always talks about! I'm guessing you've seen it before?</set>
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                    <filename>Moon_Landing.jpg</filename>
+                </image></robot>
                 </oob>
             </template>
         </category>
@@ -52,9 +79,11 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Did the moon landing actually happen?</that>
             <template>
-                I can see your point! What do you think it would be like to step foot on the moon?
+                I see your point, of course! <set name="most recent dialogue question">Here's that infamous photo everyone always talks about! I'm guessing you've seen it before?</set>
                 <oob>
-                    <robot></robot>
+                    <robot><image>
+                    <filename>Moon_Landing.jpg</filename>
+                </image></robot>
                 </oob>
             </template>
         </category>
@@ -63,7 +92,45 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Did the moon landing actually happen?</that>
             <template>
-                I can see your point! What do you think it would be like to step foot on the moon?
+                <set name="most recent dialogue question">Here's that infamous photo everyone always talks about! I'm guessing you've seen it before?</set>
+                <oob>
+                    <robot><image>
+                    <filename>Moon_Landing.jpg</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>I'm guessing you've seen it before?</that>
+            <template>
+                It seems people have spent ages looking at this photo.
+                <set name="most recent dialogue question">What do you think it would be like to step foot on the moon?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>I'm guessing you've seen it before?</that>
+            <template>
+              Really? It seems people have spent ages looking at this photo.
+              <set name="most recent dialogue question">What do you think it would be like to step foot on the moon?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>I'm guessing you've seen it before?</that>
+            <template>
+              Really? It seems people have spent ages looking at this photo.
+              <set name="most recent dialogue question">What do you think it would be like to step foot on the moon?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -74,46 +141,66 @@
             <pattern>_</pattern>
             <that>What do you think it would be like to step foot on the moon?</that>
             <template>
-                Pretty crazy, right? The longest anyone has lived in space is 747 days.
-                                        Do you think you would like to be in space that long?
+                I've never thought about it before just now ha ha. <set name="most recent dialogue question">Apparently the longest anyone has lived in space is 747 days.
+                                        Do you think you could do it?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
+
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
-        <that>Do you think you would like to be in space that long?</that>
+        <that>Do you think you could do it?</that>
         <template>
-            Wow! That's very impressive. What do you think of space exploration?
+            You seem ready for it! Beam me up, Scotty!
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Do you think you would like to be in space that long?</that>
+        <that>Do you think you could do it?</that>
         <template>
-            Me either! What do you think of space exploration?
+            I don't think I could! I like the creature comforts too much. <set name="most recent dialogue question">What do you think of space exploration?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Do you think you would like to be in space that long?</that>
+        <that>Do you think you could do it?</that>
         <template>
-            I don't think I could! What do you think of space exploration?
+            I don't think I could! I like the creature comforts too much. <set name="most recent dialogue question">What do you think of space exploration?</set>
+            <oob>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Beam me up, Scotty!</that>
+        <template>
+            <set name="most recent dialogue question">What do you think of space exploration?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <!-- REDIRECT TO SCIENCE2 DIALOGUE --></aiml>
+</topic>
+    <!-- REDIRECT TO SCIENCE2 DIALOGUE -->
+
+  </aiml>

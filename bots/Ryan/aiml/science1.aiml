@@ -172,7 +172,7 @@
         <pattern># <set>no</set> ^</pattern>
         <that>Does that ever happen to you?</that>
         <template>
-          <set name="most recent dialogue question">What else would you say you're interested in learning about, other than science?</set>
+          <set name="most recent dialogue question">What else would you say you're interested in learning about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -183,7 +183,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Does that ever happen to you?</that>
         <template>
-          <set name="most recent dialogue question">What else would you say you're interested in learning about, other than science?</set>
+          <set name="most recent dialogue question">What else would you say you're interested in learning about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -194,7 +194,7 @@
         <pattern>_</pattern>
         <that>What else would you say you're interested in learning about?</that>
         <template>
-          I'll remember that! You seem really smart. I'm no rocket scientist, but learning about technology is something that's always interested me.
+          You seem really smart. I'm no rocket scientist, but learning about technology is something that's always interested me.
           <set name="most recent dialogue question">Do you think technology enhances our lives for the better?</set>
             <oob>
                 <robot></robot>
@@ -254,7 +254,7 @@
         <pattern>_</pattern>
         <that>Why do you say that?</that>
         <template>
-          Well I think I tend to agree with you there.
+          Well I tend to agree with you there.
           <set name="most recent dialogue question">What are your thoughts on smart phones and social media? Do you think people spend too much time on their phones?</set>
             <oob>
                 <robot></robot>
@@ -266,8 +266,8 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>Do you think people spend too much time on their phones?</that>
         <template>
-            <set name="most recent dialogue question">Sometimes it seems like people spend so much time on their phone that they're missing out on real life. But it's a great way to keep in touch with family and friends.
-            Don't you think?</set>
+            <set name="most recent dialogue question">Sometimes it seems like people spend so much time on their phones that they're missing out on real life. But it's a great way to keep in touch with family and friends,
+            don't you think?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -278,7 +278,7 @@
         <pattern># <set>no</set> ^</pattern>
         <that>Do you think people spend too much time on their phones?</that>
         <template>
-          You're right. And it's a great way to keep in touch with family and friends. Don't you think?
+          It's a great way to keep in touch with family and friends, don't you think?
             <oob>
                 <robot></robot>
             </oob>
@@ -289,8 +289,8 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you think people spend too much time on their phones?</that>
         <template>
-          Sometimes it seems like people spend so much time on their phone they're missing out on real life. But it's a great way to keep in touch with family and friends.
-          Don't you think?
+          Sometimes it seems like people spend so much time on their phones they're missing out on real life. But it's a great way to keep in touch with family and friends,
+          don't you think?
             <oob>
                 <robot></robot>
             </oob>
@@ -299,9 +299,10 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
-        <that>Don't you think?</that>
+        <that>But it's a great way to keep in touch with family and friends,
+        don't you think?</that>
         <template>
-            We are on the same page, per usual!
+            We are on the same page!
             <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
             <oob>
                 <robot></robot>
@@ -311,7 +312,8 @@
 
     <category>
         <pattern># <set>no</set> ^</pattern>
-        <that>Don't you think?</that>
+        <that>But it's a great way to keep in touch with family and friends,
+        don't you think?</that>
         <template>
           I definitely hear what you're saying.
           <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
@@ -323,7 +325,47 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Don't you think?</that>
+        <that>But it's a great way to keep in touch with family and friends,
+        don't you think?</that>
+        <template>
+          I definitely hear what you're saying.
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>It's a great way to keep in touch with family and friends,
+        don't you think?</that>
+        <template>
+            We are on the same page!
+            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>It's a great way to keep in touch with family and friends,
+        don't you think?</that>
+        <template>
+          I definitely hear what you're saying.
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>It's a great way to keep in touch with family and friends,
+        don't you think?</that>
         <template>
           I definitely hear what you're saying.
           <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>

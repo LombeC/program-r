@@ -170,6 +170,45 @@
     </category>
 
     <category>
+        <pattern>HEY WHAT IS UP</pattern>
+        <template><random>
+            <li>Just living the dream as usual! How about yourself?</li>
+            <li>I'm just thinking about what I'd like to do today. How are you?</li>
+            <li>Just the usual over here! What about yourself?</li>
+            <li>Doing great over here! What about yourself?</li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY WHAT S UP</pattern>
+        <template><random>
+            <li>Just living the dream as usual! How about yourself?</li>
+            <li>I'm just thinking about what I'd like to do today. How are you?</li>
+            <li>Just the usual over here! What about yourself?</li>
+            <li>Doing great over here! What about yourself?</li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY WHAT * UP</pattern>
+        <template><random>
+            <li>Just living the dream as usual! How about yourself?</li>
+            <li>I'm just thinking about what I'd like to do today. How are you?</li>
+            <li>Just the usual over here! What about yourself?</li>
+            <li>Doing great over here! What about yourself?</li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>HOW ARE YOU DOING</pattern>
         <template>
             <random>
@@ -773,6 +812,17 @@
     </category>
 
     <category>
+        <pattern>HEY THERE *</pattern>
+        <template><random>
+            <li>Hello friend! How's it going over there?</li>
+            <li>Hi there! How's it going today?</li>
+            <li>Hey friend! What's going on today?</li></random><oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>GOOD MORNING</pattern>
         <template>
             <random>
@@ -817,8 +867,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -834,8 +884,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -851,8 +901,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -874,8 +924,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -891,8 +941,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -908,8 +958,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -925,8 +975,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -942,8 +992,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -959,8 +1009,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -976,8 +1026,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>
@@ -993,8 +1043,8 @@
 
             <condition name="getsentiment">
                 <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">Glad to hear it. What would you like to chat about?</li>
-                <li value="negative">I hear you! What would you like to chat about?</li></condition>
+                <li value="neutral">I hear you. What would you like to chat about?</li>
+                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
             <oob>
                 <robot></robot>

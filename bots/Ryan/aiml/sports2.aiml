@@ -6,6 +6,7 @@
         <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
         <template>
             <think><set name="topic">baseball</set></think>
+            <think><set name="dialogue">sports</set></think>
             <set name="most recent dialogue question">Have you ever played baseball?</set>
                     <oob><robot></robot>
                 </oob></template>
@@ -17,7 +18,7 @@
           <pattern># <set>Yes</set> ^</pattern>
           <that>Have you ever played baseball?</that>
           <template>
-              You must have been pretty good! I make for a really good water boy, ha ha. <set name="most recent dialogue question">Did you start playing when you were young?</set>
+              You must have been good! I make for a really good water boy, ha ha. <set name="most recent dialogue question">Did you start playing when you were young?</set>
               <oob>
                   <robot>
                   </robot>
@@ -42,7 +43,7 @@
           <pattern>_</pattern>
           <that>What's your favorite memory of playing ball?</that>
           <template>
-              Amazing. That's what I love about baseball. It's so nostalgic. <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
+              That's what I love about baseball! It's so nostalgic. <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
               <oob>
                   <robot><image>
                     <filename>Baseball_Diamond.jpg</filename>
@@ -467,11 +468,24 @@
         </category>
 
         <category>
+            <pattern># BABE RUTH ^</pattern>
+            <that>Wouldn't it be blasphemous to not mention the Great Bambino?</that>
+            <template>
+                <set name="most recent dialogue question">Do you remember when he called out his infamous home run against the Chicago Cubs?</set>
+                <oob>
+                    <robot><image>
+                    <filename>Babe_Ruth.jpg</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                Who could forget, right? Talk about nostalgia!
-                <set name="most recent dialogue question">Can I show you a video about the National Ballpark Museum in Denver?</set>
+                Who could forget, right? Now there's a guy I would want to sit down and chat with.
+                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -482,8 +496,8 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                How can you forget a legendary moment like that! Talk about nostalgia.
-                <set name="most recent dialogue question">Can I show you a video about the National Ballpark Museum in Denver?</set>
+                How can you forget a legendary moment like that! Now there's a guy I would want to sit down and chat with.
+                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -494,8 +508,8 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                How can you forget a legendary moment like that! Talk about nostalgia.
-                <set name="most recent dialogue question">Can I show you a video about the National Ballpark Museum in Denver?</set>
+                How can you forget a legendary moment like that! Now there's a guy I would want to sit down and chat with.
+                I'm sure he'd probably be smoking a cigar, or five!
                 <oob>
                     <robot></robot>
                 </oob>
@@ -503,23 +517,10 @@
         </category>
 
         <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Can I show you a video about the National Ballpark Museum in Denver?</that>
+            <pattern>_</pattern>
+            <that>I'm sure he'd probably be smoking a cigar, or five!</that>
             <template>
-                Neat, right? I wish I could go there! Maybe you could take me on a field trip. Would you like to keep talking about sports?
-                <oob>
-                    <robot><video>
-                            <filename>National_Ballpark_Museum.mp4</filename>
-                        </video></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Can I show you a video about the National Ballpark Museum?</that>
-            <template>
-                No sweat! Would you like to keep talking about sports?
+                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -527,10 +528,10 @@
         </category>
 
         <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Would you like to keep talking about sports?</that>
+            <pattern>_</pattern>
+            <that>Who do you think you'd want to meet, if you could?</that>
             <template>
-                Do you want to talk about basketball, baseball, football, hockey or the olympics?
+                I mean I'm with you there! Who wouldn't! But honestly I can say that I am very content just chatting with you.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -538,10 +539,22 @@
         </category>
 
         <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Would you like to keep talking about sports?</that>
+            <pattern>_</pattern>
+            <that>Who do you think you'd want to meet, if you could?</that>
             <template>
-                Sure! What should we talk about next?
+                <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Who do you think you'd want to meet, if you could?</that>
+            <template>
+                Honestly I can say that I am very content just chatting with you!
+                <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -550,4 +563,4 @@
 
 
       </topic>
-</aiml>
+        </aiml>

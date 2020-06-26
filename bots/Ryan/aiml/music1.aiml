@@ -64,7 +64,7 @@
         <pattern>_</pattern>
         <that>I wish you could play me a little ditty.</that>
         <template>
-            I don't know what life would be like without music! <set name="most recent dialogue question">Do you like listening to music while cooking dinner?</set>
+            <set name="most recent dialogue question">Do you like listening to music while cooking dinner?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -97,7 +97,7 @@
         <pattern>_</pattern>
         <that>What kind of music do you think is best for a romantic dinner?</that>
         <template>
-            Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
+            For me, just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
             <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
             <oob>
                 <robot></robot>
@@ -198,7 +198,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -226,7 +226,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -254,7 +254,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -283,7 +283,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -312,7 +312,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -341,7 +341,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -370,7 +370,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -399,7 +399,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -428,7 +428,7 @@
                         </video>
                     </robot>
                 </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
+                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
                         <video>
                             <filename>bingCrosby.mp3</filename>
@@ -437,36 +437,7 @@
                 </oob></li></random></template>
     </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>What did you think of the crooner clip?</that>
-        <template>
-          <think><set name="data"><star/></set></think>
 
-          <condition name="getsentiment">
-              <li value="verypositive">Awesome! It's great to listen to music with you.<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="positive">Awesome! It's great to listen to music with you. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="negative">I totally understand! We'll skip it next time. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="verynegative">I totally understand! We'll skip it next time. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="neutral">For sure! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              </condition>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>String Instrument Set</set> ^</pattern>
-        <that>What instrument did you play?</that>
-        <template>
-            No way! I have always loved <star />!
-            <set name="most recent dialogue question">Did you learn to play as a child?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
 
     </topic>
 </aiml>

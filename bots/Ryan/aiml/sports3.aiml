@@ -5,6 +5,7 @@
         <that>Do you want to talk about basketball, baseball, football, hockey or the olympics?</that>
         <template>
             <think><set name="topic">football</set></think>
+            <think><set name="dialogue">sports</set></think>
             Right on!
             <set name="most recent dialogue question">Football fans know how to have the most fun, don't you think?</set>
             <oob>
@@ -19,8 +20,8 @@
           <pattern># <set>Yes</set> ^</pattern>
           <that>Football fans know how to have the most fun, don't you think?</that>
           <template>
-              Nothing quite like tailgating or cheering on your favorite team from the stands!
-              Really gets your blood pumping!
+              Nothing quite like tailgating or cheering from the stands!
+              Really gets your blood pumping, know what I'm saying?
               <set name="most recent dialogue question">What's your favorite professional football team?</set>
               <oob>
                   <robot></robot>
@@ -32,8 +33,8 @@
           <pattern># <set>No</set> ^</pattern>
           <that>Football fans know how to have the most fun, don't you think?</that>
           <template>
-              Well, I think there's nothing quite like tailgating or cheering on your favorite team from the stands!
-              Really gets your blood pumping!
+              Well, I think there's nothing quite like tailgating or cheering from the stands!
+              Really gets your blood pumping, know what I'm saying?
               <set name="most recent dialogue question">What's your favorite professional football team?</set>
               <oob>
                   <robot></robot>
@@ -45,8 +46,8 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Football fans know how to have the most fun, don't you think?</that>
           <template>
-              Well, I think there's nothing quite like tailgating or cheering on your favorite team from the stands!
-              Really gets your blood pumping!
+              Well, I think there's nothing quite like tailgating or cheering from the stands!
+              Really gets your blood pumping, know what I'm saying?
               <set name="most recent dialogue question">What's your favorite professional football team?</set>
               <oob>
                   <robot></robot>

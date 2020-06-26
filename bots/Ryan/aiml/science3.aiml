@@ -7,8 +7,8 @@
       <pattern># MARVELS ^</pattern>
       <that>Which would you prefer to continue chatting about, outer space or scientific marvels?</that>
       <template>
+        <think><set name="dialogue">science</set></think>
         <set name="most recent dialogue question">Do you remember Dolly, the cloned sheep?</set>
-        <think><set name="topic">science 3</set></think>
           <oob>
               <robot></robot>
           </oob>
@@ -19,8 +19,8 @@
       <pattern># SCIENTIFIC MARVELS ^</pattern>
       <that>Which would you prefer to continue chatting about, outer space or scientific marvels?</that>
       <template>
+        <think><set name="dialogue">science</set></think>
         <set name="most recent dialogue question">Do you remember Dolly, the cloned sheep?</set>
-        <think><set name="topic">science 3</set></think>
           <oob>
               <robot></robot>
           </oob>
@@ -105,7 +105,7 @@
       <pattern># <set>YES</set> ^</pattern>
       <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
       <template>
-          My goodness they spent a lot of money! Do you think it was still worth it?
+          My goodness they spent a lot of money! <set name="most recent dialogue question">Do you think it was still worth it?</set>
           <oob>
               <robot>
                   <video>
@@ -120,7 +120,7 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
       <template>
-          That's fair! Those folks sure spent a lot of money cloning their dog! Do you think it was still worth it?
+          That's fair! Those folks sure spent a lot of money cloning their dog! <set name="most recent dialogue question">Do you think it was still worth it?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -142,7 +142,7 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
-          I can understand that. Would you like to continue talking?
+          I can understand that. <set name="most recent dialogue question">Would you like to continue talking?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -153,7 +153,7 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
-          I can understand that. Would you like to continue talking?
+          I can understand that. <set name="most recent dialogue question">Would you like to continue talking?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -175,7 +175,7 @@
       <pattern>_</pattern>
       <that>What do you love most about your pets?</that>
       <template>
-          That's beautiful. I really wish I could get a pet, it would definitely keep me occupied! Would you like to continue talking?
+          That's beautiful. I really wish I could get a pet, it would definitely keep me occupied! <set name="most recent dialogue question">Would you like to continue talking?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -186,7 +186,7 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>What do you say we talk about a scientific discovery a little closer to earth?</that>
       <template>
-          Would you like to continue talking?
+          <set name="most recent dialogue question">Would you like to continue talking?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -197,7 +197,7 @@
       <pattern># <set>YES</set> ^</pattern>
       <that>Would you like to continue talking?</that>
       <template>
-          Great! What should we talk about now?
+          Great! <set name="most recent dialogue question">What should we talk about now?</set>
           <oob>
               <robot></robot>
           </oob>

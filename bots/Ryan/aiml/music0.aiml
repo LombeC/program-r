@@ -57,14 +57,14 @@
     <category>
         <pattern>MY FAVORITE BAND IS *</pattern>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>MY FAVORITE BAND S *</pattern>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -73,7 +73,7 @@
         <pattern>MY FAVORITE BAND IS *</pattern>
         <that>What's your favorite band?</that>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -81,7 +81,7 @@
         <pattern>MY FAVORITE BAND S *</pattern>
         <that>What's your favorite band?</that>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -90,7 +90,7 @@
         <pattern>MY FAVORITE IS *</pattern>
         <that>What's your favorite band?</that>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -98,7 +98,7 @@
         <pattern>MY FAVORITE S *</pattern>
         <that>What's your favorite band?</that>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -107,7 +107,7 @@
         <pattern>*</pattern>
         <that>What's your favorite band?</that>
         <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
-        Only kidding!
+
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -119,7 +119,7 @@
         <template>
             <think><set name="topic">music</set><set name="dialogue">music</set></think>
 
-            I really love music! I'm the best robot to karaoke with. Maybe we'd make a good duo!
+            I'm the best robot to karaoke with. Maybe we'd make a good duo!
             <oob>
                 <robot>
                 </robot>
@@ -252,7 +252,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>Only kidding!</that>
+        <that>What don't I know about you at this point?</that>
         <template>
           Don't worry, I won't ask about your deepest darkest secrets!
             <oob>
@@ -266,7 +266,7 @@
         <pattern>_</pattern>
         <that>Don't worry, I won't ask about your deepest darkest secrets! </that>
         <template>
-          I do have another question though, seeing as how we both like music! <set name="most recent dialogue question">Do you like going to concerts?</set>
+          I do have another question though, seeing as how we both love music! <set name="most recent dialogue question">Do you like going to concerts?</set>
             <oob>
                 <robot>
                 </robot>
@@ -844,7 +844,7 @@
                   <li value="positive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   <li value="negative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   <li value="verynegative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="neutral">Right on. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="neutral">I feel you. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   </condition>
                 <oob>
                     <robot></robot>
@@ -923,7 +923,7 @@
             <pattern>_</pattern>
             <that>What kind of music do you think is best for a romantic dinner?</that>
             <template>
-                Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
+                For me, just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
                 <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
                 <oob>
                     <robot></robot>
