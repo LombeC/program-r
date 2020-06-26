@@ -1,6 +1,10 @@
 import numpy as np
 import time
+import torch
+
 from programr.utils.logging.ylogger import YLogger
+
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline
 
 
 class SemanticSimilarity():
@@ -70,6 +74,14 @@ class EmbeddingSemanticSimilarity(SemanticSimilarity):
 
         return similarity_score
 
+class PyTorchSemanticSimilarity(SemanticSimilarity):
+    def __init__(self):
+        super().__init__()
+        self._semantic_analysis_config = semantic_analysis_config
+        model_dir = semantic_analysis_config.model_dir
+        tokenizer = DistilBertTokenizer.from_pretrained(model_dir)
+        model = DistilBertForSequenceClassification.from_pretrained(model_dir)
+        self.similarity_classifier = DefaultSemanticSimilarity()
 
 class DefaultSemanticSimilarity(SemanticSimilarity):
 
