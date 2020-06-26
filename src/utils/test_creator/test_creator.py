@@ -79,52 +79,55 @@ def parse_lis(elt):
     bot_tail = None
     get_tail = None
     for li in lis:
-        print("li: {}".format(type(li)))
+        # print("li: {}".format(type(li)))
         li_string = ""
         for elem in li.iter():
-            print("elem: {} - {}".format(elem.tag, type(elem)))
+            # print("elem: {} - {}".format(elem.tag, type(elem)))
             
             if elem.tag == "bot":
-                print("Found bot tag!")
+                # print("Found bot tag!")
                 li_string += " " + bot_node.get_bot_variable(client_context, elem.attrib['name'])
-                bot_tail = elt.tail.strip()
+                if elem.tail is not None:
+                    bot_tail = elt.tail.strip()
 
             elif elem.tag == "get":
-                print("Found get tag!")
+                # print("Found get tag!")
                 li_string += " " + get_node.get_property_value(client_context, False, elem.attrib['name'])
-                get_tail = elem.tail.strip()
+                if elem.tail is not None:
+                    get_tail = elem.tail.strip()
 
         if li.text is not None:
             random_string += li.text.strip()
-            print("random_string with added li.text: {}".format(random_string))
+            # print("random_string with added li.text: {}".format(random_string))
             if bot_tail is not None and get_tail is not None:
-                print("Both are not none")
+                # print("Both are not none")
                 random_string += li_string + bot_tail.strip() + get_tail.strip()
-                print("random_string: {}".format(random_string))
+                # print("random_string: {}".format(random_string))
             
             elif bot_tail is not None and get_tail is None:
-                print("bot is not none")
-                print("bot_tail: {}".format(bot_tail))
-                print("li_string: {}".format(li_string))
-                print("random_string: {}".format(random_string))
+                # print("bot is not none")
+                # print("bot_tail: {}".format(bot_tail))
+                # print("li_string: {}".format(li_string))
+                # print("random_string: {}".format(random_string))
                 random_string += li_string + bot_tail.strip()
-                print("random_string: {}".format(random_string))
+                # print("random_string: {}".format(random_string))
 
             elif bot_tail is None and get_tail is not None:
-                print("get is not none")
+                # print("get is not none")
                 random_string += li_string + get_tail.strip()
             
             else:
-                print("in else, do nothing...")
+                pass
+                # print("in else, do nothing...")
                 # random_string += li.text.strip()
                 # print("random_string: {}".format(random_string))
 
         random_string += "; "
                 
-    print("Cleaning string")
+    # print("Cleaning string")
     random_string = random_string[:-2]
     random_string += "]"
-    print("random_string: {}".format(random_string))
+    # print("random_string: {}".format(random_string))
 
     return random_string
 
@@ -137,148 +140,176 @@ def check_for_think(template):
     else:
         # template_list = list(template.iter())
         # print("template before removing think: {}".format(template_list))
-        text = think.tail
+        text = think.tail.strip()
         template.remove(think)
-        template.text += text
+        if text is not None:
+            if template.text is None:
+                template.text = text
+            else:
+                template.text += text
         # template_list = list(template.iter())
         # print("template after removing think: {}".format(template_list))
         return template
 
 
-def parse_categories(categories, output_file, bot_node, get_node):
-    questions = []
-    for category in categories:
-        pattern_text = ""
-        random_exists = False
+def parse_categories(categories, output_file, bot_node, get_node, aiml_file, texts):
+    try:
+        questions = []
+        for category in categories:
+            pattern_text = ""
+            random_exists = False
 
-        pattern = category.find("pattern")
-        for elt in pattern.iter():
+            pattern = category.find("pattern")
+            for elt in pattern.iter():
 
-            if elt.tag == "pattern":
-                text = elt.text.strip().upper()
-                pattern_text += replace_wildcards(text, texts)
+                if elt.tag == "pattern":
+                    text = elt.text.strip().upper()
+                    if replace_wildcards(text, texts) is not None:
+                        pattern_text += replace_wildcards(text, texts)
 
-            elif elt.tag == "set":
-                if 'name' in elt.attrib:
-                    name = elt.attrib['name']
-                else:
-                    name = elt.text.strip()
+                elif elt.tag == "set":
+                    if 'name' in elt.attrib:
+                        name = elt.attrib['name']
+                    else:
+                        name = elt.text.strip()
 
-                if name in sets:
-                    pattern_text += sets[name]
-                else:
-                    pattern_text += "SET[%s]"%name
+                    if name in sets:
+                        pattern_text += sets[name]
+                    else:
+                        pattern_text += "SET[%s]"%name
 
-            elif elt.tag == "bot":
-                if 'name' in elt.attrib:
-                    name = elt.attrib['name']
-                else:
-                    name = elt.text.strip()
+                elif elt.tag == "bot":
+                    if 'name' in elt.attrib:
+                        name = elt.attrib['name']
+                    else:
+                        name = elt.text.strip()
 
-                if name in bots:
-                    pattern_text += bots[name]
-                else:
-                    pattern_text += "BOT[%s]" % name
-            
-            # NOTE: Is this condition needed?
-            elif elt.tag == "topic":
-                topic_cats = elt.tag.findall("category")
-                topic_questions = parse_categories(topic_cats, output_file, bot_node, get_node)
+                    if name in bots:
+                        pattern_text += bots[name]
+                    else:
+                        pattern_text += "BOT[%s]" % name
+                
+                # NOTE: Is this condition needed?
+                elif elt.tag == "topic":
+                    pass
+                    # topic_cats = elt.tag.findall("category")
+                    # topic_questions = parse_categories(topic_cats, output_file, bot_node, get_node, aiml_file)
 
-            pattern_text += " "
-
-            if elt.tail is not None and elt.tail.strip() != "":
-                text = elt.tail.strip().upper()
-                pattern_text += replace_wildcards(text, texts)
+                
                 pattern_text += " "
 
-        
-        question = '"%s",'%pattern_text.strip()
-        question = question.ljust(ljust)
+                if elt.tail is not None and elt.tail.strip() != "":
+                    text = elt.tail.strip().upper()
+                    pattern_text += replace_wildcards(text, texts)
+                    pattern_text += " "
+            
+            question = '"%s",'%pattern_text.strip()
+            question = question.ljust(ljust)
+                    
+            template = category.find('template')
+            template = check_for_think(template)
+
+            string = ""
+            tail = ""
+            for elt in template.iter(): 
+                tag = elt.tag
+                try:
+                    etl_tail = elt.tail.strip()
+                except:
+                    etl_tail = None
                 
-        template = category.find('template')
-        template = check_for_think(template)
+                if tag == "bot":
+                    string = " " + bot_node.get_bot_variable(client_context, elt.attrib['name'])
+                    if etl_tail is not None:
+                        tail += etl_tail
+                        # print("bot tail: {}".format(tail))
 
-        string = ""
-        tail = ""
-        for elt in template.iter(): 
-            tag = elt.tag
+                elif tag == "get":
+                    string = " " + get_node.get_property_value(client_context, False, elt.attrib['name'])
+                    if etl_tail is not None:
+                        tail += etl_tail
+                        # print("get tail: {}".format(tail))
+
+                elif tag == "set":
+                    if elt.text is not None:
+                        string = elt.text + " "
+                    if etl_tail is not None:
+                        tail += etl_tail
+                        # print("set tail: {}".format(tail))
+                
+                elif tag == "random":
+                    random_exists = True
+                    random_string = parse_lis(elt)
+
+                elif tag == "condition":
+                    random_exists = True
+                    random_string = parse_lis(elt)
+
+                elif tag == "think":
+                    if etl_tail is not None:
+                        tail += etl_tail
+                        # print("think tail: {}".format(tail))
+                
+                elif tag == "srai":
+                    string = "<srai>" + elt.text + "</srai>"
+                    if etl_tail is not None:
+                        tail += etl_tail
+                        # print("srai tail: {}".format(tail))
+
+
+            # if len(li) > 0:
+            #     test_line = '%s "%s"'%(question, string)
+            # else:
+            #     test_line = '%s "%s"'%(question, template.text)
+
+            # print("tail after of the loop: {}".format(tail))
             
-            if tag == "bot":
-                string = " " + bot_node.get_bot_variable(client_context, elt.attrib['name'])
-                if elt.tail is not None:
-                    tail += elt.tail.strip()
-
-            elif tag == "get":
-                string = " " + get_node.get_property_value(client_context, False, elt.attrib['name'])
-                if elt.tail is not None:
-                    tail += elt.tail.strip()
-
-            elif tag == "set":
-                print("found set tag")
-                string = elt.text + " "
-                if elt.tail is not None:
-                    tail += elt.tail.strip()
-            
-            elif tag == "random":
-                random_exists = True
-                random_string = parse_lis(elt)
-
-            elif tag == "condition":
-                random_exists = True
-                random_string = parse_lis(elt)
-
-            elif tag == "think":
-                print("found think tag")
-                if elt.tail is not None:
-                    tail += elt.tail.strip()
-            
-            elif tag == "srai":
-                string = "<srai>" + elt.text + "</srai>"
-                if elt.tail is not None:
-                    tail += elt.tail
-
-        # if len(li) > 0:
-        #     test_line = '%s "%s"'%(question, string)
-        # else:
-        #     test_line = '%s "%s"'%(question, template.text)
-        if random_exists:
-            if template.text is None:
-                print("template.text is None")
-                response = "[" + string + random_string
-                test_line = '%s "%s"'%(question, response)
-            else:
-                if tail is not None:
-                    print("there is a tail")
-                    response = template.text.strip() + "[" + string + random_string + tail
+            try:
+                template_text = template.text.strip()
+            except Exception:
+                template_text = None
+            if random_exists:
+                if template_text is None:
+                    response = "[" + string + random_string
                 else:
-                    print("tail is None")
-                    response = template.text.strip() + "[" + string + random_string
-                    print("response: {}".format(response))
-                test_line = '%s "%s"'%(question, response)
-                print("test_line: {}".format(test_line))
-        else:
-            if template.text is None:
-                print("template.text is None")
-                response = string
-                test_line = '%s "%s"'%(question, response)
+                    if tail is not None:
+                        # print("there is a tail")
+                        response = template_text + "[" + string + random_string + tail
+                    else:
+                        # print("tail is None")
+                        response = template_text + "[" + string + random_string
+                        # print("response: {}".format(response))
+                    # print("test_line: {}".format(test_line))
             else:
-                if tail is not None:
-                    print("there is a tail")
-                    response = template.text.strip() + string + tail
+                if template_text is None:
+                    if tail is not None:
+                        response = string + tail
+                    else:
+                        response = string
                 else:
-                    print("tail is None")
-                    response = template.text.strip() + string
-                    print("response: {}".format(response))
-                test_line = '%s "%s"'%(question, response)
-                print("test_line: {}".format(test_line))
-        
-        output_file.write(test_line)
-        output_file.write("\n")
+                    if tail is not None:
+                        response = template_text + string + tail
+                    else:
+                        response = template_text + string
+                        # print("response: {}".format(response))
+                    
+                    # print("test_line: {}".format(test_line))
+            
+            test_line = '%s "%s"'%(question, response)
+            output_file.write(test_line)
+            output_file.write("\n")
 
-        
-    print("completed")
-    return questions
+            
+        print("completed")
+        return questions
+
+    except Exception as e:
+            print(e)
+            print(type(e))
+            line = "failed to load file: " + aiml_file + "..." + str(e) + "\n"
+            f = open("results/failed_loads.txt", "a")
+            f.write(line)
+            f.close()
 
 if __name__ == '__main__':
 
@@ -316,12 +347,21 @@ if __name__ == '__main__':
             tree = ET.parse(aiml_file)
             aiml = tree.getroot()
             categories = aiml.findall('category')
+            # print("categories: {}".format(type(categories)))
+            
+            topic = aiml.find('topic')
+            if topic is not None:
+                topic_categories = topic.findall('category')
+            # categories += topic_categories
 
-            questions = parse_categories(categories, output_file, bot_node, get_node)
+            questions = parse_categories(categories, output_file, bot_node, get_node, aiml_file, texts)
+
+            if topic is not None:
+                questions = parse_categories(topic_categories, output_file, bot_node, get_node, aiml_file, texts)
 
         except Exception as e:
             print(e)
-            line = "failed to load file: " + aiml_file + "\n"
+            line = "failed to load file: " + aiml_file + "..." + str(e) + "\n"
             f = open("results/failed_loads.txt", "a")
             f.write(line)
             f.close()

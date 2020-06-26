@@ -62,10 +62,15 @@
             <li value="pets">My apologies! Do you want to get back to talking about pets?</li>
             <li value="Unknown">My apologies! So what should we talk about now?</li>
         </condition>
-      <oob>
-          <robot></robot>
-      </oob>
+      <oob><robot></robot></oob>
       </template>
+    </category>
+
+    <category>
+        <pattern>LET US TALK ABOUT YOU</pattern>
+        <template><set name="it"><set name="topic">Me</set></set> is my favorite subject.
+        <oob><robot></robot></oob>
+        </template>
     </category>
 
     <category>
@@ -81,6 +86,31 @@
     <category>
         <pattern>ASK ME A NEW QUESTION</pattern>
         <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
+    </category>
+
+    <topic name="music">
+        <category>
+            <pattern>_</pattern>
+            <that>Maybe we'd make a good duo! </that>
+            <template>
+                Kind of like Sonny and Cher or Captain and Tennille! <set name="most recent dialogue question">Have you ever sang karaoke before?</set>
+                <oob><robot></robot></oob>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern>YOU WILL REMEMBER WHAT</pattern>
+        <template><get name="memory"/>
+            <think>
+                <set name="it">
+                    <set name="topic">
+                        <get name="memory"/>
+                    </set>
+                </set>
+            </think>
+        <oob><robot></robot></oob>
+        </template>
     </category>
 
 </aiml>
