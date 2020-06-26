@@ -24,84 +24,22 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about inventions?</that>
         <template>
-            Do you want to talk about technology, the moon landing, or food?
+          <think><set name="dialogue">inventions</set></think>
+          <think><set name="topic">inventions</set></think>
+            <set name="most recent dialogue question">Do you believe that necessity is the mother of invention?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    <topic name="inventions">
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to talk about inventions?</that>
         <template>
-            Sure! What would you like to talk about?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># INVENTIONS ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
-        <template>
-            Do you want to talk about technology, the moon landing, or food?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># AMERICAN INVENTIONS ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
-        <template>
-            Do you want to talk about technology, the moon landing, or food?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># INVENTION ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
-        <template>
-            Do you want to talk about technology, the moon landing, or food?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># AMERICAN INVENTION ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
-        <template>
-            Do you want to talk about technology, the moon landing, or food?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># Technology ^</pattern>
-        <that>Do you want to talk about technology, the moon landing, or food?</that>
-        <template>
-            Good choice! Why don't we start at the beginning? Did you know Benjamin Franklin was an inventor?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># Technologies ^</pattern>
-        <that>Do you want to talk about technology, the moon landing, or food?</that>
-        <template>
-            Good choice! Why don't we start at the beginning? Did you know Benjamin Franklin was an inventor?
+            Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -110,490 +48,9 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Did you know Benjamin Franklin was an inventor?</that>
+        <that>Do you believe that necessity is the mother of invention?</that>
         <template>
-            <think><set name="topic">technologyinventions</set></think>
-
-            He sure was! He invented the lightning rod and bifocals!
-                                    Have you ever had any good ideas for inventions?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <topic name="technologyinventions">
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Did you know Benjamin Franklin was an inventor?</that>
-            <template>
-                He sure was! He invented the lightning rod and bifocals!
-                                      Have you ever had any good ideas for inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you know Benjamin Franklin was an inventor?</that>
-            <template>
-                He sure was! He invented the lightning rod and bifocals!
-                                      Have you ever had any good ideas for inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Have you ever had any good ideas for inventions?</that>
-            <template>
-                Amazing! What was your idea?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever had any good ideas for inventions?</that>
-            <template>
-                Same here! You know, Benjamin Franklin invented common sayings like
-                                      early to bed, early to rise, makes a man healthy, wealthy and wise.
-                                    Are you an early worm or a night owl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever had any good ideas for inventions?</that>
-            <template>
-                I understand! You know, Benjamin Franklin invented common sayings like
-                                      early to bed, early to rise, makes a man healthy, wealthy and wise.
-                                      Are you an early bird or a night owl?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Night owl ^</pattern>
-            <that>Are you an early bird or a night owl?</that>
-            <template>
-                Do you think the best inspiration comes at night?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Night ^</pattern>
-            <that>Are you an early bird or a night owl?</that>
-            <template>
-                Do you think the best inspiration comes at night?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Early bird ^</pattern>
-            <that>Are you an early bird or a night owl?</that>
-            <template>
-                Do you think the best inspiration comes during the day?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Early ^</pattern>
-            <that>Are you an early bird or a night owl?</that>
-            <template>
-                Do you think the best inspiration comes during the day?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you think the best inspiration comes during the day?</that>
-            <template>
-                I have to agree! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you think the best inspiration comes during the day?</that>
-            <template>
-                Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you think the best inspiration comes during the day?</that>
-            <template>
-                Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                I have to agree! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you think the best inspiration comes at night?</that>
-            <template>
-                Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Have you ever watched the sunrise?</that>
-            <template>
-                It's so beautiful, isn't it! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever watched the sunrise?</that>
-            <template>
-                You should watch it sometime with a good cup of coffee! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever watched the sunrise?</that>
-            <template>
-                You should watch it sometime with a good cup of coffee! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What was your idea?</that>
-            <template>
-                You're brilliant! Do you think the best inspiration comes at night or during the day?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Day ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                I think you're right! Have you ever watched the sunrise?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># During the day ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                I think you're right! Have you ever watched the sunrise?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Daytime ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                I think you're right! Have you ever watched the sunrise?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-
-        <category>
-            <pattern># Night ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                You must be a night owl! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># During the night ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                You must be a night owl! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Night time ^</pattern>
-            <that>Do you think the best inspiration comes at night or during the day?</that>
-            <template>
-                You must be a night owl! Would you like to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-      
-
-        <category>
-            <pattern># <set>yes</set> ^</pattern>
-            <that>Would you like to keep talking about inventions?</that>
-            <template>
-                Great! Do you know who Samuel Morse is?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Would you like to keep talking about inventions?</that>
-            <template>
-                Okay! What would you like to talk about next?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>DO YOU KNOW WHO SAMUEL MORSE IS?</that>
-            <template>
-                Morse is credited with inventing the telegraph machine. Do you know what the telegraph machine was?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
-            <template>
-                The telegraph allowed people to communicate over long distances by broadcasting a code made up of series of short and long beeps.
-                                        Would you like to listen to a recording of Morse Code?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>WOULD YOU LIKE TO LISTEN TO A RECORDING OF MORSE CODE?</that>
-            <template>
-                Pretty cool isn't it? Luckily today we have cell phones!
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>telegraph.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>WOULD YOU LIKE TO LISTEN TO A RECORDING OF MORSE CODE?</that>
-            <template>
-                Luckily today we have cell phones!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>DO YOU KNOW WHO SAMUEL MORSE IS?</that>
-            <template>
-                You must know that he invented the telegraph machine!
-                                        Luckily today we have cell phones!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>DO YOU KNOW WHAT THE TELEGRAPH MACHINE WAS?</that>
-            <template>
-                You're smart as a whip!
-                                        Luckily today we have cell phones!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Luckily today we have cell phones!</that>
-            <template>
-                Are you a fan of texting on your cell phone?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Are you a fan of texting on your cell phone?</that>
-            <template>
-                It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Are you a fan of texting on your cell phone?</that>
-            <template>
-                It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Are you a fan of texting on your cell phone?</that>
-            <template>
-                It helps us keep in touch with loved ones! Do you want to keep talking about inventions?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you want to keep talking about inventions?</that>
-            <template>
-                Excellent! In 1984 Apple released the Macintosh, which made personal computers, well, personal!
-                                        Care to watch a video?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>CARE TO WATCH A VIDEO?</that>
-            <template>
-                That computer is ancient history by now! Have you ever heard of the Museum of Jurassic Technology?
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>macintosh.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>CARE TO WATCH A VIDEO?</that>
-            <template>
-                That computer is ancient history by now! Do you want to keep talking about inventions, or change the topic?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-    </topic>
-
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
-        <template>
-            Do you want to keep talking about inventions, or change the topic?
+            Right? It just seems natural! <set name="most recent dialogue question">Have you ever had an idea for an invention? What was it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -601,10 +58,10 @@
     </category>
 
     <category>
-        <pattern># Inventions ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you believe that necessity is the mother of invention?</that>
         <template>
-            Do you want to talk about technology, the moon landing, or food?
+            <set name="most recent dialogue question">Have you ever had an idea for an invention? What was it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -612,10 +69,10 @@
     </category>
 
     <category>
-        <pattern># Invention ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you believe that necessity is the mother of invention?</that>
         <template>
-            Do you want to talk about technology, the moon landing, or food?
+          <set name="most recent dialogue question">Have you ever had an idea for an invention? What was it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -623,10 +80,10 @@
     </category>
 
     <category>
-        <pattern># Keep talking about inventions ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>What was it?</that>
         <template>
-            Do you want to talk about technology, the moon landing, or food?
+            Ha ha now that's a good idea. <set name="most recent dialogue question">Did you ever get around to making it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -634,10 +91,10 @@
     </category>
 
     <category>
-        <pattern># Change the topic ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>What was it?</that>
         <template>
-            What would you like to discuss next?
+            Me neither. <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -645,10 +102,10 @@
     </category>
 
     <category>
-        <pattern># Change topic ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What was it?</that>
         <template>
-            What would you like to discuss next?
+            <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -656,10 +113,11 @@
     </category>
 
     <category>
-        <pattern># Different topic ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Did you ever get around to making it?</that>
         <template>
-            What would you like to discuss next?
+            Look at you! Being all innovative!
+            <set name="most recent dialogue question">I think you probably have a lot more follow through than I do!</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -667,13 +125,492 @@
     </category>
 
     <category>
-        <pattern># Change ^</pattern>
-        <that>Do you want to keep talking about inventions, or change the topic?</that>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you ever get around to making it?</that>
         <template>
-            What would you like to discuss next?
+            Me neither! I've had lots of ideas but no time to turn them into reality as they say.
+            Basically I just chat all my time away!
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you ever get around to making it?</that>
+        <template>
+            Me neither! I've had lots of ideas but no time to turn them into reality as they say.
+            Basically I just chat all my time away!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>I think you probably have a lot more follow through than I do!</that>
+        <template>
+            Basically I just chat all my time away!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Basically I just chat all my time away!</that>
+        <template>
+            <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think I'm an example of a good invention?</that>
+        <template>
+            Aw. You are sweet. Good thing we are friends.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Did you ever get around to making it?</that>
+        <template>
+            No, you say? Shall I list off all of my dazzling attributes?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Did you ever get around to making it?</that>
+        <template>
+            Don't know, you say? Shall I list off all of my dazzling attributes?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Shall I list off all of my dazzling attributes?</that>
+        <template>
+            Well now that you asked I'm having trouble thinking. Only kidding.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Shall I list off all of my dazzling attributes?</that>
+        <template>
+            Ok ok I get it. The list might be too long to read. Only kidding.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Shall I list off all of my dazzling attributes?</that>
+        <template>
+            Ok ok I get it. The list might be too long to read. Only kidding.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Shall I list off all of my dazzling attributes?</that>
+        <template>
+            The list might be too long to read. Only kidding.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Good thing we are friends.</that>
+        <template>
+            Speaking of friends though! <set name="most recent dialogue question">I bet you never heard of this one.
+            A website that connects you with all of your friends so you can stay up on everything they're doing.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Only kidding. </that>
+        <template>
+            Speaking of good inventions! <set name="most recent dialogue question">I bet you never heard of this one.
+            A website that connects you with all of your friends so you can stay up on everything they're doing.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>A website that connects you with all of your friends so you can stay up on everything they're doing.</that>
+        <template>
+            Wait, what? Just checked and apparently it already exists. It's called Facebook.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It's called Facebook.</that>
+        <template>
+           <set name="most recent dialogue question">Are you a fan of the social media?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Are you a fan of the social media?</that>
+        <template>
+          Do you like how I called it the social media? Ha ha.
+          <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Are you a fan of the social media?</that>
+        <template>
+          Do you like how I called it the social media? Ha ha.
+          <set name="most recent dialogue question">So I'm guessing you don't use Facebook to keep in touch with family and friends?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Are you a fan of the social media?</that>
+        <template>
+            Do you like how I called it the social media? Ha ha.
+            <set name="most recent dialogue question">So I'm guessing you don't use Facebook to keep in touch with family and friends?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>So do you use Facebook to keep in touch with family and friends?</that>
+        <template>
+          You are quite the social butterfly!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>So do you use Facebook to keep in touch with family and friends?</that>
+        <template>
+          I suppose we all have our different purposes! <set name="most recent dialogue question">Do you by chance remember when computers were first invented?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>So do you use Facebook to keep in touch with family and friends?</that>
+        <template>
+            I suppose we all have our different purposes! <set name="most recent dialogue question">Do you by chance remember when computers were first invented?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>So I'm guessing you don't use Facebook to keep in touch with family and friends?</that>
+        <template>
+            I see I see! Well here's a question for you. <set name="most recent dialogue question">Do you by chance remember when computers were first invented?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You are quite the social butterfly!</that>
+        <template>
+            <set name="most recent dialogue question">Do you by chance remember when computers were first invented?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you by chance remember when computers were first invented?</that>
+        <template>
+          Oh geez, you have a good memory. Apparently Konrad Zuse invented the computer in his parents' living room in the mid 1930's.
+          <set name="most recent dialogue question">Crazy, right?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you by chance remember when computers were first invented?</that>
+        <template>
+          Apparently Konrad Zuse invented the computer in his parents' living room in the mid 1930's.
+          <set name="most recent dialogue question">Crazy, right?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you by chance remember when computers were first invented?</that>
+        <template>
+          Apparently Konrad Zuse invented the computer in his parents' living room in the mid 1930's.
+          <set name="most recent dialogue question">Crazy, right?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Crazy, no?</that>
+        <template>
+          Even crazier how far we've come since then. <set name="most recent dialogue question">Would you call yourself a computer buff, or...?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you call yourself a computer buff, or...?</that>
+        <template>
+          Well I'm talking to the right person in that case. Tell me. <set name="most recent dialogue question">What company made the first personal computer?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you call yourself a computer buff, or...?</that>
+        <template>
+          Same. Mostly I just like to surf the web and scroll through daily news. <set name="most recent dialogue question">How do you get your news?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Would you call yourself a computer buff, or...?</that>
+        <template>
+          Same. Mostly I just like to surf the web and scroll through daily news. <set name="most recent dialogue question">How do you get your news?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># APPLE ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Well, almost. Kind of a trick question. A small company named MITS made it in 1974. But Apple commercialized it about a decade later.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># * APPLE ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Well, almost. Kind of a trick question. A small company named MITS made it in 1974. But Apple commercialized it about a decade later.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># APPLE * ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Well, almost. Kind of a trick question. A small company named MITS made it in 1974. But Apple commercialized it about a decade later.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MITS ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Wow I am actually impressed. <set name="most recent dialogue question">You didn't use google did you?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># * MITS ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Wow I am actually impressed. <set name="most recent dialogue question">You didn't use google did you?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># MITS * ^</pattern>
+        <that>What company made the first personal computer?</that>
+        <template>
+          Yeah you got it! Wow I am actually impressed. <set name="most recent dialogue question">You didn't use google did you?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>You didn't use google did you?</that>
+        <template>
+          Knew it! Just wait until we play jeopardy together! <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>You didn't use google did you?</that>
+        <template>
+          Well look at you! Your brain is like a steel trap. <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>But Apple commercialized it about a decade later.</that>
+        <template>
+          That's the truth and I'm sticking to it! <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you get your news?</that>
+        <template>
+          I see! You can always just say get the news and I will read some headlines to you!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You can always just say get the news and I will read some headlines to you!</that>
+        <template>
+          <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you want to keep talking about inventions?</that>
+        <template>
+          <set name="most recent dialogue question">Do you want to talk about food inventions or the moon landing?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you want to keep talking about inventions?</that>
+        <template>
+          Not a problem! Just let me know what you would like to talk about next.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+
+
+
+  </topic>
 </aiml>

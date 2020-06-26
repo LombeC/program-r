@@ -13,7 +13,11 @@ class BrainSemanticSimilarityConfiguration(BaseConfigurationData):
     def method(self):
         return self._method
 
+    @property
+    def model_dir(self):
+        return self._model_dir
 
+    # TODO: Add model_dir to load_config_section
     def load_config_section(self, configuration_file, configuration, bot_root):
         semantic_similarity = configuration_file.get_section(self._section_name, configuration)
         if semantic_similarity is not None:

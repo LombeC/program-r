@@ -3,7 +3,7 @@ import time
 import torch
 
 from programr.utils.logging.ylogger import YLogger
-
+from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline
 
 
@@ -74,11 +74,12 @@ class EmbeddingSemanticSimilarity(SemanticSimilarity):
 
         return similarity_score
 
+# TODO: Implement this class as the torch version of above class
 class PyTorchSemanticSimilarity(SemanticSimilarity):
-    def __init__(self):
+    def __init__(self, semantic_similarity_config: BrainSemanticSimilarityConfiguration):
         super().__init__()
-        self._semantic_analysis_config = semantic_analysis_config
-        model_dir = semantic_analysis_config.model_dir
+        self.semantic_similarity_config = semantic_similarity_config
+        model_dir = semantic_similarity_config.model_dir
         tokenizer = DistilBertTokenizer.from_pretrained(model_dir)
         model = DistilBertForSequenceClassification.from_pretrained(model_dir)
         self.similarity_classifier = DefaultSemanticSimilarity()
