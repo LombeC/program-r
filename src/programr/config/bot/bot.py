@@ -102,8 +102,6 @@ class BotConfiguration(BaseContainerConfigurationData):
             self._brain_config = config
             config.load_configuration(configuration_file, bot_root)
 
-            #self._brain_selector = configuration_file.get_option(bot, "brain_selector")
-
         else:
             YLogger.warning(self, "No brain name defined for bot [%s], defaulting to 'brain'.", self.section_name)
             brain_name = "brain"
@@ -114,9 +112,6 @@ class BotConfiguration(BaseContainerConfigurationData):
     def brain_config(self):
         return self._brain_config
 
-    @property
-    def brain_selector(self):
-        return self._brain_selector
 
     @property
     def bot_root(self):
