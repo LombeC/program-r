@@ -6,7 +6,7 @@ from programr.config.brain.oob import BrainOOBConfiguration
 
 class BrainOOBSConfiguration(BaseSectionConfigurationData):
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "oob")
+        super().__init__("oob")
         self._default = None
         self._oobs = {}
 

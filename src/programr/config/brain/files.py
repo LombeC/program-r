@@ -8,7 +8,7 @@ from programr.config.brain.file import BrainFileConfiguration
 class BrainFilesConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "files")
+        super().__init__("files")
         self._aiml_files = BrainAIMLFileConfiguration()
         self._set_files = BrainFileConfiguration("sets")
         self._map_files = BrainFileConfiguration("maps")

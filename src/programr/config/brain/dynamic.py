@@ -6,7 +6,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainDynamicsConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "dynamic")
+        super().__init__("dynamic")
         self._dynamic_sets = {}
         self._dynamic_maps = {}
         self._dynamic_vars = {}

@@ -68,7 +68,7 @@ class BotFactoryTests(unittest.TestCase):
 
         configuration = unittest.mock.Mock()
 
-        configuration.configurations = []
+        configuration.brain_config = []
 
         configuration.bot_selector = "programr.clients.client.DefaultBotSelector"
 
@@ -84,7 +84,7 @@ class BotFactoryTests(unittest.TestCase):
 
         configuration = unittest.mock.Mock()
 
-        configuration.configurations = [BotConfiguration()]
+        configuration.brain_config = [BotConfiguration()]
 
         configuration.bot_selector = "programr.clients.client.DefaultBotSelector"
 

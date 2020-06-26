@@ -9,7 +9,7 @@ class ProgramRChatbot(ConsoleBotClient):
         ConsoleBotClient.__init__(self, argument_parser)
 
     def parse_configuration(self):
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files = \
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files = \
             [os.path.dirname(__file__)]
 
     def add_local_properties(self):

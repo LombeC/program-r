@@ -13,8 +13,8 @@ class NormalizeTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(NormalizeTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files=[os.path.dirname(__file__)]
-        self.configuration.client_configuration.configurations[0].configurations[0].files._normal = os.path.dirname(__file__)+ os.sep + "normal.txt"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files=[os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files._normal = os.path.dirname(__file__) + os.sep + "normal.txt"
 
 
 class NormalizeAIMLTests(unittest.TestCase):

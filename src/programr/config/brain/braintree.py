@@ -6,7 +6,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainBraintreeConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "braintree")
+        super().__init__("braintree")
         self._file = None
         self._content = None
 

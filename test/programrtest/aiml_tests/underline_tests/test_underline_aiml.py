@@ -13,7 +13,7 @@ class UnderlineTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(UnderlineTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files = [os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files = [os.path.dirname(__file__)]
 
 
 class UnderlineAIMLTests(unittest.TestCase):

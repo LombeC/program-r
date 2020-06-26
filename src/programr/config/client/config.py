@@ -7,7 +7,7 @@ from programr.config.client.scheduler import SchedulerConfiguration
 class ClientConfigurationData(BaseContainerConfigurationData):
 
     def __init__(self, name):
-        BaseContainerConfigurationData.__init__(self, name)
+        super().__init__(name)
         self._bot_configs = []
         self._bot_configs.append(BotConfiguration("bot"))
         self._license_keys = None

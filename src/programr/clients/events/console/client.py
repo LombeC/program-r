@@ -10,8 +10,7 @@ class ConsoleBotClient(EventBotClient):
 
     def __init__(self, argument_parser=None):
         self.running = False
-        EventBotClient.__init__(self, "Console", argument_parser)
-        a=1
+        super().__init__("Console", argument_parser)
 
     def get_description(self):
         return 'ProgramR AIML2.0 Console Client'

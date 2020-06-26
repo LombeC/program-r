@@ -6,7 +6,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainBinariesConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "binaries")
+        super().__init__("binaries")
         self._save_binary = False
         self._load_binary = False
         self._binary_filename = None

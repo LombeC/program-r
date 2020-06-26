@@ -1,9 +1,10 @@
+from programr.config.section import BaseSectionConfigurationData
 from programr.utils.logging.ylogger import YLogger
 
 from programr.config.base import BaseConfigurationData
 
 
-class BrainTokenizerConfiguration(BaseConfigurationData):
+class BrainTokenizerConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
         super().__init__(name="tokenizer")

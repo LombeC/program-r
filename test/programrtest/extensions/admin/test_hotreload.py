@@ -40,63 +40,63 @@ class ReloadTestClient(TestClient):
         super(ReloadTestClient, self).load_configuration(arguments)
 
         if ReloadTestClient.denormal is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._denormal = ReloadTestClient.denormal
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._denormal = ReloadTestClient.denormal
 
         if ReloadTestClient.normal is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._normal = ReloadTestClient.normal
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._normal = ReloadTestClient.normal
 
         if ReloadTestClient.gender is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._gender = ReloadTestClient.gender
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._gender = ReloadTestClient.gender
 
         if ReloadTestClient.person is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._person = ReloadTestClient.person
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._person = ReloadTestClient.person
 
         if ReloadTestClient.person2 is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._person2 = ReloadTestClient.person2
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._person2 = ReloadTestClient.person2
 
         if ReloadTestClient.properties is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._properties = ReloadTestClient.properties
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._properties = ReloadTestClient.properties
 
         if ReloadTestClient.variables is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._variables = ReloadTestClient.variables
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._variables = ReloadTestClient.variables
 
         if ReloadTestClient.regex_templates is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._regex_templates = ReloadTestClient.regex_templates
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._regex_templates = ReloadTestClient.regex_templates
 
         if ReloadTestClient.pattern_nodes is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].nodes._pattern_nodes = ReloadTestClient.pattern_nodes
+            self.configuration.client_configuration.brain_config[0].brain_config[0].nodes._pattern_nodes = ReloadTestClient.pattern_nodes
 
         if ReloadTestClient.template_nodes is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].nodes._template_nodes = ReloadTestClient.template_nodes
+            self.configuration.client_configuration.brain_config[0].brain_config[0].nodes._template_nodes = ReloadTestClient.template_nodes
 
         if ReloadTestClient.aiml_files is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._aiml_files._files =[ReloadTestClient.aiml_files]
-            self.configuration.client_configuration.configurations[0].configurations[0].files._aiml_files._extension = ".aiml"
-            self.configuration.client_configuration.configurations[0].configurations[0].files._aiml_files._directories = False
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._aiml_files._files =[ReloadTestClient.aiml_files]
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._aiml_files._extension = ".aiml"
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._aiml_files._directories = False
 
         if ReloadTestClient.set_files is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._set_files._files = [ReloadTestClient.set_files]
-            self.configuration.client_configuration.configurations[0].configurations[0].files._set_files._extension = ".txt"
-            self.configuration.client_configuration.configurations[0].configurations[0].files._set_files._directories = False
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._set_files._files = [ReloadTestClient.set_files]
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._set_files._extension = ".txt"
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._set_files._directories = False
 
         if ReloadTestClient.set_file is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files.set_files._file = ReloadTestClient.set_file
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files.set_files._file = ReloadTestClient.set_file
 
         if ReloadTestClient.map_files is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._map_files._files = [ReloadTestClient.map_files]
-            self.configuration.client_configuration.configurations[0].configurations[0].files._map_files._extension = ".txt"
-            self.configuration.client_configuration.configurations[0].configurations[0].files._map_files._directories = False
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._map_files._files = [ReloadTestClient.map_files]
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._map_files._extension = ".txt"
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._map_files._directories = False
 
         if ReloadTestClient.map_file is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files.map_files._file = ReloadTestClient.map_file
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files.map_files._file = ReloadTestClient.map_file
 
         if ReloadTestClient.rdf_files is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files._rdf_files._files = [ReloadTestClient.rdf_files]
-            self.configuration.client_configuration.configurations[0].configurations[0].files._rdf_files._extension = ".txt"
-            self.configuration.client_configuration.configurations[0].configurations[0].files._rdf_files._directories = False
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._rdf_files._files = [ReloadTestClient.rdf_files]
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._rdf_files._extension = ".txt"
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files._rdf_files._directories = False
 
         if ReloadTestClient.rdf_files is not None:
-            self.configuration.client_configuration.configurations[0].configurations[0].files.rdf_files._file = ReloadTestClient.rdf_file
+            self.configuration.client_configuration.brain_config[0].brain_config[0].files.rdf_files._file = ReloadTestClient.rdf_file
 
 
 class HotReloadAdminExtensionTests(unittest.TestCase):
@@ -334,7 +334,7 @@ class HotReloadAdminExtensionTests(unittest.TestCase):
         self.assertFalse(client_context.brain.maps.contains("state2captial"))
         self.assertFalse(client_context.brain.maps.contains("state2largestcity"))
 
-        client_context.client.configuration.client_configuration.configurations[0].configurations[0].files._map_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "maps2"]
+        client_context.client.configuration.client_configuration.brain_config[0].brain_config[0].files._map_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "maps2"]
 
         result = extension.execute(client_context, "RELOAD ALL MAPS")
         self.assertEquals("HOTRELOAD OK", result)
@@ -384,7 +384,7 @@ class HotReloadAdminExtensionTests(unittest.TestCase):
         self.assertFalse(client_context.brain.sets.contains("fastfood"))
         self.assertFalse(client_context.brain.sets.contains("food"))
 
-        client_context.client.configuration.client_configuration.configurations[0].configurations[0].files._set_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "sets2"]
+        client_context.client.configuration.client_configuration.brain_config[0].brain_config[0].files._set_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "sets2"]
 
         result = extension.execute(client_context, "RELOAD ALL SETS")
         self.assertEquals("HOTRELOAD OK", result)
@@ -432,7 +432,7 @@ class HotReloadAdminExtensionTests(unittest.TestCase):
         self.assertFalse(client_context.brain.rdf.has_subject("SOUTH"))
         self.assertFalse(client_context.brain.rdf.has_subject("IBM"))
 
-        client_context.client.configuration.client_configuration.configurations[0].configurations[0].files._rdf_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "rdfs2"]
+        client_context.client.configuration.client_configuration.brain_config[0].brain_config[0].files._rdf_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + "rdfs2"]
 
         result = extension.execute(client_context, "RELOAD ALL RDFS")
         self.assertEquals("HOTRELOAD OK", result)
@@ -471,7 +471,7 @@ class HotReloadAdminExtensionTests(unittest.TestCase):
         self.assertEquals("That was test 1", client_context.bot.ask_question(client_context, "TEST1"))
         self.assertEquals("That was test 2", client_context.bot.ask_question(client_context, "TEST2"))
 
-        client_context.client.configuration.client_configuration.configurations[0].configurations[0].files._aiml_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + 'aimls2']
+        client_context.client.configuration.client_configuration.brain_config[0].brain_config[0].files._aiml_files._files = [os.path.dirname(__file__) + os.sep + "test_config" + os.sep + 'aimls2']
 
         result = extension.execute(client_context, "RELOAD ALL AIML")
         self.assertEquals("HOTRELOAD OK", result)

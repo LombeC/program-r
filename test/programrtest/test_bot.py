@@ -32,7 +32,7 @@ class MockBot(Bot):
         Bot.__init__(self, config)
 
     def loads_brains(self, bot):
-        self._brains["mock"] = MockBrain(self, self.configuration.configurations[0])
+        self._brains["mock"] = MockBrain(self, self.configuration.brain_config[0])
 
 
 class DefaultBrainSelectorTests(unittest.TestCase):
@@ -178,14 +178,14 @@ class BotTests(unittest.TestCase):
     def test_bot_with_config(self):
         configuration = ProgramrConfiguration(ConsoleConfiguration())
         self.assertIsNotNone(configuration)
-        self.assertIsNotNone(configuration.client_configuration.configurations[0])
-        self.assertIsNotNone(configuration.client_configuration.configurations[0].configurations[0])
+        self.assertIsNotNone(configuration.client_configuration.brain_config[0])
+        self.assertIsNotNone(configuration.client_configuration.brain_config[0].brain_config[0])
 
-        configuration.client_configuration.configurations[0].prompt = ":"
-        configuration.client_configuration.configurations[0].default_response = "No answer for that"
-        configuration.client_configuration.configurations[0].exit_response = "See ya!"
+        configuration.client_configuration.brain_config[0].prompt = ":"
+        configuration.client_configuration.brain_config[0].default_response = "No answer for that"
+        configuration.client_configuration.brain_config[0].exit_response = "See ya!"
 
-        bot = Bot(config=configuration.client_configuration.configurations[0])
+        bot = Bot(config=configuration.client_configuration.brain_config[0])
         self.assertIsNotNone(bot)
 
         self.assertEqual(bot.default_response, "No answer for that")
@@ -303,7 +303,7 @@ class BotTests(unittest.TestCase):
 
         client_context2 = ClientContext(TestClient(), "testid2")
         client_context2._bot = bot
-        client_context2._brain = MockBrain(bot, bot.configuration.configurations[0])
+        client_context2._brain = MockBrain(bot, bot.configuration.brain_config[0])
         client_context2._brain._response = "Y DEFAULT RESPONSE"
 
         response = bot.get_default_response(client_context2)
@@ -357,7 +357,7 @@ class BotTests(unittest.TestCase):
 
         client_context2 = ClientContext(TestClient(), "testid2")
         client_context2._bot = bot
-        client_context2._brain = MockBrain(bot, bot.configuration.configurations[0])
+        client_context2._brain = MockBrain(bot, bot.configuration.brain_config[0])
         client_context2._brain._response = "Y DEFAULT RESPONSE"
 
         self.assertEquals("Y DEFAULT RESPONSE", bot.get_initial_question(client_context2))
@@ -411,7 +411,7 @@ class BotTests(unittest.TestCase):
 
         client_context2 = ClientContext(TestClient(), "testid2")
         client_context2._bot = bot
-        client_context2._brain = MockBrain(bot, bot.configuration.configurations[0])
+        client_context2._brain = MockBrain(bot, bot.configuration.brain_config[0])
         client_context2._brain._response = "Y DEFAULT RESPONSE"
 
         self.assertEquals("Y DEFAULT RESPONSE", bot.get_exit_response(client_context2))

@@ -13,9 +13,9 @@ class GimisaTopicTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(GimisaTopicTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._file = os.path.dirname(__file__) + os.sep + "gimisa_test.aiml"
-        self.configuration.client_configuration.configurations[0].configurations[0].files.set_files._files = [os.path.dirname(__file__)]
-        self.configuration.client_configuration.configurations[0].configurations[0].files.set_files._extension = ".txt"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._file = os.path.dirname(__file__) + os.sep + "gimisa_test.aiml"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.set_files._files = [os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.set_files._extension = ".txt"
 
 class GimisaAIMLTests(unittest.TestCase):
 

@@ -28,7 +28,7 @@ class BrainConfiguration(BaseContainerConfigurationData):
         self._dynamics = BrainDynamicsConfiguration()
         self._tokenizer = BrainTokenizerConfiguration()
         self._nlp = BrainNLPConfiguration()
-        BaseContainerConfigurationData.__init__(self, section_name)
+        super().__init__(section_name)
 
     @property
     def overrides(self):

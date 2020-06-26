@@ -31,8 +31,8 @@ from programr.parser.tokenizer import Tokenizer
 
 class Brain(object):
 
-    def __init__(self, bot, configuration: BrainConfiguration):
-        self._bot = bot
+    def __init__(self, configuration: BrainConfiguration):
+        #self._bot = bot
         self._configuration = configuration
 
         self.nlp = self.load_nlp()

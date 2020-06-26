@@ -6,7 +6,7 @@ from programr.config.brain.service import BrainServiceConfiguration
 
 class BrainServicesConfiguration(BaseSectionConfigurationData):
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "services")
+        super().__init__("services")
         self._services = {}
 
     def exists(self, name):

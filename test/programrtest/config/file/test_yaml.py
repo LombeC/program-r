@@ -79,12 +79,12 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
 
         self.assertIsNotNone(configuration)
 
-        self.assertTrue(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_multiple_files())
-        self.assertFalse(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_single_file())
+        self.assertTrue(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_multiple_files())
+        self.assertFalse(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_single_file())
 
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.files, ["./test-aiml"])
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.set_files.files, ["./test-sets"])
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.map_files.files, ["./test-maps"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.files, ["./test-aiml"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.set_files.files, ["./test-sets"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.map_files.files, ["./test-maps"])
 
     def test_load_from_text_multis_one_value(self):
         yaml = YamlConfigurationFile()
@@ -95,7 +95,7 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
         """, ConsoleConfiguration(), ".")
         self.assertIsNotNone(configuration)
 
-        self.assertEquals(1, len(configuration.client_configuration.configurations[0].configurations))
+        self.assertEquals(1, len(configuration.client_configuration.brain_config[0].brain_config))
 
     def test_load_from_text_multis_multiple_values(self):
         yaml = YamlConfigurationFile()
@@ -108,7 +108,7 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
         """, ConsoleConfiguration(), ".")
         self.assertIsNotNone(configuration)
 
-        self.assertEquals(2, len(configuration.client_configuration.configurations[0].configurations))
+        self.assertEquals(2, len(configuration.client_configuration.brain_config[0].brain_config))
 
     def test_load_from_text_multi_files(self):
         yaml = YamlConfigurationFile()
@@ -138,12 +138,12 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
 
         self.assertIsNotNone(configuration)
 
-        self.assertTrue(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_multiple_files())
-        self.assertFalse(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_single_file())
+        self.assertTrue(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_multiple_files())
+        self.assertFalse(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_single_file())
 
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.files, ['./test-aiml', './my-aiml'])
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.set_files.files, ["./test-sets"])
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.map_files.files, ["./test-maps"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.files, ['./test-aiml', './my-aiml'])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.set_files.files, ["./test-sets"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.map_files.files, ["./test-maps"])
 
     def test_load_from_text_single_file(self):
         yaml = YamlConfigurationFile()
@@ -171,12 +171,12 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
 
         self.assertIsNotNone(configuration)
 
-        self.assertFalse(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_multiple_files())
-        self.assertTrue(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.has_single_file())
+        self.assertFalse(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_multiple_files())
+        self.assertTrue(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.has_single_file())
 
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.aiml_files.file, "./test-aiml/test.aiml")
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.set_files.files, ["./test-sets"])
-        self.assertEqual(configuration.client_configuration.configurations[0].configurations[0].files.map_files.files, ["./test-maps"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files.file, "./test-aiml/test.aiml")
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.set_files.files, ["./test-sets"])
+        self.assertEqual(configuration.client_configuration.brain_config[0].brain_config[0].files.map_files.files, ["./test-maps"])
 
 
     def test_load_from_text(self):
@@ -330,8 +330,8 @@ class YamlConfigurationFileTests(ConfigurationBaseFileTests):
 
         self.assertIsNotNone(configuration)
 
-        self.assertTrue(configuration.client_configuration.configurations[0].configurations[0].services.exists("Authentication"))
-        auth_service = configuration.client_configuration.configurations[0].configurations[0].services.service("Authentication")
+        self.assertTrue(configuration.client_configuration.brain_config[0].brain_config[0].services.exists("Authentication"))
+        auth_service = configuration.client_configuration.brain_config[0].brain_config[0].services.service("Authentication")
         self.assertIsNotNone(auth_service)
 
         self.assertTrue(auth_service.exists("denied_srai"))

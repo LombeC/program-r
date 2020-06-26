@@ -25,10 +25,10 @@ class AuthenticateTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(AuthenticateTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files = [os.path.dirname(__file__)]
-        self.configuration.client_configuration.configurations[0].configurations[0].security._authentication = BrainSecurityAuthenticationConfiguration("authentication")
-        self.configuration.client_configuration.configurations[0].configurations[0].security.authentication._classname = "programrtest.aiml_tests.authenticate_tests.test_authenticate_aiml.MockAuthenticationService"
-        self.configuration.client_configuration.configurations[0].configurations[0].security.authentication._denied_srai = "AUTHENTICATED_FAILED"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files = [os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security._authentication = BrainSecurityAuthenticationConfiguration("authentication")
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security.authentication._classname = "programrtest.aiml_tests.authenticate_tests.test_authenticate_aiml.MockAuthenticationService"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security.authentication._denied_srai = "AUTHENTICATED_FAILED"
 
 
 class AuthenticateAIMLTests(unittest.TestCase):

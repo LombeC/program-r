@@ -27,9 +27,7 @@ class BotConfiguration(BaseContainerConfigurationData):
     DEFAULT_EMOTIVE = True
 
     def __init__(self, section_name="bot"):
-
-        self._brain_configs = []
-        self._brain_configs.append(BrainConfiguration("brain"))
+        self._brain_config = BrainConfiguration("brain")
         self._brain_selector = None
 
         self._bot_root = BotConfiguration.DEFAULT_ROOT
@@ -52,7 +50,7 @@ class BotConfiguration(BaseContainerConfigurationData):
         self._conversations = BotConversationsConfiguration()
         self._session = BotSessionConfiguration()
 
-        BaseContainerConfigurationData.__init__(self, section_name)
+        super().__init__(section_name)
 
     def load_configuration(self, configuration_file, bot_root):
         bot = configuration_file.get_section(self.section_name)
@@ -98,28 +96,23 @@ class BotConfiguration(BaseContainerConfigurationData):
 
     def load_configurations(self, configuration_file, bot, bot_root):
         if bot is not None:
-            brain_names = configuration_file.get_multi_option(bot, "brain", missing_value="brain")
-            first = True
-            for name in brain_names:
-                if first is True:
-                    config = self._brain_configs[0]
-                    first = False
-                else:
-                    config = BrainConfiguration(name)
-                    self._brain_configs.append(config)
-                config.load_configuration(configuration_file, bot_root)
+            #brain_names = configuration_file.get_multi_option(bot, "brain", missing_value="brain")
+            brain_name = configuration_file.get_option(bot, "brain", missing_value="brain")
+            config = BrainConfiguration(brain_name)
+            self._brain_config = config
+            config.load_configuration(configuration_file, bot_root)
 
-                self._brain_selector = configuration_file.get_option(bot, "brain_selector")
+            #self._brain_selector = configuration_file.get_option(bot, "brain_selector")
 
         else:
             YLogger.warning(self, "No brain name defined for bot [%s], defaulting to 'brain'.", self.section_name)
             brain_name = "brain"
-            self._brain_configs[0]._section_name = brain_name
-            self._brain_configs[0].load_configuration(configuration_file, bot_root)
+            self._brain_config._section_name = brain_name
+            self._brain_config.load_configuration(configuration_file, bot_root)
 
     @property
-    def configurations(self):
-        return self._brain_configs
+    def brain_config(self):
+        return self._brain_config
 
     @property
     def brain_selector(self):

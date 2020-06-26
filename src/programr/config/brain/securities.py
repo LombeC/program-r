@@ -6,7 +6,7 @@ from programr.config.brain.security import BrainSecurityAuthorisationConfigurati
 
 class BrainSecuritiesConfiguration(BaseSectionConfigurationData):
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "security")
+        super().__init__("security")
         self._authorisation = None
         self._authentication = None
 

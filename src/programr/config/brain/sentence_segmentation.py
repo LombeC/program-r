@@ -6,7 +6,7 @@ from programr.config.base import BaseConfigurationData
 class BrainSentenceSegmentationConfiguration(BaseConfigurationData):
 
     def __init__(self):
-        BaseConfigurationData.__init__(self, name="sentence_segmentation")
+        super().__init__(name="sentence_segmentation")
         self._libname = None
 
     @property

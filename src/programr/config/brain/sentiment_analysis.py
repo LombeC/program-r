@@ -1,12 +1,13 @@
+from programr.config.section import BaseSectionConfigurationData
 from programr.utils.logging.ylogger import YLogger
 
 from programr.config.base import BaseConfigurationData
 
 
-class BrainSentimentAnalysisConfiguration(BaseConfigurationData):
+class BrainSentimentAnalysisConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseConfigurationData.__init__(self, name="sentiment_analysis")
+        super().__init__(name="sentiment_analysis")
         self._method = None
         self._alpha = None
         self._negative_threshold = None

@@ -7,7 +7,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainDefaultsConfiguration(BaseSectionConfigurationData):
 
     def __init__(self):
-        BaseSectionConfigurationData.__init__(self, "defaults")
+        super().__init__("defaults")
         self._default_get = "unknown"
         self._default_property = "unknown"
         self._default_map = "unknown"

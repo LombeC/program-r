@@ -49,7 +49,7 @@ class CommandLineClientArguments(ClientArguments):
         self._config_format = None
         self._no_loop = False
 
-        ClientArguments.__init__(self, client)
+        super().__init__(client)
         if parser is None:
             self.parser = argparse.ArgumentParser(description=client.get_description())
         else:

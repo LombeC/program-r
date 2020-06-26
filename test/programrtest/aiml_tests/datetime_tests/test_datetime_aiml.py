@@ -13,11 +13,11 @@ class DateTimeAIMLTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(DateTimeAIMLTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files = [os.path.dirname(__file__)]
-        self.configuration.client_configuration.configurations[0].configurations[0].files.set_files._files = [os.path.dirname(__file__)+ os.sep + "sets"]
-        self.configuration.client_configuration.configurations[0].configurations[0].files.set_files._extension=".txt"
-        self.configuration.client_configuration.configurations[0].configurations[0].files.map_files._files = [os.path.dirname(__file__)+ os.sep + "maps"]
-        self.configuration.client_configuration.configurations[0].configurations[0].files.map_files._extension=".txt"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files = [os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.set_files._files = [os.path.dirname(__file__) + os.sep + "sets"]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.set_files._extension= ".txt"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.map_files._files = [os.path.dirname(__file__) + os.sep + "maps"]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.map_files._extension= ".txt"
 
 
 class DateTimeAIMLTests(unittest.TestCase):

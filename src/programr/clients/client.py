@@ -48,12 +48,12 @@ class DefaultBotSelector(BotSelector):
 
 class BotFactory(object):
 
-    def __init__(self, client, configuration):
+    def __init__(self, client, configurations):
         self._client = client
         self._bots = {}
-        self.load_bots(configuration)
+        self.load_bots(configurations)
         self._bot_selector = None
-        self.load_bot_selector(configuration)
+        self.load_bot_selector(configurations)
 
     def botids(self):
         return self._bots.keys()
@@ -65,18 +65,12 @@ class BotFactory(object):
             return None
 
     def load_bots(self, configuration):
-        for config in configuration.configurations:
+        for config in configuration:
             bot = Bot(config, client=self._client)
             self._bots[bot.id] = bot
 
     def load_bot_selector(self, configuration):
-        if configuration.bot_selector is None:
-            self._bot_selector = DefaultBotSelector(configuration)
-        else:
-            try:
-                self._bot_selector = ClassLoader.instantiate_class(configuration.bot_selector)(configuration)
-            except Exception as e:
-                self._bot_selector = DefaultBotSelector(configuration)
+        self._bot_selector = DefaultBotSelector(configuration)
 
     def select_bot(self):
         return self._bot_selector.select_bot(self._bots)
@@ -95,7 +89,8 @@ class BotClient(ResponseLogger):
         self.load_configuration(self.arguments)
         self.parse_configuration()
 
-        self._bot_factory = BotFactory(self, self.configuration.client_configuration)
+        bot_configurations = self.configuration.client_configuration.configurations
+        self._bot_factory = BotFactory(self, bot_configurations)
 
         self._license_keys = LicenseKeys()
         self.load_license_keys()
@@ -144,7 +139,7 @@ class BotClient(ResponseLogger):
 
     @property
     def client_context(self):
-        session_pickle_dir= self.configuration.client_configuration.configurations[0].session.session_saving_dir
+        session_pickle_dir = self.configuration.client_configuration.configurations[0].session.session_saving_dir
         self._session_saving_mode = self.configuration.client_configuration.configurations[0].session.session_saving_mode
         if self.session_saving_mode:
             try:
@@ -213,7 +208,6 @@ class BotClient(ResponseLogger):
                 arguments.bot_root = os.path.dirname(arguments.config_filename)
             else:
                 arguments.bot_root = "."
-            print("No bot root argument set, defaulting to [%s]" % arguments.bot_root)
 
         if arguments.config_filename is not None:
             self._configuration = ConfigurationFactory.load_configuration_from_file(self.get_client_configuration(),
@@ -233,8 +227,9 @@ class BotClient(ResponseLogger):
         client_context = ClientContext(self, userid)
         client_context.bot = self._bot_factory.select_bot()
         #TODO: here is where we need to load in variables
-        client_context.brain = client_context.bot._brain_factory.select_brain()
-        if load_variables: client_context.brain._load_variables(client_context)
+        client_context.brain = client_context.bot.brain
+        if load_variables:
+            client_context.brain._load_variables(client_context)
         return client_context
 
     def load_client_context(self, userid, session_pickle_dir):

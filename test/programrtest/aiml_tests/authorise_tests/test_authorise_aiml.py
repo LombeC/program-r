@@ -13,11 +13,11 @@ class AuthoriseTestClient(TestClient):
 
     def load_configuration(self, arguments):
         super(AuthoriseTestClient, self).load_configuration(arguments)
-        self.configuration.client_configuration.configurations[0].configurations[0].files.aiml_files._files = [os.path.dirname(__file__)]
-        self.configuration.client_configuration.configurations[0].configurations[0].security._authorisation = BrainSecurityAuthorisationConfiguration()
-        self.configuration.client_configuration.configurations[0].configurations[0].security.authorisation._classname = "programr.security.authorise.usergroupsauthorisor.BasicUserGroupAuthorisationService"
-        self.configuration.client_configuration.configurations[0].configurations[0].security.authorisation._denied_srai = "ACCESS_DENIED"
-        self.configuration.client_configuration.configurations[0].configurations[0].security.authorisation._usergroups = os.path.dirname(__file__) + os.sep + "usergroups.yaml"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].files.aiml_files._files = [os.path.dirname(__file__)]
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security._authorisation = BrainSecurityAuthorisationConfiguration()
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security.authorisation._classname = "programr.security.authorise.usergroupsauthorisor.BasicUserGroupAuthorisationService"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security.authorisation._denied_srai = "ACCESS_DENIED"
+        self.configuration.client_configuration.brain_config[0].brain_config[0].security.authorisation._usergroups = os.path.dirname(__file__) + os.sep + "usergroups.yaml"
 
 
 class AuthoriseAIMLTests(unittest.TestCase):

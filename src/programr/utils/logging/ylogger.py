@@ -62,10 +62,13 @@ class YLogger(object):
                 elif log_type == 'brain':
                     clientid = ""
                     botid = ""
-                    if caller.bot is not None:
-                        if caller.bot.client is not None:
-                            clientid = caller.bot.client.id
-                        botid = caller.bot.id
+                    try:
+                        if caller.bot is not None:
+                            if caller.bot.client is not None:
+                                clientid = caller.bot.client.id
+                            botid = caller.bot.id
+                    except:
+                        pass
                     return "[%s] [%s] [%s] - %s" % (clientid, botid, caller.id, message)
                 elif log_type == 'context':
                     return "[%s] [%s] [%s] [%s] - %s" % (caller.client.id if caller.client is not None else "",

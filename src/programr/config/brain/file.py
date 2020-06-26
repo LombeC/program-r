@@ -6,7 +6,7 @@ from programr.config.section import BaseSectionConfigurationData
 class BrainFileConfiguration(BaseSectionConfigurationData):
 
     def __init__(self, name="files", files=None, file=None, extension=None, directories=False):
-        BaseSectionConfigurationData.__init__(self, name)
+        super().__init__(name)
         if files is None:
             self._files = []
         else:

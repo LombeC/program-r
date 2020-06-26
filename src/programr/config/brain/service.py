@@ -7,7 +7,7 @@ class BrainServiceConfiguration(BaseSectionConfigurationData):
     additionals = ['denied_srai']
 
     def __init__(self, service_name):
-        BaseSectionConfigurationData.__init__(self, service_name)
+        super().__init__(service_name)
         self._classname = None
         self._method = None
         self._host = None

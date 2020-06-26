@@ -13,16 +13,16 @@ class AIMLParserErrorTests(unittest.TestCase):
         bot_config = BotConfiguration()
 
         if os.name == 'posix':
-            bot_config.configurations[0].files.aiml_files._errors = DebugFileConfiguration("conversation", filename="/tmp/tmp-errors.txt.txt")
+            bot_config.brain_config[0].files.aiml_files._errors = DebugFileConfiguration("conversation", filename="/tmp/tmp-errors.txt.txt")
         elif os.name == 'nt':
-            bot_config.configurations[0].files.aiml_files._errors = DebugFileConfiguration("conversation", filename='C:\Windows\Temp\\tmp-errors.txt.txt')
+            bot_config.brain_config[0].files.aiml_files._errors = DebugFileConfiguration("conversation", filename='C:\Windows\Temp\\tmp-errors.txt.txt')
         else:
             raise Exception("Unknown os [%s]" % os.name)
 
         bot = Bot(bot_config)
 
         self.parser = bot.brain.aiml_parser
-        self.parser.create_debug_storage(bot_config.configurations[0])
+        self.parser.create_debug_storage(bot_config.brain_config[0])
         self.assertIsNotNone(self.parser)
 
     def test_parse_from_file_invalid(self):

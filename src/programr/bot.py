@@ -18,6 +18,7 @@ except:
 import numpy as np
 import os
 
+
 class BrainSelector(object):
 
     def __init__(self, configuration):
@@ -34,7 +35,7 @@ class DefaultBrainSelector(BrainSelector):
 
     def select_brain(self, brains):
         if brains:
-            return next (iter (brains.values()))
+            return next(iter(brains.values()))
         return None
 
 
@@ -56,18 +57,13 @@ class BrainFactory(object):
             return None
 
     def loads_brains(self, bot):
-        for config in bot.configuration.configurations:
+        for config in bot.configuration.brain_config:
             brain = Brain(bot, config)
             self._brains[brain.id] = brain
 
     def load_brain_selector(self, configuration):
-        if configuration.brain_selector is None:
-            self._brain_selector = DefaultBrainSelector(configuration)
-        else:
-            try:
-                self._brain_selector = ClassLoader.instantiate_class(configuration.brain_selector)(configuration)
-            except Exception as e:
-                self._brain_selector = DefaultBrainSelector(configuration)
+        self._brain_selector = DefaultBrainSelector(configuration)
+
 
     def select_brain(self):
         return self._brain_selector.select_brain(self._brains)
@@ -79,8 +75,9 @@ class Bot(object):
         self._configuration = config
         self._client = client
 
-        self._brain_factory = BrainFactory(self)
+        #self._brain_factory = BrainFactory(self)
 
+        self._brain = Brain(self.configuration.brain_config)
         self._question_depth = 0
         self._question_start_time = None
 
@@ -124,16 +121,17 @@ class Bot(object):
     def sentiment(self):
         return self._sentiment_data
 
-    @property
-    def brain_factory(self):
-        return self._brain_factory
+    # @property
+    # def brain_factory(self):
+    #     return self._brain_factory
 
     def initiate_spellchecker(self):
         # TODO Move this to Spelling bass class
         if self.configuration is not None:
             if self.configuration.spelling.classname is not None:
                 try:
-                    YLogger.info(self, "Loading spelling checker from class [%s]", self.configuration.spelling.classname)
+                    YLogger.info(self, "Loading spelling checker from class [%s]",
+                                 self.configuration.spelling.classname)
                     spell_class = ClassLoader.instantiate_class(self.configuration.spelling.classname)
                     self._spell_checker = spell_class(self.configuration.spelling)
                 except Exception as excep:
@@ -141,11 +139,8 @@ class Bot(object):
             else:
                 YLogger.warning(self, "No configuration setting for spelling checker!")
 
-
     def set_conversation_question(self, client_context, questions):
         self._conversations[client_context.userid]._questions = questions
-
-
 
     @property
     def spell_checker(self):
@@ -153,7 +148,8 @@ class Bot(object):
 
     @property
     def brain(self):
-        return self._brain_factory.select_brain()
+        #return self._brain_factory.select_brain()
+        return self._brain
 
     @property
     def conversations(self):
@@ -192,13 +188,14 @@ class Bot(object):
     @property
     def rephrase_clauses(self):
         if self.configuration is not None:
-            if len(self._rephase_clauses)==0:
-                rephrase_file = self.configuration.rephrase_clauses_file.replace("$BOT_ROOT", self.client.arguments.bot_root)
+            if len(self._rephase_clauses) == 0:
+                rephrase_file = self.configuration.rephrase_clauses_file.replace("$BOT_ROOT",
+                                                                                 self.client.arguments.bot_root)
                 with open(rephrase_file) as file_reader:
                     for line in file_reader:
                         line = line.rstrip()
                         if not line.endswith("."):
-                            line = line+"."
+                            line = line + "."
                         self._rephase_clauses.append(line)
                 return self._rephase_clauses
             else:
@@ -320,12 +317,12 @@ class Bot(object):
                 sentences = last_sentence.response.split(".")
                 response = ". ".join(sentences[1:])
                 response = response.split('.')[-1]
-                response = rephrased_clauses[r] + " "+response
+                response = rephrased_clauses[r] + " " + response
             else:
                 response = rephrased_clauses[r] + " " + last_sentence.response.split(".")[-1]
 
         except:
-            response= self.default_response
+            response = self.default_response
         return response
 
     def get_initial_question(self, client_context):
@@ -364,12 +361,11 @@ class Bot(object):
     def get_question(self, client_context, pre_processed, srai):
 
         if srai is False:
-            #return Question.create_from_text(client_context.brain.tokenizer, pre_processed, srai=srai)
+            # return Question.create_from_text(client_context.brain.tokenizer, pre_processed, srai=srai)
             # print("client_context.brain.nlp: {}".format(client_context.brain.nlp))
             return Question.create_from_text(client_context.brain.nlp, pre_processed, srai=srai)
         else:
             return Question.create_from_text(client_context.brain.nlp, pre_processed, srai=srai)
-
 
     def get_answer(self, client_context, pre_processed, srai=False):
         pre_processed = ". ".join(pre_processed)
@@ -377,7 +373,6 @@ class Bot(object):
             return Answer.create_from_text(client_context.brain.nlp.tokenizer, pre_processed, srai=srai)
         else:
             return Answer.create_from_text(client_context.brain.nlp.tokenizer, pre_processed, split=False, srai=srai)
-
 
     def combine_answers(self, answers):
         return ". ".join([sentence for sentence in answers if sentence is not None])
@@ -428,10 +423,9 @@ class Bot(object):
         answer = Answer.create_from_sentences(answer_sentences, srai)
         conversation.record_answer(answer)
 
-
         client_context.reset_question()
 
-        #TODO this part of code added by rohola
+        # TODO this part of code added by rohola
         # each time we save the last conversation, loads happen just in the run_loop
         # file_obj = open("/home/rohola/conv_questions.p", 'wb')
         # pickle.dump(conversation.questions, file_obj)
@@ -439,22 +433,13 @@ class Bot(object):
         if srai is True:
             conversation.pop_dialog()
 
-
         response = answer.sentences_text()
 
         self.log_question_and_answer(client_context, text, response)
 
         return response
 
-
     def ask_question_with_options(self, client_context, text, srai=False, responselogger=None):
-
-        # if srai is False:
-        #     client_context.bot = self
-        #     client_context.brain = client_context.bot.brain
-
-
-
         client_context.mark_question_start(text)
 
         pre_processed = self.pre_process_text(client_context, text, srai)
@@ -464,7 +449,6 @@ class Bot(object):
         conversation = self.get_conversation(client_context)
 
         conversation.record_question(question)
-
 
         answer_sentences = []
         sentence_no = 0
@@ -476,7 +460,7 @@ class Bot(object):
             options.append(option)
             sentence_no += 1
 
-        #answer = self.get_answer(client_context, answers)
+        # answer = self.get_answer(client_context, answers)
         answer = Answer.create_from_sentences(answer_sentences, srai)
         answer.robot = options
         conversation.record_answer(answer)
@@ -501,7 +485,6 @@ class Bot(object):
 
         return response, options
 
-
     def save_session(self, client_context, conversation):
         saving_dir = client_context.bot.configuration.session.session_saving_dir
         question_save_dir = os.path.join(saving_dir, "questions.p")
@@ -510,26 +493,22 @@ class Bot(object):
         properties_pickle_file = open(properties_save_dir, 'wb')
         pickle.dump(conversation.questions, questions_pickle_file)
         pickle.dump(conversation.properties, properties_pickle_file)
-        
 
     def log_question_and_answer(self, client_context, text, response):
         convo_logger = logging.getLogger("conversation")
         if convo_logger:
-            qanda =  "%s - Question[%s], Response[%s]"%(str(client_context), text, response)
+            qanda = "%s - Question[%s], Response[%s]" % (str(client_context), text, response)
             convo_logger.info(qanda)
 
     def process_sentence(self, client_context, sentence, srai, responselogger):
-
         client_context.check_max_recursion()
-        #TODO uncomment the line below
-        #client_context.check_max_timeout()
+        client_context.check_max_timeout()
 
         if srai is False:
             self.check_spelling_before(sentence)
 
-
         response = client_context.brain.ask_question(client_context, sentence, srai)
-        #response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
+        # response = client_context.brain.ask_question_with_options(client_context, sentence, srai)
 
         if response is None and srai is False:
             response = self.check_spelling_and_retry(client_context, sentence)
@@ -537,7 +516,7 @@ class Bot(object):
         if response is not None:
             return self.handle_response(client_context, sentence, response, srai, responselogger)
         else:
-            #raise("Error")
+            # raise("Error")
             return self.handle_none_response(client_context, sentence, responselogger)
 
         return answer
@@ -556,8 +535,7 @@ class Bot(object):
         if response is not None:
             return self.handle_response(client_context, sentence, response, srai, responselogger, options)
         else:
-            return self.handle_none_response(client_context, sentence, responselogger, options)   
-
+            return self.handle_none_response(client_context, sentence, responselogger, options)
 
     def handle_response(self, client_context, sentence, response, srai, responselogger, options=[]):
         YLogger.debug(client_context, "Raw Response (%s): %s", client_context.userid, response)
@@ -573,7 +551,7 @@ class Bot(object):
             YLogger.debug(client_context, "Returning response_sentence and options.")
             return response_sentence, options
 
-    def handle_none_response(self, client_context, sentence, responselogger, options = []):
+    def handle_none_response(self, client_context, sentence, responselogger, options=[]):
         sentence.response = self.get_default_response(client_context)
         non_hanlde_sentence = Sentence(client_context.brain.nlp, sentence.response)
         non_hanlde_sentence._no_response = True
@@ -581,7 +559,7 @@ class Bot(object):
         if responselogger is not None:
             responselogger.log_unknown_response(non_hanlde_sentence)
 
-        if len(options)==0:
+        if len(options) == 0:
             return non_hanlde_sentence
         else:
             return non_hanlde_sentence, options

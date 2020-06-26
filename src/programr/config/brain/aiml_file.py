@@ -7,7 +7,7 @@ from programr.config.brain.debugfile import DebugFileConfiguration
 class BrainAIMLFileConfiguration(BrainFileConfiguration):
 
     def __init__(self, name="aiml"):
-        BrainFileConfiguration.__init__(self, name, extension="aiml", directories=False)
+        super().__init__(name, extension="aiml", directories=False)
         self._errors = None
         self._duplicates = None
         self._conversation = None

@@ -4,7 +4,7 @@ from programr.config.client.config import ClientConfigurationData
 class ConsoleConfiguration(ClientConfigurationData):
 
     def __init__(self):
-        ClientConfigurationData.__init__(self, "console")
+        super().__init__("console")
         self._default_userid = "console"
         self._prompt = ">>>"
 
@@ -21,7 +21,7 @@ class ConsoleConfiguration(ClientConfigurationData):
         if console is not None:
             self._default_userid = configuration_file.get_option(console, "default_userid", missing_value="Console")
             self._prompt = configuration_file.get_option(console, "prompt", missing_value=">>>")
-        super(ConsoleConfiguration, self).load_configuration(configuration_file, console, bot_root)
+        super().load_configuration(configuration_file, console, bot_root)
 
     def to_yaml(self, data, defaults=True):
         if defaults is True:
