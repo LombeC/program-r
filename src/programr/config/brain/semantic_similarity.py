@@ -22,6 +22,7 @@ class BrainSemanticSimilarityConfiguration(BaseConfigurationData):
         semantic_similarity = configuration_file.get_section(self._section_name, configuration)
         if semantic_similarity is not None:
             self._method = configuration_file.get_option(semantic_similarity, "method", missing_value="default")
+            self._model_dir = configuration_file.get_option(semantic_similarity, "model_dir", missing_value="")
         else:
             YLogger.warning(self, "'semantic_similarity' section missing from bot config, using defaults")
 

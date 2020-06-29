@@ -225,6 +225,10 @@ brain:
         negative_threshold: -0.2
         model_dir: libs/pretrain_distillbert_full_sst/
 
+      semantic_similarity:
+        method: InferSent
+        model_dir: libs/encoder/
+
       tokenizer:
         libname: nltk
         split_chars: .

@@ -84,6 +84,12 @@ class PyTorchSemanticSimilarity(SemanticSimilarity):
         model = DistilBertForSequenceClassification.from_pretrained(model_dir)
         self.similarity_classifier = DefaultSemanticSimilarity()
 
+    def similarity_with_concept(self, text, concept):
+        pass
+
+    def similarity_with_concepts(self, text, concepts):
+        pass
+
 class DefaultSemanticSimilarity(SemanticSimilarity):
 
     def __init__(self):
@@ -98,11 +104,13 @@ class DefaultSemanticSimilarity(SemanticSimilarity):
 
 
 if __name__ == "__main__":
-    semantic_similarity = EmbeddingSemanticSimilarity()
-    result = semantic_similarity.similarity_with_concept("Hi", "greeting")
-    result1 = semantic_similarity.similarity_with_concept("Hello", "greeting")
-    result2 = semantic_similarity.similarity_with_concept("Sandwitch", "greeting")
-    print(result, result1, result2)
+    
+    # NOTE: Tensorflow version
+    # semantic_similarity = EmbeddingSemanticSimilarity()
+    # result = semantic_similarity.similarity_with_concept("Hi", "greeting")
+    # result1 = semantic_similarity.similarity_with_concept("Hello", "greeting")
+    # result2 = semantic_similarity.similarity_with_concept("Sandwitch", "greeting")
+    # print(result, result1, result2)
 
     # result = semantic_similarity.similarity_with_concepts("I am religious", ["Islam", "humberger", "iphone"])
     # print(result)
