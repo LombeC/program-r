@@ -226,8 +226,8 @@ brain:
         model_dir: libs/pretrain_distillbert_full_sst/
 
       semantic_similarity:
-        method: InferSent
-        model_dir: libs/encoder/
+        method: distilroberta
+        model_dir: libs/roberta/
 
       tokenizer:
         libname: nltk

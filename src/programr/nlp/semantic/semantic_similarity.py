@@ -4,8 +4,7 @@ import torch
 
 from programr.utils.logging.ylogger import YLogger
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline, RobertaModel, DistilBertModel
-
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline, RobertaModel, DistilBertModel, AutoTokenizer, AutoModel
 
 class SemanticSimilarity():
 
@@ -128,20 +127,18 @@ class SemanticClassifer:
 
 
 if __name__ == "__main__":
+    # NOTE: Example of loading in roberta model
     tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
     model = RobertaModel.from_pretrained('distilroberta-base')
-
     input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
-    # outputs = model(input_ids)
-    # last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output tuple
-
     outputs = model(input_ids)
-    loss, logits = outputs[:2]
-    probs = logits[0, -1].softmax(dim=0)
-    values, predictions = probs.topk(1)
-    print(tokenizer.decode(predictions).split())
+    print(outputs)
 
-
+    # tokenizer = AutoTokenizer.from_pretrained('/home/jarid/.cache/torch/transformers')
+    # model = AutoModel.from_pretrained('/home/jarid/.cache/torch/transformers')
+    # input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
+    # outputs = model(input_ids)
+    # print(outputs)
     
     # NOTE: Tensorflow version
     # semantic_similarity = EmbeddingSemanticSimilarity()
