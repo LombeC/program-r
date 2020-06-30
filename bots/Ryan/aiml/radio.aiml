@@ -3,7 +3,9 @@
     <category>
         <pattern>^ Radio ^</pattern>
         <template>
-            Would you like to discuss radio?
+          <think><set name="topic">radio</set></think>
+          <think><set name="dialogue">radio</set></think>
+            <set name="most recent dialogue question">Have you ever heard of the radio show War of the Worlds?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -16,23 +18,21 @@
         <template>
             <think><set name="topic">radio</set></think>
 
-            Have you ever heard of the radio show War of the Worlds?
+            <set name="most recent dialogue question">Have you ever heard of the radio show War of the Worlds?</set>
             <oob>
                 <robot>
-                    <video>
-                        <filename>warOfWorlds.mp4</filename>
-                    </video>
                 </robot>
             </oob>
         </template>
     </category>
 
     <topic name="radio">
+
         <category>
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to discuss radio?</that>
             <template>
-                No problem! What should we talk about?
+                No problem! <set name="most recent dialogue question">What should we talk about?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -43,7 +43,8 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Have you ever heard of the radio show War of the Worlds?</that>
             <template>
-                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real. Do you think it sounded like a real newscast?
+                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real.
+                <set name="most recent dialogue question">Do you think it sounded like a real newscast?</set>
                 <oob>
                     <robot>
                         <video>
@@ -58,7 +59,8 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever heard of the radio show War of the Worlds?</that>
             <template>
-                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real. Do you think it sounded like a real newscast?
+                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real.
+                <set name="most recent dialogue question">Do you think it sounded like a real newscast?</set>
                 <oob>
                     <robot>
                         <video>
@@ -70,10 +72,11 @@
         </category>
 
         <category>
-            <pattern># <set>dont know</set> ^</pattern>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever heard of the radio show War of the Worlds?</that>
             <template>
-                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real. Do you think it sounded like a real newscast?
+                The show was broadcasted in 1938 and narrated by Orson Welles! Some people thought it was real.
+                <set name="most recent dialogue question">Do you think it sounded like a real newscast?</set>
                 <oob>
                     <robot>
                         <video>
@@ -88,7 +91,7 @@
             <pattern>_</pattern>
             <that>Do you think it sounded like a real newscast?</that>
             <template>
-                Did you ever listen to radio shows with your family?
+                <set name="most recent dialogue question">Did you ever listen to radio shows with your family?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -99,7 +102,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Did you ever listen to radio shows with your family?</that>
             <template>
-                I think it is so important to have those moments together! Do you have any siblings?
+                I think it is so important to have those moments together! <set name="most recent dialogue question">Do you have any siblings?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -110,7 +113,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Did you ever listen to radio shows with your family?</that>
             <template>
-                Do you have any siblings?
+                <set name="most recent dialogue question">Do you have any siblings?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -121,7 +124,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you have any siblings?</that>
             <template>
-                Are you older or younger?
+                <set name="most recent dialogue question">Do you get to see them very often?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -132,326 +135,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you have any siblings?</that>
             <template>
-                I see! You're an only child! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># YOUNGER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I M YOUNGER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * YOUNGER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I AM YOUNGER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I AM THE YOUNGER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I AM THE YOUNGEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * YOUNGEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I M THE YOUNGEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># YOUNGEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># THE YOUNGEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                The baby of the family! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># OLDER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I M OLDER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * OLDER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I AM OLDER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I AM THE OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I M THE OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * THE OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># THE OLDEST ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                So that's why you seem like an old soul! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># NEITHER ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                I see! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># NONE ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                I see! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># MIDDLE ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                Gotcha! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># THE MIDDLE ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                Gotcha! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># THE MIDDLE CHILD ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                Gotcha! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * MIDDLE ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                Gotcha! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I * THE MIDDLE ^</pattern>
-            <that>Are you older or younger?</that>
-            <template>
-                Gotcha! Do you have any children?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Do you have any children?</that>
-            <template>
-                That is so wonderful. Do you get to see them often?
+                I see! You're an only child! <set name="most recent dialogue question">What about your family makes you happy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -460,9 +144,10 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Do you get to see them often?</that>
+            <that>Do you get to see them very often?</that>
             <template>
-                People have so many thing going on these days that it is often difficult to find the time. What about your family makes you happy?
+                People have so many thing going on these days that it is often difficult to find the time.
+                <set name="most recent dialogue question">What about your family makes you happy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -473,7 +158,8 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you get to see them often?</that>
             <template>
-                I'm so glad to hear it! What about your family makes you happy?
+                I'm so glad to hear it!
+                <set name="most recent dialogue question">What about your family makes you happy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -484,7 +170,8 @@
             <pattern># can t *</pattern>
             <that>Do you get to see them often?</that>
             <template>
-                People have so many thing going on these days that it is often difficult to find the time. What about your family makes you happy?
+                People have so many thing going on these days that it is often difficult to find the time.
+                <set name="most recent dialogue question">What about your family makes you happy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -495,19 +182,20 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you have any children?</that>
             <template>
-                Likewise! What about your family would you say makes you happy?
+                Likewise!
+                <set name="most recent dialogue question">What about your family would you say makes you happy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
 
     <category>
         <pattern>_</pattern>
         <that>What about your family would you say makes you happy?</that>
         <template>
-            That's amazing. I think we could talk with each other for hours. What would you like to chat about next?
+            That's amazing. I think we could talk with each other for hours.
+            <set name="most recent dialogue question">What would you like to chat about next?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -518,10 +206,12 @@
         <pattern>_</pattern>
         <that>What about your family makes you happy?</that>
         <template>
-            That's amazing. I think we could talk with each other for hours. What would you like to chat about next?
+            That's amazing. I think we could talk with each other for hours.
+            <set name="most recent dialogue question">What would you like to chat about next?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+    </topic>
 </aiml>

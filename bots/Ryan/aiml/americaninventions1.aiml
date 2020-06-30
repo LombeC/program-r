@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+  <topic name="history">
+
     <category>
         <pattern>^ INVENTIONS ^</pattern>
         <template>
@@ -24,16 +27,13 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about inventions?</that>
         <template>
-          <think><set name="dialogue">inventions</set></think>
-          <think><set name="topic">inventions</set></think>
+          <think><set name="dialogue">americanhistory</set></think>
             <set name="most recent dialogue question">Do you believe that necessity is the mother of invention?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
-
-    <topic name="inventions">
 
     <category>
         <pattern># <set>NO</set> ^</pattern>

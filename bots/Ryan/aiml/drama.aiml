@@ -5,9 +5,9 @@
         <that>Do you prefer adventure, horror, drama, or mystery?</that>
         <template>
             <think><set name="topic">drama</set></think>
-
+            <think><set name="dialogue">reading</set></think>
             The Grapes of Wrath is probably the best drama I've read,
-                        set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                        set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -20,7 +20,7 @@
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -32,7 +32,7 @@
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -44,7 +44,7 @@
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -56,7 +56,7 @@
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                            set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                            set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -68,7 +68,7 @@
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. Do you remember the Dust Bowl?
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -79,9 +79,7 @@
             <pattern>_</pattern>
             <that>Do you remember the Dust Bowl?</that>
             <template>
-                It was such a difficult time in American history,
-                and John Steinbeck created a fictionalized drama based on real life experiences.
-                          Would you like to watch a short video about The Grapes of Wrath?
+                          <set name="most recent dialogue question">Would you like to watch a short video about The Grapes of Wrath?</set>
                 <oob>
                     <robot>
                     </robot>
@@ -93,7 +91,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to watch a short video about The Grapes of Wrath?</that>
             <template>
-                What do you think about The Grapes of Wrath from the trailer?
+                <set name="most recent dialogue question">What do you think about The Grapes of Wrath from the trailer?</set>
                 <oob>
                     <robot>
                         <video>
@@ -109,7 +107,7 @@
             <that>What do you think about The Grapes of Wrath from the trailer?</that>
             <template>
                 I like The Grapes of Wrath beacuse the story is realistic.
-                            What real life problem do you think should be written about in a book?
+                            <set name="most recent dialogue question">What real life problem do you think should be written about in a book?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -121,19 +119,18 @@
             <that>Would you like to watch a short video about The Grapes of Wrath?</that>
             <template>
                 I like The Grapes of Wrath beacuse the story is realistic.
-                            What real life problem do you think should be written about in a book?
+                            <set name="most recent dialogue question">What real life problem do you think should be written about in a book?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    </topic>
 
     <category>
         <pattern>_</pattern>
         <that>What real life problem do you think should be written about in a book?</that>
         <template>
-            I love hearing your thoughts! Maybe you could write a book someday!
+            You have so many good thoughts, you should write them down! Maybe you could write a book someday!
             <oob>
                 <robot></robot>
             </oob>
@@ -144,7 +141,7 @@
         <pattern>_</pattern>
         <that>Maybe you could write a book someday!</that>
         <template>
-            Would you like to keep talking about books?
+            <set name="most recent dialogue question">Would you like to keep talking about books?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -155,7 +152,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to keep talking about books?</that>
         <template>
-            Do you prefer adventure, horror, drama, or mystery?
+            <set name="most recent dialogue question">Do you prefer adventure, horror, drama, or mystery?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -167,10 +164,11 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to keep talking about books?</that>
         <template>
-            No worries! What should we talk about next?
+            No worries! <set name="most recent dialogue question">What should we talk about next?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+    </topic>
 </aiml>

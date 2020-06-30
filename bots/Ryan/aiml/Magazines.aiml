@@ -3,18 +3,22 @@
     <category>
         <pattern># MAGAZINES ^</pattern>
         <template>
-            Have you ever had a subscription to a magazine?
+          <think><set name="topic">magazines</set></think>
+          <think><set name="dialogue">reading</set></think>
+            <set name="most recent dialogue question">Have you ever had a subscription to a magazine?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+
+    <topic name="magazines">
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Have you ever had a subscription to a magazine?</that>
         <template>
-            To get a new issue, every month. Like a gift! Which magazine was it?
+            To get a new issue, every month. Like a gift! <set name="most recent dialogue question">Which magazine was it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -22,14 +26,14 @@
     </category>
 
     <category>
-        <pattern>_</pattern>
+        <pattern>*</pattern>
         <that>Which magazine was it?</that>
         <template>
             I have not heard of
             <set name="magazine"><star/></set>
 
             before.
-                                    Will you tell me about this magazine?
+                                    <set name="most recent dialogue question">Will you tell me about this magazine?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -40,7 +44,7 @@
         <pattern>_</pattern>
         <that>Will you tell me about this magazine?</that>
         <template>
-            What did you like about it?
+            <set name="most recent dialogue question">What did you like about it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -51,106 +55,14 @@
         <pattern>_</pattern>
         <that>What did you like about it?</that>
         <template>
-            I have to admit I like antiques magazines! Did you ever watch Antiques Roadshow?
+            Maybe I'll just have to get myself a subscription, too! <set name="most recent dialogue question">What is the best book you have ever read?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>Did you ever watch Antiques Roadshow?</that>
-        <template>
-            I just love that show so much. I love learning about antiques.
-            Have you ever seen American Pickers on History Channel?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+    <!-- REDIRECT TO READING DIALOGUE -->
 
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Did you ever watch Antiques Roadshow?</that>
-        <template>
-            I just love that show so much. I love learning about antiques.
-            Have you ever seen American Pickers on History Channel?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>dont know</set> ^</pattern>
-        <that>Did you ever watch Antiques Roadshow?</that>
-        <template>
-            I just love that show so much. I love learning about antiques.
-            Have you ever seen American Pickers on History Channel?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>Have you ever seen American Pickers on History Channel?</that>
-        <template>
-            It's only one of the best shows! Do you like going to antique stores?
-            <oob>
-                <robot>
-                    <video>
-                        <filename>American_Pickers.mp4</filename>
-                    </video>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Do you like going to antique stores?</that>
-        <template>
-            Have you ever collected any antiques?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>Do you like going to antique stores?</that>
-        <template>
-            Have you ever collected any antiques?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>dont know</set> ^</pattern>
-        <that>Do you like going to antique stores?</that>
-        <template>
-            Have you ever collected any antiques?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>Have you ever collected any antiques?</that>
-        <template>
-            I think most everyone has a family heirloom or two!
-            Do you have any siblings?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+  </topic>
 </aiml>

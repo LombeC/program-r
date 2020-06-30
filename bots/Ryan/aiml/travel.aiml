@@ -3,7 +3,8 @@
     <category>
         <pattern>^ travel ^</pattern>
         <template>
-            I've been meaning to ask you. Do you like to travel?
+          <think><set name="dialogue">travel</set></think>
+            I've been meaning to ask you. <set name="most recent dialogue question">Do you like to travel?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -13,7 +14,8 @@
     <category>
         <pattern>^ traveling ^</pattern>
         <template>
-            I've been meaning to ask you. Do you like to travel?
+          <think><set name="dialogue">travel</set></think>
+            I've been meaning to ask you. <set name="most recent dialogue question">Do you like to travel?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -23,7 +25,8 @@
     <category>
         <pattern>^ vacation ^</pattern>
         <template>
-            I've been meaning to ask you. Do you like to travel?
+          <think><set name="dialogue">travel</set></think>
+            I've been meaning to ask you. <set name="most recent dialogue question">Do you like to travel?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -35,8 +38,8 @@
         <that>DO YOU LIKE TO TRAVEL?</that>
         <template>
             <think><set name="topic">travel</set></think>
-
-            Where have you enjoyed traveling?
+            <think><set name="dialogue">travel</set></think>
+            <set name="most recent dialogue question">It is always nice to kick off your boots and forget your worries, if you know what I mean! Where have you enjoyed traveling?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -44,11 +47,23 @@
     </category>
 
     <topic name="travel">
+
         <category>
             <pattern># <set>NO</set> ^</pattern>
             <that>DO YOU LIKE TO TRAVEL?</that>
             <template>
-                I see. If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                Perhaps we should chat about something else! <set name="most recent dialogue question">What would you like to talk about next?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>DO YOU LIKE TO TRAVEL?</that>
+            <template>
+                Perhaps we should chat about something else! <set name="most recent dialogue question">What would you like to talk about next?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -59,7 +74,7 @@
             <pattern>_</pattern>
             <that>WHERE HAVE YOU ENJOYED TRAVELING?</that>
             <template>
-                Oh that must have been quite the experience! If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                Wow you really are quite the traveler! <set name="most recent dialogue question">If you could, would you want to travel in Italy, China, Mexico, or in the United States?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -70,7 +85,7 @@
             <pattern>_</pattern>
             <that>WHERE HAVE BEEN YOUR FAVORITE VACATION SPOTS?</that>
             <template>
-                Oh that must have been quite the experience! If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
+                Wow you really are quite the traveler! <set name="most recent dialogue question">If you could, would you want to travel in Italy, China, Mexico, or in the United States?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -78,87 +93,82 @@
         </category>
 
         <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>DO YOU LIKE TO TRAVEL?</that>
-            <template>
-                Where have you enjoyed traveling?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                    <pattern># UNITED STATES ^</pattern>
+                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                    <template>
+                      Jimmy Buffet got it right when he sang Cheeseburger in Paradise.
+                      <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
 
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>DO YOU LIKE TO TRAVEL?</that>
-            <template>
-                I see. If I could go anywhere I would love to travel to Alaska. Have you ever been to Alaska?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
 
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Have you ever been to Alaska?</that>
-            <template>
-                I'm so jealous! If you could visit any foreign country, where would you go?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                <category>
+                            <pattern># AMERICA ^</pattern>
+                            <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                            <template>
+                              Jimmy Buffet got it right when he sang Cheeseburger in Paradise.
+                              <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+                                <oob>
+                                    <robot></robot>
+                                </oob>
+                            </template>
+                        </category>
 
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever been to Alaska?</that>
-            <template>
-                Me either! If you could visit any foreign country, where would you go?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                <category>
+                    <pattern># Mexico ^</pattern>
+                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                    <template>
+                        I would love to travel to Mexico someday to eat delicious food while listening to a mariachi band!
+                        <set name="most recent dialogue question">Do you like Mexican food?</set>
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
 
-        <category>
-            <pattern># <set>dont know</set> ^</pattern>
-            <that>Have you ever been to Alaska?</that>
-            <template>
-                I see. If you could visit any foreign country, where would you go?
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                <category>
+                    <pattern># China ^</pattern>
+                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                    <template>
+                        I would love to travel someday to try Chinese food the way it is supposed to be made!
+                        <set name="most recent dialogue question">How do you feel about Chinese food?</set>
 
-        <category>
-            <pattern>_</pattern>
-            <that>If you could visit any foreign country, where would you go?</that>
-            <template>
-                I love to hear it! For me it's Paris. Here is a picture of Paris, what do you think?
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>paris.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-    </topic>
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>Here is a picture of Paris, what do you think?</that>
-        <template>
-            It's so beautiful and romantic! Do you like stories about romance?
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+                <category>
+                    <pattern># Italy ^</pattern>
+                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                    <template>
+                        I would love to travel to Italy someday to try pasta the way it is supposed to be made!
+                        <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
 
-    <!-- REDIRECT TO ROMANCE DIALOGUE -->
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
 
+                <category>
+                    <pattern># <set>NO</set> ^</pattern>
+                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
+                    <template>
+                        I get that.
+                        <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
+
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
+
+    <!-- REDIRECT TO FOOD DIALOGUES -->
+
+</topic>
   </aiml>

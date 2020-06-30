@@ -4,7 +4,7 @@ import torch
 
 from programr.utils.logging.ylogger import YLogger
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline, RobertaModel, DistilBertModel
 
 
 class SemanticSimilarity():
@@ -76,13 +76,17 @@ class EmbeddingSemanticSimilarity(SemanticSimilarity):
 
 # TODO: Implement this class as the torch version of above class
 class PyTorchSemanticSimilarity(SemanticSimilarity):
+    
     def __init__(self, semantic_similarity_config: BrainSemanticSimilarityConfiguration):
         super().__init__()
         self.semantic_similarity_config = semantic_similarity_config
-        model_dir = semantic_similarity_config.model_dir
+        # model_dir = semantic_similarity_config.model_dir
+        model_dir = 'distilroberta-base'
         tokenizer = DistilBertTokenizer.from_pretrained(model_dir)
-        model = DistilBertForSequenceClassification.from_pretrained(model_dir)
-        self.similarity_classifier = DefaultSemanticSimilarity()
+        model = RobertaModel.from_pretrained(model_dir)
+        
+
+        self.similarity_classifier = SemanticClassifer(model, tokenizer)
 
     def similarity_with_concept(self, text, concept):
         pass
@@ -102,8 +106,42 @@ class DefaultSemanticSimilarity(SemanticSimilarity):
         pass
 
 
+class SemanticClassifer:
+
+    def __init__(self, model, tokenizer):
+        self.model = model
+        self.tokenizer = tokenizer
+
+    def __call__(self, text):
+        input_ids = torch.tensor(tokenizer.encode(text)).unsqueeze(0)
+        outputs = model(input_ids)
+        last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output tuple   
+
+        # input_ids = torch.tensor(self.tokenizer.encode(text, add_special_tokens=True)).unsqueeze(0)
+        # outputs = self.model(input_ids)
+        # outputs = outputs[0].detach().numpy()
+        # scores = np.exp(outputs) / np.exp(outputs).sum(-1)
+        # scores = scores[0].tolist()
+        # result = {"negative": scores[0], "neutral": scores[1], "positive": scores[2]}
+        # return result
+
+
 
 if __name__ == "__main__":
+    tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
+    model = RobertaModel.from_pretrained('distilroberta-base')
+
+    input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
+    # outputs = model(input_ids)
+    # last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output tuple
+
+    outputs = model(input_ids)
+    loss, logits = outputs[:2]
+    probs = logits[0, -1].softmax(dim=0)
+    values, predictions = probs.topk(1)
+    print(tokenizer.decode(predictions).split())
+
+
     
     # NOTE: Tensorflow version
     # semantic_similarity = EmbeddingSemanticSimilarity()

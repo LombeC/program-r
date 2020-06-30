@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-<topic name="inventions">
+<topic name="history">
 
   <category>
       <pattern># Food inventions ^</pattern>
       <that>Do you want to talk about food inventions or the moon landing?</that>
       <template>
-          <think><set name="dialogue">inventions</set></think>
+        <think><set name="dialogue">americanhistory</set></think>
           I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
           <oob>
               <robot></robot>
@@ -19,7 +19,7 @@
       <pattern># Food ^</pattern>
       <that>Do you want to talk about food inventions or the moon landing?</that>
       <template>
-        <think><set name="dialogue">inventions</set></think>
+        <think><set name="dialogue">americanhistory</set></think>
           I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
           <oob>
               <robot></robot>

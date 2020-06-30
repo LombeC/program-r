@@ -24,18 +24,22 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about American history?</that>
         <template>
-            Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
+          <think><set name="dialogue">americanhistory</set></think>
+          <think><set name="topic">history</set></think>
+            <set name="most recent dialogue question">Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
+    <topic name="history">
+
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to talk about American history?</that>
         <template>
-            Sure! What would you like to discuss next?
+            Sure! <set name="most recent dialogue question">What would you like to discuss next?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -46,21 +50,40 @@
         <pattern># PRESIDENTS ^</pattern>
         <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
         <template>
-            <think><set name="topic">presidents</set></think>
-
-            Who do you consider to be your favorite American President?
+            <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <topic name="presidents">
         <category>
             <pattern># PRESIDENT ^</pattern>
             <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
             <template>
-                Who do you consider to be your favorite American President?
+                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># PRESIDENTS ^</pattern>
+            <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+            <template>
+                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># AMERICAN PRESIDENTS ^</pattern>
+            <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+            <template>
+                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -71,17 +94,10 @@
             <pattern>_</pattern>
             <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
             <template>
-                There's one interesting person! Did you know every American President has a portrait painted of them?
-                                        Would you like to hear another fact about the presidents?
+                Well well well! I should have known you like <star/>! Did you know every American President has a portrait painted of them?
+                                        <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
                 <oob>
                     <robot>
-                        <options>
-                            <option>
-                                YES</option>
-
-                            <option>
-                                NO</option>
-                        </options>
                     </robot>
                 </oob>
             </template>
@@ -91,8 +107,8 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to hear another fact about the presidents?</that>
             <template>
-                Ok no worries. Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!
+                Ok no worries. <set name="most recent dialogue question">Would you like to keep talking about American History?
+                                        It's one of my favorite topics and I have lots more to talk about!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -123,7 +139,7 @@
                     <li>Bill Clinton's spoken word retelling of Peter and the Wolf was awarded a Grammy award in 2004<!-- https://en.wikipedia.org/wiki/Wolf_Tracks_and_Peter_and_the_Wolf --></li>
                     <li>George Bush Junior was the first American president to complete a marathon. It took him three hours and forty four minutes.<!-- from: https://historyplex.com/interesting-facts-about-george-w-bush --></li>
                     <li>Barack Obama grew up reading comic books and collects spider man and conan the barbarian comics to this day.<!-- from: https://www.npr.org/templates/story/story.php?storyId=97260170 --></li></random>
-                Pretty neat, huh? Did you know that?
+                Pretty neat, huh? <set name="most recent dialogue question">Did you know that?</set>
                 <oob>
                     <robot>
                         <options>
@@ -142,17 +158,10 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DID YOU KNOW THAT?</that>
             <template>
-                Wow you really know your history! Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!
+                Wow you really know your history! <set name="most recent dialogue question">Would you like to keep talking about American History?
+                                        It's one of my favorite topics and I have lots more to talk about!</set>
                 <oob>
                     <robot>
-                        <options>
-                            <option>
-                                YES</option>
-
-                            <option>
-                                NO</option>
-                        </options>
                     </robot>
                 </oob>
             </template>
@@ -162,28 +171,21 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>DID YOU KNOW THAT?</that>
             <template>
-                Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!
+                <set name="most recent dialogue question">Would you like to keep talking about American History?
+                                        It's one of my favorite topics and I have lots more to talk about!</set>
                 <oob>
                     <robot>
-                        <options>
-                            <option>
-                                YES</option>
-
-                            <option>
-                                NO</option>
-                        </options>
                     </robot>
                 </oob>
             </template>
         </category>
-    </topic>
+
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
         <template>
-            Fair enough! I'm pretty good at talking about other topics too! What would you like to talk about?
+            Fair enough! I'm pretty good at talking about other topics too! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -194,7 +196,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
         <template>
-            Fantastic! Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
+            Fantastic! <set name="most recent dialogue question">Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -205,11 +207,12 @@
         <pattern># <set>No</set> ^</pattern>
         <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
         <template>
-            Sure! What would you like to talk about?
+            Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+    </topic>
 
     <!-- REDIRECT TO AMERICANHISTORY DIALOGUE --></aiml>

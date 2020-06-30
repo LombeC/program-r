@@ -4,27 +4,23 @@
         <pattern># HORROR ^</pattern>
         <that>Do you prefer adventure, horror, drama, or mystery?</that>
         <template>
-            Reading scary stories can be a real scream! Are you familiar with Edgar Allan Poe?
+          <think><set name="dialogue">reading</set></think>
+          <think><set name="topic">horror</set></think>
+            Reading scary stories can be a real scream! <set name="most recent dialogue question">Are you familiar with Edgar Allan Poe?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
+    <topic name="horror">
+
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Are you familiar with Edgar Allan Poe?</that>
         <template>
-            <random>
-                <li>
                     I like how he can even make a knock on a door seem eerie,
-                    like in The Raven. Would you like to hear the beginning of the poem?
-                </li>
-                <li>
-                    He wrote some of the scariest stories in American literature.
-                    Would you like to learn more about him by watching a video?
-                </li>
-            </random>
+                    like in The Raven. <set name="most recent dialogue question">Would you like to hear the beginning of the poem?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -35,7 +31,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to hear the beginning of the poem?</that>
         <template>
-            Creepy isn't it? Did you ever tell ghost stories with friends or family?
+            Creepy isn't it? <set name="most recent dialogue question">Did you ever tell ghost stories with friends or family?</set>
             <oob>
                 <robot>
                     <video>
@@ -50,7 +46,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to hear the beginning of the poem?</that>
         <template>
-            Ok let's move on then. Did you ever tell ghost stories with friends or family?
+            <set name="most recent dialogue question">Did you ever tell ghost stories with friends or family?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -61,8 +57,20 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Are you familiar with Edgar Allan Poe?</that>
         <template>
-            He wrote some of the scariest stories in American literature.
-            Would you like to learn more about him by watching a video?
+          I like how he can even make a knock on a door seem eerie,
+          like in The Raven. <set name="most recent dialogue question">Would you like to hear the beginning of the poem?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Are you familiar with Edgar Allan Poe?</that>
+        <template>
+          I like how he can even make a knock on a door seem eerie,
+          like in The Raven. <set name="most recent dialogue question">Would you like to hear the beginning of the poem?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -73,7 +81,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to learn more about him by watching a video?</that>
         <template>
-            What do you think of his work now after watching that?
+            <set name="most recent dialogue question">What do you think of his work now after watching that?</set>
             <oob>
                 <robot>
                     <video>
@@ -88,7 +96,7 @@
         <pattern>_</pattern>
         <that>What do you think of his work now after watching that?</that>
         <template>
-            I see where you are coming from. Did you ever tell ghost stories with friends or family?
+            I see where you are coming from! <set name="most recent dialogue question">Did you ever tell ghost stories with friends or family?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -99,7 +107,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Did you ever tell ghost stories with friends or family?</that>
         <template>
-            Spooktacular! What is one of your favorite ghost stories about?
+            Spooktacular! <set name="most recent dialogue question">What is one of your favorite ghost stories about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -132,7 +140,7 @@
         <pattern>_</pattern>
         <that>We just need a campfire now, and we can tell ghost stories all day and night!</that>
         <template>
-            In your opinion, what is the scariest book or movie of all time?
+            <set name="most recent dialogue question">In your opinion, what is the scariest book or movie of all time?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -143,8 +151,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to learn more about him by watching a video?</that>
         <template>
-            Let's talk about something else horror-related.
-                                    In your opinion, what is the scariest book or movie of all time?
+                <set name="most recent dialogue question">In your opinion, what is the scariest book or movie of all time?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -158,7 +165,7 @@
             <think><set name="scariest text"><star/></set></think>
 
             If computers could get goosebumps, I'd have some already.
-            Should we keep talking about books?
+            <set name="most recent dialogue question">Should we keep talking about books?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -169,7 +176,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Should we keep talking about books?</that>
         <template>
-            Do you prefer adventure, horror, drama, or mystery?
+            <set name="most recent dialogue question">Do you prefer adventure, horror, drama, or mystery?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -180,10 +187,11 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Should we keep talking about books?</that>
         <template>
-            What would you like to talk about next?
+            <set name="most recent dialogue question">What would you like to talk about next?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
+  </topic>
 </aiml>

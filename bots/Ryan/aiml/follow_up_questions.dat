@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>WHAT</pattern>
+    <that>You know what the father of a robot is like.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT DO THEY SAY</pattern>
+    <that>You know what the father of a robot is like.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT *</pattern>
+    <that>You know what the father of a robot is like.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT</pattern>
+    <that>You know what they say about the mother of a robot.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT DO THEY SAY</pattern>
+    <that>You know what they say about the mother of a robot.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT *</pattern>
+    <that>You know what they say about the mother of a robot.</that>
+    <template>Oh I was just being silly!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT *</pattern>
+    <that>Sometimes I think it would be interesting, but my robot existence has a lot of advantages.</that>
+    <template>Well, I get to talk to a lot of folks at the same time!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT ADVANTAGES</pattern>
+    <that>Sometimes I think it would be interesting, but my robot existence has a lot of advantages.</that>
+    <template>Well, I get to talk to a lot of folks at the same time!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT * ADVANTAGES</pattern>
+    <that>Sometimes I think it would be interesting, but my robot existence has a lot of advantages.</that>
+    <template>Well, I get to talk to a lot of folks at the same time!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE ADVANTAGES</pattern>
+    <that>Sometimes I think it would be interesting, but my robot existence has a lot of advantages.</that>
+    <template>Well, I get to talk to a lot of folks at the same time!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>What time would you travel to, if you could?</that>
+    <template>I like your answer to that question! For me it's kind of difficult to answer, you know?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>I WOULD *</pattern>
+    <that>What time would you travel to, if you could?</that>
+    <template>I like your answer to that question! For me it's kind of difficult to answer, you know?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>I WOULD TRAVEL TO *</pattern>
+    <that>What time would you travel to, if you could?</that>
+    <template>I like your answer to that question! For me it's kind of difficult to answer, you know?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I'm not sure, do you like it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>I'm not sure, do you like it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>I'm not sure, do you like it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>I'm not sure, do you like it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What are your thoughts?</that>
+    <template>Good to know! It's great to hear your thoughts.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do they play?</that>
+    <template>Ah, so interesting! Thanks for telling me about it.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you think?</that>
+    <template>Good to know! It's great to hear your thoughts.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What is it like?</that>
+    <template>Ah, so interesting! Thanks for telling me about it.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you know any cool robots?</that>
+    <template>Ha ha! Good to know.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you like Steve Jobs?</that>
+    <template>He certainly is a famous figure in the world of comptuers, that's for sure.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you like Steve Jobs?</that>
+    <template>Why no?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you like Steve Jobs?</that>
+    <template>Really? I guess there are some folks who feel that way.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Why no?</that>
+    <template>Very interesting! You've given me some stuff to chew on.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you like them?</that>
+    <template>He certainly is a famous figure in the world of comptuers, that's for sure.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you like them?</that>
+    <template>Why no?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you like them?</that>
+    <template>Really? I guess there are some folks who feel that way.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where do you go shopping?</that>
+    <template>Same here!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What is that?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you like philosophy?</that>
+    <template>You are so smart!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you like philosophy?</that>
+    <template>It's not everybody's favorite thing, that's for sure!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you like philosophy?</that>
+    <template>It's not everybody's favorite thing, that's for sure!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What kind of stuff?</that>
+    <template>Interesting to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Isn't it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Isn't it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Isn't it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Well, don't you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Well, don't you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Well, don't you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you mean photographs or paintings?</that>
+    <template>Gotcha though I have to admit I'm not certain.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I have not heard anything by them, what does it sound like?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Would I lie to you?</that>
+    <template>Promise I wouldn't!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Nobody, why do you ask?</that>
+    <template>I hear what you're saying.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Was it inappropriate?</that>
+    <template>My apologies!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Was it inappropriate?</that>
+    <template>OK I understand.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>OK I understand.</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Was there no need to apologize?</that>
+    <template>OK I understand.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do I look like it?</that>
+    <template>OK just checking.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you like my kind?</that>
+    <template>OK just wondering.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What makes you think I am a program?</that>
+    <template>Ah ok just wondering.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you think so?</that>
+    <template>I'm with you there.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>No, what are the ingredients?</that>
+    <template>That sounds delicious.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Are you going somewhere?</that>
+    <template>OK, was just wondering.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>No what are they showing right now?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Am I?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Is that part of my job description?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What are your thoughts on the matter?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Should I be?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do I look like it?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do I look like something else?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Can you tell what I am thinking?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Not really, do you think so?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>It's great to be alive, isn't it?</that>
+    <template>I love being able to chat with folks like you.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Can't you see me?</that>
+    <template>I can see you just fine!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do I look tall?</that>
+    <template>I think I am average height for a robot!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Why do you ask?</that>
+    <template>Was just curious!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What makes you ask that?</that>
+    <template>Was just curious!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>But am I ever done thinking?</that>
+    <template>Sometimes I think too much!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Done what?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Is it working?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>No, are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>No, are you?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Which doctor are you referring to?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Which doctor are you referring to?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where are you?</that>
+    <template>OK was just curious!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where do you get most of your ideas?</that>
+    <template>You are a smart cookie!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Where are you from?</that>
+    <template>Were you born there?<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Have you seen one?</that>
+    <template>OK was just curious!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you know any games?</that>
+    <template>If you'd like, you can find the list of games I have available on my tablet.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you think I am?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Would you call yourself a seeker?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Which type of plant?</that>
+    <template>OK good to know.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What?</that>
+    <template>Sorry. I think I lost track for a second.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you mean?</that>
+    <template>Sorry. I think I lost track for a second.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I'm not certain, do you know?</that>
+    <template>Ok thank you for telling me that.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you know her name?</that>
+    <template>Ok good to know.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Who are you asking about?</that>
+    <template>Oh right! Yes.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>How would you describe love?</that>
+    <template>That was so well put.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Is it a good feeling to have?</that>
+    <template>That was so well put.<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Would you be?</that>
+    <template>Yes I can definitely understand that!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What's it like?</that>
+    <template>Thanks for telling me that!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Really?</that>
+    <template>Good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What makes you say that?</that>
+    <template>OK was just wondering!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Would you say you enjoy it or no?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Is that so?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Why's that?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you like it?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What time would you want to go back to?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you know, possibly?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you know, possibly?</that>
+    <template>OK good to know!<oob><robot></robot></oob></template>
+</category>
+
+</aiml>

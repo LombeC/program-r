@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-  <topic name="inventions">
+  <topic name="history">
 
     <category>
         <pattern># Moon landing ^</pattern>
         <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
-          <think><set name="dialogue">inventions</set></think>
+          <think><set name="dialogue">americanhistory</set></think>
           Some people think that the moon landing was faked. I just don't know about that,
                                 what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
@@ -20,7 +20,7 @@
         <pattern># Moon ^</pattern>
         <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
-          <think><set name="dialogue">inventions</set></think>
+          <think><set name="dialogue">americanhistory</set></think>
           Some people think that the moon landing was faked. I just don't know about that,
                                 what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
