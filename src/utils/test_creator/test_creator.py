@@ -299,6 +299,8 @@ def parse_categories(categories, output_file, bot_node, get_node, aiml_file, tex
             output_file.write(test_line)
             output_file.write("\n")
 
+            f = open("results/questions.txt", "a")
+            f.write(question + "\n")
             
         print("completed")
         return questions

@@ -55,17 +55,19 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your boyfriend's name?</that>
-      <template>
+        <that>What is your boyfriend's name?</that>
+        <template>
         OK. Your boyfriend's name is <set name="boyfriend"><star /></set>.
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
   <category>
       <pattern>MY BOYFRIEND IS *</pattern>
-      <that>What is your boyfriend's name?</that>
-      <template>
+        <that>What is your boyfriend's name?</that>
+        <template>
         OK. Your boyfriend's name is <set name="boyfriend"><star /></set>.
         <oob>
             <robot></robot>
@@ -258,8 +260,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your girlfriend's name?</that>
-      <template>
+        <that>What is your girlfriend's name?</that>
+        <template>
         OK. Your girlfriend's name is <set name="girlfriend"><star /></set>.
         <oob>
             <robot></robot>
@@ -269,19 +271,23 @@
 
   <category>
       <pattern>MY GIRLFRIEND IS *</pattern>
-      <that>What is your girlfriend's name?</that>
-      <template>
+        <that>What is your girlfriend's name?</that>
+        <template>
         OK. Your girlfriend's name is <set name="girlfriend"><star /></set>.
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
   <category>
       <pattern>MY GIRLFRIEND S *</pattern>
-      <that>What is your girlfriend's name?</that>
-      <template>
+        <that>What is your girlfriend's name?</that>
+        <template>
         OK. Your girlfriend's name is <set name="girlfriend"><star /></set>.
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
@@ -403,8 +409,6 @@
       </template>
   </category>
 
-
-
   <category>
       <pattern>WHAT IS MY WIFES NAME</pattern>
       <template>
@@ -459,8 +463,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your wife's name?</that>
-      <template>
+        <that>What is your wife's name?</that>
+        <template>
         OK. Your wife's name is <set name="wife"><star /></set>. How long have you been married?
         <oob>
             <robot></robot>
@@ -470,8 +474,8 @@
 
   <category>
       <pattern>MY WIFE IS *</pattern>
-      <that>What is your wife's name?</that>
-      <template>
+        <that>What is your wife's name?</that>
+        <template>
         OK. Your wife's name is <set name="wife"><star /></set>. How long have you been married?
         <oob>
             <robot></robot>
@@ -481,8 +485,8 @@
 
   <category>
       <pattern>MY WIFE S *</pattern>
-      <that>What is your wife's name?</that>
-      <template>
+        <that>What is your wife's name?</that>
+        <template>
         OK. Your wife's name is <set name="wife"><star /></set>. How long have you been married?
         <oob>
             <robot></robot>
@@ -664,8 +668,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your husband's name?</that>
-      <template>
+        <that>What is your husband's name?</that>
+        <template>
         OK. Your husband's name is <set name="husband"><star /></set>. How long have you been married?
         <oob>
             <robot></robot>
@@ -675,8 +679,8 @@
 
   <category>
       <pattern>MY HUSBAND IS *</pattern>
-      <that>What is your husband's name?</that>
-      <template>
+        <that>What is your husband's name?</that>
+        <template>
         OK. Your husband's name is <set name="husband"><star /></set>. How long have you been married?
         <oob>
             <robot></robot>
@@ -686,10 +690,12 @@
 
   <category>
       <pattern>MY HUSBAND S *</pattern>
-      <that>What is your husband's name?</that>
-      <template>
+        <that>What is your husband's name?</that>
+        <template>
         OK. Your husband's name is <set name="husband"><star /></set>. How long have you been married?
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
@@ -868,8 +874,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your son's name?</that>
-      <template>
+        <that>What is your son's name?</that>
+        <template>
         OK. Your son's name is <set name="son"><star /></set>. That's a good name for a boy.
         <oob>
             <robot></robot>
@@ -879,8 +885,8 @@
 
   <category>
       <pattern>MY SON IS *</pattern>
-      <that>What is your son's name?</that>
-      <template>
+        <that>What is your son's name?</that>
+        <template>
         OK. Your son's name is <set name="son"><star /></set>. That's a good name for a boy.
         <oob>
             <robot></robot>
@@ -890,8 +896,8 @@
 
   <category>
       <pattern>MY SON S *</pattern>
-      <that>What is your son's name?</that>
-      <template>
+        <that>What is your son's name?</that>
+        <template>
         OK. Your son's name is <set name="son"><star /></set>. That's a good name for a boy.
         <oob>
             <robot></robot>
@@ -1017,9 +1023,6 @@
       </template>
   </category>
 
-
-
-
   <category>
       <pattern>WHAT IS MY STEPSONS NAME</pattern>
       <template>
@@ -1074,8 +1077,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepson's name?</that>
-      <template>
+        <that>What is your stepson's name?</that>
+        <template>
         OK. Your stepson's name is <set name="stepson"><star /></set>.
         <oob>
             <robot></robot>
@@ -1085,8 +1088,8 @@
 
   <category>
       <pattern>MY STEPSON IS *</pattern>
-      <that>What is your stepson's name?</that>
-      <template>
+        <that>What is your stepson's name?</that>
+        <template>
         OK. Your stepson's name is <set name="stepson"><star /></set>.
         <oob>
             <robot></robot>
@@ -1096,8 +1099,8 @@
 
   <category>
       <pattern>MY STEPSON S *</pattern>
-      <that>What is your stepson's name?</that>
-      <template>
+        <that>What is your stepson's name?</that>
+        <template>
         OK. Your stepson's name is <set name="stepson"><star /></set>.
         <oob>
             <robot></robot>
@@ -1280,8 +1283,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your daughter's name is <set name="daughter"><star /></set>. That's a good name for a girl.
         <oob>
             <robot></robot>
@@ -1291,8 +1294,8 @@
 
   <category>
       <pattern>MY DAUGHTER IS *</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your daughter's name is <set name="daughter"><star /></set>. That's a good name for a girl.
         <oob>
             <robot></robot>
@@ -1302,8 +1305,8 @@
 
   <category>
       <pattern>MY DAUGHTER S *</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your daughter's name is <set name="daughter"><star /></set>. That's a good name for a girl.
         <oob>
             <robot></robot>
@@ -1607,8 +1610,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your name?</that>
-      <template>
+        <that>What is your name?</that>
+        <template>
         I'm so glad to know you, <set name="name"><star /></set>!
         <oob>
             <robot></robot>
@@ -1618,8 +1621,8 @@
 
   <category>
       <pattern>MY NAME IS *</pattern>
-      <that>What is your name?</that>
-      <template>
+        <that>What is your name?</that>
+        <template>
         I'm so glad to know you, <set name="name"><star /></set>!
         <oob>
             <robot></robot>
@@ -1629,8 +1632,8 @@
 
   <category>
       <pattern>MY NAME S *</pattern>
-      <that>What is your name?</that>
-      <template>
+        <that>What is your name?</that>
+        <template>
         I'm so glad to know you, <set name="name"><star /></set>!
         <oob>
             <robot></robot>
@@ -1640,8 +1643,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your middle name?</that>
-      <template>
+        <that>What is your middle name?</that>
+        <template>
         OK your middle name is <set name="middlename"><star /></set>.
         <oob>
             <robot></robot>
@@ -1651,8 +1654,8 @@
 
   <category>
       <pattern>MY MIDDLE NAME IS *</pattern>
-      <that>What is your middle name?</that>
-      <template>
+        <that>What is your middle name?</that>
+        <template>
         OK your middle name is <set name="middlename"><star /></set>.
         <oob>
             <robot></robot>
@@ -1662,8 +1665,8 @@
 
   <category>
       <pattern>MY MIDDLE NAME S *</pattern>
-      <that>What is your middle name?</that>
-      <template>
+        <that>What is your middle name?</that>
+        <template>
         OK your middle name is <set name="middlename"><star /></set>.
         <oob>
             <robot></robot>
@@ -1676,8 +1679,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your last name?</that>
-      <template>
+        <that>What is your last name?</that>
+        <template>
         OK your last name is <set name="lastname"><star /></set>.
         <oob>
             <robot></robot>
@@ -1687,8 +1690,8 @@
 
   <category>
       <pattern>MY LAST NAME IS *</pattern>
-      <that>What is your last name?</that>
-      <template>
+        <that>What is your last name?</that>
+        <template>
         OK your last name is <set name="lastname"><star /></set>.
         <oob>
             <robot></robot>
@@ -1698,8 +1701,8 @@
 
   <category>
       <pattern>MY LAST NAME S *</pattern>
-      <that>What is your last name?</that>
-      <template>
+        <that>What is your last name?</that>
+        <template>
         OK your last name is <set name="lastname"><star /></set>.
         <oob>
             <robot></robot>
@@ -1756,11 +1759,8 @@
 
   <category>
       <pattern>I AM CALLED *</pattern>
-      <template>
         <that>What is your name?</that>
-        <think>
-            <set name="personality">average</set>
-        </think>
+        <template>
         <random>
             <li>Hi! It's so nice to meet you,</li>
             <li>Hello! So glad to see you,</li>
@@ -1779,11 +1779,8 @@
 
   <category>
       <pattern>I M CALLED *</pattern>
-      <template>
         <that>What is your name?</that>
-        <think>
-            <set name="personality">average</set>
-        </think>
+        <template>
         <random>
             <li>Hi! It's so nice to meet you,</li>
             <li>Hello! So glad to see you,</li>
@@ -1899,8 +1896,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your nickname?</that>
-      <template>
+        <that>What is your nickname?</that>
+        <template>
         OK. Your nickname is <set name="nickname"><star /></set>.
         <oob>
             <robot></robot>
@@ -1910,8 +1907,8 @@
 
   <category>
       <pattern>MY NICKNAME IS *</pattern>
-      <that>What is your nickname?</that>
-      <template>
+        <that>What is your nickname?</that>
+        <template>
         OK. Your nickname is <set name="nicknamee"><star /></set>.
         <oob>
             <robot></robot>
@@ -1921,8 +1918,8 @@
 
   <category>
       <pattern>MY NICKNAME S *</pattern>
-      <that>What is your nickname?</that>
-      <template>
+        <that>What is your nickname?</that>
+        <template>
         OK. Your nickname is <set name="nickname"><star /></set>.
         <oob>
             <robot></robot>
@@ -1943,8 +1940,6 @@
       <oob><robot></robot></oob>
       </template>
   </category>
-
-
 
   <category>
       <pattern>MY NICKNAME IS WHAT</pattern>
@@ -2059,8 +2054,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your stepdaughter's name is <set name="stepdaughter"><star /></set>.
         <oob>
             <robot></robot>
@@ -2070,8 +2065,8 @@
 
   <category>
       <pattern>MY STEPDAUGHTER IS *</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your stepdaughter's name is <set name="stepdaughter"><star /></set>.
         <oob>
             <robot></robot>
@@ -2081,8 +2076,8 @@
 
   <category>
       <pattern>MY STEPDAUGHTER S *</pattern>
-      <that>What is your daughter's name?</that>
-      <template>
+        <that>What is your daughter's name?</that>
+        <template>
         OK. Your stepdaughter's name is <set name="stepdaughter"><star /></set>.
         <oob>
             <robot></robot>
@@ -2266,8 +2261,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your mother's name?</that>
-      <template>
+        <that>What is your mother's name?</that>
+        <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2277,8 +2272,8 @@
 
   <category>
       <pattern>MY MOTHER IS *</pattern>
-      <that>What is your mother's name?</that>
-      <template>
+        <that>What is your mother's name?</that>
+        <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2288,8 +2283,8 @@
 
   <category>
       <pattern>MY MOTHER S *</pattern>
-      <that>What is your mother's name?</that>
-      <template>
+        <that>What is your mother's name?</that>
+        <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2471,8 +2466,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2482,8 +2477,8 @@
 
   <category>
       <pattern>MY STEPMOTHER IS *</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2493,8 +2488,8 @@
 
   <category>
       <pattern>MY STEPMOTHER S *</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2676,7 +2671,7 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your mother's name?</that>
+        <that>What is your mother's name?</that>
         <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
@@ -2687,8 +2682,8 @@
 
   <category>
       <pattern>MY MOM IS *</pattern>
-      <that>What is your mother's name?</that>
-      <template>
+        <that>What is your mother's name?</that>
+        <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2698,8 +2693,8 @@
 
   <category>
       <pattern>MY MOM S *</pattern>
-      <that>What is your mother's name?</that>
-      <template>
+        <that>What is your mother's name?</that>
+        <template>
         OK. Your mother's name is <set name="mother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2825,6 +2820,11 @@
       </template>
   </category>
 
+
+
+
+
+
   <category>
       <pattern>WHAT IS MY STEPMOMS NAME</pattern>
       <template>
@@ -2879,8 +2879,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2890,8 +2890,8 @@
 
   <category>
       <pattern>MY STEPMOM IS *</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -2901,8 +2901,8 @@
 
   <category>
       <pattern>MY STEPMOM S *</pattern>
-      <that>What is your stepmother's name?</that>
-      <template>
+        <that>What is your stepmother's name?</that>
+        <template>
         OK. Your stepmother's name is <set name="stepmother"><star /></set>.
         <oob>
             <robot></robot>
@@ -3085,8 +3085,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3096,8 +3096,8 @@
 
   <category>
       <pattern>MY FATHER IS *</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3107,8 +3107,8 @@
 
   <category>
       <pattern>MY FATHER S *</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3290,8 +3290,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3301,8 +3301,8 @@
 
   <category>
       <pattern>MY DAD IS *</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3312,8 +3312,8 @@
 
   <category>
       <pattern>MY DAD S *</pattern>
-      <that>What is your father's name?</that>
-      <template>
+        <that>What is your father's name?</that>
+        <template>
         OK. Your father's name is <set name="father"><star /></set>.
         <oob>
             <robot></robot>
@@ -3496,8 +3496,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
         <oob>
             <robot></robot>
@@ -3507,8 +3507,8 @@
 
   <category>
       <pattern>MY STEPDAD IS *</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
         <oob>
             <robot></robot>
@@ -3518,10 +3518,12 @@
 
   <category>
       <pattern>MY STEPDAD S *</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
@@ -3702,8 +3704,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
         <oob>
             <robot></robot>
@@ -3713,8 +3715,8 @@
 
   <category>
       <pattern>MY STEPFATHER IS *</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
         <oob>
             <robot></robot>
@@ -3724,8 +3726,8 @@
 
   <category>
       <pattern>MY STEPFATHER S *</pattern>
-      <that>What is your stepfather's name?</that>
-      <template>
+        <that>What is your stepfather's name?</that>
+        <template>
         OK. Your stepfather's name is <set name="stepfather"><star /></set>.
         <oob>
             <robot></robot>
@@ -3908,8 +3910,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your brother's name?</that>
-      <template>
+        <that>What is your brother's name?</that>
+        <template>
         OK. Your brother's name is <set name="brother"><star /></set>.
         <oob>
             <robot></robot>
@@ -3919,8 +3921,8 @@
 
   <category>
       <pattern>MY BROTHER IS *</pattern>
-      <that>What is your brother's name?</that>
-      <template>
+        <that>What is your brother's name?</that>
+        <template>
         OK. Your brother's name is <set name="brother"><star /></set>.
         <oob>
             <robot></robot>
@@ -3930,8 +3932,8 @@
 
   <category>
       <pattern>MY BROTHER S *</pattern>
-      <that>What is your brother's name?</that>
-      <template>
+        <that>What is your brother's name?</that>
+        <template>
         OK. Your brother's name is <set name="brother"><star /></set>.
         <oob>
             <robot></robot>
@@ -4114,8 +4116,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepbrother's name?</that>
-      <template>
+        <that>What is your stepbrother's name?</that>
+        <template>
         OK. Your stepbrother's name is <set name="stepbrother"><star /></set>.
         <oob>
             <robot></robot>
@@ -4125,8 +4127,8 @@
 
   <category>
       <pattern>MY STEPBROTHER IS *</pattern>
-      <that>What is your stepbrother's name?</that>
-      <template>
+        <that>What is your stepbrother's name?</that>
+        <template>
         OK. Your stepbrother's name is <set name="stepbrother"><star /></set>.
         <oob>
             <robot></robot>
@@ -4136,8 +4138,8 @@
 
   <category>
       <pattern>MY STEPBROTHER S *</pattern>
-      <that>What is your stepbrother's name?</that>
-      <template>
+        <that>What is your stepbrother's name?</that>
+        <template>
         OK. Your stepbrother's name is <set name="stepbrother"><star /></set>.
         <oob>
             <robot></robot>
@@ -4215,7 +4217,9 @@
       <pattern>MY STEPBROTHERS NAME IS *</pattern>
       <template>
         OK. Your stepbrother's name is <set name="stepbrother"><star /></set>.
-        <oob><robot></robot></oob>
+        <oob>
+            <robot></robot>
+        </oob>
       </template>
   </category>
 
@@ -4318,8 +4322,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your sister's name?</that>
-      <template>
+        <that>What is your sister's name?</that>
+        <template>
         OK. Your sister's name is <set name="sister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4329,8 +4333,8 @@
 
   <category>
       <pattern>MY SISTER IS *</pattern>
-      <that>What is your sister's name?</that>
-      <template>
+        <that>What is your sister's name?</that>
+        <template>
         OK. Your sister's name is <set name="sister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4340,8 +4344,8 @@
 
   <category>
       <pattern>MY SISTER S *</pattern>
-      <that>What is your sister's name?</that>
-      <template>
+        <that>What is your sister's name?</that>
+        <template>
         OK. Your sister's name is <set name="sister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4523,8 +4527,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your stepsister's name?</that>
-      <template>
+        <that>What is your stepsister's name?</that>
+        <template>
         OK. Your stepsister's name is <set name="stepsister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4534,8 +4538,8 @@
 
   <category>
       <pattern>MY STEPSISTER IS *</pattern>
-      <that>What is your stepsister's name?</that>
-      <template>
+        <that>What is your stepsister's name?</that>
+        <template>
         OK. Your stepsister's name is <set name="stepsister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4545,8 +4549,8 @@
 
   <category>
       <pattern>MY STEPSISTER S *</pattern>
-      <that>What is your stepsister's name?</that>
-      <template>
+        <that>What is your stepsister's name?</that>
+        <template>
         OK. Your stepsister's name is <set name="stepsister"><star /></set>.
         <oob>
             <robot></robot>
@@ -4729,8 +4733,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your fiance's name?</that>
-      <template>
+        <that>What is your fiance's name?</that>
+        <template>
         OK. Your fiance's name is <set name="fiance"><star /></set>.
         <oob>
             <robot></robot>
@@ -4740,8 +4744,8 @@
 
   <category>
       <pattern>MY FIANCE IS *</pattern>
-      <that>What is your fiance's name?</that>
-      <template>
+        <that>What is your fiance's name?</that>
+        <template>
         OK. Your fiance's name is <set name="fiance"><star /></set>.
         <oob>
             <robot></robot>
@@ -4751,8 +4755,8 @@
 
   <category>
       <pattern>MY FIANCE S *</pattern>
-      <that>What is your fiance's name?</that>
-      <template>
+        <that>What is your fiance's name?</that>
+        <template>
         OK. Your fiance's name is <set name="fiance"><star /></set>.
         <oob>
             <robot></robot>
@@ -4958,8 +4962,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your partner's name?</that>
-      <template>
+        <that>What is your partner's name?</that>
+        <template>
         OK. Your partner's name is <set name="partner"><star /></set>.
         <oob>
             <robot></robot>
@@ -4969,8 +4973,8 @@
 
   <category>
       <pattern>MY PARTNER IS *</pattern>
-      <that>What is your partner's name?</that>
-      <template>
+        <that>What is your partner's name?</that>
+        <template>
         OK. Your partner's name is <set name="partner"><star /></set>.
         <oob>
             <robot></robot>
@@ -4980,8 +4984,8 @@
 
   <category>
       <pattern>MY PARTNER S *</pattern>
-      <that>What is your partner's name?</that>
-      <template>
+        <that>What is your partner's name?</that>
+        <template>
         OK. Your partner's name is <set name="partner"><star /></set>.
         <oob>
             <robot></robot>
@@ -5185,8 +5189,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your dog's name?</that>
-      <template>
+        <that>What is your dog's name?</that>
+        <template>
         OK. Your dog's name is <set name="dog"><star /></set>. Perfect name for a dog.
         <oob>
             <robot></robot>
@@ -5196,8 +5200,8 @@
 
   <category>
       <pattern>MY DOG IS *</pattern>
-      <that>What is your dog's name?</that>
-      <template>
+        <that>What is your dog's name?</that>
+        <template>
         OK. Your dog's name is <set name="dog"><star /></set>. Perfect name for a dog.
         <oob>
             <robot></robot>
@@ -5207,8 +5211,8 @@
 
   <category>
       <pattern>MY DOG S *</pattern>
-      <that>What is your dog's name?</that>
-      <template>
+        <that>What is your dog's name?</that>
+        <template>
         OK. Your dog's name is <set name="dog"><star /></set>. Perfect name for a dog.
         <oob>
             <robot></robot>
@@ -5415,8 +5419,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your cat's name?</that>
-      <template>
+        <that>What is your cat's name?</that>
+        <template>
         OK. Your cat's name is <set name="cat"><star /></set>. Great name for a kitty.
         <oob>
             <robot></robot>
@@ -5426,8 +5430,8 @@
 
   <category>
       <pattern>MY CAT IS *</pattern>
-      <that>What is your cat's name?</that>
-      <template>
+        <that>What is your cat's name?</that>
+        <template>
         OK. Your cat's name is <set name="cat"><star /></set>. Great name for a kitty.
         <oob>
             <robot></robot>
@@ -5437,8 +5441,8 @@
 
   <category>
       <pattern>MY CAT S *</pattern>
-      <that>What is your cat's name?</that>
-      <template>
+        <that>What is your cat's name?</that>
+        <template>
         OK. Your cat's name is <set name="cat"><star /></set>. Great name for a kitty.
         <oob>
             <robot></robot>
@@ -5643,8 +5647,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your pet's name?</that>
+        <template>
         OK. Your pet's name is <set name="pet"><star /></set>. I love that name.
         <oob>
             <robot></robot>
@@ -5654,8 +5658,8 @@
 
   <category>
       <pattern>MY PET IS *</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your pet's name?</that>
+        <template>
         OK. Your pet's name is <set name="pet"><star /></set>. I love that name.
         <oob>
             <robot></robot>
@@ -5665,8 +5669,8 @@
 
   <category>
       <pattern>MY PET S *</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your pet's name?</that>
+        <template>
         OK. Your pet's name is <set name="pet"><star /></set>. I love that name.
         <oob>
             <robot></robot>
@@ -5872,8 +5876,8 @@
 
   <category>
       <pattern>*</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your friend's name?</that>
+        <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
             <robot></robot>
@@ -5883,8 +5887,8 @@
 
   <category>
       <pattern>MY FRIEND IS *</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your friend's name?</that>
+        <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
             <robot></robot>
@@ -5894,8 +5898,8 @@
 
   <category>
       <pattern>MY FRIEND S *</pattern>
-      <that>What is your pet's name?</that>
-      <template>
+        <that>What is your friend's name?</that>
+        <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
             <robot></robot>
@@ -5905,7 +5909,7 @@
 
   <category>
       <pattern>MY FRIENDS NAME IS *</pattern>
-      <that>What is your pet's name?</that>
+      <that>What is your friend's name?</that>
       <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
@@ -5916,7 +5920,7 @@
 
   <category>
       <pattern>MY FRIEND S NAME S *</pattern>
-      <that>What is your pet's name?</that>
+      <that>What is your friend's name?</that>
       <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
@@ -5927,7 +5931,7 @@
 
   <category>
       <pattern>HER NAME IS *</pattern>
-      <that>What is your pet's name?</that>
+      <that>What is your friend's name?</that>
       <template>
         OK. Your friend's name is <set name="friend"><star /></set>.
         <oob>
@@ -6650,8 +6654,126 @@
 
 
 
+
+
   <category>
-      <pattern><set>JOBS</set></pattern>
+      <pattern>MY JOB IS *</pattern>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>MY JOB S *</pattern>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORK AS A *</pattern>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORK IN *</pattern>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+
+  <category>
+      <pattern>MY JOB WAS *</pattern>
+      <template>
+        <random>
+          <li>What did you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Did you enjoy your work?</li>
+          <li>How many years did you work for?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORKED AS A *</pattern>
+      <template>
+        <random>
+          <li>What did you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Did you enjoy your work?</li>
+          <li>How many years did you work for?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORKED IN *</pattern>
+      <template>
+        <random>
+          <li>What did you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Did you enjoy your work?</li>
+          <li>How many years did you work for?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+
+
+
+  <category>
+      <pattern>I AM A *</pattern>
       <that>What is your job?</that>
       <template>
         <random>
@@ -6668,7 +6790,8 @@
   </category>
 
   <category>
-      <pattern>I AM A <set>JOBS</set></pattern>
+      <pattern>I M A *</pattern>
+      <that>What is your job?</that>
       <template>
         <random>
           <li>What do you like most about your job?</li>
@@ -6684,7 +6807,8 @@
   </category>
 
   <category>
-      <pattern>I M A <set>JOBS</set></pattern>
+      <pattern>MY JOB IS *</pattern>
+      <that>What is your job?</that>
       <template>
         <random>
           <li>What do you like most about your job?</li>
@@ -6692,13 +6816,16 @@
           <li>Do you enjoy your work?</li>
           <li>How long have you been doing that?</li>
         </random>
-        <think><set name="job"><star /></set></think>
+          <think>
+              <set name="job"><star /></set>
+          </think>
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
-      <pattern>MY JOB IS <set>JOBS</set></pattern>
+      <pattern>MY JOB S *</pattern>
+      <that>What is your job?</that>
       <template>
         <random>
           <li>What do you like most about your job?</li>
@@ -6706,61 +6833,102 @@
           <li>Do you enjoy your work?</li>
           <li>How long have you been doing that?</li>
         </random>
-        <think><set name="job"><star /></set></think>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>*</pattern>
+      <that>What is your job?</that>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORK AS A *</pattern>
+      <that>What is your job?</that>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WORK IN *</pattern>
+      <that>What is your job?</that>
+      <template>
+        <random>
+          <li>What do you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Do you enjoy your work?</li>
+          <li>How long have you been doing that?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I WAS A *</pattern>
+      <that>What is your job?</that>
+      <template>
+        <random>
+          <li>What did you like most about your job?</li>
+          <li>How did you get into that line of work?</li>
+          <li>Did you enjoy your work?</li>
+          <li>How many years did you work for?</li>
+        </random>
+          <think>
+              <set name="job"><star /></set>
+          </think>
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+
+    <category>
+        <pattern>MY JOB WAS *</pattern>
+        <that>What is your job?</that>
+        <template>
+          <random>
+            <li>What did you like most about your job?</li>
+            <li>How did you get into that line of work?</li>
+            <li>Did you enjoy your work?</li>
+            <li>How many years did you work for?</li>
+          </random>
+            <think>
+                <set name="job"><star /></set>
+            </think>
         <oob><robot></robot></oob>
-      </template>
-  </category>
+        </template>
+    </category>
 
   <category>
-      <pattern>MY JOB S <set>JOBS</set></pattern>
-      <template>
-        <random>
-          <li>What do you like most about your job?</li>
-          <li>How did you get into that line of work?</li>
-          <li>Do you enjoy your work?</li>
-          <li>How long have you been doing that?</li>
-        </random>
-          <think>
-              <set name="job"><star /></set>
-          </think>
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>I WORK AS A <set>JOBS</set></pattern>
-      <template>
-        <random>
-          <li>What do you like most about your job?</li>
-          <li>How did you get into that line of work?</li>
-          <li>Do you enjoy your work?</li>
-          <li>How long have you been doing that?</li>
-        </random>
-          <think>
-              <set name="job"><star /></set>
-          </think>
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>I WORK IN <set>JOBS</set></pattern>
-      <template>
-        <random>
-          <li>What do you like most about your job?</li>
-          <li>How did you get into that line of work?</li>
-          <li>Do you enjoy your work?</li>
-          <li>How long have you been doing that?</li>
-        </random>
-          <think>
-              <set name="job"><star /></set>
-          </think>
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>I WAS A <set>JOBS</set></pattern>
+      <pattern>I WORKED AS A *</pattern>
+      <that>What is your job?</that>
       <template>
         <random>
           <li>What did you like most about your job?</li>
@@ -6776,39 +6944,8 @@
   </category>
 
   <category>
-      <pattern>MY JOB WAS <set>JOBS</set></pattern>
-      <template>
-        <random>
-          <li>What did you like most about your job?</li>
-          <li>How did you get into that line of work?</li>
-          <li>Did you enjoy your work?</li>
-          <li>How many years did you work for?</li>
-        </random>
-          <think>
-              <set name="job"><star /></set>
-          </think>
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>I WORKED AS A <set>JOBS</set></pattern>
-      <template>
-        <random>
-          <li>What did you like most about your job?</li>
-          <li>How did you get into that line of work?</li>
-          <li>Did you enjoy your work?</li>
-          <li>How many years did you work for?</li>
-        </random>
-          <think>
-              <set name="job"><star /></set>
-          </think>
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>I WORKED IN <set>JOBS</set></pattern>
+      <pattern>I WORKED IN *</pattern>
+      <that>What is your job?</that>
       <template>
         <random>
           <li>What did you like most about your job?</li>
@@ -7404,17 +7541,18 @@
 
   <category>
       <pattern>MY AGE IS * YEARS OLD *</pattern>
-      <template><srai>I AM <star /> YEARS OLD</srai></template>
+      <template><srai>I AM <star /> YEARS OLD</srai>
+      </template>
   </category>
-
   <category>
       <pattern>MY AGE S * YEARS OLD *</pattern>
-      <template><srai>I AM <star /> YEARS OLD</srai></template>
+      <template><srai>I AM <star /> YEARS OLD</srai>
+      </template>
   </category>
-
   <category>
       <pattern>I AM * Y OLD</pattern>
-      <template><srai>I AM <star/> YEARS OLD</srai></template>
+      <template><srai>I AM <star/> YEARS OLD</srai>
+      </template>
   </category>
 
 
