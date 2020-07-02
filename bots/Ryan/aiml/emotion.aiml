@@ -178,7 +178,12 @@
     </category>
     <category>
         <pattern>I AM AFRAID *</pattern>
-        <template>I hear you.<oob><robot></robot></oob>
+        <template>
+            <random>
+                <li>I understand.</li>
+                <li>Is that so?</li>
+            </random>
+            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -275,11 +280,6 @@
         <pattern>DO YOU FEEL SCARED *</pattern>
         <template>I don't feel too scared.
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>DO YOU FEEL EMOTIONS</pattern>
-        <template><srai>DO YOU FEEL</srai>
         </template>
     </category>
     <category>
@@ -410,16 +410,6 @@
         </template>
     </category>
     <category>
-        <pattern>DO YOU HAVE ANY FEELINGS</pattern>
-        <template><srai>DO YOU FEEL</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>DO YOU HAVE FEELINGS</pattern>
-        <template><srai>DO YOU HAVE EMOTIONS</srai>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU HAVE FEELINGS *</pattern>
         <template><srai>DO YOU HAVE EMOTIONS</srai>
         </template>
@@ -469,11 +459,6 @@
         <pattern>DO YOU HAVE DESIRE *</pattern>
         <template><bot name="emotions"/>.
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>DO YOU HAVE EMOTION</pattern>
-        <template><srai>DO YOU HAVE EMOTIONS</srai>
         </template>
     </category>
     <category>

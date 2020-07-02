@@ -8,7 +8,7 @@
         <that>Do you have a favorite planet?</that>
         <template>
             <think><set name="topic">jupiter</set></think>
-
+            <think><set name="dialogue">science</set></think>
             <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
             <oob>
                 <robot></robot>
@@ -16,11 +16,13 @@
         </template>
     </category>
 
-    <topic name="jupiter">
+
         <category>
             <pattern># MY FAVORITE PLANET IS JUPITER ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -32,6 +34,8 @@
             <pattern># JUPITER IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -43,6 +47,8 @@
             <pattern># JUPITER S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -54,6 +60,8 @@
             <pattern># JUPITER * MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -65,6 +73,8 @@
             <pattern># I LIKE JUPITER ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -76,6 +86,8 @@
             <pattern># JUPITER IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -87,6 +99,8 @@
             <pattern># JUPITER ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -98,6 +112,8 @@
             <pattern># MY FAVORITE PLANET IS JUPITER ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -109,6 +125,8 @@
             <pattern># JUPITER IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -120,6 +138,8 @@
             <pattern># JUPITER S MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -131,6 +151,8 @@
             <pattern># I LIKE JUPITER ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
@@ -142,12 +164,16 @@
             <pattern># JUPITER IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">jupiter</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Jupiter is the oldest planet in our solar system! Did you know that?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <topic name="jupiter">
 
         <category>
             <pattern>_</pattern>
@@ -174,7 +200,7 @@
                 </oob>
             </template>
         </category>
-    
+  
 
     <category>
         <pattern>_</pattern>
@@ -197,5 +223,5 @@
             </oob>
         </template>
     </category>
-    </topic>
+  </topic>
 </aiml>

@@ -28,6 +28,7 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
             <set name="most recent dialogue question">Which planet is your favorite?</set>
             <oob>
                 <robot></robot>
@@ -39,6 +40,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
             <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
@@ -51,7 +53,7 @@
         <that>Do you have a favorite planet?</that>
         <template>
             <think><set name="topic">saturn</set></think>
-
+            <think><set name="dialogue">science</set></think>
             Saturn is a tremendously gorgeous planet!
             <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
             <oob>
@@ -60,11 +62,27 @@
         </template>
     </category>
 
-    <topic name="saturn">
+    <category>
+        <pattern># SATURN ^</pattern>
+        <that>Which planet is your favorite planet?</that>
+        <template>
+            <think><set name="topic">saturn</set></think>
+            <think><set name="dialogue">science</set></think>
+            Saturn is a tremendously gorgeous planet!
+            <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
         <category>
             <pattern># MY FAVORITE PLANET IS SATURN ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
@@ -76,6 +94,8 @@
             <pattern># MY FAVORITE PLANET S SATURN ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
@@ -87,6 +107,8 @@
             <pattern># SATURN IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
@@ -98,6 +120,8 @@
             <pattern># SATURN S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
@@ -109,6 +133,8 @@
             <pattern># SATURN IS MY FAVORITE PLANET^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
@@ -120,12 +146,16 @@
             <pattern># I LIKE SATURN ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">saturn</set></think>
+              <think><set name="dialogue">science</set></think>
                 <set name="most recent dialogue question">Did you know that Saturn has an eternal hexagonal hurricane at its north pole?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <topic name="saturn">
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
@@ -170,6 +200,7 @@
             <template>
                 Ok! No worries! <set name="most recent dialogue question">Do you think they'll find life on one of Saturn's moons someday?</set></template>
         </category>
+  
 
     <category>
         <pattern>_</pattern>

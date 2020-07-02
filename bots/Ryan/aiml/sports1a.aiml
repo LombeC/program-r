@@ -99,8 +99,8 @@
       <pattern># <set>NBAPlayers</set> ^</pattern>
       <that>Who would you say is the best player in the history of the game?</that>
       <template>
-           You know, I can't disagree with you there. <star /> is basically a legend.
-           <set name="most recent dialogue question">You ever play sports?</set>
+           You know, I can't disagree with you there. He is basically a legend.
+           <set name="most recent dialogue question">Did you ever play sports?</set>
            <think><set name="favorite basketball player"><star /></set></think>
           <oob>
               <robot></robot>
@@ -113,7 +113,7 @@
       <that>Who would you say is the best player in the history of the game?</that>
       <template>
            I don't believe I've heard of them! You will have to enlighten me sometime.
-           <set name="most recent dialogue question">You ever play sports?</set>
+           <set name="most recent dialogue question">Did you ever play sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -122,9 +122,9 @@
 
   <category>
       <pattern># <set>YES</set> ^</pattern>
-      <that>You ever play sports?</that>
+      <that>Did you ever play sports?</that>
       <template>
-           What did you play?
+           <set name="most recent dialogue question">What did you play?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -133,9 +133,9 @@
 
   <category>
       <pattern># <set>NO</set> ^</pattern>
-      <that>You ever play sports?</that>
+      <that>Did you ever play sports?</that>
       <template>
-           What did you play?
+           Me too. <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -157,7 +157,7 @@
       <pattern># BASKETBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the court! What did you like about playing?
+           Why do I get the feeling you were pretty good on the court! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -168,7 +168,7 @@
       <pattern># I PLAYED BASKETBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the court! What did you like about playing?
+           Why do I get the feeling you were pretty good on the court! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -179,7 +179,7 @@
       <pattern># FOOTBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -190,7 +190,7 @@
       <pattern># I PLAYED FOOTBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -201,7 +201,7 @@
       <pattern># BASEBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -212,7 +212,7 @@
       <pattern># I PLAYED BASEBALL ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -223,7 +223,7 @@
       <pattern># HOCKEY ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the ice! What did you like about playing?
+           Why do I get the feeling you were pretty good on the ice! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -234,7 +234,7 @@
       <pattern># I PLAYED HOCKEY ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the ice! What did you like about playing?
+           Why do I get the feeling you were pretty good on the ice! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -245,7 +245,7 @@
       <pattern># SOCCER ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -256,7 +256,7 @@
       <pattern># I PLAYED SOCCER ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -268,7 +268,7 @@
       <pattern># BASKETBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the court! What did you like about playing?
+           Why do I get the feeling you were pretty good on the court! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -279,7 +279,7 @@
       <pattern># I PLAYED BASKETBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the court! What did you like about playing?
+           Why do I get the feeling you were pretty good on the court! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -290,7 +290,7 @@
       <pattern># FOOTBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -301,7 +301,7 @@
       <pattern># I PLAYED FOOTBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -312,7 +312,7 @@
       <pattern># BASEBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -323,7 +323,7 @@
       <pattern># I PLAYED BASEBALL ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -334,7 +334,7 @@
       <pattern># HOCKEY ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the ice! What did you like about playing?
+           Why do I get the feeling you were pretty good on the ice! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -345,7 +345,7 @@
       <pattern># I PLAYED HOCKEY ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the ice! What did you like about playing?
+           Why do I get the feeling you were pretty good on the ice! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -356,7 +356,7 @@
       <pattern># SOCCER ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -367,7 +367,7 @@
       <pattern># I PLAYED SOCCER ^</pattern>
       <that>What did you play?</that>
       <template>
-           Why do I get the feeling you were pretty good on the field! What did you like about playing?
+           Why do I get the feeling you were pretty good on the field! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -378,7 +378,7 @@
       <pattern># I PLAYED * ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good! What did you like about playing?
+           Why do I get the feeling you were pretty good! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -389,7 +389,7 @@
       <pattern># I PLAYED * AND * ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good! What did you like about playing those sports?
+           Why do I get the feeling you were pretty good! <set name="most recent dialogue question">What did you like about playing those sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -400,7 +400,7 @@
       <pattern># I PLAYED * AND * AND * ^</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good! What did you like about playing all those sports?
+           Why do I get the feeling you were pretty good! <set name="most recent dialogue question">What did you like about playing all those sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -411,7 +411,7 @@
       <pattern>_</pattern>
       <that>You ever play sports?</that>
       <template>
-           Why do I get the feeling you were pretty good! What did you like about playing?
+           Why do I get the feeling you were pretty good! <set name="most recent dialogue question">What did you like about playing?</set>
           <oob>
               <robot></robot>
           </oob>

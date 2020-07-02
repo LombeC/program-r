@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-
-  <topic name="music">
+ <topic name="music">
 
     <category>
         <pattern># Rock ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -36,6 +37,8 @@
         <pattern># Rock ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -64,6 +67,8 @@
         <pattern># Rock Music ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -92,6 +97,8 @@
         <pattern># Rock Music ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -120,6 +127,8 @@
         <pattern># Rock and Roll ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -148,6 +157,8 @@
         <pattern># Rock and Roll ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+        
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>

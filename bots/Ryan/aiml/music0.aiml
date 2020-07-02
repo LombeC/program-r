@@ -112,6 +112,15 @@
         </template>
     </category>
 
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What's your favorite band?</that>
+        <template><set name="most recent dialogue question">Do you want to talk about music?</set>
+
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
@@ -230,7 +239,6 @@
         <that>I've been told I have two left feet.</that>
         <template>
             Last time I tried to dance I tripped over myself. It was kind of awkward but at least it was funny!
-            I'm here to entertain!
             <oob>
                 <robot>
                 </robot>
@@ -240,7 +248,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>I'm here to entertain!</that>
+        <that>It was kind of awkward but at least it was funny!</that>
         <template>
           So I have to ask! <set name="most recent dialogue question">What's your favorite band?</set>
             <oob>
@@ -289,8 +297,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you like movies?</that>
             <template>
-                Some people think that movies are best enjoyed at a movie theater,
-                            but others say the comfort of your own couch with a bag of Orville Reddenbacher's is the way go!
+
                             <set name="most recent dialogue question">Do you prefer going to the theater or watching from home?</set>
                 <oob>
                     <robot></robot>
@@ -379,7 +386,7 @@
             <pattern># Home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -390,7 +397,7 @@
             <pattern># Watch from home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -401,7 +408,7 @@
             <pattern># Watching from home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -412,7 +419,7 @@
             <pattern># I prefer home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -423,7 +430,7 @@
             <pattern># I prefer watching from home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -434,7 +441,18 @@
             <pattern># I * home ^</pattern>
             <that>Do you prefer going to the theater or watching from home?</that>
             <template>
-                Wow, me too! I think it is more fun to watch a movie at home. <set name="most recent dialogue question">Do you think that a good soundtrack can make a movie?</set>
+                Wow, me too! It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.</that>
+            <template>
+                <set name="most recent dialogue question">What's one of your favorite movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -445,7 +463,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you think that a good soundtrack can make a movie?</that>
             <template>
-                I could not agree more!  <set name="most recent dialogue question">What kind of movies do you like to watch?</set>
+                I could not agree more! <set name="most recent dialogue question">What's one of your favorite movies?</set>
                 <oob>
                     <robot>
                         <video>
@@ -460,18 +478,20 @@
             <pattern># <set>No</set> ^</pattern>
             <that>DO you think music is necessary to a movie?</that>
             <template>
-                I think you may have a point! <set name="most recent dialogue question">What kind of movies do you like to watch?</set>
+                I think you may have a point! <set name="most recent dialogue question">What's one of your favorite movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
+         <!-- REDIRECT TO MOVIES1 -->
+
         <category>
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you like going to concerts?</that>
             <template>
-                I feel the exact same way! Though sometimes the crowds get to me. <set name="most recent dialogue question">What concerts have you gone to?</set>
+                I feel the exact same way!  <set name="most recent dialogue question">What concerts have you gone to?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -554,13 +574,14 @@
                 </oob>
             </template>
         </category>
-
+</topic>
 
 
         <category>
             <pattern># Big Band ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -576,7 +597,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -590,6 +611,7 @@
             <pattern># Big Band ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -605,7 +627,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -619,6 +641,7 @@
             <pattern># Band ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -634,36 +657,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
-                                                            <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
-                        <robot>
-                            <video>
-                                <filename>bennyGoodman.mp3</filename>
-                            </video>
-                        </robot>
-                    </oob></li></random></template>
-        </category>
-
-        <category>
-            <pattern># Band ^</pattern>
-            <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-            <template>
-                <random>
-                    <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
-                        <robot>
-                            <video>
-                                <filename>dukeEllington.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    <li>Big Band music makes me so happy! <set name="most recent dialogue question">What did you think of Glenn Miller's music?</set><oob>
-                        <robot>
-                            <video>
-                                <filename>glennMiller.mp3</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -679,6 +673,7 @@
             <pattern># Big Band Music ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -694,7 +689,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -708,6 +703,7 @@
             <pattern># Big Band Music ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -723,7 +719,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -739,6 +735,7 @@
             <pattern># Band Music ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -754,7 +751,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -768,6 +765,7 @@
             <pattern># Band Music ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
+              <think><set name="topic">bigband</set></think>
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -783,7 +781,7 @@
                             </video>
                         </robot>
                     </oob></li>
-                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                    <li>I like to really feel the beat and rhythm of swing!
                                                             <set name="most recent dialogue question">What did you think of Benny Goodman's music?</set><oob>
                         <robot>
                             <video>
@@ -792,6 +790,8 @@
                         </robot>
                     </oob></li></random></template>
         </category>
+
+        <topic name="bigband">
 
         <category>
             <pattern>_</pattern>
@@ -878,7 +878,7 @@
             <pattern># <set>Brass Instrument Set</set> ^</pattern>
             <that>What instrument did you play?</that>
             <template>
-                No way. I have always been a fan of <star />! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                No way. I have always been a fan of brass instruments! <set name="most recent dialogue question">Did you learn to play as a child?</set>
                 <oob>
                     <robot>
                     </robot>
@@ -923,7 +923,7 @@
             <pattern>_</pattern>
             <that>What kind of music do you think is best for a romantic dinner?</that>
             <template>
-                For me, just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
+                For me, just put on some Frank Sinatra and you've got a romantic dinner!
                 <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
                 <oob>
                     <robot></robot>

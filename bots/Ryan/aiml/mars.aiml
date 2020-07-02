@@ -6,7 +6,7 @@
         <that>Do you have a favorite planet?</that>
         <template>
             <think><set name="topic">mars</set></think>
-
+            <think><set name="dialogue">science</set></think>
             Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
             <oob>
                 <robot></robot>
@@ -14,11 +14,13 @@
         </template>
     </category>
 
-    <topic name="mars">
+
         <category>
             <pattern># MY FAVORITE PLANET IS MARS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -30,6 +32,8 @@
             <pattern># MARS IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -41,6 +45,8 @@
             <pattern># MARS IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -52,6 +58,8 @@
             <pattern># I LIKE MARS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -63,6 +71,8 @@
             <pattern># MARS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -74,6 +84,8 @@
             <pattern># MY FAVORITE PLANET IS MARS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -85,6 +97,8 @@
             <pattern># MARS IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -96,6 +110,8 @@
             <pattern># MARS IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -107,6 +123,8 @@
             <pattern># I LIKE MARS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -114,10 +132,14 @@
             </template>
         </category>
 
+        <topic name="mars">
+
         <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Might there be living organisms on Mars?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Perhaps! Maybe we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
                 <oob>
                     <robot></robot>
@@ -129,6 +151,8 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Might there be living organisms on Mars?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Maybe some day we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
                 <oob>
                     <robot></robot>
@@ -140,6 +164,8 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Might there be living organisms on Mars?</that>
             <template>
+              <think><set name="topic">mars</set></think>
+              <think><set name="dialogue">science</set></think>
                 Maybe some day we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
                 <oob>
                     <robot></robot>

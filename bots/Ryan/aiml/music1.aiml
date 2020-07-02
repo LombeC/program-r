@@ -4,10 +4,23 @@
   <topic name="music">
 
     <category>
+        <pattern># <set>String Instrument Set</set> ^</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+            No way! I have always loved string instruments!
+            <set name="most recent dialogue question">Did you learn to play as a child?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>Woodwind Instrument Set</set> ^</pattern>
         <that>What instrument did you play?</that>
         <template>
-            No way! I really enjoy <star />! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+          <think><set name="dialogue">music</set></think>
+            No way! I really enjoy woodwinds! <set name="most recent dialogue question">Did you learn to play as a child?</set>
             <oob>
                 <robot>
                 </robot>
@@ -19,7 +32,8 @@
         <pattern># <set>Percussion Instrument Set</set> ^</pattern>
         <that>What instrument did you play?</that>
         <template>
-            No way! I really enjoy <star />! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+          <think><set name="dialogue">music</set></think>
+            No way! I really enjoy percussion! <set name="most recent dialogue question">Did you learn to play as a child?</set>
             <oob>
                 <robot>
                 </robot>
@@ -31,7 +45,8 @@
         <pattern># <set>Keyboard Instrument Set</set> ^</pattern>
         <that>What instrument did you play?</that>
         <template>
-            No way! I really love <star />! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+          <think><set name="dialogue">music</set></think>
+            No way! I really love keyboard instruments! <set name="most recent dialogue question">Did you learn to play as a child?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -97,7 +112,7 @@
         <pattern>_</pattern>
         <that>What kind of music do you think is best for a romantic dinner?</that>
         <template>
-            For me, just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
+            For me, just put on some Frank Sinatra and you've got a romantic dinner!
             <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
             <oob>
                 <robot></robot>
@@ -178,6 +193,7 @@
                 </oob></li></random></template>
     </category>
 
+
     <category>
         <pattern># Crooner ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
@@ -207,6 +223,7 @@
                 </oob></li></random></template>
     </category>
 
+
     <category>
         <pattern># Croon ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
@@ -235,6 +252,8 @@
                 </oob></li></random></template>
     </category>
 
+
+
     <category>
         <pattern># Croon ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
@@ -262,6 +281,8 @@
                     </robot>
                 </oob></li></random></template>
     </category>
+
+
 
     <category>
         <pattern># Crooners ^</pattern>
@@ -292,6 +313,8 @@
                 </oob></li></random></template>
     </category>
 
+
+
     <category>
         <pattern># Crooners ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
@@ -321,6 +344,8 @@
                 </oob></li></random></template>
     </category>
 
+
+
     <category>
         <pattern># Crooner Music ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
@@ -349,6 +374,8 @@
                     </robot>
                 </oob></li></random></template>
     </category>
+
+
 
     <category>
         <pattern># Crooner Music ^</pattern>
@@ -379,6 +406,8 @@
                 </oob></li></random></template>
     </category>
 
+
+
     <category>
         <pattern># The Crooners ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
@@ -408,6 +437,8 @@
                 </oob></li></random></template>
     </category>
 
+
+
     <category>
         <pattern># The Crooners ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
@@ -436,6 +467,7 @@
                     </robot>
                 </oob></li></random></template>
     </category>
+
 
 
 

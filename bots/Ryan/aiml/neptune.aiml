@@ -6,7 +6,7 @@
         <that>Do you have a favorite planet?</that>
         <template>
             <think><set name="topic">neptune</set></think>
-
+            <think><set name="dialogue">science</set></think>
             Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
             <oob>
                 <robot></robot>
@@ -14,11 +14,12 @@
         </template>
     </category>
 
-    <topic name="neptune">
         <category>
             <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -30,6 +31,8 @@
             <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -41,6 +44,8 @@
             <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -52,6 +57,8 @@
             <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -63,6 +70,8 @@
             <pattern># I LIKE NEPTUNE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -74,6 +83,8 @@
             <pattern># NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -85,6 +96,8 @@
             <pattern># MY FAVORITE PLANET IS NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -96,6 +109,8 @@
             <pattern># NEPTUNE IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -107,6 +122,8 @@
             <pattern># NEPTUNE S MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -118,6 +135,8 @@
             <pattern># NEPTUNE IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
@@ -129,12 +148,16 @@
             <pattern># I LIKE NEPTUNE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">neptune</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah yes, Neptune. Named for the Roman god of the sea. <set name="most recent dialogue question">What do you like about Neptune?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <topic name="neptune">
 
         <category>
             <pattern>_</pattern>
@@ -201,7 +224,7 @@
                 </oob>
             </template>
         </category>
-    </topic>
+
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
@@ -246,4 +269,16 @@
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It's kind of fun to think about, right?</that>
+        <template>
+            <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+    </topic>
 </aiml>

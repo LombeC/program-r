@@ -33,7 +33,7 @@
           <pattern>_</pattern>
           <that>What do you like about watching hockey?</that>
           <template>
-              I like to hear that. Honestly it's a fascinating sport! Not to mention how fun it must be to ride a Zamboni.
+              Honestly it's a fascinating sport! Not to mention how fun it must be to ride a Zamboni.
               <oob>
                   <robot></robot>
               </oob>
@@ -68,7 +68,7 @@
           <pattern># <set>NHLTeams</set> ^</pattern>
           <that>What's your favorite NHL team, if you had to say?</that>
           <template>
-            You really do know your hockey! <set name="favorite hockey team"><star /></set> are a great team!
+            You really do know your hockey! What a great team.
             <set name="most recent dialogue question">Have you ever witnessed any tussles on the ice?</set>
               <oob>
                   <robot></robot>
@@ -80,7 +80,6 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>What's your favorite NHL team, if you had to say?</that>
           <template>
-            I don't blame you.
             <set name="most recent dialogue question">My favorite is the Chicago Blackhawks. May I show you a video on them?</set>
               <oob>
                   <robot></robot>
@@ -92,7 +91,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of hockey and all that jazz!
+            I believe they have changed the rules so the game is a bit more tame now!
             <set name="most recent dialogue question">Do you possibly remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -104,7 +103,7 @@
           <pattern># <set>NO</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of hockey and all that jazz!
+            I believe they have changed the rules so the game is a bit more tame now!
             <set name="most recent dialogue question">Do you possibly remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -116,7 +115,7 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Have you ever witnessed any tussles on the ice?</that>
           <template>
-            I believe they have changed the rules so the game is a bit more tame now! But speaking of hockey and all that jazz!
+            I believe they have changed the rules so the game is a bit more tame now!
             <set name="most recent dialogue question">Do you possibly remember the Miracle on Ice?</set>
               <oob>
                   <robot></robot>
@@ -380,7 +379,7 @@
         <pattern># United States ^</pattern>
         <that>So...which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            It was a magical game! You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
+            You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -391,7 +390,7 @@
         <pattern># The United States ^</pattern>
         <that>So...which team were you rooting for during the Miracle on Ice?</that>
         <template>
-            It was a magical game! You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
+            You must have been so happy when they won! <set name="most recent dialogue question">Would you like to see a short clip with the athletes from the Miracle on Ice?</set>
             <oob>
                 <robot></robot>
             </oob>

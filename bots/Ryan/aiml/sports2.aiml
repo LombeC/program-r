@@ -18,7 +18,7 @@
           <pattern># <set>Yes</set> ^</pattern>
           <that>Have you ever played baseball?</that>
           <template>
-              You must have been good! I make for a really good water boy, ha ha. <set name="most recent dialogue question">Did you start playing when you were young?</set>
+              When it comes to sports I make for a really good water boy, ha ha. <set name="most recent dialogue question">Did you start playing baseball when you were young?</set>
               <oob>
                   <robot>
                   </robot>
@@ -28,7 +28,7 @@
 
       <category>
           <pattern># <set>Yes</set> ^</pattern>
-          <that>Did you start playing when you were young?</that>
+          <that>Did you start playing baseball when you were young?</that>
           <template>
               So you are somewhat of a pro!
               <set name="most recent dialogue question">What's your favorite memory of playing ball?</set>
@@ -43,7 +43,7 @@
           <pattern>_</pattern>
           <that>What's your favorite memory of playing ball?</that>
           <template>
-              That's what I love about baseball! It's so nostalgic. <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
+              That's what I love about baseball! <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
               <oob>
                   <robot><image>
                     <filename>Baseball_Diamond.jpg</filename>
@@ -71,7 +71,7 @@
           <pattern># <set>No</set> ^</pattern>
           <that>Have you ever played baseball?</that>
           <template>
-              I'm with you! I make for a really good water boy, ha ha.  <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
+              When it comes to sports I make for a really good water boy, ha ha.  <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
               <oob>
                   <robot>
                   </robot>
@@ -83,7 +83,7 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Have you ever played baseball?</that>
           <template>
-              I'm with you! Never have I ever played baseball. My robot arms won't allow it! <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
+              When it comes to sports I make for a really good water boy, ha ha. <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
               <oob>
                   <robot>
                   </robot>
@@ -173,7 +173,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>So you played outfield?</that>
             <template>
-              Amazing. Bet you had a good arm.
+              Bet you have a good arm.
               <set name="most recent dialogue question">What did you like most about playing outfield?</set>
                 <oob>
                     <robot></robot>
@@ -185,7 +185,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you played outfield?</that>
             <template>
-              So you are a fan like me. Something tells me you probably remember good ole Hank Aaron, arguably the game's greatest outfielder.
+              Something tells me you probably remember good ole Hank Aaron, arguably the game's greatest outfielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -199,7 +199,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you played outfield?</that>
             <template>
-              OK I understand. Something tells me you probably remember good ole Hank Aaron, arguably the game's greatest outfielder.
+              Something tells me you probably remember good ole Hank Aaron, arguably the game's greatest outfielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -213,13 +213,10 @@
             <pattern>_</pattern>
             <that>What did you like most about playing outfield?</that>
             <template>
-              I definitely agree with you!
-              Something tells me you probably remember good ole Hank Aaron, arguably the game's greatest outfielder.
+              That sounds like a blast!
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Hank_Aaron.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -228,7 +225,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>So you played in field?</that>
             <template>
-              Amazing. Bet you had a good arm.
+              Bet you have a good arm.
               <set name="most recent dialogue question">What did you like most about playing outfield?</set>
                 <oob>
                     <robot></robot>
@@ -240,7 +237,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you played in field?</that>
             <template>
-              So you are a fan like me. Something tells me you probably remember good ole Cal Ripkin Junior, arguably the game's greatest in fielder.
+              Something tells me you probably remember good ole Cal Ripkin Junior, arguably the game's greatest in fielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -254,7 +251,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you played in field?</that>
             <template>
-              OK I understand. Something tells me you probably remember good ole Cal Ripkin Junior, arguably the game's greatest in fielder.
+              Something tells me you probably remember good ole Cal Ripkin Junior, arguably the game's greatest in fielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -268,13 +265,10 @@
             <pattern>_</pattern>
             <that>What did you like most about playing in field?</that>
             <template>
-              I definitely agree with you!
-              Something tells me you probably remember good ole Cal Ripkin Junior, arguably the game's greatest in fielder.
+              That sounds like a blast!
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Cal_Ripkin.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -283,7 +277,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>So you were a pitcher?</that>
             <template>
-              Amazing. Bet you had a great pitch.
+              Bet you have a great pitch.
               <set name="most recent dialogue question">What did you like most about pitching?</set>
                 <oob>
                     <robot></robot>
@@ -295,7 +289,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you were a pitcher?</that>
             <template>
-              So you are a fan like me. Something tells me you probably remember good ole Lefty Grove, the game's greatest left handed pitcher.
+              Something tells me you probably remember good ole Lefty Grove, the game's greatest left handed pitcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -309,7 +303,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you were a pitcher?</that>
             <template>
-              OK I understand. Something tells me you probably remember good ole Lefty Grove, the game's greatest left handed pitcher.
+              Something tells me you probably remember good ole Lefty Grove, the game's greatest left handed pitcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -323,12 +317,10 @@
             <pattern>_</pattern>
             <that>What did you like most about pitching?</that>
             <template>
-              I definitely agree with you! Something tells me you probably remember good ole Lefty Grove, the game's greatest left handed pitcher.
+              That sounds like a blast!
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Lefty_Grove.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -337,7 +329,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>So you were a catcher?</that>
             <template>
-              Amazing. The most underrated position in my humble opinion.
+              The most underrated position in my humble opinion.
               <set name="most recent dialogue question">What did you like most about catching?</set>
                 <oob>
                     <robot></robot>
@@ -350,12 +342,9 @@
             <that>So you were a catcher?</that>
             <template>
               Well, I definitely think that catcher is the most underrated position!
-              Something tells me you probably remember good ole Yogi Berra, arguably the game's greatest catcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Yogi_Berra.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -365,12 +354,9 @@
             <that>So you were a catcher?</that>
             <template>
               Well, I definitely think that catcher is the most underrated position!
-              Something tells me you probably remember good ole Yogi Berra, arguably the game's greatest catcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Yogi_Berra.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -379,13 +365,10 @@
             <pattern>_</pattern>
             <that>What did you like most about catching?</that>
             <template>
-              I definitely agree with you!
-              Something tells me you probably remember good ole Yogi Berra, arguably the game's greatest catcher.
+              That sounds like a blast!
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
-                    <robot><image>
-                      <filename>Yogi_Berra.jpg</filename>
-                  </image></robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -419,7 +402,6 @@
             <that>Who is your favorite ball player of all time?</that>
             <template>
               <set name="most recent dialogue question">Wouldn't it be blasphemous to not even mention Babe Ruth, the Great Bambino?</set>
-              <think><set name="favorite baseball player"><star /></set></think>
                 <oob>
                     <robot><image>
                     <filename>CLRSCR</filename>
@@ -469,7 +451,7 @@
 
         <category>
             <pattern># BABE RUTH ^</pattern>
-            <that>Wouldn't it be blasphemous to not mention the Great Bambino?</that>
+            <that>Who is your favorite ball player of all time?</that>
             <template>
                 <set name="most recent dialogue question">Do you remember when he called out his infamous home run against the Chicago Cubs?</set>
                 <oob>
@@ -484,8 +466,8 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                Who could forget, right? Now there's a guy I would want to sit down and chat with.
-                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
+                Who could forget, right?
+                <set name="most recent dialogue question">Do you think you'd want to meet Babe Ruth, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -496,8 +478,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                How can you forget a legendary moment like that! Now there's a guy I would want to sit down and chat with.
-                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
+                <set name="most recent dialogue question">Do you think you'd want to meet Babe Ruth, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -508,8 +489,40 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you remember when he called out his infamous home run against the Chicago Cubs?</that>
             <template>
-                How can you forget a legendary moment like that! Now there's a guy I would want to sit down and chat with.
+                <set name="most recent dialogue question">Do you think you'd want to meet Babe Ruth, if you could?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think you'd want to meet Babe Ruth, if you could?</that>
+            <template>
                 I'm sure he'd probably be smoking a cigar, or five!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think you'd want to meet Babe Ruth, if you could?</that>
+            <template>
+                <set name="most recent dialogue question">Which sports players would you want to meet, if you could?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think you'd want to meet Babe Ruth, if you could?</that>
+            <template>
+                <set name="most recent dialogue question">Which sports players would you want to meet, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -520,28 +533,6 @@
             <pattern>_</pattern>
             <that>I'm sure he'd probably be smoking a cigar, or five!</that>
             <template>
-                <set name="most recent dialogue question">Who do you think you'd want to meet, if you could?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Who do you think you'd want to meet, if you could?</that>
-            <template>
-                I mean I'm with you there! Who wouldn't! But honestly I can say that I am very content just chatting with you.
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Who do you think you'd want to meet, if you could?</that>
-            <template>
                 <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
                 <oob>
                     <robot></robot>
@@ -550,8 +541,19 @@
         </category>
 
         <category>
+            <pattern>_</pattern>
+            <that>Which sports players would you want to meet, if you could?</that>
+            <template>
+                I mean I'm with you there! Who wouldn't! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Who do you think you'd want to meet, if you could?</that>
+            <that>Which sports players would you want to meet, if you could?</that>
             <template>
                 Honestly I can say that I am very content just chatting with you!
                 <set name="most recent dialogue question">Would you like to keep talking about sports?</set>

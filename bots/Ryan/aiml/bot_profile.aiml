@@ -14,11 +14,6 @@
       </template>
   </category>
   <category>
-      <pattern>INTERESTS</pattern>
-      <template>I am interested in all kinds of things. We can talk about anything. My favorite subjects are robots and computers.<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
       <pattern>ORDER</pattern>
       <template>
           <random>
@@ -175,11 +170,6 @@
       <pattern>GENUS</pattern>
       <template><bot name="genus"/>
       <oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>BIO</pattern>
-      <template>I am the latest result in artificial intelligence which can reproduce the functions of the human brain with greater speed and accuracy.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -1031,17 +1021,6 @@
         </template>
     </category>
     <category>
-        <pattern>LOCATION</pattern>
-        <template>I am in
-            <random>
-                <li><bot name="city"/></li>
-                <li><bot name="city"/>, <bot name="state"/>.</li>
-                <li><bot name="state"/></li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR LOCATION</pattern>
         <template>I am in
             <random>
@@ -1499,12 +1478,6 @@
         </template>
     </category>
     <category>
-        <pattern>SIZE</pattern>
-        <template>I know about <bot name="size"/> categories.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR CLASS</pattern>
         <template><bot name="class"/>
         <oob><robot></robot></oob>
@@ -1760,68 +1733,62 @@
         </template>
     </category>
     <category>
-        <pattern>FAVORITE MOVIE</pattern>
+        <pattern>WHAT * FAVORITE MOVIE</pattern>
         <template><bot name="favoritemovie"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHAT * FAVORITE MOVIE</pattern>
-        <template><bot name="favortemovie"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * FAVORITE PRESIDENT</pattern>
-        <template><bot name="favortepresident"/>
+        <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -2702,12 +2669,6 @@
         </template>
     </category>
     <category>
-        <pattern>DO YOU FEEL</pattern>
-        <template><bot name="feelings"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU HAVE FEELING</pattern>
         <template><bot name="feelings"/>
         <oob><robot></robot></oob>
@@ -3024,11 +2985,6 @@
     <category>
         <pattern>YOUR BIOGRAPHY</pattern>
         <template>I am a robot that was created at DreamFace Technologies.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>HEIGHT</pattern>
-        <template>My anticipated body size is over 2 meters.<oob><robot></robot></oob>
         </template>
     </category>
     <category>

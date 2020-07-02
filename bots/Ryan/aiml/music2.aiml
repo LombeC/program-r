@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-
-  <topic name="music">
+<topic name="music">
 
     <category>
         <pattern># Jazz ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+          <think><set name="topic">music</set></think>
             <random>
 
                 <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
@@ -30,6 +31,7 @@
         <pattern># Jazz ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
             <random>
 
                 <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
@@ -52,6 +54,8 @@
         <pattern># Jazz Music ^</pattern>
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
 
                 <li>Jazz just makes me want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
@@ -74,6 +78,8 @@
         <pattern># Jazz Music ^</pattern>
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
+          <think><set name="dialogue">music</set></think>
+
             <random>
 
                 <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>

@@ -6,7 +6,7 @@
         <that>Do you have a favorite planet?</that>
         <template>
             <think><set name="topic">venus</set></think>
-
+            <think><set name="dialogue">science</set></think>
             Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
             <oob>
                 <robot></robot>
@@ -14,11 +14,26 @@
         </template>
     </category>
 
-    <topic name="venus">
+    <category>
+        <pattern># VENUS ^</pattern>
+        <that>Which planet is your favorite?</that>
+        <template>
+            <think><set name="topic">venus</set></think>
+            <think><set name="dialogue">science</set></think>
+            Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
         <category>
             <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -30,6 +45,8 @@
             <pattern># VENUS IS MY FAVORITE ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -41,6 +58,8 @@
             <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -52,6 +71,8 @@
             <pattern># I LIKE VENUS ^</pattern>
             <that>Do you have a favorite planet?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -63,6 +84,8 @@
             <pattern># VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -74,6 +97,8 @@
             <pattern># MY FAVORITE PLANET IS VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -85,6 +110,8 @@
             <pattern># VENUS IS MY FAVORITE ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -96,6 +123,8 @@
             <pattern># VENUS IS MY FAVORITE PLANET ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
@@ -107,12 +136,16 @@
             <pattern># I LIKE VENUS ^</pattern>
             <that>Which planet is your favorite?</that>
             <template>
+              <think><set name="topic">venus</set></think>
+              <think><set name="dialogue">science</set></think>
                 Ah, Venus. The planet of love. <set name="most recent dialogue question">Did you know that Venus is the hottest planet in our solar system, no pun intended?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <topic name="venus">
 
         <category>
             <pattern># <set>YES</set> ^</pattern>

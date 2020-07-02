@@ -33,12 +33,6 @@
         </template>
     </category>
     <category>
-        <pattern>MY daughter</pattern>
-        <template><get name="daughter"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY destination</pattern>
         <template><get name="destination"/>.
         <oob><robot></robot></oob>
@@ -65,12 +59,6 @@
     <category>
         <pattern>MY etype</pattern>
         <template><get name="etype"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY father</pattern>
-        <template><get name="father"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -214,12 +202,6 @@
         </template>
     </category>
     <category>
-        <pattern>MY mother</pattern>
-        <template><get name="mother"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY nickname</pattern>
         <template><get name="nickname"/>.
         <oob><robot></robot></oob>
@@ -330,22 +312,6 @@
     <category>
         <pattern>MY callee</pattern>
         <template><get name="callee"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY BIRTHPLACE</pattern>
-        <template>
-            <think>
-                <set name="branch">
-                    <get name="birthplace"/>
-                </set>
-            </think>
-            <condition name="branch">
-                <li value="Unknown">Where were you born?</li>
-                <li value="OM">Where were you born?</li>
-                <li><get name="birthplace"/></li>
-            </condition>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -569,22 +535,6 @@
                 <li value="Unknown">Who is your husband?</li>
                 <li value="OM">Who is your husband?</li>
                 <li><get name="husband"/></li>
-            </condition>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY MOTHER</pattern>
-        <template>
-            <think>
-                <set name="branch">
-                    <get name="mother"/>
-                </set>
-            </think>
-            <condition name="branch">
-                <li value="unknown">I don't know who she is. Who is your mother?</li>
-                <li value="OM">I don't know who she is. Who is your mother?</li>
-                <li>You said she was called <get name="mother"/>.</li>
             </condition>
         <oob><robot></robot></oob>
         </template>
@@ -1066,28 +1016,6 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY BIRTHDAY IS *</pattern>
-        <template>
-          Oh, what a special day!
-            <think>
-                <set name="birthday"><star/>
-                </set>
-            </think>Your birthday is <get name="birthday"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY BIRTHDAY S *</pattern>
-        <template>
-          Oh, what a special day!
-            <think>
-                <set name="birthday"><star/>
-                </set>
-            </think>Your birthday is <get name="birthday"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY DOG IS CALLED *</pattern>
         <template>
             <think>
@@ -1522,19 +1450,6 @@ callee: <srai>my callee</srai>
     </category>
     <category>
         <pattern>MY WIFE IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="wife"><person/></set>
-            </think>
-            <random>
-                <li>How long have you been married?</li>
-                <li>Your wife is called <get name="wife"/></li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY WIFE S CALLED *</pattern>
         <template>
             <think>
                 <set name="wife"><person/></set>

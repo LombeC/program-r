@@ -7,8 +7,9 @@
     <pattern>_</pattern>
     <that>What did you think of the crooner clip?</that>
     <template>
-      <think><set name="data"><star/></set></think>
 
+      <think><set name="data"><star/></set></think>
+      <think><set name="dialogue">music</set></think>
       <condition name="getsentiment">
           <li value="verypositive">Awesome! It's great to listen to music with you.<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
           <li value="positive">Awesome! It's great to listen to music with you. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
@@ -22,17 +23,6 @@
     </template>
 </category>
 
-<category>
-    <pattern># <set>String Instrument Set</set> ^</pattern>
-    <that>What instrument did you play?</that>
-    <template>
-        No way! I have always loved <star />!
-        <set name="most recent dialogue question">Did you learn to play as a child?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
 
 </topic>
 </aiml>

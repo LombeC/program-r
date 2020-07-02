@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <!-- FOOD -->
-    <category>
-        <pattern>FOOD</pattern>
-        <template>
-            <set name="most recent dialogue question">Would you like to talk about food?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
+    
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about food?</that>
