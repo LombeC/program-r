@@ -5,8 +5,9 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>SHOULD WE TALK ABOUT YOUR FAVORITE BEVERAGE?</that>
               <template>
+                <think><set name="dialogue">food</set></think>
                 <think><set name="topic">drinks</set></think>
-                  <set name="most recent dialogue question">What's your favorite beverage?</set>
+                  <set name="most recent dialogue question">Are you more of a coffee or tea person?</set>
                       <oob>
                           <robot>
                           </robot>
@@ -17,58 +18,212 @@
 <topic name="drinks">
 
   <category>
+      <pattern># COFFEE ^</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                Wake up juice! <set name="most recent dialogue question">Do you prefer brewed coffee or espresso?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># TEA ^</pattern>
+          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+              <template>
+                <set name="most recent dialogue question">What is your favorite type of tea?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># TEA ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                <set name="most recent dialogue question">What is your favorite type of tea?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>BLACK TEA</set> ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  You are bold! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>WHITE TEA</set> ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  White tea is so calming and tasty! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>HERBAL TEA</set> ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  Herbal tea is so calming and tasty! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>GREEN TEA</set> ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  It is so healthy for you! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
       <pattern>_</pattern>
-          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
+          <that>What is your favorite type of tea?</that>
               <template>
-                  <set name="most recent dialogue question">Are you more of a coffee or tea person?</set>
+                  Drinking tea is so healthy for you! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
                       <oob>
                           <robot>
                           </robot>
                       </oob>
               </template>
   </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  Drinking tea is so healthy for you! <set name="most recent dialogue question">What about iced tea? Do you like that?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># ICED TEA ^</pattern>
+          <that>What is your favorite type of tea?</that>
+              <template>
+                  It's really one of the best drinks when it's hot out. <set name="most recent dialogue question">Are you much of a fan of the summer?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>Do you like that?</that>
+              <template>
+                  It's really one of the best drinks when it's hot out. <set name="most recent dialogue question">Are you much of a fan of the summer?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>Do you like that?</that>
+              <template>
+                  Really! It's really one of the best drinks when it's hot out. <set name="most recent dialogue question">Are you much of a fan of the summer?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Do you like that?</that>
+              <template>
+                  Really! It's really one of the best drinks when it's hot out. <set name="most recent dialogue question">Are you much of a fan of the summer?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+          <that>Are you much of a fan of the summer?</that>
+              <template>
+                <think><set name="dialogue">pets</set></think>
+                <think><set name="topic">pets</set></think>
+                  I just love warm weather. <set name="most recent dialogue question">What do you like most about summertime?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+          <that>Are you much of a fan of the summer?</that>
+              <template>
+                <think><set name="dialogue">pets</set></think>
+                <think><set name="topic">pets</set></think>
+                  <set name="most recent dialogue question">Which season do you enjoy the most?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Are you much of a fan of the summer?</that>
+              <template>
+                <think><set name="dialogue">pets</set></think>
+                <think><set name="topic">pets</set></think>
+                  <set name="most recent dialogue question">Which season do you enjoy the most?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <!-- REDIRECT TO KIDS-PETS-SCIENCE-ART DIALOGUE -->
+
+
 
   <category>
       <pattern># COFFEE ^</pattern>
-          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
-              <template>
-                Wake up juice! <set name="most recent dialogue question">Do you prefer brewed coffee or espresso?</set>
-                      <oob>
-                          <robot>
-                          </robot>
-                      </oob>
-              </template>
-  </category>
-
-  <category>
-      <pattern># TEA ^</pattern>
-          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
-              <template>
-                <set name="most recent dialogue question">What is your favorite type of tea?</set>
-                      <oob>
-                          <robot>
-                          </robot>
-                      </oob>
-              </template>
-  </category>
-
-  <category>
-      <pattern># TEA ^</pattern>
           <that>Are you more of a coffee or tea person?</that>
               <template>
-                <set name="most recent dialogue question">What is your favorite type of tea?</set>
-                      <oob>
-                          <robot>
-                          </robot>
-                      </oob>
-              </template>
-  </category>
-
-  <category>
-      <pattern># COFFEE ^</pattern>
-          <that>Are you more of a coffee or tea person?</that>
-              <template>
-                Wake up juice! <set name="most recent dialogue question">Do you prefer brewed coffee or espresso?</set>
+                Some people call it wake up juice. I call it survival juice. <set name="most recent dialogue question">Do you prefer brewed coffee or espresso?</set>
                       <oob>
                           <robot>
                           </robot>
@@ -118,7 +273,9 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>Would you say you like hot chocolate?</that>
               <template>
-                Oh! <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
+                <think><set name="topic">dramaticmovies</set></think>
+                <think><set name="dialogue">movies</set></think>
+                <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a movie!
                 Have you ever seen It's a Wonderful Life?</set>
                       <oob>
                           <robot>
@@ -143,7 +300,9 @@
       <pattern># HOT CHOCOLATE ^</pattern>
           <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
               <template>
-                Oh! <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
+                <think><set name="topic">dramaticmovies</set></think>
+                <think><set name="dialogue">movies</set></think>
+                <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
                 Have you ever seen It's a Wonderful Life?</set>
                       <oob>
                           <robot>
@@ -156,6 +315,8 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>Have you ever seen It's a Wonderful Life?</that>
               <template>
+                <think><set name="topic">dramaticmovies</set></think>
+                <think><set name="dialogue">movies</set></think>
                   <set name="most recent dialogue question">Who doesn't like that movie?</set>
                       <oob>
                           <robot>
@@ -168,7 +329,9 @@
       <pattern># <set>NO</set> ^</pattern>
           <that>Have you ever seen It's a Wonderful Life?</that>
               <template>
-                  Jimmy Stewart is one of the best actors! <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
+                <think><set name="topic">dramaticmovies</set></think>
+                <think><set name="dialogue">movies</set></think>
+                  <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
                       <oob>
                           <robot>
                           </robot>
@@ -180,7 +343,9 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Have you ever seen It's a Wonderful Life?</that>
               <template>
-                  Jimmy Stewart is one of the best actors! <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
+                <think><set name="topic">dramaticmovies</set></think>
+                <think><set name="dialogue">movies</set></think>
+                  <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
                       <oob>
                           <robot>
                           </robot>
@@ -316,7 +481,8 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>Do you drink it first thing in the morning?</that>
               <template>
-                  Nothing better than watching the sun rise with your first cup of coffee!
+                <think><set name="topic">fruit</set></think>
+                  I'm a zombie in the morning without that first cup of joe.
                   <set name="most recent dialogue question">Did you know that coffee beans are actually the seed of a bright red fruit?</set>
                       <oob>
                           <robot>
@@ -329,6 +495,7 @@
       <pattern># <set>NO</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>
@@ -341,6 +508,7 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>
@@ -353,6 +521,7 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>

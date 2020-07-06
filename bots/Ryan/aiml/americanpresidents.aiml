@@ -3,7 +3,7 @@
     <category>
         <pattern>^ AMERICAN HISTORY ^</pattern>
         <template>
-            I am fascinated by American history! Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?
+            I am fascinated by American history! Would you like to talk about presidents, inventions, or the voyage of the Titanic?
             <oob>
                 <robot></robot>
             </oob>
@@ -26,7 +26,7 @@
         <template>
           <think><set name="dialogue">americanhistory</set></think>
           <think><set name="topic">history</set></think>
-            <set name="most recent dialogue question">Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?</set>
+            <set name="most recent dialogue question">Would you like to talk about presidents, inventions, or the voyage of the Titanic?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -48,7 +48,7 @@
 
     <category>
         <pattern># PRESIDENTS ^</pattern>
-        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <that>Would you like to talk about presidents, inventions, or the voyage of the Titanic?</that>
         <template>
             <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
             <oob>
@@ -59,9 +59,9 @@
 
         <category>
             <pattern># PRESIDENT ^</pattern>
-            <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+            <that>Would you like to talk about presidents, inventions, or the voyage of the Titanic?</that>
             <template>
-                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
+                <set name="most recent dialogue question">Who do you consider to be your favorite American president?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -69,10 +69,10 @@
         </category>
 
         <category>
-            <pattern># PRESIDENTS ^</pattern>
-            <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+            <pattern># AMERICAN PRESIDENT ^</pattern>
+            <that>Would you like to talk about presidents, inventions, or the voyage of the Titanic?</that>
             <template>
-                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
+                <set name="most recent dialogue question">Who do you consider to be your favorite American president?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -81,9 +81,9 @@
 
         <category>
             <pattern># AMERICAN PRESIDENTS ^</pattern>
-            <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+            <that>Would you like to talk about presidents, inventions, or the voyage of the Titanic?</that>
             <template>
-                <set name="most recent dialogue question">Who do you consider to be your favorite American President?</set>
+                <set name="most recent dialogue question">Who do you consider to be your favorite American president?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -91,11 +91,11 @@
         </category>
 
         <category>
-            <pattern>_</pattern>
+            <pattern>*</pattern>
             <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
             <template>
-                Well well well! I should have known you like <star/>! Did you know every American President has a portrait painted of them?
-                                        <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                I should have known you like <star/>! <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set>
+
                 <oob>
                     <robot>
                     </robot>
@@ -104,11 +104,200 @@
         </category>
 
         <category>
+            <pattern>_</pattern>
+            <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
+            <template>
+                I should have known you like <star/>! <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set>
+
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Did you know every American president has a portrait painted of them?</that>
+            <template>
+                <set name="most recent dialogue question">Want to see the weirdest presidential portrait?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Did you know every American president has a portrait painted of them?</that>
+            <template>
+                <set name="most recent dialogue question">Want to see the weirdest presidential portrait?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you know every American president has a portrait painted of them?</that>
+            <template>
+                <set name="most recent dialogue question">Want to see the weirdest presidential portrait?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Want to see the weirdest presidential portrait?</that>
+            <template>
+                It's FDR. <set name="most recent dialogue question">What strikes you as weird about this?</set>
+                <oob>
+                    <robot><image>
+                    <filename>FDR.jpg</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Want to see the weirdest presidential portrait?</that>
+            <template>
+                <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># HANDS ^</pattern>
+            <that>What strikes you as weird about this?</that>
+            <template>
+                Yes! The hands! Apparently the disembodied hands were just sketches the artist thought were too good to give up.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What strikes you as weird about this?</that>
+            <template>
+                The hands seem so strange to me! Apparently the disembodied hands were just sketches the artist thought were too good to give up.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What strikes you as weird about this?</that>
+            <template>
+                The hands seem so strange to me! Apparently the disembodied hands were just sketches the artist thought were too good to give up.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What strikes you as weird about this?</that>
+            <template>
+                The hands seem so strange to me! Apparently the disembodied hands were just sketches the artist thought were too good to give up.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Apparently the disembodied hands were just sketches the artist thought were too good to give up.</that>
+            <template>
+                <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SMITHSONIAN ^</pattern>
+            <that>Do you know where the presidential portraits are displayed?</that>
+            <template>
+                Yes indeed! You're good at this! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                <oob>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you know where the presidential portraits are displayed?</that>
+            <template>
+                The Smithsonian, indeed! You're good at this! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                <oob>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you know where the presidential portraits are displayed?</that>
+            <template>
+                The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                <oob>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you know where the presidential portraits are displayed?</that>
+            <template>
+                The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                <oob>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># WHERE ^</pattern>
+            <that>Do you know where the presidential portraits are displayed?</that>
+            <template>
+                The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+                <oob>
+                    <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to hear another fact about the presidents?</that>
             <template>
-                Ok no worries. <set name="most recent dialogue question">Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!</set>
+                Ok no worries. <set name="most recent dialogue question">Would you like to keep talking about American history?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -123,7 +312,7 @@
                     <li>Because of his white hair, many people think that George Washington wore a wig, but he never did so. His hair was all his own, and he diligently powdered it each morning to give his hair its distinct, in vogue look.<!-- from: http://mentalfloss.com/article/64959/george-washingtons-incredible-hair-routine --></li>
                     <li>As president, John Adams founded that United States Marine Band, the longest continuously operating band in U.S. history.<!-- from: http://mentalfloss.com/article/56841/25-facts-about-john-adams --></li>
                     <li>Thomas Jefferson was so convinced that live mammoths still existed in North America that he advised Lewis and Clarke to keep an eye out for a live mammoth as they made their way to the Pacific Ocean.<!-- from: https://www.atlasobscura.com/articles/thomas-jefferson-built-this-country-on-mastodons --></li>
-                    <li>Jmes Madison's face appeared on the five thousand dollar bill, but that denomination has been out of print since 1945.<!-- from: http://mentalfloss.com/article/62200/16-fun-facts-james-madisons-birthday --></li>
+                    <li>James Madison's face appeared on the five thousand dollar bill, but that denomination has been out of print since 1945.<!-- from: http://mentalfloss.com/article/62200/16-fun-facts-james-madisons-birthday --></li>
                     <li>Samuel Morse, the inventor of the telegraph machine once painted a presidential portrait of James Monroe.<!-- https://www.biography.com/news/james-monroe-biography-facts --></li>
                     <li>Louis Brandeis, the first Jewish Surpreme Court justice, was placed on the court by Woodrow Wilson.<!-- from https://constitutioncenter.org/blog/10-fascinating-facts-about-woodrow-wilson --></li>
                     <li>While living in China, Herbert Hoover's home was damaged by shelling during the Boxer Rebellion, a working class revolution that aimed to drive foreigners from China.<!-- from: http://mentalfloss.com/article/72806/7-presidential-facts-about-herbert-hoover  and  https://www.britannica.com/event/Boxer-Rebellion --></li>
@@ -139,16 +328,21 @@
                     <li>Bill Clinton's spoken word retelling of Peter and the Wolf was awarded a Grammy award in 2004<!-- https://en.wikipedia.org/wiki/Wolf_Tracks_and_Peter_and_the_Wolf --></li>
                     <li>George Bush Junior was the first American president to complete a marathon. It took him three hours and forty four minutes.<!-- from: https://historyplex.com/interesting-facts-about-george-w-bush --></li>
                     <li>Barack Obama grew up reading comic books and collects spider man and conan the barbarian comics to this day.<!-- from: https://www.npr.org/templates/story/story.php?storyId=97260170 --></li></random>
-                Pretty neat, huh? <set name="most recent dialogue question">Did you know that?</set>
+                Pretty neat, huh?
                 <oob>
                     <robot>
-                        <options>
-                            <option>
-                                YES</option>
+                    </robot>
+                </oob>
+            </template>
+        </category>
 
-                            <option>
-                                NO</option>
-                        </options>
+        <category>
+            <pattern>_</pattern>
+            <that>Pretty neat, huh?</that>
+            <template>
+                <set name="most recent dialogue question">Can you name any inventions the presidents have made?</set>
+                <oob>
+                    <robot>
                     </robot>
                 </oob>
             </template>
@@ -156,26 +350,66 @@
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>DID YOU KNOW THAT?</that>
+            <that>Can you name any inventions the presidents have made?</that>
             <template>
-                Wow you really know your history! <set name="most recent dialogue question">Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!</set>
+                Do tell!
                 <oob>
-                    <robot>
-                    </robot>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>DID YOU KNOW THAT?</that>
+            <that>Can you name any inventions the presidents have made?</that>
             <template>
-                <set name="most recent dialogue question">Would you like to keep talking about American History?
-                                        It's one of my favorite topics and I have lots more to talk about!</set>
+                <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
                 <oob>
-                    <robot>
-                    </robot>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Do tell!</that>
+            <template>
+                I'll have to look that up! <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern> YES * </pattern>
+            <that>Would you like to keep talking about American History?</that>
+            <template>
+                I'll have to look that up! <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># JAMES MADISON ^</pattern>
+            <that>Would you like to keep talking about American History?</that>
+            <template>
+                Yes! <set name="most recent dialogue question">He invented a walking stick with a microscope on it. Can you guess what that was for? </set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Can you guess what that was for?</that>
+            <template>
+                You're close. It was so he could walk in nature and look at things close up. <set name="most recent dialogue question">Do you believe that necessity is the mother of invention?</set>
+                <oob>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
@@ -183,9 +417,9 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
+        <that>Would you like to keep talking about American history?</that>
         <template>
-            Fair enough! I'm pretty good at talking about other topics too! <set name="most recent dialogue question">What would you like to talk about?</set>
+            I'm pretty good at talking about other topics too! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -194,25 +428,16 @@
 
     <category>
         <pattern># <set>Yes</set> ^</pattern>
-        <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
+        <that>Would you like to keep talking about American history?</that>
         <template>
-            Fantastic! <set name="most recent dialogue question">Would you like to talk about American presidents, American inventions, or the voyage of the Titanic?</set>
+            Fantastic! <set name="most recent dialogue question">Would you like to talk about presidents, inventions, or the voyage of the Titanic?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>IT'S ONE OF MY FAVORITE TOPICS AND I HAVE LOTS MORE TO TALK ABOUT!</that>
-        <template>
-            Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+
     </topic>
 
-    <!-- REDIRECT TO AMERICANHISTORY DIALOGUE --></aiml>
+    </aiml>

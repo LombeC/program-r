@@ -7,6 +7,8 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
         <template>
+          <think><set name="topic">healthyrecipes</set></think>
+          <think><set name="dialogue">food</set></think>
             That's ok, maybe I can show you a recipe some other time. <set name="most recent dialogue question">Are you still enjoying speaking about food?</set>
                 <oob>
                     <robot>
@@ -19,6 +21,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
         <template>
+          <think><set name="topic">healthyrecipes</set></think>
+          <think><set name="dialogue">food</set></think>
             Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
                 <oob>
                     <robot>
@@ -27,11 +31,14 @@
         </template>
     </category>
 
+
+
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>DO YOU WANT TO SEE A RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
         <template>
-
+          <think><set name="dialogue">food</set></think>
+          <think><set name="topic">healthyrecipes</set></think>
             That's ok, maybe I can show you a recipe some other time. <set name="most recent dialogue question">Are you still enjoying speaking about food?</set>
                 <oob>
                     <robot>
@@ -39,6 +46,22 @@
                 </oob>
         </template>
     </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to see a recipe that you could easily prepare at home?</that>
+                <template>
+                  <think><set name="topic">healthyrecipes</set></think>
+                  <think><set name="dialogue">food</set></think>
+                    Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+      <topic name="healthyrecipes">
 
 
     <category>
@@ -69,6 +92,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about cooking shows?</that>
         <template>
+          <think><set name="topic">cookingshows</set></think>
+          <think><set name="dialogue">television</set></think>
             <random>
                 <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
                     <robot>
@@ -91,29 +116,7 @@
 
 <!-- REDIRECT TO TV2 DIALOGUE -->
 
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Would you like to talk about cooking shows?</that>
-        <template>
-            OK! <set name="most recent dialogue question">What would you like to talk about?</set>
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-        </template>
-    </category>
 
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-            <that>Do you want to see a recipe that you could easily prepare at home?</that>
-                <template>
-                    Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
-                        <oob>
-                            <robot>
-                            </robot>
-                        </oob>
-                </template>
-    </category>
 
         <category>
         <pattern># CAULIFLOWER TACOS ^</pattern>
@@ -203,6 +206,19 @@
         </template>
 </category>
 
+</topic>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Would you like to talk about cooking shows?</that>
+    <template>
+        OK! <set name="most recent dialogue question">What would you like to talk about?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+    </template>
+</category>
 
 <category>
     <pattern># <set>YES</set> ^</pattern>

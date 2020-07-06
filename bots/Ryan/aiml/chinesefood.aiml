@@ -6,13 +6,13 @@
         <that>How do you feel about Chinese Food?</that>
         <template>
             <think><set name="data"><star/></set><set name="topic">chinesefood</set></think>
-
+            <think><set name="dialogue">food</set></think>
             <condition name="getsentiment">
                 <li value="verypositive"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
                 <li value="positive"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
                 <li value="neutral"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
-                <li value="negative"><set name="most recent dialogue question">Let's skip it! How do you feel about Indian food?</set></li>
-                <li value="verynegative"><set name="most recent dialogue question">Let's skip it! How do you feel about Indian food?</set></li></condition>
+                <li value="negative">Let's skip it! <set name="most recent dialogue question">How do you feel about Indian food?</set></li>
+                <li value="verynegative">Let's skip it! <set name="most recent dialogue question">How do you feel about Indian food?</set></li></condition>
 
             <oob><robot></robot></oob>
         </template>
@@ -26,7 +26,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
         <template>
-            It makes a lot of sense when you think about it!
+            <set name="most recent dialogue question">You've eaten chop suey before, haven't you?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -35,7 +35,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
         <template>
-            It makes a lot of sense when you think about it!
+          <set name="most recent dialogue question">You've eaten chop suey before, haven't you?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -44,22 +44,20 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
         <template>
-            It makes a lot of sense when you think about it!
+            <set name="most recent dialogue question">You've eaten chop suey before, haven't you?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>It makes a lot of sense when you think about it!</that>
-            <template>
-                Many Chinese people immigrated to the United States to build the railroads, and they brought their food with them.
-                <set name="most recent dialogue question">You've eaten chop suey before, haven't you?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+    <category>
+        <pattern>_</pattern>
+        <that>Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</that>
+        <template>
+            <set name="most recent dialogue question">You've eaten chop suey before, haven't you?</set>
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
@@ -67,7 +65,9 @@
         <template>
             <set name="most recent dialogue question">Did you like chop suey when you tried it?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                <filename>chop_suey.jpg</filename>
+              </image></robot>
             </oob>
         </template>
     </category>
@@ -78,7 +78,9 @@
         <template>
             It's a quick stir fry of meat and vegetables in a brown sauce. <set name="most recent dialogue question">Do you think you would try chop suey?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                <filename>chop_suey.jpg</filename>
+              </image></robot>
             </oob>
         </template>
     </category>
@@ -89,7 +91,9 @@
         <template>
             It's a quick stir fry of meat and vegetables in a brown sauce. <set name="most recent dialogue question">Do you think you would try chop suey?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                <filename>chop_suey.jpg</filename>
+              </image></robot>
             </oob>
         </template>
     </category>
@@ -100,7 +104,9 @@
         <template>
             It's a quick stir fry of meat and vegetables in a brown sauce. <set name="most recent dialogue question">Do you think you would try chop suey?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                <filename>chop_suey.jpg</filename>
+              </image></robot>
             </oob>
         </template>
     </category>
@@ -109,7 +115,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Did you like chop suey when you tried it?</that>
         <template>
-            Who doesn't, right? <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
+            It's delish! <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -118,7 +124,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you like chop suey when you tried it?</that>
         <template>
-            I can understand that. <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
+            <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -127,7 +133,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you like chop suey when you tried it?</that>
         <template>
-            I can understand that. <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
+             <set name="most recent dialogue question">Would you say that you're an adventurous eater?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -164,7 +170,9 @@
         <that>Would you say that you're an adventurous eater?</that>
         <template>
             <set name="most recent dialogue question">What about octopus and squid? Would you eat those?</set>
-            <oob><robot></robot></oob>
+            <oob><robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot></oob>
         </template>
     </category>
 
@@ -172,8 +180,10 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you say that you're an adventurous eater?</that>
         <template>
-            <set name="most recent dialogue question">So I'm guessing you wouldn't try octopus and squid, right?</set>
-            <oob><robot></robot></oob>
+            <set name="most recent dialogue question">So I'm guessing you wouldn't try octopus and squid?</set>
+            <oob><robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot></oob>
         </template>
     </category>
 
@@ -182,7 +192,9 @@
         <that>Would you say that you're an adventurous eater?</that>
         <template>
             <set name="most recent dialogue question">What about octopus and squid? Would you eat those?</set>
-            <oob><robot></robot></oob>
+            <oob><robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot></oob>
         </template>
     </category>
 
@@ -190,7 +202,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you eat those?</that>
         <template>
-            <set name="most recent dialogue question">You are so adventurous and exciting! What's the strangest meal you've ever had?</set>
+            <set name="most recent dialogue question">You are so adventurous! What's the strangest meal you've ever had?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -215,7 +227,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <that>So I'm guessing you wouldn't try octopus and squid?</that>
         <template>
             I'm not sure I would be able to! <set name="most recent dialogue question">What's the strangest meal you've ever had?</set>
             <oob><robot></robot></oob>
@@ -224,7 +236,7 @@
 
     <category>
         <pattern># <set>NO</set> ^</pattern>
-        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <that>So I'm guessing you wouldn't try octopus and squid?</that>
         <template>
             I'm not sure I would be able to! <set name="most recent dialogue question">What's the strangest meal you've ever had?</set>
             <oob><robot></robot></oob>
@@ -233,7 +245,7 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <that>So I'm guessing you wouldn't try octopus and squid?</that>
         <template>
             I'm not sure I would be able to, either! <set name="most recent dialogue question">What's the strangest meal you've ever had?</set>
             <oob><robot></robot></oob>
@@ -242,23 +254,27 @@
 
     <category>
         <pattern>_</pattern>
-        <that>So I'm guessing you wouldn't try octopus and squid, right?</that>
+        <that>So I'm guessing you wouldn't try octopus and squid?</that>
         <template>
             I'm not sure I would be able to! <set name="most recent dialogue question">What's the strangest meal you've ever had?</set>
             <oob><robot></robot></oob>
         </template>
     </category>
+
+  </topic>
 
     <category>
         <pattern>_</pattern>
         <that>What's the strangest meal you've ever had?</that>
         <template>
             Sounds like we've had similar experiences! <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <think><set name="topic">food</set></think>
             <oob><robot></robot></oob>
         </template>
     </category>
 
 
 
- </topic>
+
+
 </aiml>

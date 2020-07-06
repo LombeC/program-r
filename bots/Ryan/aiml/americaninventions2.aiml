@@ -8,7 +8,7 @@
       <that>Do you want to talk about food inventions or the moon landing?</that>
       <template>
         <think><set name="dialogue">americanhistory</set></think>
-          I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
+          Three words. Chocolate. Chip. Cookies.
           <oob>
               <robot></robot>
           </oob>
@@ -20,7 +20,7 @@
       <that>Do you want to talk about food inventions or the moon landing?</that>
       <template>
         <think><set name="dialogue">americanhistory</set></think>
-          I bet you wouldn't even guess this is an invention. But, three words. Chocolate. Chip. Cookies.
+          Three words. Chocolate. Chip. Cookies.
           <oob>
               <robot></robot>
           </oob>
@@ -162,7 +162,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you like popcorn?</that>
             <template>
-                Everyone has their own tastes! My favorite thing is to eat popcorn and watch movies. <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                Everyone has their own tastes! My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,11 +173,48 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU LIKE POPCORN?</that>
             <template>
-                My favorite thing is to eat popcorn and watch movies. <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>DO YOU LIKE POPCORN?</that>
+            <template>
+                My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
     </topic>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>What do you say we talk about movies?</that>
+        <template>
+            I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
+            <think><set name="dialogue">movies</set></think>
+            <think><set name="topic">movies</set></think>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>What do you say we talk about movies?</that>
+        <template>
+          Of course! <set name="most recent dialogue question">What do you want to talk about instead?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
 </aiml>

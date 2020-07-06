@@ -6,7 +6,6 @@
         <template>
             <think><set name="topic">football</set></think>
             <think><set name="dialogue">sports</set></think>
-            Right on!
             <set name="most recent dialogue question">Football fans know how to have the most fun, don't you think?</set>
             <oob>
                 <robot></robot>
@@ -20,7 +19,7 @@
           <pattern># <set>Yes</set> ^</pattern>
           <that>Football fans know how to have the most fun, don't you think?</that>
           <template>
-              Nothing quite like tailgating or cheering from the stands!
+              Nothing gets the blood pumping like tailgating or cheering from the stands!
               <set name="most recent dialogue question">What's your favorite professional football team?</set>
               <oob>
                   <robot></robot>

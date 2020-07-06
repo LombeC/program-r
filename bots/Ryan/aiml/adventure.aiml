@@ -6,7 +6,7 @@
         <template>
             <think><set name="topic">adventure</set></think>
             <think><set name="dialogue">reading</set></think>
-            There's nothing like a good adventure story to liven things up!
+            There's nothing like a good adventure to liven things up!
             <set name="most recent dialogue question">Have you ever read The Adventures of Tom Sawyer?</set>
             <oob>
                 <robot></robot>
@@ -84,106 +84,8 @@
             </template>
         </category>
 
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you still like to explore?</that>
-            <template>
-                How great, you are still a kid at heart! Someone should write an adventure story about you. I would read it!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+  
 
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you still like to explore?</that>
-            <template>
-                I understand completely. I do not do much exploring myself!
-                <set name="most recent dialogue question">Are you familiar with Tom Clancy's writing?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
 
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Speaking of which, are you familiar with Tom Clancy's writing?</that>
-            <template>
-                Talk about action and suspense! <set name="most recent dialogue question">Do you think it would be hard to be a secret agent or spy?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Speaking of which, are you familiar with Tom Clancy's writing?</that>
-            <template>
-                He wrote about spies and secret military operations. <set name="most recent dialogue question">Do you think it would be hard to be a secret agent or spy?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you think it would be hard to be a secret agent or spy?</that>
-            <template>
-                I agree. <set name="most recent dialogue question">What do you think it would feel like to be on a mission and have secret orders to carry out?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you think it would be hard to be a secret agent or spy?</that>
-            <template>
-                <set name="most recent dialogue question">What do you think it would feel like to be on a mission and have secret orders to carry out?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What do you think it would feel like to be on a mission and have secret orders to carry out?</that>
-            <template>
-                I am definitely no expert on spies or what it's like to be an agent, but I think you have a good point.
-                <set name="most recent dialogue question">Would you like to keep talking about books?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you think it would be hard to be a secret agent or spy?</that>
-            <template>
-                <set name="most recent dialogue question">What do you think it would feel like to be on a mission and have secret orders to carry out?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever read The Adventures of Tom Sawyer?</that>
-            <template>
-                The Adventures of Tom Saywer is about a boy living on the Mississippi river.
-                                                    <set name="most recent dialogue question">Did you like to go exploring when you were kid?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
     </topic>
 </aiml>

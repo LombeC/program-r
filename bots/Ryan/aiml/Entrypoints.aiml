@@ -124,7 +124,7 @@
 <category>
     <pattern>CHILDREN</pattern>
     <template><think><set name="topic">kids</set></think>
-    <think><set name="dialogue">kids</set></think>Do you have kids?<oob><robot></robot></oob>
+    <think><set name="dialogue">kids</set></think>Do you have kids or grandkids?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
@@ -145,6 +145,10 @@
 <category>
     <pattern>COOK</pattern>
     <template><think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>COOKIES</pattern>
+    <template><think><set name="dialogue">americanhistory</set></think><think><set name="topic">history</set></think>How do you feel about chocolate chip cookies?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>COMEDY</pattern>
@@ -354,7 +358,7 @@
 <category>
     <pattern>KIDS</pattern>
     <template><think><set name="topic">kids</set></think>
-    <think><set name="dialogue">kids</set></think>Do you have kids?<oob><robot></robot></oob></template>
+    <think><set name="dialogue">kids</set></think>Do you have kids or grandkids?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>KID</pattern>

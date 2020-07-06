@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name="comedy">
+
+<category>
+    <pattern># <set>Yes</set> ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Divorced ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Divorce ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Widowed ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        I am so sorry to hear that. <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># Widow ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        I am so sorry to hear that. <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+        <pattern>DON T HAVE</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DON T HAVE</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NEVER HAD</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+          Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO *</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DON T *</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DON T</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DON T</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DON T HAVE ANY</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DON T HAVE</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NEVER HAD ANY</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV shows or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE GRANDKIDS</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE * KIDS AND * GRANDKIDS</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE * CHILDREN AND * GRAND *</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE * KIDS AND * GRAND *</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE GRAND *</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE KIDS</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE * KIDS</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE * CHILDREN</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE CHILDREN</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE CHILDREN</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE GRAND CHILDREN</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GREAT GRANDPARENT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM A GREAT GRANDPARENT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I M A GREAT GRANDPARENT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM A GRANDPARENT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I M A GRANDPARENT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern> YES * </pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BOTH ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I HAVE BOTH ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+  </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like most about being a grandparent?</that>
+        <template>
+          <think><set name="topic">kids</set></think>
+          <think><set name="dialogue">kids</set></think>
+            Awww I love to hear that. <set name="most recent dialogue question">Does your family visit you often?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What do you like most about being a parent?</that>
+        <template>
+          <think><set name="topic">kids</set></think>
+          <think><set name="dialogue">kids</set></think>
+            Awww I love to hear that. <set name="most recent dialogue question">Does your family visit you often?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO KIDS-PETS-SCIENCE-ART -->
+
+
+
+
+
+
+
+
+</aiml>

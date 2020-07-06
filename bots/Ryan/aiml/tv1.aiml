@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ TV ^</pattern>
+        <template>
+            Do you want to talk about television shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Television ^</pattern>
+        <template>
+            Do you want to talk about television shows?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you want to talk about television shows?</that>
+        <template>
+
+          <think><set name="dialogue">television</set></think>
+            Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># Comedy ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+          <think><set name="topic">comedy</set></think>
+            I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Comedies ^</pattern>
+        <that>Do you like to watch comedies, cooking shows, or dramas?</that>
+        <template>
+          <think><set name="topic">comedy</set></think>
+            I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="comedy">
+
+    <category>
+        <pattern>_</pattern>
+        <that>I like to think I've grown up a lot since then.</that>
+        <template>
+            <set name="most recent dialogue question">How would you describe your sense of humor?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How would you describe your sense of humor?</that>
+        <template>
+            I feel like I know you even better now that you have told me what tickles your funny bone! Ha ha.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Ha ha.</pattern>
+        <that>How would you describe your sense of humor?</that>
+        <template>
+            <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Can I show you a clip you might find funny?</that>
+        <template>
+            <random>
+                <li>I Love Lucy, but you don't have to in order to talk to me! <set name="most recent dialogue question">Did you ever watch I Love Lucy?</set><oob>
+                    <robot><video>
+                        <filename>I_Love_Lucy.mp4</filename>
+                    </video>
+                    </robot>
+                </oob></li>
+                <li>Sometimes I laugh so hard I fall off my pedestal!
+                    <set name="most recent dialogue question">Did you ever watch Johnny Carson?</set><oob>
+                    <robot>  <video>
+                          <filename>Johnny_Carson.mp4</filename>
+                      </video>
+                    </robot>
+                </oob></li>
+                <li>Don Knotts puts me in stitches all the time! <set name="most recent dialogue question">What's your favorite show?</set><oob>
+                    <robot><video>
+                        <filename>Practical_Joke.mp4</filename>
+                    </video>
+                    </robot>
+                </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT IS *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT S *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE SHOW IS *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE * SHOW IS *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE SHOW S *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE * SHOW S *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE TO WATCH *</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>I'm curious to know!</that>
+        <template>
+            Sounds like we have similar interests! <set name="most recent dialogue question">Want to watch one more funny clip?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            I Love Lucy, but you don't have to in order to talk to me! <set name="most recent dialogue question">Did you ever watch I Love Lucy?</set>
+            <oob>
+                <robot>
+                  <video>
+                      <filename>lucysChocolate.mp4</filename>
+                  </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            Tough crowd! <set name="most recent dialogue question">Well why don't we talk about funny movies?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Well why don't we talk about funny movies?</that>
+        <template>
+          Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+          <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Well why don't we talk about funny movies?</that>
+        <template>
+          OK!
+          <set name="most recent dialogue question">What would you like to chat about next?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+      </topic>
+    </aiml>

@@ -37,6 +37,7 @@
     <pattern># Cowboy museum ^</pattern>
     <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
     <template>
+        <think><set name="topic">cowboymuseum</set></think>
         Yeehaw! <set name="most recent dialogue question">You gotta check out the National Cowboy Museum! Would you like to take a tour of it?</set>
         <oob>
             <robot></robot>
@@ -48,6 +49,7 @@
     <pattern># Cowboy ^</pattern>
     <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
     <template>
+        <think><set name="topic">cowboymuseum</set></think>
         Yeehaw! <set name="most recent dialogue question">You gotta check out the National Cowboy Museum! Would you like to take a tour of it?</set>
         <oob>
             <robot></robot>
@@ -55,13 +57,14 @@
     </template>
 </category>
 
+<topic name="cowboymuseum">
+
 <category>
     <pattern># <set>YES</set> ^</pattern>
     <that>Would you like to take a tour of it?</that>
     <template>
-      <think><set name="topic">cowboymuseum</set></think>
-        I would love to visit and see what it was like to live back in the Wild West!
-          But first of all, I have to ask. <set name="most recent dialogue question">Have you ever been to a rodeo?</set>
+        I would love to visit!
+        I have to ask. <set name="most recent dialogue question">Have you ever been to a rodeo?</set>
         <oob>
             <robot><video>
                 <filename>Cowboy_Museum.mp4</filename>
@@ -70,26 +73,12 @@
     </template>
 </category>
 
-<topic name="cowboymuseum">
-
 <category>
     <pattern># <set>No</set> ^</pattern>
     <that>Would you like to take a tour of it?</that>
     <template>
-        No problem! <set name="most recent dialogue question">By the way, I meant to ask now that we're on the topic,
+        No problem! I have to ask. <set name="most recent dialogue question">
         have you ever been to a rodeo?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>YES</set> ^</pattern>
-    <that>By the way, I meant to ask now that we're on the topic,
-    have you ever been to a rodeo?</that>
-    <template>
-      Same here! It was a buck wild experience ha ha! What did you think?
         <oob>
             <robot></robot>
         </oob>
@@ -100,7 +89,7 @@
     <pattern># <set>YES</set> ^</pattern>
     <that>Have you ever been to a rodeo?</that>
     <template>
-      Same here! It was a buck wild experience ha ha! What did you think?
+      Same here! It was a buck wild experience! What did you think?
         <oob>
             <robot></robot>
         </oob>
@@ -110,8 +99,7 @@
 
 <category>
     <pattern># <set>NO</set> ^</pattern>
-    <that>By the way, I meant to ask now that we're on the topic,
-    have you ever been to a rodeo?</that>
+    <that>Have you ever been to a rodeo?</that>
     <template>
       <set name="most recent dialogue question">I'm guessing going to a rodeo isn't really on your bucket list?</set>
         <oob>
@@ -135,7 +123,7 @@
     <pattern>_</pattern>
     <that>What did you think?</that>
     <template>
-      Oh yes! I really enjoyed it to be honest! It was on my bucket list.
+      I really enjoyed it to be honest! It was on my bucket list.
         <oob>
             <robot></robot>
         </oob>
@@ -146,7 +134,7 @@
     <pattern>_</pattern>
     <that>It was on my bucket list.</that>
     <template>
-      <set name="most recent dialogue question">What is on your bucket list, would you say? Where would you want to travel?</set>
+      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -157,7 +145,7 @@
     <pattern>_</pattern>
     <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
     <template>
-      I feel you! <set name="most recent dialogue question">What is on your bucket list, would you say? Where would you want to travel?</set>
+      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -168,8 +156,8 @@
     <pattern>_</pattern>
     <that>Where would you want to travel?</that>
     <template>
-      Let's be travel buddies! I could help with luggage and that kind of thing!
-      What do you say?
+      Let's be travel buddies! I could help with luggage.
+      <set name="most recent dialogue question">What do you say?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -180,14 +168,43 @@
     <pattern>_</pattern>
     <that>What do you say?</that>
     <template>
-      Heard that! Just remember me next time you are buying plane tickets!
-      <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+      <think><set name="topic">routesixtysix</set></think>
+      <set name="most recent dialogue question">Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</set>
         <oob>
             <robot></robot>
         </oob>
     </template>
 </category>
 
-
 </topic>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
+    <template>
+        I really dig the diner they showed, and am a fan of all things Elvis! <set name="most recent dialogue question">What do you like about Route 66?</set>
+        <oob>
+            <robot>
+                <video>
+                    <filename>Route_66.mp4</filename>
+                </video>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
+    <template>
+        No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+
+
 </aiml>

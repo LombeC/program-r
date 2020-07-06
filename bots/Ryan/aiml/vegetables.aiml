@@ -7,6 +7,7 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>DO YOU LIKE VEGETABLES?</that>
       <template>
+        <think><set name="dialogue">food</set></think>
           Not a single one? Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
           <oob>
                 <robot>
@@ -19,25 +20,34 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>DO YOU LIKE VEGETABLES?</that>
       <template>
-        Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
-        <oob><robot></robot></oob>
+        <think><set name="dialogue">food</set></think>
+          Well, in that case, maybe you can help me out with this instead. <set name="most recent dialogue question">Are tomatoes a fruit or a vegetable?</set>
+          <oob>
+                <robot>
+                </robot>
+            </oob>
       </template>
   </category>
 
   <category>
       <pattern># <set>YES</set> ^</pattern>
-      <that>DO YOU LIKE VEGETABLES?</that>
-      <template>
-        I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
-        <oob><robot></robot></oob>
-      </template>
+          <that>DO YOU LIKE VEGETABLES?</that>
+              <template>
+                <think><set name="topic">wings</set></think>
+                <think><set name="dialogue">food</set></think>
+                  I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
+                      <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
   </category>
 
   <category>
     <pattern># <set>NO</set> ^</pattern>
       <that>HAVE YOU EVER TRIED BUFFALO CAULIFLOWER WINGS?</that>
         <template>
-          Buffalo cauliflower wings are a vegetarian alternative to chicken wings. Spicy and delicious. <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set>
+          Buffalo cauliflower wings are a vegetarian alternative to chicken wings. <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set>
             <oob>
               <robot>
               </robot>
@@ -61,7 +71,7 @@
     <pattern># <set>YES</set> ^</pattern>
       <that>WOULD YOU LIKE TO SEE A RECIPE FOR HOW TO MAKE THIS TYPE OF WING?</that>
         <template>
-          <think><set name="topic">wings</set></think>
+
           <set name="most recent dialogue question">Do you think you would enjoy preparing cauliflower like this for yourself?</set>
             <oob>
                 <robot>
@@ -175,7 +185,31 @@
     <pattern># DONE ^</pattern>
       <that>JUST SAY DONE WHEN YOU HAVE FINISHED COPYING THE WING RECIPE.</that>
         <template>
-          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. Ready to move on? <set name="most recent dialogue question">How about we talk about a different food?</set>
+          If you ever need to see this recipe in the future, just mention buffalo cauliflower wings and I'll show you the video again. <set name="most recent dialogue question">Ready to move on?</set>
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>YES</set> ^</pattern>
+      <that>Ready to move on?</that>
+        <template>
+          <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
+            <oob>
+              <robot>
+              </robot>
+            </oob>
+        </template>
+  </category>
+
+  <category>
+    <pattern># <set>NO</set> ^</pattern>
+      <that>Ready to move on?</that>
+        <template>
+          <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set>
             <oob>
               <robot>
               </robot>

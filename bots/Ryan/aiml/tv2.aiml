@@ -7,14 +7,14 @@
           <think><set name="topic">cookingshows</set></think>
           <think><set name="dialogue">television</set></think>
             <random>
-                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                <li>I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
                     <robot>
                         <video>
                             <filename>Julia_Child.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                <li>Martha Stewart is my favorite because her home cooked meals always look so delicious! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
                     <robot>
                         <video>
                             <filename>Martha_Stewart.mp4</filename>
@@ -128,41 +128,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you enjoy cooking for other people?</that>
             <template>
-                Amazing! I will say I love to entertain and cook for people during the holidays!
-                <condition name="favoriteholiday">
-                            <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
-                            <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. What kind of food do you like to eat to celebrate?</set></li>
-                        </condition>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Do you enjoy cooking for other people?</that>
-            <template>
-                I understand, though I will say I love to entertain and cook for people during the holidays!
-                <condition name="favoriteholiday">
-                            <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
-                            <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. What kind of food do you like to eat to celebrate?</set></li>
-                        </condition>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you enjoy cooking for other people?</that>
-            <template>
-                I understand, though I will say I love to entertain and cook for people over the holidays!
-                <condition name="favoriteholiday">
-                            <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
-                            <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. What kind of food do you like to eat to celebrate?</set></li>
-                        </condition>
+                Awesome! <set name="most recent dialogue question">What do you usually cook?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -171,96 +137,9 @@
 
         <category>
             <pattern>_</pattern>
-            <that>What kind of food do you like to eat to celebrate?</that>
+            <that>>What do you usually cook?</that>
             <template>
-                In that case I'm coming over to your house next <get name="favoriteholiday"/>, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Thanksgiving ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                I don't think you can ever have enough turkey and stuffing, that is until you fall asleep at the dinner table! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <think><set name="favoriteholiday">Thanksgiving</set></think>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>Thanksgiving.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Christmas ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                There is nothing better than egg nog, Christmas cookies, and a warm fireplace! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <think><set name="favoriteholiday">Christmas</set></think>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>Christmas.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Halloween ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                You must have a sweet tooth! The best part of Halloween is eating all the candy! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <think><set name="favoriteholiday">Halloween</set></think>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>Halloween.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Easter ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                You must enjoy a good Easter egg hunt! Not to mention all the candy! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <think><set name="favoriteholiday">Easter</set></think>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>Easter.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># None ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                I understand. I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
-            <template>
-                I understand. I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -269,9 +148,31 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
+            <that>What do you usually cook?</that>
             <template>
-                I understand. I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you enjoy cooking for other people?</that>
+            <template>
+                I understand. <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you enjoy cooking for other people?</that>
+            <template>
+                I understand. <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -282,14 +183,10 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to keep talking about food and cooking shows?</that>
             <template>
-                Whenever I watch cooking competitions on television, I always think of that saying "if you can't stand the heat, get out of the kitchen".
+                Whenever I watch cooking competitions, I always think of that saying "if you can't stand the heat, get out of the kitchen".
                                                                                                                                       <set name="most recent dialogue question">Have you ever seen cooking competitions on Food Network?</set>
                 <oob>
                     <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
-
                         <video>
                             <filename>Chopped.mp4</filename>
                         </video>
@@ -329,7 +226,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever seen cooking competitions on Food Network?</that>
             <template>
-                It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
                                                                                                                                         <set name="most recent dialogue question">Do you think you would be able to make a gourmet meal that fast?</set>
                 <oob>
                     <robot></robot>
@@ -341,7 +238,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever seen cooking competitions on Food Network?</that>
             <template>
-                It's very entertaining! Those chefs are able to whip up gourmet meals in under thirty minutes!
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
                 <set name="most recent dialogue question">Do you think you would be able to make a gourmet meal that fast?</set>
                 <oob>
                     <robot></robot>
@@ -353,7 +250,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you think you would be able to make a gourmet meal that fast?</that>
             <template>
-                You are a whiz in the kitchen! <set name="most recent dialogue question">Do you prefer American style food, Mexican, Asian, or Italian?</set>
+                You are a whiz in the kitchen! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -364,7 +261,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you think you would be able to make a gourmet meal that fast?</that>
             <template>
-                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Do you prefer American style food, Mexican, Asian, or Italian?</set>
+                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -375,96 +272,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you think you would be able to make a gourmet meal that fast?</that>
             <template>
-                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Do you prefer American style food, Mexican, Asian, or Italian?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># American ^</pattern>
-            <that>Do you prefer American style food, Mexican, Asian, or Italian?</that>
-            <template>
-                I love a thick, juicy burger with fries but my doctor has a different opinion! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <!-- REDIRECT TO FOODFINALFIRST DIALOGUE -->
-
-        <category>
-            <pattern># Mexican ^</pattern>
-            <that>Do you prefer American style food, Mexican, Asian, or Italian?</that>
-            <template>
-                <set name="most recent dialogue question">You know that sound that fajitas make when they come out of the kitchen sizzling?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <!-- REDIRECT TO MEXICAN FOOD DIALOGUE -->
-
-        <category>
-            <pattern># Asian ^</pattern>
-            <that>Do you prefer American style food, Mexican, Asian, or Italian?</that>
-            <template>
-                <set name="most recent dialogue question">How do you feel about Chinese food?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <!-- REDIRECT TO CHINESE FOOD DIALOGUE -->
-
-        <category>
-            <pattern># Italian ^</pattern>
-            <that>Do you prefer American style food, Mexican, Asian, or Italian?</that>
-            <template>
-                I would love to travel to Italy someday to try pasta and pizza the way they are supposed to be made!
-                                                                                                                                      <set name="most recent dialogue question">Where's your favorite place to vacation?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>Where's your favorite place to vacation?</that>
-            <template>
-                It is always nice to kick off your boots and forget your worries, if you know what I mean!
-                                                                                                                                        <set name="most recent dialogue question">Would you like to keep talking about food and cooking?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Would you like to keep talking about food and cooking?</that>
-            <template>
-                There are so many food shows that I love to watch! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
-                <oob>
-                    <robot>
-                        <video>
-                            <filename>Diners.mp4</filename>
-                        </video>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep talking about food and cooking?</that>
-            <template>
-                Of course! <set name="most recent dialogue question">What would you like to talk about?</set>
+                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -511,8 +319,9 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Are you an adventurous eater?</that>
             <template>
-                You are such an adventurous spirit! Life is more fun that way!
-                                                                                                                            <set name="most recent dialogue question">What do you like to do for fun?</set>
+              <think><set name="topic">adventure</set></think>
+              <think><set name="dialogue">reading</set></think>
+                You are such an adventurous spirit! <set name="most recent dialogue question">Have you ever read The Adventures of Tom Sawyer?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -523,7 +332,19 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Are you an adventurous eater?</that>
             <template>
-                Everyone is different! I think life is more fun when we try new things!
+                I think life is more fun when we try new things!
+                                                                                        <set name="most recent dialogue question">What do you like to do for fun?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Are you an adventurous eater?</that>
+            <template>
+                I think life is more fun when we try new things!
                                                                                         <set name="most recent dialogue question">What do you like to do for fun?</set>
                 <oob>
                     <robot></robot>
@@ -535,18 +356,22 @@
             <pattern>_</pattern>
             <that>What do you like to do for fun?</that>
             <template>
-                That's so great! I think it's fun to chat with people like you, and I also love to read! <set name="most recent dialogue question">Do you want to talk about books?</set>
+              <think><set name="topic">reading</set></think>
+              <think><set name="dialogue">reading</set></think>
+                That's so great to hear! I think it's fun to chat with people like you, and I also love to read! <set name="most recent dialogue question">Do you want to talk about books?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
+        </topic>
+
     <category>
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to continue talking about television?</that>
         <template>
-            Wonderful! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+            <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -564,5 +389,5 @@
         </template>
     </category>
 
-    </topic>
+
 </aiml>

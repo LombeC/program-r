@@ -200,12 +200,13 @@
                 </oob>
             </template>
         </category>
-  
 
+</topic>
     <category>
         <pattern>_</pattern>
         <that>What was the most interesting thing you learned?</that>
         <template>
+          <think><set name="topic">science</set></think>
             I think it's incredible that Jupiter's defining feature, the red spot, is a storm and could therefore dissapear. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
@@ -217,11 +218,12 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Should we watch it?</that>
         <template>
+          <think><set name="topic">science</set></think>
             Okay. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
-  </topic>
+
 </aiml>

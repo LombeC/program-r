@@ -1,95 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+
+
+
     <category>
         <pattern># DRAMA ^</pattern>
         <that>Do you prefer adventure, horror, drama, or mystery?</that>
         <template>
             <think><set name="topic">drama</set></think>
             <think><set name="dialogue">reading</set></think>
-            The Grapes of Wrath is probably the best drama I've read,
-                        set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+            <condition name="favoriteauthor">
+                        <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What do you think of Danielle Steel?</set></li>
+                        <li><set name="most recent dialogue question">So, you said your favorite author <get name="favoriteauthor"/>. What do you think of Danielle Steel?</set></li>
+                    </condition>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <topic name="drama">
         <category>
             <pattern># DRAMAS ^</pattern>
             <that>Do you prefer adventure, horror, drama, or mystery?</that>
             <template>
-                The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+              <think><set name="topic">drama</set></think>
+              <think><set name="dialogue">reading</set></think>
+              <condition name="favoriteauthor">
+                          <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What do you think of Danielle Steel?</set></li>
+                          <li><set name="most recent dialogue question">So, you said your favorite author <get name="favoriteauthor"/>. What do you think of Danielle Steel?</set></li>
+                      </condition>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
-        <category>
-            <pattern># I LIKE DRAMAS ^</pattern>
-            <that>Do you prefer adventure, horror, drama, or mystery?</that>
-            <template>
-                The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+        <topic name="drama">
+
+          <category>
+          <pattern>_</pattern>
+          <that>What do you think of Danielle Steel?</that>
+          <template>
+              <think><set name="data"><star/></set></think>
+
+              <condition name="getsentiment">
+                  <li value="positive">I love her books too! <set name="most recent dialogue question">Has it been long since the last time you read one of her books?</set></li>
+                  <li value="neutral">I see! <set name="most recent dialogue question">Has it been long since the last time you read one of her books?</set></li>
+                  <li value="negative">Perhaps you prefer historical dramas better.<set name="most recent dialogue question">Do you remember the Dust Bowl?</set></li></condition>
+
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Has it been long since the last time you read one of her books?</that>
+          <template>
+              I really like her book The Gift. <set name="most recent dialogue question">Have you read that one?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>No</set> ^</pattern>
+          <that>Has it been long since the last time you read one of her books?</that>
+          <template>
+              I really like her book The Gift. <set name="most recent dialogue question">Have you read that one?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Has it been long since the last time you read one of her books?</that>
+          <template>
+              I really like her book The Gift. <set name="most recent dialogue question">Have you read that one?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Have you read that one?</that>
+          <template>
+              What a beautiful and haunting book. <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>No</set> ^</pattern>
+          <that>Have you read that one?</that>
+          <template>
+              It's a beautiful and haunting book. <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Have you read that one?</that>
+          <template>
+              It's a beautiful and haunting book.  <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>What's the best gift you've ever received?</that>
+          <template>
+              It's a beautiful and haunting book.  <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern>_</pattern>
+          <that>What's the best gift you've ever received?</that>
+          <template>
+              Those moments are always so special. <set name="most recent dialogue question">Want to keep talking about books?</set>
+              <oob>
+                  <robot>
+                  </robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Want to keep talking about books?</that>
+          <template>
+              <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+      <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Want to keep talking about books?</that>
+          <template>
+              OK. <set name="most recent dialogue question">What should we talk about next?</set>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
 
         <category>
-            <pattern># I LIKE DRAMA ^</pattern>
-            <that>Do you prefer adventure, horror, drama, or mystery?</that>
-            <template>
-                The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I PREFER DRAMAS ^</pattern>
-            <that>Do you prefer adventure, horror, drama, or mystery?</that>
-            <template>
-                The Grapes of Wrath is probably the best drama I've read,
-                            set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I PREFER DRAMA ^</pattern>
-            <that>Do you prefer adventure, horror, drama, or mystery?</that>
-            <template>
-                The Grapes of Wrath is probably the best drama I've read,
-                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
+            <pattern># <set>YES</set> ^</pattern>
             <that>Do you remember the Dust Bowl?</that>
             <template>
-                          <set name="most recent dialogue question">Would you like to watch a short video about The Grapes of Wrath?</set>
+                The Grapes of Wrath is probably the best drama I've read,
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
                 <oob>
-                    <robot>
-                    </robot>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you remember the Dust Bowl?</that>
+            <template>
+                The Grapes of Wrath is probably the best drama I've read,
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you remember the Dust Bowl?</that>
+            <template>
+                The Grapes of Wrath is probably the best drama I've read,
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
+                <oob>
+                    <robot></robot>
                 </oob>
             </template>
         </category>
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Would you like to watch a short video about The Grapes of Wrath?</that>
+            <that>Would you like to watch a short video about the book?</that>
             <template>
                 <set name="most recent dialogue question">What do you think about The Grapes of Wrath from the trailer?</set>
                 <oob>
@@ -106,7 +228,7 @@
             <pattern>_</pattern>
             <that>What do you think about The Grapes of Wrath from the trailer?</that>
             <template>
-                I like The Grapes of Wrath beacuse the story is realistic.
+                I like it beacuse the story is so realistic.
                             <set name="most recent dialogue question">What real life problem do you think should be written about in a book?</set>
                 <oob>
                     <robot></robot>
@@ -118,7 +240,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to watch a short video about The Grapes of Wrath?</that>
             <template>
-                I like The Grapes of Wrath beacuse the story is realistic.
+
                             <set name="most recent dialogue question">What real life problem do you think should be written about in a book?</set>
                 <oob>
                     <robot></robot>
@@ -148,6 +270,8 @@
         </template>
     </category>
 
+  </topic>
+
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to keep talking about books?</that>
@@ -170,5 +294,5 @@
             </oob>
         </template>
     </category>
-    </topic>
+
 </aiml>

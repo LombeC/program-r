@@ -36,7 +36,7 @@
         <template>
           <think><set name="dialogue">museums</set></think>
           <think><set name="topic">artmuseums</set></think>
-          Looking at art makes me so happy! I love this painting of a party by Renoir. Reminds me of my birthday!
+          I love this painting by Renoir. Reminds me of a party!
           <set name="most recent dialogue question">How do you celebrate your birthday?</set>
             <oob>
                 <robot><image>
@@ -74,7 +74,7 @@
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
           <think><set name="topic">artmuseums</set></think>
-            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of a party!
             How do you celebrate your birthday?</set>
             <oob>
                 <robot></robot>
@@ -87,7 +87,7 @@
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
           <think><set name="topic">artmuseums</set></think>
-            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            <set name="most recent dialogue question">I love this painting by Renoir. Reminds me of a party!
             How do you celebrate your birthday?</set>
             <oob>
                 <robot></robot>
@@ -100,7 +100,7 @@
         <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
           <think><set name="topic">artmuseums</set></think>
-            Looking at art makes me so happy! <set name="most recent dialogue question">I love this painting of a party by Renoir. Reminds me of my birthday!
+            <set name="most recent dialogue question">I love this painting by Renoir. Reminds me of a party!
             How do you celebrate your birthday?</set>
             <oob>
                 <robot><image>
@@ -116,7 +116,7 @@
             <pattern>_</pattern>
             <that>How do you celebrate your birthday?</that>
             <template>
-              Let's throw a party next time! Just throw some tinsel on my head and I'll get the party started.
+              Let's throw a party next time!
               <condition name="birthday">
                   <li value="Unknown"><set name="most recent dialogue question">When is your birthday?</set></li>
                   <li><set name="most recent dialogue question">You said your birthday is <get name="birthday"/>. Is that right?</set></li>
@@ -465,7 +465,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+            <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -480,7 +480,7 @@
         <pattern>_</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+            <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -492,4 +492,26 @@
     </category>
 
   </topic>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to keep talking about museums?</that>
+      <template>
+          Great! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>No</set> ^</pattern>
+      <that>Do you want to keep talking about museums?</that>
+      <template>
+          Sure. <set name="most recent dialogue question">What would you like to talk about?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
 </aiml>

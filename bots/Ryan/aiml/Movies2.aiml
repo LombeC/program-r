@@ -4,6 +4,8 @@
         <pattern># Comedy ^</pattern>
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
             Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
             <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
             <oob>
@@ -16,7 +18,9 @@
         <pattern># Comedies ^</pattern>
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
-            Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
+            Great! Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
             <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
             <oob>
                 <robot></robot>
@@ -29,6 +33,7 @@
         <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
             Who hasn't! <set name="most recent dialogue question">Do you remember that scene?</set>
             <oob>
                 <robot>
@@ -45,6 +50,7 @@
         <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
             You've got to watch it! <set name="most recent dialogue question">How funny was that scene?</set>
             <oob>
                 <robot>
@@ -61,6 +67,7 @@
         <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
             You've got to watch it! <set name="most recent dialogue question">How funny was that scene?</set>
             <oob>
                 <robot>
@@ -174,7 +181,40 @@
         <pattern>_</pattern>
         <that>How funny was that scene?</that>
         <template>
-            <set name="most recent dialogue question">Does it remind you at all of your family holidays?</set>
+            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Do you remember that scene?</that>
+        <template>
+            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you remember that scene?</that>
+        <template>
+            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you remember that scene?</that>
+        <template>
+            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -183,9 +223,9 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Does it remind you at all of your family holidays?</that>
+            <that>Does it remind you of your family holidays?</that>
             <template>
-                <set name="most recent dialogue question">Heck, what would the holidays be without all the shenanigans and crazy family members, am I right?</set>
+                <set name="most recent dialogue question">Heck, what would the holidays be without all the shenanigans and crazy family members!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,9 +235,9 @@
 
     <category>
         <pattern>_</pattern>
-        <that>Heck, what would the holidays be without all the shenanigans and crazy family members, am I right?</that>
+        <that>Heck, what would the holidays be without all the shenanigans and crazy family members!</that>
         <template>
-            Absolutely. <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
+            Hopefully we're not the crazy ones! <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
             <oob>
                 <robot></robot>
             </oob>

@@ -448,11 +448,14 @@
             </template>
         </category>
 
+      </topic>
+
         <category>
             <pattern>_</pattern>
             <that>It is way more fun to watch a movie at home with a bag of Orville Reddenbacher's.</that>
             <template>
                 <set name="most recent dialogue question">What's one of your favorite movies?</set>
+                <think><set name="topic">movies</set></think>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -479,13 +482,119 @@
             <that>DO you think music is necessary to a movie?</that>
             <template>
                 I think you may have a point! <set name="most recent dialogue question">What's one of your favorite movies?</set>
+                <think><set name="topic">movies</set></think>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
+       <topic name="movies">
+
+        <category>
+            <pattern>*</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>IT IS *</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>MY FAVORITE MOVIE IS *</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>MY FAVORITE MOVIE S *</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>IT S *</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I LIKE *</pattern>
+            <that>What's one of your favorite movies?</that>
+            <template>
+                Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What's that one about?</that>
+            <template>
+                  I'll have to check it out soon!  <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+      </topic>
+
          <!-- REDIRECT TO MOVIES1 -->
+
+         <topic name="music">
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
@@ -574,14 +683,13 @@
                 </oob>
             </template>
         </category>
-</topic>
 
 
         <category>
             <pattern># Big Band ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -611,7 +719,7 @@
             <pattern># Big Band ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -641,7 +749,7 @@
             <pattern># Band ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -673,7 +781,7 @@
             <pattern># Big Band Music ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -703,7 +811,7 @@
             <pattern># Big Band Music ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -735,7 +843,7 @@
             <pattern># Band Music ^</pattern>
             <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -765,7 +873,7 @@
             <pattern># Band Music ^</pattern>
             <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
             <template>
-              <think><set name="topic">bigband</set></think>
+
                 <random>
                     <li>Oh yay! Another swing fan! <set name="most recent dialogue question">What did you think of Duke Ellington's music?</set><oob>
                         <robot>
@@ -791,7 +899,6 @@
                     </oob></li></random></template>
         </category>
 
-        <topic name="bigband">
 
         <category>
             <pattern>_</pattern>
@@ -954,6 +1061,25 @@
         </template>
     </category>
 
+  </topic>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            <think><set name="topic">romance</set></think>
+            <think><set name="dialogue">romance</set></think>
+
+            <set name="most recent dialogue question">The most famous romance I can think of is, Romeo, Romeo, wherefore art thou Romeo?
+                                    Tell me what that's from.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
     <!-- REDIRECT TO ROMANCE DIALOGUE -->
     <category>
         <pattern># <set>No</set> ^</pattern>
@@ -981,6 +1107,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to keep talking about music?</that>
         <template>
+          <think><set name="topic">music</set><set name="dialogue">music</set></think>
             <set name="most recent dialogue question">Would you like to listen to big band, crooner, jazz, or rock?</set>
             <oob>
                 <robot></robot>
@@ -999,5 +1126,5 @@
         </template>
     </category>
 
-  </topic>
+
 </aiml>

@@ -225,6 +225,18 @@
         </category>
 
         <category>
+            <pattern>*</pattern>
+            <that>What is your job, or what was your job?</that>
+            <template>
+                <set name="most recent dialogue question">How did you get into that line of work?</set>
+                <think>
+                    <set name="job"><star /></set>
+                </think>
+            <oob><robot></robot></oob>
+            </template>
+        </category>
+
+        <category>
             <pattern>_</pattern>
             <that>How did you get into that line of work?</that>
             <template>
@@ -238,8 +250,17 @@
             <pattern>_</pattern>
             <that>What did you like most about your job?</that>
             <template>
-              So interesting to hear about your experience.
-                <set name="most recent dialogue question">Speaking of good nonfiction books,
+              I love that! So interesting to hear more about your experience.
+
+            <oob><robot></robot></oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>I love that! So interesting to hear more about your experience.</that>
+            <template>
+                <set name="most recent dialogue question">Speaking of nonfiction,
                         have you ever read Tuesdays with Morrie by Mitch Albom?</set>
             <oob><robot></robot></oob>
             </template>
@@ -247,7 +268,7 @@
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Speaking of good nonfiction books,
+            <that>Speaking of nonfiction,
                     have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 <set name="most recent dialogue question">It is such a touching book, don't you agree?</set>
@@ -259,7 +280,7 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>Speaking of good nonfiction books,
+            <that>Speaking of nonfiction,
                     have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 It is such a touching book! The movie adaptation is even better!
@@ -272,7 +293,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Speaking of good nonfiction books,
+            <that>Speaking of nonfiction,
                     have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 It is such a touching book! The movie adaptation is even better!
@@ -300,8 +321,8 @@
         <that>Do you like it when books are made into movies?</that>
         <template>
             Books are usually more exciting, I agree.
-                      A good example is the Grapes of Wrath, set during the time of the Dust Bowl.
-                      <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+
+                      <set name="most recent dialogue question">Should we keep talking about books?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -312,9 +333,76 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you like it when books are made into movies?</that>
         <template>
-            Movies are usually more exciting, I agree.
-                        A good example is the Grapes of Wrath, set during the time of the Dust Bowl.
-                        <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+            <condition name="favoritemovie">
+                        <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's one of your favorite movies?</set></li>
+                        <li><set name="most recent dialogue question">So, you said your favorite movie is <get name="favoritemovie"/>. What about spooky movies, do you like those?</set></li>
+                    </condition>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT IS *</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE MOVIE IS *</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE MOVIE S *</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IT S *</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -323,17 +411,108 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Do you like it when books are made into movies?</that>
+        <that>What's one of your favorite movies?</that>
         <template>
-            Personally I think movies are usually more exciting.
-                        A good example is the Grapes of Wrath, set during the time of the Dust Bowl.
-                        <set name="most recent dialogue question">Do you remember the Dust Bowl?</set>
+            <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
+    <category>
+        <pattern>I LIKE *</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What's that one about?</that>
+        <template>
+          <think><set name="dialogue">movies</set></think>
+          <think><set name="topic">movies</set></think>
+              I'll have to check it out soon!  <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>What about spooky movies, do you like those?</that>
+        <template>
+          <think><set name="topic">televisiondramas</set></think>
+          <think><set name="dialogue">television</set></think>
+          <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob>
+              <robot>
+                  <video>
+                      <filename>Haunted_Hill.mp4</filename>
+                  </video>
+            </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>What about spooky movies, do you like those?</that>
+        <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
+              Maybe you like something a little more lighthearted! <set name="most recent dialogue question">Have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What about spooky movies, do you like those?</that>
+        <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
+              Maybe you like something a little more lighthearted! <set name="most recent dialogue question">Have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+
+
     </topic>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Should we keep talking about books?</that>
+        <template>
+          <think><set name="topic">reading</set></think>
+            <set name="most recent dialogue question">Do you prefer adventure, horror, drama, or mystery?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Should we keep talking about books?</that>
+        <template>
+            <set name="most recent dialogue question">What would you like to talk about next?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
     <!-- REDIRECT TO DRAMA DIALOGUE --></aiml>

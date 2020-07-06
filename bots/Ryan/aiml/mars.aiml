@@ -124,7 +124,7 @@
             <that>Which planet is your favorite?</that>
             <template>
               <think><set name="topic">mars</set></think>
-              <think><set name="dialogue">science</set></think>
+                <think><set name="dialogue">science</set></think>
                 Scientists say that Mars is the planet most similar to Earth! What do you think? <set name="most recent dialogue question">Might there be living organisms on Mars?</set>
                 <oob>
                     <robot></robot>
@@ -138,9 +138,8 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Might there be living organisms on Mars?</that>
             <template>
-              <think><set name="topic">mars</set></think>
-              <think><set name="dialogue">science</set></think>
-                Perhaps! Maybe we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+
+                Perhaps! Maybe some day we will find something. 
                 <oob>
                     <robot></robot>
                 </oob>
@@ -152,8 +151,8 @@
             <that>Might there be living organisms on Mars?</that>
             <template>
               <think><set name="topic">mars</set></think>
-              <think><set name="dialogue">science</set></think>
-                Maybe some day we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+
+                Maybe some day we will find something.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -165,12 +164,26 @@
             <that>Might there be living organisms on Mars?</that>
             <template>
               <think><set name="topic">mars</set></think>
-              <think><set name="dialogue">science</set></think>
-                Maybe some day we will find something. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+
+                Maybe some day we will find something.
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
     </topic>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Maybe some day we will find something.</that>
+        <template>
+          <think><set name="topic">science</set></think>
+          <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
 </aiml>

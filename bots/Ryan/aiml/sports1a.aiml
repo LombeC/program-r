@@ -3,11 +3,199 @@
 
 <topic name="basketball">
 
+
+  <category>
+      <pattern>_</pattern>
+      <that>How long have you been following the Cavaliers?</that>
+      <template>
+        A true fan!
+        <set name="most recent dialogue question">Did you know that they have two MVP's in their history?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Did you know that they have two MVP's in their history?</that>
+      <template>
+          Of course you did! They were both awarded to LeBron James.
+          <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Did you know that they have two MVP's in their history?</that>
+      <template>
+          Yep! They were both awarded to LeBron James. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Did you know that they have two MVP's in their history?</that>
+      <template>
+          Yep! They were both awarded to LeBron James. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>How long have you been following the Bulls?</that>
+      <template>
+          A true fan!
+          <set name="most recent dialogue question">Did you know that Michael Jordon won five MVP's?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Did you know that Michael Jordon won five MVP's?</that>
+      <template>
+          You know your stuff! The Chicago Bulls' Derrick Rose also won two MVP's.
+          <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Did you know that they are the only team to reach playoffs in the first season?</that>
+      <template>
+          Yep! The Chicago Bulls' Derrick Rose also won two MVP's. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Did you know that they are the only team to reach playoffs in the first season?</that>
+      <template>
+          Yep! The Chicago Bulls' Derrick Rose also won two MVP's. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>How long have you been following the Hornets?</that>
+      <template>
+          A true fan!
+          <set name="most recent dialogue question">Did you know that Michael Jordan owns the Hornets?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Did you know that Michael Jordan owns the Hornets?</that>
+      <template>
+          You know your stuff! He bought the Hornets in 2010.
+          <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Did you know that Michael Jordan owns the Hornets?</that>
+      <template>
+          Yep! He bought the Hornets in 2010.  <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Did you know that Michael Jordan owns the Hornets?</that>
+      <template>
+          Yep! He bought the Hornets in 2010.  <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>How long have you been following the Nets?</that>
+      <template>
+          A true fan!
+          <set name="most recent dialogue question">Did you know that Doctor J played for the Nets?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Did you know that Doctor J played for the Nets?</that>
+      <template>
+          You know your stuff! They won two ABA championships with Doctor J.
+          <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Did you know that Doctor J played for the Nets?</that>
+      <template>
+          Yep! They won two ABA championships with Doctor J. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Did you know that Doctor J played for the Nets?</that>
+      <template>
+          Yep! They won two ABA championships with Doctor J. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+
+
+
   <category>
       <pattern>_</pattern>
       <that>How long have you been following the Celtics?</that>
       <template>
-          Well then! A true fan!
+          A true fan!
           <set name="most recent dialogue question">I'm guessing you remember the infamous rivalry between the Celtics and Lakers?</set>
           <oob>
               <robot></robot>
@@ -53,7 +241,7 @@
       <pattern>_</pattern>
       <that>How long have you been following the Hawks?</that>
       <template>
-          Well then! A true fan!
+          A true fan!
           <set name="most recent dialogue question">Did you know that the Hawks won the championship in 1958?</set>
           <oob>
               <robot></robot>

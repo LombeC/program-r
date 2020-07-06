@@ -4,6 +4,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             <set name="most recent dialogue question">Do you remember trying naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
@@ -15,6 +16,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             You must love Indian food! <set name="most recent dialogue question">Have you ever tried naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
@@ -26,6 +28,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Has it been long since the last time you ate Indian food?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             <set name="most recent dialogue question">Do you remember trying naan? It's a type of Indian flatbread.</set>
             <oob>
                 <robot></robot>
@@ -38,6 +41,7 @@
         <that>HOW DO YOU FEEL ABOUT INDIAN FOOD?</that>
         <template>
             <think><set name="data"><star/></set><set name="topic">indianfood</set></think>
+            <think><set name="dialogue">food</set></think>
 
             <condition name="getsentiment">
                 <li value="positive">I love it too! <set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li>
@@ -88,7 +92,6 @@
             <pattern>_</pattern>
             <that>MMM DELICIOUS.</that>
             <template>
-                Honestly, I think I could eat a whole basket by myself!
                             <set name="most recent dialogue question">Would you order plain naan or get garlic naan? I mean, if you had to pick just one kind.</set>
                 <oob>
                     <robot></robot>
@@ -268,7 +271,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to see an easy recipe for making naan at home?</that>
             <template>
-                Ok, first you should gather your ingredients. When you're done looking at the ingredient list, just say DONE. <set name="most recent dialogue question">If you need, I can read the ingredients to you if you say READ.</set>
+                Ok, first you should gather your ingredients. When you're done looking at the ingredient list, just say done. <set name="most recent dialogue question">If you need, I can read the ingredients to you if you say read.</set>
                 <oob>
                     <robot>
                         <image>
@@ -281,9 +284,9 @@
 
         <category>
             <pattern># READ ^</pattern>
-            <that>If you need, I can read the ingredients to you if you say READ.</that>
+            <that>If you need, I can read the ingredients to you if you say read.</that>
             <template>
-                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil. <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
                 <oob>
                     <robot>
                         <image>
@@ -298,7 +301,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you need me to repeat the list of ingredients?</that>
             <template>
-                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil... <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
+                To make this recipe, you'll need. 1 package or approximately 1 quarter teaspoon active dry yeast, 1 cup warm water, 1 quarter cup white sugar, 3 tablespoons milk, 1 egg, beaten, 2 teaspoons salt, 4 and one half cups bread flour, one quarter cup of melted butter, and olive oil. <set name="most recent dialogue question">Do you need me to repeat the list of ingredients?</set>
                 <oob>
                     <robot>
                         <image>
@@ -316,6 +319,21 @@
                 <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
                 <oob>
                     <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DONE ^</pattern>
+            <that>If you need, I can read the ingredients to you if you say read.</that>
+            <template>
+                <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
+                <oob>
+                    <robot>
+                      <image>
+                          <filename>CLRSCR</filename>
+                      </image>
+                    </robot>
                 </oob>
             </template>
         </category>
@@ -346,6 +364,7 @@
             <pattern>_</pattern>
             <that>If you ever want to see the naan recipe in the future, just let me know.</that>
             <template>
+              <think><set name="topic">thaifood</set></think>
                 So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
                 <oob>
                     <robot></robot>
@@ -357,18 +376,8 @@
             <pattern># NEVER ^</pattern>
             <that>If you ever want to see the naan recipe in the future, just let me know.</that>
             <template>
+              <think><set name="topic">thaifood</set></think>
                 That's ok. So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># DONE ^</pattern>
-            <that>If you need, I can read the ingredients to you if you say READ.</that>
-            <template>
-                <set name="most recent dialogue question">Are you ready for the naan recipe?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -379,33 +388,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Are you ready for the naan recipe?</that>
             <template>
-                <set name="most recent dialogue question">When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.</set>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>naanrecipe.jpg</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Are you ready for the naan recipe?</that>
-            <template>
-                <set name="most recent dialogue question">Whenever you're ready to see the Naan recipe just say OK. If you'd rather return to it some other time, just say DONE.</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># OK ^</pattern>
-            <that>If you'd rather return to it some other time, just say DONE.</that>
-            <template>
-                <set name="most recent dialogue question">When you're done looking at this recipe, just say DONE. If you would like me to read the naan recipe to you, say READ.</set>
+                <set name="most recent dialogue question">When you're done looking at this recipe, just say done. If you would like me to read the naan recipe to you, say read.</set>
                 <oob>
                     <robot>
                         <image>
@@ -418,9 +401,24 @@
 
         <category>
             <pattern># DONE ^</pattern>
-            <that>If you'd rather return to it some other time, just say DONE.</that>
+            <that>If you would like me to read the naan recipe to you, say read.</that>
             <template>
-                <set name="most recent dialogue question">If you say NAAN RECIPE, I can show you the recipe whenever you want.</set>
+                If you make naan, I hope you'll tell me how it was. <set name="most recent dialogue question">If you say naan recipe, I can show you the recipe whenever you want.</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Are you ready for the naan recipe?</that>
+            <template>
+                <set name="most recent dialogue question">Whenever you're ready to see the Naan recipe just say OK. If you'd rather return to it some other time, just say done.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -428,8 +426,36 @@
         </category>
 
         <category>
+            <pattern># OK ^</pattern>
+            <that>If you'd rather return to it some other time, just say done.</that>
+            <template>
+                <set name="most recent dialogue question">When you're done looking at this recipe, just say done. If you would like me to read the naan recipe to you, say read.</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>naanrecipe.jpg</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DONE ^</pattern>
+            <that>If you'd rather return to it some other time, just say done.</that>
+            <template>
+                If you make naan, I hope you'll tell me how it was. <set name="most recent dialogue question">If you say naan recipe, I can show you the recipe whenever you want.</set>
+                <oob>
+                    <robot><image>
+                        <filename>CLRSCR</filename>
+                    </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># READ ^</pattern>
-            <that>If you would like me to read the naan recipe to you, say READ.</that>
+            <that>If you would like me to read the naan recipe to you, say read.</that>
             <template>
                 It's a bit long, so I'll read each step individually. Ready?
                 <oob>
@@ -835,7 +861,30 @@
         </category>
 
         <category>
+            <pattern>*</pattern>
+            <that>If you say naan recipe, I can show you the recipe whenever you want.</that>
+            <template>
+                <set name="most recent dialogue question">In my opinion, we can never have too many good meals.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern>_</pattern>
+            <that>In my opinion, we can never have too many good meals.</that>
+            <template>
+              <think><set name="topic">thaifood</set></think>
+                So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
             <that>In my opinion, we can never have too many good meals.</that>
             <template>
                 So tell me. <set name="most recent dialogue question">How do you feel about Thai food?</set>

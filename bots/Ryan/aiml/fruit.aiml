@@ -5,6 +5,8 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>DO YOU LIKE FRUIT?</that>
       <template>
+        <think><set name="dialogue">food</set></think>
+        <think><set name="topic">comfortfood</set></think>
         Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Why don't we talk about comfort food?</set>
           <oob>
               <robot></robot>
@@ -16,8 +18,9 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU LIKE FRUIT?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             <think><set name="topic">fruit</set></think>
-            Kind of a silly question, right? <set name="most recent dialogue question">Who doesn't like fruit?</set>
+            Kind of a silly question, right? <set name="most recent dialogue question">Have you ever gone fruit picking?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -26,60 +29,6 @@
 
 
     <topic name="fruit">
-        <category>
-            <pattern>_</pattern>
-            <that>Who doesn't like fruit?</that>
-            <template>
-                <set name="most recent dialogue question">Do you like peaches?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Do you like peaches?</that>
-            <template>
-                I like most of the stonefruit, but peaches are the best of the best. <set name="most recent dialogue question">Have you ever gone fruit picking?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Do you like peaches?</that>
-            <template>
-                We all have our own tastes! <set name="most recent dialogue question">Have you ever gone fruit picking?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you like peaches?</that>
-            <template>
-                We all have our own tastes! <set name="most recent dialogue question">Have you ever gone fruit picking?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>I like most of the stonefruit, but peaches are the best of the best.</that>
-            <template>
-                <set name="most recent dialogue question">Have you ever gone fruit picking?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
@@ -150,8 +99,22 @@
         <pattern>_</pattern>
         <that>You must be quite the party animal!</that>
         <template>
-          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
-          <set name="most recent dialogue question">What's your favorite holiday?</set>
+          Halloween parties are my favorite!
+          <condition name="favoriteholiday">
+                      <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
+                      <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. How do you celebrate?</set></li>
+                  </condition>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you celebrate?</that>
+        <template>
+          You really know how to have a good time, don't you! Would you like to keep talking about food or change the topic?
             <oob>
                 <robot></robot>
             </oob>
@@ -216,7 +179,7 @@
         <pattern># Halloween ^</pattern>
         <that>What's your favorite holiday?</that>
         <template>
-            You must have a sweet tooth! The best part of Halloween is eating all the candy! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
+            You must have a sweet tooth like me! The best part of Halloween is eating all the candy! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
                 <robot>
                     <image>
@@ -301,6 +264,7 @@
         <pattern># Food ^</pattern>
         <that>Would you like to keep talking about food or change the topic?</that>
         <template>
+          <think><set name="topic">wings</set></think>
             I read recently that our food preferences might be based on our genetics.
             <set name="most recent dialogue question">Do you like vegetables?</set>
             <oob>
@@ -315,6 +279,7 @@
         <pattern># Keep talking about food ^</pattern>
         <that>Would you like to keep talking about food or change the topic?</that>
         <template>
+          <think><set name="topic">wings</set></think>
           I read recently that our food preferences might be based on our genetics.
           <set name="most recent dialogue question">Do you like vegetables?</set>
             <oob>

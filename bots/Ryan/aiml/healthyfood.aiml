@@ -6,6 +6,7 @@
         <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
           <think><set name="topic">healthyfood</set></think>
+          <think><set name="dialogue">food</set></think>
             <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set>
             <oob>
                 <robot></robot>
@@ -17,6 +18,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
@@ -28,6 +30,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
@@ -39,6 +42,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
+          <think><set name="dialogue">food</set></think>
             <think><set name="topic">healthyfood</set></think>
 
             <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set>
@@ -144,6 +148,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Shall we keep talking about food?</that>
             <template>
+              <think><set name="topic">wings</set></think>
                 I read recently that our food preferences might be based on our genetics. <set name="most recent dialogue question">Do you like vegetables?</set>
                 <oob>
                     <robot></robot>
@@ -151,16 +156,7 @@
             </template>
         </category>
 
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Shall we keep talking about food?</that>
-            <template>
-                Sure! <set name="most recent dialogue question">What should we talk about?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+
 
         <category>
             <pattern>_</pattern>
@@ -188,6 +184,7 @@
             <pattern>_</pattern>
             <that>Just cut up whatever veggies you want on your pizza, spread the pesto sauce over the pita bread, and put in the oven with cheese on top!</that>
             <template>
+              <think><set name="topic">healthyrecipes</set></think>
                 There you have it. A healthy pizza. <set name="most recent dialogue question">Do you want to see another recipe that you could easily prepare at home?</set>
                 <oob>
                     <robot></robot>
@@ -195,5 +192,16 @@
             </template>
         </category>
     </topic>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Shall we keep talking about food?</that>
+        <template>
+            Sure! <set name="most recent dialogue question">What should we talk about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
     <!-- REDIRECT TO HEALTHYRECIPES --></aiml>

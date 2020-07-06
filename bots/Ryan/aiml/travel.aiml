@@ -39,7 +39,7 @@
         <template>
             <think><set name="topic">travel</set></think>
             <think><set name="dialogue">travel</set></think>
-            <set name="most recent dialogue question">It is always nice to kick off your boots and forget your worries, if you know what I mean! Where have you enjoyed traveling?</set>
+            It is always nice to kick off your boots and forget your worries, if you know what I mean! <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -85,7 +85,8 @@
             <pattern>_</pattern>
             <that>WHERE HAVE BEEN YOUR FAVORITE VACATION SPOTS?</that>
             <template>
-                Wow you really are quite the traveler! <set name="most recent dialogue question">If you could, would you want to travel in Italy, China, Mexico, or in the United States?</set>
+                Wow you really are quite the traveler!
+                <set name="most recent dialogue question">Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -93,80 +94,44 @@
         </category>
 
         <category>
-                    <pattern># UNITED STATES ^</pattern>
-                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                    <template>
-                      Jimmy Buffet got it right when he sang Cheeseburger in Paradise.
-                      <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</that>
+            <template>
+              <think><set name="topic">food</set></think>
+              <think><set name="dialogue">food</set></think>
+                <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-                        <oob>
-                            <robot></robot>
-                        </oob>
-                    </template>
-                </category>
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</that>
+            <template>
+              <think><set name="topic">food</set></think>
+              <think><set name="dialogue">food</set></think>
+                <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-                <category>
-                            <pattern># AMERICA ^</pattern>
-                            <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                            <template>
-                              Jimmy Buffet got it right when he sang Cheeseburger in Paradise.
-                              <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-                                <oob>
-                                    <robot></robot>
-                                </oob>
-                            </template>
-                        </category>
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</that>
+            <template>
+              <think><set name="topic">food</set></think>
+              <think><set name="dialogue">food</set></think>
+                <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-                <category>
-                    <pattern># Mexico ^</pattern>
-                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                    <template>
-                        I would love to travel to Mexico someday to eat delicious food while listening to a mariachi band!
-                        <set name="most recent dialogue question">Do you like Mexican food?</set>
-                        <oob>
-                            <robot></robot>
-                        </oob>
-                    </template>
-                </category>
-
-                <category>
-                    <pattern># China ^</pattern>
-                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                    <template>
-                        I would love to travel someday to try Chinese food the way it is supposed to be made!
-                        <set name="most recent dialogue question">How do you feel about Chinese food?</set>
-
-                        <oob>
-                            <robot></robot>
-                        </oob>
-                    </template>
-                </category>
-
-                <category>
-                    <pattern># Italy ^</pattern>
-                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                    <template>
-                        I would love to travel to Italy someday to try pasta the way it is supposed to be made!
-                        <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
-
-                        <oob>
-                            <robot></robot>
-                        </oob>
-                    </template>
-                </category>
-
-                <category>
-                    <pattern># <set>NO</set> ^</pattern>
-                    <that>If you could, would you want to travel in Italy, China, Mexico, or in the United States?</that>
-                    <template>
-                        I get that.
-                        <set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set>
-
-                        <oob>
-                            <robot></robot>
-                        </oob>
-                    </template>
-                </category>
 
     <!-- REDIRECT TO FOOD DIALOGUES -->
 

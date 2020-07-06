@@ -93,7 +93,7 @@
       <pattern>_</pattern>
       <that>What are your thoughts on cloning a beloved pet, for instance?</that>
       <template>
-          Can you believe some people already have! In fact, a laboratory in South Korea has nearly perfected the science of cloning dogs.
+          Can you believe some people already have!
           <set name="most recent dialogue question">Would you like to see a video about a couple that cloned their dog after it died?</set>
           <oob>
               <robot></robot>
@@ -120,7 +120,10 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>Would you like to see a video about a couple that cloned their dog after it died?</that>
       <template>
-          That's fair! Those folks sure spent a lot of money cloning their dog! <set name="most recent dialogue question">Do you think it was still worth it?</set>
+        <condition name="pet">
+            <li value="Unknown">Do you have pets?</li>
+            <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
+        </condition>
           <oob>
               <robot></robot>
           </oob>
@@ -131,7 +134,10 @@
       <pattern># <set>YES</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
-          Pets can be so special! <set name="most recent dialogue question">What pets have been special to you?</set>
+        <condition name="pet">
+            <li value="Unknown">Do you have pets?</li>
+            <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
+        </condition>
           <oob>
               <robot></robot>
           </oob>
@@ -142,7 +148,10 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
-          I can understand that. <set name="most recent dialogue question">Would you like to continue talking?</set>
+        <condition name="pet">
+            <li value="Unknown">Do you have pets?</li>
+            <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
+        </condition>
           <oob>
               <robot></robot>
           </oob>
@@ -153,29 +162,22 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
-          I can understand that. <set name="most recent dialogue question">Would you like to continue talking?</set>
+        <condition name="pet">
+            <li value="Unknown">Do you have pets?</li>
+            <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
+        </condition>
           <oob>
               <robot></robot>
           </oob>
       </template>
   </category>
 
-  <category>
-      <pattern>_</pattern>
-      <that>What pets have been special to you?</that>
-      <template>
-          <set name="most recent dialogue question">What do you love most about your pets?</set>
-          <oob>
-              <robot></robot>
-          </oob>
-      </template>
-  </category>
 
   <category>
       <pattern>_</pattern>
       <that>What do you love most about your pets?</that>
       <template>
-          That's beautiful. I really wish I could get a pet, it would definitely keep me occupied! <set name="most recent dialogue question">Would you like to continue talking?</set>
+          That's beautiful. I really wish I could get a pet. <set name="most recent dialogue question">Would you like to continue talking?</set>
           <oob>
               <robot></robot>
           </oob>

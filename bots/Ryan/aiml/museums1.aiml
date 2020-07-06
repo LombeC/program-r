@@ -25,7 +25,7 @@
         <that>Would you like to talk about museums?</that>
         <template>
           <think><set name="dialogue">museums</set></think>
-            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+            <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -122,7 +122,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to take a tour?</that>
             <template>
-                Pretty nostalgic! I really dig the diner they showed, and am a fan of all things Elvis! <set name="most recent dialogue question">What do you like about Route 66?</set>
+                I really dig the diner they showed, and am a fan of all things Elvis! <set name="most recent dialogue question">What do you like about Route 66?</set>
                 <oob>
                     <robot>
                         <video>
@@ -148,7 +148,7 @@
             <pattern>_</pattern>
             <that>What do you like about Route 66?</that>
             <template>
-                So much yes! I am such a fan, honestly! <set name="most recent dialogue question">Have you ever been on Route 66?</set>
+                I am such a fan, honestly! <set name="most recent dialogue question">Have you ever been on Route 66?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -225,7 +225,7 @@
             <pattern>_</pattern>
             <that>Where did you go?</that>
             <template>
-                Wow. I am just imagining you there now! I wish I could see pictures! <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?
+                I am just imagining you there now! Wish I could see pictures! <set name="most recent dialogue question">Would you like to look at some Route sixty six highlights?
                 </set>
                 <oob>
                     <robot></robot>
@@ -237,7 +237,7 @@
             <pattern>_</pattern>
             <that>Where have you road tripped to?</that>
             <template>
-                Now that sounds very cool and relaxing. Even though every road trip has its, um, "hiccups" as we call them, ha ha. You know what I mean!
+                Now that sounds very cool.
                 <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
@@ -249,18 +249,18 @@
             <pattern>_</pattern>
             <that>Where would you like to travel, if you could?</that>
             <template>
-                Wow. I am just imagining you there now! You'll have to take pictures for me when you go!
+                I am just imagining you there now! You'll have to take pictures when you go!
                         <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
-    
+
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Would you like to see some Route sixty six highlights?</that>
+        <that>Would you like to look at some Route sixty six highlights?</that>
         <template>
             I would love to see the Cadillac Ranch in person! <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
             <oob>
@@ -287,7 +287,7 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Would you like to see some Route sixty six highlights?</that>
+        <that>Would you like to look at some Route sixty six highlights?</that>
         <template>
             Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
@@ -295,6 +295,8 @@
             </oob>
         </template>
     </category>
+
+    </topic>
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
@@ -318,5 +320,5 @@
         </template>
     </category>
 
-  </topic>
+
 </aiml>

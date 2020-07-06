@@ -3,6 +3,7 @@
     <category>
         <pattern>^ activity ^</pattern>
         <template>
+
             Which activity do you enjoy the most. <set name="most recent dialogue question">Playing cards, knitting, reading, or travelling?</set>
             <oob>
                 <robot></robot>
@@ -24,6 +25,7 @@
         <pattern># CARDS ^</pattern>
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
+          <think><set name="dialogue">cards</set></think>
             <think><set name="topic">cards</set></think>
 
             I love cards! <set name="most recent dialogue question">What is your favorite card game?</set>
@@ -366,6 +368,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to talk about reading?</that>
         <template>
+          <think><set name="topic">reading</set></think>
+          <think><set name="dialogue">reading</set></think>
             Great! <set name="most recent dialogue question">Do you prefer adventure, horror, drama, or mystery?</set>
             <oob>
                 <robot></robot>
@@ -388,7 +392,9 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>What about television shows?</that>
         <template>
-            Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+          <think><set name="topic">comedy</set></think>
+          <think><set name="dialogue">television</set></think>
+            I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.
             <oob>
                 <robot></robot>
             </oob>
@@ -411,6 +417,7 @@
         <pattern># KNITTING ^</pattern>
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
+          <think><set name="dialogue">knitting</set></think>
             <think><set name="topic">knitting</set></think>
 
             I love knitting! <set name="most recent dialogue question">What is your favorite thing to knit?</set>
@@ -458,6 +465,8 @@
             <pattern># ALONE ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 Sometimes I like to do things alone. You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -469,6 +478,8 @@
             <pattern># I LIKE TO KNIT ALONE ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 Sometimes I like to do things alone. You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -480,6 +491,8 @@
             <pattern># I KNIT ALONE ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 Sometimes I like to do things alone. You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -491,6 +504,8 @@
             <pattern># I PREFER TO KNIT ALONE ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 Sometimes I like to do things alone. You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -502,6 +517,8 @@
             <pattern># WITH FRIENDS ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -513,6 +530,8 @@
             <pattern># I KNIT WITH FRIENDS ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -524,6 +543,8 @@
             <pattern># I LIKE TO KNIT WITH FRIENDS ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -535,6 +556,8 @@
             <pattern># FRIENDS ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -546,6 +569,8 @@
             <pattern># FRIEND ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -557,6 +582,8 @@
             <pattern># I PREFER TO KNIT WITH FRIENDS ^</pattern>
             <that>DO YOU PREFER TO KNIT ALONE OR WITH FRIENDS?</that>
             <template>
+              <think><set name="dialogue">pets</set></think>
+              <think><set name="topic">pets</set></think>
                 You seem to be a social butterfly! You know, I love learning more about you. <set name="most recent dialogue question">How would you describe yourself?</set>
                 <oob>
                     <robot></robot>
@@ -573,6 +600,8 @@
         <pattern># READING ^</pattern>
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
+          <think><set name="topic">reading</set></think>
+          <think><set name="dialogue">reading</set></think>
           <random>
               <li><set name="most recent dialogue question">What do you like to read?</set></li>
               <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
@@ -590,6 +619,9 @@
         <pattern># Travelling ^</pattern>
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
+          <think><set name="topic">travel</set></think>
+          <think><set name="dialogue">travel</set></think>
+          <think><set name="dialogue">travel</set></think>
             <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
             <oob>
                 <robot></robot>
@@ -601,6 +633,8 @@
         <pattern># Travel ^</pattern>
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
+          <think><set name="topic">travel</set></think>
+          <think><set name="dialogue">travel</set></think>
             <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
             <oob>
                 <robot></robot>

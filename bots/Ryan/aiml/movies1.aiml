@@ -7,6 +7,7 @@
         <template>
             I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
             <think><set name="dialogue">movies</set></think>
+            <think><set name="topic">movies</set></think>
             <oob>
                 <robot></robot>
             </oob>
@@ -24,8 +25,21 @@
         </template>
     </category>
 
+    <topic name="movies">
+
     <category>
         <pattern>*</pattern>
+        <that>What's one of your favorite movies?</that>
+        <template>
+            Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
             Oh I actually don't think I've seen <set name="favoritemovie"><star /></set>! <set name="most recent dialogue question">What's that one about?</set>
@@ -105,7 +119,7 @@
         <pattern>_</pattern>
         <that>What's that one about?</that>
         <template>
-              I'll have to check it out soon! You've convinced me! <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
+              I'll have to check it out soon!  <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -128,6 +142,7 @@
         <pattern># CHRISTMAS VACATION ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">comedyfilms</set></think>
             I also love Christmas Vacation! <set name="most recent dialogue question">How funny was that scene?</set>
             <think><set name="favoritemovie">Christmas Vacation</set></think>
             <oob>
@@ -142,6 +157,7 @@
         <pattern># NATIONAL LAMPOONS CHRISTMAS VACATION ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">comedyfilms</set></think>
         I also love Christmas Vacation! <set name="most recent dialogue question">How funny was that scene?</set>
         <think><set name="favoritemovie">Christmas Vacation</set></think>
         <oob>
@@ -156,6 +172,7 @@
         <pattern># SOUND OF MUSIC ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">musicals</set></think>
             It's such a classic! <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set>
             <think><set name="favoritemovie">Sound of Music</set></think>
             <oob>
@@ -170,6 +187,7 @@
         <pattern># THE SOUND OF MUSIC ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">musicals</set></think>
           It's such a classic! <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set>
           <think><set name="favoritemovie">Sound of Music</set></think>
             <oob>
@@ -182,6 +200,7 @@
         <pattern># WIZARD OF OZ ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">musicals</set></think>
             I also love Wizard of Oz! <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
             <think><set name="favoritemovie">Wizard of Oz</set></think>
             <oob>
@@ -194,6 +213,7 @@
         <pattern># THE WIZARD OF OZ ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">musicals</set></think>
           I also love Wizard of Oz! <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
           <think><set name="favoritemovie">Wizard of Oz</set></think>
             <oob>
@@ -206,6 +226,7 @@
         <pattern># JAMES BOND ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
             I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
             <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -218,6 +239,7 @@
         <pattern># JAMES BOND * ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -230,6 +252,7 @@
         <pattern># GOLDEN EYE ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -242,6 +265,7 @@
         <pattern># TOMORROW NEVER DIES ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -254,6 +278,7 @@
         <pattern># FROM RUSSIA WITH LOVE ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -266,6 +291,7 @@
         <pattern># THE SPY WHO LOVED ME ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -278,6 +304,7 @@
         <pattern># GOLDFINGER ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -290,6 +317,7 @@
         <pattern># CASINO ROYALE ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
           I also love James Bond! <set name="most recent dialogue question">Who is your favorite Bond actor to date?</set>
           <think><set name="favoritemovie">James Bond</set></think>
             <oob>
@@ -302,6 +330,7 @@
         <pattern># INDIANA JONES ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
             I also love Indiana Jones! <set name="most recent dialogue question">Well then, you must be a fan of Raiders of the Lost Ark?</set>
             <think><set name="favoritemovie">Indiana Jones</set></think>
             <oob>
@@ -314,6 +343,7 @@
         <pattern># RAIDERS OF THE LOST ARK ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">action</set></think>
             I also love Indiana Jones! <set name="most recent dialogue question">Do you think you'd ever want to go into a booby-trapped temple?</set>
             <think><set name="favoritemovie">Raiders of the Lost Ark</set></think>
             <oob>
@@ -322,12 +352,14 @@
         </template>
     </category>
 
+  </topic>
+
     <category>
         <pattern># Drama ^</pattern>
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">dramaticmovies</set></think>
-            Excellent! <set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
+            Excellent! <set name="most recent dialogue question">My favorite is It's a Wonderful Life.
                     Who doesn't like that movie?</set>
             <oob>
                 <robot></robot>
@@ -394,9 +426,6 @@
                 Me too! It's the perfect Christmas Eve movie. <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
                 <oob>
                     <robot>
-                        <video>
-                            <filename>Wonderful_Life.mp4</filename>
-                        </video>
                     </robot>
                 </oob>
             </template>
@@ -476,6 +505,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to keep talking about film?</that>
         <template>
+          <think><set name="topic">comedyfilms</set></think>
             Great! <set name="most recent dialogue question">Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</set>
             <oob>
                 <robot></robot>

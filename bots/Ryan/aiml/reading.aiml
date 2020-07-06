@@ -6,7 +6,7 @@
             <think><set name="topic">reading</set></think>
             <think><set name="dialogue">reading</set></think>
             <random>
-                <li><set name="most recent dialogue question">What do you like to read?</set></li>
+                <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
                 <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
                 <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
                 <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
@@ -86,6 +86,29 @@
             <that>Who's your favorite author?</that>
             <template>
                 <set name="most recent dialogue question">What do you like about reading <set name="favoriteauthor"><star/></set>? I want to check them out!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Who's your favorite author?</that>
+            <template>
+                <set name="most recent dialogue question">What do you like about reading <set name="favoriteauthor"><star/></set>? I want to check them out!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># DANIELLE STEEL ^</pattern>
+            <that>Who's your favorite author?</that>
+            <template>
+              <think><set name="topic">drama</set></think>
+                She is one of my favorites. <set name="most recent dialogue question">Has it been long since the last time you read one of her books?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -280,10 +303,13 @@
             </template>
         </category>
 
+            </topic>
+
     <category>
         <pattern>_</pattern>
         <that>Would you ever consider writing mystery novels?</that>
         <template>
+          <think><set name="topic">nonfiction</set></think>
             I think you've got a novel in you, especially after all your experiences!
                                                 <set name="most recent dialogue question">Do you read any non-fiction?</set>
             <oob>
@@ -292,5 +318,5 @@
         </template>
     </category>
 
-      </topic>
+
 </aiml>
