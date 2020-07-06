@@ -76,6 +76,18 @@
 
   <category>
       <pattern># <set>NO</set> ^</pattern>
+      <that>Did you know that Michael Jordon won five MVP's?</that>
+      <template>
+          You know your stuff! The Chicago Bulls' Derrick Rose also won two MVP's.
+          <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
       <that>Did you know that they are the only team to reach playoffs in the first season?</that>
       <template>
           Yep! The Chicago Bulls' Derrick Rose also won two MVP's. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
