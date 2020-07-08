@@ -446,7 +446,7 @@
             <pattern>_</pattern>
             <that>Where was the last restaurant you went to?</that>
             <template>
-              <think><set name="topic">healthyfood</set></think>
+
                 So fun! We need to do a little lunch date sometime. <set name="most recent dialogue question">How do you feel about healthy food?</set>
                 <oob>
                     <robot></robot>
@@ -458,7 +458,7 @@
             <pattern>*</pattern>
             <that>Well what's your favorite fast food spot?</that>
             <template>
-              <think><set name="topic">healthyfood</set></think>
+
                 I haven't had <star/> for a while now!
                 Been trying to cut back a little.
                 <set name="most recent dialogue question">How do you feel about healthy food?</set>
@@ -467,12 +467,25 @@
                 </oob>
             </template>
         </category>
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Well what's your favorite fast food spot?</that>
+            <template>
+
+                We need to do a little lunch date sometime. 
+                <set name="most recent dialogue question">How do you feel about healthy food?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
 
         <category>
             <pattern>I LIKE *</pattern>
             <that>Well what's your favorite fast food spot?</that>
             <template>
-              <think><set name="topic">healthyfood</set></think>
+
                 I haven't had <star/> for a while now!
                 Been trying to cut back a little.
                 <set name="most recent dialogue question">How do you feel about healthy food?</set>

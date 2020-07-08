@@ -68,6 +68,28 @@
 </category>
 
 <category>
+    <pattern># FACEBOOK ^</pattern>
+    <that>A website that connects you with all of your friends so you can stay up on everything they're doing.</that>
+    <template>
+        You're saying it already exists? Guess I'm a little late on the trend. <set name="most recent dialogue question">Are you a fan of social media?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># SOCIAL MEDIA ^</pattern>
+    <that>A website that connects you with all of your friends so you can stay up on everything they're doing.</that>
+    <template>
+        You're saying it already exists? Guess I'm a little late on the trend. <set name="most recent dialogue question">Are you a fan of social media?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern>_</pattern>
     <that>It's called Facebook.</that>
     <template>

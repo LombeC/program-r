@@ -7420,7 +7420,14 @@
 
     <category>
         <pattern>ASK ME A QUESTION</pattern>
-        <template><bot name="question"/>
+        <template><random>
+            <li>Which activity do you enjoy the most. Playing cards, knitting, reading, or travelling?</li>
+            <li>What is your favorite television show?</li>
+            <li>What is your favorite movie?</li>
+            <li>What is your most treasured memory?</li>
+            <li>What do you like to read?</li>
+            <li>What kind of music do you like?</li>
+        </random>
         <oob><robot></robot></oob>
         </template>
     </category>

@@ -224,14 +224,14 @@
             <that>Would you like to keep talking about dramas?</that>
             <template>
                 <random>
-                    <li>When it comes to drama, I like to watch good old fashioned haunted house movies! <set name="most recent dialogue question">Have you ever seen The Ghost and Mister Chicken?</set><oob>
+                    <li>When it comes to drama, I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen The Ghost and Mister Chicken?</set><oob>
                         <robot>
                             <video>
                                 <filename>The_Ghost.mp4</filename>
                             </video>
                         </robot>
                     </oob></li>
-                    <li>When it comes to drama, I like to watch good old fashioned haunted house movies! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob>
+                    <li>When it comes to drama, I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob>
                         <robot>
                             <video>
                                 <filename>Haunted_Hill.mp4</filename>
@@ -267,7 +267,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever seen The Ghost and Mister Chicken?</that>
             <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
+                <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -278,7 +278,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever seen The Ghost and Mister Chicken?</that>
             <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
+                <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
                 <oob>
                     <robot></robot>
                 </oob>

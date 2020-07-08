@@ -91,19 +91,6 @@
         </category>
 
         <category>
-            <pattern>*</pattern>
-            <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
-            <template>
-                I should have known you like <star/>! <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set>
-
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
             <pattern>_</pattern>
             <that>WHO DO YOU CONSIDER TO BE YOUR FAVORITE AMERICAN PRESIDENT?</that>
             <template>
@@ -219,6 +206,17 @@
 
         <category>
             <pattern>_</pattern>
+            <that>Apparently the disembodied hands were just sketches the artist thought were too good to give up.</that>
+            <template>
+                <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
             <that>Apparently the disembodied hands were just sketches the artist thought were too good to give up.</that>
             <template>
                 <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>

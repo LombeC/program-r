@@ -237,6 +237,17 @@
         <pattern>_</pattern>
         <that>Heck, what would the holidays be without all the shenanigans and crazy family members!</that>
         <template>
+            Hopefully we're not the crazy ones!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Hopefully we're not the crazy ones!</that>
+        <template>
             Hopefully we're not the crazy ones! <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
             <oob>
                 <robot></robot>
@@ -248,7 +259,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</that>
         <template>
-            I can't get over those two. <set name="most recent dialogue question">Should we keep talking about film?</set>
+            I can't get over those two hooligans. <set name="most recent dialogue question">Should we keep talking about film?</set>
             <oob>
                 <robot>
                     <video>

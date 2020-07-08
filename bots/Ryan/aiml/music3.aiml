@@ -158,7 +158,7 @@
         <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
         <template>
           <think><set name="dialogue">music</set></think>
-        
+
             <random>
                 <li>I love rock as well! <set name="most recent dialogue question">What did you think of the rock clip?</set><oob>
                     <robot>
@@ -194,7 +194,7 @@
               <li value="positive">It's great to listen to the oldies with you! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
               <li value="negative">Not a problem. Maybe it wasn't your favorite! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
               <li value="verynegative">Not a problem. Maybe it wasn't your favorite!<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="neutral">I hear that, but you've got to admit it's nice to listen to music together! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+              <li value="neutral">You've got to admit it's nice to listen to music together. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
               </condition>
             <oob>
                 <robot></robot>

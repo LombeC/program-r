@@ -25,7 +25,7 @@
                 <set name="non-fiction"><star/></set>
 
                 a spin. Thanks for telling me.
-                            For myself, I think Studs Terkel is the best non-fiction writer.
+
                 <oob>
                     <robot></robot>
                 </oob>
@@ -34,7 +34,7 @@
 
         <category>
             <pattern>_</pattern>
-            <that>For myself, I think Studs Terkel is the best non-fiction writer.</that>
+            <that>Thanks for telling me.</that>
             <template>
                 <set name="most recent dialogue question">Have you ever read anything by Studs Terkel, by chance?</set>
                 <oob>
@@ -48,6 +48,30 @@
             <that>Have you ever read anything by Studs Terkel, by chance?</that>
             <template>
                 Oh nice! My favorite is his book called Working about working people and their lives.
+                            <set name="most recent dialogue question">What is your job, or what was your job?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                My favorite is his book called Working about working people and their lives.
+                            <set name="most recent dialogue question">What is your job, or what was your job?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever read anything by Studs Terkel, by chance?</that>
+            <template>
+                My favorite is his book called Working about working people and their lives.
                             <set name="most recent dialogue question">What is your job, or what was your job?</set>
                 <oob>
                     <robot></robot>

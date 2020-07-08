@@ -168,6 +168,21 @@
         </category>
 
         <category>
+            <pattern>_</pattern>
+            <that>When is your birthday?</that>
+            <template>
+              <think><set name="birthday"><star/></set></think>
+              Got it! I will remember that. <set name="most recent dialogue question">What do you think about this painting?</set>
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern>MY BIRTHDAY IS *</pattern>
             <that>When is your birthday?</that>
             <template>
@@ -231,7 +246,22 @@
             <pattern>_</pattern>
             <that>What do you think about this painting?</that>
             <template>
-              It's a bit silly, right? It's called The Feast of the Bean King.
+              It's called The Feast of the Bean King.
+              I like the guy's scrunched up face in the middle of the painting.
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
+            <that>What do you think about this painting?</that>
+            <template>
+              It's called The Feast of the Bean King.
               I like the guy's scrunched up face in the middle of the painting.
                 <oob>
                     <robot><image>
@@ -244,6 +274,20 @@
 
         <category>
             <pattern>_</pattern>
+            <that>I like the guy's scrunched up face in the middle of the painting.</that>
+            <template>
+              Makes me laugh every time! <set name="most recent dialogue question">Would you like to keep discussing art museums?</set>
+                <oob>
+                    <robot><image>
+                        <filename>Jacob_Jordaens.jpg</filename>
+                    </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
             <that>I like the guy's scrunched up face in the middle of the painting.</that>
             <template>
               Makes me laugh every time! <set name="most recent dialogue question">Would you like to keep discussing art museums?</set>
@@ -284,8 +328,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
-                        at the Art Institute. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -300,8 +343,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
-                        at the Art Institute. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -316,8 +358,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series
-                        at the Art Institute. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -403,7 +444,7 @@
             <pattern>_</pattern>
             <that>Did you know that Picasso discovered his talent at age seven?</that>
             <template>
-                He was a prodigy! This is a painting from Picasso's famous blue period called The Old Guitarist.
+                A prodigy! This is a painting from Picasso's famous blue period called The Old Guitarist.
                         <set name="most recent dialogue question">What do you think of the painting?</set>
                 <oob>
                     <robot>
@@ -435,7 +476,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            Same here! <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+            Same here! <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
                 <robot>
                     <image>
@@ -450,7 +491,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you think life would be the same without art?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep discussing museums?</set>
+            Perhaps you have a point. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
                 <robot>
                     <image>

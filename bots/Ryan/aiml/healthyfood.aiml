@@ -19,6 +19,7 @@
         <that>IN THAT CASE, HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
           <think><set name="dialogue">food</set></think>
+          <think><set name="topic">food</set></think>
             Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
@@ -31,6 +32,7 @@
         <that>HOW ABOUT WE TALK ABOUT EATING HEALTHY?</that>
         <template>
           <think><set name="dialogue">food</set></think>
+          <think><set name="topic">food</set></think>
             Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Do you like Mexican food?</set>
             <oob>
                 <robot></robot>
@@ -89,10 +91,21 @@
         </category>
 
         <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you like to make pizza from scratch or do delivery?</that>
+            <template>
+                 <set name="most recent dialogue question">Would you like to hear a very simple recipe for veggie pizza?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># SCRATCH ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
-                Well then I'm coming over to your house for dinner!
+                Well then I'm coming over to your house for dinner! <set name="most recent dialogue question">Would you like to hear a very simple recipe for veggie pizza?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -103,7 +116,7 @@
             <pattern># FROM SCRATCH ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
-                Well then I'm coming over to your house for dinner!
+                Well then I'm coming over to your house for dinner! <set name="most recent dialogue question">Would you like to hear a very simple recipe for veggie pizza?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -112,6 +125,18 @@
 
         <category>
             <pattern># DELIVERY ^</pattern>
+            <that>Do you like to make pizza from scratch or do delivery?</that>
+            <template>
+                Well then I'm coming over to your house for dinner!
+                <set name="most recent dialogue question">Would you like to hear a very simple recipe for veggie pizza?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># BOTH ^</pattern>
             <that>Do you like to make pizza from scratch or do delivery?</that>
             <template>
                 Well then I'm coming over to your house for dinner!

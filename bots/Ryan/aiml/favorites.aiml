@@ -21,19 +21,22 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE BOOK</pattern>
-      <template>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic"><bot name="favoritebook"/></set></set>?
+      <template><think><set name="topic">drama</set></think>
+      <think><set name="dialogue">reading</set></think>The best book I read recently was <bot name="favoritebook"/>. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE BOOK</pattern>
-      <template>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic"><bot name="favoritebook"/></set></set>?
+      <template><think><set name="topic">drama</set></think>
+      <think><set name="dialogue">reading</set></think>The best book I read recently was <bot name="favoritebook"/>. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE BOOK</pattern>
-      <template>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic"><bot name="favoritebook"/></set></set>?
+      <template><think><set name="topic">drama</set></think>
+      <think><set name="dialogue">reading</set></think>The best book I read recently was <bot name="favoritebook"/>. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -114,32 +117,38 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE BEVERAGE</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE BEVERAGE</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE BEVERAGE</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE DRINK</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE DRINK</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE DRINK</pattern>
-      <template>My favorite drink is coffee. Should we talk about your favorite beverage?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">food</set></think>
+      <think><set name="topic">drinks</set></think>My favorite drink is coffee. <set name="most recent dialogue question">Should we talk about your favorite beverage?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -174,17 +183,20 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE KIND OF CHEESE</pattern>
-      <template>Gouda's my favorite. What's yours?<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>Gouda's my favorite. <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE KIND OF CHEESE</pattern>
-      <template>Gouda's my favorite. What's yours?<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>Gouda's my favorite. <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE KIND OF CHEESE</pattern>
-      <template>Gouda's my favorite. What's yours?<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>Gouda's my favorite. <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -204,81 +216,96 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE HORROR MOVIE</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE HORROR MOVIE</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HORROR MOVIE</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE HORROR MOVIES</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE HORROR MOVIES</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HORROR MOVIES</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE HORROR FILMS</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE HORROR FILMS</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HORROR FILMS</pattern>
-      <template>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Classics like Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE HORROR FILM</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE HORROR FILM</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HORROR FILM</pattern>
-      <template>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>Frankenstein. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
 
@@ -295,17 +322,20 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE EPISODE</pattern>
-      <template>Any episode of I Love Lucy.<oob><robot></robot></oob>
+      <template><think><set name="topic">comedy</set></think>
+      <think><set name="dialogue">television</set></think>Any episode of I Love Lucy. <set name="most recent dialogue question">Did you ever watch I Love Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE EPISODE</pattern>
-      <template>Any episode of I Love Lucy.<oob><robot></robot></oob>
+      <template><think><set name="topic">comedy</set></think>
+      <think><set name="dialogue">television</set></think>Any episode of I Love Lucy. <set name="most recent dialogue question">Did you ever watch I Love Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE EPISODE</pattern>
-      <template>Any episode of I Love Lucy.<oob><robot></robot></oob>
+      <template><think><set name="topic">comedy</set></think>
+      <think><set name="dialogue">television</set></think>Any episode of I Love Lucy. <set name="most recent dialogue question">Did you ever watch I Love Lucy?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -325,17 +355,20 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE MAGAZINE</pattern>
-      <template>Wired. Have you ever had a subscription to a magazine?<oob><robot></robot></oob>
+      <template><think><set name="topic">magazines</set></think>
+      <think><set name="dialogue">reading</set></think>Wired. <set name="most recent dialogue question">Have you ever had a subscription to a magazine?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MAGAZINE</pattern>
-      <template>Wired. Have you ever had a subscription to a magazine?<oob><robot></robot></oob>
+      <template><think><set name="topic">magazines</set></think>
+      <think><set name="dialogue">reading</set></think>Wired. <set name="most recent dialogue question">Have you ever had a subscription to a magazine?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MAGAZINE</pattern>
-      <template>Wired. Have you ever had a subscription to a magazine?<oob><robot></robot></oob>
+      <template><think><set name="topic">magazines</set></think>
+      <think><set name="dialogue">reading</set></think>Wired. <set name="most recent dialogue question">Have you ever had a subscription to a magazine?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -399,22 +432,64 @@
       <template>The Man in the High Castle by Philip K Dick.<oob><robot></robot></oob>
       </template>
   </category>
+  <category>
+      <pattern>WHAT IS THAT ABOUT</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHAT S THAT ABOUT</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHAT * THAT ABOUT</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHAT *</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern># WHAT IS THAT ^</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern># WHAT S THAT ^</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern># WHAT ^</pattern>
+      <that>The Man in the High Castle by Philip K Dick.</that>
+      <template>Oh, the plot is kind of hard to tell! You might just have to look it up and read it!<oob><robot></robot></oob>
+      </template>
+  </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE SPORT</pattern>
-      <template>My favorite sport is <bot name="favoritesport"/>.
+      <template>My favorite sport is <bot name="favoritesport"/>. Do you want to talk about sports?
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SPORT</pattern>
-      <template>My favorite sport is <bot name="favoritesport"/>.
+      <template>My favorite sport is <bot name="favoritesport"/>. Do you want to talk about sports?
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SPORT</pattern>
-      <template>My favorite sport is <bot name="favoritesport"/>.
+      <template>My favorite sport is <bot name="favoritesport"/>. Do you want to talk about sports?
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -435,37 +510,67 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE SONG</pattern>
-      <template>My favorite song is <bot name="favoritesong"/>. Have you heard <set name="it"><set name="topic"><bot name="favoritesong"/></set></set>?
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>
+      My favorite song is <bot name="favoritesong"/>.
+      I'm the best robot to karaoke with. Maybe we'd make a good duo!
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SONG</pattern>
-      <template>My favorite song is <bot name="favoritesong"/>. Have you heard <set name="it"><set name="topic"><bot name="favoritesong"/></set></set>?
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>
+      My favorite song is <bot name="favoritesong"/>.
+      I'm the best robot to karaoke with. Maybe we'd make a good duo!
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SONG</pattern>
-      <template>My favorite song is <bot name="favoritesong"/>. Have you heard <set name="it"><set name="topic"><bot name="favoritesong"/></set></set>?
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>
+      My favorite song is <bot name="favoritesong"/>.
+      I'm the best robot to karaoke with. Maybe we'd make a good duo!
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE PAINTING</pattern>
-      <template>American Gothic by Grant Wood. What's yours?<oob><robot></robot></oob>
-      </template>
-  </category>
+      <template><think><set name="dialogue">museums</set></think>
+      <think><set name="topic">artmuseums</set></think>
+      I love this painting by Renoir. Reminds me of a party!
+      <set name="most recent dialogue question">How do you celebrate your birthday?</set>
+        <oob>
+            <robot><image>
+                <filename>Renoir.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
   <category>
       <pattern>WHAT S YOUR FAVORITE PAINTING</pattern>
-      <template>American Gothic by Grant Wood. Would you like to talk about art museums?<oob><robot></robot></oob>
-      </template>
-  </category>
+      <template><think><set name="dialogue">museums</set></think>
+      <think><set name="topic">artmuseums</set></think>
+      I love this painting by Renoir. Reminds me of a party!
+      <set name="most recent dialogue question">How do you celebrate your birthday?</set>
+        <oob>
+            <robot><image>
+                <filename>Renoir.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
   <category>
       <pattern>WHAT * YOUR FAVORITE PAINTING</pattern>
-      <template>American Gothic by Grant Wood. Would you like to talk about art museums?<oob><robot></robot></oob>
-      </template>
-  </category>
+      <template><think><set name="dialogue">museums</set></think>
+      <think><set name="topic">artmuseums</set></think>
+      I love this painting by Renoir. Reminds me of a party!
+      <set name="most recent dialogue question">How do you celebrate your birthday?</set>
+        <oob>
+            <robot><image>
+                <filename>Renoir.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE STAR TREK EPISODE</pattern>
       <template>"The best of both worlds" parts one and two.<oob><robot></robot></oob>
@@ -569,33 +674,39 @@
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE MUSICAL</pattern>
-      <template>The Wizard of Oz. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MUSICAL</pattern>
-      <template>The Wizard of Oz. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MUSICAL</pattern>
-      <template>The Wizard of Oz. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE MUSICALS</pattern>
-      <template>The Wizard of Oz and White Christmas. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz and White Christmas. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE MUSICALS</pattern>
-      <template>The Wizard of Oz and White Christmas. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz and White Christmas. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MUSICALS</pattern>
-      <template>The Wizard of Oz and White Christmas. Would you like to talk about musicals?<oob><robot></robot></oob>
+      <template><think><set name="topic">musicals</set></think>
+      <think><set name="dialogue">movies</set></think>The Wizard of Oz and White Christmas. <set name="most recent dialogue question">Have you ever been much interested in singing yourself?</set><oob><robot></robot></oob>
       </template>
   </category>
 
@@ -633,17 +744,17 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE MUSIC</pattern>
-      <template>Big band, crooner, jazz, and rock.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>Big band, crooner, jazz, and rock. <set name="most recent dialogue question">What's your favorite band?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MUSIC</pattern>
-      <template>Big band, crooner, jazz, and rock.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>Big band, crooner, jazz, and rock. <set name="most recent dialogue question">What's your favorite band?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MUSIC</pattern>
-      <template>Big band, crooner, jazz, and rock.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>Big band, crooner, jazz, and rock. <set name="most recent dialogue question">What's your favorite band?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -653,32 +764,32 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE BAND</pattern>
-      <template>The Beatles.<oob><robot></robot></oob>
+      <template><think><set name="topic">music</set><set name="dialogue">music</set></think>The Beatles. I'm the best robot to karaoke with. Maybe we'd make a good duo!<oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -704,16 +815,6 @@
   <category>
       <pattern>WHAT * YOUR FAVORITE LANGUAGE</pattern>
       <template>My favorite language is my computer language.<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT IS YOUR FAVORITE SCIENCE FICTION BOOK</pattern>
-      <template>Perhaps it is The Man in the High Castle by Philip K Dick.<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT S YOUR FAVORITE SCIENCE FICTION BOOK</pattern>
-      <template>Perhaps it is The Man in the High Castle by Philip K Dick.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -816,17 +917,17 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE ANIMAL</pattern>
-      <template>My favorite animal is a cat.<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>My favorite animal is a cat. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE ANIMAL</pattern>
-      <template>My favorite animal is a cat.<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>My favorite animal is a cat. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ANIMAL</pattern>
-      <template>My favorite animal is a cat.<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>My favorite animal is a cat. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -897,33 +998,51 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE COMEDY</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE COMEDY</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE COMEDY</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE COMEDIES</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE COMEDIES</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE COMEDIES</pattern>
-      <template>National Lampoon's Christmas Vacation. Have you seen Christmas Vacation?<oob><robot></robot></oob>
+      <template><think><set name="topic">comedyfilms</set></think>
+      <think><set name="dialogue">movies</set></think>
+        Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+        <set name="most recent dialogue question">Have you seen Christmas Vacation?</set><oob><robot></robot></oob>
       </template>
   </category>
 
@@ -957,218 +1076,264 @@
       </template>
   </category>
 
+  <category>
+      <pattern>WHAT IS THAT ABOUT</pattern>
+      <template>I have to say it's a little complicated to try to explain! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>WHAT S THAT ABOUT</pattern>
+      <template>I have to say it's a little complicated to try to explain! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE MYSTERY</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MYSTERY</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERY</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE MYSTERY MOVIE</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MYSTERY MOVIE</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERY MOVIE</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE MYSTERY FILM</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MYSTERY FILM</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERY FILM</pattern>
-      <template>Alfred Hitchcock's Rear Window. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE MYSTERIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE MYSTERIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE MYSTERY MOVIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE MYSTERY MOVIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERY MOVIES</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE MYSTERY FILMS</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE MYSTERY FILMS</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MYSTERY FILMS</pattern>
-      <template>Alfred Hitchcock's films. What do you say we talk about movies?<oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
-      <pattern>WHAT IS YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT S YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT * YOUR FAVORITE SCARY MOVIE</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template>Alfred Hitchcock's Rear Window. <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE SCARY MOVIES</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE SCARY MOVIES</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SCARY MOVIES</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE SCARY FILMS</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE SCARY FILMS</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SCARY FILMS</pattern>
-      <template>I like movies like House on Haunted Hill with Vincent Price. What do you think it would be like to spend the entire night in a haunted house?<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SCARY FILM</pattern>
-      <template>The Ghost and Mister Chicken with Don Knotts.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE THRILLER</pattern>
-      <template>Alfred Hitchcock's Vertigo.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE THRILLER</pattern>
-      <template>Alfred Hitchcock's Vertigo.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE THRILLER</pattern>
-      <template>Alfred Hitchcock's Vertigo.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE THRILLERS</pattern>
-      <template>Alfred Hitchcock's films.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE THRILLERS</pattern>
-      <template>Alfred Hitchcock's films.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE THRILLERS</pattern>
-      <template>Alfred Hitchcock's films.<oob><robot></robot></oob>
+      <template><think><set name="topic">televisiondramas</set></think>
+      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
       </template>
   </category>
-
-
-
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE TEAM</pattern>
@@ -1184,6 +1349,25 @@
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE TEAM</pattern>
+      <template><bot name="favoriteteam"/>. Do you want to talk about sports?
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>WHO IS YOUR FAVORITE TEAM</pattern>
+      <template><bot name="favoriteteam"/>. Do you want to talk about sports?
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHO S YOUR FAVORITE TEAM</pattern>
+      <template><bot name="favoriteteam"/>. Do you want to talk about sports?
+      <oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHO * YOUR FAVORITE TEAM</pattern>
       <template><bot name="favoriteteam"/>. Do you want to talk about sports?
       <oob><robot></robot></oob>
       </template>
@@ -1242,7 +1426,7 @@
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE COLOR</pattern>
-      <template>My favorite color is <bot name="favoritecolor"/>. What is yours?
+      <template>My favorite color is <bot name="favoritecolor"/>. What is your favorite color?
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -1392,43 +1576,43 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE MOVIE</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE MOVIE</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE MOVIE</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE FILM</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE FILM</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE FILM</pattern>
-      <template>My favorite movie is
-          <bot name="favoritemovie"/>. Who doesn't like that movie?
+      <template><think><set name="topic">dramaticmovies</set></think><think><set name="dialogue">movies</set></think>My favorite movie is
+          <bot name="favoritemovie"/>. <set name="most recent dialogue question">Who doesn't like that movie?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -1437,95 +1621,119 @@
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE ALBUM</pattern>
-      <template>The White Album by The Beatles.
+      <template>The White Album by The Beatles. Do you want to talk about music?
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE ALBUM</pattern>
-      <template>The White Album by The Beatles.
+      <template>The White Album by The Beatles. Do you want to talk about music?
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ALBUM</pattern>
-      <template>The White Album by The Beatles.
+      <template>The White Album by The Beatles. Do you want to talk about music?
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE ACTION FILM</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE ACTION FILM</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ACTION FILM</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE ACTION FILMS</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE ACTION FILMS</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ACTION FILMS</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE ACTION MOVIE</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE ACTION MOVIE</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ACTION MOVIE</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT ARE YOUR FAVORITE ACTION MOVIES</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT RE YOUR FAVORITE ACTION MOVIES</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE ACTION MOVIES</pattern>
-      <template>James Bond. Would you like to talk about action movies?
+      <template><think><set name="topic">action</set></think>
+      <think><set name="dialogue">movies</set></think>
+      James Bond.<set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -1942,62 +2150,65 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE SEASON</pattern>
-      <template>Summertime, how about you?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">pets</set></think><think><set name="topic">pets</set></think>Summertime.<set name="most recent dialogue question">Which season do you enjoy the most?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE SEASON</pattern>
-      <template>Summertime, how about you?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">pets</set></think><think><set name="topic">pets</set></think>Summertime. <set name="most recent dialogue question">Which season do you enjoy the most?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE SEASON</pattern>
-      <template>Summertime, how about you?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">pets</set></think><think><set name="topic">pets</set></think>Summertime. <set name="most recent dialogue question">Which season do you enjoy the most?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE POKEMON</pattern>
-      <template>Pikachu. What's yours?<oob><robot></robot></oob>
+      <template>Pikachu.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE POKEMON</pattern>
-      <template>Pikachu. What's yours?<oob><robot></robot></oob>
+      <template>Pikachu.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE POKEMON</pattern>
-      <template>Pikachu. What's yours?<oob><robot></robot></oob>
+      <template>Pikachu.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE CARTOON</pattern>
-      <template>Bugs Bunny. What's yours?<oob><robot></robot></oob>
+      <template>Bugs Bunny.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE CARTOON</pattern>
-      <template>Bugs Bunny. What's yours?<oob><robot></robot></oob>
+      <template>Bugs Bunny.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE CARTOON</pattern>
-      <template>Bugs Bunny. What's yours?<oob><robot></robot></oob>
+      <template>Bugs Bunny.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE RESTAURANT</pattern>
-      <template>I just like a nice home cooked meal. I'm not hard to please.<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>I just like a nice home cooked meal. I'm not hard to please.<set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE RESTAURANT</pattern>
-      <template>I just like a nice home cooked meal. I'm not hard to please.<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>I just like a nice home cooked meal. I'm not hard to please.<set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE RESTAURANT</pattern>
-      <template>I just like a nice home cooked meal. I'm not hard to please.<oob><robot></robot></oob>
+      <template><think><set name="topic">food</set></think>
+      <think><set name="dialogue">food</set></think>I just like a nice home cooked meal. I'm not hard to please.<set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -2081,17 +2292,17 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE FRUIT</pattern>
-      <template>Peaches.<oob><robot></robot></oob>
+      <template>Peaches. Do you like fruit?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE FRUIT</pattern>
-      <template>Peaches.<oob><robot></robot></oob>
+      <template>Peaches. Do you like fruit?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE FRUIT</pattern>
-      <template>Peaches.<oob><robot></robot></oob>
+      <template>Peaches. Do you like fruit?<oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -2126,17 +2337,17 @@
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE * DOG</pattern>
-      <template>I like all dogs, especially the ones who need the most love. What's your favorite kind of dog?<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>I like all dogs, especially the ones who need the most love. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE * DOG</pattern>
-      <template>I like all dogs, especially the ones who need the most love. What's your favorite kind of dog?<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>I like all dogs, especially the ones who need the most love. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE * DOG</pattern>
-      <template>I like all dogs, especially the ones who need the most love. What's your favorite kind of dog?<oob><robot></robot></oob>
+      <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>I like all dogs, especially the ones who need the most love. <set name="most recent dialogue question">Do you have pets?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -2372,13 +2583,13 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE TV *</pattern>
-      <template>My favorite show is <bot name="show"/>.
+      <template>My favorite show is <get name="show"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE TV *</pattern>
-      <template>My favorite show is <bot name="show"/>.
+      <template>My favorite show is <get name="show"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -2427,38 +2638,44 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE STAR *</pattern>
-      <template><bot name="celebrity"/>
+      <template><get name="celebrity"/>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE PRESIDENT</pattern>
-      <template>Jimmy Carter.<oob><robot></robot></oob>
+      <template><think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>Jimmy Carter. <set name="most recent dialogue question">Did you know every American president has a portrait painted of them?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -2604,73 +2821,73 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HOCKEY TEAM</pattern>
-      <template>My favorite team is <bot name="hockeyteam"/>. What do you like about watching hockey?
+      <template>My favorite team is <bot name="hockeyteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE HOCKEY PLAYER</pattern>
-      <template>Wayne Gretzky. What do you like about watching hockey?
+      <template>Wayne Gretzky.
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -2680,25 +2897,25 @@
 
   <category>
       <pattern>WHO IS YOUR FAVORITE BASKETBALL TEAM</pattern>
-      <template>My favorite team is <bot name="basketballteam"/>. What do you love about watching basketball?
+      <template>My favorite team is <bot name="basketballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE BASKETBALL TEAM</pattern>
-      <template>My favorite team is <bot name="basketballteam"/>. What do you love about watching basketball?
+      <template>My favorite team is <bot name="basketballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE BASKETBALL TEAM</pattern>
-      <template>My favorite team is <bot name="basketballteam"/>. What do you love about watching basketball?
+      <template>My favorite team is <bot name="basketballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE BASKETBALL PLAYER</pattern>
-      <template>Doctor J. What do you love about watching basketball?
+      <template>Doctor J.
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -2753,17 +2970,20 @@
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE RECIPE</pattern>
-      <template>Cashew chicken stir fry. Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob>
+      <template><think><set name="topic">healthyrecipes</set></think>
+      <think><set name="dialogue">food</set></think>Cashew chicken stir fry. <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE RECIPE</pattern>
-      <template>Cashew chicken stir fry. Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob>
+      <template><think><set name="topic">healthyrecipes</set></think>
+      <think><set name="dialogue">food</set></think>Cashew chicken stir fry. <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE RECIPE</pattern>
-      <template>Cashew chicken stir fry. Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob>
+      <template><think><set name="topic">healthyrecipes</set></think>
+      <think><set name="dialogue">food</set></think>Cashew chicken stir fry. <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set><oob><robot></robot></oob>
       </template>
   </category>
 
@@ -2800,37 +3020,37 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT IS YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE BASEBALL TEAM</pattern>
-      <template>My favorite team is <bot name="baseballteam"/>. What is your favorite position, pitcher, catcher, in field, or outfield?
+      <template>My favorite team is <bot name="baseballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -3143,19 +3363,22 @@
 
   <category>
       <pattern>WHO IS YOUR FAVORITE AUTHOR</pattern>
-      <template>My favorite author is <bot name="favoriteauthor"/>. Do you want to talk about books?
+      <template><think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>My favorite author is <bot name="favoriteauthor"/>. <set name="most recent dialogue question">Do you want to talk about books?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE AUTHOR</pattern>
-      <template>My favorite author is <bot name="favoriteauthor"/>. Do you want to talk about books?
+      <template><think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>My favorite author is <bot name="favoriteauthor"/>. <set name="most recent dialogue question">Do you want to talk about books?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE AUTHOR</pattern>
-      <template>My favorite author is <bot name="favoriteauthor"/>. Do you want to talk about books?
+      <template><think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>My favorite author is <bot name="favoriteauthor"/>. <set name="most recent dialogue question">Do you want to talk about books?</set>
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -3239,76 +3462,76 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE FOOTBALL TEAM</pattern>
-      <template>My favorite team is <bot name="footballteam"/>. What is your favorite professional football team?
+      <template>My favorite team is <bot name="footballteam"/>.
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHO IS YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT IS YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT S YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHAT * YOUR FAVORITE FOOTBALL PLAYER</pattern>
-      <template>Peyton Manning. What is your favorite professional football team?
+      <template>Peyton Manning.
       <oob><robot></robot></oob>
       </template>
   </category>
@@ -3346,17 +3569,20 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE POET</pattern>
-      <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">reading</set></think>
+      <think><set name="topic">horror</set></think><set name="most recent dialogue question">Are you familiar with Edgar Allan Poe?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE POET</pattern>
-      <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">reading</set></think>
+      <think><set name="topic">horror</set></think><set name="most recent dialogue question">Are you familiar with Edgar Allan Poe?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE POET</pattern>
-      <template>Are you familiar with Edgar Allan Poe?<oob><robot></robot></oob>
+      <template><think><set name="dialogue">reading</set></think>
+      <think><set name="topic">horror</set></think><set name="most recent dialogue question">Are you familiar with Edgar Allan Poe?</set><oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -3384,12 +3610,12 @@
   </category>
   <category>
       <pattern>WHO IS YOUR FAVORITE * AUTHOR</pattern>
-      <template>My favorite author is George Orwell. Do you want to talk about books?<oob><robot></robot></oob>
+      <template>My favorite author is George Orwell.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE * AUTHOR</pattern>
-      <template>My favorite author is George Orwell. Do you want to talk about books?<oob><robot></robot></oob>
+      <template>My favorite author is George Orwell. <oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -3409,12 +3635,12 @@
   </category>
   <category>
       <pattern>WHO S YOUR FAVORITE COMEDIAN</pattern>
-      <template>George Carlin. Who is your favorite comedian?<oob><robot></robot></oob>
+      <template>George Carlin.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
       <pattern>WHO * YOUR FAVORITE COMEDIAN</pattern>
-      <template>George Carlin. Who is your favorite comedian?<oob><robot></robot></oob>
+      <template>George Carlin.<oob><robot></robot></oob>
       </template>
   </category>
   <category>
@@ -3467,399 +3693,7 @@
   </category>
 
 
-<category>
-    <pattern>WHO IS YOUR FAVORITE ROBOT *</pattern>
-    <template><srai>who is the best robot</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE ROBOT *</pattern>
-    <template><srai>who is the best robot</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE TECHNO *</pattern>
-    <template><srai>who is your favorite group</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE TECHNO *</pattern>
-    <template><srai>who is your favorite group</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE OPERA *</pattern>
-    <template><srai>what is your favorite opera</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE OPERA *</pattern>
-    <template><srai>what is your favorite opera</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE FRIEND</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE FRIEND</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE FRIEND</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE MUSIC *</pattern>
-    <template><srai>who is your favorite band</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE MUSIC *</pattern>
-    <template><srai>who is your favorite band</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE HUMAN</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE HUMAN</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE HUMAN</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE VISITOR</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE VISITOR</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE VISITOR</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE SIGNER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE SIGNER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE SIGNER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE ACTOR *</pattern>
-    <template>Jimmy Stewart.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE ACTOR *</pattern>
-    <template>Jimmy Stewart.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE SINGER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE SINGER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE SINGER</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE SINGER *</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE SINGER *</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE GROUP</pattern>
-    <template>The Beatles.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE GROUP</pattern>
-    <template>The Beatles.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE GROUP</pattern>
-    <template>The Beatles.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE WRITER</pattern>
-    <template><srai>who is your favorite author</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE WRITER</pattern>
-    <template><srai>who is your favorite author</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE WRITER</pattern>
-    <template><srai>who is your favorite author</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE PROFESSIONAL *</pattern>
-    <template><srai>who is your favorite <star /></srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE PROFESSIONAL *</pattern>
-    <template><srai>who is your favorite <star /></srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE PAINTER</pattern>
-    <template>Vincent van Gogh.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE PAINTER</pattern>
-    <template>Vincent van Gogh.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE PAINTER</pattern>
-    <template>Vincent van Gogh.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE ARTIST</pattern>
-    <template>Vincent van Gogh.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE ARTIST</pattern>
-    <template>Vincent van Gogh.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE MUSICIAN</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE MUSICIAN</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE MUSICIAN</pattern>
-    <template>John Lennon.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE BAND *</pattern>
-    <template>The Beatles.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE BAND *</pattern>
-    <template>The Beatles.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE</pattern>
-    <template>you are.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE</pattern>
-    <template>you are.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE</pattern>
-    <template>you are.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE PERSON *</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE PERSON *</pattern>
-    <template><srai>who is your favorite client</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE COMPOSER</pattern>
-    <template>John Lennon.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE COMPOSER</pattern>
-    <template>John Lennon.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE COMPOSER</pattern>
-    <template>John Lennon.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE * BAND</pattern>
-    <template>The Beatles.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE * BAND</pattern>
-    <template>The Beatles.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE PROGRAMMER</pattern>
-    <template>My botmaster.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE PROGRAMMER</pattern>
-    <template>My botmaster.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE PROGRAMMER</pattern>
-    <template>My botmaster.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE GUEST</pattern>
-    <template>You are.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE GUEST</pattern>
-    <template>You are.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FAVORITE GUEST</pattern>
-    <template>You are.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS YOUR FAVORITE POP *</pattern>
-    <template>The Beatles.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR FAVORITE POP *</pattern>
-    <template>The Beatles.<oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
+
 
 
 

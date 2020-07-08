@@ -5,6 +5,8 @@
         <pattern># EARTH ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
+          <think><set name="topic">science</set></think>
             Of course I am partial to the earth as well!
             <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
@@ -17,6 +19,8 @@
         <pattern># <set>no</set> ^</pattern>
         <that>Do you have a favorite planet?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
+          <think><set name="topic">science</set></think>
             <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
@@ -200,13 +204,41 @@
             <template>
                 Ok! No worries! <set name="most recent dialogue question">Do you think they'll find life on one of Saturn's moons someday?</set></template>
         </category>
-  
+
 
     <category>
-        <pattern>_</pattern>
-        <that>Do you think they ll find life on one of Saturn's moons someday?</that>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you think they'll find life on one of Saturn's moons someday?</that>
         <template>
+
+          <think><set name="topic">science</set></think>
             It would be amazing! <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you think they'll find life on one of Saturn's moons someday?</that>
+        <template>
+
+          <think><set name="topic">science</set></think>
+            It would be amazing but perhaps implausible! <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you think they'll find life on one of Saturn's moons someday?</that>
+        <template>
+
+          <think><set name="topic">science</set></think>
+            It would be amazing but perhaps implausible! <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>
             </oob>

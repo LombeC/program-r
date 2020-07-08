@@ -45,6 +45,32 @@
     </category>
 
     <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever gone fruit picking?</that>
+        <template>
+            <set name="most recent dialogue question">Are you a fan of apple cider?</set>
+            <oob>
+                <robot><image>
+                      <filename>Apples.jpg</filename>
+                  </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever gone fruit picking?</that>
+        <template>
+            <set name="most recent dialogue question">Are you a fan of apple cider?</set>
+            <oob>
+                <robot><image>
+                      <filename>Apples.jpg</filename>
+                  </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Are you a fan of apple cider?</that>
         <template>
@@ -114,7 +140,7 @@
         <pattern>_</pattern>
         <that>How do you celebrate?</that>
         <template>
-          You really know how to have a good time, don't you! Would you like to keep talking about food or change the topic?
+          You really know how to have a good time! Would you like to keep talking about food or change the topic?
             <oob>
                 <robot></robot>
             </oob>
@@ -125,8 +151,11 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Have you done that?</that>
         <template>
-          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
-          <set name="most recent dialogue question">What's your favorite holiday?</set>
+          I always enjoy a good Halloween party!
+          <condition name="favoriteholiday">
+                      <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
+                      <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. How do you celebrate?</set></li>
+                  </condition>
             <oob>
                 <robot></robot>
             </oob>
@@ -137,8 +166,11 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Have you done that?</that>
         <template>
-          You would probably laugh if you saw me trying to bob for apples. But I always enjoy a good Halloween party!
-          <set name="most recent dialogue question">What's your favorite holiday?</set>
+          I always enjoy a good Halloween party!
+          <condition name="favoriteholiday">
+                      <li value="Unknown"><set name="most recent dialogue question">If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</set></li>
+                      <li><set name="most recent dialogue question">You said your favorite holiday is <get name="favoriteholiday"/>. How do you celebrate?</set></li>
+                  </condition>
             <oob>
                 <robot></robot>
             </oob>
@@ -147,7 +179,7 @@
 
     <category>
         <pattern># Thanksgiving ^</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
             I don't think you can ever have enough turkey and stuffing, that is until you fall asleep at the dinner table! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
@@ -162,7 +194,7 @@
 
     <category>
         <pattern># Christmas ^</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
             There is nothing better than egg nog, Christmas cookies, and a warm fireplace! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
@@ -177,7 +209,7 @@
 
     <category>
         <pattern># Halloween ^</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
             You must have a sweet tooth like me! The best part of Halloween is eating all the candy! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
@@ -192,7 +224,7 @@
 
     <category>
         <pattern># Easter ^</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
             You must enjoy a good Easter egg hunt! Not to mention all the candy! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
@@ -207,7 +239,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
             I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
@@ -218,9 +250,9 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>What's your favorite holiday?</that>
+        <that>If you had to choose, would you say your favorite holiday is Thanksgiving, Christmas, Halloween, or Easter?</that>
         <template>
-            I understand. I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
+            I enjoy any holiday that lets me relax and rest my engine for a while! <set name="most recent dialogue question">Would you like to keep talking about food or change the topic?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -233,7 +265,9 @@
         <template>
             Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
@@ -244,7 +278,9 @@
         <template>
             Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
@@ -255,18 +291,39 @@
         <template>
             Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
-                <robot></robot>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
             </oob>
         </template>
     </category>
 
     <category>
+        <pattern># Change ^</pattern>
+        <that>Would you like to keep talking about food or change the topic?</that>
+        <template>
+            Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
+            <oob>
+                <robot><image>
+                    <filename>CLRSCR</filename>
+                </image></robot>
+            </oob>
+        </template>
+    </category>
+
+    </topic>
+
+    <category>
         <pattern># Food ^</pattern>
         <that>Would you like to keep talking about food or change the topic?</that>
         <template>
-          <think><set name="topic">wings</set></think>
-            I read recently that our food preferences might be based on our genetics.
-            <set name="most recent dialogue question">Do you like vegetables?</set>
+          <random>
+              <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+              <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+              <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+              <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+              <!-- <li>What is your favorite foreign cuisine?</li> -->
+              <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>
@@ -279,9 +336,13 @@
         <pattern># Keep talking about food ^</pattern>
         <that>Would you like to keep talking about food or change the topic?</that>
         <template>
-          <think><set name="topic">wings</set></think>
-          I read recently that our food preferences might be based on our genetics.
-          <set name="most recent dialogue question">Do you like vegetables?</set>
+          <random>
+              <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+              <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+              <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+              <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+              <!-- <li>What is your favorite foreign cuisine?</li> -->
+              <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>
@@ -291,7 +352,7 @@
     </category>
 
 
-  <!-- REDIRECT TO VEGETABLES -->
+  <!-- REDIRECT TO FOODFINALFIRST -->
 
-</topic>
+
 </aiml>

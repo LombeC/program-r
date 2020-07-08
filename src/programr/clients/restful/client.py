@@ -102,9 +102,11 @@ class RestBotClient(BotClient):
             # print(question)
             response, options = client_context.bot.ask_question_with_options(client_context, question)
             
-            client_context, threshold_reached = self.process_sentiment(client_context, question)
-            if threshold_reached:
-                response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
+            # NOTE: Commenting them out temporarily 
+            # client_context, threshold_reached = self.process_sentiment(client_context, question)
+            # if threshold_reached:
+            #     response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
+            
             client_context.bot.save_conversation(client_context)
 
             response = self.remove_oob(response)

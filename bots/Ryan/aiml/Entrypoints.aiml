@@ -87,7 +87,7 @@
 <category>
     <pattern>BEVERAGE</pattern>
     <template>
-      <think><set name="dialogue">food</set></think>
+      <think><set name="dialogue">drinks</set></think>
       <think><set name="topic">drinks</set></think>Should we talk about your favorite beverage?<oob><robot></robot></oob>
     </template>
 </category>
@@ -122,6 +122,13 @@
     </template>
 </category>
 <category>
+    <pattern>CARDS</pattern>
+    <template><think><set name="dialogue">cards</set></think>
+      <think><set name="topic">cards</set></think>
+      I love cards! <set name="most recent dialogue question">What is your favorite card game?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>CHILDREN</pattern>
     <template><think><set name="topic">kids</set></think>
     <think><set name="dialogue">kids</set></think>Do you have kids or grandkids?<oob><robot></robot></oob>
@@ -134,17 +141,25 @@
     </template>
 </category>
 <category>
+    <pattern>CHINESE</pattern>
+    <template><think><set name="topic">chinesefood</set></think>
+    <think><set name="dialogue">food</set></think>How do you feel about Chinese Food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>COFFEE</pattern>
-    <template><think><set name="dialogue">food</set></think>
+    <template><think><set name="dialogue">drinks</set></think>
     <think><set name="topic">drinks</set></think>Wake up juice! Do you prefer brewed coffee or espresso?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>COOKING</pattern>
-    <template><think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+    <template><think><set name="topic">food</set></think>
+    <think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>COOK</pattern>
-    <template><think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+    <template><think><set name="topic">food</set></think>
+    <think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>COOKIES</pattern>
@@ -212,13 +227,13 @@
 </category>
 <category>
     <pattern>DRINK</pattern>
-    <template><think><set name="dialogue">food</set></think>
+    <template><think><set name="dialogue">drinks</set></think>
     <think><set name="topic">drinks</set></think>Should we talk about your favorite beverage?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>DRINKS</pattern>
-    <template><think><set name="dialogue">food</set></think>
+    <template><think><set name="dialogue">drinks</set></think>
     <think><set name="topic">drinks</set></think>Should we talk about your favorite beverage?<oob><robot></robot></oob>
     </template>
 </category>
@@ -310,6 +325,12 @@
     </template>
 </category>
 <category>
+    <pattern>INDIAN</pattern>
+    <template><think><set name="topic">indianfood</set></think>
+    <think><set name="dialogue">food</set></think>How do you feel about Indian Food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>INVENTION</pattern>
     <template><think><set name="dialogue">americanhistory</set></think>
     <think><set name="topic">history</set></think>Would you like to talk about inventions?<oob><robot></robot></oob>
@@ -363,7 +384,19 @@
 <category>
     <pattern>KID</pattern>
     <template><think><set name="topic">kids</set></think>
-    <think><set name="dialogue">kids</set></think>Do you have kids?<oob><robot></robot></oob></template>
+    <think><set name="dialogue">kids</set></think>Do you have kids or grandkids?<oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>KNIT</pattern>
+    <template><think><set name="dialogue">knitting</set></think>
+      <think><set name="topic">knitting</set></think>
+      I love knitting! <set name="most recent dialogue question">What is your favorite thing to knit?</set><oob><robot></robot></oob></template>
+</category>
+<category>
+    <pattern>KNITTING</pattern>
+    <template><think><set name="dialogue">knitting</set></think>
+      <think><set name="topic">knitting</set></think>
+      I love knitting! <set name="most recent dialogue question">What is your favorite thing to knit?</set><oob><robot></robot></oob></template>
 </category>
 <category>
     <pattern>MAGAZINE</pattern>
@@ -391,7 +424,13 @@
 </category>
 <category>
     <pattern>MEXICAN FOOD</pattern>
-    <template><think><set name="topic">mexicanfood</set></think>
+    <template><think><set name="topic">food</set></think>
+    <think><set name="dialogue">food</set></think>Do you like Mexican food?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>MEXICAN</pattern>
+    <template><think><set name="topic">food</set></think>
     <think><set name="dialogue">food</set></think>Do you like Mexican food?<oob><robot></robot></oob>
     </template>
 </category>
@@ -522,7 +561,12 @@
     <category>
         <pattern>READING</pattern>
         <template><think><set name="topic">reading</set></think>
-        <think><set name="dialogue">reading</set></think>What do you like to read?<oob><robot></robot></oob>
+        <think><set name="dialogue">reading</set></think>
+        <random>
+            <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+            <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+            <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+            <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random><oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -556,6 +600,17 @@
     </category>
     <category>
         <pattern>ROCK MUSIC</pattern>
+        <template><think><set name="dialogue">music</set></think>
+        <think><set name="topic">music</set></think>I hope you are also a fan of Elvis! What did you think of the rock clip?<oob>
+            <robot>
+                <video>
+                    <filename>elvisJailhouse.mp4</filename>
+                </video>
+            </robot>
+        </oob></template>
+    </category>
+    <category>
+        <pattern>ROCK</pattern>
         <template><think><set name="dialogue">music</set></think>
         <think><set name="topic">music</set></think>I hope you are also a fan of Elvis! What did you think of the rock clip?<oob>
             <robot>
@@ -613,7 +668,7 @@
     </category>
     <category>
         <pattern>TEA</pattern>
-        <template><think><set name="topic">drinks</set></think><think><set name="dialogue">food</set></think>Do you like tea?<oob><robot></robot></oob></template>
+        <template><think><set name="topic">drinks</set></think><think><set name="dialogue">drinks</set></think>Do you like tea?<oob><robot></robot></oob></template>
     </category>
     <category>
         <pattern>TECHNOLOGY</pattern>
@@ -646,6 +701,12 @@
         </template>
     </category>
     <category>
+        <pattern>THAI</pattern>
+        <template><think><set name="topic">thaifood</set></think>
+        <think><set name="dialogue">food</set></think>How do you feel about Thai Food?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>TITANIC</pattern>
         <template><think><set name="dialogue">americanhistory</set></think>
         <think><set name="topic">history</set></think>
@@ -654,12 +715,20 @@
     </category>
     <category>
         <pattern>TRAVEL</pattern>
-        <template><think><set name="dialogue">travel</set></think>Where have you enjoyed traveling?<oob><robot></robot></oob>
+        <template><think><set name="topic">travel</set></think>
+        <think><set name="dialogue">travel</set></think>Where have you enjoyed traveling?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>TRAVELLING</pattern>
-        <template><think><set name="dialogue">travel</set></think>Where have you enjoyed traveling?<oob><robot></robot></oob>
+        <template><think><set name="topic">travel</set></think>
+        <think><set name="dialogue">travel</set></think>Where have you enjoyed traveling?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TRAVELING</pattern>
+        <template><think><set name="topic">travel</set></think>
+        <think><set name="dialogue">travel</set></think>Where have you enjoyed traveling?<oob><robot></robot></oob>
         </template>
     </category>
     <category>

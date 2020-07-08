@@ -45,7 +45,7 @@
             <pattern># JAMES BOND ^</pattern>
             <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
-                Ah, so you love a good spy thriller! There's definitely some hot and heavy moments, too! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
+                Ah, so you love a good spy thriller! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -56,7 +56,7 @@
             <pattern># BOND ^</pattern>
             <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
-                Ah, so you love a good spy thriller! There's definitely some hot and heavy moments, too! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
+                Ah, so you love a good spy thriller! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -67,7 +67,7 @@
             <pattern># BOND JAMES BOND ^</pattern>
             <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
-                Ah, so you love a good spy thriller! There's definitely some hot and heavy moments, too! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
+                Ah, so you love a good spy thriller! <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -89,7 +89,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
-                Perhaps you like a good adventure story instead? <set name="most recent dialogue question">Have you ever read The Adventures of Tom Sawyer?</set>
+                Well in that case. <set name="most recent dialogue question">Who is your favorite Bond actor?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -111,7 +111,7 @@
             <pattern># SEAN CONNERY ^</pattern>
             <that>Who is your favorite Bond actor?</that>
             <template>
-                The man, the myth, the legend! And that accent. <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
+                The man, the myth, the legend! And that accent! <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -122,7 +122,7 @@
             <pattern># CONNERY ^</pattern>
             <that>Who is your favorite Bond actor?</that>
             <template>
-                The man, the myth, the legend! And that accent. <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
+                The man, the myth, the legend! And that accent! <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -133,7 +133,7 @@
             <pattern># SEAN ^</pattern>
             <that>Who is your favorite Bond actor?</that>
             <template>
-                The man, the myth, the legend! And that accent. <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
+                The man, the myth, the legend! And that accent! <set name="most recent dialogue question">Do you think it would be hard to be a spy?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -432,7 +432,7 @@
             <pattern>_</pattern>
             <that>What do you think it would feel like to be on a mission and have secret orders to carry out?</that>
             <template>
-                I am definitely no expert on spies, but you make good points.
+                I am definitely no expert on spies, but that makes sense to me.
                               <set name="most recent dialogue question">Do you think you'd ever want to go into a booby-trapped temple?</set>
                 <oob>
                     <robot></robot>
@@ -444,7 +444,7 @@
 
         <category>
             <pattern># INDIANA JONES ^</pattern>
-            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
                 <set name="most recent dialogue question">You must be a fan of Raiders of the Lost Ark?</set>
                 <oob>
@@ -459,7 +459,7 @@
 
         <category>
             <pattern># JONES ^</pattern>
-            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
                 <set name="most recent dialogue question">You must be a fan of Raiders of the Lost Ark?</set>
                 <oob>
@@ -474,7 +474,7 @@
 
         <category>
             <pattern># INDIANA ^</pattern>
-            <that>Would you say you prefer James Bond or Indiana Jones?</that>
+            <that>Would you say you prefer Bond, James Bond or Indiana Jones?</that>
             <template>
                 <set name="most recent dialogue question">You must be a fan of Raiders of the Lost Ark?</set>
                 <oob>
@@ -546,7 +546,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you think you'd ever want to go into a booby-trapped temple?</that>
             <template>
-                I don't blame you! Don't worry I won't call you a fraedy cat. <set name="most recent dialogue question">Should we keep talking about film?</set>
+                I don't blame you! Don't worry I won't call you a scaredy cat.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -556,6 +556,17 @@
         <category>
             <pattern>_</pattern>
             <that>Don't worry I won't call you a scaredy cat.</that>
+            <template>
+                <set name="most recent dialogue question">Should we keep talking about film?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Totally kidding.</that>
             <template>
                 <set name="most recent dialogue question">Should we keep talking about film?</set>
                 <oob>

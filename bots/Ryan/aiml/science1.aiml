@@ -130,7 +130,7 @@
         <pattern>_</pattern>
         <that>Why do you think people are so fascinated by black holes?</that>
         <template>
-            For sure! <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
+            <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
             Does that ever happen to you?</set>
             <oob>
                 <robot><image>
@@ -144,7 +144,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Why do you think people are so fascinated by black holes?</that>
         <template>
-            For sure! <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
+            <set name="most recent dialogue question">It's funny, the more I learn about science the more I realize how much I don't know.
             Does that ever happen to you?</set>
             <oob>
                 <robot><image>
@@ -188,13 +188,24 @@
         </template>
     </category>
 
+    <category>
+        <pattern>_</pattern>
+        <that>Does that ever happen to you?</that>
+        <template>
+          <set name="most recent dialogue question">What else would you say you're interested in learning about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
 
 
     <category>
         <pattern>_</pattern>
         <that>What else would you say you're interested in learning about?</that>
         <template>
-          I love talking to smart people like you!
+          I love talking to smart people like you! My favorite subject is...technology I would say.
             <oob>
                 <robot></robot>
             </oob>
@@ -205,7 +216,7 @@
         <pattern>_</pattern>
         <that>What else would you say you're interested in, other than science?</that>
         <template>
-          I love talking to smart people like you!
+          I love talking to smart people like you! My favorite subject is...technology I would say.
             <oob>
                 <robot></robot>
             </oob>
@@ -238,9 +249,8 @@
 
     <category>
         <pattern>_</pattern>
-        <that>I love talking to smart people like you! </that>
+        <that>My favorite subject is...technology I would say.</that>
         <template>
-          My favorite subject is...technology I would say.
           <set name="most recent dialogue question">Do you think technology enhances our lives for the better?</set>
 
             <oob>
@@ -289,7 +299,7 @@
         <pattern>_</pattern>
         <that>Why do you say that?</that>
         <template>
-          Well I tend to agree with you there.
+
           <set name="most recent dialogue question">What are your thoughts on smart phones and social media? Do you think people spend too much time on their phones?</set>
             <oob>
                 <robot></robot>
@@ -375,7 +385,7 @@
         don't you think?</that>
         <template>
             We are on the same page!
-            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -387,7 +397,7 @@
         <that>It's a great way to keep in touch with family and friends,
         don't you think?</that>
         <template>
-          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
             <oob>
                 <robot></robot>
             </oob>

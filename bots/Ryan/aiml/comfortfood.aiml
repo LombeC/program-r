@@ -268,6 +268,7 @@
     <pattern># CHICKEN ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -279,6 +280,7 @@
     <pattern># CHICKEN FRIED STEAK ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -290,6 +292,7 @@
     <pattern># PORK ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -301,6 +304,7 @@
     <pattern># PORK TENDERLOIN ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -312,6 +316,7 @@
     <pattern># FRIED PORK TENDERLOIN ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -323,6 +328,7 @@
     <pattern># BOTH ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         It may not be the healthiest but it sure tastes good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
             <robot></robot>
@@ -334,10 +340,13 @@
     <pattern># <set>DON T KNOW</set> ^</pattern>
     <that>What do you think tastes better, chicken fried steak or fried pork tenderloin?</that>
     <template>
+      <think><set name="topic">wings</set></think>
         They may not be the healthiest but they sure taste good. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
     </template>
 </category>
 
 </topic>
+
+
 
 </aiml>

@@ -55,10 +55,22 @@
     </category>
 
     <category>
+        <pattern>_</pattern>
+        <that>What instrument did you play?</that>
+        <template>
+          <think><set name="dialogue">music</set></think>
+            I see! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>Yes</set> ^</pattern>
         <that>Did you learn to play as a child?</that>
         <template>
-            Oh! You are so talented. I wish you could play me a little ditty.
+            You are so talented. I wish you could play me a little ditty.
             <oob>
                 <robot></robot>
             </oob>

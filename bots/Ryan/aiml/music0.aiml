@@ -142,7 +142,7 @@
         <pattern>_</pattern>
         <that>Maybe we'd make a good duo! </that>
         <template>
-            Kind of like Sonny and Cher or Captain and Tennille! <set name="most recent dialogue question">Have you ever sang karaoke before?</set>
+            We could be like Sonny and Cher or Captain and Tennille! <set name="most recent dialogue question">Have you ever sang karaoke before?</set>
             <oob>
                 <robot>
                 </robot>
@@ -152,6 +152,18 @@
 
     <category>
         <pattern># <set>yes</set> ^</pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            I'm going with you next time!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>Have you ever sang karaoke before?</that>
         <template>
             I'm going with you next time!
@@ -224,6 +236,18 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>You ever gone dancing?</that>
+        <template>
+            Same here! I've been told I have two left feet.
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>You ever gone dancing?</that>
         <template>
             Same here! I've been told I have two left feet.
@@ -633,7 +657,7 @@
             <pattern># <set>yes</set> ^</pattern>
             <that>Was the show good?</that>
             <template>
-                Sounds like it was definitely worth the money in that case! <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+                Sounds like it was definitely worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -644,7 +668,7 @@
             <pattern># <set>no</set> ^</pattern>
             <that>Was the show good?</that>
             <template>
-                Sounds like it wasn't really worth the money in that case! <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+                Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -655,7 +679,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Was the show good?</that>
             <template>
-                Sounds like it wasn't really worth the money in that case! <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+                Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -997,7 +1021,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you like listening to music while cooking dinner?</that>
             <template>
-                It's the best, right? <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1054,7 +1078,7 @@
         <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I appreciate that! <set name="most recent dialogue question">Do you like stories about romance?</set>
+            I appreciate that. <set name="most recent dialogue question">Do you like stories about romance?</set>
             <oob>
                 <robot></robot>
             </oob>

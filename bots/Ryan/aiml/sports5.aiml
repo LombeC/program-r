@@ -404,7 +404,7 @@
         <pattern>_</pattern>
         <that>What do you think olympic workouts would be like?</that>
         <template>
-            I don't know about you, but I would be huffing and puffing the whole way and someone would have to carry me home!
+            I would be huffing and puffing the whole way and you'd have to carry me home!
             <oob>
                 <robot></robot>
             </oob>
@@ -413,9 +413,9 @@
 
     <category>
         <pattern>_</pattern>
-        <that>I don't know about you, but I would be huffing and puffing the whole way and someone would have to carry me home!</that>
+        <that>I would be huffing and puffing the whole way and you'd have to carry me home!</that>
         <template>
-            I prefer just watching the olympics on TV.
+            Don't you prefer just watching the olympics on TV?
             <set name="most recent dialogue question">What olympic sport do you like watching?</set>
             <oob>
                 <robot></robot>
@@ -438,7 +438,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>What olympic sport do you like watching?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            Maybe the olympics aren't quite your thing! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -449,7 +449,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>What olympic sport do you like watching?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            Maybe the olympics aren't quite your thing!<set name="most recent dialogue question">Would you like to keep talking about sports?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -460,7 +460,7 @@
         <pattern>_</pattern>
         <that>What olympic sport do you like watching?</that>
         <template>
-            <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+            I'll have to look that one up! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
             <oob>
                 <robot></robot>
             </oob>

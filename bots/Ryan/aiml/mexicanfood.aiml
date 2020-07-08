@@ -51,6 +51,19 @@
         </template>
     </category>
 
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+          <think><set name="topic">food</set></think>
+          <set name="most recent dialogue question">How about asian food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <topic name="mexicanfood">
         <category>
             <pattern>_</pattern>
@@ -187,6 +200,33 @@
                 <oob>
                     <robot></robot>
                 </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think you would like deep fried twinkies and oreos?</that>
+            <template>
+                Ha ha, I totally understand. <set name="most recent dialogue question">What do you think tastes better, chicken fried steak or fried pork tenderloin?</set>
+                    <oob><robot></robot></oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think you would like deep fried twinkies and oreos?</that>
+            <template>
+                Ha ha, I totally understand. <set name="most recent dialogue question">What do you think tastes better, chicken fried steak or fried pork tenderloin?</set>
+                    <oob><robot></robot></oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think you would like deep fried twinkies and oreos?</that>
+            <template>
+              That's the good stuff! <set name="most recent dialogue question">What do you think tastes better, chicken fried steak or fried pork tenderloin?</set>
+                    <oob><robot></robot></oob>
             </template>
         </category>
 

@@ -192,7 +192,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Did you know that about Uranus?</that>
         <template>
-            Well of course you did! <set name="most recent dialogue question">Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?</set>
+            <set name="most recent dialogue question">Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -214,7 +214,18 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            <set name="most recent dialogue question">I am happy to be able to share a new fact with you! Some of these moons are named after Shakespeare's play The Tempest. What do you know about The Tempest?</set>
+            I am happy to be able to share a new fact with you! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Can you name any of these moons?</that>
+        <template>
+            I am happy to be able to share a new fact with you! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -223,7 +234,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>What do you know about The Tempest?</that>
+        <that>What do you know about Shakespeare's play The Tempest?</that>
         <template>
             <set name="most recent dialogue question">Ariel and Miranda are both bound to the main character, the wizard Prospero. So I guess that it makes sense that they orbit the planet Uranus!</set>
             <oob>
@@ -247,7 +258,7 @@
         <pattern>_</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about The Tempest?</set>
+            <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -258,7 +269,7 @@
         <pattern>_</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about The Tempest?</set>
+            <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -269,14 +280,14 @@
         <pattern># OBERON ^</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set></template>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set></template>
     </category>
 
     <category>
         <pattern># OBERON ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -287,7 +298,7 @@
         <pattern># TITANIA ^</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -298,7 +309,7 @@
         <pattern># TITANIA ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -309,7 +320,7 @@
         <pattern># PUCK ^</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -320,14 +331,14 @@
         <pattern># PUCK ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set></template>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set></template>
     </category>
 
     <category>
         <pattern># MIRANDA ^</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -338,7 +349,7 @@
         <pattern># MIRANDA ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -349,7 +360,7 @@
         <pattern># ARIEL ^</pattern>
         <that>What is the name of one of the moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -360,7 +371,7 @@
         <pattern># ARIEL ^</pattern>
         <that>Can you name any of these moons?</that>
         <template>
-            Nicely done! <set name="most recent dialogue question">Did you know some of Uranus' moons are named after Shakespeare's play The Tempest? What do you know about the Tempest?</set>
+            Nicely done! <set name="most recent dialogue question">What do you know about Shakespeare's play The Tempest?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -371,7 +382,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Did you know that about Uranus?</that>
         <template>
-            Scientists think that the rings formed when some of Uranus' moons broke apart. <set name="most recent dialogue question">Did you know that some of Uranus' moons have been named after works of literature by William Shakespeare? Can you name any of these moons?</set>
+            <set name="most recent dialogue question">Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -382,7 +393,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Did you know that about Uranus?</that>
         <template>
-            Scientists think that the rings formed when some of Uranus' moons broke apart. <set name="most recent dialogue question">Did you know that some of Uranus' moons have been named after works of literature by William Shakespeare? Can you name any of these moons?</set>
+            <set name="most recent dialogue question">Five of Uranus' moons have been named after works of literature by William Shakespeare. Can you name any of these moons?</set>
             <oob>
                 <robot></robot>
             </oob>

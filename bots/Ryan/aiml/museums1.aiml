@@ -122,7 +122,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to take a tour?</that>
             <template>
-                I really dig the diner they showed, and am a fan of all things Elvis! <set name="most recent dialogue question">What do you like about Route 66?</set>
+                I really dig the diner they showed! <set name="most recent dialogue question">What do you like about Route 66?</set>
                 <oob>
                     <robot>
                         <video>
@@ -148,7 +148,7 @@
             <pattern>_</pattern>
             <that>What do you like about Route 66?</that>
             <template>
-                I am such a fan, honestly! <set name="most recent dialogue question">Have you ever been on Route 66?</set>
+                I am such a fan, honestly! <set name="most recent dialogue question">Have you ever traveled on Route 66?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -157,7 +157,7 @@
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Have you ever been on Route 66?</that>
+            <that>Have you ever traveled on Route 66?</that>
             <template>
                 Did you really? I'm jealous! <set name="most recent dialogue question">Where did you go?</set>
                 <oob>
@@ -168,7 +168,7 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever been on Route 66?</that>
+            <that>Have you ever traveled on Route 66?</that>
             <template>
                 <set name="most recent dialogue question">Have you ever been on a road trip?</set>
                 <oob>
@@ -179,7 +179,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever been on Route 66?</that>
+            <that>Have you ever traveled on Route 66?</that>
             <template>
                 <set name="most recent dialogue question">Have you ever been on a road trip?</set>
                 <oob>
@@ -192,7 +192,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                <set name="most recent dialogue question">Where have you road tripped to?</set>
+                Awesome! <set name="most recent dialogue question">Where have you road tripped to?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -237,8 +237,8 @@
             <pattern>_</pattern>
             <that>Where have you road tripped to?</that>
             <template>
-                Now that sounds very cool.
-                <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
+                I am just imagining you there now! Wish I could see pictures!
+                <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -250,7 +250,7 @@
             <that>Where would you like to travel, if you could?</that>
             <template>
                 I am just imagining you there now! You'll have to take pictures when you go!
-                        <set name="most recent dialogue question">Would you like to see some Route sixty six highlights?</set>
+                        <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -262,7 +262,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to look at some Route sixty six highlights?</that>
         <template>
-            I would love to see the Cadillac Ranch in person! <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
+            <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
             <oob>
                 <robot>
                     <video>

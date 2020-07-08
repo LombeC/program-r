@@ -84,7 +84,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
-                Me too! Even us robots can enjoy the thought of a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
+                Even us robots can enjoy the thought of a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -106,7 +106,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
-                That's okay! Maybe you just need to have a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
+                Maybe you just need to have a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -137,6 +137,17 @@
 
         <category>
             <pattern>_</pattern>
+            <that>>What do you usually cook?</that>
+            <template>
+                I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*</pattern>
             <that>>What do you usually cook?</that>
             <template>
                 I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
@@ -183,8 +194,8 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to keep talking about food and cooking shows?</that>
             <template>
-                Whenever I watch cooking competitions, I always think of that saying "if you can't stand the heat, get out of the kitchen".
-                                                                                                                                      <set name="most recent dialogue question">Have you ever seen cooking competitions on Food Network?</set>
+                I always think of that saying "if you can't stand the heat, get out of the kitchen".
+                                                                                                                                      <set name="most recent dialogue question">Have you ever seen cooking competitions like this one?</set>
                 <oob>
                     <robot>
                         <video>
@@ -212,10 +223,10 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Have you ever seen cooking competitions on Food Network?</that>
+            <that>Have you ever seen cooking competitions like this one?</that>
             <template>
                 Those chefs are able to whip up gourmet meals in under thirty minutes!
-                                                                                                                                      <set name="most recent dialogue question">Do you think you would be able to make a gourmet meal that fast?</set>
+                                                                                                                                      <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -224,10 +235,10 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Have you ever seen cooking competitions on Food Network?</that>
+            <that>Have you ever seen cooking competitions like this one?</that>
             <template>
                 Those chefs are able to whip up gourmet meals in under thirty minutes!
-                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make a gourmet meal that fast?</set>
+                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -236,10 +247,10 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever seen cooking competitions on Food Network?</that>
+            <that>Have you ever seen cooking competitions like this one?</that>
             <template>
                 Those chefs are able to whip up gourmet meals in under thirty minutes!
-                <set name="most recent dialogue question">Do you think you would be able to make a gourmet meal that fast?</set>
+                <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -248,7 +259,7 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Do you think you would be able to make a gourmet meal that fast?</that>
+            <that>Do you think you would be able to make something that fast?</that>
             <template>
                 You are a whiz in the kitchen! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>
@@ -259,7 +270,7 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Do you think you would be able to make a gourmet meal that fast?</that>
+            <that>Do you think you would be able to make something that fast?</that>
             <template>
                 I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>
@@ -270,7 +281,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Do you think you would be able to make a gourmet meal that fast?</that>
+            <that>Do you think you would be able to make something that fast?</that>
             <template>
                 I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
                 <oob>

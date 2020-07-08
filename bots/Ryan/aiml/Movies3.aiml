@@ -190,7 +190,7 @@
              <pattern># <set>Musicals</set> ^</pattern>
              <that>Which musicals do you like to watch?</that>
              <template>
-                I've watched <set name="favoritemusical"><star /></set> a couple times! <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
+                I've watched it a couple times! I'd like to see it on stage.
                  <oob>
                      <robot></robot>
                  </oob>
@@ -199,9 +199,42 @@
 
          <category>
               <pattern>_</pattern>
+              <that>I'd like to see it on stage.</that>
+              <template>
+                 <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+               <pattern>*</pattern>
+               <that>I'd like to see it on stage.</that>
+               <template>
+                  <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
+                   <oob>
+                       <robot></robot>
+                   </oob>
+               </template>
+           </category>
+
+           <category>
+                <pattern># <set>DON T KNOW</set> ^</pattern>
+                <that>Which musicals do you like to watch?</that>
+                <template>
+                   <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
+                    <oob>
+                        <robot></robot>
+                    </oob>
+                </template>
+            </category>
+
+         <category>
+              <pattern>_</pattern>
               <that>Which musicals do you like to watch?</that>
               <template>
-                 Same! My favorite is Wizard of Oz. <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
+                 Gotcha! Mine is Wizard of Oz. <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
                   <oob>
                       <robot></robot>
                   </oob>
@@ -256,7 +289,7 @@
                <pattern># <set>YES</set> ^</pattern>
                <that>Do you believe that there's no place like home?</that>
                <template>
-                 <condition name="name">
+                 <condition name="city">
                      <li value="Unknown">I wholeheartedly agree. <set name="most recent dialogue question">What city are you from again?</set></li>
                      <li>I wholeheartedly agree. <set name="most recent dialogue question">You said you are from <get name="city"/>. Is that right?</set></li>
                  </condition>
@@ -270,7 +303,7 @@
                 <pattern># <set>NO</set> ^</pattern>
                 <that>Do you believe that there's no place like home?</that>
                 <template>
-                  <condition name="name">
+                  <condition name="city">
                       <li value="Unknown">Really? <set name="most recent dialogue question">What city are you from again?</set></li>
                       <li>Really? <set name="most recent dialogue question">You said you are from <get name="city"/>. Is that right?</set></li>
                   </condition>
@@ -284,7 +317,7 @@
                  <pattern># <set>DON T KNOW</set> ^</pattern>
                  <that>Do you believe that there's no place like home?</that>
                  <template>
-                   <condition name="name">
+                   <condition name="city">
                        <li value="Unknown">Really? <set name="most recent dialogue question">What city are you from again?</set></li>
                        <li>Really? <set name="most recent dialogue question">You said you are from <get name="city"/>. Is that right?</set></li>
                    </condition>
@@ -307,6 +340,19 @@
               </category>
 
               <category>
+                   <pattern>*</pattern>
+                   <that>What city are you from again?</that>
+                   <template>
+                     <think><set name="birthplace"><star /></set></think>
+                     Good to know! I will remember that. <set name="most recent dialogue question">What was it like in <get name="birthplace"/>? I'm curious.</set>
+                       <oob>
+                           <robot></robot>
+                       </oob>
+                   </template>
+               </category>
+
+
+              <category>
                    <pattern># <set>YES</set> ^</pattern>
                    <that>Is that right?</that>
                    <template>
@@ -327,18 +373,6 @@
                         </oob>
                     </template>
                 </category>
-
-                <category>
-                     <pattern>*</pattern>
-                     <that>What city are you from again?</that>
-                     <template>
-                       <think><set name="birthplace"><star /></set></think>
-                       <set name="most recent dialogue question">What was it like in <get name="birthplace"/>? I'm curious.</set>
-                         <oob>
-                             <robot></robot>
-                         </oob>
-                     </template>
-                 </category>
 
                  <category>
                       <pattern>I AM FROM *</pattern>
@@ -363,6 +397,40 @@
                            </oob>
                        </template>
                    </category>
+
+                   <category>
+                       <pattern>I COME FROM *</pattern>
+                       <that>What city are you from again?</that>
+                       <template>
+                         <think><set name="birthplace"><star /></set></think>
+                         <set name="most recent dialogue question">What was it like in <get name="birthplace"/>? I'm curious.</set>
+                               <oob><robot></robot></oob>
+                       </template>
+                   </category>
+
+                   <category>
+                       <pattern>I WAS BORN IN *</pattern>
+                       <that>What city are you from again?</that>
+                       <template>
+                         <think><set name="birthplace"><star /></set></think>
+                         <set name="most recent dialogue question">What was it like in <get name="birthplace"/>? I'm curious.</set>
+                               <oob><robot></robot></oob>
+                       </template>
+                   </category>
+
+                   <category>
+                       <pattern>I LIVE IN *</pattern>
+                       <that>What city are you from again?</that>
+                       <template>
+                         <think><set name="birthplace"><star /></set></think>
+                         <set name="most recent dialogue question">What was it like in <get name="birthplace"/>? I'm curious.</set>
+                               <oob><robot></robot></oob>
+                       </template>
+                   </category>
+
+
+
+
 
                  <category>
                       <pattern>_</pattern>

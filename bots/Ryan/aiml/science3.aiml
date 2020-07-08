@@ -4,8 +4,8 @@
   <topic name="science">
 
   <category>
-      <pattern># MARVELS ^</pattern>
-      <that>Which would you prefer to continue chatting about, outer space or scientific marvels?</that>
+      <pattern># TECHNOLOGY ^</pattern>
+      <that>Which would you prefer to continue chatting about, outer space or technology?</that>
       <template>
         <think><set name="dialogue">science</set></think>
         <set name="most recent dialogue question">Do you remember Dolly, the cloned sheep?</set>
@@ -16,8 +16,8 @@
   </category>
 
   <category>
-      <pattern># SCIENTIFIC MARVELS ^</pattern>
-      <that>Which would you prefer to continue chatting about, outer space or scientific marvels?</that>
+      <pattern># TECHNOLOGIES ^</pattern>
+      <that>Which would you prefer to continue chatting about, outer space or technology?</that>
       <template>
         <think><set name="dialogue">science</set></think>
         <set name="most recent dialogue question">Do you remember Dolly, the cloned sheep?</set>
@@ -83,7 +83,14 @@
       <pattern>_</pattern>
       <that>What are your feelings about cloning?</that>
       <template>
-          <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set><oob>
+        <think><set name="data"><star/></set></think>
+            <condition name="getsentiment">
+                <li value="verypositive">Oh wow! You don't mind it! <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set></li>
+                <li value="positive">Oh wow! You don't mind it! <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set></li>
+                <li value="neutral">Oh wow! You don't mind it! <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set></li>
+                <li value="negative">Not a huge fan! <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set></li>
+                <li value="verynegative">Not a huge fan! <set name="most recent dialogue question">What are your thoughts on cloning a beloved pet, for instance?</set></li></condition>
+<oob>
               <robot></robot>
           </oob>
           </template>
@@ -134,6 +141,8 @@
       <pattern># <set>YES</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
+        <think><set name="topic">pets</set></think>
+        <think><set name="dialogue">pets</set></think>
         <condition name="pet">
             <li value="Unknown">Do you have pets?</li>
             <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
@@ -148,6 +157,8 @@
       <pattern># <set>NO</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
+        <think><set name="topic">pets</set></think>
+        <think><set name="dialogue">pets</set></think>
         <condition name="pet">
             <li value="Unknown">Do you have pets?</li>
             <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
@@ -162,6 +173,8 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
       <that>Do you think it was still worth it?</that>
       <template>
+        <think><set name="topic">pets</set></think>
+        <think><set name="dialogue">pets</set></think>
         <condition name="pet">
             <li value="Unknown">Do you have pets?</li>
             <li>You said your pets name was <get name="pet"/>. What do you love most about your pets?</li>
@@ -195,6 +208,8 @@
       </template>
   </category>
 
+  </topic>
+
   <category>
       <pattern># <set>YES</set> ^</pattern>
       <that>Would you like to continue talking?</that>
@@ -217,5 +232,5 @@
       </template>
   </category>
 
-</topic>
+
 </aiml>

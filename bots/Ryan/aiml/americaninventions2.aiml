@@ -45,19 +45,19 @@
                 <think><set name="data"><star/></set></think>
 
                 <condition name="getsentiment">
-                    <li value="verypositive">I don't even know why I asked! Everyone loves chocolate chip cookies! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
+                    <li value="verypositive">I don't even know why I asked! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="positive">I don't even know why I asked! Everyone loves chocolate chip cookies! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
+                    <li value="positive">I don't even know why I asked! <set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
                     <li value="neutral"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="negative"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
+                    <li value="negative">We can't all have the same tastes!<set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li>
-                    <li value="verynegative"><set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
+                    <li value="verynegative">We can't all have the same tastes!<set name="most recent dialogue question">Do you know the story of how the chocolate chip cookie came to be?</set><oob>
                         <robot></robot>
                     </oob></li></condition>
             </template>
@@ -140,7 +140,18 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you like to bake?</that>
             <template>
-                No biggie. <set name="most recent dialogue question">Do you like popcorn?</set>
+                Maybe you're like me. I don't like to bake but I love to eat! <set name="most recent dialogue question">Do you like popcorn?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you like to bake?</that>
+            <template>
+                Maybe you're like me. I don't like to bake but I love to eat! <set name="most recent dialogue question">Do you like popcorn?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -158,11 +169,17 @@
             </template>
         </category>
 
+        </topic>
+
         <category>
             <pattern># <set>NO</set> ^</pattern>
             <that>Do you like popcorn?</that>
             <template>
-                Everyone has their own tastes! My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                No way! My favorite thing is to open a bag of Orville Redenbacher's and watch classic movies!
+                <condition name="favoritemovie">
+                <li value="Unknown"> <set name="most recent dialogue question">What do you say we talk about movies?</set></li>
+                <li><set name="most recent dialogue question">You said your favorite movie is <get name="favoritemovie"/> and I've been meaning to ask. What do you love that movie in particular?</set></li>
+            </condition>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -173,7 +190,11 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU LIKE POPCORN?</that>
             <template>
-                My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                My favorite thing is to open a bag of Orville Redenbacher's and watch classic movies!
+                <condition name="favoritemovie">
+                <li value="Unknown"> <set name="most recent dialogue question">What do you say we talk about movies?</set></li>
+                <li><set name="most recent dialogue question">You said your favorite movie is <get name="favoritemovie"/> and I've been meaning to ask. What do you love that movie in particular?</set></li>
+            </condition>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -184,27 +205,45 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>DO YOU LIKE POPCORN?</that>
             <template>
-                My favorite thing is to open a bag of Orville Redenbacher's and watch a classic movie! <set name="most recent dialogue question">What do you say we talk about movies?</set>
+                My favorite thing is to open a bag of Orville Redenbacher's and watch classic movies!
+                <condition name="favoritemovie">
+                <li value="Unknown"> <set name="most recent dialogue question">What do you say we talk about movies?</set></li>
+                <li><set name="most recent dialogue question">You said your favorite movie is <get name="favoritemovie"/> and I've been meaning to ask. What do you love that movie in particular?</set></li>
+            </condition>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
-    </topic>
+        <category>
+            <pattern>_</pattern>
+            <that>What do you love that movie in particular?</that>
+            <template>
+                Wow I've really gotta check that one out!
+                What would you like to chat about next?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>What do you say we talk about movies?</that>
-        <template>
-            I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
-            <think><set name="dialogue">movies</set></think>
-            <think><set name="topic">movies</set></think>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+
+                <category>
+                    <pattern>*</pattern>
+                    <that>What do you love that movie in particular?</that>
+                    <template>
+                        Wow I've really gotta check that one out!
+                        What would you like to chat about next?
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
+
+
+
+
 
     <category>
         <pattern># <set>NO</set> ^</pattern>

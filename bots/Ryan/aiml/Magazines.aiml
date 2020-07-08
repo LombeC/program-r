@@ -26,6 +26,40 @@
     </category>
 
     <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Have you ever had a subscription to a magazine?</that>
+        <template>
+          <think><set name="topic">reading</set></think>
+          <think><set name="dialogue">reading</set></think>
+          <random>
+              <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+              <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+              <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+              <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever had a subscription to a magazine?</that>
+        <template>
+          <think><set name="topic">reading</set></think>
+          <think><set name="dialogue">reading</set></think>
+          <random>
+              <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+              <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+              <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+              <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>*</pattern>
         <that>Which magazine was it?</that>
         <template>
@@ -44,23 +78,21 @@
         <pattern>_</pattern>
         <that>Will you tell me about this magazine?</that>
         <template>
-            <set name="most recent dialogue question">What did you like about it?</set>
+            Maybe I'll just have to get myself a subscription, too!
+            <think><set name="topic">reading</set></think>
+            <think><set name="dialogue">reading</set></think>
+            <random>
+                <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+                <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+                <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+                </random>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>What did you like about it?</that>
-        <template>
-            Maybe I'll just have to get myself a subscription, too! <set name="most recent dialogue question">What is the best book you have ever read?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+
 
     <!-- REDIRECT TO READING DIALOGUE -->
 

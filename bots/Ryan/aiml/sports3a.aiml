@@ -28,30 +28,6 @@
 </category>
 
 <category>
-    <pattern># <set>Yes</set> ^</pattern>
-    <that>Did you ever play football?</that>
-    <template>
-      How did I know!
-      <set name="most recent dialogue question">So did you play offense, defense, or special teams?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>No</set> ^</pattern>
-    <that>Did you ever play football?</that>
-    <template>
-        <set name="most recent dialogue question">Sometimes it's better to cheer on from the comfortable confines of the couch, don't you think?</set>
-        <oob>
-            <robot>
-            </robot>
-        </oob>
-    </template>
-</category>
-
-<category>
     <pattern># <set>No</set> ^</pattern>
     <that>Did you ever play football?</that>
     <template>
@@ -176,7 +152,7 @@
     <pattern># Running Back ^</pattern>
     <that>What was your position?</that>
     <template>
-      You were running back! I am impressed!
+      Running back is honestly a crucial position! I am impressed!
 
         <oob>
             <robot></robot>
@@ -440,7 +416,7 @@
     <pattern>_</pattern>
     <that>What was your position?</that>
     <template>
-      I see! I can't play but love to watch from the comfortable confines of the couch.
+      I see! I can't play but love to watch from the couch!
       <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
         <oob>
             <robot></robot>
@@ -452,7 +428,7 @@
     <pattern># <set>DON T KNOW</set> ^</pattern>
     <that>What was your position?</that>
     <template>
-      I can't play but love to watch from the comfortable confines of the couch!
+      I can't play but love to watch from the couch!
       <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
         <oob>
             <robot></robot>
@@ -464,7 +440,7 @@
     <pattern>_</pattern>
     <that>I am impressed!</that>
     <template>
-      I can't play but love to watch from the comfortable confines of the couch! <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
+      I can't play but love to watch from the couch! <set name="most recent dialogue question">What are your Super Bowl traditions?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -493,8 +469,8 @@
             <li value="verypositive">It's a plan! <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li>
             <li value="positive">It's a plan! <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li>
             <li value="neutral">It's a plan! <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li>
-            <li value="negative">No problem! <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li>
-            <li value="verynegative">No problem! <set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li></condition>
+            <li value="negative"><set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li>
+            <li value="verynegative"><set name="most recent dialogue question">Did you know that the Green Bay Packers won the very first Super Bowl?</set></li></condition>
 
         <oob><robot></robot></oob>
     </template>
@@ -561,6 +537,8 @@
     </template>
 </category>
 
+</topic>
+
 <category>
     <pattern># <set>YES</set> ^</pattern>
     <that>Would you like to keep talking about sports?</that>
@@ -583,5 +561,5 @@
     </template>
 </category>
 
-</topic>
+
 </aiml>

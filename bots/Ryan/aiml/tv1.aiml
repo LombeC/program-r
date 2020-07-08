@@ -75,7 +75,7 @@
         <pattern>_</pattern>
         <that>How would you describe your sense of humor?</that>
         <template>
-            I feel like I know you even better now that you have told me what tickles your funny bone! Ha ha.
+            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -83,10 +83,21 @@
     </category>
 
     <category>
-        <pattern>Ha ha.</pattern>
+        <pattern>*</pattern>
         <that>How would you describe your sense of humor?</that>
         <template>
-            <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>How would you describe your sense of humor?</that>
+        <template>
+            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -121,6 +132,17 @@
 
     <category>
         <pattern>*</pattern>
+        <that>What's your favorite show?</that>
+        <template>
+            <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>What's your favorite show?</that>
         <template>
             <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
@@ -259,6 +281,8 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Well why don't we talk about funny movies?</that>
         <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
           Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
           <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
             <oob>

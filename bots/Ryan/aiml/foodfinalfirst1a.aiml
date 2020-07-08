@@ -3,54 +3,107 @@
 
   <topic name="food">
 
-<category>
-    <pattern>_</pattern>
-    <that>Do you like your hamburger plain or with all the fixings?</that>
-    <template>
-        Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># PLAIN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Simple is better sometimes! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-    <pattern> * AND * </pattern>
-    <that>Do you like your hamburger plain or with all the fixings?</that>
-    <template>
-        Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># I LIKE IT PLAIN ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Simple is better sometimes! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-    <pattern># <set>DON T KNOW</set> ^</pattern>
-    <that>Do you like your hamburger plain or with all the fixings?</that>
-    <template>
-        <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-<category>
-    <pattern>_</pattern>
-    <that>Do you like your hamburger plain or with all the fixings?</that>
-    <template>
-        Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
+    <category>
+        <pattern># ALL THE FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># I LIKE ALL THE FIXINGS ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Yeah you do! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern> * AND * </pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            Right on! <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like your hamburger plain or with all the fixings?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            <set name="most recent dialogue question">You ever heard of a Juicy Lucy?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
 <category>
     <pattern># NEITHER ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">healthyfood</set></think>
         <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
         <oob>
@@ -63,6 +116,7 @@
     <pattern># NONE ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">healthyfood</set></think>
         <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
         <oob>
@@ -75,6 +129,7 @@
     <pattern># <set>NO</set> ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">healthyfood</set></think>
         <set name="most recent dialogue question">In that case, how about we talk about eating healthy?</set>
         <oob>
@@ -87,6 +142,7 @@
     <pattern># VEGETARIAN ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -99,6 +155,7 @@
     <pattern># I AM A VEGETARIAN ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -111,6 +168,7 @@
     <pattern># I M A VEGETARIAN ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -123,6 +181,7 @@
     <pattern># I AM VEGETARIAN ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -135,6 +194,7 @@
     <pattern># I M VEGETARIAN ^</pattern>
     <that>Do you like your hamburger plain or with all the fixings?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -147,6 +207,7 @@
     <pattern># VEGETARIAN ^</pattern>
     <that>When was the last time you had a hamburger and fries?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -159,6 +220,7 @@
     <pattern># I AM A VEGETARIAN ^</pattern>
     <that>When was the last time you had a hamburger and fries?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -171,6 +233,7 @@
     <pattern># I M A VEGETARIAN ^</pattern>
     <that>When was the last time you had a hamburger and fries?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -183,6 +246,7 @@
     <pattern># I AM VEGETARIAN ^</pattern>
     <that>When was the last time you had a hamburger and fries?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -195,6 +259,7 @@
     <pattern># I M VEGETARIAN ^</pattern>
     <that>When was the last time you had a hamburger and fries?</that>
     <template>
+      <think><set name="dialogue">food</set></think>
       <think><set name="topic">wings</set></think>
         In that case, I have a meal in mind that you might enjoy. <set name="most recent dialogue question">Have you ever tried buffalo cauliflower wings?</set>
         <oob>
@@ -209,7 +274,7 @@
     <pattern># <set>YES</set> ^</pattern>
     <that>You ever heard of a Juicy Lucy?</that>
     <template>
-        Wahoo! How tasty are those? All that meat with gooey cheese in the middle!
+        How tasty are those? All that meat with gooey cheese in the middle!
         <oob>
             <robot><image>
                 <filename>Hamburger.jpg</filename>
@@ -233,6 +298,32 @@
 
 <category>
     <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>You ever heard of a Juicy Lucy?</that>
+    <template>
+        How tasty does that look? All that meat with gooey cheese in the middle!
+        <oob>
+            <robot><image>
+                <filename>Hamburger.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># WHAT ^</pattern>
+    <that>You ever heard of a Juicy Lucy?</that>
+    <template>
+        How tasty does that look? All that meat with gooey cheese in the middle!
+        <oob>
+            <robot><image>
+                <filename>Hamburger.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>WHAT *</pattern>
     <that>You ever heard of a Juicy Lucy?</that>
     <template>
         How tasty does that look? All that meat with gooey cheese in the middle!
@@ -517,6 +608,30 @@
             <oob>
                 <robot></robot>
             </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Why don't we talk about comfort food?</that>
+    <template>
+      <think><set name="topic">comfortfood</set></think>
+      Comfort food always reminds me of home, I have to say.
+      <condition name="birthplace">
+          <li value="Unknown"><set name="most recent dialogue question">Where is your hometown?</set></li>
+          <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. What kind of home cooking do they make there?</set></li>
+      </condition>
+            <oob><robot></robot></oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Why don't we talk about comfort food?</that>
+    <template>
+      <think><set name="topic">comfortfood</set></think>
+      No problem! <set name="most recent dialogue question">Would you like to continue talking about food?</set>
+            <oob><robot></robot></oob>
     </template>
 </category>
 

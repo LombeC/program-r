@@ -77,7 +77,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Do you want to see a picture?</that>
             <template>
-                <set name="most recent dialogue question">Any idea what that bug is? Just guess.</set>
+                Here's the dinosaur feather. <set name="most recent dialogue question">Any idea what that bug is? Just guess.</set>
                 <oob>
                     <robot>
                         <image>
@@ -92,7 +92,7 @@
             <pattern># LICE ^</pattern>
             <that>Just guess.</that>
             <template>
-                You got it! You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                You got it! You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -107,7 +107,7 @@
             <pattern># INSECT ^</pattern>
             <that>Just guess.</that>
             <template>
-                Yes! It's lice. You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                Yes! It's lice. You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -122,7 +122,7 @@
             <pattern>_</pattern>
             <that>Just guess.</that>
             <template>
-                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -137,7 +137,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Guess.</that>
             <template>
-                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossis been found on?</set>
+                It's lice! Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -151,58 +151,10 @@
 
 
         <category>
-            <pattern># SEVEN ^</pattern>
-            <that>How many continents have dinosaur fossils been found on?</that>
-            <template>
-                Yes! Dinosaur fossils have been found on all seven continents.
-                <set name="most recent dialogue question">Would you like to discuss mammals or ancient Egypt next?</set>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># ALL SEVEN ^</pattern>
-            <that>How many continents have dinosaur fossils been found on?</that>
-            <template>
-              Yes! Dinosaur fossils have been found on all seven continents.
-              <set name="most recent dialogue question">Would you like to continue discussing the Smithsonian?</set>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
             <pattern># ALL OF THEM ^</pattern>
             <that>How many continents have dinosaur fossils been found on?</that>
             <template>
               Yes! Dinosaur fossils have been found on all seven continents.
-              <set name="most recent dialogue question">Would you like to continue discussing the Smithsonian?</set>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># ALL SEVEN OF THEM ^</pattern>
-            <that>How many continents have dinosaur fossils been found on?</that>
-            <template>
-              Yes! Dinosaur fossils have been found on all seven continents. Kind of a trick question.
               <set name="most recent dialogue question">Would you like to continue discussing the Smithsonian?</set>
                 <oob>
                     <robot>
@@ -315,6 +267,22 @@
             <that>How many continents have dinosaur fossils been found on?</that>
             <template>
               Dinosaur fossils have been found on all seven continents.
+              <set name="most recent dialogue question">Would you like to continue discussing the Smithsonian?</set>
+                <oob>
+                    <robot>
+                        <image>
+                            <filename>CLRSCR</filename>
+                        </image>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># SEVEN ^</pattern>
+            <that>How many continents have dinosaur fossils been found on?</that>
+            <template>
+              Absolutely! You got it!
               <set name="most recent dialogue question">Would you like to continue discussing the Smithsonian?</set>
                 <oob>
                     <robot>

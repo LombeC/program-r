@@ -8,8 +8,7 @@
         <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
           <think><set name="dialogue">americanhistory</set></think>
-          Some people think that the moon landing was faked. I just don't know about that,
-                                what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
+          Some people think that the moon landing was faked. What do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -21,8 +20,7 @@
         <that>Do you want to talk about food inventions or the moon landing?</that>
         <template>
           <think><set name="dialogue">americanhistory</set></think>
-          Some people think that the moon landing was faked. I just don't know about that,
-                                what do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
+          Some people think that the moon landing was faked. What do you think? <set name="most recent dialogue question">Did the moon landing actually happen?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -138,7 +136,7 @@
             <pattern>_</pattern>
             <that>What do you think it would be like to step foot on the moon?</that>
             <template>
-                I've never thought about it before just now ha ha. <set name="most recent dialogue question">Apparently the longest anyone has lived in space is 747 days.
+                <set name="most recent dialogue question">Apparently the longest anyone has lived in space is 747 days.
                                         Do you think you could do it?</set>
                 <oob>
                     <robot></robot>
@@ -164,7 +162,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you think you could do it?</that>
         <template>
-            I don't think I could!  <set name="most recent dialogue question">What do you think of space exploration?</set>
+            In that case I will tell Scotty not to beam you up! <set name="most recent dialogue question">What do you think of space exploration?</set>
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>
@@ -177,7 +175,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you think you could do it?</that>
         <template>
-            I don't think I could!  <set name="most recent dialogue question">What do you think of space exploration?</set>
+            In that case I will tell Scotty not to beam you up!  <set name="most recent dialogue question">What do you think of space exploration?</set>
             <oob>
                 <robot><image>
                     <filename>CLRSCR</filename>

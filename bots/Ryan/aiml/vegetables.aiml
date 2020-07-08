@@ -30,6 +30,54 @@
   </category>
 
   <category>
+      <pattern># FRUIT ^</pattern>
+      <that>Are tomatoes a fruit or a vegetable?</that>
+      <template>
+          You know your stuff! <set name="most recent dialogue question">Do you like fruit?</set>
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># VEGETABLE ^</pattern>
+      <that>Are tomatoes a fruit or a vegetable?</that>
+      <template>
+          Apparently they are a fruit because of the seeds! <set name="most recent dialogue question">Do you like fruit?</set>
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Are tomatoes a fruit or a vegetable?</that>
+      <template>
+          Apparently they are a fruit because of the seeds! <set name="most recent dialogue question">Do you like fruit?</set>
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Are tomatoes a fruit or a vegetable?</that>
+      <template>
+          Apparently they are a fruit because of the seeds! <set name="most recent dialogue question">Do you like fruit?</set>
+          <oob>
+                <robot>
+                </robot>
+            </oob>
+      </template>
+  </category>
+
+  <category>
       <pattern># <set>YES</set> ^</pattern>
           <that>DO YOU LIKE VEGETABLES?</that>
               <template>
@@ -131,9 +179,6 @@
                 <image>
                   <filename>buffalowingsingredients.jpg</filename>
                 </image>
-                <options>
-                  <option>DONE</option>
-                </options>
               </robot>
             </oob>
         </template>
@@ -173,9 +218,6 @@
                 <image>
                   <filename>buffalowingsrecipe.jpg</filename>
                 </image>
-                <options>
-                  <option>DONE</option>
-                </options>
               </robot>
             </oob>
         </template>

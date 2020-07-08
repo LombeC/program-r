@@ -130,6 +130,7 @@
         <pattern># IT S A WONDERFUL LIFE ^</pattern>
         <that>What's one of your favorite movies?</that>
         <template>
+          <think><set name="topic">dramaticmovies</set></think>
             I also love It's a Wonderful Life! <set name="most recent dialogue question">Who doesn't like that movie?</set>
             <think><set name="favoritemovie">It's a Wonderful Life</set></think>
             <oob>
@@ -386,7 +387,7 @@
         <pattern>_</pattern>
         <that>Who doesn't like that movie?</that>
         <template>
-            Jimmy Stewart is one of the best! <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
+            <set name="most recent dialogue question">Would you like to watch a clip from the movie?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -397,7 +398,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Would you like to watch a clip from the movie?</that>
             <template>
-                It's a real tearjerker! <set name="most recent dialogue question">Do you like to watch It's a Wonderful Life around the holidays?</set>
+                It's a real tearjerker! <set name="most recent dialogue question">Do you like to watch holiday movies around Christmas time?</set>
                 <oob>
                     <robot>
                         <video>
@@ -412,7 +413,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to watch a clip from the movie?</that>
             <template>
-                It's a real tearjerker! <set name="most recent dialogue question">Do you like to watch It's a Wonderful Life around the holidays?</set>
+                It's a real tearjerker! <set name="most recent dialogue question">Do you like to watch holiday movies around Christmas time?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -421,9 +422,9 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Do you like to watch It's a Wonderful Life around the holidays?</that>
+            <that>Do you like to watch holiday movies around Christmas time?</that>
             <template>
-                Me too! It's the perfect Christmas Eve movie. <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
+                Me too!  <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
                 <oob>
                     <robot>
                     </robot>
@@ -433,9 +434,9 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
-            <that>Do you like to watch It's a Wonderful Life around the holidays?</that>
+            <that>Do you like to watch holiday movies around Christmas time?</that>
             <template>
-                I will say it's the perfect Christmas Eve movie! <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
+                <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -446,7 +447,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you like to watch It's a Wonderful Life around Christmas time?</that>
             <template>
-                I will say it's the perfect Christmas Eve movie! <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
+                <set name="most recent dialogue question">Do you enjoy spending time with your family over the holidays?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -493,7 +494,7 @@
             <pattern>_</pattern>
             <that>Just throw some tinsel on my head and get the mistletoe ready!</that>
             <template>
-              I'm just being a little silly. <set name="most recent dialogue question">Do you want to keep talking about film?</set>
+              I'm just being a little silly. Maybe I had a little too much egg nog. <set name="most recent dialogue question">Do you want to keep talking about film?</set>
                 <oob>
                     <robot></robot>
                 </oob>
