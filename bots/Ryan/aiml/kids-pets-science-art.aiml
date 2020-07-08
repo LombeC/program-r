@@ -4,6 +4,7 @@
         <pattern>^ KIDS ^</pattern>
         <template>
           <think><set name="topic">kids</set></think>
+          <think><set name="dialogue">kids</set></think>
             <set name="most recent dialogue question">Do you have kids or grandkids?</set>
             <oob>
                 <robot>
@@ -60,7 +61,7 @@
     </category>
 
     <category>
-        <pattern>DON T</pattern>
+        <pattern># DON T ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             <set name="most recent dialogue question">Who are the people you care about in your life?</set>
@@ -71,7 +72,7 @@
     </category>
 
     <category>
-        <pattern>I DON T</pattern>
+        <pattern># I DON T ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             <set name="most recent dialogue question">Who are the people you care about in your life?</set>
@@ -82,7 +83,7 @@
     </category>
 
     <category>
-        <pattern>I DON T HAVE ANY</pattern>
+        <pattern># I DON T HAVE ANY ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             <set name="most recent dialogue question">Who are the people you care about in your life?</set>
@@ -93,7 +94,7 @@
     </category>
 
     <category>
-        <pattern>I DON T HAVE</pattern>
+        <pattern># I DON T HAVE ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             <set name="most recent dialogue question">Who are the people you care about in your life?</set>
@@ -104,7 +105,7 @@
     </category>
 
     <category>
-        <pattern>NEVER HAD ANY</pattern>
+        <pattern># NEVER HAD ANY ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             <set name="most recent dialogue question">Who are the people you care about in your life?</set>
@@ -115,7 +116,7 @@
     </category>
 
     <category>
-        <pattern>I HAVE GRANDKIDS</pattern>
+        <pattern># I HAVE GRANDKIDS ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -126,7 +127,7 @@
     </category>
 
     <category>
-        <pattern>I HAVE KIDS</pattern>
+        <pattern># I HAVE KIDS ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -137,7 +138,7 @@
     </category>
 
     <category>
-        <pattern>I HAVE CHILDREN</pattern>
+        <pattern># I HAVE CHILDREN ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -148,7 +149,7 @@
     </category>
 
     <category>
-        <pattern>I HAVE GRAND CHILDREN</pattern>
+        <pattern># I HAVE GRAND CHILDREN ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -159,7 +160,7 @@
     </category>
 
     <category>
-        <pattern>GREAT GRANDPARENT</pattern>
+        <pattern># GREAT GRANDPARENT ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -170,7 +171,7 @@
     </category>
 
     <category>
-        <pattern>I AM A GREAT GRANDPARENT</pattern>
+        <pattern># I AM A GREAT GRANDPARENT ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -181,7 +182,18 @@
     </category>
 
     <category>
-        <pattern>I M A GREAT GRANDPARENT</pattern>
+        <pattern># I M A GREAT GRANDPARENT ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># BOTH ^</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a parent or grandparent?</set>
@@ -264,6 +276,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             Aw, I bet you love them. <set name="most recent dialogue question">What kind of pet do you have?</set>
             <oob>
                 <robot></robot>
@@ -275,6 +288,7 @@
         <pattern>YES *</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             Aw, I bet you love them. <set name="most recent dialogue question">What kind of pet do you have?</set>
             <oob>
                 <robot></robot>
@@ -286,8 +300,9 @@
         <pattern>I HAVE A *</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             Aw, I bet you love them. <set name="most recent dialogue question">What's their name?</set>
-            <think><set name="pet"><star/></set></think>
+
             <oob>
                 <robot></robot>
             </oob>
@@ -298,20 +313,9 @@
         <pattern>YES I HAVE A *</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             Aw, I bet you love them. <set name="most recent dialogue question">What's their name?</set>
-            <think><set name="pet"><star/></set></think>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
 
-    <category>
-        <pattern>* I HAVE A *</pattern>
-        <that>DO YOU HAVE PETS?</that>
-        <template>
-          <set name="most recent dialogue question">What's their name?</set>
-          <think><set name="pet"><star/></set></think>
             <oob>
                 <robot></robot>
             </oob>
@@ -322,6 +326,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>DO YOU HAVE PETS?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             I don't have any pets either!
                         You know, I love learning more about you.
                         <set name="most recent dialogue question">How would you describe yourself?</set>
@@ -335,6 +340,7 @@
         <pattern>_</pattern>
         <that>WHAT KIND OF PET DO YOU HAVE?</that>
         <template>
+          <think><set name="dialogue">pets</set></think>
             That is awesome! You know, I love learning more about you.
                         <set name="most recent dialogue question">How would you describe yourself?</set>
             <oob>
@@ -347,8 +353,23 @@
         <pattern>*</pattern>
         <that>WHAT'S THEIR NAME?</that>
         <template>
-            Oh, <star/> is such a good name for a <get name="pet"/>. You know, I love learning more about you.
+            Oh, <star/> is such a good name.
+                        <set name="most recent dialogue question">How long have you had them?</set>
+            <think><set name="pet"><star/></set></think>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How long have you had them?</that>
+        <template>
+            That's so cute.
+            You know, I love learning more about you.
                         <set name="most recent dialogue question">How would you describe yourself?</set>
+            <think><set name="pet"><star/></set></think>
             <oob>
                 <robot></robot>
             </oob>
@@ -383,7 +404,7 @@
         <pattern>_</pattern>
         <that>What do you like most about summertime?</that>
         <template>
-            Nice!
+          Heck yes!
                         <set name="most recent dialogue question">Do you celebrate the fourth of July?</set>
             <oob>
                 <robot></robot>
@@ -407,7 +428,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you celebrate the fourth of July?</that>
         <template>
-            I understand! Another thing I love about summer is all the local art fairs.
+            Another thing I love about summer is all the local art fairs.
                         <set name="most recent dialogue question">Would you say you like art or science better?</set>
             <oob>
                 <robot></robot>
@@ -419,7 +440,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you celebrate the fourth of July?</that>
         <template>
-            I understand! Another thing I love about summer is all the local art fairs.
+            Another thing I love about summer is all the local art fairs.
                       <set name="most recent dialogue question">Would you say you like art or science better?</set>
             <oob>
                 <robot></robot>
@@ -431,8 +452,18 @@
         <pattern>_</pattern>
         <that>How do you celebrate?</that>
         <template>
-            I'd say you're doing it right! Another thing I love about summer is all the local art fairs.
-                        <set name="most recent dialogue question">Would you say you like art or science better?</set>
+            I'd say you're doing it right! It is always nice to kick off your boots and forget your worries, if you know what I mean!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>It is always nice to kick off your boots and forget your worries, if you know what I mean!</that>
+        <template>
+            <set name="most recent dialogue question">Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -467,7 +498,9 @@
         <pattern># WINTER ^</pattern>
         <that>Which season do you enjoy the most?</that>
         <template>
-            Winter is the best time to sit by the fire and watch a good movie!
+          <think><set name="dialogue">movies</set></think>
+          <think><set name="topic">movies</set></think>
+            It's the best time to sit by the fire and watch a good movie!
                          <set name="most recent dialogue question">What do you say we talk about movies?</set>
             <oob>
                 <robot></robot>
@@ -481,6 +514,8 @@
         <pattern># ART ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">museums</set></think>
+          <think><set name="topic">artmuseums</set></think>
             I prefer art as well! <set name="most recent dialogue question">Would you like to talk about art museums?</set>
             <oob>
                 <robot></robot>
@@ -492,6 +527,8 @@
         <pattern># I LIKE ART ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">museums</set></think>
+          <think><set name="topic">artmuseums</set></think>
             I prefer art as well! <set name="most recent dialogue question">Would you like to talk about art museums?</set>
             <oob>
                 <robot></robot>
@@ -503,6 +540,8 @@
         <pattern># I LIKE ART BETTER ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">museums</set></think>
+          <think><set name="topic">artmuseums</set></think>
             I prefer art as well! <set name="most recent dialogue question">Would you like to talk about art museums?</set>
             <oob>
                 <robot></robot>
@@ -516,6 +555,8 @@
         <pattern># SCIENCE ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
+          <think><set name="topic">science</set></think>
             I prefer science as well! <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries this year, did you know that?</set>
             <oob>
                 <robot></robot>
@@ -527,6 +568,8 @@
         <pattern># I LIKE SCIENCE ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
+          <think><set name="topic">science</set></think>
             I prefer science as well! <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries this year, did you know that?</set>
             <oob>
                 <robot></robot>
@@ -538,6 +581,8 @@
         <pattern># I LIKE SCIENCE BETTER ^</pattern>
         <that>Would you say you like art or science better?</that>
         <template>
+          <think><set name="dialogue">science</set></think>
+          <think><set name="topic">science</set></think>
             I prefer science as well! <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries this year, did you know that?</set>
             <oob>
                 <robot></robot>

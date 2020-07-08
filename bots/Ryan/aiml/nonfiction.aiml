@@ -23,9 +23,7 @@
             <template>
                 I could learn a lot by giving
                 <set name="non-fiction"><star/></set>
-
                 a spin. Thanks for telling me.
-
                 <oob>
                     <robot></robot>
                 </oob>
@@ -156,9 +154,7 @@
             <that>What is your job, or what was your job?</that>
             <template>
             <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
+                <think><set name="job"><star /></set></think>
             <oob><robot></robot></oob>
             </template>
         </category>
@@ -241,14 +237,12 @@
             <that>What is your job, or what was your job?</that>
             <template>
                 <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
+                <think><set name="job"><star /></set></think>
+                <oob><robot></robot></oob>
             </template>
         </category>
 
-        <category>
+        <!-- <category>
             <pattern>*</pattern>
             <that>What is your job, or what was your job?</that>
             <template>
@@ -258,7 +252,7 @@
                 </think>
             <oob><robot></robot></oob>
             </template>
-        </category>
+        </category> -->
 
         <category>
             <pattern>_</pattern>
