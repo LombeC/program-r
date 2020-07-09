@@ -64,58 +64,6 @@
       <topic name="healthyrecipes">
 
 
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>Are you still enjoying speaking about food?</that>
-        <template>
-            <set name="most recent dialogue question">Would you like to talk about cooking shows?</set>
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Are you still enjoying speaking about food?</that>
-        <template>
-            <set name="most recent dialogue question">What would you like to talk about?</set>
-                <oob>
-                    <robot>
-                    </robot>
-                </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>YES</set> ^</pattern>
-        <that>Would you like to talk about cooking shows?</that>
-        <template>
-          <think><set name="topic">cookingshows</set></think>
-          <think><set name="dialogue">television</set></think>
-            <random>
-                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>Julia_Child.mp4</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>Martha_Stewart.mp4</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. <set name="most recent dialogue question">What were your favorite meals growing up?</set><oob>
-                    <robot></robot>
-                </oob></li></random></template>
-    </category>
-
-<!-- REDIRECT TO TV2 DIALOGUE -->
-
 
 
         <category>
@@ -336,9 +284,6 @@
                                 <image>
                                     <filename>chickenstirfryingredients.jpg</filename>
                                   </image>
-                                <options>
-                                    <option>DONE</option>
-                                </options>
                             </robot>
                         </oob>
                 </template>
@@ -450,9 +395,6 @@
                                 <image>
                                     <filename>chickpeacurryinstructions.jpg</filename>
                                   </image>
-                                <options>
-                                    <option>DONE</option>
-                                </options>
                             </robot>
                         </oob>
                 </template>
@@ -465,6 +407,7 @@
             <that>Would you like to see the ingredients for the *?</that>
                 <template>
                     <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
+                    <oob><robot></robot></oob>
                 </template>
     </category>
 
@@ -532,5 +475,57 @@
     </category>
 
     <!-- END HEALTHY RECIPES -->
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Are you still enjoying speaking about food?</that>
+        <template>
+            <set name="most recent dialogue question">Would you like to talk about cooking shows?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Are you still enjoying speaking about food?</that>
+        <template>
+            <set name="most recent dialogue question">What would you like to talk about?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about cooking shows?</that>
+        <template>
+          <think><set name="topic">cookingshows</set></think>
+          <think><set name="dialogue">television</set></think>
+            <random>
+                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>Julia_Child.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>Wonderful! Martha Stewart is my favorite because her home cooked meals always look so delicious! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                    <robot>
+                        <video>
+                            <filename>Martha_Stewart.mp4</filename>
+                        </video>
+                    </robot>
+                </oob></li>
+                <li>One of my favorite television chefs is Anthony Bourdain, who believed that memory is associated with food. <set name="most recent dialogue question">What were your favorite meals growing up?</set><oob>
+                    <robot></robot>
+                </oob></li></random></template>
+    </category>
+
+<!-- REDIRECT TO TV2 DIALOGUE -->
 
 </aiml>
