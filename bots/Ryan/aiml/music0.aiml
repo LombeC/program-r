@@ -113,6 +113,15 @@
     </category>
 
     <category>
+        <pattern>_</pattern>
+        <that>What's your favorite band?</that>
+        <template>Ah, so you like <set name="favoriteband"><star /></set>! I feel like I'm learning a lot about you. What don't I know about you at this point?
+
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>What's your favorite band?</that>
         <template><set name="most recent dialogue question">Do you want to talk about music?</set>
@@ -1065,7 +1074,7 @@
             <pattern>_</pattern>
             <that>What kind of music do you think is best for a romantic dinner?</that>
             <template>
-                For me, just put on some Frank Sinatra and you've got a romantic dinner!
+                For me, just put on some Frank Sinatra!
                 <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
                 <oob>
                     <robot></robot>
@@ -1084,12 +1093,22 @@
             </template>
         </category>
 
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Why do you think so many musicians sing about love?</that>
+            <template>
+                I bet you know a thing or two. But, I have yet to experience love! Do you have any tips?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
 
     <category>
         <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
-
             I appreciate that. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
             <oob>
                 <robot></robot>
@@ -1100,18 +1119,6 @@
     <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you have any tips?</that>
-        <template>
-
-            I'm all ears.
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>YES *</pattern>
-        <that>I'm all ears.</that>
         <template>
             I appreciate that. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
             <oob>
@@ -1124,7 +1131,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I bet you know a thing or two.<set name="most recent dialogue question">Would you say you like stories about romance?</set>
+            <set name="most recent dialogue question">Would you say you like stories about romance?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -1135,7 +1142,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I bet you know a thing or two. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
+            <set name="most recent dialogue question">Would you say you like stories about romance?</set>
             <oob>
                 <robot></robot>
             </oob>

@@ -8,7 +8,7 @@
         <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
         <template>
           <think><set name="dialogue">music</set></think>
-        
+
             <random>
 
                 <li>Jazz just makes you want to move and smile, especially Latin Jazz! <set name="most recent dialogue question">What did you think of the jazz clip?</set><oob>
@@ -103,7 +103,7 @@
         <that>What did you think of the jazz clip?</that>
         <template>
           <think><set name="data"><star/></set></think>
-
+          
           <condition name="getsentiment">
               <li value="verypositive">It pulls on my heartstrings! Figuratively, of course. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
               <li value="positive">It pulls on my heartstrings! Figuratively, of course. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>

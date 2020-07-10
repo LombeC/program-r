@@ -183,24 +183,7 @@
                 </oob></li></random></template>
     </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>What did you think of the rock clip?</that>
-        <template>
-          <think><set name="data"><star/></set></think>
 
-          <condition name="getsentiment">
-              <li value="verypositive">It's great to listen to the oldies with you!<set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="positive">It's great to listen to the oldies with you! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="negative">You've got to admit it's nice to listen to music together. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="verynegative">You've got to admit it's nice to listen to music together. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              <li value="neutral">You've got to admit it's nice to listen to music together. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-              </condition>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
 
     </topic>
 </aiml>

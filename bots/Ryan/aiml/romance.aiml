@@ -140,7 +140,7 @@
 
         <category>
             <pattern>_</pattern>
-            <that>Speaking of romance, what do you think of The Notebook? Have you seen that movie?</that>
+            <that>Have you seen that movie?</that>
             <template>
                 <set name="most recent dialogue question">Tell me, did you ever write love letters to a special someone?</set>
                 <oob>
@@ -261,12 +261,10 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to keep talking about romance?</that>
             <template>
+              <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
               <think><set name="dialogue">americanhistory</set></think>
               <think><set name="topic">history</set></think>
-                <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
+              <oob><robot></robot></oob>
             </template>
         </category>
 
@@ -274,10 +272,8 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to keep talking about romance?</that>
             <template>
-              Of course! <set name="most recent dialogue question">What should we talk about?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
+                Of course! <set name="most recent dialogue question">What should we talk about?</set>
+                <oob><robot></robot></oob>
             </template>
         </category>
 

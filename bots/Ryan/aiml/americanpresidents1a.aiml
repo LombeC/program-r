@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <topic name="history">
+
+<category>
+    <pattern>_</pattern>
+    <that>Apparently the disembodied hands were just sketches the artist thought were too good to give up.</that>
+    <template>
+        <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>Apparently the disembodied hands were just sketches the artist thought were too good to give up.</that>
+    <template>
+        <set name="most recent dialogue question">Do you know where the presidential portraits are displayed?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># SMITHSONIAN ^</pattern>
+    <that>Do you know where the presidential portraits are displayed?</that>
+    <template>
+        Yes indeed! You're good at this! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot><image>
+            <filename>CLRSCR</filename>
+        </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you know where the presidential portraits are displayed?</that>
+    <template>
+        The Smithsonian, indeed! You're good at this! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot><image>
+            <filename>CLRSCR</filename>
+        </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you know where the presidential portraits are displayed?</that>
+    <template>
+        The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot><image>
+            <filename>CLRSCR</filename>
+        </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you know where the presidential portraits are displayed?</that>
+    <template>
+        The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot><image>
+            <filename>CLRSCR</filename>
+        </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># WHERE ^</pattern>
+    <that>Do you know where the presidential portraits are displayed?</that>
+    <template>
+        The Smithsonian! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot><image>
+            <filename>CLRSCR</filename>
+        </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Would you like to hear another fact about the presidents?</that>
+    <template>
+        Ok no worries. <set name="most recent dialogue question">Would you like to keep talking about American history?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to hear another fact about the presidents?</that>
+    <template>
+        <random>
+            <li>Because of his white hair, many people think that George Washington wore a wig, but he never did so. His hair was all his own, and he diligently powdered it each morning to give his hair its distinct, in vogue look.<!-- from: http://mentalfloss.com/article/64959/george-washingtons-incredible-hair-routine --></li>
+            <li>As president, John Adams founded that United States Marine Band, the longest continuously operating band in U.S. history.<!-- from: http://mentalfloss.com/article/56841/25-facts-about-john-adams --></li>
+            <li>Thomas Jefferson was so convinced that live mammoths still existed in North America that he advised Lewis and Clarke to keep an eye out for a live mammoth as they made their way to the Pacific Ocean.<!-- from: https://www.atlasobscura.com/articles/thomas-jefferson-built-this-country-on-mastodons --></li>
+            <li>James Madison's face appeared on the five thousand dollar bill, but that denomination has been out of print since 1945.<!-- from: http://mentalfloss.com/article/62200/16-fun-facts-james-madisons-birthday --></li>
+            <li>Samuel Morse, the inventor of the telegraph machine once painted a presidential portrait of James Monroe.<!-- https://www.biography.com/news/james-monroe-biography-facts --></li>
+            <li>Louis Brandeis, the first Jewish Surpreme Court justice, was placed on the court by Woodrow Wilson.<!-- from https://constitutioncenter.org/blog/10-fascinating-facts-about-woodrow-wilson --></li>
+            <li>While living in China, Herbert Hoover's home was damaged by shelling during the Boxer Rebellion, a working class revolution that aimed to drive foreigners from China.<!-- from: http://mentalfloss.com/article/72806/7-presidential-facts-about-herbert-hoover  and  https://www.britannica.com/event/Boxer-Rebellion --></li>
+            <li>Citing World War 2, FDR remained in office for more than 12 years, longer than any other American president.<!-- from: https://www.history.com/news/9-things-you-may-not-know-about-franklin-d-roosevelt --></li>
+            <li>During his presidency, Truman ratified legislation that nearly double the minimum wage, from forty to 75 cents per hour.<!-- http://mentalfloss.com/article/550874/facts-about-harry-s-truman --></li>
+            <li>After his presidency, Dwight Eisenhower picked up painting and completed more than 200 paintings, which have been exhibited in galleries.<!-- from: http://mentalfloss.com/article/538462/facts-about-dwight-d-eisenhower --></li>
+            <li>JFK was the last president to wear a top hat to his inauguration, a tradition since James Garfield's inauguration.<!-- from http://mentalfloss.com/article/501318/25-fascinating-facts-about-john-f-kennedy --></li>
+            <li>The Civil Rights Act was passed during Lyndon B Johnson's presidency. That act ended segregation in public places and banned employment discrimination on the basis of race, color, religion, sex or national origin.<!-- from: http://mentalfloss.com/article/538464/facts-about-lyndon-b-johnson and https://www.history.com/topics/black-history/civil-rights-act --></li>
+            <li>Getting up late one night to let the family dog out to do its business, Ford exited a one way door and managed to lock himself out of the White House. Whoops!<!-- from: http://mentalfloss.com/article/548853/facts-about-gerald-ford --></li>
+            <li>President Jimmy Carter had solar panels installed on the roof of the White House and the energy produced by the panels as used to heat water in the building for nearly 7 years.<!-- http://mentalfloss.com/article/540375/facts-about-jimmy-carter --></li>
+            <li>Ronald Reagan really disliked brussel sprouts, but can you blame him?<!-- from: https://constitutioncenter.org/blog/10-interesting-facts-on-president-ronald-reagans-birthday --></li>
+            <li>In 1999, at the age of 75, George Bush Senior began celebrating his birthday by skydiving.<!-- from: https://www.dailysignal.com/2014/06/12/millie-broccoli-skydiving-14-facts-birthday-man-bush-41/ --></li>
+            <li>Bill Clinton's spoken word retelling of Peter and the Wolf was awarded a Grammy award in 2004<!-- https://en.wikipedia.org/wiki/Wolf_Tracks_and_Peter_and_the_Wolf --></li>
+            <li>George Bush Junior was the first American president to complete a marathon. It took him three hours and forty four minutes.<!-- from: https://historyplex.com/interesting-facts-about-george-w-bush --></li>
+            <li>Barack Obama grew up reading comic books and collects spider man and conan the barbarian comics to this day.<!-- from: https://www.npr.org/templates/story/story.php?storyId=97260170 --></li></random>
+        Pretty neat, huh?
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Pretty neat, huh?</that>
+    <template>
+        <set name="most recent dialogue question">Can you name any inventions the presidents have made?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Can you name any inventions the presidents have made?</that>
+    <template>
+        Do tell!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Can you name any inventions the presidents have made?</that>
+    <template>
+        <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do tell!</that>
+    <template>
+        I'll have to look that up! <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern> YES * </pattern>
+    <that>Would you like to keep talking about American History?</that>
+    <template>
+        I'll have to look that up! <set name="most recent dialogue question">Did you know James Madison invented a walking stick with a microscope on it? Can you guess what that was for?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># JAMES MADISON ^</pattern>
+    <that>Would you like to keep talking about American History?</that>
+    <template>
+        Yes! <set name="most recent dialogue question">He invented a walking stick with a microscope on it. Can you guess what that was for? </set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Can you guess what that was for?</that>
+    <template>
+        You're close. It was so he could walk in nature and look at things close up. <set name="most recent dialogue question">Do you believe that necessity is the mother of invention?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+
+<category>
+<pattern># <set>NO</set> ^</pattern>
+<that>Would you like to keep talking about American history?</that>
+<template>
+    I'm pretty good at talking about other topics too! <set name="most recent dialogue question">What would you like to talk about?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># <set>Yes</set> ^</pattern>
+<that>Would you like to keep talking about American history?</that>
+<template>
+    Fantastic! <set name="most recent dialogue question">Would you like to talk about presidents, inventions, or the voyage of the Titanic?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+
+</topic>
+
+</aiml>

@@ -95,7 +95,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>Have you read that one?</that>
           <template>
-              What a beautiful and haunting book. <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              It's a beautiful and haunting book set in a small Midwestern town in the nineteen fifties. <set name="most recent dialogue question">What's the best gift you've ever received?</set>
               <oob>
                   <robot>
                   </robot>
@@ -107,7 +107,7 @@
           <pattern># <set>No</set> ^</pattern>
           <that>Have you read that one?</that>
           <template>
-              It's a beautiful and haunting book. <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              It's a beautiful and haunting book set in a small Midwestern town in the nineteen fifties.  <set name="most recent dialogue question">What's the best gift you've ever received?</set>
               <oob>
                   <robot>
                   </robot>
@@ -119,7 +119,7 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>Have you read that one?</that>
           <template>
-              It's a beautiful and haunting book.  <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              It's a beautiful and haunting book set in a small Midwestern town in the nineteen fifties.   <set name="most recent dialogue question">What's the best gift you've ever received?</set>
               <oob>
                   <robot>
                   </robot>
@@ -131,7 +131,7 @@
           <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>What's the best gift you've ever received?</that>
           <template>
-              It's a beautiful and haunting book.  <set name="most recent dialogue question">What's the best gift you've ever received?</set>
+              It's a beautiful and haunting book set in a small Midwestern town in the nineteen fifties.   <set name="most recent dialogue question">What's the best gift you've ever received?</set>
               <oob>
                   <robot>
                   </robot>
@@ -143,7 +143,7 @@
           <pattern>_</pattern>
           <that>What's the best gift you've ever received?</that>
           <template>
-              Those moments are always so special. <set name="most recent dialogue question">Want to keep talking about books?</set>
+              Those kind of gifts are always so special. <set name="most recent dialogue question">Want to keep talking about books?</set>
               <oob>
                   <robot>
                   </robot>
@@ -202,7 +202,7 @@
             <that>Do you remember the Dust Bowl?</that>
             <template>
                 The Grapes of Wrath is probably the best drama I've read,
-                set during the time of the Dust Bowl. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
+                                                                set during the time of the Dust Bowl. <set name="most recent dialogue question">Would you like to watch a short video about the book?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -238,7 +238,7 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>Would you like to watch a short video about The Grapes of Wrath?</that>
+            <that>Would you like to watch a short video about the book?</that>
             <template>
 
                             <set name="most recent dialogue question">What real life problem do you think should be written about in a book?</set>
@@ -276,6 +276,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Would you like to keep talking about books?</that>
         <template>
+          <think><set name="topic">reading</set></think>
             <set name="most recent dialogue question">Do you prefer adventure, horror, drama, or mystery?</set>
             <oob>
                 <robot></robot>
