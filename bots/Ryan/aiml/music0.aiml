@@ -271,19 +271,7 @@
         <pattern>_</pattern>
         <that>I've been told I have two left feet.</that>
         <template>
-            Last time I tried to dance I tripped over myself. It was kind of awkward but at least it was funny!
-            <oob>
-                <robot>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_</pattern>
-        <that>It was kind of awkward but at least it was funny!</that>
-        <template>
-          So I have to ask! <set name="most recent dialogue question">What's your favorite band?</set>
+            So I have to ask! <set name="most recent dialogue question">What's your favorite band?</set>
             <oob>
                 <robot>
                 </robot>
@@ -663,32 +651,18 @@
         </category>
 
         <category>
-            <pattern># <set>yes</set> ^</pattern>
+            <pattern>_</pattern>
             <that>Was the show good?</that>
             <template>
-                Sounds like it was definitely worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+              <think><set name="data"><star/></set></think>
 
-        <category>
-            <pattern># <set>no</set> ^</pattern>
-            <that>Was the show good?</that>
-            <template>
-                Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Was the show good?</that>
-            <template>
-                Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+              <condition name="getsentiment">
+                  <li value="verypositive">Sounds like it was definitely worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+                  <li value="positive">Sounds like it was definitely worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+                  <li value="negative">Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+                  <li value="verynegative">Sounds like it wasn't really worth the money in that case. <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+                  <li value="neutral">Sounds like it was not great but not terrible. <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+                  </condition>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -961,10 +935,10 @@
               <think><set name="data"><star/></set></think>
 
               <condition name="getsentiment">
-                  <li value="verypositive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="positive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="negative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="verynegative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="verypositive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="positive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="negative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="verynegative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   <li value="neutral">Right on. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   </condition>
                 <oob>
@@ -980,10 +954,10 @@
               <think><set name="data"><star/></set></think>
 
               <condition name="getsentiment">
-                  <li value="verypositive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="positive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="negative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                  <li value="verynegative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="verypositive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="positive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="negative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                  <li value="verynegative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   <li value="neutral">I feel you. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                   </condition>
                 <oob>
@@ -1008,6 +982,61 @@
             <that>I'm curious, did you ever play an instrument?</that>
             <template>
                 Same here! <set name="most recent dialogue question">Do you like listening to music while cooking dinner?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Brass Instrument Set</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Keyboard Instrument Set</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Percussion Instrument Set</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>String Instrument Set</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Woodwind Instrument Set</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
                 <oob>
                     <robot></robot>
                 </oob>

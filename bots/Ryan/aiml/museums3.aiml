@@ -153,6 +153,39 @@
 </category>
 
 <category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
+    <template>
+      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
+    <template>
+      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
+    <template>
+      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern>_</pattern>
     <that>Where would you want to travel?</that>
     <template>

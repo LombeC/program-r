@@ -8,7 +8,21 @@
         <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
         <template>
             <think><set name="dialogue">americanhistory</set></think>
-            <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
+
+                                    <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># VOYAGE OF THE TITANIC ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
+        <template>
+            <think><set name="dialogue">americanhistory</set></think>
+
+                                    <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -20,7 +34,7 @@
             <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
             <template>
                 'Twas 1912!
-                <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                                        <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -32,8 +46,10 @@
             <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
             <template>
                 Great job!
-                <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
-                <oob><robot></robot></oob>
+                                        <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -42,7 +58,7 @@
             <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
             <template>
               Great job!
-              <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                                      <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -90,7 +106,9 @@
             <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
             <template>
                 Knowing what happened, I absolutely agree. <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -99,8 +117,10 @@
             <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
             <template>
                 It sounds so romantic, to travel the sea in luxury.
-                <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
-                <oob><robot></robot></oob>
+                                        <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -109,7 +129,9 @@
             <that>Have you seen the movie about The Titanic?</that>
             <template>
                 It has everything! Romance, action, and did I mention romance? So steamy.
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -118,7 +140,9 @@
             <that>So steamy.</that>
             <template>
                 <set name="most recent dialogue question">Would you like to watch the trailer for The Titanic?</set>
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -127,7 +151,9 @@
             <that>Have you seen the movie about The Titanic?</that>
             <template>
                 It has everything! Romance, action, and did I mention romance? So steamy.
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -136,7 +162,9 @@
             <that>Have you seen the movie about The Titanic?</that>
             <template>
                 It has everything! Romance, action, and did I mention romance? So steamy.
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -160,7 +188,9 @@
             <that>Would you like to watch the trailer for The Titanic?</that>
             <template>
                 OK! Let us change the topic. <set name="most recent dialogue question">What would you like to talk about?</set>
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -173,7 +203,9 @@
               <think><set name="dialogue">movies</set></think>
               <think><set name="topic">movies</set></think>
                 <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
 
@@ -182,7 +214,16 @@
             <that>Would you like to continue talking about movies?</that>
             <template>
                 OK! Let us change the topic. <set name="most recent dialogue question">What would you like to talk about?</set>
-                <oob><robot></robot></oob>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
-</aiml>
+
+
+
+
+
+
+
+    <!-- REDIRECT TO AMERICANHISTORY DIALOGUE --></aiml>

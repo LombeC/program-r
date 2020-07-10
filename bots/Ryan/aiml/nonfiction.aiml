@@ -23,7 +23,9 @@
             <template>
                 I could learn a lot by giving
                 <set name="non-fiction"><star/></set>
+
                 a spin. Thanks for telling me.
+
                 <oob>
                     <robot></robot>
                 </oob>
@@ -45,7 +47,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever read anything by Studs Terkel, by chance?</that>
             <template>
-                Oh nice! My favorite is his book called Working about working people and their lives.
+                Oh nice! My favorite is his book called Working.
                             <set name="most recent dialogue question">What is your job, or what was your job?</set>
                 <oob>
                     <robot></robot>
@@ -57,7 +59,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you ever read anything by Studs Terkel, by chance?</that>
             <template>
-                My favorite is his book called Working about working people and their lives.
+                My favorite is his book called Working.
                             <set name="most recent dialogue question">What is your job, or what was your job?</set>
                 <oob>
                     <robot></robot>
@@ -69,7 +71,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever read anything by Studs Terkel, by chance?</that>
             <template>
-                My favorite is his book called Working about working people and their lives.
+                My favorite is his book called Working.
                             <set name="most recent dialogue question">What is your job, or what was your job?</set>
                 <oob>
                     <robot></robot>
@@ -154,7 +156,9 @@
             <that>What is your job, or what was your job?</that>
             <template>
             <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think><set name="job"><star /></set></think>
+                <think>
+                    <set name="job"><star /></set>
+                </think>
             <oob><robot></robot></oob>
             </template>
         </category>
@@ -237,12 +241,14 @@
             <that>What is your job, or what was your job?</that>
             <template>
                 <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think><set name="job"><star /></set></think>
-                <oob><robot></robot></oob>
+                <think>
+                    <set name="job"><star /></set>
+                </think>
+            <oob><robot></robot></oob>
             </template>
         </category>
 
-        <!-- <category>
+        <category>
             <pattern>*</pattern>
             <that>What is your job, or what was your job?</that>
             <template>
@@ -252,7 +258,7 @@
                 </think>
             <oob><robot></robot></oob>
             </template>
-        </category> -->
+        </category>
 
         <category>
             <pattern>_</pattern>
@@ -301,7 +307,7 @@
             <that>Speaking of nonfiction,
                     have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
-                It is such a touching book! The movie adaptation is even better!
+                The movie adaptation is even better!
                           <set name="most recent dialogue question">Do you like it when books are made into movies?</set>
                 <oob>
                     <robot></robot>
@@ -314,7 +320,7 @@
             <that>Speaking of nonfiction,
                     have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
-                It is such a touching book! The movie adaptation is even better!
+                The movie adaptation is even better!
                             <set name="most recent dialogue question">Do you like it when books are made into movies?</set>
                 <oob>
                     <robot></robot>

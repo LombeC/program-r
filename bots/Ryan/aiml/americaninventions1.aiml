@@ -105,7 +105,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>What was it?</that>
         <template>
-            Now that's a good idea. <set name="most recent dialogue question">Did you ever get around to making it?</set>
+            <set name="most recent dialogue question">Did you ever get around to making it?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -186,7 +186,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Was it difficult to do?</that>
         <template>
-            I bet it was, at least a little bit!
+            I bet it was, at least a little!
             <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
             <oob>
                 <robot></robot>
@@ -198,7 +198,19 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Was it difficult to do?</that>
         <template>
-            I bet it was, at least a little bit!
+            I bet it was, at least a little!
+            <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Was it difficult to do?</that>
+        <template>
+            I bet it was, at least a little!
             <set name="most recent dialogue question">Do you think I'm an example of a good invention?</set>
             <oob>
                 <robot></robot>

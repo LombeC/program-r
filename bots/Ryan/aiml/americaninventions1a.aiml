@@ -228,7 +228,7 @@
     <pattern>_</pattern>
     <that>Crazy, right?</that>
     <template>
-      Even crazier how far we've come since then. <set name="most recent dialogue question">Would you call yourself a computer buff?</set>
+      <set name="most recent dialogue question">Would you call yourself a computer buff?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -269,6 +269,28 @@
 </category>
 
 <category>
+    <pattern>_</pattern>
+    <that>What company made the first personal computer?</that>
+    <template>
+      A small company named MITS made it, and Apple commercialized it later on.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What company made the first personal computer?</that>
+    <template>
+      A small company named MITS made it, and Apple commercialized it later on.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern># APPLE ^</pattern>
     <that>What company made the first personal computer?</that>
     <template>
@@ -295,6 +317,17 @@
     <that>What company made the first personal computer?</that>
     <template>
       You got it! Well, almost. A small company named MITS made it, and Apple commercialized it later on.
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>A small company named MITS made it, and Apple commercialized it later on.</that>
+    <template>
+      <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -335,6 +368,17 @@
 </category>
 
 <category>
+    <pattern># I DID ^</pattern>
+    <that>You didn't use google did you?</that>
+    <template>
+      Knew it! <set name="most recent dialogue question">Do you want to keep talking about inventions?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern># <set>YES</set> ^</pattern>
     <that>You didn't use google did you?</that>
     <template>
@@ -366,6 +410,8 @@
         </oob>
     </template>
 </category>
+
+</topic>
 
 <category>
     <pattern>_</pattern>
@@ -414,7 +460,4 @@
 
 
 
-
-
-</topic>
 </aiml>
