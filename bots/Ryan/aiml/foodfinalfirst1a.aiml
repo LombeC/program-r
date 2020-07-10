@@ -464,6 +464,20 @@
 </category>
 
 <category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What is your favorite food, my friend?</that>
+    <template>
+      <condition name="city">
+          <li value="Unknown"><set name="most recent dialogue question">Do they have good restaurants where you live?</set></li>
+          <li><set name="most recent dialogue question">You said you live in <get name="city"/>? Do they have good restaurants?</set></li>
+      </condition>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern>_</pattern>
     <that>Maybe you can make it for me sometime!</that>
     <template>
@@ -558,7 +572,7 @@
     <pattern>_</pattern>
     <that>Where was the last restaurant you went to?</that>
     <template>
-        So fun! We need to do a little lunch date sometime. <set name="most recent dialogue question">How do you feel about healthy food?</set>
+        We need to do a little lunch date sometime! <set name="most recent dialogue question">How do you feel about healthy food?</set>
         <oob>
             <robot></robot>
         </oob>

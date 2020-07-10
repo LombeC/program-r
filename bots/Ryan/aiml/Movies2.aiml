@@ -181,7 +181,7 @@
         <pattern>_</pattern>
         <that>How funny was that scene?</that>
         <template>
-            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <set name="most recent dialogue question">Does it remind you of your family gatherings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -192,7 +192,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you remember that scene?</that>
         <template>
-            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <set name="most recent dialogue question">Does it remind you of your family gatherings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -203,7 +203,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you remember that scene?</that>
         <template>
-            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <set name="most recent dialogue question">Does it remind you of your family gatherings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -214,7 +214,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you remember that scene?</that>
         <template>
-            <set name="most recent dialogue question">Does it remind you of your family holidays?</set>
+            <set name="most recent dialogue question">Does it remind you of your family gatherings?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -223,32 +223,53 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Does it remind you of your family holidays?</that>
+            <that>Does it remind you of your family gatherings?</that>
             <template>
-                <set name="most recent dialogue question">Heck, what would the holidays be without all the shenanigans and crazy family members!</set>
+                Hopefully we're not the crazy ones!
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
 
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Does it remind you of your family gatherings?</that>
+            <template>
+                Hopefully we're not the crazy ones!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>Heck, what would the holidays be without all the shenanigans and crazy family members!</that>
-        <template>
-            Hopefully we're not the crazy ones!
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Does it remind you of your family gatherings?</that>
+            <template>
+                Hopefully we're not the crazy ones!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Does it remind you of your family gatherings?</that>
+            <template>
+                Hopefully we're not the crazy ones!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
     <category>
         <pattern>_</pattern>
         <that>Hopefully we're not the crazy ones!</that>
         <template>
-            Hopefully we're not the crazy ones! <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
+            <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
             <oob>
                 <robot></robot>
             </oob>

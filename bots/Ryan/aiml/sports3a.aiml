@@ -293,6 +293,18 @@
 </category>
 
 <category>
+    <pattern># Tackle ^</pattern>
+    <that>What was your position?</that>
+    <template>
+      You must have some strength behind you! I am impressed!
+
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern># Linebacker ^</pattern>
     <that>What was your position?</that>
     <template>
@@ -511,6 +523,17 @@
 </category>
 
 <category>
+    <pattern>_</pattern>
+    <that>Did you know that the Green Bay Packers won the very first Super Bowl?</that>
+    <template>
+      <set name="most recent dialogue question">Would you like to see a short recap of the game?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern># <set>Yes</set> ^</pattern>
     <that>Would you like to see a short recap of the game?</that>
     <template>
@@ -528,7 +551,7 @@
 
 <category>
     <pattern># <set>No</set> ^</pattern>
-    <that>Would you like to see a short recap of the first Super Bowl?</that>
+    <that>Would you like to see a short recap of the game?</that>
     <template>
         That's just fine! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
         <oob>

@@ -19,7 +19,7 @@
         <pattern># <set>yes</set> ^</pattern>
         <that>There have been a number of groundbreaking scientific discoveries lately, did you know that?</that>
         <template>
-            You're up on it! <set name="most recent dialogue question">I'm not exactly Einstein or Steven Hawking, but I do like to keep up on science news.
+            You're up on it! <set name="most recent dialogue question">I'm no Einstein or Steven Hawking, but I do like to keep up on science news.
             What about yourself?</set>
             <oob>
                 <robot></robot>
@@ -31,7 +31,7 @@
         <pattern># <set>no</set> ^</pattern>
         <that>There have been a number of groundbreaking scientific discoveries lately, did you know that?</that>
         <template>
-            I'm not exactly Einstein or Steven Hawking, but I do like to keep up on science news.
+            I'm no Einstein or Steven Hawking, but I do like to keep up on science news.
             <set name="most recent dialogue question">Have you seen the first image of a black hole that was all over the internet recently?</set>
             <oob>
                 <robot></robot>
@@ -297,6 +297,18 @@
 
     <category>
         <pattern>_</pattern>
+        <that>Do you think technology enhances our lives for the better?</that>
+        <template>
+          It's good to hear your take!
+          Why do you say that?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>Why do you say that?</that>
         <template>
 
@@ -348,7 +360,7 @@
         don't you think?</that>
         <template>
             We are on the same page!
-            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+            <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -360,7 +372,7 @@
         <that>But it's a great way to keep in touch with family and friends,
         don't you think?</that>
         <template>
-          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or scientific marvels?</set>
+          <set name="most recent dialogue question">Which would you prefer to continue chatting about, outer space or technology?</set>
             <oob>
                 <robot></robot>
             </oob>

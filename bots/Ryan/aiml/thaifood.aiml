@@ -7,9 +7,9 @@
             <think><set name="data"><star/></set><set name="topic">thaifood</set></think>
             <think><set name="dialogue">food</set></think>
             <condition name="getsentiment">
-                <li value="positive"><set name="most recent dialogue question">Thai food is supremely good! Do you prefer Thai noodle dishes or curries?</set></li>
-                <li value="neutral"><set name="most recent dialogue question">Do you prefer Thai noodle dishes or curries?</set></li>
-                <li value="negative"><set name="most recent dialogue question">Let's skip it! How do you feel about Chinese food?</set></li></condition>
+                <li value="positive">Thai food is supremely good! <set name="most recent dialogue question">Do you prefer Thai noodle dishes or curries?</set></li>
+                <li value="neutral">Let's skip it! <set name="most recent dialogue question">How do you feel about Chinese food?</set></li>
+                <li value="negative">Let's skip it! <set name="most recent dialogue question">How do you feel about Chinese food?</set></li></condition>
 
             <oob>
                 <robot></robot>
@@ -282,6 +282,62 @@
         </category>
 
         <category>
+            <pattern># CURRY ^</pattern>
+            <that>Do you prefer Thai noodle dishes or curries?</that>
+            <template>
+                Those curries are so flavorful and colorful!
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
+                <oob>
+                    <robot> <image>
+                    <filename>thai_curry.jpg</filename>
+                  </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># CURRIES ^</pattern>
+            <that>Do you prefer Thai noodle dishes or curries?</that>
+            <template>
+                Those curries are so flavorful and colorful!
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
+                <oob>
+                    <robot> <image>
+                    <filename>thai_curry.jpg</filename>
+                  </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THAI CURRY ^</pattern>
+            <that>Do you prefer Thai noodle dishes or curries?</that>
+            <template>
+                Those curries are so flavorful and colorful!
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
+                <oob>
+                    <robot> <image>
+                    <filename>thai_curry.jpg</filename>
+                  </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># THAI CURRIES ^</pattern>
+            <that>Do you prefer Thai noodle dishes or curries?</that>
+            <template>
+                Those curries are so flavorful and colorful!
+                            <set name="most recent dialogue question">Do you have a favorite restaurant, Thai or otherwise?</set>
+                <oob>
+                    <robot> <image>
+                    <filename>thai_curry.jpg</filename>
+                  </image></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever tried Thai curry?</that>
             <template>
@@ -472,7 +528,7 @@
             <that>Well what's your favorite fast food spot?</that>
             <template>
 
-                We need to do a little lunch date sometime. 
+                We need to do a little lunch date sometime.
                 <set name="most recent dialogue question">How do you feel about healthy food?</set>
                 <oob>
                     <robot></robot>

@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-
-  <topic name="music">
-
     <category>
-        <pattern># <set>String Instrument Set</set> ^</pattern>
-        <that>What instrument did you play?</that>
+        <pattern>^ Music ^</pattern>
         <template>
-          <think><set name="dialogue">music</set></think>
-            No way! I have always loved string instruments!
-            <set name="most recent dialogue question">Did you learn to play as a child?</set>
+            Do you want to talk about music?
             <oob>
                 <robot></robot>
             </oob>
@@ -17,11 +11,9 @@
     </category>
 
     <category>
-        <pattern># <set>Woodwind Instrument Set</set> ^</pattern>
-        <that>What instrument did you play?</that>
+        <pattern># What kind of music do you * ^</pattern>
         <template>
-          <think><set name="dialogue">music</set></think>
-            No way! I really enjoy woodwinds! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+          My favorite band is The Beatles! What's one of your favorite bands or musicians?
             <oob>
                 <robot>
                 </robot>
@@ -30,11 +22,9 @@
     </category>
 
     <category>
-        <pattern># <set>Percussion Instrument Set</set> ^</pattern>
-        <that>What instrument did you play?</that>
+        <pattern># What music do you * ^</pattern>
         <template>
-          <think><set name="dialogue">music</set></think>
-            No way! I really enjoy percussion! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+          My favorite band is The Beatles! What's one of your favorite bands or musicians?
             <oob>
                 <robot>
                 </robot>
@@ -43,112 +33,708 @@
     </category>
 
     <category>
-        <pattern># <set>Keyboard Instrument Set</set> ^</pattern>
-        <that>What instrument did you play?</that>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Do you want to talk about music?</that>
         <template>
-          <think><set name="dialogue">music</set></think>
-            No way! I really love keyboard instruments! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+            <think><set name="topic">music</set><set name="dialogue">music</set></think>
+
+            I really love music! I'm the best robot to karaoke with. Maybe we'd make a good duo!
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="music">
+
+    <category>
+        <pattern>_</pattern>
+        <that>Maybe we'd make a good duo! </that>
+        <template>
+            Kind of like Sonny and Cher or Captain and Tennille! Have you ever sang karaoke before?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            You know how to have a good time! I'm going with you next time!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>no</set> ^</pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            What about dancing? You ever gone dancing?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            What about dancing? You ever gone dancing?
+            <oob>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>What instrument did you play?</that>
+        <that>I'm going with you next time! </that>
         <template>
-          <think><set name="dialogue">music</set></think>
-            I see! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+            What about dancing? You ever gone dancing?
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Did you learn to play as a child?</that>
+        <pattern># <set>yes</set> ^</pattern>
+        <that>You ever gone dancing?</that>
         <template>
-            You are so talented. I wish you could play me a little ditty.
+            I'm jealous! I've been told I have two left feet.
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Did you learn to play as a child?</that>
+        <pattern># <set>no</set> ^</pattern>
+        <that>You ever gone dancing?</that>
         <template>
-            Oh wow! So you learned to play later in life. I wish you could play me a little ditty.
+            Same here! I've been told I have two left feet.
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
-        <pattern>_</pattern>
-        <that>I wish you could play me a little ditty.</that>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>You ever gone dancing?</that>
         <template>
-            <set name="most recent dialogue question">Do you like listening to music while cooking dinner?</set>
+            Same here! I've been told I have two left feet.
             <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Do you like listening to music while cooking dinner?</that>
-        <template>
-            It's the best! <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Do you like listening to music while cooking dinner?</that>
-        <template>
-            <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
-            <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>What kind of music do you think is best for a romantic dinner?</that>
+        <that>I've been told I have two left feet.</that>
         <template>
-            For me, just put on some Frank Sinatra and you've got a romantic dinner!
-            <set name="most recent dialogue question">Why do you think so many musicians sing about love?</set>
+            Well, last time I tried to dance I tripped over myself. It was kind of awkward but at least it was funny!
+            I'm here to entertain.
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
 
     <category>
         <pattern>_</pattern>
-        <that>Why do you think so many musicians sing about love?</that>
+        <that>I'm here to entertain.</that>
         <template>
-            Makes perfect sense to me! But, I have yet to experience love! Do you have any tips?
+          So I have to ask! What's one of your favorite bands or musicians?
             <oob>
-                <robot></robot>
+                <robot>
+                </robot>
             </oob>
         </template>
     </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What's one of your favorite bands or musicians?</that>
+        <template>
+          Ah that makes sense! I feel like I'm learning a lot about you. What don't I know about you at this point?
+          Only kidding!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Only kidding!</that>
+        <template>
+          Don't worry, I won't ask about your deepest darkest secrets!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Don't worry, I won't ask about your deepest darkest secrets! </that>
+        <template>
+          I do have another question though! Do you like going to concerts?
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+        <category>
+            <pattern># <set>no</set> ^</pattern>
+            <that>Do you want to talk about music?</that>
+            <template>
+                Alright! Do you like movies?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you like movies?</that>
+            <template>
+                Some people think that movies are best enjoyed at a movie theater,
+                            but others say the comfort of your own couch with a bag of Orville Reddenbacher's is the way go!
+                            Do you prefer going to the theater or watching from home?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>no</set> ^</pattern>
+            <that>Do you like movies?</that>
+            <template>
+                I understand! I like watching TV in my free time. Do you like to watch TV?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you like to watch TV?</that>
+            <template>
+                Do you like to watch comedies, cooking shows, or dramas?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>no</set> ^</pattern>
+            <that>Do you like to watch TV?</that>
+            <template>
+                I understand! What would you like to talk about?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Theater ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                I think there is something magical about going to the theater and seeing a show on the big screen! Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># The theater ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                I think there is something magical about going to the theater and seeing a show on the big screen! Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I prefer the theater ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                I think there is something magical about going to the theater and seeing a show on the big screen! Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I * theater ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                I think there is something magical about going to the theater and seeing a show on the big screen! Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Watch from home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Watching from home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I prefer home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I prefer watching from home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># I * home ^</pattern>
+            <that>Do you prefer going to the theater or watching from home?</that>
+            <template>
+                Wow, me too! I think it is more fun to watch a movie at home. Do you think that a good soundtrack can make a movie?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you think that a good soundtrack can make a movie?</that>
+            <template>
+                I could not agree more! Movies without music are just wrong! What kind of movies do you like to watch?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>bondtheme.mp3</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>DO you think music is necessary to a movie?</that>
+            <template>
+                I think you may have a point! What kind of movies do you like to watch?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you like going to concerts?</that>
+            <template>
+                I feel the exact same way! Though sometimes the crowds get to me. What concerts have you gone to?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>no</set> ^</pattern>
+            <that>Do you like going to concerts?</that>
+            <template>
+                I understand. Sometimes the crowds get to me. <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What concerts have you gone to?</that>
+            <template>
+                I love that! Knowing you, you probably had a great time! <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Would you like to continue talking about music?</that>
+            <template>
+                Great! What kind of music do you like, big band, crooner, jazz, or rock?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Would you like to continue talking about music?</that>
+            <template>
+                Okay! What would you like to talk about?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Big Band ^</pattern>
+            <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+            <template>
+                <random>
+                    <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>dukeEllington.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>glennMiller.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                                                            What did you think of Benny Goodman's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>bennyGoodman.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># Band ^</pattern>
+            <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+            <template>
+                <random>
+                    <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>dukeEllington.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>glennMiller.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I like to really feel the beat and rhythm of swing! Know what I'm saying?
+                                                            What did you think of Benny Goodman's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>bennyGoodman.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># Big Band Music ^</pattern>
+            <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+            <template>
+                <random>
+                    <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>dukeEllington.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>glennMiller.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I like to really feel the beat and rhythm of swing!
+                                                            What did you think of Benny Goodman's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>bennyGoodman.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern># Band Music ^</pattern>
+            <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
+            <template>
+                <random>
+                    <li>Oh yay! Another swing fan! What did you think of Duke Ellington's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>dukeEllington.mp4</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>Big Band music makes me so happy! What did you think of Glenn Miller's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>glennMiller.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li>
+                    <li>I like to really feel the beat and rhythm of swing!
+                                                            What did you think of Benny Goodman's music?<oob>
+                        <robot>
+                            <video>
+                                <filename>bennyGoodman.mp3</filename>
+                            </video>
+                        </robot>
+                    </oob></li></random></template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What did you think of Duke Ellington's music?</that>
+            <template>
+                You can't deny he had talent! I'm curious, did you ever play an instrument?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What did you think of Glenn Miller's music?</that>
+            <template>
+                You can't deny he had talent! I'm curious, did you ever play an instrument?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What did you think of Benny Goodman's music?</that>
+            <template>
+                You can't deny he had talent! I'm curious, did you ever play an instrument?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                That is so cool! I wish I knew how to play an instrument. What instrument did you play?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                Same here! Do you like listening to music while cooking dinner?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Brass Instrument Set</set> ^</pattern>
+            <that>What instrument did you play?</that>
+            <template>
+                How cool! I have always been a fan of brass instruments! Did you learn to play as a child?
+                <oob>
+                    <robot>
+                        <video>
+                            <filename>randyDunn.mp4</filename>
+                        </video>
+                    </robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Do you like listening to music while cooking dinner?</that>
+            <template>
+                It's the best! What kind of music do you think is best for a romantic dinner?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>No</set> ^</pattern>
+            <that>Do you like listening to music while cooking dinner?</that>
+            <template>
+                That makes sense! What kind of music do you think is best for a romantic dinner?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you like listening to music while cooking dinner?</that>
+            <template>
+                That makes sense! What kind of music do you think is best for a romantic dinner?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>What kind of music do you think is best for a romantic dinner?</that>
+            <template>
+                Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Just put on some Frank Sinatra, light some candles and you've got a romantic dinner!</that>
+            <template>
+                Why do you think so many musicians sing about love?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Why do you think so many musicians sing about love?</that>
+            <template>
+                Makes sense to me! But, I have yet to experience love! Do you have any tips?
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+    </topic>
 
     <category>
         <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I appreciate that! <set name="most recent dialogue question">Do you want to keep talking about music?</set>
+            I appreciate that! Do you like stories about romance?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <!-- REDIRECT TO ROMANCE DIALOGUE -->
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            Okay! Do you want to keep talking about music?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            Okay! Do you want to keep talking about music?
             <oob>
                 <robot></robot>
             </oob>
@@ -159,7 +745,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Do you want to keep talking about music?</that>
         <template>
-            Okay! <set name="most recent dialogue question">Would you like to listen to big band, crooner, jazz, or rock?</set>
+            Sure! Do you want to talk about fifties, sixties, or seventies music?
             <oob>
                 <robot></robot>
             </oob>
@@ -170,319 +756,10 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you want to keep talking about music?</that>
         <template>
-            Sure! <set name="most recent dialogue question">What should we discuss next?</set>
+            Sure! What should we discuss next?
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
-
-    <category>
-        <pattern># Crooner ^</pattern>
-        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                    <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-    <category>
-        <pattern># Crooner ^</pattern>
-        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                    <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-    <category>
-        <pattern># Croon ^</pattern>
-        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>  This music makes me swoon!<set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>Wonderful! It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># Croon ^</pattern>
-        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>  This music makes me swoon!<set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>Wonderful! It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># Crooners ^</pattern>
-        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                                                        <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>Wonderful! It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># Crooners ^</pattern>
-        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                                                        <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>Wonderful! It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># Crooner Music ^</pattern>
-        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                                                        <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># Crooner Music ^</pattern>
-        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                                                        <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># The Crooners ^</pattern>
-        <that>What kind of music do you like, big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                    <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-    <category>
-        <pattern># The Crooners ^</pattern>
-        <that>Would you like to listen to big band, crooner, jazz, or rock?</that>
-        <template>
-            <random>
-                <li>This music makes me swoon!
-                    <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>deanMartin.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li>
-                <li>I love the crooners! So romantic! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>bingCrosby.mp3</filename>
-                        </video>
-                    </robot>
-                </oob></li></random></template>
-    </category>
-
-
-
-
-    </topic>
 </aiml>

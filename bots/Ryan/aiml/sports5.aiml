@@ -45,7 +45,7 @@
         <that>What do you think is the most impressive olympic sport?</that>
         <template>
             <set name="most recent dialogue question">What about acrobatic gymnastics?
-            Do you think you'd be any good? On a scale of one to ten.</set>
+            Do you think you'd be any good? Scale of one to ten.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -54,7 +54,7 @@
 
     <category>
         <pattern># WHAT IS ACROBATIC GYMNASTICS ^</pattern>
-        <that>On a scale of one to ten.</that>
+        <that>Scale of one to ten.</that>
         <template>
           It basically combines dance, gymnastics and calisthenics.
           <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
@@ -66,7 +66,7 @@
 
     <category>
         <pattern># WHAT S ACROBATIC GYMNASTICS ^</pattern>
-        <that>On a scale of one to ten.</that>
+        <that>Scale of one to ten.</that>
         <template>
             It basically combines dance, gymnastics and calisthenics.
             <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
@@ -78,7 +78,7 @@
 
     <category>
         <pattern>WHAT IS * </pattern>
-        <that>On a scale of one to ten.</that>
+        <that>Scale of one to ten.</that>
         <template>
           It basically combines dance, gymnastics and calisthenics.
           <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
@@ -90,7 +90,7 @@
 
     <category>
         <pattern>WHAT S * </pattern>
-        <that>On a scale of one to ten.</that>
+        <that>Scale of one to ten.</that>
         <template>
           It basically combines dance, gymnastics and calisthenics.
           <set name="most recent dialogue question">So what do you think? Would you be any good?</set>
@@ -180,6 +180,50 @@
     <category>
         <pattern>_</pattern>
         <that>On a scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Scale of one to ten.</that>
+        <template>
+            Let's start training now! Ready?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Scale of one to ten.</that>
         <template>
             Let's start training now! Ready?
             <oob>

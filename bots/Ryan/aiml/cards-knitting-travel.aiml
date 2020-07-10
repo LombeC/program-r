@@ -35,11 +35,13 @@
         </template>
     </category>
 
-    <topic name="cards">
+
         <category>
             <pattern># PLAYING ^</pattern>
             <that>Playing cards, knitting, reading, or travelling?</that>
             <template>
+              <think><set name="dialogue">cards</set></think>
+                <think><set name="topic">cards</set></think>
                 I love cards! <set name="most recent dialogue question">What is your favorite card game?</set>
                 <oob>
                     <robot></robot>
@@ -51,12 +53,16 @@
             <pattern># CARD ^</pattern>
             <that>Playing cards, knitting, reading, or travelling?</that>
             <template>
+              <think><set name="dialogue">cards</set></think>
+                <think><set name="topic">cards</set></think>
                 I love cards! <set name="most recent dialogue question">What is your favorite card game?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <topic name="cards">
 
         <category>
             <pattern>_</pattern>
@@ -73,7 +79,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>DO YOU GET TO PLAY CARDS OFTEN?</that>
             <template>
-                Good to hear! <set name="most recent dialogue question">What do you like about playing cards?</set>
+                Good to hear! <set name="most recent dialogue question">Do you prefer to play alone or with friends?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -82,6 +88,17 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
+            <that>DO YOU GET TO PLAY CARDS OFTEN?</that>
+            <template>
+                Maybe we can play cards some time. <set name="most recent dialogue question">Do you prefer to play alone or with friends?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
             <that>DO YOU GET TO PLAY CARDS OFTEN?</that>
             <template>
                 Maybe we can play cards some time. <set name="most recent dialogue question">Do you prefer to play alone or with friends?</set>
@@ -427,6 +444,20 @@
         </template>
     </category>
 
+    <category>
+        <pattern># KNIT ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+          <think><set name="dialogue">knitting</set></think>
+            <think><set name="topic">knitting</set></think>
+
+            I love knitting! <set name="most recent dialogue question">What is your favorite thing to knit?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <topic name="knitting">
         <category>
             <pattern>_</pattern>
@@ -613,6 +644,23 @@
         </template>
     </category>
 
+    <category>
+        <pattern># READ ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+          <think><set name="topic">reading</set></think>
+          <think><set name="dialogue">reading</set></think>
+          <random>
+              <li><set name="most recent dialogue question">What do you like to read?</set></li>
+              <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+              <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+              <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <!-- REDIRECT TO READING DIALOGUE -->
 
     <category>
@@ -639,6 +687,35 @@
             <oob>
                 <robot></robot>
             </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+          I understand!
+
+            <set name="most recent dialogue question">Want to hear a list of my favorite topics to chat about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to hear a list of my favorite topics to chat about?</that>
+        <template>Some of my favorite topics are television, movies, sports, science, music, and reading.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to hear a list of my favorite topics to chat about?</that>
+        <template>No problem! What would you like to chat about?
+        <oob><robot></robot></oob>
         </template>
     </category>
 

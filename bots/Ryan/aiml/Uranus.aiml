@@ -116,7 +116,7 @@
         <that>What did you think of that joke?</that>
         <template>
             <think><set name="data"><star/></set></think>
-
+            <think><set name="topic">science</set></think>
             <condition name="getsentiment">
                 <li value="verypositive">I'm glad you liked it. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set></li>
                 <li value="positive">I'm glad you liked it. <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set></li>
@@ -169,6 +169,17 @@
     <category>
         <pattern># What ^</pattern>
         <that>Are you making a joke?</that>
+        <template>
+            <set name="most recent dialogue question">In that case, what do you like about the planet Uranus?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you want to hear another joke about space?</that>
         <template>
             <set name="most recent dialogue question">In that case, what do you like about the planet Uranus?</set>
             <oob>
@@ -247,6 +258,7 @@
         <pattern>_</pattern>
         <that>So I guess that it makes sense that they orbit the planet Uranus!</that>
         <template>
+          <think><set name="topic">science</set></think>
             <set name="most recent dialogue question">What do you say we talk about a scientific discovery a little closer to earth?</set>
             <oob>
                 <robot></robot>

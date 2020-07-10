@@ -3,6 +3,27 @@
 
     <!-- CATEGORIES TO SWITCH TOPICS AND GET OUT OF CURRENT DISCUSSION -->
     <category>
+        <pattern>$STOP</pattern>
+        <template>
+            Ok. What would you like to talk about?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>$Stop</pattern>
+        <template>
+            Ok. What would you like to talk about?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>$stop</pattern>
+        <template>
+            Ok. What would you like to talk about?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>$CHANGE TOPIC</pattern>
         <template>
             Ok. What would you like to talk about?

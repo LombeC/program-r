@@ -610,7 +610,18 @@
       <pattern>_</pattern>
       <that>What did you like about playing?</that>
       <template>
-           Those are some good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+           It's almost like reliving the glory days! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What did you like about playing?</that>
+      <template>
+           <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -621,7 +632,18 @@
       <pattern>_</pattern>
       <that>What did you like about playing those sports?</that>
       <template>
-          Those are some good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          It's almost like reliving the glory days! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What did you like about playing those sports?</that>
+      <template>
+          <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -632,7 +654,18 @@
       <pattern>_</pattern>
       <that>What did you like about playing all those sports?</that>
       <template>
-           Those are some good memories. Almost like reliving the glory days, ha ha! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+           It's almost like reliving the glory days! <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What did you like about playing all those sports?</that>
+      <template>
+           <set name="most recent dialogue question">Would you like to keep talking about sports?</set>
           <oob>
               <robot></robot>
           </oob>

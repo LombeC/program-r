@@ -54,6 +54,18 @@
   </category>
 
   <category>
+      <pattern># BOTH ^</pattern>
+          <that>Are you more of a coffee or tea person?</that>
+              <template>
+                Same here. <set name="most recent dialogue question">What is your favorite type of tea?</set>
+                      <oob>
+                          <robot>
+                          </robot>
+                      </oob>
+              </template>
+  </category>
+
+  <category>
       <pattern># <set>BLACK TEA</set> ^</pattern>
           <that>What is your favorite type of tea?</that>
               <template>
@@ -273,8 +285,7 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>Would you say you like hot chocolate?</that>
               <template>
-                <think><set name="topic">dramaticmovies</set></think>
-                <think><set name="dialogue">movies</set></think>
+                
                 <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a movie!
                 Have you ever seen It's a Wonderful Life?</set>
                       <oob>
@@ -296,20 +307,6 @@
               </template>
   </category>
 
-  <category>
-      <pattern># HOT CHOCOLATE ^</pattern>
-          <that>WHAT'S YOUR FAVORITE BEVERAGE?</that>
-              <template>
-                <think><set name="topic">dramaticmovies</set></think>
-                <think><set name="dialogue">movies</set></think>
-                <set name="most recent dialogue question">One of the best things is wrapping up in a warm blanket with hot chocolate and watching a holiday movie!
-                Have you ever seen It's a Wonderful Life?</set>
-                      <oob>
-                          <robot>
-                          </robot>
-                      </oob>
-              </template>
-  </category>
 
   <category>
       <pattern># <set>YES</set> ^</pattern>
@@ -509,7 +506,7 @@
       <pattern># <set>NO</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
-
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>
@@ -522,7 +519,7 @@
       <pattern>_</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
-
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>
@@ -535,7 +532,7 @@
       <pattern># <set>YES</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
-
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>
@@ -548,7 +545,7 @@
       <pattern># <set>DON T KNOW</set> ^</pattern>
           <that>DID YOU KNOW THAT COFFEE BEANS ARE ACTUALLY THE SEED OF A BRIGHT RED FRUIT?</that>
               <template>
-
+                <think><set name="topic">fruit</set></think>
                   Some people even call it a coffee cherry! Weird, right? <set name="most recent dialogue question">Do you like fruit?</set>
                       <oob>
                           <robot>

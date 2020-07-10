@@ -28,6 +28,30 @@
         </category>
 
         <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have you ever read The Adventures of Tom Sawyer?</that>
+            <template>
+              The Adventures of Tom Saywer is about a boy living on the Mississippi river.
+              <set name="most recent dialogue question">Did you like to go exploring when you were kid?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you ever read The Adventures of Tom Sawyer?</that>
+            <template>
+              The Adventures of Tom Saywer is about a boy living on the Mississippi river.
+              <set name="most recent dialogue question">Did you like to go exploring when you were kid?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern>_</pattern>
             <that>What did you think of all the mischief Tom got into?</that>
             <template>
@@ -84,7 +108,7 @@
             </template>
         </category>
 
-  
+
 
 
     </topic>

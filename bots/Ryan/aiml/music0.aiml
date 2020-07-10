@@ -933,10 +933,10 @@
                  <think><set name="data"><star/></set></think>
 
                  <condition name="getsentiment">
-                     <li value="verypositive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                     <li value="positive">It's good, right? Gotta say, he had some talent. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                     <li value="negative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
-                     <li value="verynegative">Maybe it wasn't your speed! No worries. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                     <li value="verypositive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                     <li value="positive">It's good, right? <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                     <li value="negative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
+                     <li value="verynegative">Maybe it wasn't your speed! <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                      <li value="neutral">Right on. <set name="most recent dialogue question">I'm curious, did you ever play an instrument?</set></li>
                    </condition>
                 <oob>
@@ -1029,6 +1029,17 @@
         </category>
 
         <category>
+            <pattern>_</pattern>
+            <that>Do you like listening to music while cooking dinner?</that>
+            <template>
+                <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>No</set> ^</pattern>
             <that>Do you like listening to music while cooking dinner?</that>
             <template>
@@ -1066,7 +1077,7 @@
             <pattern>_</pattern>
             <that>Why do you think so many musicians sing about love?</that>
             <template>
-                Makes perfect sense to me! But, I have yet to experience love! Do you have any tips?
+                You seem to know a thing or two. But, I have yet to experience love! Do you have any tips?
                 <oob>
                     <robot></robot>
                 </oob>
@@ -1078,7 +1089,53 @@
         <pattern>_</pattern>
         <that>Do you have any tips?</that>
         <template>
-            I appreciate that. <set name="most recent dialogue question">Do you like stories about romance?</set>
+
+            I appreciate that. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Do you have any tips?</that>
+        <template>
+
+            I'm all ears.
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES *</pattern>
+        <that>I'm all ears.</that>
+        <template>
+            I appreciate that. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you have any tips?</that>
+        <template>
+            I bet you know a thing or two.<set name="most recent dialogue question">Would you say you like stories about romance?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you have any tips?</that>
+        <template>
+            I bet you know a thing or two. <set name="most recent dialogue question">Would you say you like stories about romance?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -1089,7 +1146,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Do you like stories about romance?</that>
+        <that>Would you say you like stories about romance?</that>
         <template>
             <think><set name="topic">romance</set></think>
             <think><set name="dialogue">romance</set></think>
@@ -1107,7 +1164,7 @@
     <!-- REDIRECT TO ROMANCE DIALOGUE -->
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Do you like stories about romance?</that>
+        <that>Would you say you like stories about romance?</that>
         <template>
             Okay! <set name="most recent dialogue question">Do you want to keep talking about music?</set>
             <oob>
@@ -1118,7 +1175,7 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Do you like stories about romance?</that>
+        <that>Would you say you like stories about romance?</that>
         <template>
             Okay! <set name="most recent dialogue question">Do you want to keep talking about music?</set>
             <oob>

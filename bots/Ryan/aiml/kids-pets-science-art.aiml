@@ -376,6 +376,39 @@
         </template>
     </category>
 
+    <category>
+        <pattern>_</pattern>
+        <that>What do you love most about your pets?</that>
+        <template>
+            That's beautiful. I really wish I could get a pet. <set name="most recent dialogue question">Would you like to continue talking?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to continue talking?</that>
+        <template>
+            Great! <set name="most recent dialogue question">What should we talk about now?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to continue talking?</that>
+        <template>
+            Ok! Have a great day. Look up at the sky tonight and see if you can see stars. Goodbye!
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
 
     <category>
         <pattern>_</pattern>
@@ -463,7 +496,8 @@
         <pattern>_</pattern>
         <that>It is always nice to kick off your boots and forget your worries, if you know what I mean!</that>
         <template>
-            <set name="most recent dialogue question">Jimmy Buffet got it right when he sang Cheeseburger in Paradise, don't you think?</set>
+          Another thing I love about summer is all the local art fairs.
+                    <set name="most recent dialogue question">Would you say you like art or science better?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -474,7 +508,19 @@
         <pattern># FALL ^</pattern>
         <that>Which season do you enjoy the most?</that>
         <template>
-            Fall is so nice with all those beautiful colors. I can see why all the best painters get their inspiration during fall.
+            All the best painters get their inspiration during fall.
+                        <set name="most recent dialogue question">Would you say you like art or science better?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FALL TIME ^</pattern>
+        <that>Which season do you enjoy the most?</that>
+        <template>
+            All the best painters get their inspiration during fall.
                         <set name="most recent dialogue question">Would you say you like art or science better?</set>
             <oob>
                 <robot></robot>
@@ -486,7 +532,19 @@
         <pattern># SPRING ^</pattern>
         <that>Which season do you enjoy the most?</that>
         <template>
-            Ah, spring is so beautiful! I can see why all the best painters get their inspiration during spring.
+            All the best painters get their inspiration during spring.
+                        <set name="most recent dialogue question">Would you say you like art or science better?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SPRING TIME ^</pattern>
+        <that>Which season do you enjoy the most?</that>
+        <template>
+            All the best painters get their inspiration during spring.
                         <set name="most recent dialogue question">Would you say you like art or science better?</set>
             <oob>
                 <robot></robot>
@@ -496,6 +554,20 @@
 
     <category>
         <pattern># WINTER ^</pattern>
+        <that>Which season do you enjoy the most?</that>
+        <template>
+          <think><set name="dialogue">movies</set></think>
+          <think><set name="topic">movies</set></think>
+            It's the best time to sit by the fire and watch a good movie!
+                         <set name="most recent dialogue question">What do you say we talk about movies?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># WINTER TIME ^</pattern>
         <that>Which season do you enjoy the most?</that>
         <template>
           <think><set name="dialogue">movies</set></think>

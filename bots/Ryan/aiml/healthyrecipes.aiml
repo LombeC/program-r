@@ -284,6 +284,9 @@
                                 <image>
                                     <filename>chickenstirfryingredients.jpg</filename>
                                   </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
                             </robot>
                         </oob>
                 </template>
@@ -395,6 +398,9 @@
                                 <image>
                                     <filename>chickpeacurryinstructions.jpg</filename>
                                   </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
                             </robot>
                         </oob>
                 </template>
@@ -407,7 +413,6 @@
             <that>Would you like to see the ingredients for the *?</that>
                 <template>
                     <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
-                    <oob><robot></robot></oob>
                 </template>
     </category>
 

@@ -92,7 +92,7 @@
             <pattern># LICE ^</pattern>
             <that>Just guess.</that>
             <template>
-                You got it! You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
+                You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -107,7 +107,7 @@
             <pattern># INSECT ^</pattern>
             <that>Just guess.</that>
             <template>
-                Yes! It's lice. You're good at Jeopardy. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
+                Yes! It's lice. Next question. <set name="most recent dialogue question">How many continents have dinosaur fossils been found on?</set>
                 <oob>
                     <robot>
                         <image>
@@ -368,6 +368,17 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Did you know that the Smithsonian houses all of the presidential portraits?</that>
+            <template>
+                <set name="most recent dialogue question">Want to see the strangest presidential portrait?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
             <that>Did you know that the Smithsonian houses all of the presidential portraits?</that>
             <template>
                 <set name="most recent dialogue question">Want to see the strangest presidential portrait?</set>

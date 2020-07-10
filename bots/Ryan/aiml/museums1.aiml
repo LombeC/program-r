@@ -203,7 +203,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                I feel you! <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
+                <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -214,7 +214,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever been on a road trip?</that>
             <template>
-                I feel you! <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
+                <set name="most recent dialogue question">Where would you like to travel, if you could?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -225,8 +225,8 @@
             <pattern>_</pattern>
             <that>Where did you go?</that>
             <template>
-                I am just imagining you there now! Wish I could see pictures! <set name="most recent dialogue question">Would you like to look at some Route sixty six highlights?
-                </set>
+                I am just imagining you there now! <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
+                
                 <oob>
                     <robot></robot>
                 </oob>
@@ -237,7 +237,7 @@
             <pattern>_</pattern>
             <that>Where have you road tripped to?</that>
             <template>
-                I am just imagining you there now! Wish I could see pictures!
+                I am just imagining you there now!
                 <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
@@ -249,7 +249,7 @@
             <pattern>_</pattern>
             <that>Where would you like to travel, if you could?</that>
             <template>
-                I am just imagining you there now! You'll have to take pictures when you go!
+                I am just imagining you there now!
                         <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
                 <oob>
                     <robot></robot>
@@ -260,7 +260,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Would you like to look at some Route sixty six highlights?</that>
+        <that>Can I show you some Route sixty six highlights?</that>
         <template>
             <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
             <oob>
@@ -287,7 +287,7 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Would you like to look at some Route sixty six highlights?</that>
+        <that><set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set></that>
         <template>
             Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>

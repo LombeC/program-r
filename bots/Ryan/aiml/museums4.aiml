@@ -247,10 +247,10 @@
             <that>What do you think about this painting?</that>
             <template>
               It's called The Feast of the Bean King.
-              I like the guy's scrunched up face in the middle of the painting.
+              I like the guy's scrunched up face in the middle.
                 <oob>
                     <robot><image>
-                        <filename>Jacob_Jordaens.jpg</filename>
+                        <filename>Jacob_Jordaens_2.jpg</filename>
                     </image>
                     </robot>
                 </oob>
@@ -262,10 +262,10 @@
             <that>What do you think about this painting?</that>
             <template>
               It's called The Feast of the Bean King.
-              I like the guy's scrunched up face in the middle of the painting.
+              I like the guy's scrunched up face in the middle.
                 <oob>
                     <robot><image>
-                        <filename>Jacob_Jordaens.jpg</filename>
+                        <filename>Jacob_Jordaens_2.jpg</filename>
                     </image>
                     </robot>
                 </oob>
@@ -274,12 +274,12 @@
 
         <category>
             <pattern>_</pattern>
-            <that>I like the guy's scrunched up face in the middle of the painting.</that>
+            <that>I like the guy's scrunched up face in the middle.</that>
             <template>
               Makes me laugh every time! <set name="most recent dialogue question">Would you like to keep discussing art museums?</set>
                 <oob>
                     <robot><image>
-                        <filename>Jacob_Jordaens.jpg</filename>
+                        <filename>Jacob_Jordaens_2.jpg</filename>
                     </image>
                     </robot>
                 </oob>
@@ -288,12 +288,12 @@
 
         <category>
             <pattern>*</pattern>
-            <that>I like the guy's scrunched up face in the middle of the painting.</that>
+            <that>I like the guy's scrunched up face in the middle.</that>
             <template>
               Makes me laugh every time! <set name="most recent dialogue question">Would you like to keep discussing art museums?</set>
                 <oob>
                     <robot><image>
-                        <filename>Jacob_Jordaens.jpg</filename>
+                        <filename>Jacob_Jordaens_2.jpg</filename>
                     </image>
                     </robot>
                 </oob>
@@ -328,7 +328,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love this picture. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -343,7 +343,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love this picture. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -358,7 +358,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever seen any paintings by Monet?</that>
             <template>
-                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love his Stacks of Wheat series. What does it remind you of?</set>
+                <set name="most recent dialogue question">His most famous painting is The Water Lily Pond, but I really love this picture. What does it remind you of?</set>
                 <oob>
                     <robot>
                         <image>
@@ -400,7 +400,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Have you ever liked to make art?</that>
             <template>
-                Me either! <set name="most recent dialogue question">What else are you talented at?</set>
+                Me either! <set name="most recent dialogue question">What else are you good at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -411,7 +411,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Have you ever liked to make art?</that>
             <template>
-                I understand! <set name="most recent dialogue question">What else are you talented at?</set>
+                I understand! <set name="most recent dialogue question">What else are you good at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -422,7 +422,7 @@
             <pattern>_</pattern>
             <that>What did you make?</that>
             <template>
-                You must be a natural born talent! <set name="most recent dialogue question">What else are you talented at?</set>
+                You must be a natural born talent! <set name="most recent dialogue question">What else are you good at?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -431,7 +431,7 @@
 
         <category>
             <pattern>_</pattern>
-            <that>What else are you talented at?</that>
+            <that>What else are you good at?</that>
             <template>
                 I love being around talented people! <set name="most recent dialogue question">Did you know that Picasso discovered his talent at age seven?</set>
                 <oob>

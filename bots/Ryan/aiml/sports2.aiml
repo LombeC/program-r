@@ -31,23 +31,9 @@
           <that>Did you start playing baseball when you were young?</that>
           <template>
               So you are somewhat of a pro!
-              <set name="most recent dialogue question">What's your favorite memory of playing ball?</set>
+              <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
               <oob>
                   <robot>
-                  </robot>
-              </oob>
-          </template>
-      </category>
-
-      <category>
-          <pattern>_</pattern>
-          <that>What's your favorite memory of playing ball?</that>
-          <template>
-              Pretty nostalgic, isn't it? <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
-              <oob>
-                  <robot><image>
-                    <filename>Baseball_Diamond.jpg</filename>
-                </image>
                   </robot>
               </oob>
           </template>
@@ -59,9 +45,7 @@
           <template>
               Ah, so you were a little older! <set name="most recent dialogue question">What's your favorite position, pitcher, catcher, in field, or outfield?</set>
               <oob>
-                  <robot><image>
-                    <filename>CLRSCR</filename>
-                </image>
+                  <robot>
                   </robot>
               </oob>
           </template>
@@ -185,7 +169,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you played outfield?</that>
             <template>
-              Something tells me you probably remember good old Hank Aaron, arguably the game's greatest outfielder.
+              Something tells me you probably remember Hank Aaron, arguably the game's greatest outfielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -199,7 +183,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you played outfield?</that>
             <template>
-              Something tells me you probably remember good old Hank Aaron, arguably the game's greatest outfielder.
+              Something tells me you probably remember Hank Aaron, arguably the game's greatest outfielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -237,7 +221,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you played in field?</that>
             <template>
-              Something tells me you probably remember good old Cal Ripkin Junior, arguably the game's greatest in fielder.
+              Something tells me you probably remember Cal Ripkin Junior, arguably the game's greatest in fielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -251,7 +235,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you played in field?</that>
             <template>
-              Something tells me you probably remember good old Cal Ripkin Junior, arguably the game's greatest in fielder.
+              Something tells me you probably remember Cal Ripkin Junior, arguably the game's greatest in fielder.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -289,7 +273,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>So you were a pitcher?</that>
             <template>
-              Something tells me you probably remember good old Lefty Grove, the game's greatest left handed pitcher.
+              Something tells me you probably remember Lefty Grove, the game's greatest left handed pitcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -303,7 +287,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>So you were a pitcher?</that>
             <template>
-              Something tells me you probably remember good old Lefty Grove, the game's greatest left handed pitcher.
+              Something tells me you probably remember Lefty Grove, the game's greatest left handed pitcher.
               <set name="most recent dialogue question">Who is your favorite ball player of all time?</set>
                 <oob>
                     <robot><image>
@@ -427,7 +411,7 @@
             <pattern>_</pattern>
             <that>Who is your favorite ball player of all time?</that>
             <template>
-              <set name="most recent dialogue question">Wouldn't it be blasphemous to not even mention Babe Ruth, the Great Bambino?</set>
+              I'll have to look them up! <set name="most recent dialogue question">Wouldn't it be blasphemous to not even mention Babe Ruth, the Great Bambino?</set>
                 <oob>
                     <robot><image>
                     <filename>CLRSCR</filename>

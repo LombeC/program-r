@@ -122,10 +122,66 @@
     </template>
 </category>
 <category>
+    <pattern>BUFFALO CAULIFLOWER WINGS</pattern>
+    <template>
+      <think><set name="topic">wings</set></think>
+      <think><set name="dialogue">food</set></think>
+      <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>BUFFALO CAULIFLOWER</pattern>
+    <template>
+      <think><set name="topic">wings</set></think>
+      <think><set name="dialogue">food</set></think>
+      <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CAULIFLOWER WINGS</pattern>
+    <template>
+      <think><set name="topic">wings</set></think>
+      <think><set name="dialogue">food</set></think>
+      <set name="most recent dialogue question">Would you like to see a recipe for how to make this type of wing?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CAULIFLOWER TACOS</pattern>
+    <template>
+      <think><set name="topic">cauliflowertacos</set></think>
+      <think><set name="dialogue">food</set></think>
+      <set name="most recent dialogue question">Would you like to see a recipe for easy and healthy cauliflower tacos?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>CARDS</pattern>
     <template><think><set name="dialogue">cards</set></think>
       <think><set name="topic">cards</set></think>
       I love cards! <set name="most recent dialogue question">What is your favorite card game?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CHICKPEA CURRY</pattern>
+    <template><think><set name="topic">chickpeacurry</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see a recipe for an easy and healthy chickpea curry?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CHICKPEA</pattern>
+    <template><think><set name="topic">chickpeacurry</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see a recipe for an easy and healthy chickpea curry?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CASHEW CHICKEN STIR FRY</pattern>
+    <template><think><set name="topic">chickenstirfry</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see a recipe for an easy and healthy chicken stir fry?</set><oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>CHICKEN STIR FRY</pattern>
+    <template><think><set name="topic">chickenstirfry</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see a recipe for an easy and healthy chicken stir fry?</set><oob><robot></robot></oob>
     </template>
 </category>
 <category>
@@ -471,12 +527,24 @@
     <template><think><set name="dialogue">movies</set></think>What do you say we talk about movies?<oob><robot></robot></oob>
     </template>
 </category>
-<!-- <category>
+<category>
     <pattern>MUSICALS</pattern>
     <template><think><set name="topic">musicals</set></think>
     <think><set name="dialogue">movies</set></think>What do you think of The Sound of Music?<oob><robot></robot></oob>
     </template>
-</category> -->
+</category>
+<category>
+    <pattern>NAAN</pattern>
+    <template><think><set name="topic">indianfood</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>The Smithsonian is a marvel of natural history! Would you like to see a video on the dinosaur exhibit?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>NAAN RECIPE</pattern>
+    <template><think><set name="topic">indianfood</set></think>
+    <think><set name="dialogue">food</set></think><set name="most recent dialogue question">Would you like to see an easy recipe for making naan at home?</set>The Smithsonian is a marvel of natural history! Would you like to see a video on the dinosaur exhibit?<oob><robot></robot></oob>
+    </template>
+</category>
 <category>
     <pattern>NATIONAL SMITHSONIAN</pattern>
     <template><think><set name="dialogue">museums</set></think><think><set name="topic">smithsonian</set></think>The Smithsonian is a marvel of natural history! Would you like to see a video on the dinosaur exhibit?<oob><robot></robot></oob>
@@ -549,13 +617,19 @@
 <category>
     <pattern>PRESIDENT</pattern>
     <template><think><set name="dialogue">americanhistory</set></think>
-    <think><set name="topic">history</set></think>Who do you consider to be your favorite American President?<oob><robot></robot></oob>
+    <think><set name="topic">history</set></think>Who do you consider to be your favorite American president?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
     <pattern>PRESIDENTS</pattern>
     <template><think><set name="dialogue">americanhistory</set></think>
-    <think><set name="topic">history</set></think>Who do you consider to be your favorite American President?<oob><robot></robot></oob>
+    <think><set name="topic">history</set></think>Who do you consider to be your favorite American president?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>AMERICAN PRESIDENTS</pattern>
+    <template><think><set name="dialogue">americanhistory</set></think>
+    <think><set name="topic">history</set></think>Who do you consider to be your favorite American president?<oob><robot></robot></oob>
     </template>
 </category>
     <category>
@@ -568,6 +642,16 @@
             <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
             <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random><oob><robot></robot></oob>
         </template>
+    </category>
+    <category>
+        <pattern>RECIPES</pattern>
+        <template><think><set name="topic">food</set></think>
+        <think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern>RECIPE</pattern>
+        <template><think><set name="topic">food</set></think>
+        <think><set name="dialogue">food</set></think>Do you want to see a recipe that you could easily prepare at home?<oob><robot></robot></oob></template>
     </category>
     <category>
         <pattern>ROMANCE</pattern>

@@ -1,25 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
+  <topic name="history">
+
     <category>
         <pattern># TITANIC ^</pattern>
         <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN PRESIDENTS, AMERICAN INVENTIONS, OR THE VOYAGE OF THE TITANIC?</that>
         <template>
-            <think><set name="topic">titanic</set></think>
+            <think><set name="dialogue">americanhistory</set></think>
 
-            One of the most infamous tragedies.
-                                    If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?
+                                    <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
             <oob>
                 <robot></robot>
             </oob>
         </template>
     </category>
 
-    <topic name="titanic">
+        <category>
+            <pattern>_</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+                'Twas 1912!
+                                        <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># 1912 ^</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+                Great job!
+                                        <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># NINETEEN TWELVE ^</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+              Great job!
+                                      <set name="most recent dialogue question">How much do you think the Titanic cost to make? Hint: it's over 50 million.</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># TWO HUNDRED MILLION ^</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+              Wow, you got it!
+              <set name="most recent dialogue question">If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># 200 MILLION ^</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+              Wow, you got it!
+              <set name="most recent dialogue question">If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Jeopardy question: what year did the Titanic set out across the Atlantic?</that>
+            <template>
+              It was 200 million!
+              <set name="most recent dialogue question">If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
         <category>
             <pattern># <set>NO</set> ^</pattern>
             <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
             <template>
-                Knowing what happened, I absolutely agree. Have you seen the movie about The Titanic?
+                Knowing what happened, I absolutely agree. <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -31,7 +104,7 @@
             <that>IF YOU HAD BEEN GIVEN THE OPPORTUNITY TO TRAVEL ON THE TITANIC, DO YOU THINK YOU WOULD HAVE TAKEN IT?</that>
             <template>
                 It sounds so romantic, to travel the sea in luxury.
-                                        Have you seen the movie about The Titanic?
+                                        <set name="most recent dialogue question">Have you seen the movie about The Titanic?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -42,7 +115,40 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Have you seen the movie about The Titanic?</that>
             <template>
-                Would you like to watch the trailer for The Titanic?
+                It has everything! Romance, action, and did I mention romance? So steamy.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>So steamy.</that>
+            <template>
+                <set name="most recent dialogue question">Would you like to watch the trailer for The Titanic?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have you seen the movie about The Titanic?</that>
+            <template>
+                It has everything! Romance, action, and did I mention romance? So steamy.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have you seen the movie about The Titanic?</that>
+            <template>
+                It has everything! Romance, action, and did I mention romance? So steamy.
                 <oob>
                     <robot></robot>
                 </oob>
@@ -53,7 +159,7 @@
             <pattern># <set>YES</set> ^</pattern>
             <that>Would you like to watch the trailer for The Titanic?</that>
             <template>
-                I feel like I just watched the film again! What did you think of Titanic when you watched it?
+                I feel like I just watched the film again! <set name="most recent dialogue question">Would you like to continue talking about movies?</set>
                 <oob>
                     <robot>
                         <video>
@@ -68,19 +174,22 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Would you like to watch the trailer for The Titanic?</that>
             <template>
-                I like a lot of things about that movie, but what I love most of all is the music. Would prefer to listen to one of the songs instead?
+                OK! Let us change the topic. <set name="most recent dialogue question">What would you like to talk about?</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        </topic>
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Have you seen the movie about The Titanic?</that>
+            <that>Would you like to continue talking about movies?</that>
             <template>
-                It has everything! Romance, action, and did I mention romance?
-                                    Would you like to watch the trailer for The Titanic?
+              <think><set name="dialogue">movies</set></think>
+              <think><set name="topic">movies</set></think>
+                <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -88,34 +197,20 @@
         </category>
 
         <category>
-            <pattern>_</pattern>
-            <that>WHAT DID YOU THINK OF TITANIC WHEN YOU WATCHED IT?</that>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Would you like to continue talking about movies?</that>
             <template>
-                <think><set name="data"><star/></set></think>
-
-                <condition name="getsentiment">
-                    <li value="verypositive">I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
-                                                       What do you say we talk about real American history?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="positive">I'm so glad you like it too! That said, I'm not sure how true the movie is to the actual event.
-                                                     What do you say we talk about real American history?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="neutral">I totally understand! I'm not sure how true the movie is to the actual event.
-                                                     What do you say we talk about real American history?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="negative">I totally understand! I'm not sure how true the movie is to the actual event.
-                                                        What do you say we talk about real American history?<oob>
-                        <robot></robot>
-                    </oob></li>
-                    <li value="verynegative">I totally understand! I'm not sure how true the movie is to the actual event.
-                                                     What do you say we talk about real American history?<oob>
-                        <robot></robot>
-                    </oob></li></condition>
+                OK! Let us change the topic. <set name="most recent dialogue question">What would you like to talk about?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
             </template>
         </category>
-    </topic>
+
+
+
+
+
+
 
     <!-- REDIRECT TO AMERICANHISTORY DIALOGUE --></aiml>

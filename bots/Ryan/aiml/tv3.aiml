@@ -97,7 +97,7 @@
             <template>
               <condition name="birthplace">
                           <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's your favorite show?</set></li>
-                          <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama?</set></li>
+                          <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama would you say?</set></li>
                       </condition>
                 <oob>
                     <robot></robot>
@@ -218,6 +218,27 @@
             </template>
         </category>
 
+        <category>
+            <pattern>_</pattern>
+            <that>What's your favorite drama would you say?</that>
+            <template>
+                You have good taste! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What's your favorite drama would you say?</that>
+            <template>
+                <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>

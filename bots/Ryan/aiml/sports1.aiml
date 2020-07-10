@@ -1407,10 +1407,10 @@
   </category>
 
   <category>
-      <pattern># <set>NO</set> ^</pattern>
+      <pattern># <set>YES</set> ^</pattern>
       <that>Did you know that former coach Jerry Sloan began his career with the Chicago Bulls?</that>
       <template>
-          Yep! He played for the Bulls in the 60's and 70's and later became coach. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          Of course you did! He played for the Bulls in the 60's and 70's and later became coach. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -1418,10 +1418,10 @@
   </category>
 
   <category>
-      <pattern># <set>YES</set> ^</pattern>
+      <pattern># <set>NO</set> ^</pattern>
       <that>Did you know that former coach Jerry Sloan began his career with the Chicago Bulls?</that>
       <template>
-          Of course you did! He played for the Bulls in the 60's and 70's and later became coach. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
+          Yep! He played for the Bulls in the 60's and 70's and later became coach. <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -2376,7 +2376,7 @@
       <pattern># <set>YES</set> ^</pattern>
       <that>Did you know that Allen Iverson played for the Nuggets?</that>
       <template>
-          Of course you did! They are also the only former ABA team that has yet to reach the finals.
+          Of course you did! 
 
           <set name="most recent dialogue question">Who would you say is the best player in the history of the game?</set>
           <oob>

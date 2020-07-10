@@ -125,10 +125,73 @@
         </category>
 
         <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What were your favorite meals growing up?</that>
+            <template>
+                <set name="most recent dialogue question">Do you enjoy cooking for other people?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you enjoy cooking for other people?</that>
             <template>
-                Awesome! <set name="most recent dialogue question">What do you usually cook?</set>
+                <condition name="favoritefood">
+                    <li value="Unknown">Awesome! <set name="most recent dialogue question">What do you usually cook?</set></li>
+                    <li>I know your favorite food is <get name="favoritefood"/>. <set name="most recent dialogue question">Perhaps you could cook that for me sometime?</set></li>
+                </condition>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>Yes</set> ^</pattern>
+            <that>Perhaps you could cook that for me sometime?</that>
+            <template>
+                Awesome! I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Perhaps you could cook that for me sometime?</that>
+            <template>
+                I understand! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Perhaps you could cook that for me sometime?</that>
+            <template>
+                I understand! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Perhaps you could cook that for me sometime?</that>
+            <template>
+                <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+
                 <oob>
                     <robot></robot>
                 </oob>
@@ -195,7 +258,7 @@
             <that>Would you like to keep talking about food and cooking shows?</that>
             <template>
                 I always think of that saying "if you can't stand the heat, get out of the kitchen".
-                <set name="most recent dialogue question">Have you ever seen cooking competitions like this one?</set>
+                                                                                                                                      <set name="most recent dialogue question">Have you ever seen cooking competitions like this one?</set>
                 <oob>
                     <robot>
                         <video>
@@ -330,9 +393,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Are you an adventurous eater?</that>
             <template>
-              <think><set name="topic">adventure</set></think>
-              <think><set name="dialogue">reading</set></think>
-                You are such an adventurous spirit! <set name="most recent dialogue question">Have you ever read The Adventures of Tom Sawyer?</set>
+                You are such an adventurous spirit! <set name="most recent dialogue question">What do you like to do for fun?</set>
                 <oob>
                     <robot></robot>
                 </oob>

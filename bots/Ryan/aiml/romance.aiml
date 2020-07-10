@@ -25,6 +25,17 @@
         </template>
     </category>
 
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like stories about romance?</that>
+        <template>
+            Not a problem! What should we chat about?
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <topic name="romance">
 
       <category>
@@ -193,8 +204,53 @@
             <pattern>_</pattern>
             <that>Have any tips?</that>
             <template>
-                Sage advice. Thank you.
-                <set name="most recent dialogue question">Would you like to keep talking about romance?</set>
+
+                I appreciate that. <set name="most recent dialogue question">Would you like to keep talking about romance?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Have any tips?</that>
+            <template>
+
+                I'm all ears.
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>YES *</pattern>
+            <that>Have any tips?</that>
+            <template>
+                I appreciate that. <set name="most recent dialogue question">Would you like to keep talking about romance?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Have any tips?</that>
+            <template>
+                I bet you know a thing or two.<set name="most recent dialogue question">Would you like to keep talking about romance?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Have any tips?</that>
+            <template>
+                I bet you know a thing or two. <set name="most recent dialogue question">Would you like to keep talking about romance?</set>
                 <oob>
                     <robot></robot>
                 </oob>

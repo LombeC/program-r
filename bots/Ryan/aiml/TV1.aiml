@@ -75,7 +75,7 @@
         <pattern>_</pattern>
         <that>How would you describe your sense of humor?</that>
         <template>
-            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            So that's what tickles your funny bone! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -86,7 +86,7 @@
         <pattern>*</pattern>
         <that>How would you describe your sense of humor?</that>
         <template>
-            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            So that's what tickles your funny bone! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -97,7 +97,7 @@
         <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>How would you describe your sense of humor?</that>
         <template>
-            I feel like I know you even better now! <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
+            <set name="most recent dialogue question">Can I show you a clip you might find funny?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -128,6 +128,17 @@
                     </video>
                     </robot>
                 </oob></li></random></template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Can I show you a clip you might find funny?</that>
+        <template>
+            No problem. <set name="most recent dialogue question">What's your favorite show?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
     </category>
 
     <category>
