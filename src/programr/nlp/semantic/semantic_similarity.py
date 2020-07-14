@@ -4,7 +4,8 @@ import torch
 
 from programr.utils.logging.ylogger import YLogger
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline, RobertaModel, DistilBertModel, AutoTokenizer, AutoModel
+from transformers import (DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline,
+                         RobertaModel, RobertaTokenizer, RobertaConfig, RobertaForMaskedLM, DistilBertModel, AutoTokenizer, AutoModel)
 
 class SemanticSimilarity():
 
@@ -128,17 +129,33 @@ class SemanticClassifer:
 
 if __name__ == "__main__":
     # NOTE: Example of loading in roberta model
-    tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
-    model = RobertaModel.from_pretrained('distilroberta-base')
-    input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
-    outputs = model(input_ids)
-    print(outputs)
-
-    # tokenizer = AutoTokenizer.from_pretrained('/home/jarid/.cache/torch/transformers')
-    # model = AutoModel.from_pretrained('/home/jarid/.cache/torch/transformers')
+    # tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
+    # model = RobertaModel.from_pretrained('roberta-base')
     # input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
     # outputs = model(input_ids)
     # print(outputs)
+
+
+    # # Initializing a RoBERTa configuration
+    # configuration = RobertaConfig()
+    # # Initializing a model from the configuration
+    # model = RobertaModel(configuration)
+    # # Accessing the model configuration
+    # configuration = model.config
+    # print("model: {}".format(model))
+
+
+
+
+
+    tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+    model = RobertaForMaskedLM.from_pretrained('roberta-base')
+    input_ids = tokenizer("Hello, my dog is cute", return_tensors="pt")["input_ids"]
+    outputs = model(input_ids, labels=input_ids)
+    loss, prediction_scores = outputs[:2]
+    print("prediction_scores: {}".format(prediction_scores))
+
+
     
     # NOTE: Tensorflow version
     # semantic_similarity = EmbeddingSemanticSimilarity()
