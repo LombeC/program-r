@@ -137,9 +137,9 @@ class ConversationMongodbStorage(ConversationStorage):
                 # print("Writing new user to database")
                 document = {
                     "userid": client_context.userid,
-                    "name": "Uknown",
-                    "location": "Uknown", 
-                    "time zone": "Uknown"
+                    "name": "Unknown",
+                    "location": "Unknown", 
+                    "time zone": "Unknown"
                 }
                 # self.db['user_info'].insert_one(document)
             # return user_info
