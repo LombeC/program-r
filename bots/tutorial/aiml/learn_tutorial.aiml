@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
-<category>
+<!-- <category>
     <pattern>bad answer</pattern>
     <template>
     <think>
@@ -34,7 +34,7 @@
     <pattern>*</pattern>
     <that>Ok, what should I have said?</that>
     <template>
-        <!-- <think> -->
+        <think>
             <learn>
                 <category>
                     <pattern>
@@ -45,7 +45,7 @@
                     </template>
                 </category>
             </learn>
-        <!-- </think> -->
+        </think>
         I will try to remember that.
     </template>
 </category>
@@ -74,7 +74,7 @@
     </learn>
     Ok I will try to remember that.
   </template>
-</category>
+</category> -->
 
 <category>
     <pattern>I LIKE COFFEE</pattern>
@@ -86,6 +86,19 @@
         <template>You like coffee.</template>
         </category>
     </learn>
+    </template>
+</category>
+
+<category>
+    <pattern>I HATE TEA</pattern>
+    <template>
+    I will remember that you hate tea.
+    <learnf>
+        <category>
+        <pattern>WHAT DO I HATE</pattern>
+        <template>You hate tea.</template>
+        </category>
+    </learnf>
     </template>
 </category>
 
