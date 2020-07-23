@@ -132,28 +132,30 @@ def parse_lis(elt):
     return random_string
 
 def check_for_think(template):
-    think = template.find("think")
+    thinks = template.findall("think")
 
-    if think is None:
+    if thinks is None:
         return template
 
     else:
         # template_list = list(template.iter())
         # print("template before removing think: {}".format(template_list))
-        text = think.tail.strip()
-        template.remove(think)
-        if text is not None:
-            if template.text is None:
-                template.text = text
-            else:
-                template.text += text
-        # template_list = list(template.iter())
-        # print("template after removing think: {}".format(template_list))
+        for think in thinks:
+            text = think.tail.strip()
+            template.remove(think)
+            if text is not None:
+                if template.text is None:
+                    template.text = text
+                else:
+                    template.text += text
+            # template_list = list(template.iter())
+            # print("template after removing think: {}".format(template_list))
         return template
 
 
 def parse_categories(categories, output_file, bot_node, get_node, aiml_file, texts):
     try:
+        seen = set()
         questions = []
         for category in categories:
             pattern_text = ""
@@ -301,6 +303,14 @@ def parse_categories(categories, output_file, bot_node, get_node, aiml_file, tex
 
             f = open("results/questions.txt", "a")
             f.write(question + "\n")
+
+            if response[0:6] != "<srai>" and response.lower() not in seen and response.lower().strip() is not "unknown":
+                # seen = write_responses(response, seen)
+                f = open("results/responses.txt", "a")
+                f.write(response + "\n")
+                response = response.lower()
+                seen.add(response)
+                
             
         print("completed")
         return questions
@@ -312,6 +322,17 @@ def parse_categories(categories, output_file, bot_node, get_node, aiml_file, tex
             f = open("results/failed_loads.txt", "a")
             f.write(line)
             f.close()
+
+def write_responses(response, seen):
+    with open("results/responses.txt", "a") as f:
+        for line in f:
+            line_lower = line.lower()
+            if line_lower in seen:
+                f.write("")
+            else:
+                seen.add(line_lower)
+                f.write(response + "\n")
+    return seen
 
 if __name__ == '__main__':
 

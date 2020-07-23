@@ -16,6 +16,16 @@ then
     sudo rm ./results/failed_loads.txt
 fi
 
+if [ -f "./results/questions.txt" ] 
+then
+    sudo rm ./results/questions.txt
+fi
+
+if [ -f "./results/responses.txt" ] 
+then
+    sudo rm ./results/responses.txt
+fi
+
 for f in $FILES
 do
     basename=$(basename $f)

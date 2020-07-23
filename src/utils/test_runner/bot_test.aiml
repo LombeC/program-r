@@ -2,6 +2,13 @@
 <aiml version="2.0">
 
     <category>
+        <pattern>ACTION</pattern>
+        <template><think><set name="topic">action</set></think>
+        <think><set name="dialogue">movies</set></think>Would you say you prefer Bond, James Bond or Indiana Jones?<oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>IMPRESSIVE</pattern>
         <template>I am happy that you're impressed, <get name="name"/>.
         <oob><robot></robot></oob>
@@ -110,6 +117,16 @@
                 </set>
             </think>
         <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ADVENTURE ^</pattern>
+        <that>Do you prefer adventure, horror, drama, or mystery?</that>
+        <template>
+            <think><set name="topic">adventure</set></think>
+            There's nothing like a good adventure story to liven things up! Have you ever read The Adventures of Tom Sawyer?
+            <oob><robot></robot></oob>
         </template>
     </category>
 

@@ -14,10 +14,9 @@ class ClientContext(object):
         self._question_depth = 0
         self._id = uuid.uuid1()
 
-        self.user_name = "Uknown"
-        self.location = "Uknown"
-        self.time_zone = "Uknown"
-
+        self.user_name = "Unknown"
+        self.location = "Unknown"
+        self.time_zone = "Unknown"
 
     def ylogger_type(self):
         return "context"
