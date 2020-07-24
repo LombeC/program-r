@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<!-- DIALOGUES -->
+
+<category>
+    <pattern># SPORTS ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        <think><set name="dialogue">sports</set></think>
+        <set name="most recent dialogue question">Do you want to talk about basketball, baseball, football, hockey or the olympics?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_sports</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        <think><set name="dialogue">sports</set></think>
+        <set name="most recent dialogue question">Do you want to talk about basketball, baseball, football, hockey or the olympics?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># READING ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <random>
+          <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+          <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+          <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+          <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># BOOKS ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <random>
+          <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+          <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+          <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+          <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_reading</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <random>
+          <li><set name="most recent dialogue question">Who's your favorite author?</set></li>
+          <li><set name="most recent dialogue question">Do you think it's true that you can't judge a book by its cover?</set></li>
+          <li><set name="most recent dialogue question">What is the best book you have ever read?</set></li>
+          <li><set name="most recent dialogue question">Let's talk books, then! Do you prefer adventure, horror, drama, or mystery?</set></li></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># MOVIES ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># FILM ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_movies</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      I'm somewhat of a movie buff, not gonna lie! <set name="most recent dialogue question">What's one of your favorite movies?</set>
+      <think><set name="dialogue">movies</set></think>
+      <think><set name="topic">movies</set></think>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># TELEVISION ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># TELEVISION SHOWS ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># TV ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># TV SHOWS ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># TUBE ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_television</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">television</set></think>
+        Excellent! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># HISTORY ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      Would you like to talk about American history?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># AMERICAN HISTORY ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>
+        <set name="most recent dialogue question">Would you like to talk about presidents, inventions, or the voyage of the Titanic?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_history</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>
+        <set name="most recent dialogue question">Would you like to talk about presidents, inventions, or the voyage of the Titanic?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># FOOD ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">food</set></think>
+        <random>
+            <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+            <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+            <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+            <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+            <!-- <li>What is your favorite foreign cuisine?</li> -->
+            <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># COOKING ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">food</set></think>
+        <random>
+            <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+            <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+            <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+            <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+            <!-- <li>What is your favorite foreign cuisine?</li> -->
+            <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># COOK ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">food</set></think>
+        <random>
+            <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+            <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+            <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+            <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+            <!-- <li>What is your favorite foreign cuisine?</li> -->
+            <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_food</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">food</set></think>
+        <random>
+            <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+            <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+            <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+            <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+            <!-- <li>What is your favorite foreign cuisine?</li> -->
+            <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># SCIENCE ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries lately, did you know that?</set>
+      <think><set name="dialogue">science</set></think>
+      <think><set name="topic">science</set></think>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_science</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries lately, did you know that?</set>
+      <think><set name="dialogue">science</set></think>
+      <think><set name="topic">science</set></think>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># MUSEUMS ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">museums</set></think>
+        <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># MUSEUM ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">museums</set></think>
+        <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_museums</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="dialogue">museums</set></think>
+        <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># MUSIC ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="topic">music</set><set name="dialogue">music</set></think>
+      I'm the best robot to karaoke with. Maybe we'd make a good duo!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>talk_about_music</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+      <think><set name="topic">music</set><set name="dialogue">music</set></think>
+      I'm the best robot to karaoke with. Maybe we'd make a good duo!
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<!-- PATTERNS RYAN DOES NOT HAVE A RESOPNSE FOR -->
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I like *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>my favorite topic is *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>my favorite topic s *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>my favorite subject is *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>my favorite subject s *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>let s talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>let us talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>let s chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>let us chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>lets talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>lets chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so let s talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so let us talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so lets talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so let s chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so let us chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>so lets chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>i want to talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I want to chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I like to talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I like to chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>Do you want to talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>Do you want to chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>Can we talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>Can we chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>Why don t we talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>how bout we talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>how about we talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>why don t we chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>how bout we chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>how about we chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>we should talk about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>we should chat about *</pattern>
+    <that>What would you like to chat about?</that>
+    <template>
+        Unfortunately I don't know too much about <star/>. Would you like to hear a list of topics I like to chat about?
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+
+<!-- REDIRECT TO UDC -->
+
+
+
+</aiml>

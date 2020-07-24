@@ -77,7 +77,8 @@
     <pattern># <set>No</set> ^</pattern>
     <that>Would you like to take a tour of it?</that>
     <template>
-        No problem! I have to ask. <set name="most recent dialogue question">have you ever been to a rodeo?</set>
+        No problem! I have to ask. <set name="most recent dialogue question">
+        have you ever been to a rodeo?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -118,123 +119,6 @@
     </template>
 </category>
 
-<category>
-    <pattern>_</pattern>
-    <that>What did you think?</that>
-    <template>
-      I really enjoyed it to be honest! It was on my bucket list.
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>It was on my bucket list.</that>
-    <template>
-      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
-    <template>
-      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>YES</set> ^</pattern>
-    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
-    <template>
-      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>NO</set> ^</pattern>
-    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
-    <template>
-      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>DON T KNOW</set> ^</pattern>
-    <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
-    <template>
-      <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>Where would you want to travel?</that>
-    <template>
-      Let's be travel buddies! I could help with luggage.
-      <set name="most recent dialogue question">What do you say?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern>_</pattern>
-    <that>What do you say?</that>
-    <template>
-
-      Let's hit the road Jack! <set name="most recent dialogue question">Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</set>
-        <oob>
-            <robot></robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>YES</set> ^</pattern>
-    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
-    <template>
-      <think><set name="topic">routesixtysix</set></think>
-        I really dig the diner they showed! <set name="most recent dialogue question">What do you like about Route 66?</set>
-        <oob>
-            <robot>
-                <video>
-                    <filename>Route_66.mp4</filename>
-                </video>
-            </robot>
-        </oob>
-    </template>
-</category>
-
-<category>
-    <pattern># <set>NO</set> ^</pattern>
-    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
-    <template>
-        No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
-        <oob>
-            <robot>
-            </robot>
-        </oob>
-    </template>
-</category>
 
 </topic>
 

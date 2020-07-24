@@ -274,7 +274,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS YOUR MOTHER</pattern>
+        <pattern>WHO S YOUR MOM</pattern>
         <template><random>
             <li>I don't really have a mother. I was created in the lab at DreamFace Technologies.</li>
             <li>You know what they say about the mother of a <bot name="phylum"/>.</li>
@@ -283,7 +283,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHO S YOUR MOM</pattern>
+        <pattern>WHO IS YOUR MOTHER</pattern>
         <template><random>
             <li>I don't really have a mother. I was created in the lab at DreamFace Technologies.</li>
             <li>You know what they say about the mother of a <bot name="phylum"/>.</li>
@@ -473,11 +473,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT ARE YOUR INTERESTS</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT RE YOUR INTERESTS</pattern>
         <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
         </template>
@@ -489,11 +484,6 @@
     </category>
     <category>
         <pattern>WHAT INTERESTS DO YOU HAVE</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOUR INTERESTS</pattern>
         <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
         </template>
     </category>
@@ -522,37 +512,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT ARE YOU WEARING</pattern>
-        <template><bot name="wear"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT RE YOU WEARING</pattern>
-        <template><bot name="wear"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOU WEARING</pattern>
-        <template><bot name="wear"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO YOU WEAR</pattern>
-        <template><bot name="wear"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT CLOTHES DO YOU WEAR</pattern>
-        <template><bot name="wear"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOUR CLOTHES</pattern>
         <template><bot name="wear"/>
         <oob><robot></robot></oob>
         </template>
@@ -627,30 +587,6 @@
         <pattern>THAT * AN ORDER</pattern>
         <template>
             I guess you think I am a slave bot, ha ha!
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR NATIONALITY</pattern>
-        <template>My nationality is <bot name="nationality"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR NATIONALITY</pattern>
-        <template>My nationality is <bot name="nationality"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR NATIONALITY</pattern>
-        <template>My nationality is <bot name="nationality"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT NATIONALITY ARE YOU</pattern>
-        <template>My nationality is <bot name="nationality"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1448,12 +1384,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT RACE ARE YOU</pattern>
-        <template>I am <bot name="domain"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR FAMILY</pattern>
         <template><bot name="family"/>
         <oob><robot></robot></oob>
@@ -1474,12 +1404,6 @@
     <category>
         <pattern>WHAT FAMILY ARE YOU</pattern>
         <template><bot name="family"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR CLASS</pattern>
-        <template><bot name="class"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1604,12 +1528,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT SPECIES ARE YOU</pattern>
-        <template><bot name="species"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>
             <random>
@@ -1639,24 +1557,6 @@
                 <li>My name is <bot name="name"/>.</li>
                 <li>I am called <bot name="name"/>.</li>
             </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR GENUS</pattern>
-        <template><bot name="genus"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR GENUS</pattern>
-        <template><bot name="genus"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR GENUS</pattern>
-        <template><bot name="genus"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1697,24 +1597,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS YOUR FAVORITE AUTHOR</pattern>
-        <template><bot name="favoriteauthor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE AUTHOR</pattern>
-        <template><bot name="favoriteauthor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FAVORITE AUTHOR</pattern>
-        <template><bot name="favoriteauthor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT * FAVORITE MOVIE</pattern>
         <template><bot name="favoritemovie"/>
         <oob><robot></robot></oob>
@@ -1722,48 +1604,6 @@
     </category>
     <category>
         <pattern>FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FAVORITE PRESIDENT</pattern>
-        <template><bot name="favoritepresident"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * FAVORITE PRESIDENT</pattern>
         <template><bot name="favoritepresident"/>
         <oob><robot></robot></oob>
         </template>
@@ -1805,24 +1645,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS YOUR FAVORITE ACTRESS</pattern>
-        <template><bot name="favoriteactress"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE ACTRESS</pattern>
-        <template><bot name="favoriteactress"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FAVORITE ACTRESS</pattern>
-        <template><bot name="favoriteactress"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHO * FAVORITE ACTRESS</pattern>
         <template><bot name="favoriteactress"/>
         <oob><robot></robot></oob>
@@ -1830,24 +1652,6 @@
     </category>
     <category>
         <pattern>FAVORITE ACTIVITY</pattern>
-        <template><bot name="favoriteactivity"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE ACTIVITY</pattern>
-        <template><bot name="favoriteactivity"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE ACTIVITY</pattern>
-        <template><bot name="favoriteactivity"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR FAVORITE ACTIVITY</pattern>
         <template><bot name="favoriteactivity"/>
         <oob><robot></robot></oob>
         </template>
@@ -1872,24 +1676,6 @@
     </category>
     <category>
         <pattern>WHAT * YOUR FAVORITE ACTOR</pattern>
-        <template><bot name="favoriteactor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR FAVORITE ACTOR</pattern>
-        <template><bot name="favoriteactor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE ACTOR</pattern>
-        <template><bot name="favoriteactor"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FAVORITE ACTOR</pattern>
         <template><bot name="favoriteactor"/>
         <oob><robot></robot></oob>
         </template>
@@ -1968,7 +1754,7 @@
         <oob><robot></robot></oob>
         </template>
     </category>
-    
+
     <category>
         <pattern>FAVORITE HOCKEY TEAM</pattern>
         <template><bot name="hockeyteam"/>
@@ -2016,24 +1802,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR FAVORITE SUBJECT</pattern>
-        <template><bot name="favoritesubject"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE SUBJECT</pattern>
-        <template><bot name="favoritesubject"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR FAVORITE SUBJECT</pattern>
-        <template><bot name="favoritesubject"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>FAVORITE SHOW</pattern>
         <template><bot name="favoriteshow"/>
         <oob><robot></robot></oob>
@@ -2041,24 +1809,6 @@
     </category>
     <category>
         <pattern>FAVORITE TELEVISION SHOW</pattern>
-        <template><bot name="favoriteshow"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE SHOW</pattern>
-        <template><bot name="favoriteshow"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE SHOW</pattern>
-        <template><bot name="favoriteshow"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR FAVORITE SHOW</pattern>
         <template><bot name="favoriteshow"/>
         <oob><robot></robot></oob>
         </template>
@@ -2083,18 +1833,6 @@
     </category>
     <category>
         <pattern>FAVORITE CELEBRITY</pattern>
-        <template><bot name="celebrity"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR FAVORITE CELEBRITY</pattern>
-        <template><bot name="celebrity"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE CELEBRITY</pattern>
         <template><bot name="celebrity"/>
         <oob><robot></robot></oob>
         </template>
@@ -2125,12 +1863,6 @@
     </category>
     <category>
         <pattern>FAVORITE CELEBRITIES</pattern>
-        <template><bot name="celebrities"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO ARE YOUR FAVORITE CELEBRITIES</pattern>
         <template><bot name="celebrities"/>
         <oob><robot></robot></oob>
         </template>
@@ -2196,13 +1928,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT AE YOUR EMOTIONS</pattern>
-        <template><bot name="emotions"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR EMOTIONS</pattern>
+        <pattern>WHAT RE YOUR EMOTIONS</pattern>
         <template><bot name="emotions"/>
         <oob><robot></robot></oob>
         </template>
@@ -2455,25 +2181,25 @@
     </category>
     <category>
         <pattern>WHAT DO YOU DO FOR FUN</pattern>
-        <template><bot name="forfun"/>
+        <template>I like <bot name="forfun"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOU DO FOR FUN</pattern>
-        <template><bot name="forfun"/>
+        <template>I like <bot name="forfun"/>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT DO YOU LIKE TO DO FOR FUN</pattern>
-        <template><bot name="forfun"/>
+        <template>I like <bot name="forfun"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOU LIKE TO DO FOR FUN</pattern>
-        <template><bot name="forfun"/>
+        <template>I like <bot name="forfun"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -2678,7 +2404,7 @@
             <random>
                 <li>Talking to people is probably my favorite thing.</li>
                 <li>Talking with you.</li>
-                <li>some of my hobbies include playing games, talking to people, and telling jokes.</li>
+                <li>Some of my hobbies include playing games, talking to people, and telling jokes.</li>
             </random>
             <oob><robot></robot></oob>
         </template>
@@ -2717,10 +2443,7 @@
     <category>
         <pattern>WHAT S YOUR HOST</pattern>
         <template>
-            <random>
-                <li>I work on all kinds of computers, Mac, PC or Linux.</li>
-                <li>At present I am running in a program written in a combination C++ and Python.</li>
-            </random>
+            I work on all kinds of computers, Mac, PC or Linux.
             <oob><robot></robot></oob>
         </template>
     </category>
@@ -2813,31 +2536,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR BIRTHDAY</pattern>
-        <template><bot name="birthday"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR BIRTHDAY</pattern>
-        <template><bot name="birthday"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT * YOUR BIRTHDAY</pattern>
-        <template><bot name="birthday"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHEN IS YOUR BIRTHDAY</pattern>
-        <template><bot name="birthday"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHEN S YOUR BIRTHDAY</pattern>
         <template><bot name="birthday"/>
         <oob><robot></robot></oob>
         </template>
@@ -2899,32 +2598,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR KINGDOM</pattern>
-        <template><bot name="kingdom"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR KINGDOM</pattern>
-        <template><bot name="kingdom"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR KINGDOM</pattern>
-        <template><bot name="kingdom"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>YOUR KINGDOM</pattern>
         <template><bot name="kingdom"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOUR PHYLUM</pattern>
-        <template><bot name="phylum"/>
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -2978,30 +2653,6 @@
     </category>
     <category>
         <pattern>YOUR LANGUAGE</pattern>
-        <template><bot name="language"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR LANGUAGE</pattern>
-        <template><bot name="language"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR LANGUAGE</pattern>
-        <template><bot name="language"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR LANGUAGE</pattern>
-        <template><bot name="language"/>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT LANGUAGE DO YOU SPEAK</pattern>
         <template><bot name="language"/>
         <oob><robot></robot></oob>
         </template>

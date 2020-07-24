@@ -9,44 +9,40 @@
     <!-- as adopted by the ALICE A.I. Foundation.  -->
     <!-- Last modified 12/02/2011 -->
     <!-- -->
-    <category>
-        <pattern>* YOU KNOW</pattern>
-        <template><srai>YOU KNOW</srai> <sr/>
-        </template>
-    </category>
+
     <category>
         <pattern>* I THOUGHT</pattern>
-        <template><srai>I THOUGHT</srai> <sr/>
+        <template><srai>I THOUGHT</srai>
         </template>
     </category>
     <category>
         <pattern>MY * S NAME IS *</pattern>
-        <template><srai>MY <star/> IS CALLED <star index="2"/></srai>
+        <template>Very good to know! I will remember that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>MY * IS NAMED *</pattern>
-        <template><srai>MY <star/> IS CALLED <star index="2"/></srai>
+        <template>Very good to know! I will remember that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>SNOW IN THE FORECAST</pattern>
-        <template><srai>WEATHER</srai>
+        <template>I'm not certain, you may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>INTERESTED IN *</pattern>
-        <template><srai>ARE YOU INTERESTED IN <star/></srai>
+        <template>I love learning more about what you're interested in!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CALL * PHONE</pattern>
-        <template><srai>CALL <star/></srai>
+        <template>I am unable to.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CALL * CALL *</pattern>
-        <template><srai>CALL <star/></srai>
+        <template>I am unable to.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -56,7 +52,7 @@
     </category>
     <category>
         <pattern>I AM * YEARS OLD I *</pattern>
-        <template><srai>I AM <star/> YEARS OLD</srai> <srai>I <star index="2"/></srai>
+        <template><srai>I AM <star/> YEARS OLD</srai> 
         </template>
     </category>
     <category>

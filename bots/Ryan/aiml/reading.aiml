@@ -193,6 +193,29 @@
         </category>
 
         <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Who's your favorite author?</that>
+            <template>
+                <set name="most recent dialogue question">What is the best book you have ever read?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+
+                <category>
+                    <pattern># <set>DON T KNOW</set> ^</pattern>
+                    <that>Who's your favorite author?</that>
+                    <template>
+                        <set name="most recent dialogue question">What is the best book you have ever read?</set>
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
+
+        <category>
             <pattern>_</pattern>
             <that>I want to check them out!</that>
             <template>

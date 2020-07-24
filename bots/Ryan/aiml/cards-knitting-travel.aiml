@@ -669,6 +669,18 @@
         <template>
           <think><set name="topic">travel</set></think>
           <think><set name="dialogue">travel</set></think>
+            <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Traveling ^</pattern>
+        <that>Playing cards, knitting, reading, or travelling?</that>
+        <template>
+          <think><set name="topic">travel</set></think>
           <think><set name="dialogue">travel</set></think>
             <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
             <oob>
@@ -682,7 +694,6 @@
         <that>Playing cards, knitting, reading, or travelling?</that>
         <template>
           <think><set name="topic">travel</set></think>
-          <think><set name="dialogue">travel</set></think>
             <set name="most recent dialogue question">Where have you enjoyed traveling?</set>
             <oob>
                 <robot></robot>

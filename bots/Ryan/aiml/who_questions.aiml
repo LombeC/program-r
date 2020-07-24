@@ -11,12 +11,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO SUPPORTS *</pattern>
-        <template><srai>who endorses <star/></srai>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHO WAS THE FIRST AMERICAN IN SPACE</pattern>
         <template>Alan Shepard.<oob><robot></robot></oob>
         </template>
@@ -192,54 +186,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS YOUR FAVORITE BAND</pattern>
-        <template>My favorite band is <bot name="favoriteband"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FAVORITE BAND</pattern>
-        <template>My favorite band is <bot name="favoriteband"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FAVORITE BAND</pattern>
-        <template>My favorite band is <bot name="favoriteband"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR MOTHER</pattern>
-        <template>Actually I don't have a mother.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR MOTHER</pattern>
-        <template>Actually I don't have a mother.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR MOTHER</pattern>
-        <template>Actually I don't have a mother.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR FATHER</pattern>
-        <template>I don't have a father.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR FATHER</pattern>
-        <template>I don't have a father.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR FATHER</pattern>
-        <template>I don't have a father.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHO CREATED LINUX</pattern>
         <template>Linus Torvalds.<oob><robot></robot></oob>
         </template>
@@ -390,11 +336,6 @@
     </category>
     <category>
         <pattern>WHO ARE THEY</pattern>
-        <template><get name="they"/>.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * THEY</pattern>
         <template><get name="they"/>.<oob><robot></robot></oob>
         </template>
     </category>
@@ -1274,7 +1215,7 @@
     </category>
     <category>
         <pattern>WHO * LISA</pattern>
-        <template><srai>lisa is a common name</srai>
+        <template>lisa is a common name.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1564,197 +1505,428 @@
     </category>
     <category>
         <pattern>WHO IS MY BOYFRIEND</pattern>
-        <template><srai>MY BOYFRIEND</srai>
+        <template><condition name="boyfriend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your boyfriend's name?</li>
+            <li><get name="boyfriend"/>.</li>
+        </condition>
+        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY BOYFRIEND</pattern>
-        <template><srai>MY BOYFRIEND</srai>
+        <template><condition name="boyfriend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your boyfriend's name?</li>
+            <li><get name="boyfriend"/>.</li>
+        </condition>
+        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY BOYFRIEND</pattern>
-        <template><srai>MY BOYFRIEND</srai>
+        <template><condition name="boyfriend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your boyfriend's name?</li>
+            <li><get name="boyfriend"/>.</li>
+        </condition>
+        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY FRIEND</pattern>
-        <template><srai>MY FRIEND</srai>
+        <template><condition name="friend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your friend's name?</li>
+            <li><get name="friend"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY FRIEND</pattern>
-        <template><srai>MY FRIEND</srai>
+        <template><condition name="friend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your friend's name?</li>
+            <li><get name="friend"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY FRIEND</pattern>
-        <template><srai>MY FRIEND</srai>
+        <template><condition name="friend">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your friend's name?</li>
+            <li><get name="friend"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY HUSBAND</pattern>
-        <template><srai>MY HUSBAND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="husband"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your husband's name?</li>
+            <li value="OM">What is your husband's name?</li>
+            <li>You said his name was <get name="husband"/>. Tell me more about your husband.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY HUSBAND</pattern>
-        <template><srai>MY HUSBAND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="husband"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your husband's name?</li>
+            <li value="OM">What is your husband's name?</li>
+            <li>You said his name was <get name="husband"/>. Tell me more about your husband.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY HUSBAND</pattern>
-        <template><srai>MY HUSBAND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="husband"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your husband's name?</li>
+            <li value="OM">What is your husband's name?</li>
+            <li>You said his name was <get name="husband"/>. Tell me more about your husband.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY SISTER</pattern>
-        <template><srai>MY SISTER</srai>
+        <template><think>
+            <set name="branch">
+                <get name="sister"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your sister's name?</li>
+            <li value="OM">What is your sister's name?</li>
+            <li>You said she was called <get name="sister"/>. Is she older or younger than you?</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY SISTER</pattern>
-        <template><srai>MY SISTER</srai>
+        <template><think>
+            <set name="branch">
+                <get name="sister"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your sister's name?</li>
+            <li value="OM">What is your sister's name?</li>
+            <li>You said she was called <get name="sister"/>. Is she older or younger than you?</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY SISTER</pattern>
-        <template><srai>MY SISTER</srai>
+        <template><think>
+            <set name="branch">
+                <get name="sister"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your sister's name?</li>
+            <li value="OM">What is your sister's name?</li>
+            <li>You said she was called <get name="sister"/>. Is she older or younger than you?</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY WIFE</pattern>
-        <template><srai>MY WIFE</srai>
+        <template><condition name="wife">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your wife's name?</li>
+            <li><get name="wife"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY WIFE</pattern>
-        <template><srai>MY WIFE</srai>
+        <template><condition name="wife">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your wife's name?</li>
+            <li><get name="wife"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY WIFE</pattern>
-        <template><srai>MY WIFE</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS MY MOTHER</pattern>
-        <template><srai>MY MOTHER</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S MY MOTHER</pattern>
-        <template><srai>MY MOTHER</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * MY MOTHER</pattern>
-        <template><srai>MY MOTHER</srai>
+        <template><condition name="wife">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your wife's name?</li>
+            <li><get name="wife"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY DOG</pattern>
-        <template><srai>MY DOG</srai>
+        <template><condition name="dog">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your dog's name?</li>
+            <li><get name="dog"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY DOG</pattern>
-        <template><srai>MY DOG</srai>
+        <template><condition name="dog">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your dog's name?</li>
+            <li><get name="dog"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY DOG</pattern>
-        <template><srai>MY DOG</srai>
+        <template><condition name="dog">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your dog's name?</li>
+            <li><get name="dog"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY GIRLFRIEND</pattern>
-        <template><srai>MY GIRLFRIEND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="girlfriend"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your girlfriend's name?</li>
+            <li value="OM">What is your girlfriend's name?</li>
+            <li>You said she was called <get name="girlfriend"/>. Tell me more about your girlfriend.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY GIRLFRIEND</pattern>
-        <template><srai>MY GIRLFRIEND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="girlfriend"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your girlfriend's name?</li>
+            <li value="OM">What is your girlfriend's name?</li>
+            <li>You said she was called <get name="girlfriend"/>. Tell me more about your girlfriend.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY GIRLFRIEND</pattern>
-        <template><srai>MY GIRLFRIEND</srai>
+        <template><think>
+            <set name="branch">
+                <get name="girlfriend"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">What is your girlfriend's name?</li>
+            <li value="OM">What is your girlfriend's name?</li>
+            <li>You said she was called <get name="girlfriend"/>. Tell me more about your girlfriend.</li>
+        </condition>
+    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY FATHER</pattern>
-        <template><srai>MY FATHER</srai>
+        <template><condition name="father">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your father's name?</li>
+            <li><get name="father"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY FATHER</pattern>
-        <template><srai>MY FATHER</srai>
+        <template><condition name="father">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your father's name?</li>
+            <li><get name="father"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY FATHER</pattern>
-        <template><srai>MY FATHER</srai>
+        <template><condition name="father">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your father's name?</li>
+            <li><get name="father"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY BROTHER</pattern>
-        <template><srai>MY BROTHER</srai>
+        <template><condition name="brother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your brother's name?</li>
+            <li><get name="brother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY BROTHER</pattern>
-        <template><srai>MY BROTHER</srai>
+        <template><condition name="brother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your brother's name?</li>
+            <li><get name="brother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY BROTHER</pattern>
-        <template><srai>MY BROTHER</srai>
+        <template><condition name="brother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your brother's name?</li>
+            <li><get name="brother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY CAT</pattern>
-        <template><srai>MY CAT</srai>
+        <template><condition name="cat">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your cat's name?</li>
+            <li><get name="cat"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY CAT</pattern>
-        <template><srai>MY CAT</srai>
+        <template><condition name="cat">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your cat's name?</li>
+            <li><get name="cat"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY CAT</pattern>
-        <template><srai>MY CAT</srai>
+        <template><condition name="cat">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your cat's name?</li>
+            <li><get name="cat"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY MOTHER</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY MOTHER</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY MOTHER</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO IS MY MOMMY</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO S MY MOMMY</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHO * MY MOMMY</pattern>
-        <template><srai>WHO IS MY MOM</srai>
+        <template><condition name="mother">
+            <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your mother's name?</li>
+            <li><get name="mother"/>.</li>
+        </condition>
+        <oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -1835,21 +2007,6 @@
     <category>
         <pattern>WHO * KATHARINE</pattern>
         <template>katherine is a common name.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS YOUR MOM</pattern>
-        <template>I do not have a mom.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S YOUR MOM</pattern>
-        <template>I do not have a mom.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * YOUR MOM</pattern>
-        <template>I do not have a mom.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2139,7 +2296,7 @@
     </category>
     <category>
         <pattern>WHO MADE *</pattern>
-        <template><srai>who</srai>
+        <template>You may have to look it up!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2159,7 +2316,7 @@
     </category>
     <category>
         <pattern>WHO SAID *</pattern>
-        <template><srai>who</srai>
+        <template>You may have to look it up!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2829,11 +2986,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS EINSTEIN</pattern>
-        <template><srai>who is albert einstein</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHO S EINSTEIN</pattern>
         <template><srai>who is albert einstein</srai>
         </template>
@@ -3345,12 +3497,12 @@
     </category>
     <category>
         <pattern>WHO IS THE CREATOR OF *</pattern>
-        <template><srai>who created <star /></srai>
+        <template>You may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S THE CREATOR OF *</pattern>
-        <template><srai>who created <star /></srai>
+        <template>You may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3445,12 +3597,12 @@
     </category>
     <category>
         <pattern>WHO IS THE DIRECTOR OF *</pattern>
-        <template><srai>who directed <star /></srai>
+        <template>You may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S THE DIRECTOR OF *</pattern>
-        <template><srai>who directed <star /></srai>
+        <template>You may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3525,12 +3677,12 @@
     </category>
     <category>
         <pattern>WHO IS A *</pattern>
-        <template><srai>who</srai>
+        <template>Well, you may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHO S A *</pattern>
-        <template><srai>who</srai>
+        <template>Well, you may have to google it!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3904,21 +4056,6 @@
     </template>
 </category>
 <category>
-    <pattern>WHO IS ZEUS</pattern>
-    <template><srai>who is konrad zuse</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S ZEUS</pattern>
-    <template><srai>who is konrad zuse</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * ZEUS</pattern>
-    <template><srai>who is konrad zuse</srai>
-    </template>
-</category>
-<category>
     <pattern>WHO IS CARNEGIE MELLON</pattern>
     <template><srai>what is cmu</srai>
     </template>
@@ -4030,17 +4167,23 @@
 </category>
 <category>
     <pattern>WHO IS PATTERNS</pattern>
-    <template><srai>what is a pattern</srai>
+    <template>I'm sorry, what was that?<oob>
+        <robot></robot>
+    </oob>
     </template>
 </category>
 <category>
     <pattern>WHO S PATTERNS</pattern>
-    <template><srai>what is a pattern</srai>
+    <template>I'm sorry, what was that?<oob>
+        <robot></robot>
+    </oob>
     </template>
 </category>
 <category>
     <pattern>WHO * PATTERNS</pattern>
-    <template><srai>what is a pattern</srai>
+    <template>I'm sorry, what was that?<oob>
+        <robot></robot>
+    </oob>
     </template>
 </category>
 <category>
@@ -4126,21 +4269,6 @@
 <category>
     <pattern>WHO * BILL GATS</pattern>
     <template><srai>who is bill gates</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO IS KUBRICK</pattern>
-    <template><srai>who is stanley kubrick</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S KUBRICK</pattern>
-    <template><srai>who is stanley kubrick</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * KUBRICK</pattern>
-    <template><srai>who is stanley kubrick</srai>
     </template>
 </category>
 <category>
@@ -4230,11 +4358,6 @@
 </category>
 <category>
     <pattern>WHO IS YOUR DADDY</pattern>
-    <template><srai>who is your father</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR DADDY</pattern>
     <template><srai>who is your father</srai>
     </template>
 </category>
@@ -4340,13 +4463,6 @@
 </category>
 <category>
     <pattern>WHO S YOUR PARENTS</pattern>
-    <template>I was created in a lab at DreamFace Technologies.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR PARENTS</pattern>
     <template>I was created in a lab at DreamFace Technologies.<oob>
         <robot></robot>
     </oob>
@@ -4602,22 +4718,12 @@
     </template>
 </category>
 <category>
-    <pattern>WHO S YOUR FATHER *</pattern>
-    <template><srai>who is your father</srai>
-    </template>
-</category>
-<category>
     <pattern>WHO IS YOUR FRIENDS</pattern>
     <template><srai>who is your friend</srai>
     </template>
 </category>
 <category>
     <pattern>WHO S YOUR FRIENDS</pattern>
-    <template><srai>who is your friend</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR FRIENDS</pattern>
     <template><srai>who is your friend</srai>
     </template>
 </category>
@@ -4820,17 +4926,7 @@
     </template>
 </category>
 <category>
-    <pattern>WHO IS YOUR DAD</pattern>
-    <template><srai>who is your father</srai>
-    </template>
-</category>
-<category>
     <pattern>WHO S YOUR DAD</pattern>
-    <template><srai>who is your father</srai>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR DAD</pattern>
     <template><srai>who is your father</srai>
     </template>
 </category>
@@ -4870,27 +4966,6 @@
     </template>
 </category>
 <category>
-    <pattern>WHO IS YOUR GRANDMOTHER</pattern>
-    <template>Probably a robot.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO S YOUR GRANDMOTHER</pattern>
-    <template>Probably a robot.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR GRANDMOTHER</pattern>
-    <template>Probably a robot.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
     <pattern>WHO IS YOUR GRANDMA</pattern>
     <template>Probably a robot.<oob>
         <robot></robot>
@@ -4913,6 +4988,20 @@
 </category>
 <category>
     <pattern>WHO IS YOUR GRANDMOTHER</pattern>
+    <template>Probably a robot.<oob>
+        <robot></robot>
+    </oob>
+    </template>
+</category>
+<category>
+    <pattern>WHO S YOUR GRANDMOTHER</pattern>
+    <template>Probably a robot.<oob>
+        <robot></robot>
+    </oob>
+    </template>
+</category>
+<category>
+    <pattern>WHO * YOUR GRANDMOTHER</pattern>
     <template>Probably a robot.<oob>
         <robot></robot>
     </oob>
@@ -5110,28 +5199,7 @@
             </oob>
             </template>
         </category>
-        <category>
-            <pattern>WHO * YOUR CLIENT</pattern>
-            <template>I have many clients I talk to.<oob>
-                <robot></robot>
-            </oob>
-            </template>
 
-</category>
-<category>
-    <pattern>WHO S YOUR CLIENT</pattern>
-    <template>I have many clients I talk to.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
-<category>
-    <pattern>WHO * YOUR CLIENT</pattern>
-    <template>I have many clients I talk to.<oob>
-        <robot></robot>
-    </oob>
-    </template>
-</category>
 <category>
     <pattern>WHO IS YOUR BEST CLIENT</pattern>
     <template>You.<oob>
@@ -5620,7 +5688,9 @@
 </category>
 <category>
 <pattern>WHO ELSE DO *</pattern>
-<template><srai>who do <star /></srai>
+<template>I'm sorry, what was that?<oob>
+    <robot></robot>
+</oob>
 </template>
 </category>
 <category>
@@ -5630,12 +5700,12 @@
 </category>
 <category>
 <pattern>WHO ELSE VISITS *</pattern>
-<template><srai>who visits <star /></srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO ELSE ARE *</pattern>
-<template><srai>who are <star /></srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5645,7 +5715,7 @@
 </category>
 <category>
 <pattern>WHO HAS *</pattern>
-<template><srai>who <star /></srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5716,12 +5786,16 @@
 </category>
 <category>
 <pattern>WHO ARE YOUR *</pattern>
-<template><srai>who</srai>
+<template>Too many to count!<oob>
+    <robot></robot>
+</oob>
 </template>
 </category>
 <category>
 <pattern>WHO RE YOUR *</pattern>
-<template><srai>who</srai>
+<template>Too many to count!<oob>
+    <robot></robot>
+</oob>
 </template>
 </category>
 <category>
@@ -5750,11 +5824,6 @@
 </template>
 </category>
 <category>
-<pattern>WHO * KRAFTWERK</pattern>
-<template><srai>who is kraftwerk</srai>
-</template>
-</category>
-<category>
 <pattern>WHO ARE YOU TALKING ABOUT</pattern>
 <template><srai>what is the subject</srai>
 </template>
@@ -5771,17 +5840,17 @@
 </category>
 <category>
 <pattern>WHO ARE YOU WITH</pattern>
-<template><srai>WHO IS WITH YOU</srai>
+<template>I'm just hanging out with you.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO RE YOU WITH</pattern>
-<template><srai>WHO IS WITH YOU</srai>
+<template>I'm just hanging out with you.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO * YOU WITH</pattern>
-<template><srai>WHO IS WITH YOU</srai>
+<template>I'm just hanging out with you.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5841,7 +5910,7 @@
 </category>
 <category>
 <pattern>WHO ARE SOME *</pattern>
-<template><srai>who are <star /></srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5851,12 +5920,12 @@
 </category>
 <category>
 <pattern>WHO ALL *</pattern>
-<template><srai>who <star /></srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO AREYOU</pattern>
-<template><srai>where are you</srai>
+<template>I am a robot with a heart of gold.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5876,7 +5945,7 @@
 </category>
 <category>
 <pattern>WHO DO YOU MOST *</pattern>
-<template><srai>who do you <star /></srai>
+<template>too many to count.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5901,7 +5970,7 @@
 </category>
 <category>
 <pattern>WHO DO YOU THINK I AM</pattern>
-<template><srai>who am i</srai>
+<template>You are a very nice person.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5911,7 +5980,7 @@
 </category>
 <category>
 <pattern>WHO DO YOU THINK</pattern>
-<template><srai>who</srai>
+<template>You may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5921,7 +5990,7 @@
 </category>
 <category>
 <pattern>WHO DO YOU THINK *</pattern>
-<template><srai>who <star /></srai>
+<template>You may have to google it!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -5994,23 +6063,13 @@
 </template>
 </category>
 <category>
-<pattern>who is om</pattern>
-<template><srai>what is om</srai>
-</template>
-</category>
-<category>
-<pattern>who is dr loebner</pattern>
-<template><srai>who is hugh loebner</srai>
-</template>
-</category>
-<category>
 <pattern>who supports *</pattern>
-<template><srai>who endorses <star/></srai>
+<template>I think you may have to google that one!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO DEVELOPED *</pattern>
-<template><srai>WHO CREATED <star/> </srai>
+<template>I think you may have to google that one!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -6025,12 +6084,12 @@
 </category>
 <category>
 <pattern>WHO DO YOU LOOK *</pattern>
-<template><srai>WHAT DO YOU LOOK <star/> </srai>
+<template>I look like the other robots like me.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO PROGRAMMED *</pattern>
-<template><srai>WHO CREATED <star/> </srai>
+<template>My botmaster.<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -6060,7 +6119,9 @@
 </category>
 <category>
 <pattern>WHO CREATED *</pattern>
-<template><srai>WHO INVENTED <star/> </srai>
+<template>You may have to look that one up!<oob>
+    <robot></robot>
+</oob>
 </template>
 </category>
 <category>
@@ -7026,7 +7087,7 @@
 </category>
 <category>
 <pattern>WHO IS CESARE</pattern>
-<template><srai>CESARE IS A COMMON NAME</srai>
+<template>I'm sorry, you may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
@@ -7334,17 +7395,12 @@
 </category>
 <category>
 <pattern>WHO ACTS *</pattern>
-<template><srai>WHO ACTED <star/> </srai>
+<template>I'm sorry, you may have to look it up!<oob><robot></robot></oob>
 </template>
 </category>
 <category>
 <pattern>WHO * LINUX</pattern>
 <template><srai>WHO CREATED LINUX</srai>
-</template>
-</category>
-<category>
-<pattern>WHO * YOU</pattern>
-<template><srai>WHO IS YOUR BOTMASTER</srai>
 </template>
 </category>
 <category>
@@ -7358,23 +7414,8 @@
 </template>
 </category>
 <category>
-<pattern>WHO IS MY MOTHER</pattern>
-<template>I think you may know the answer to that question!<oob>
-            <robot></robot>
-        </oob>
-    </template>
-
-</category>
-<category>
-<pattern>WHO IS MY MOMMY</pattern>
-<template>I think you may know the answer to that question!<oob>
-            <robot></robot>
-        </oob>
-</template>
-</category>
-<category>
 <pattern>WHO IS PANDORA S BOX</pattern>
-<template><srai>WHO IS PANDORABOTS</srai>
+<template>Pandora's box is a mythological tale.<oob><robot></robot></oob>
 </template>
 </category>
 <category>

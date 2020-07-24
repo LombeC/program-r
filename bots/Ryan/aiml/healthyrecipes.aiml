@@ -4,6 +4,46 @@
     <!-- BEGIN HEALTHY RECIPES -->
 
     <category>
+        <pattern>TELL ME A RECIPE FOR ANOTHER FOOD</pattern>
+        <template>
+          <think><set name="topic">healthyrecipes</set></think>
+          <think><set name="dialogue">food</set></think>
+            Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>TELL ME ANOTHER RECIPE</pattern>
+        <template>
+          <think><set name="topic">healthyrecipes</set></think>
+          <think><set name="dialogue">food</set></think>
+            Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ANOTHER RECIPE ^</pattern>
+        <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
+        <template>
+          <think><set name="topic">healthyrecipes</set></think>
+          <think><set name="dialogue">food</set></think>
+            Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>DO YOU WANT TO SEE ANOTHER RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
         <template>
@@ -176,9 +216,9 @@
                 If you think that looks good I have a list of the ingredients that you can take down. <set name="most recent dialogue question">Would you like to see the ingredients for the cauliflower tacos?</set>
                     <oob>
                         <robot>
-                            <image>
+                            <video>
                                 <filename>cauliflowertaco.jpg</filename>
-                            </image>
+                            </video>
                         </robot>
                     </oob>
             </template>
@@ -196,6 +236,18 @@
                                 <image>
                                     <filename>cauliflowertacosrecipe.jpg</filename>
                                   </image>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CAULIFLOWER TACOS?</that>
+                <template>
+                    <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
+                        <oob>
+                            <robot>
                             </robot>
                         </oob>
                 </template>
@@ -263,9 +315,9 @@
                     If you think that looks good I have a list of the ingredients that you can take down. <set name="most recent dialogue question">Would you like to see the ingredients for the chicken stir fry?</set>
                         <oob>
                             <robot>
-                                <image>
+                                <video>
                                     <filename>chickenstirfry.jpg</filename>
-                                </image>
+                                </video>
                             </robot>
                         </oob>
                 </template>
@@ -284,6 +336,21 @@
                                 <image>
                                     <filename>chickenstirfryingredients.jpg</filename>
                                   </image>
+                                <options>
+                                    <option>DONE</option>
+                                </options>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CHICKEN STIR FRY?</that>
+                <template>
+                    <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
+                        <oob>
+                            <robot>
                             </robot>
                         </oob>
                 </template>
@@ -340,9 +407,9 @@
                     If you think that looks good I have a list of the ingredients that you can take down. <set name="most recent dialogue question">Would you like to see the ingredients for the chickpea curry?</set>
                         <oob>
                             <robot>
-                                <image>
+                                <video>
                                     <filename>chickpeacurry.jpg</filename>
-                                </image>
+                                </video>
                             </robot>
                         </oob>
                 </template>
@@ -362,6 +429,18 @@
                                 <image>
                                     <filename>chickpeacurryingredients.jpg</filename>
                                   </image>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+            <that>WOULD YOU LIKE TO SEE THE INGREDIENTS FOR THE CHICKPEA CURRY?</that>
+                <template>
+                    <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
+                        <oob>
+                            <robot>
                             </robot>
                         </oob>
                 </template>
@@ -396,13 +475,6 @@
 
     </topic>
 
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-            <that>Would you like to see the ingredients for the *?</that>
-                <template>
-                    <set name="most recent dialogue question">Do you think you will get the chance to cook this meal soon?</set>
-                </template>
-    </category>
 
     <category>
         <pattern># <set>NO</set> ^</pattern>

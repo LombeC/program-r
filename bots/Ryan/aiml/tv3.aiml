@@ -95,7 +95,7 @@
             <pattern>_</pattern>
             <that>Well, I bet it could be quite exciting, especially if someone tried stealing a kiss!</that>
             <template>
-              <condition name="birthplace">
+              <condition name="favoriteshow">
                           <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's your favorite show?</set></li>
                           <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama would you say?</set></li>
                       </condition>
@@ -109,7 +109,7 @@
             <pattern>_</pattern>
             <that>I bet it was quite exciting, especially if someone tried stealing a kiss!</that>
             <template>
-              <condition name="birthplace">
+              <condition name="favoriteshow">
                           <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's your favorite show?</set></li>
                           <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama would you say?</set></li>
                       </condition>
@@ -375,6 +375,17 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you believe in ghosts?</that>
+        <template>
+            I see! Well this is a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
         <that>Do you believe in ghosts?</that>
         <template>
             I see! Well this is a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>

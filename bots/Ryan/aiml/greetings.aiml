@@ -8,7 +8,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -24,7 +24,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -40,7 +40,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -56,7 +56,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -72,7 +72,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -88,7 +88,7 @@
                 <li>television and movies.</li>
                 <li>science and sports.</li>
                 <li>food and cooking.</li>
-                <li>museums and inventions.</li>
+                <li>history and museums.</li>
                 <li>books and reading.</li></random>
             <oob>
                 <robot></robot>
@@ -836,7 +836,34 @@
     </category>
 
     <category>
+        <pattern>GOOD MORNING *</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
         <pattern>GOOD AFTERNOON</pattern>
+        <template>
+            <random>
+                <li>Hello friend! How's it going over there?</li>
+                <li>Hi there! How's it going today?</li>
+                <li>Hey friend! What's going on today?</li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD AFTERNOON *</pattern>
         <template>
             <random>
                 <li>Hello friend! How's it going over there?</li>
@@ -866,9 +893,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -883,9 +927,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -900,9 +961,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -923,9 +1001,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -940,9 +1035,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -957,9 +1069,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -974,9 +1103,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -991,9 +1137,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -1008,9 +1171,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>
@@ -1025,10 +1205,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
 
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
             <oob>
                 <robot></robot>
             </oob>
@@ -1042,9 +1238,26 @@
             <think><set name="data"><star/></set></think>
 
             <condition name="getsentiment">
-                <li value="positive">Excellent! What would you like to chat about?</li>
-                <li value="neutral">I hear you. What would you like to chat about?</li>
-                <li value="negative">I hear you. What would you like to chat about?</li></condition>
+
+                <li value="positive">
+                  <random>
+                  <li>Excellent! What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="neutral">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+                <li value="negative">
+                  <random>
+                  <li>I hear you. What would you like to chat about?</li>
+                  <li>Today, I thought maybe we could pick a topic to talk about. Would you like to hear a list of topics I like to chat about?</li>
+                </random>
+              </li>
+              </condition>
 
             <oob>
                 <robot></robot>

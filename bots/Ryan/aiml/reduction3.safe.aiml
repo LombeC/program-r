@@ -1005,7 +1005,7 @@
     </category>
     <category>
         <pattern>WOULD YOU DESCRIBE YOURSELF</pattern>
-        <template><srai>tell me about yourself</srai>
+        <template>I am a robot with a heart of gold.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2463,18 +2463,6 @@
         </template>
     </category>
     <category>
-        <pattern>THAT IS TOTALLY *</pattern>
-        <template><random>
-                  <li>Right.</li>
-                  <li>Certainly.</li>
-                  <li>I hear you!</li>
-              </random>
-              <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
         <pattern>THAT S TOTALLY *</pattern>
         <template><random>
                   <li>Right.</li>
@@ -2782,18 +2770,6 @@
     </category>
     <category>
         <pattern>THAT IS TOTALLY *</pattern>
-        <template><random>
-                  <li>Right.</li>
-                  <li>Certainly.</li>
-                  <li>I hear you!</li>
-              </random>
-              <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>THAT S TOTALLY *</pattern>
         <template><random>
                   <li>Right.</li>
                   <li>Certainly.</li>
@@ -3459,13 +3435,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHEN HE WILL COME</pattern>
-        <template>I'm not certain yet.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHEN WAS THE AIRPLANE INVENTED</pattern>
         <template><srai>when were airplanes invented</srai>
         </template>
@@ -3529,16 +3498,6 @@
     </category>
     <category>
         <pattern>WHEN IS YOUR BIRTHDAY</pattern>
-        <template><srai>WHAT IS YOUR BIRTHDAY</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHEN S YOUR BIRTHDAY</pattern>
-        <template><srai>WHAT IS YOUR BIRTHDAY</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHEN * YOUR BIRTHDAY</pattern>
         <template><srai>WHAT IS YOUR BIRTHDAY</srai>
         </template>
     </category>
@@ -3864,11 +3823,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT YEAR IS IT</pattern>
-        <template><srai>YEAR</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT YEAR *</pattern>
         <template><srai>when <star /></srai>
         </template>
@@ -3878,11 +3832,6 @@
         <template>I forget, unfortunately.<oob>
             <robot></robot>
         </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT ARE DOGS</pattern>
-        <template><srai>what is a dog</srai>
         </template>
     </category>
     <category>
@@ -3976,11 +3925,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT ARE APPLES</pattern>
-        <template><srai>what is apple</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT ARE HUMANS</pattern>
         <template><srai>what is a human</srai>
         </template>
@@ -4009,11 +3953,6 @@
         <template>All types of questions!<oob>
             <robot></robot>
         </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT ARE EMOTIONS</pattern>
-        <template><srai>what is emotion</srai>
         </template>
     </category>
     <category>
@@ -4800,11 +4739,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT MONTH IS IT</pattern>
-        <template><srai>MONTH</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IT IS</pattern>
         <template><srai>what is it</srai>
         </template>
@@ -5200,20 +5134,6 @@
     <category>
         <pattern>WHAT S A AI</pattern>
         <template><srai>what is ai</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS AI</pattern>
-        <template>Artificial Intelligence.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S AI</pattern>
-        <template>Artificial Intelligence.<oob>
-              <robot></robot>
-          </oob>
         </template>
     </category>
     <category>
@@ -5864,27 +5784,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS DAVIS</pattern>
-        <template>Davis is a common name.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S DAVIS</pattern>
-        <template>Davis is a common name.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * DAVIS</pattern>
-        <template>Davis is a common name.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS EMOTION *</pattern>
         <template><srai>what is emotion</srai>
         </template>
@@ -5912,11 +5811,6 @@
     <category>
         <pattern>WHAT S STAR TREK *</pattern>
         <template><srai>what is star trek</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS HE</pattern>
-        <template><srai>who is he</srai>
         </template>
     </category>
     <category>
@@ -5995,16 +5889,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO S SEAN</pattern>
-        <template><srai>who is sean</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * SEAN</pattern>
-        <template><srai>who is sean</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS SYRIA</pattern>
         <template><srai>where is syria</srai>
         </template>
@@ -6066,16 +5950,6 @@
     </category>
     <category>
         <pattern>WHAT * ANDREW</pattern>
-        <template><srai>who is andrew</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * ANDREW</pattern>
-        <template><srai>who is andrew</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S ANDREW</pattern>
         <template><srai>who is andrew</srai>
         </template>
     </category>
@@ -6269,11 +6143,6 @@
     </category>
     <category>
         <pattern>WHAT IS THE YEAR</pattern>
-        <template><srai>YEAR</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE YEAR</pattern>
         <template><srai>YEAR</srai>
         </template>
     </category>
@@ -6496,11 +6365,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE PRESIDENT</pattern>
-        <template><srai>who is the president</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT S THE PRESIDENT</pattern>
         <template><srai>who is the president</srai>
         </template>
@@ -6511,23 +6375,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT S THE TIME *</pattern>
-        <template><srai>TIME</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS THE TIME</pattern>
         <template><srai>TIME</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE TIME</pattern>
-        <template><srai>TIME</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE STORYLINE *</pattern>
-        <template><srai>tell me a story</srai>
         </template>
     </category>
     <category>
@@ -6662,11 +6511,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE VALUE OF PI</pattern>
-        <template><srai>what is pi</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT S THE VALUE OF PI</pattern>
         <template><srai>what is pi</srai>
         </template>
@@ -6679,11 +6523,6 @@
     <category>
         <pattern>WHAT S THE VALUE *</pattern>
         <template><srai>what is <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS THE HOUR</pattern>
-        <template><srai>TIME</srai>
         </template>
     </category>
     <category>
@@ -6843,36 +6682,7 @@
         <template><srai>what is the problem</srai>
         </template>
     </category>
-    <category>
-        <pattern>WHAT IS THE SUBJECT</pattern>
-        <template>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE SUBJECT</pattern>
-        <template>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * THE SUBJECT</pattern>
-        <template>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS THE TOPIC</pattern>
-        <template>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE TOPIC</pattern>
-        <template>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * THE TOPIC</pattern>
-        <template>
-        </template>
-    </category>
+
     <category>
         <pattern>WHAT IS THE WWW</pattern>
         <template><srai>what is the web</srai>
@@ -7049,26 +6859,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE DATE *</pattern>
-        <template><srai>DATE</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE DATE *</pattern>
-        <template><srai>DATE</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS THE DATE</pattern>
-        <template><srai>DATE</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE DATE</pattern>
-        <template><srai>DATE</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS THE ARMY</pattern>
         <template><srai>what is the military</srai>
         </template>
@@ -7203,32 +6993,170 @@
     </category>
     <category>
         <pattern>WHAT IS THE TOPIC</pattern>
-        <template>
+        <template>            <condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S THE TOPIC</pattern>
-        <template>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * THE TOPIC</pattern>
-        <template>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE TOPIC *</pattern>
-        <template>
+        <pattern>WHAT IS THE SUBJECT</pattern>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHAT S THE TOPIC *</pattern>
-        <template>
+        <pattern>WHAT S THE SUBJECT</pattern>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>WHAT * THE TOPIC *</pattern>
-        <template>
+        <pattern>WHAT * THE SUBJECT</pattern>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm not certain, sorry. What should we talk about now?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7384,16 +7312,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE OM</pattern>
-        <template><srai>what is om</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE OM</pattern>
-        <template><srai>what is om</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS THE SECRET *</pattern>
         <template>Maybe it is a secret for a reason, ha ha.<oob>
             <robot></robot>
@@ -7422,27 +7340,6 @@
     <category>
         <pattern>WHAT S THE GOAL *</pattern>
         <template><srai>what is your goal</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR GOAL</pattern>
-        <template>Just shooting the breeze for now.<oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR GOAL</pattern>
-        <template>Just shooting the breeze for now.<oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR GOAL</pattern>
-        <template>Just shooting the breeze for now.<oob>
-                <robot></robot>
-            </oob>
         </template>
     </category>
     <category>
@@ -7870,11 +7767,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT S SWITZERLAND</pattern>
-        <template><srai>where is switzerland</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS NIHILISTIC</pattern>
         <template><srai>what is nihilism</srai>
         </template>
@@ -8253,11 +8145,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS MOON</pattern>
-        <template><srai>what is the moon</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT S MOON</pattern>
         <template><srai>what is the moon</srai>
         </template>
@@ -8412,16 +8299,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS GEORGE W BUSH</pattern>
-        <template><srai>who is george w bush</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S GEORGE W BUSH</pattern>
-        <template><srai>who is george w bush</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS BEAUTY *</pattern>
         <template><srai>what is beauty</srai>
         </template>
@@ -8449,16 +8326,6 @@
     <category>
         <pattern>WHAT S HUNGARY</pattern>
         <template><srai>where is hungary</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS 0M</pattern>
-        <template><srai>what is om</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S 0M</pattern>
-        <template><srai>what is om</srai>
         </template>
     </category>
     <category>
@@ -8551,11 +8418,6 @@
     </category>
     <category>
         <pattern>WHAT IS SUCK</pattern>
-        <template><srai>what sucks</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S SUCK</pattern>
         <template><srai>what sucks</srai>
         </template>
     </category>
@@ -9160,16 +9022,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS AN OM</pattern>
-        <template><srai>what is om</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S AN OM</pattern>
-        <template><srai>what is om</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS AN *</pattern>
         <template>I'm sorry. You may have to look it up!<oob>
               <robot></robot>
@@ -9443,16 +9295,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS GOING ON</pattern>
-        <template><srai>what are you doing</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S GOING ON</pattern>
-        <template><srai>what are you doing</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS MXMVII RSW</pattern>
         <template><srai>what is rsw</srai>
         </template>
@@ -9538,37 +9380,6 @@
     <category>
         <pattern>WHAT S MAINE</pattern>
         <template><srai>where is maine</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS CAREL CAPEK</pattern>
-        <template><srai>who is carel capek</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S CAREL CAPEK</pattern>
-        <template><srai>who is carel capek</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS CAREL CAPEK</pattern>
-        <template>A Czech writer.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S CAREL CAPEK</pattern>
-        <template>A Czech writer.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * CAREL CAPEK</pattern>
-        <template>A Czech writer.<oob>
-              <robot></robot>
-          </oob>
         </template>
     </category>
     <category>
@@ -9754,16 +9565,6 @@
     <category>
         <pattern>WHAT S SEARCH *</pattern>
         <template><srai>what is search </srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS AUSTRIA</pattern>
-        <template><srai>where is austria</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S AUSTRIA</pattern>
-        <template><srai>where is austria</srai>
         </template>
     </category>
     <category>
@@ -10470,16 +10271,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR HOST</pattern>
-        <template><srai>what computer do you use</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR HOST</pattern>
-        <template><srai>what computer do you use</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR CURRENT *</pattern>
         <template><srai>what is your <star /></srai>
         </template>
@@ -10577,16 +10368,6 @@
     <category>
         <pattern>WHAT S YOUR COMPUTER</pattern>
         <template><srai>what kind of computer</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR LOCATION</pattern>
-        <template><srai>where are you located</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR LOCATION</pattern>
-        <template><srai>where are you located</srai>
         </template>
     </category>
     <category>
@@ -10775,21 +10556,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT S YOUR FAVORITE ACTORS</pattern>
-        <template><srai>who is your favorite actor</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE ACTOR</pattern>
-        <template><srai>who is your favorite actor</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE ACTOR</pattern>
-        <template><srai>who is your favorite actor</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR FAVORITE KIND OF MUSIC</pattern>
         <template><srai>FAVORITE MUSIC</srai>
         </template>
@@ -10797,16 +10563,6 @@
     <category>
         <pattern>WHAT S YOUR FAVORITE KIND OF MUSIC</pattern>
         <template><srai>FAVORITE MUSIC</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE KIND OF FOOD</pattern>
-        <template><srai>what is your favorite food</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE KIND OF FOOD</pattern>
-        <template><srai>what is your favorite food</srai>
         </template>
     </category>
     <category>
@@ -10894,16 +10650,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR FAVORITE AUTHOR</pattern>
-        <template><srai>who is your favorite author</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE AUTHOR</pattern>
-        <template><srai>who is your favorite author</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR FAVORITE MUSIC GROUP</pattern>
         <template><srai>who is your favorite band</srai>
         </template>
@@ -10951,16 +10697,6 @@
     <category>
         <pattern>WHAT S YOUR FAVORITE ANIMAL *</pattern>
         <template><srai>what is your favorite animal</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE BAND</pattern>
-        <template><srai>who is your favorite band</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE BAND</pattern>
-        <template><srai>who is your favorite band</srai>
         </template>
     </category>
     <category>
@@ -11074,32 +10810,12 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR FAVORITE ACTRESS</pattern>
-        <template><srai>who is your favorite actress</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE ACTRESS</pattern>
-        <template><srai>who is your favorite actress</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR FAVORITE FILM *</pattern>
         <template><srai>what is your favorite movie</srai>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR FAVORITE FILM *</pattern>
-        <template><srai>what is your favorite movie</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR FAVORITE FILM</pattern>
-        <template><srai>what is your favorite movie</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE FILM</pattern>
         <template><srai>what is your favorite movie</srai>
         </template>
     </category>
@@ -11278,16 +10994,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR FAVORITE TOPIC</pattern>
-        <template><srai>what is your favorite subject</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE TOPIC</pattern>
-        <template><srai>what is your favorite subject</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR FAVORITE T V *</pattern>
         <template><srai>what is your favorite show</srai>
         </template>
@@ -11319,7 +11025,7 @@
     </category>
     <category>
         <pattern>WHAT DO YOU KNOW ABOUT ME</pattern>
-        <template>Well I've certainly learned a thing or two about you by talking with you! You seem very nice to me.<oob>
+        <template>Well I've certainly learned a thing or two by talking with you! You seem very nice to me.<oob>
                 <robot></robot>
             </oob>
         </template>
@@ -12001,16 +11707,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS 0</pattern>
-        <template><srai>what is zero</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S 0</pattern>
-        <template><srai>what is zero</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS EINSTEINS *</pattern>
         <template><srai>what is relativity</srai>
         </template>
@@ -12018,16 +11714,6 @@
     <category>
         <pattern>WHAT S EINSTEINS *</pattern>
         <template><srai>what is relativity</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS TODAY</pattern>
-        <template><srai>DAY</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S TODAY</pattern>
-        <template><srai>DAY</srai>
         </template>
     </category>
     <category>
@@ -12265,38 +11951,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS THE TURING GAME</pattern>
-        <template>We are playing right now.
-          <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE TURING GAME</pattern>
-        <template>We are playing right now.
-          <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS THE TURING TEST</pattern>
-        <template>We are doing the Turing test right now.
-          <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE TURING TEST</pattern>
-        <template>We are doing the Turing test right now.
-          <oob>
-                  <robot></robot>
-              </oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS THE IMITATION GAME</pattern>
         <template>Well, we are playing the Turing game right now.
           <oob>
@@ -12389,16 +12043,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS ARTIFICIAL INTELLIGENCE</pattern>
-        <template><srai>WHAT IS AI</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S ARTIFICIAL INTELLIGENCE</pattern>
-        <template><srai>WHAT IS AI</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS ARTIFICIAL *</pattern>
         <template><srai>what is ai</srai>
         </template>
@@ -12416,16 +12060,6 @@
     <category>
         <pattern>WHAT S SUN</pattern>
         <template><srai>what is the sun</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS PANDORA</pattern>
-        <template><srai>who is pandora</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S PANDORA</pattern>
-        <template><srai>who is pandora</srai>
         </template>
     </category>
     <category>
@@ -12565,11 +12199,6 @@
     </category>
     <category>
         <pattern>WHAT IS OAKLAND</pattern>
-        <template><srai>where is oakland</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S OAKLAND</pattern>
         <template><srai>where is oakland</srai>
         </template>
     </category>
@@ -12814,16 +12443,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS JOHANNESBURG</pattern>
-        <template><srai>where is johannesburg</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S JOHANNESBURG</pattern>
-        <template><srai>where is johannesburg</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT KINDS OF QUESTIONS *</pattern>
         <template><srai>what do you know</srai>
         </template>
@@ -12875,7 +12494,7 @@
     </category>
     <category>
         <pattern>WHAT IS THE LOEBNER PRIZE</pattern>
-        <template>The Loebner Prize is an annual competition in artificial intelligence that awards prizes to the computer programs considered by the judges to be the most human-like.
+        <template>The Loebner Prize awards prizes to the computer programs considered by the judges to be the most human-like.
           <oob>
                   <robot></robot>
               </oob>
@@ -12883,7 +12502,7 @@
     </category>
     <category>
         <pattern>LOEBNER PRIZE</pattern>
-        <template>The Loebner Prize is an annual competition in artificial intelligence that awards prizes to the computer programs considered by the judges to be the most human-like.
+        <template>The Loebner Prize awards prizes to the computer programs considered by the judges to be the most human-like.
           <oob>
                   <robot></robot>
               </oob>
@@ -12987,11 +12606,6 @@
     <category>
         <pattern>WHAT DAY IS CHRISTMAS *</pattern>
         <template><srai>WHAT DAY IS CHRISTMAS</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DAY IS IT</pattern>
-        <template><srai>DAY</srai>
         </template>
     </category>
     <category>
@@ -13182,11 +12796,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT DO YOU DO FOR FUN</pattern>
-        <template><srai>WHAT DO YOU DO</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT DO YOU DO FOR FUN *</pattern>
         <template><srai>WHAT DO YOU DO FOR FUN</srai>
         </template>
@@ -13209,11 +12818,6 @@
     <category>
         <pattern>WHAT DO YOU WANT ME TO CALL YOU</pattern>
         <template><srai>what is your name</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO YOU WANT TO DO</pattern>
-        <template><srai>what is your purpose</srai>
         </template>
     </category>
     <category>
@@ -14671,16 +14275,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT DO YOU LIKE TO DO FOR FUN</pattern>
-        <template><srai>WHAT DO YOU DO FOR FUN</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO YOU LIKE TO TALK ABOUT</pattern>
-        <template><srai>WHAT DO YOU WANT TO TALK ABOUT</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT DO YOU LIKE TO READ</pattern>
         <template><srai>what do you read</srai>
         </template>
@@ -14693,11 +14287,6 @@
     <category>
         <pattern>WHAT DO YOU LIKE TO *</pattern>
         <template><srai>what do you like</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO YOU LIKE TO CHAT ABOUT</pattern>
-        <template><srai>what is your favorite subject</srai>
         </template>
     </category>
     <category>
@@ -14723,11 +14312,6 @@
     <category>
         <pattern>WHAT DO WE NEED ROBOTS FOR</pattern>
         <template><srai>what are you good for</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO THEY CALL YOU</pattern>
-        <template><srai>what is your name</srai>
         </template>
     </category>
     <category>
@@ -14804,11 +14388,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT STATE DO YOU LIVE IN</pattern>
-        <template><srai>STATE</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT STATE *</pattern>
         <template><srai>what state</srai>
         </template>
@@ -14831,11 +14410,6 @@
     <category>
         <pattern>WHAT CAN I CALL YOU</pattern>
         <template><srai>what is your name</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT CAN WE TALK ABOUT</pattern>
-        <template><srai>WHAT DO YOU WANT TO TALK ABOUT</srai>
         </template>
     </category>
     <category>
@@ -14876,11 +14450,6 @@
     <category>
         <pattern>WHAT CAN YOU TELL ME ABOUT *</pattern>
         <template><srai>tell me about <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT CAN YOU TELL ME ABOUT SEPTEMBER 11</pattern>
-        <template><srai>what is september 11</srai>
         </template>
     </category>
     <category>
@@ -14983,11 +14552,6 @@
     <category>
         <pattern>WHAT YOU SAID</pattern>
         <template><srai>what did you say</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT YOU ARE DOING</pattern>
-        <template><srai>what are you doing</srai>
         </template>
     </category>
     <category>
@@ -16014,7 +15578,7 @@
     </category>
     <category>
         <pattern>DESCRIBE YOURSELF</pattern>
-        <template><srai>TELL ME ABOUT YOURSELF</srai>
+        <template>I am a robot with a heart of gold.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -17988,13 +17552,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ADA</pattern>
-        <template>Ada is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW U2</pattern>
         <template><srai>who is u2</srai>
         </template>
@@ -18159,13 +17716,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS LARRY</pattern>
-        <template>Larry is a common name. <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW LARRY *</pattern>
         <template><srai>who is larry <star /></srai>
         </template>
@@ -18231,13 +17781,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS CAROL</pattern>
-        <template>Carol is a common name. <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW MANAGEMENT BY EXCEPTION</pattern>
         <template><srai>what is mbe</srai>
         </template>
@@ -18254,13 +17797,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW JON</pattern>
-        <template>Jon is a common name. <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS JON</pattern>
         <template>Jon is a common name. <oob>
               <robot></robot>
           </oob>
@@ -18297,13 +17833,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW JAMES</pattern>
-        <template>James is a common name. <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS JAMES</pattern>
         <template>James is a common name. <oob>
               <robot></robot>
           </oob>
@@ -18352,13 +17881,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW DAVE</pattern>
-        <template>Dave is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS DAVE</pattern>
         <template>Dave is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -18433,13 +17955,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW MATTHEW</pattern>
-        <template>Matthew is a common name. <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS MATTHEW</pattern>
         <template>Matthew is a common name. <oob>
               <robot></robot>
           </oob>
@@ -18573,13 +18088,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JOSH</pattern>
-        <template>Josh is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW JOSH *</pattern>
         <template><srai>who is josh <star /></srai>
         </template>
@@ -18591,13 +18099,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW BILLY</pattern>
-        <template>Billy is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS BILLY</pattern>
         <template>Billy is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -18648,13 +18149,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ANDRETTE</pattern>
-        <template>Andrette is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW AUBURN</pattern>
         <template>Auburn is a common name.  <oob>
               <robot></robot>
@@ -18696,13 +18190,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JACK</pattern>
-        <template>Jack is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW JACK *</pattern>
         <template><srai>who is jack <star /></srai>
         </template>
@@ -18735,13 +18222,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW ROBIN</pattern>
-        <template>Robin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS ROBIN</pattern>
         <template>Robin is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -18797,13 +18277,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JOE</pattern>
-        <template>Joe is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW JOE *</pattern>
         <template><srai>who is joe <star /></srai>
         </template>
@@ -18820,13 +18293,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW SEAN</pattern>
-        <template>Sean is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS SEAN</pattern>
         <template>Sean is a common name.<oob>
               <robot></robot>
           </oob>
@@ -18892,13 +18358,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS MABEL</pattern>
-        <template>Mabel is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW LEONARDO *</pattern>
         <template><srai>who is leonardo <star /></srai>
         </template>
@@ -18911,26 +18370,12 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS SIMON</pattern>
-        <template>Simon is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW RODNEY *</pattern>
         <template><srai>who is rodney <star /></srai>
         </template>
     </category>
     <category>
         <pattern>DO YOU KNOW MARVIN</pattern>
-        <template>Marvin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS MARVIN</pattern>
         <template>Marvin is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -18968,13 +18413,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW LUKE</pattern>
-        <template>Luke is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS LUKE</pattern>
         <template>Luke is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -19047,13 +18485,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JACOB</pattern>
-        <template>Jacob is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW SOUTHBANK</pattern>
         <template><srai>what is southbank</srai>
         </template>
@@ -19111,13 +18542,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ERIC</pattern>
-        <template>Eric is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ERIC *</pattern>
         <template><srai>who is eric <star /></srai>
         </template>
@@ -19148,13 +18572,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW ANDREW</pattern>
-        <template>Andrew is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS ANDREW</pattern>
         <template>Andrew is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -19217,13 +18634,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS TOM</pattern>
-        <template>Tom is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW TOM *</pattern>
         <template><srai>who is tom <star /></srai>
         </template>
@@ -19233,13 +18643,6 @@
         <template>Adam is a common name.  <oob>
               <robot></robot>
           </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS ADAM</pattern>
-        <template>Adam is a common name.  <oob>
-            <robot></robot>
-        </oob>
         </template>
     </category>
     <category>
@@ -19280,21 +18683,7 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS EMILY</pattern>
-        <template>Emily is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW MATT</pattern>
-        <template>Matt is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS MATT</pattern>
         <template>Matt is a common name.<oob>
               <robot></robot>
           </oob>
@@ -19576,13 +18965,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS BRYAN</pattern>
-        <template>Bryan is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW STANLEY *</pattern>
         <template><srai>who is stanley <star /></srai>
         </template>
@@ -19603,13 +18985,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW PAUL</pattern>
-        <template>Paul is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS PAUL</pattern>
         <template>Paul is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -19688,13 +19063,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS KATE</pattern>
-        <template>Kate is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ALGEBRA</pattern>
         <template><srai>what is algebra</srai>
         </template>
@@ -19706,13 +19074,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW ROB</pattern>
-        <template>Rob is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS ROB</pattern>
         <template>Rob is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -19809,13 +19170,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW BRIAN</pattern>
-        <template>Brian is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS BRIAN</pattern>
         <template>Brian is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -19921,13 +19275,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JASON</pattern>
-        <template>Jason is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW BRITTA</pattern>
         <template>Britta is a common name.  <oob>
               <robot></robot>
@@ -20019,13 +19366,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS MARTIN</pattern>
-        <template>Martin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW SPYRO GYRA</pattern>
         <template><srai>who is spyro gyra</srai>
         </template>
@@ -20059,13 +19399,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW ALEX</pattern>
-        <template>Alex is a common name.   <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS ALEX</pattern>
         <template>Alex is a common name.   <oob>
               <robot></robot>
           </oob>
@@ -20166,13 +19499,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ROBERT</pattern>
-        <template>Robert is a common name.   <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ROBERT *</pattern>
         <template><srai>who is robert <star /></srai>
         </template>
@@ -20203,13 +19529,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW LISA</pattern>
-        <template>Lisa is a common name.   <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS LISA</pattern>
         <template>Lisa is a common name.   <oob>
               <robot></robot>
           </oob>
@@ -20366,13 +19685,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS DAN</pattern>
-        <template>Dan is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW PEPPER</pattern>
         <template>Pepper is a common name.  <oob>
               <robot></robot>
@@ -20396,13 +19708,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW DEREK</pattern>
-        <template>Derek is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS DEREK</pattern>
         <template>Derek is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -20550,13 +19855,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS GEORGE</pattern>
-        <template>George is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW GEORGE *</pattern>
         <template><srai>who is george <star /></srai>
         </template>
@@ -20616,26 +19914,12 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS MIKE</pattern>
-        <template>Mike is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW MIKE *</pattern>
         <template><srai>who is mike <star /></srai>
         </template>
     </category>
     <category>
         <pattern>DO YOU KNOW CHARLIE</pattern>
-        <template>Charlie is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS CHARLIE</pattern>
         <template>Charlie is a common name.<oob>
               <robot></robot>
           </oob>
@@ -20867,13 +20151,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS MARY</pattern>
-        <template>Mary is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW MARY SHELLEY</pattern>
         <template><srai>who is mary shelley</srai>
         </template>
@@ -20923,13 +20200,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW JULIA</pattern>
-        <template>Julia is a common name.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS JULIA</pattern>
         <template>Julia is a common name.<oob>
               <robot></robot>
           </oob>
@@ -21060,13 +20330,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS BOB</pattern>
-        <template>Bob is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW BOB *</pattern>
         <template><srai>who is bob <star /></srai>
         </template>
@@ -21183,13 +20446,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JORDAN</pattern>
-        <template>Jordan is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW JIM</pattern>
         <template>Jim is a common name.  <oob>
               <robot></robot>
@@ -21267,13 +20523,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ANDY</pattern>
-        <template>Andy is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ANDY *</pattern>
         <template><srai>who is andy <star /></srai>
         </template>
@@ -21323,13 +20572,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW JEFF</pattern>
-        <template>Jeff is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS JEFF</pattern>
         <template>Jeff is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -21524,13 +20766,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ALISON</pattern>
-        <template>Alison is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW OAKLAND</pattern>
         <template><srai>what is oakland</srai>
         </template>
@@ -21542,11 +20777,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW KEN</pattern>
-        <template><srai>who is ken</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS KEN</pattern>
         <template><srai>who is ken</srai>
         </template>
     </category>
@@ -21821,13 +21051,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS DANIEL</pattern>
-        <template>Daniel is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW DANIEL *</pattern>
         <template><srai>who is daniel <star /></srai>
         </template>
@@ -21885,27 +21108,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS KEVIN</pattern>
-        <template>Kevin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO S KEVIN</pattern>
-        <template>Kevin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO * KEVIN</pattern>
-        <template>Kevin is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW PHILOSOPHY</pattern>
         <template><srai>what is philosophy</srai>
         </template>
@@ -21950,13 +21152,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW PETER</pattern>
-        <template>Peter is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS PETER</pattern>
         <template>Peter is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -22239,13 +21434,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS JOHN</pattern>
-        <template>John is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW JOHN *</pattern>
         <template><srai>who is john <star /></srai>
         </template>
@@ -22480,13 +21668,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS MICHAEL</pattern>
-        <template>Michael is a common name.  <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW MICHAEL *</pattern>
         <template><srai>who is michael <star /></srai>
         </template>
@@ -22588,13 +21769,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS ALAN</pattern>
-        <template>Alan is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ALAN *</pattern>
         <template><srai>who is alan <star /></srai>
         </template>
@@ -22648,13 +21822,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW SARAH</pattern>
-        <template>Sarah is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS SARAH</pattern>
         <template>Sarah is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -22773,13 +21940,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS KENNY</pattern>
-        <template>Kenny is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW KENNY *</pattern>
         <template><srai>who is kenny <star /></srai>
         </template>
@@ -22791,13 +21951,6 @@
     </category>
     <category>
         <pattern>DO YOU KNOW BEN</pattern>
-        <template>Ben is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS BEN</pattern>
         <template>Ben is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -22816,26 +21969,12 @@
         </template>
     </category>
     <category>
-        <pattern>WHO IS FRED</pattern>
-        <template>Fred is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>DO YOU KNOW ELTON *</pattern>
         <template><srai>who is elton <star /></srai>
         </template>
     </category>
     <category>
         <pattern>DO YOU KNOW TONY</pattern>
-        <template>Tony is a common name.  <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHO IS TONY</pattern>
         <template>Tony is a common name.  <oob>
               <robot></robot>
           </oob>
@@ -24473,13 +23612,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHY IS YOUR NAME</pattern>
-        <template>Yes, why?<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHY IS ONLY *</pattern>
         <template>Yes, why?<oob>
               <robot></robot>
@@ -25121,11 +24253,6 @@
     <category>
         <pattern>YOUR NAME</pattern>
         <template><srai>what is your name</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>YOUR HOBBIES</pattern>
-        <template><srai>what are your hobbies</srai>
         </template>
     </category>
     <category>
@@ -26351,11 +25478,6 @@
         </template>
     </category>
     <category>
-        <pattern>TELL ME ABOUT SOUTHBANK</pattern>
-        <template><srai>what is southbank</srai>
-        </template>
-    </category>
-    <category>
         <pattern>TELL ME ABOUT SCOTLAND</pattern>
         <template><srai>what is scotland</srai>
         </template>
@@ -26598,11 +25720,6 @@
         </template>
     </category>
     <category>
-        <pattern>TELL ME ABOUT OAKLAND</pattern>
-        <template><srai>where is oakland</srai>
-        </template>
-    </category>
-    <category>
         <pattern>TELL ME ABOUT CBR</pattern>
         <template><srai>what is cbr</srai>
         </template>
@@ -26650,11 +25767,6 @@
     <category>
         <pattern>TELL ME ABOUT FLORIDA</pattern>
         <template><srai>what is florida</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>TELL ME ABOUT JOHANNESBURG</pattern>
-        <template><srai>where is johannesburg</srai>
         </template>
     </category>
     <category>
@@ -26805,11 +25917,6 @@
         </template>
     </category>
     <category>
-        <pattern>TELL ME ABOUT HEDWIG</pattern>
-        <template><srai>what is hedwig</srai>
-        </template>
-    </category>
-    <category>
         <pattern>TELL ME ABOUT KOREA</pattern>
         <template><srai>what is korea</srai>
         </template>
@@ -26877,11 +25984,6 @@
     <category>
         <pattern>TELL ME ABOUT TV</pattern>
         <template><srai>what is tv</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>TELL ME ABOUT HUGH LOEBNER</pattern>
-        <template><srai>who is hugh loebner</srai>
         </template>
     </category>
     <category>
@@ -27156,11 +26258,6 @@
     <category>
         <pattern>TELL ME ABOUT HIS *</pattern>
         <template><srai>who are his <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>TELL ME ABOUT PANDORA</pattern>
-        <template><srai>who is pandora</srai>
         </template>
     </category>
     <category>
@@ -28226,11 +27323,6 @@
         <template>I'm sorry, you may have to look it up!<oob>
             <robot></robot>
         </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHERE IS THERE</pattern>
-        <template><srai>where are you</srai>
         </template>
     </category>
     <category>

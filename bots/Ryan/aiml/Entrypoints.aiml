@@ -737,7 +737,7 @@
     </category>
     <category>
         <pattern>SUMMER</pattern>
-        <template><think><set name="topic">pets</set></think>What do you like most about summertime?<oob><robot></robot></oob>
+        <template><think><set name="topic">pets</set></think><think><set name="dialogue">pets</set></think>What do you like most about summertime?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -794,7 +794,7 @@
         <pattern>TITANIC</pattern>
         <template><think><set name="dialogue">americanhistory</set></think>
         <think><set name="topic">history</set></think>
-        If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?<oob><robot></robot></oob>
+        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
         </template>
     </category>
     <category>
@@ -845,6 +845,13 @@
         <pattern>VENUS</pattern>
         <template><think><set name="topic">venus</set></think>
         <think><set name="dialogue">science</set></think>Ah, Venus. The planet of love. Did you know that Venus is the hottest planet in our solar system, no pun intended?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>VOYAGE OF THE TITANIC</pattern>
+        <template><think><set name="dialogue">americanhistory</set></think>
+        <think><set name="topic">history</set></think>
+        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
         </template>
     </category>
 

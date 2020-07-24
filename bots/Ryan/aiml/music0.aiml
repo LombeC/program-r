@@ -989,6 +989,28 @@
         </category>
 
         <category>
+            <pattern># YES I PLAYED * ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># YES * ^</pattern>
+            <that>I'm curious, did you ever play an instrument?</that>
+            <template>
+                So cool! <set name="most recent dialogue question">Did you learn to play as a child?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>Brass Instrument Set</set> ^</pattern>
             <that>I'm curious, did you ever play an instrument?</that>
             <template>

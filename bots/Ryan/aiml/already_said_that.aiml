@@ -13,7 +13,12 @@
             <li value="television">My apologies! Do you want to get back to talking about TV?</li>
             <li value="museums">My apologies! Do you want to get back to talking about museums?</li>
             <li value="food">My apologies! Do you want to get back to talking about food?</li>
-            <li value="inventions">My apologies! Do you want to get back to talking about inventions?</li>
+            <li value="americanhistory">My apologies! Do you want to get back to talking about history?</li>
+            <li value="drinks">My apologies! Do you want to get back to talking about drinks?</li>
+            <li value="comedy">My apologies! Do you want to get back to talking about comedy?</li>
+            <li value="foodnetwork">My apologies! Do you want to get back to talking about Food Network?</li>
+            <li value="radio">My apologies! Do you want to get back to talking about radio?</li>
+            <li value="romance">My apologies! Do you want to get back to talking about romance?</li>
             <li value="reading">My apologies! Do you want to get back to talking about reading?</li>
             <li value="books">My apologies! Do you want to get back to talking about books?</li>
             <li value="cards">My apologies! Do you want to get back to talking about cards?</li>
@@ -286,6 +291,72 @@
   </category>
 
   <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about history?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about radio?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about romance?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about comedy?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about drinks?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you want to get back to talking about Food Network?</that>
+      <template>
+          <get name="most recent dialogue question"/>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
       <pattern># <set>NO</set> ^</pattern>
       <that>Do you want to get back to talking about sports?</that>
       <template>
@@ -442,6 +513,72 @@
   <category>
       <pattern># <set>NO</set> ^</pattern>
       <that>Do you want to get back to talking about pets?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about history?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about radio?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about romance?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about drinks?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about Food Network?</that>
+      <template>
+          Sure! So what should we talk about now?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you want to get back to talking about comedy?</that>
       <template>
           Sure! So what should we talk about now?
           <oob>

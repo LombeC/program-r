@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- FOOD -->
+    <category>
+        <pattern>FOOD</pattern>
+        <template>
+            <set name="most recent dialogue question">Would you like to talk about food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Would you like to talk about food?</that>
+        <template>
+          <think><set name="dialogue">food</set></think>
+            <random>
+                <li><set name="most recent dialogue question">How do you feel about healthy food?</set></li>
+                <li><set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set></li>
+                <li>There's nothing like some good eating! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+                <li><set name="most recent dialogue question">Is going out to eat something you enjoy doing?</set></li>
+                <!-- <li>What is your favorite foreign cuisine?</li> -->
+                <!-- <li>Do you like American food?</li> THIS WILL LEAD INTO CONTENT FROM NIH STUDY --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Would you like to talk about food?</that>
+        <template>
+            No worries! <set name="most recent dialogue question">What would you like to talk about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Is going out to eat something you enjoy doing?</that>
+        <template>
+          <think><set name="topic">food</set></think>
+            I love nothing more! <set name="most recent dialogue question">When you go out to eat, do you like to eat foreign or American cuisine?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <topic name="food">
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Is going out to eat something you enjoy doing?</that>
+        <template>
+            I understand. <set name="most recent dialogue question">Do you want to see a recipe that you could easily prepare at home?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>DO YOU WANT TO SEE A RECIPE THAT YOU COULD EASILY PREPARE AT HOME?</that>
+        <template>
+
+          <think><set name="topic">healthyrecipes</set></think>
+            That's ok, maybe I can show you a recipe some other time. <set name="most recent dialogue question">Are you still enjoying speaking about food?</set>
+                <oob>
+                    <robot>
+                    </robot>
+                </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+            <that>Do you want to see a recipe that you could easily prepare at home?</that>
+                <template>
+                  <think><set name="topic">healthyrecipes</set></think>
+
+                    Which of these three recipes sounds best? <set name="most recent dialogue question">Chickpea curry, cashew chicken stir fry, or cauliflower tacos?</set>
+                        <oob>
+                            <robot>
+                            </robot>
+                        </oob>
+                </template>
+    </category>
+
+
+    <!-- REDIRECT TO VEGETABLES DIALOGUE -->
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you feel about healthy food?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">healthyfood</set></think>
+            <condition name="getsentiment">
+                <li value="verypositive">Excellent! <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="positive">Excellent! <set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Do you think that pizza can be healthy if you put veggies on it?</set></li>
+                <li value="negative">Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+                <li value="verynegative">Ha ha, I don't blame you. Healthy foods are so boring! <set name="most recent dialogue question">Why don't we talk about comfort food?</set></li>
+            </condition>
+                <oob>
+                    <robot></robot>
+                </oob>
+        </template>
+    </category>
+
+
+
+<!-- REDIRECT TO HEALTHYFOOD DIALOGUE -->
+
+
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Why don't we talk about comfort food?</that>
+        <template>
+          <think><set name="topic">comfortfood</set></think>
+          Comfort food always reminds me of home, I have to say.
+          <condition name="birthplace">
+              <li value="Unknown"><set name="most recent dialogue question">Where is your hometown?</set></li>
+              <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. What kind of home cooking do they make there?</set></li>
+          </condition>
+                <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Why don't we talk about comfort food?</that>
+        <template>
+          <think><set name="topic">comfortfood</set></think>
+          No problem! <set name="most recent dialogue question">Would you like to continue talking about food?</set>
+                <oob><robot></robot></oob>
+        </template>
+    </category>
+
+  <!-- REDIRECT TO COMFORTFOOD DIALOGUE -->
+
+
+    <category>
+        <pattern># FOREIGN ^</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li>
+                <!-- <li>Do you like European Food?</li> --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># FOREIGN CUISINE ^</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">Do you like Asian food?</set></li>
+                <li><set name="most recent dialogue question">Do you like Mexican food?</set></li>
+                <!-- <li>Do you like European Food?</li> --></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+          <set name="most recent dialogue question">How about asian food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like Mexican food?</that>
+        <template>
+          <set name="most recent dialogue question">How about asian food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you like Asian food?</that>
+        <template>
+          <set name="most recent dialogue question">How about Mexican food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Do you like Asian food?</that>
+        <template>
+          <set name="most recent dialogue question">How about Mexican food?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>DO YOU LIKE ASIAN FOOD?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">How do you feel about Chinese food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Thai food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Indian food?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <random>
+                <li><set name="most recent dialogue question">How do you feel about Chinese food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Thai food?</set></li>
+                <li><set name="most recent dialogue question">How do you feel about Indian food?</set></li></random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>How do you feel about Chinese Food?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">chinesefood</set></think>
+            <condition name="getsentiment">
+                <li value="verypositive"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
+                <li value="positive"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Did you know that Chinese food was one of the first foreign cuisines to become popular in the United States?</set></li>
+                <li value="negative">Let's skip it! <set name="most recent dialogue question">How do you feel about Indian food?</set></li>
+                <li value="verynegative">Let's skip it! <set name="most recent dialogue question">How do you feel about Indian food?</set></li></condition>
+
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU FEEL ABOUT THAI FOOD?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">thaifood</set></think>
+
+            <condition name="getsentiment">
+                <li value="positive"><set name="most recent dialogue question">Thai food is supremely good! Do you prefer Thai noodle dishes or curries?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Do you prefer Thai noodle dishes or curries?</set></li>
+                <li value="negative"><set name="most recent dialogue question">Let's skip it! How do you feel about Chinese food?</set></li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>HOW DO YOU FEEL ABOUT INDIAN FOOD?</that>
+        <template>
+            <think><set name="data"><star/></set><set name="topic">indianfood</set></think>
+
+            <condition name="getsentiment">
+                <li value="positive">I love it too! <set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li>
+                <li value="neutral"><set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li>
+                <li value="negative"><set name="most recent dialogue question">Has it been long since the last time you ate Indian food?</set></li></condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>HOW ABOUT ASIAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+          <think><set name="topic">mexicanfood</set></think>
+            <set name="most recent dialogue question">You know that sound that fajitas make when they come out of the kitchen sizzling?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>HOW ABOUT MEXICAN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN ^</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN CUISINE ^</pattern>
+        <that>When you go out to eat, do you like to eat foreign or American cuisine?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># AMERICAN FOOD ^</pattern>
+        <that>WOULD YOU LIKE TO TALK ABOUT AMERICAN FOOD OR FOREIGN FOOD?</that>
+        <template>
+            <set name="most recent dialogue question">When was the last time you had a hamburger and fries?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>When was the last time you had a hamburger and fries?</that>
+        <template>
+            I love a thick, juicy burger with fries but my doctor has a different opinion!
+            <set name="most recent dialogue question">Do you like your hamburger plain or with all the fixings?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+
+
+
+
+
+
+  </topic>
+
+    </aiml>

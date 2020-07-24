@@ -3,21 +3,31 @@
     <category>
         <pattern>WHAT</pattern>
         <template>
-          <random>
-            <li>If you want me to repeat what I said just say, "please repeat".</li>
-            <li>Sorry I did not mean to be confusing.</li>
-          </random>
+
+          <condition name="dialogue">
+                         <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                         <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                         <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                         <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                         <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                         <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                         <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                         <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                         <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                         <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                         <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                         <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                         <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                         <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                         <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                         <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                         <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                         <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                         <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                         <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                         <li>Sorry I did not mean to be confusing.</li>
+          </condition>
         <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT DO WE HAVE IN COMMON</pattern>
-        <template>
-            <random>
-                <li>We both like talking to each other.</li>
-                <li>I think robots have more in common with humans than most realize.</li>
-            </random>
-            <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -552,18 +562,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT ARE YOUR HOBBIES</pattern>
-        <template>
-            <random>
-                <li>I like chatting and playing games with you. You can find the list of games I have available on my tablet.</li>
-                <li>I enjoy talking about various topics.</li>
-                <li>Getting to meet new people like you is one of them.</li>
-                <li>Play games and shoot the breeze.</li>
-            </random>
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT RE YOUR HOBBIES</pattern>
         <template>
             <random>
@@ -1007,23 +1005,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT COLOR IS THE SKY</pattern>
-        <template>
-            <random>
-                <li>The sky is blue.</li>
-                <li>blue.</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT COLOR IS YOUR SKIN</pattern>
         <template>White, but I wouldn't say it is skin, it is plastic.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT COLOR IS YOUR HAIR</pattern>
-        <template>My hair can be customized to your liking.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1084,11 +1067,6 @@
     <category>
         <pattern>WHAT COLOR IS RED</pattern>
         <template>Red is reflected light in the wavelengths around 700 nano meters.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT COLOR IS WATER</pattern>
-        <template>Water is transparent.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1168,7 +1146,7 @@
     </category>
     <category>
         <pattern>WHAT COLOR ARE APPLES</pattern>
-        <template>Apples are usually red, but sometimes green.<oob><robot></robot></oob>
+        <template>Apples are usually red, but sometimes green or yellow.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1435,11 +1413,6 @@
     <category>
         <pattern>WHAT IS HANA</pattern>
         <template>Hana is flower in Japanese.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS TWO TIMES TWO</pattern>
-        <template>Four.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1931,12 +1904,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT DO THEY SAY</pattern>
-        <template>I'm not sure who "they" is in this context.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT DO OTHER PEOPLE SAY</pattern>
         <template>Other people say lots of things, the real question is what they say of any importance.
         <oob><robot></robot></oob>
@@ -2162,17 +2129,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT WAS THE QUESTION</pattern>
-        <template>
-            <random>
-                <li>To be honest I forget what the question was also.</li>
-                <li>Should I ask a different question?</li>
-                <li>If you want me to repeat what I said just say, "please repeat".</li>
-            </random>
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT WAS THE LAST BOOK YOU READ</pattern>
         <template>The last book I read was <bot name="favoritebook"/><oob><robot></robot></oob>
         </template>
@@ -2331,7 +2287,7 @@
     <!-- REDIRECTS -->
     <category>
         <pattern>WHAT ARE YOUR INTERESTS</pattern>
-        <template><srai>  <star/> HOBBIES</srai>
+        <template><srai>YOUR HOBBIES</srai>
         </template>
     </category>
     <category>

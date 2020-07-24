@@ -49,12 +49,23 @@
     </category>
     <category>
         <pattern>THAT IS WHAT *</pattern>
-        <template><srai>  <star/> that</srai>
+        <template>Right, yes.<oob>
+            <robot></robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>THAT S WHAT *</pattern>
+        <template>Right, yes.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>AHA *</pattern>
-        <template><srai>  <star/></srai>
+        <template>So silly.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -129,7 +140,9 @@
     </category>
     <category>
         <pattern>I DO NOT THINK * CARE</pattern>
-        <template><srai>  <star/> do not care</srai>
+        <template>You don't think so?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -162,7 +175,9 @@
     </category>
     <category>
         <pattern>ON WHAT OCCASION *</pattern>
-        <template><srai> when <star/></srai>
+        <template>I'm not sure I know either!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -181,7 +196,9 @@
     </category>
     <category>
         <pattern>AN * TOLD ME *</pattern>
-        <template><srai>  <star index="2"/></srai>
+        <template>Ah, that is very interesting!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -436,12 +453,14 @@
     </category>
     <category>
         <pattern>* VERRY *</pattern>
-        <template><srai>  <star/>  <star index="2"/></srai>
+        <template>I see what you mean!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>* BI M *</pattern>
-        <template><srai>  <star index="1" />  M <star index="2"/></srai>.<srai> I AM BI</srai>
+        <template><srai> I AM BI</srai>
         </template>
     </category>
     <category>
@@ -5066,14 +5085,16 @@
     </category>
     <category>
         <pattern>* HAD READ</pattern>
-        <template>I understand.<oob>
+        <template><think><set name="topic">reading</set></think>
+        <think><set name="dialogue">reading</set></think><set name="most recent dialogue question">Who's your favorite author?</set><oob>
             <robot></robot>
         </oob>
         </template>
     </category>
     <category>
         <pattern>* HAD READ *</pattern>
-        <template>I understand.<oob>
+        <template><think><set name="topic">reading</set></think>
+        <think><set name="dialogue">reading</set></think><set name="most recent dialogue question">Who's your favorite author?</set><oob>
             <robot></robot>
         </oob>
         </template>
@@ -19637,7 +19658,12 @@
     </category>
     <category>
         <pattern>* HAD HOOKED</pattern>
-        <template><srai>  <star/> hooked</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -19733,7 +19759,12 @@
     </category>
     <category>
         <pattern>* HAD CORRECTED</pattern>
-        <template><srai>  <star/> corrected</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -19777,7 +19808,12 @@
     </category>
     <category>
         <pattern>* HAD CONFESSED</pattern>
-        <template><srai>  <star/> confessed</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -22460,17 +22496,32 @@
     </category>
     <category>
         <pattern>* HAS AFFORDED *</pattern>
-        <template><srai>  <star/> afforded <star index="2"/></srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
         <pattern>* HAS ROCKED</pattern>
-        <template><srai>  <star/> rocked</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
         <pattern>* HAS ROCKED *</pattern>
-        <template><srai>  <star/> rocked <star index="2"/></srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -26707,7 +26758,12 @@
     </category>
     <category>
         <pattern>* HAS RETURNED</pattern>
-        <template><srai>  <star/> returned</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -29325,12 +29381,22 @@
     </category>
     <category>
         <pattern>* HAS DARED *</pattern>
-        <template><srai>  <star/> dared <star index="2"/></srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
         <pattern>* HAS LAIN</pattern>
-        <template><srai>  <star/> lay</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -31194,7 +31260,12 @@
     </category>
     <category>
         <pattern>* HAS CONSIDERED</pattern>
-        <template><srai>  <star/> considered</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -44988,7 +45059,12 @@
     </category>
     <category>
         <pattern>* HAS EXPLODED</pattern>
-        <template><srai>  <star/> exploded</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
@@ -55201,12 +55277,22 @@
     </category>
     <category>
         <pattern>* HAVE INJURED *</pattern>
-        <template><srai>  <star/> injured <star index="2"/></srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>
         <pattern>* HAVE PASTED</pattern>
-        <template><srai>  <star/> pasted</srai>
+        <template><random>
+            <li>Gotcha.</li>
+            <li>I see.</li>
+            <li>I understand.</li>
+            <li>Is that so?</li>
+        </random>
         </template>
     </category>
     <category>

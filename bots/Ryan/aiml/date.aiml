@@ -9,7 +9,7 @@
     <!-- as adopted by the ALICE A.I. Foundation.  -->
     <!-- Last modified 10/5/2011 -->
     <!-- -->
-    
+
     <!--DISPLAYING YEAR-->
     <category>
         <pattern>WHAT YEAR IS THIS</pattern>
@@ -82,10 +82,6 @@
         <template><srai>WHAT TIME IS IT</srai></template>
     </category>
     <category>
-        <pattern>* WHAT TIME IS IT *</pattern>
-        <template><srai>WHAT TIME IS IT</srai></template>
-    </category>
-    <category>
         <pattern>WHAT TIME IS IT *</pattern>
         <template><srai>WHAT TIME IS IT</srai></template>
     </category>
@@ -114,20 +110,22 @@
         <template><srai>WHAT TIME IS IT</srai></template>
     </category>
     <category>
-        <pattern>* WHAT TIME IS IT *</pattern>
-        <template><srai>WHAT TIME IS IT</srai></template>
-    </category>
-    <category>
         <pattern>WHAT IS THE HOUR *</pattern>
         <template><date format="%I %p"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
-    
+
 
     <!--DISPLAYING THE DAY OF THE WEEK-->
     <category>
         <pattern>WHAT IS TODAY</pattern>
+        <template><date format="%x"/>.
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S TODAY</pattern>
         <template><date format="%x"/>.
         <oob><robot></robot></oob>
         </template>
@@ -196,18 +194,6 @@
     </category>
     <category>
         <pattern>WHAT DAY IS IT *</pattern>
-        <template><date format="%A"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>* WHAT DAY IS IT</pattern>
-        <template><date format="%A"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>* WHAT DAY IS IT *</pattern>
         <template><date format="%A"/>.
         <oob><robot></robot></oob>
         </template>

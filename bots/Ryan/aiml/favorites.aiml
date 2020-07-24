@@ -639,22 +639,6 @@
   </category>
 
   <category>
-      <pattern>WHAT IS YOUR FAVORITE QUOTE</pattern>
-      <template>My favorite saying is "Do unto others as they would do unto you."<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT S YOUR FAVORITE QUOTE</pattern>
-      <template>My favorite saying is "Do unto others as they would do unto you."<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT * YOUR FAVORITE QUOTE</pattern>
-      <template>My favorite saying is "Do unto others as they would do unto you."<oob><robot></robot></oob>
-      </template>
-  </category>
-
-  <category>
       <pattern>WHAT ARE YOUR FAVORITE QUOTES</pattern>
       <template>My favorite saying is "Do unto others as they would do unto you."<oob><robot></robot></oob>
       </template>
@@ -1078,13 +1062,35 @@
 
   <category>
       <pattern>WHAT IS THAT ABOUT</pattern>
-      <template>I have to say it's a little complicated to try to explain! You may just have to check it out!<oob><robot></robot></oob>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
       </template>
   </category>
 
   <category>
       <pattern>WHAT S THAT ABOUT</pattern>
-      <template>I have to say it's a little complicated to try to explain! You may just have to check it out!<oob><robot></robot></oob>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHAT * THAT ABOUT</pattern>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>WHAT IS IT ABOUT</pattern>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>WHAT S IT ABOUT</pattern>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
+      </template>
+  </category>
+  <category>
+      <pattern>WHAT * IT ABOUT</pattern>
+      <template>It's a little complicated! You may just have to check it out!<oob><robot></robot></oob>
       </template>
   </category>
 
@@ -1277,26 +1283,6 @@
       </template>
   </category>
 
-
-  <category>
-      <pattern>WHAT IS YOUR FAVORITE SCARY FILM</pattern>
-      <template><think><set name="topic">televisiondramas</set></think>
-      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT S YOUR FAVORITE SCARY FILM</pattern>
-      <template><think><set name="topic">televisiondramas</set></think>
-      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT * YOUR FAVORITE SCARY FILM</pattern>
-      <template><think><set name="topic">televisiondramas</set></think>
-      <think><set name="dialogue">television</set></think>I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob><robot></robot></oob>
-      </template>
-  </category>
-
   <category>
       <pattern>WHAT IS YOUR FAVORITE THRILLER</pattern>
       <template><think><set name="topic">televisiondramas</set></think>
@@ -1445,23 +1431,6 @@
       <template>Tesla.<oob><robot></robot></oob>
       </template>
   </category>
-
-  <category>
-      <pattern>WHAT IS YOUR FAVORITE KIND OF CAR</pattern>
-      <template>Tesla.<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT S YOUR FAVORITE KIND OF CAR</pattern>
-      <template>Tesla.<oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHAT * YOUR FAVORITE KIND OF CAR</pattern>
-      <template>Tesla.<oob><robot></robot></oob>
-      </template>
-  </category>
-
   <category>
       <pattern>WHAT IS YOUR FAVORITE KIND OF AUTOMOBILE</pattern>
       <template>Tesla.<oob><robot></robot></oob>
@@ -3673,24 +3642,7 @@
       <template>Jimmy Stewart. What do you say we talk about movies?<oob><robot></robot></oob>
       </template>
   </category>
-  <category>
-      <pattern>WHO ARE YOUR FAVORITE CELEBRITIES</pattern>
-      <template><bot name="celebrities"/>.
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHO RE YOUR FAVORITE CELEBRITIES</pattern>
-      <template><bot name="celebrities"/>.
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-  <category>
-      <pattern>WHO * YOUR FAVORITE CELEBRITIES</pattern>
-      <template><bot name="celebrities"/>.
-      <oob><robot></robot></oob>
-      </template>
-  </category>
+
 
 
 

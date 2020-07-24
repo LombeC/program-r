@@ -15,6 +15,17 @@
         </template>
     </category>
 
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Do you read any non-fiction?</that>
+        <template>
+            No problem! <set name="most recent dialogue question">What should we chat about?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
     <topic name="nonfiction">
 
         <category>
@@ -36,7 +47,7 @@
             <pattern>_</pattern>
             <that>Thanks for telling me.</that>
             <template>
-                <set name="most recent dialogue question">Have you ever read anything by Studs Terkel, by chance?</set>
+                <set name="most recent dialogue question">Speaking of nonfiction, have you ever read Tuesdays with Morrie by Mitch Albom?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -45,255 +56,7 @@
 
         <category>
             <pattern># <set>YES</set> ^</pattern>
-            <that>Have you ever read anything by Studs Terkel, by chance?</that>
-            <template>
-                Oh nice! My favorite is his book called Working.
-                            <set name="most recent dialogue question">What is your job, or what was your job?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>NO</set> ^</pattern>
-            <that>Have you ever read anything by Studs Terkel, by chance?</that>
-            <template>
-                My favorite is his book called Working.
-                            <set name="most recent dialogue question">What is your job, or what was your job?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever read anything by Studs Terkel, by chance?</that>
-            <template>
-                My favorite is his book called Working.
-                            <set name="most recent dialogue question">What is your job, or what was your job?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># WORKING ^</pattern>
-            <that>Have you ever read anything by Studs Terkel, by chance?</that>
-            <template>
-                Oh nice!
-                <set name="most recent dialogue question">What is your job, or what was your job?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># I READ WORKING ^</pattern>
-            <that>Have you ever read anything by Studs Terkel, by chance?</that>
-            <template>
-                Oh nice!
-                <set name="most recent dialogue question">What is your job, or what was your job?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>I AM A * </pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-            <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>I M A *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>MY JOB IS *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>MY JOB IS *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>MY JOB S *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-            <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-
-        <category>
-            <pattern>I WORK AS A *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>I WORK IN *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>I WAS A *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-          <category>
-              <pattern>MY JOB WAS *</pattern>
-              <that>What is your job, or what was your job?</that>
-              <template>
-                <set name="most recent dialogue question">How did you get into that line of work?</set>
-                  <think>
-                      <set name="job"><star /></set>
-                  </think>
-              <oob><robot></robot></oob>
-              </template>
-          </category>
-
-        <category>
-            <pattern>I WORKED AS A *</pattern>
-            <template>
-              <that>What is your job, or what was your job?</that>
-              <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>I WORKED IN *</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-                <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-                <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>*</pattern>
-            <that>What is your job, or what was your job?</that>
-            <template>
-                <set name="most recent dialogue question">How did you get into that line of work?</set>
-                <think>
-                    <set name="job"><star /></set>
-                </think>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>How did you get into that line of work?</that>
-            <template>
-              Ah that makes sense!
-                <set name="most recent dialogue question">What did you like most about your job?</set>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>What did you like most about your job?</that>
-            <template>
-              I love that! So interesting to hear more about your experience.
-
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern>_</pattern>
-            <that>I love that! So interesting to hear more about your experience.</that>
-            <template>
-                <set name="most recent dialogue question">Speaking of nonfiction,
-                        have you ever read Tuesdays with Morrie by Mitch Albom?</set>
-            <oob><robot></robot></oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># <set>YES</set> ^</pattern>
-            <that>Speaking of nonfiction,
-                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <that>Speaking of nonfiction, have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 <set name="most recent dialogue question">It is such a touching book, don't you agree?</set>
                 <oob>
@@ -304,8 +67,7 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>Speaking of nonfiction,
-                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <that>Speaking of nonfiction, have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 The movie adaptation is even better!
                           <set name="most recent dialogue question">Do you like it when books are made into movies?</set>
@@ -317,8 +79,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Speaking of nonfiction,
-                    have you ever read Tuesdays with Morrie by Mitch Albom?</that>
+            <that>Speaking of nonfiction, have you ever read Tuesdays with Morrie by Mitch Albom?</that>
             <template>
                 The movie adaptation is even better!
                             <set name="most recent dialogue question">Do you like it when books are made into movies?</set>
@@ -355,6 +116,20 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
+        <that>Do you like it when books are made into movies?</that>
+        <template>
+            <condition name="favoritemovie">
+                        <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's one of your favorite movies?</set></li>
+                        <li><set name="most recent dialogue question">So, you said your favorite movie is <get name="favoritemovie"/>. What about spooky movies, do you like those?</set></li>
+                    </condition>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
         <that>Do you like it when books are made into movies?</that>
         <template>
             <condition name="favoritemovie">

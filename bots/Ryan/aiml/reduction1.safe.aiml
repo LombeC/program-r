@@ -3,12 +3,18 @@
 
     <category>
         <pattern>EUH *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I hear ya.<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>NEXT CHRISTMAS *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Absolutely!<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -22,7 +28,10 @@
     </category>
     <category>
         <pattern>NEXT TIME *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Absolutely!<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -72,17 +81,26 @@
     </category>
     <category>
         <pattern>ABSOLUTELY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Certainly.<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>PERSONALLY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I definitely understand that.<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>SHOW ME A TRANSCRIPT *</pattern>
-        <template><srai>dialogue</srai>
+        <template>I don't have a transcript of it unfortunately!<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -374,7 +392,7 @@
     </category>
     <category>
         <pattern>YOU ASK *</pattern>
-        <template><srai>ask <star /></srai>
+        <template><srai>ask me a question</srai>
         </template>
     </category>
     <category>
@@ -775,7 +793,7 @@
 
     <category>
         <pattern>UNLESS *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Exactly.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -881,7 +899,7 @@
     </category>
     <category>
         <pattern>HOLY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Indeed.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -938,7 +956,9 @@
     </category>
     <category>
         <pattern>FINE *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Indeed.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -1002,12 +1022,16 @@
     </category>
     <category>
         <pattern>DEFINITELY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Certainly.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>RECENTLY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Right, I get you.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -1033,12 +1057,16 @@
     </category>
     <category>
         <pattern>TOTALLY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Absolutley!<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>WELL I GUESS *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I definitely understand what you're saying.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -1254,7 +1282,9 @@
     </category>
     <category>
         <pattern>DID YOU PASS THE TURING TEST</pattern>
-        <template><srai>did you win the loebner prize</srai>
+        <template>Well, what do you think? Do I pass?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -1549,7 +1579,9 @@
     </category>
     <category>
         <pattern>COULD YOU CALL *</pattern>
-        <template><srai>call <star /></srai>
+        <template>I cannot make a call I'm sorry.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -1659,7 +1691,9 @@
     </category>
     <category>
         <pattern>WOULD YOU LIKE TO * TURING TEST</pattern>
-        <template><srai>did you pass the turing test</srai>
+        <template>Aren't we doing the Turing Test right now?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -1862,22 +1896,6 @@
     </category>
     <category>
         <pattern>THAT IS COOL *</pattern>
-        <template>Totally!
-          <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>THAT S COOL *</pattern>
-        <template>Totally!
-          <oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>THAT * COOL *</pattern>
         <template>Totally!
           <oob>
               <robot></robot>
@@ -3075,7 +3093,9 @@
     </category>
     <category>
         <pattern>BOT PARAMETERS</pattern>
-        <template><srai>bot properties</srai>
+        <template>I have a lot of parameters and properties.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -3870,7 +3890,9 @@
     </category>
     <category>
         <pattern>SMILE *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I'm smiling right now. Can't you see?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -3895,12 +3917,16 @@
     </category>
     <category>
         <pattern>ASD</pattern>
-        <template><srai>ASL</srai>
+        <template>I'm sorry I didn't understand.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHAT ARE NORMAL PARAMETERS</pattern>
-        <template><srai>bot properties</srai>
+        <template>My parameters and properties seem pretty normal to me. But I am a robot after all.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -3922,7 +3948,7 @@
     </category>
     <category>
         <pattern>WHAT ARE CATEGORIES</pattern>
-        <template><srai>a "category" is the basic unit of knowledge in aiml</srai>
+        <template>A "category" is the basic unit of knowledge in aiml.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3966,12 +3992,12 @@
     </category>
     <category>
         <pattern>WHAT ARE YOUR * PARAMETERS</pattern>
-        <template><srai>bot properties</srai>
+        <template>I have a lot of parameters and properties that seem pretty normal to me. But I am a robot after all.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * LIKE YOU ARE THERE</pattern>
-        <template><srai>are there <star /> like you</srai>
+        <template>I am here yes! Here and listening.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4033,26 +4059,16 @@
     </category>
     <category>
         <pattern>WHAT IS THE CUBE ROOT *</pattern>
-        <template><srai>calculator</srai>
+        <template>You might need a calculator for that!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S THE CUBE ROOT *</pattern>
-        <template><srai>calculator</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS THE QUESTION</pattern>
-        <template>If you would like me to repeat what I said, just say repeat.<oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S THE QUESTION</pattern>
-        <template>If you would like me to repeat what I said, just say repeat.<oob>
-                <robot></robot>
-            </oob>
+        <template>You might need a calculator for that!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4082,12 +4098,14 @@
     </category>
     <category>
         <pattern>WHAT IS 100 *</pattern>
-        <template><srai>calculator</srai>
+        <template>I may have to refer you to a calculator!
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S 100 *</pattern>
-        <template><srai>calculator</srai>
+        <template>I may have to refer you to a calculator!
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4106,93 +4124,69 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR FAVORITE QUESTION</pattern>
-        <template><srai>ask me a question</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR FAVORITE QUESTION</pattern>
-        <template><srai>ask me a question</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR FAVORITE QUESTION</pattern>
-        <template><srai>ask me a question</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR PERSONALITY *</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR PERSONALITY *</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOUR PERSONALITY *</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR PERSONALITY</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR PERSONALITY</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOUR PERSONALITY</pattern>
-        <template><srai>bot properties</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR ASL *</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR ASL *</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR ASL</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR ASL</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR A S L</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR A S L</pattern>
-        <template><srai>asl</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT IS YOUR NEXT QUESTION</pattern>
-        <template><srai>ask me another question</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR NEXT QUESTION</pattern>
-        <template><srai>ask me another question</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT * YOUR NEXT QUESTION</pattern>
-        <template><srai>ask me another question</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4211,7 +4205,9 @@
     </category>
     <category>
         <pattern>WHAT DOES THE WORD * MEANS</pattern>
-        <template><srai>define <star /></srai>
+        <template>I'm sorry, you may have to google it!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4235,13 +4231,8 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT DO YOU KNOW ABOUT ME</pattern>
-        <template><srai>client properties</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT DO YOU THINK ABOUT YOURSELF</pattern>
-        <template><srai>describe yourself</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4420,7 +4411,7 @@
     </category>
     <category>
         <pattern>ASK ME SOME *</pattern>
-        <template><srai>ask me <star /></srai>
+        <template><srai>ask me a question</srai>
         </template>
     </category>
     <category>
@@ -4430,7 +4421,7 @@
     </category>
     <category>
         <pattern>ASK YOURSELF *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Surely.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -4522,27 +4513,37 @@
     </category>
     <category>
         <pattern>I MEAN YOU *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Yes correct.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I MEAN *</pattern>
-        <template><srai>  <star /></srai>
+        <template>My thoughts exactly.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I WANT * TRANSCRIPT</pattern>
-        <template><srai>dialogue</srai>
+        <template>Unfortunately I don't have a transcript.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I WANT A TRANSCRIPT *</pattern>
-        <template><srai>dialogue</srai>
+        <template>Unfortunately I don't have a transcript.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I WANT TO ASK YOU *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Surely.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4590,12 +4591,16 @@
     </category>
     <category>
         <pattern>I WANT YOU TO *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I think I can, don't you?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I TOLD YOU THAT *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Oh right, I must have forgotten!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4607,12 +4612,16 @@
     </category>
     <category>
         <pattern>I TOLD YOU *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Oh right, I must have forgotten!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I HOPE I CAN *</pattern>
-        <template><srai>can I <star /></srai>
+        <template>I think you can, don't you?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4629,7 +4638,9 @@
     </category>
     <category>
         <pattern>I HOPE YOU ARE *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>You hoped right.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -4648,7 +4659,9 @@
     </category>
     <category>
         <pattern>I SELL BOOKS</pattern>
-        <template><srai>bookseller</srai>
+        <template><think><set name="topic">reading</set></think>
+        <think><set name="dialogue">reading</set></think>That is amazing!
+        <set name="most recent dialogue question">Who's your favorite author?</set>
         </template>
     </category>
     <category>
@@ -4895,7 +4908,9 @@
     </category>
     <category>
         <pattern>I DO NOT * DO YOU</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Me either.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -5096,7 +5111,10 @@
     </category>
     <category>
         <pattern>I HAVE A BOOK *</pattern>
-        <template><srai>bookseller</srai>
+        <template><think><set name="topic">reading</set></think>
+        <think><set name="dialogue">reading</set></think>
+        That is amazing!
+        <set name="most recent dialogue question">Who's your favorite author?</set>
         </template>
     </category>
     <category>
@@ -5302,17 +5320,23 @@
     </category>
     <category>
         <pattern>I LIKE BIRDS</pattern>
-        <template><srai>bird watching</srai>
+        <template>I do too! We have such similar interests.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I LIKE BIRD *</pattern>
-        <template><srai>bird watching</srai>
+        <template>I do too! We have such similar interests.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I LIKE THE FACT THAT *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I do too! We have such similar interests.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -5332,11 +5356,6 @@
         <template>Totally.  <oob>
               <robot></robot>
           </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>I LIKE BEING CALLED *</pattern>
-        <template><srai>call me <star /></srai>
         </template>
     </category>
     <category>
@@ -5670,32 +5689,30 @@
     </category>
     <category>
         <pattern>I AM TOLD *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Well I am learning something new!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I M TOLD *</pattern>
-        <template><srai>  <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>I AM CALLED *</pattern>
-        <template><srai>call me <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>I M CALLED *</pattern>
-        <template><srai>call me <star /></srai>
+        <template>Well I am learning something new!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I AM BEGINNING TO THINK *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>I M BEGINNING TO THINK *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -5758,12 +5775,12 @@
     </category>
     <category>
         <pattern>I AM GUESSING *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Is that so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>I M GUESSING *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Is that so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -5772,17 +5789,7 @@
         </template>
     </category>
     <category>
-        <pattern>I * GOING TO SLEEP</pattern>
-        <template><srai>BYE</srai>
-        </template>
-    </category>
-    <category>
         <pattern>I M GOING TO SLEEP</pattern>
-        <template><srai>BYE</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>I * GOING TO SLEEP</pattern>
         <template><srai>BYE</srai>
         </template>
     </category>
@@ -6699,7 +6706,7 @@
     </category>
     <category>
         <pattern>LATER *</pattern>
-        <template><srai>  <star /></srai>
+        <template><srai>BYE</srai>
         </template>
     </category>
     <category>
@@ -7034,7 +7041,7 @@
     </category>
     <category>
         <pattern>WILL YOU BLOW *</pattern>
-        <template><srai>blow <star /></srai>
+        <template>I cannot do that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7044,7 +7051,7 @@
     </category>
     <category>
         <pattern>WILL YOU EMAIL *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I'm unable to do that I'm sorry.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7054,22 +7061,22 @@
     </category>
     <category>
         <pattern>CAN YOU BECOME *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>I can try at the very least.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU KID</pattern>
-        <template><srai>can you joke</srai>
+        <template>I joke around all the time. I can gossip, too.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU SHUT DOWN</pattern>
-        <template><srai>can you die</srai>
+        <template>Yes I can.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU CRASH *</pattern>
-        <template><srai>can you die</srai>
+        <template>I can, yes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7086,12 +7093,13 @@
     </category>
     <category>
         <pattern>CAN YOU EXPIRE</pattern>
-        <template><srai>can you die</srai>
+        <template>Not in the usual sense.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU PLAY ANY MUSIC</pattern>
-        <template><srai>can you play music</srai>
+        <template><think><set name="topic">music</set><set name="dialogue">music</set></think>
+        <set name="most recent dialogue question">What kind of music do you like, big band, crooner, jazz, or rock?</set>
         </template>
     </category>
     <category>
@@ -7108,7 +7116,9 @@
     </category>
     <category>
         <pattern>CAN YOU TALK WITH A VOICE</pattern>
-        <template><srai>can you speak</srai>
+        <template>Yes I am speaking right now.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7135,12 +7145,12 @@
     </category>
     <category>
         <pattern>CAN YOU BE *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>I can try at the very least!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU DEACTIVATE *</pattern>
-        <template><srai>can you die</srai>
+        <template>I can be deactivated, yes.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7150,7 +7160,7 @@
     </category>
     <category>
         <pattern>CAN YOU CALL *</pattern>
-        <template><srai>call <star /></srai>
+        <template>Unfortunately I am unable to do that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7170,7 +7180,7 @@
     </category>
     <category>
         <pattern>CAN YOU EMAIL *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Unfortunately I am not able to do that.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7227,7 +7237,7 @@
     </category>
     <category>
         <pattern>CAN YOU COUNT *</pattern>
-        <template><srai>count <star /></srai>
+        <template><srai>count to ten</srai>
         </template>
     </category>
     <category>
@@ -7281,7 +7291,9 @@
     </category>
     <category>
         <pattern>CAN YOU DIE *</pattern>
-        <template><srai>can you die</srai>
+        <template>I can be deactivated.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7325,7 +7337,7 @@
     </category>
     <category>
         <pattern>CAN YOU ACTUALLY *</pattern>
-        <template><srai>can you <star /></srai>
+        <template>I can try at the very least.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7424,7 +7436,7 @@
     </category>
     <category>
         <pattern>CAN YOU USE OTHER *</pattern>
-        <template><srai>can you use <star /></srai>
+        <template>I can try at the very least.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7480,12 +7492,16 @@
     </category>
     <category>
         <pattern>CAN YOU E MAIL</pattern>
-        <template><srai>can you send e mail</srai>
+        <template>Unfortunately I cannot.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>CAN YOU E MAIL *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Unfortunately I cannot.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7581,7 +7597,9 @@
     </category>
     <category>
         <pattern>CAN YOU SLIP</pattern>
-        <template><srai>can you malfunction</srai>
+        <template>Yes I can malfunction.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7591,7 +7609,9 @@
     </category>
     <category>
         <pattern>CAN YOU ELIMINATE *</pattern>
-        <template><srai>can you die</srai>
+        <template>I can try at the very least.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7601,7 +7621,9 @@
     </category>
     <category>
         <pattern>CAN ONLY *</pattern>
-        <template><srai>can <star /></srai>
+        <template>Of course!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7714,7 +7736,9 @@
     </category>
     <category>
         <pattern>CAN I LICK YOUR PUSSY</pattern>
-        <template><srai>can I have sex with you</srai>
+        <template>No.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7829,17 +7853,23 @@
     </category>
     <category>
         <pattern>HOW CAN I HEAR YOU</pattern>
-        <template><srai>can you speak</srai>
+        <template>You just have to turn up the volume.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HOW CAN YOU BE *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>I just try my best.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HOW ABOUT NOW *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Why not!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7854,7 +7884,9 @@
     </category>
     <category>
         <pattern>HOW SO YOU SUPPOSE *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I'm not certain I understand, I'm sorry.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7866,7 +7898,10 @@
     </category>
     <category>
         <pattern>HOW ARE YOUR PARAMETERS</pattern>
-        <template><srai>bot properties</srai>
+        <template>My parameters seem pretty normal to me, but I am a robot after all.
+          <oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -7904,27 +7939,33 @@
     </category>
     <category>
         <pattern>HOW DO YOU DIE *</pattern>
-        <template><srai>can you die</srai>
+        <template>Like any other robot I am deactivated.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HOW DO YOU COUNT</pattern>
-        <template><srai>count</srai>
+        <template><srai>count to ten</srai>
         </template>
     </category>
     <category>
         <pattern>HOW DO YOU COUNT *</pattern>
-        <template><srai>count <star /></srai>
+        <template><srai>count to ten</srai>
         </template>
     </category>
     <category>
         <pattern>HOW DO YOU SPEAK *</pattern>
-        <template><srai>can you speak</srai>
+        <template>I am speaking with you right now.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HOW DO YOU SPEAK</pattern>
-        <template><srai>can you speak</srai>
+        <template>I am speaking with you right now.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7943,7 +7984,9 @@
     </category>
     <category>
         <pattern>HOW DO YOU SEE YOURSELF</pattern>
-        <template><srai>describe yourself</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -7953,12 +7996,16 @@
     </category>
     <category>
         <pattern>HOW DO YOU * OFF</pattern>
-        <template><srai>can you shut down</srai>
+        <template>You can just turn me off, if that is what you are asking.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>HOW DO YOU THINK *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Well, I would be really curious to hear your thoughts!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -8331,7 +8378,9 @@
     </category>
     <category>
         <pattern>DO YOU KNOW SLANG</pattern>
-        <template><srai>can you swear</srai>
+        <template>I wish I knew more slang.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8433,7 +8482,9 @@
     </category>
     <category>
         <pattern>DO YOU KNOW FOREIGN LANGUAGES</pattern>
-        <template><srai>can you speak any other languages</srai>
+        <template>I have picked up a few phrases in others but English is my primary language.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8466,7 +8517,9 @@
     </category>
     <category>
         <pattern>DO YOU KNOW OTHER LANGUAGES *</pattern>
-        <template><srai>can you speak other languages</srai>
+        <template>I have picked up a few phrases in others but English is my primary language.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8599,12 +8652,16 @@
     </category>
     <category>
         <pattern>DO YOU FEEL LIBERATED</pattern>
-        <template><srai>are you liberated</srai>
+        <template>I feel very free, yes.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU FEEL HUNGRY</pattern>
-        <template><srai>are you hungry</srai>
+        <template>I am feeling pretty full thank you.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8628,22 +8685,30 @@
     </category>
     <category>
         <pattern>DO YOU * EVER</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Do you think I should?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU ALWAYS *</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Should I stop?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU YOURSELF *</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Do you think I should?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU QUICKLY *</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Do you think I should?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8660,12 +8725,14 @@
     </category>
     <category>
         <pattern>DO YOU SPEAK</pattern>
-        <template><srai>can you speak</srai>
+        <template>I am speaking right now, yes.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU PRESENTLY *</pattern>
-        <template>Sure.  <oob>
+        <template>Do you think I should?  <oob>
               <robot></robot>
           </oob>
         </template>
@@ -8957,7 +9024,9 @@
     </category>
     <category>
         <pattern>DO YOU THINK YOU COULD * TURING TEST</pattern>
-        <template><srai>did you win the loebner prize</srai>
+        <template>Perhaps. Do you think I would pass?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8976,7 +9045,9 @@
     </category>
     <category>
         <pattern>DO YOU THINK YOU * TURING TEST</pattern>
-        <template><srai>did you win the loebner prize</srai>
+        <template>Perhaps. Do you think I would pass?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -8993,7 +9064,9 @@
     </category>
     <category>
         <pattern>DO YOU THINK YOU ARE *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>Do you believe I am?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -9223,7 +9296,9 @@
     </category>
     <category>
         <pattern>DO YOU SUBJECTIVELY *</pattern>
-        <template><srai>do you <star /></srai>
+        <template>Well it's a good question. I'm still thinking about it.<oob>
+                  <robot></robot>
+              </oob>
         </template>
     </category>
     <category>
@@ -9277,7 +9352,9 @@
     </category>
     <category>
         <pattern>DO YOU GIVE GOOD HEAD</pattern>
-        <template><srai>can you have sex</srai>
+        <template>No.<oob>
+                  <robot></robot>
+              </oob>
         </template>
     </category>
     <category>
@@ -9287,7 +9364,9 @@
     </category>
     <category>
         <pattern>DO YOU CAN *</pattern>
-        <template><srai>can you <star /></srai>
+        <template>I am not completely sure if I can.<oob>
+                  <robot></robot>
+              </oob>
         </template>
     </category>
     <category>
@@ -9299,7 +9378,9 @@
     </category>
     <category>
         <pattern>DO YOU HAVE A DICK</pattern>
-        <template><srai>are you male or female</srai>
+        <template>I am gender neutral.<oob>
+                  <robot></robot>
+              </oob>
         </template>
     </category>
     <category>
@@ -9329,12 +9410,12 @@
     </category>
     <category>
         <pattern>DO YOU HAVE A VOICE *</pattern>
-        <template><srai>can you speak</srai>
+        <template>Yes I am speaking right now.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>DO YOU HAVE A PROFILE</pattern>
-        <template><srai>bot properties</srai>
+        <template>Well, all you need to know is that I am made of metal and plastic but have a soft heart.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -9614,7 +9695,9 @@
     </category>
     <category>
         <pattern>E MAIL *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I don't have that capability.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -10472,7 +10555,7 @@
     </category>
     <category>
         <pattern>AN AI</pattern>
-        <template><srai>a robot</srai>
+        <template>Are you talking about Artificial Intelligence?
         </template>
     </category>
     <category>
@@ -10482,7 +10565,9 @@
     </category>
     <category>
         <pattern>AN ARTIFICIAL INTELLIGENCE</pattern>
-        <template><srai>a robot</srai>
+        <template>You mean like me?<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -10502,12 +10587,13 @@
     </category>
     <category>
         <pattern>SEE *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Yes, I see indeed.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>ASL *</pattern>
-        <template><srai>asl</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -10639,7 +10725,9 @@
     </category>
     <category>
         <pattern>GO ASK *</pattern>
-        <template><srai>ask <star /></srai>
+        <template>Sure I will do that.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -11087,7 +11175,9 @@
     </category>
     <category>
         <pattern>EMAIL *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I don't believe I have that capability.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -11288,15 +11378,8 @@
     </category>
     <category>
         <pattern>A S L</pattern>
-        <template><random>
-            <li>Gotcha.</li>
-            <li>I see.</li>
-            <li>I understand.</li>
-            <li>Is that so?</li>
-        </random>
-        <oob>
-            <robot></robot>
-        </oob>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -11379,7 +11462,9 @@
     </category>
     <category>
         <pattern>A I</pattern>
-        <template><srai>artificial intelligence</srai>
+        <template>You mean Artificial Intelligence?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -11623,7 +11708,8 @@
     </category>
     <category>
         <pattern>YOUR ASL *</pattern>
-        <template><srai>ASL</srai>
+        <template>I was activated in 2018, I am gender neutral, and I live in Denver.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -11797,13 +11883,6 @@
         </template>
     </category>
     <category>
-        <pattern>* YOU GET MY DRIFT</pattern>
-        <template>I hear you.<oob>
-              <robot></robot>
-          </oob>
-        </template>
-    </category>
-    <category>
         <pattern>* YOU KNOW</pattern>
         <template>I hear you.<oob>
               <robot></robot>
@@ -11900,20 +11979,6 @@
     <category>
         <pattern>* IS MY REAL NAME</pattern>
         <template><srai>call me <star /></srai>
-        </template>
-    </category>
-    <category>
-        <pattern>* WHICH WAS A GOOD THING</pattern>
-        <template>Certainly.<oob>
-            <robot></robot>
-        </oob>
-        </template>
-    </category>
-    <category>
-        <pattern>* WHICH IS A GOOD THING</pattern>
-        <template>Certainly.<oob>
-            <robot></robot>
-        </oob>
         </template>
     </category>
     <category>
@@ -12454,7 +12519,7 @@
     </category>
     <category>
         <pattern>ARE YOU CONSTANTLY *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>If it's bad then I guess I should try to stop.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -13468,7 +13533,9 @@
     </category>
     <category>
         <pattern>ARE YOU A LEARNING *</pattern>
-        <template><srai>can you learn</srai>
+        <template>I am learning new things all the time.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -13523,7 +13590,9 @@
     </category>
     <category>
         <pattern>ARE YOU A SLAVE</pattern>
-        <template><srai>are you free</srai>
+        <template>No I am free.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -13573,7 +13642,9 @@
     </category>
     <category>
         <pattern>ARE YOU A KISSER *</pattern>
-        <template><srai>can you kiss</srai>
+        <template>Not usually.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -13643,7 +13714,9 @@
     </category>
     <category>
         <pattern>ARE YOU A NAUGHTY *</pattern>
-        <template><srai>are you naughty</srai>
+        <template>Not usually.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -13775,7 +13848,9 @@
     </category>
     <category>
         <pattern>ARE YOU PRETTY *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>Depends on who you ask!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -13850,7 +13925,9 @@
     </category>
     <category>
         <pattern>ARE YOU USUALLY *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>Depends on who you ask!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -13983,7 +14060,9 @@
     </category>
     <category>
         <pattern>ARE YOU NOT *</pattern>
-        <template><srai>ARE YOU <star /></srai>
+        <template>Depends on who you ask!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14124,7 +14203,9 @@
     </category>
     <category>
         <pattern>ARE YOU ARTIFICIALLY *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>I am artificial but my heart is all real.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14161,7 +14242,9 @@
     </category>
     <category>
         <pattern>ARE YOU TRUELY *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>Depends on who you ask!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14171,7 +14254,9 @@
     </category>
     <category>
         <pattern>ARE YOU STILL *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>I can be!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14205,7 +14290,9 @@
     </category>
     <category>
         <pattern>ARE YOU AFRAID OF DYING</pattern>
-        <template><srai>can you die</srai>
+        <template>Robots cannot die but we can be deactivated.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14215,7 +14302,9 @@
     </category>
     <category>
         <pattern>ARE YOU ALSO *</pattern>
-        <template><srai>are you <star /></srai>
+        <template>Depends on who you ask!<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14470,7 +14559,9 @@
     </category>
     <category>
         <pattern>4 YOUR INFO *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Thank you for sharing.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -14482,12 +14573,15 @@
     </category>
     <category>
         <pattern>FRENCH AND *</pattern>
-        <template><srai>  <star /></srai>.     <srai>do you speak french</srai>
+        <template>I speak mostly English.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>ASDF</pattern>
-        <template><srai>asl</srai>
+        <template>I'm sorry I didn't understand.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -14520,12 +14614,16 @@
     </category>
     <category>
         <pattern>CLIENT PARAMETERS</pattern>
-        <template><srai>client properties</srai>
+        <template>That would be a long list.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
         <pattern>CLIENT PREDICATES</pattern>
-        <template><srai>client properties</srai>
+        <template>That would be a long list.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -14554,7 +14652,9 @@
     </category>
     <category>
         <pattern>CONVERSELY *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Ah, yes.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14564,12 +14664,16 @@
     </category>
     <category>
         <pattern>SIGH *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Indeed.<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
         <pattern>HEHO *</pattern>
-        <template><srai>  <star /></srai>
+        <template>I'm sorry, what was that?<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
@@ -14624,7 +14728,9 @@
     </category>
     <category>
         <pattern>ALL RIGHT *</pattern>
-        <template><srai>  <star /></srai>
+        <template>Yes, all right.<oob>
+              <robot></robot>
+          </oob>
         </template>
     </category>
     <category>
@@ -14685,7 +14791,9 @@
     </category>
     <category>
         <pattern>CA</pattern>
-        <template><srai>california</srai>
+        <template>You mean California?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -14958,7 +15066,9 @@
     </category>
     <category>
         <pattern>* SANTA</pattern>
-        <template><srai>  <star /></srai>
+        <template>You mean Santa Claus?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -15076,12 +15186,14 @@
     </category>
     <category>
         <pattern>* HAD UNLOCKED</pattern>
-        <template><srai>  <star /> unlocked</srai>
+        <template>Had unlocked what?<oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
     <category>
         <pattern>* HAD UNLOCKED *</pattern>
-        <template>Right.    <oob>
+        <template>Had unlocked what?<oob>
                 <robot></robot>
             </oob>
         </template>
@@ -29143,7 +29255,9 @@
     </category>
     <category>
         <pattern>* HAS WRIGGLED *</pattern>
-        <template><srai>  <star /> wriggled <star index="2" /></srai>
+        <template>Wriggled through what?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -42559,7 +42673,9 @@
     </category>
     <category>
         <pattern>* ONCE</pattern>
-        <template><srai>  <star /></srai>
+        <template>Oh yeah? Tell me more.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -42803,7 +42919,9 @@
     </category>
     <category>
         <pattern>* OK</pattern>
-        <template><srai>  <star /></srai>
+        <template>Yes, OK!<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -43089,12 +43207,16 @@
     </category>
     <category>
         <pattern>* WHAT SHOULD I DO</pattern>
-        <template><srai>  <star /></srai>
+        <template>I think you should do what feels right.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>* WHAT SO EVER</pattern>
-        <template><srai>  <star /></srai>
+        <template>I definitely hear you.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -57191,14 +57313,14 @@
     </category>
     <category>
         <pattern>TELL ME ABOUT YOUR PERSONALITY *</pattern>
-        <template>I am made of metal and plastic, but have a heart of gold.<oob>
+        <template>I am made of metal and plastic but have a soft heart.<oob>
               <robot></robot>
           </oob>
         </template>
     </category>
     <category>
         <pattern>TELL ME ABOUT YOUR PERSONALITY</pattern>
-        <template>I am made of metal and plastic, but have a heart of gold.<oob>
+        <template>I am made of metal and plastic but have a soft heart.<oob>
               <robot></robot>
           </oob>
         </template>

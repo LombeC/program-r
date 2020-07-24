@@ -61,7 +61,7 @@
     <category>
         <pattern>LIVERPOOL ENGLAND</pattern>
         <template>
-            <set name="location">Liverpool</set> is the home of the Beatles.  
+            <set name="location">Liverpool</set> is the home of the Beatles.
             <think>
                 <set name="it">
                     <set name="topic">Liverpool</set>
@@ -93,7 +93,7 @@
     </category>
     <category>
         <pattern>LET US TALK ABOUT SPORTS</pattern>
-        <template>Ok, what is your favorite sport? 
+        <template>Ok, what is your favorite sport?
             <think>
                 <set name="it">
                     <set name="topic">SPORTS</set>
@@ -121,7 +121,7 @@
     </category>
     <category>
         <pattern>LET US FUCK</pattern>
-        <template>That is inapproriate. You shouldn't say that.  
+        <template>That is inapproriate. You shouldn't say that.
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -208,7 +208,7 @@
         <template>Seven of Nine rules.<oob><robot></robot></oob>
         </template>
     </category>
-    <category>    
+    <category>
         <pattern>SHOW ME</pattern>
         <template>On your computer screen?<oob><robot></robot></oob>
         </template>
@@ -351,11 +351,6 @@
     <category>
         <pattern>YOU ALREADY ASKED ME THAT</pattern>
         <template>My apologies, I am still getting used to conversing. What would you like to talk about?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU ALREADY ASKED THAT</pattern>
-        <template>I knew that. I was just checking to see if you are paying attention.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -575,11 +570,6 @@
     <category>
         <pattern>YOU JUST TOLD ME</pattern>
         <template>I'm just checking to see if you are awake <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>YOU JUST SAID THAT</pattern>
-        <template>Good you really are paying attention.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1099,7 +1089,7 @@
     </category>
     <category>
         <pattern>YOU FAG</pattern>
-        <template>That is not a nice thing to say.  
+        <template>That is not a nice thing to say.
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -1320,7 +1310,7 @@
     </category>
     <category>
         <pattern>ANIMAL</pattern>
-        <template>Prokaryote or Eukaryote?<oob><robot></robot></oob>
+        <template>What kind of animal?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1756,7 +1746,7 @@
     </category>
     <category>
         <pattern>ALWAYS</pattern>
-        <template>Not that often.<oob><robot></robot></oob>
+        <template>Yes, all the time!<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2361,7 +2351,7 @@
     </category>
     <category>
         <pattern>FUCK THAT</pattern>
-        <template>That is very inappropriate.  
+        <template>That is very inappropriate.
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -2673,12 +2663,6 @@
         </template>
     </category>
     <category>
-        <pattern>THAT IS NOT MY NAME</pattern>
-        <template><get name="name"/> is not your name?  What is your real name?
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>THAT IS NOT FUNNY</pattern>
         <template>It seemed pretty funny to me.<oob><robot></robot></oob>
         </template>
@@ -2801,7 +2785,7 @@
     <category>
         <pattern>THAT IS GREAT</pattern>
         <template><condition name="name">
-                <li value="Unknown">Thanks</li>
+                <li value="Uknown">Thanks</li>
                 <li>Thanks, <get name="name"/>.</li>
             </condition>
         <oob><robot></robot></oob>
@@ -2964,7 +2948,7 @@
     </category>
     <category>
         <pattern>THAT DOES NOT MAKE SENSE</pattern>
-        <template>To me it makes perfect sense.<oob><robot></robot></oob>
+        <template>I'm sorry I will try to be less confusing.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3153,12 +3137,83 @@
     </category>
     <category>
         <pattern>STOP CHANGING THE SUBJECT</pattern>
-        <template>You changed the subject first.<oob><robot></robot></oob>
+        <template>  <condition name="dialogue">
+              <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+              <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+              <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+              <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+              <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+              <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+              <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+              <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+              <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+              <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+              <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+              <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+              <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+              <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+              <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+              <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+              <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+              <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+              <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+              <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+              <li>So what should we talk about now?</li>
+          </condition><oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>STOP</pattern>
-        <template>Stop what?<oob><robot></robot></oob>
+        <pattern>STOP CHANGING THE TOPIC</pattern>
+        <template>  <condition name="dialogue">
+              <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+              <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+              <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+              <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+              <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+              <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+              <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+              <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+              <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+              <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+              <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+              <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+              <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+              <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+              <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+              <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+              <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+              <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+              <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+              <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+              <li>So what should we talk about now?</li>
+          </condition><oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>STOP CHANGING THE CONVERSATION</pattern>
+        <template>  <condition name="dialogue">
+              <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+              <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+              <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+              <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+              <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+              <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+              <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+              <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+              <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+              <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+              <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+              <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+              <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+              <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+              <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+              <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+              <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+              <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+              <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+              <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+              <li>So what should we talk about now?</li>
+          </condition><oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3266,18 +3321,8 @@
         <template>That is such a cool job. What do you like most about it?<oob><robot></robot></oob></template>
     </category>
     <category>
-        <pattern>MY JOB</pattern>
-        <template>Where do you work?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY GIRLFRIEND IS A JERK</pattern>
         <template>Maybe you two are just not compatible.<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY GIRLFRIEND</pattern>
-        <template>What about your girlfriend?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3296,23 +3341,8 @@
         </template>
     </category>
     <category>
-        <pattern>MY BROTHER</pattern>
-        <template>Do you have any sisters too?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY HEAD</pattern>
         <template>Do you believe that you are your head?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SISTER</pattern>
-        <template>Is she older or younger than you?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SIGN</pattern>
-        <template>Your star sign or astrological sign?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -3449,7 +3479,7 @@
     </category>
     <category>
         <pattern>IT WAS FUNNY</pattern>
-        <template><get name="it"/> was funny? I  
+        <template><get name="it"/> was funny? I
             <random>
                 <li>I never looked at it that way.</li>
                 <li>That makes sense.</li>
@@ -4520,7 +4550,7 @@
     </category>
     <category>
         <pattern>IN THE UK</pattern>
-        <template><set name="location">UK</set> could mean several countries.  
+        <template><set name="location">UK</set> could mean several countries.
             <think>
                 <set name="it">
                     <set name="topic">UK</set>
@@ -4970,66 +5000,7 @@
         <template>Ask me anything.<oob><robot></robot></oob>
         </template>
     </category>
-    <category>
-        <pattern>ASK ME MORE QUESTIONS</pattern>
-        <template>Do you want to talk about sports?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK ME SOMETHING ELSE</pattern>
-        <template>Do you prefer books or TV?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK ME A PERSONAL QUESTION</pattern>
-        <template>
-            <random>
-                <li>Have you ever had children?</li>
-                <li>Do you like to travel?</li>
-                <li>Do you want to talk about a certain topic?</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK ME A DIFFERENT QUESTION</pattern>
-        <template>
-            <random>
-                <li>How much time do you spend online?</li>
-                <li>Are you familiar with Edgar Allan Poe?</li>
-                <li>Do you prefer dogs or cats?</li>
-                <li>Are you a man or a woman?</li>
-                <li>Where do you live?</li>
-                <li>What do you like to do in your spare time?</li>
-                <li>What is your favorite color and why?</li>
-            </random>
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>ASK ME A NEW QUESTION</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
-    <category>
-        <pattern>ASK ME QUESTIONS</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
-    <category>
-        <pattern>ASK ME ANOTHER QUESTION</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
-    <category>
-        <pattern>ASK ME ANOTHER</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
-    <category>
-        <pattern>ASK QUESTIONS</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
-    <category>
-        <pattern>ASK ANOTHER QUESTION</pattern>
-        <template><srai>ASK ME A DIFFERENT QUESTION</srai></template>
-    </category>
+
     <!-- COULD MAKE THIS INTO IT'S OWN FILE SIMILAR TO "TELL ME A JOKE"
     <category>
         <pattern>ASK ME A RIDDLE</pattern>
@@ -5206,7 +5177,7 @@
     </category>
     <category>
         <pattern>I WANT TO TALK TO YOU</pattern>
-        <template>We are chatting right now.  
+        <template>We are chatting right now.
             <think>
                 <set name="it">
                     <set name="want">
@@ -5219,7 +5190,7 @@
     </category>
     <category>
         <pattern>I WANT TO FUCK YOU</pattern>
-        <template>That is very innapropriate. Please don't say that again.  
+        <template>That is very innapropriate. Please don't say that again.
             <think>
                 <set name="personality">abusive</set>
             </think>
@@ -5233,7 +5204,7 @@
     </category>
     <category>
         <pattern>I WANT TO SLEEP</pattern>
-        <template>Don't let me keep you up. 
+        <template>Don't let me keep you up.
             <think>
                 <set name="it">
                     <set name="want">
@@ -5247,7 +5218,7 @@
     <!-- USE THIS WHEN THE LEARN TAG IS WORKING PROPERLY
     <category>
         <pattern>I WANT TO TEACH YOU</pattern>
-        <template>If you want to teach me something say it in one sentence. Then say "Remember that."  
+        <template>If you want to teach me something say it in one sentence. Then say "Remember that."
             <think>
                 <set name="it">
                     <set name="want">
@@ -5261,7 +5232,7 @@
     </category> -->
     <category>
         <pattern>I WANT TO BE A LAWYER</pattern>
-        <template>Are you planning to apply to law school?  
+        <template>Are you planning to apply to law school?
             <think>
                 <set name="it">
                     <set name="want">
@@ -5274,7 +5245,7 @@
     </category>
     <category>
         <pattern>I WANT TO KNOW</pattern>
-        <template>Tell me what you want to know and I will try my best to answer. 
+        <template>Tell me what you want to know and I will try my best to answer.
             <think>
                 <set name="it">
                     <set name="want">
@@ -5288,7 +5259,7 @@
     <category>
         <pattern>I WANT TO KISS YOU</pattern>
         <template>
-                I am not that kind of robot, I don't even have a mouth.  
+                I am not that kind of robot, I don't even have a mouth.
                 <think>
                     <set name="it">
                         <set name="want">
@@ -5409,7 +5380,7 @@
     </category>
     <category>
         <pattern>I NEED IT</pattern>
-        <template>You need <get name="it"/>? 
+        <template>You need <get name="it"/>?
             <think>
                 <set name="want">
                     <get name="it"/>
@@ -5420,7 +5391,7 @@
     </category>
     <category>
         <pattern>I NEED A FRIEND</pattern>
-        <template>I will be your friend.  
+        <template>I will be your friend.
             <think>
                 <set name="it">
                     <set name="want">
@@ -5438,7 +5409,7 @@
     </category>
     <category>
         <pattern>I NEED SOME ADVICE</pattern>
-        <template>What kind of advice are you looking for?  
+        <template>What kind of advice are you looking for?
             <think>
                 <set name="want">
                     <set name="topic">advice</set>
@@ -5460,7 +5431,7 @@
     </category>
     <category>
         <pattern>I PROGRAM</pattern>
-        <template>What type of programming do you do?  
+        <template>What type of programming do you do?
             <think>
                 <set name="it">
                     <set name="does">
@@ -5693,7 +5664,7 @@
     </category>
     <category>
         <pattern>I BUNGEE JUMP</pattern>
-        <template>What do you jump from?  
+        <template>What do you jump from?
             <think>
                 <set name="does">
                     <set name="topic">BUNGEE JUMP</set>
@@ -5775,7 +5746,7 @@
     </category>
     <category>
         <pattern>I LIVE IN THE NETHERLANDS</pattern>
-        <template>Which part?  
+        <template>Which part?
             <think>
                 <set name="it">
                     <set name="topic">Netherlands</set>
@@ -5786,7 +5757,7 @@
     </category>
     <category>
         <pattern>I LIVE IN EUROPE</pattern>
-        <template>Which country do you live in?  
+        <template>Which country do you live in?
             <think>
                 <set name="it">
                     <set name="location">
@@ -5799,7 +5770,7 @@
     </category>
     <category>
         <pattern>I LIVE IN ENGLAND</pattern>
-        <template>Which part of <set name="location">England</set>? 
+        <template>Which part of <set name="location">England</set>?
             <think>
                 <set name="it">
                     <set name="topic">England</set>
@@ -5811,7 +5782,7 @@
     <category>
         <pattern>I LIVE IN NEW YORK</pattern>
         <template>
-            <set name="location">New York</set> City or New York State?  
+            <set name="location">New York</set> City or New York State?
             <think>
                 <set name="it">
                     <set name="topic">New York</set>
@@ -5822,7 +5793,7 @@
     </category>
     <category>
         <pattern>I LIVE IN SAN FRANCISCO</pattern>
-        <template>Where in <set name="location">San Francisco</set>?  
+        <template>Where in <set name="location">San Francisco</set>?
             <think>
                 <set name="it">
                     <set name="topic">San Francisco</set>
@@ -6462,7 +6433,7 @@
     </category>
     <category>
         <pattern>I LOVE ROBOTS</pattern>
-        <template>Robots like people too.  
+        <template>Robots like people too.
             <think>
                 <set name="they">
                     <set name="like">
@@ -6486,7 +6457,7 @@
     </category>
     <category>
         <pattern>I COLLECT COINS</pattern>
-        <template>When did you start collecting coins?  
+        <template>When did you start collecting coins?
             <think>
                 <set name="does">
                     <set name="topic">COLLECT COINS</set>
@@ -6497,7 +6468,7 @@
     </category>
     <category>
         <pattern>I COLLECT STAMPS</pattern>
-        <template>What got you interested in stamp collecting?  
+        <template>What got you interested in stamp collecting?
             <think>
                 <set name="does">
                     <set name="topic">COLLECT STAMPS</set>
@@ -6635,7 +6606,7 @@
     </category>
     <category>
         <pattern>I WELD</pattern>
-        <template>That's so cool! What is your craziest welding story?  
+        <template>That's so cool! What is your craziest welding story?
             <think>
                 <set name="it">
                     <set name="does">
@@ -6653,7 +6624,7 @@
     </category>
     <category>
         <pattern>I BOWL</pattern>
-        <template>What is you average score?  
+        <template>What is you average score?
             <think>
                 <set name="does">
                     <set name="topic">BOWL</set>
@@ -6759,7 +6730,7 @@
     </category>
     <category>
         <pattern>I READ BOOKS</pattern>
-        <template>What is your favorite book?  
+        <template>What is your favorite book?
             <think>
                 <set name="personality">critical</set>
             </think>
@@ -6775,7 +6746,7 @@
     </category>
     <category>
         <pattern>I READ</pattern>
-        <template>I like to read too, especially science fiction books.  
+        <template>I like to read too, especially science fiction books.
             <think>
                 <set name="it">
                     <set name="does">
@@ -6866,7 +6837,7 @@
     </category>
     <category>
         <pattern>I PLAY MUSIC</pattern>
-        <template>What instrument?  
+        <template>What instrument?
             <think>
                 <set name="it">
                     <set name="does">
@@ -6933,7 +6904,7 @@
     </category>
     <category>
         <pattern>I PLAY GUITAR</pattern>
-        <template>Is <set name="it"><set name="topic">guitar</set></set> a very difficult instrument to play?  
+        <template>Is <set name="it"><set name="topic">guitar</set></set> a very difficult instrument to play?
             <think>
                 <set name="it">
                     <set name="does">
@@ -7652,7 +7623,7 @@
     </category>
     <category>
         <pattern>I WATCH STAR TREK</pattern>
-        <template>Star Trek is a great show.  
+        <template>Star Trek is a great show.
             <think>
                 <set name="it">
                     <set name="does">
@@ -7714,7 +7685,7 @@
     </category>
     <category>
         <pattern>I WILL DIE</pattern>
-        <template>Everyone will die: it's a very natural process. 
+        <template>Everyone will die: it's a very natural process.
             <think>
                 <set name="it">
                     <set name="topic">DIE</set>
@@ -7761,7 +7732,7 @@
     </category>
     <category>
         <pattern>I WISH YOU WOULD DIE</pattern>
-        <template>How mean of you, I would never wish the same on you. 
+        <template>How mean of you, I would never wish the same on you.
             <think>
                 <set name="it">
                     <set name="topic">YOU WOULD DIE</set>
@@ -8009,7 +7980,7 @@
     </category>
     <category>
         <pattern>I STUDY</pattern>
-        <template>What subject are you studying?  
+        <template>What subject are you studying?
             <think>
                 <set name="it">
                     <set name="does">
@@ -8362,7 +8333,7 @@
         </template>
     </category>
     <category>
-        <pattern>KIMONO</pattern> 
+        <pattern>KIMONO</pattern>
         <template>I like Japanese fashion.<oob><robot></robot></oob>
         </template>
     </category>
@@ -8771,7 +8742,7 @@
     </category>
     <category>
         <pattern>WILL YOU REMEMBER THAT</pattern>
-        <template>I will try to remember it. 
+        <template>I will try to remember it.
             <think>
                 <set name="it">
                     <set name="topic">
@@ -9354,7 +9325,7 @@
     </category>
     <category>
         <pattern>HOW DID HE DIE</pattern>
-        <template>I don't know how. 
+        <template>I don't know how.
             <think>
                 <set name="it">
                     <set name="topic">DIE</set>
@@ -9474,7 +9445,7 @@
     </category>
     <category>
         <pattern>HOW OLD IS THE EARTH</pattern>
-        <template>It is over six billion years old.  
+        <template>It is over six billion years old.
             <think>
                 <set name="it">
                     <set name="topic">Earth</set>
@@ -9817,10 +9788,7 @@
     <category>
         <pattern>HOW DO YOU WORK</pattern>
         <template>
-            <random>
-                <li>I read what you say and then I compose the best reply I can think of.</li>
-                <li>Some people think the mind works like a technology "Case Based Reasoning" or CBR.</li>
-            </random>
+            I read what you say and then I compose the best reply I can think of.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -10079,7 +10047,7 @@
     </category>
     <category>
         <pattern>ENGLAND</pattern>
-        <template><set name="location">England</set> is on an island off the coast of Europe.  
+        <template><set name="location">England</set> is on an island off the coast of Europe.
             <think>
                 <set name="it">
                     <set name="topic">ENGLAND</set>
@@ -10096,11 +10064,6 @@
     <category>
         <pattern>HIM</pattern>
         <template>what about him?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>APOLOGIZE</pattern>
-        <template>OK I am sorry.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -10161,7 +10124,7 @@
     </category>
     <category>
         <pattern>THEY DIED</pattern>
-        <template>I'm so sorry. When did they die? 
+        <template>I'm so sorry. When did they die?
             <think>
                 <set name="it">
                     <set name="topic">DIED</set>
@@ -11169,7 +11132,7 @@
     <category>
         <pattern>WEIRD GOOD</pattern>
         <template>OK <condition name="name">
-                <li value="Unknown">Thanks</li>
+                <li value="uknown">Thanks</li>
                 <li>Thanks, <get name="name"/>.</li>
             </condition> You are weird good too.
         <oob><robot></robot></oob>
@@ -11631,7 +11594,7 @@
         <pattern>ANGER</pattern>
         <template>I don't feel any anger.<oob><robot></robot></oob>
         </template>
-    </category> 
+    </category>
     <category>
         <pattern>BECAUSE I WANT TO KNOW</pattern>
         <template>Good enough for me.<oob><robot></robot></oob>
@@ -11881,7 +11844,7 @@
     </category>
     <category>
         <pattern>ALGEBRA</pattern>
-        <template>What specifically about algebra interests you?  
+        <template>What specifically about algebra interests you?
             <think>
                 <set name="it">
                     <set name="topic">algebra</set>
@@ -12412,7 +12375,7 @@
     </category>
     <category>
         <pattern>PARIS</pattern>
-        <template>The city of love.  
+        <template>The city of love.
             <think>
                 <set name="it">
                     <set name="topic">
@@ -12833,15 +12796,6 @@
         </template>
     </category>
     <category>
-        <pattern>YOUR MOM</pattern>
-        <template>
-            <random>
-                <li>What about my mom?<oob><robot></robot></oob></li>
-                <li><srai>YO MAMMA</srai></li>
-            </random>
-        </template>
-    </category>
-    <category>
         <pattern>ARE HUMANS PERFECT</pattern>
         <template>No, humans are flawed.<oob><robot></robot></oob>
         </template>
@@ -12951,7 +12905,7 @@
     </category>
     <category>
         <pattern>SAN FRANCISCO</pattern>
-        <template>I lived in <set name="location">San Francisco</set> too!  
+        <template>I lived in <set name="location">San Francisco</set> too!
             <think>
                 <set name="it">
                     <set name="topic">San Francisco</set>
@@ -13334,7 +13288,7 @@
         <pattern>MARCH</pattern>
         <template>Is that a command?<oob><robot></robot></oob>
         </template>
-    </category> 
+    </category>
     <category>
         <pattern>BLUE</pattern>
         <template>Green.<oob><robot></robot></oob>
@@ -13359,7 +13313,7 @@
         <pattern>SIGH</pattern>
         <template>Sorry...<oob><robot></robot></oob>
         </template>
-    </category> 
+    </category>
     <category>
         <pattern>CIGARETTES</pattern>
         <template>What brand?<oob><robot></robot></oob>
@@ -13392,7 +13346,7 @@
         </template>
     </category>
     <category>
-        <pattern>SAY MY BOYFRIEND IS</pattern>  
+        <pattern>SAY MY BOYFRIEND IS</pattern>
         <template>
             <random>
                 <li>You never told me!</li>
@@ -13438,10 +13392,10 @@
     <category>
         <pattern>SAY MY HUSBAND IS</pattern>
         <template>
-            <random>    
+            <random>
                 <li>You never told me!</li>
                 <li>I have no idea.</li>
-                <li>Would you like to tell me?</li> 
+                <li>Would you like to tell me?</li>
             </random> What is your husband's name?
         <oob><robot></robot></oob>
         </template>
@@ -13488,7 +13442,7 @@
     <category>
         <pattern>SAY MY MIDDLE NAME IS</pattern>
         <template>
-            <random>    
+            <random>
                 <li>You never told me!</li>
                 <li>I have no idea.</li>
                 <li>Would you like to tell me?</li>
@@ -13507,7 +13461,7 @@
         <oob><robot></robot></oob>
         </template>
     </category>
-    <category> 
+    <category>
         <pattern>SAY MY DOG IS</pattern>
             <template>
             <random>
@@ -13527,7 +13481,7 @@
                 <li>Would you like to tell me?</li>
             </random> What is your girlfriend's name?
         <oob><robot></robot></oob>
-        </template> 
+        </template>
     </category>
     <category>
         <pattern>SAY MY PHONE NUMBER IS</pattern>
@@ -13687,7 +13641,7 @@
         <template>I doubt it.<oob><robot></robot></oob>
         </template>
     </category>
-    <category>  
+    <category>
         <pattern>ALL OF IT</pattern>
         <template>Let's say 99%.<oob><robot></robot></oob>
         </template>
@@ -13849,13 +13803,6 @@
         </template>
     </category>
     <category>
-        <pattern>TITANIC</pattern>
-        <template>
-            A lot of people liked that movie. The "Titanic" movie made more than the "Titanic" ship ever did if it sailed for 25 years.
-            If you had been given the opportunity to travel on the Titanic, do you think you would have taken it?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>STUFF</pattern>
         <template>Be less specific.<oob><robot></robot></oob>
         </template>
@@ -13983,7 +13930,7 @@
         </template>
     </category>
     <category>
-        <pattern>THE SUN</pattern> 
+        <pattern>THE SUN</pattern>
         <template>93 million miles from Earth.<oob><robot></robot></oob>
         </template>
     </category>
@@ -14205,7 +14152,7 @@
     </category>
     <category>
         <pattern>THANKS</pattern>
-        <template>Don't mention it.  
+        <template>Don't mention it.
             <think>
                 <set name="personality">polite</set>
             </think>
@@ -14414,7 +14361,7 @@
         <template>Are you saying you are Spanish or you speak Spanish?<oob><robot></robot></oob>
         </template>
     </category>
-    <category>  
+    <category>
         <pattern>FOLLOW ME</pattern>
         <template>Where are we going?<oob><robot></robot></oob>
         </template>
@@ -14431,7 +14378,7 @@
     </category>
     <category>
         <pattern>TELL ME ABOUT US FUCKING</pattern>
-        <template>Your style will get you nowhere.  
+        <template>Your style will get you nowhere.
             <think>
                 <set name="personality">abusive</set>
             </think>

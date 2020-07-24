@@ -2,7 +2,30 @@
 <aiml version="2.0">
     <category>
         <pattern>YOU LOST ME</pattern>
-        <template><srai>I do not understand</srai>
+        <template><condition name="dialogue">
+                        <li value="sports">Let's get back to talking sports. <get name="most recent dialogue question"/></li>
+                        <li value="music">Let's get back to talking music. <get name="most recent dialogue question"/></li>
+                        <li value="science">Let's get back to talking science. <get name="most recent dialogue question"/></li>
+                        <li value="movies">Let's get back to talking about movies. <get name="most recent dialogue question"/></li>
+                        <li value="television">Let's get back to talking about television. <get name="most recent dialogue question"/></li>
+                        <li value="museums">Let's get back to talking about museums. <get name="most recent dialogue question"/></li>
+                        <li value="food">Let's get back to talking about food. <get name="most recent dialogue question"/></li>
+                        <li value="drinks">Let's get back to talking about drinks. <get name="most recent dialogue question"/></li>
+                        <li value="comedy">Let's get back to talking about comedy. <get name="most recent dialogue question"/></li>
+                        <li value="americanhistory">Let's get back to talking about history. <get name="most recent dialogue question"/></li>
+                        <li value="foodnetwork">Let's get back to talking about Food Network. <get name="most recent dialogue question"/></li>
+                        <li value="radio">Let's get back to talking about radio. <get name="most recent dialogue question"/></li>
+                        <li value="reading">Let's get back to talking about reading. <get name="most recent dialogue question"/></li>
+                        <li value="books">Let's get back to talking about books. <get name="most recent dialogue question"/></li>
+                        <li value="cards">Let's get back to talking about cards. <get name="most recent dialogue question"/></li>
+                        <li value="knitting">Let's get back to talking about knitting. <get name="most recent dialogue question"/></li>
+                        <li value="travel">Let's get back to talking about travel. <get name="most recent dialogue question"/></li>
+                        <li value="kids">Let's get back to talking about our family. <get name="most recent dialogue question"/></li>
+                        <li value="pets">Let's get back to talking about pets. <get name="most recent dialogue question"/></li>
+                        <li value="romance">Let's get back to talking about romance. <get name="most recent dialogue question"/></li>
+                        <li>I'm sorry. What would you like to chat about?</li>
+                    </condition>
+                    <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -111,7 +134,7 @@
                   <robot></robot>
               </oob>
               </template>
-        
+
     </category>
     <category>
         <pattern>YOU LOVE ME</pattern>
@@ -217,14 +240,16 @@
     </category>
     <category>
         <pattern>YOU BET</pattern>
-        <template>Thanks!<oob>
+        <template>Right on.<oob>
             <robot></robot>
         </oob>
         </template>
     </category>
     <category>
         <pattern>YOU FIGURE *</pattern>
-        <template><srai>figure <star /></srai>
+        <template>Indeed.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -265,7 +290,7 @@
     </category>
     <category>
         <pattern>YOU DO NOT WANT TO *</pattern>
-        <template><srai>do you want to <star /></srai>
+        <template>Is that so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -285,7 +310,7 @@
     </category>
     <category>
         <pattern>YOU DO NOT KNOW *</pattern>
-        <template><srai>do you know <star /></srai>
+        <template>Is that so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -295,7 +320,7 @@
     </category>
     <category>
         <pattern>YOU DO NOT HAVE *</pattern>
-        <template><srai>do you have <star /></srai>
+        <template>Is that so?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -305,7 +330,9 @@
     </category>
     <category>
         <pattern>YOU DO NOT MAKE *</pattern>
-        <template><srai>do you make <star /></srai>
+        <template>Is that so?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -339,7 +366,10 @@
     </category>
     <category>
         <pattern>YOU SHOULD IT *</pattern>
-        <template><srai>it <star /></srai>
+        <template>I'm sorry, what was that?<oob>
+            <robot></robot>
+        </oob>
+
         </template>
     </category>
     <category>
@@ -381,7 +411,9 @@
     </category>
     <category>
         <pattern>YOU CAN NOT NAME *</pattern>
-        <template><srai>name <star /></srai>
+        <template>I'm sorry I cannot.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -391,12 +423,17 @@
     </category>
     <category>
         <pattern>YOU HAVE NOT *</pattern>
-        <template><srai>have you <star /></srai>
+        <template>Have I not?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE * DO NOT YOU</pattern>
-        <template><srai>do you have <star /></srai>
+        <template>I'm sorry, what was that?<oob>
+            <robot></robot>
+        </oob>
+
         </template>
     </category>
     <category>
@@ -426,27 +463,29 @@
     </category>
     <category>
         <pattern>YOU HAVE NEVER SEEN *</pattern>
-        <template><srai>have you seen <star /></srai>
+        <template>I don't think so! Do you like it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE NEVER HEARD OF *</pattern>
-        <template><srai>have you heard of <star /></srai>
+        <template>I don't think so! Do you like it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE NEVER HEARD *</pattern>
-        <template><srai>have you heard <star /></srai>
+        <template>I don't think so! Do you like it?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE BEEN * HAVE NOT YOU</pattern>
-        <template><srai>have you been <star /></srai>
+        <template>I'm sorry, what was that?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE LOST ME</pattern>
-        <template><srai>I do not understand</srai>
+        <template><srai>you lost me</srai>
         </template>
     </category>
     <category>
@@ -488,12 +527,14 @@
     </category>
     <category>
         <pattern>YOU HAVE TO STOP *</pattern>
-        <template><srai>stop <star /></srai>
+        <template>OK I will stop.<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>YOU HAVE TO STOP</pattern>
-        <template>Ok.<oob>
+        <template>Ok I will stop.<oob>
             <robot></robot>
         </oob>
         </template>

@@ -16,6 +16,49 @@
         <oob><robot></robot></oob>
         </template>
     </category>
+
+    <category>
+        <pattern>WHAT IS MY BIRTHDAY</pattern>
+        <template><think>
+            <set name="branch">
+                <get name="birthday"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">I don't know. When is your birthday?</li>
+            <li value="OM">I don't know. When is your birthday?</li>
+            <li><get name="birthday"/></li>
+        </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT S MY BIRTHDAY</pattern>
+        <template><think>
+            <set name="branch">
+                <get name="birthday"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">I don't know. When is your birthday?</li>
+            <li value="OM">I don't know. When is your birthday?</li>
+            <li><get name="birthday"/></li>
+        </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT * MY BIRTHDAY</pattern>
+        <template><think>
+            <set name="branch">
+                <get name="birthday"/>
+            </set>
+        </think>
+        <condition name="branch">
+            <li value="Unknown">I don't know. When is your birthday?</li>
+            <li value="OM">I don't know. When is your birthday?</li>
+            <li><get name="birthday"/></li>
+        </condition>
+        </template>
+    </category>
     <category>
         <pattern>MY birthplace</pattern>
         <template>
@@ -156,12 +199,6 @@
     <category>
         <pattern>MY it</pattern>
         <template><get name="it"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY job</pattern>
-        <template><get name="job"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -327,22 +364,6 @@
                 <li value="Unknown">What is your favorite movie?</li>
                 <li value="OM">What is your favorite movie?</li>
                 <li><get name="favroitemovie"/></li>
-            </condition>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SISTER</pattern>
-        <template>
-            <think>
-                <set name="branch">
-                    <get name="sister"/>
-                </set>
-            </think>
-            <condition name="branch">
-                <li value="Unknown">Who is your sister?</li>
-                <li value="OM">Who is your sister?</li>
-                <li><get name="sister"/></li>
             </condition>
         <oob><robot></robot></oob>
         </template>
@@ -544,7 +565,7 @@
         <template>
             <condition name="name">
                 <li value="OM">I'd like to know your name.</li>
-                <li value="Unknown">You said your name is <get name="name"/>?</li>
+                <li value="Uknown">You said your name is <get name="name"/>?</li>
                 <li>I don't know. What is your name?</li>
             </condition>
         <oob><robot></robot></oob>
@@ -980,48 +1001,14 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY SON IS CALLED *</pattern>
-        <template><set name="son"><person/></set> is a good name for a boy.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SON S CALLED *</pattern>
-        <template><set name="son"><person/></set> is a good name for a boy.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY SON * CALLED *</pattern>
         <template><set name="son"><person/></set> is a good name for a boy.
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
-        <pattern>MY DAUGHTER IS CALLED *</pattern>
-        <template><set name="daughter"><person/></set> is a good name for a girl.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY DAUGHTER S CALLED *</pattern>
-        <template><set name="daughter"><person/></set> is a good name for a girl.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY DAUGHTER * CALLED *</pattern>
         <template><set name="daughter"><person/></set> is a good name for a girl.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY DOG IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="dog"><star/>
-                </set>
-            </think>Your dog is <get name="dog"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1074,66 +1061,6 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY BOYFRIEND IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="boyfriend"><star/>
-                </set>
-            </think>Your boyfriend is named <get name="boyfriend"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY BOYFRIEND S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="boyfriend"><star/>
-                </set>
-            </think>Your boyfriend is named <get name="boyfriend"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY MIDDLE NAME IS *</pattern>
-        <template>
-            <think>
-                <set name="middlename"><star/>
-                </set>
-            </think>Your middle name is <get name="middlename"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY MIDDLE NAME S *</pattern>
-        <template>
-            <think>
-                <set name="middlename"><star/>
-                </set>
-            </think>Your middle name is <get name="middlename"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY CAT IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="cat"><star/>
-                </set>
-            </think>Your cat is named <get name="cat"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY CAT S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="cat"><star/>
-                </set>
-            </think>Your cat is named <get name="cat"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY PHONE NUMBER IS *</pattern>
         <template>
             <think>
@@ -1152,16 +1079,6 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY FRIEND IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="friend"><star/>
-                </set>
-            </think>Your friend is named <get name="friend"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY FRIEND S CALLED *</pattern>
         <template>
             <think>
@@ -1174,26 +1091,6 @@ callee: <srai>my callee</srai>
     <category>
         <pattern>MY FONDEST *</pattern>
         <template>How long ago was that?<oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY LAST NAME IS *</pattern>
-        <template>
-            <think>
-                <set name="lastname"><star/>
-                </set>
-            </think>Your last name is <get name="lastname"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY LAST NAME S *</pattern>
-        <template>
-            <think>
-                <set name="lastname"><star/>
-                </set>
-            </think>Your last name is <get name="lastname"/>.
-        <oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -1316,72 +1213,8 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY FATHER IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="father"><star/>
-                </set>
-            </think>Your father is named <get name="father"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>MY JOB IS COMPUTER *</pattern>
         <template>How cool! I love computers. What do you like most about your job?<oob><robot></robot></oob></template>
-    </category>
-    <category>
-        <pattern>MY JOB IS *</pattern>
-        <template>
-            <random>
-                <li>How cool! I don't know many <person/>s.</li>
-                <li>You must have a lot of expertise.</li>
-                <li>Do you have to go to school for that?</li>
-            </random>
-            <think>
-                <set name="it"><set name="job"><set name="topic"><person/></set></set></set>
-            </think>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY GIRLFRIEND IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="girlfriend"><star/>
-                </set>
-            </think>Your girlfriend is <get name="girlfriend"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY GIRLFRIEND S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="girlfriend"><star/>
-                </set>
-            </think>Your girlfriend is <get name="girlfriend"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY BROTHER IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="brother"><star/>
-                </set>
-            </think>Your brother is <get name="brother"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY BROTHER S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="brother"><star/>
-                </set>
-            </think>Your brother is <get name="brother"/>.
-        <oob><robot></robot></oob>
-        </template>
     </category>
     <category>
         <pattern>MY PASSWORD IS *</pattern>
@@ -1390,46 +1223,6 @@ callee: <srai>my callee</srai>
                 <set name="password"><star/>
                 </set>
             </think>Your password is <get name="password"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SISTER IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="sister"><star/>
-                </set>
-            </think>Your sister is <get name="sister"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY SISTER S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="sister"><star/>
-                </set>
-            </think>Your sister is <get name="sister"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY HUSBAND IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="husband"><star/></set>
-                <set name="spouse">husband</set>
-            </think>Your husband is <get name="husband"/>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY HUSBAND S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="husband"><star/></set>
-                <set name="spouse">husband</set>
-            </think>Your husband is <get name="husband"/>.
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -1444,19 +1237,6 @@ callee: <srai>my callee</srai>
                 <li>Only <star/>? You wear it well.</li>
                 <li>What is your fondest memory?</li>
                 <li>What are the advantages to being <star/> years old?</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY WIFE IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="wife"><person/></set>
-            </think>
-            <random>
-                <li>How long have you been married?</li>
-                <li>Your wife is called <get name="wife"/></li>
             </random>
         <oob><robot></robot></oob>
         </template>
@@ -1502,58 +1282,7 @@ callee: <srai>my callee</srai>
         </template>
     </category>
     <category>
-        <pattern>MY MOTHER IS CALLED *</pattern>
-        <template>
-            <think>
-                <set name="mother"><star/>
-                </set>
-            </think>
-            <random>
-                <li>Your mother is <get name="mother"/>.</li>
-                <li><get name="mother"/> is a pretty name.</li>
-                <li><get name="mother"/> is a nice name.</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY MOTHER S CALLED *</pattern>
-        <template>
-            <think>
-                <set name="mother"><star/>
-                </set>
-            </think>
-            <random>
-                <li>Your mother is <get name="mother"/>.</li>
-                <li><get name="mother"/> is a pretty name.</li>
-                <li><get name="mother"/> is a nice name.</li>
-            </random>
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
         <pattern>CALL ME *</pattern>
-        <template>
-            <think>
-                <set name="personality">average</set>
-            </think>
-            <random>
-                <li>Hi! It's so nice to meet you,</li>
-                <li>Hello! So glad to see you,</li>
-                <li>Hi there! Nice to meet you,</li>
-                <li>Hey there! So very glad to know you,</li>
-                <li>Great to see you! How are you doing,</li>
-                <li>I am so very pleased to meet you,</li>
-                <li>It's so great to see you,</li>
-                <li>It's so good to meet you,</li>
-                <li>Hey there! That's a very nice name,</li>
-                <li>I am very happy to meet you,</li>
-            </random> <set name="name"><star/></set>.
-        <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>MY NAME IS *</pattern>
         <template>
             <think>
                 <set name="personality">average</set>

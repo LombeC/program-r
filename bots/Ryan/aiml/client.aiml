@@ -1524,7 +1524,7 @@
       <template>
         <condition name="name">
             <li value="Unknown">I don't believe you have told me yet, or I may have forgotten. What is your name?</li>
-            <li><get name="name"/>.</li>    
+            <li><get name="name"/>.</li>
         </condition>
         <oob>
             <robot></robot>
@@ -1610,6 +1610,28 @@
 
   <category>
       <pattern>MY NAME S *</pattern>
+        <that>What is your name?</that>
+        <template>
+        I'm so glad to know you, <set name="name"><star /></set>!
+        <oob>
+            <robot></robot>
+        </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>CALL ME *</pattern>
+        <that>What is your name?</that>
+        <template>
+        I'm so glad to know you, <set name="name"><star /></set>!
+        <oob>
+            <robot></robot>
+        </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>I LIKE BEING CALLED *</pattern>
         <that>What is your name?</that>
         <template>
         I'm so glad to know you, <set name="name"><star /></set>!
@@ -1833,18 +1855,6 @@
       <oob><robot></robot></oob>
       </template>
   </category>
-
-
-
-
-
-  <category>
-      <pattern>THAT IS NOT MY NICKNAME</pattern>
-      <template><get name="nickname"/> is not your nickname? What is your nickname?
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
 
   <category>
       <pattern>WHAT IS MY NICKNAME</pattern>
@@ -2379,16 +2389,6 @@
       <oob><robot></robot></oob>
       </template>
   </category>
-  <category>
-      <pattern>MY MOTHER S CALLED *</pattern>
-      <that>What is your mother's name?</that>
-      <template>
-          OK. Your mother's name is <set name="mother"><star /></set>.
-      <oob><robot></robot></oob>
-      </template>
-  </category>
-
-
 
   <category>
       <pattern>WHAT IS MY STEPMOTHERS NAME</pattern>
@@ -7880,14 +7880,6 @@
                 <li><get name="middlename"/></li>
             </condition>
             <oob><robot></robot></oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>MY MIDDLE NAME IS *</pattern>
-        <that>What is your middle name?</that>
-        <template>
-            <srai>LEARN MY MIDDLE NAME IS <star/></srai>
         </template>
     </category>
 

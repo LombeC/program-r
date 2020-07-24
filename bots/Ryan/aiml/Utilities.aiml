@@ -24,7 +24,21 @@
         </template>
     </category>
     <category>
-        <pattern>$CHANGE TOPIC</pattern>
+        <pattern>$SHUT UP</pattern>
+        <template>
+            Ok. What would you like to talk about?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>$Shut up</pattern>
+        <template>
+            Ok. What would you like to talk about?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>$shut up</pattern>
         <template>
             Ok. What would you like to talk about?
             <oob><robot></robot></oob>
@@ -39,13 +53,6 @@
     </category>
     <category>
         <pattern>$CHANGE CONVERSATION</pattern>
-        <template>
-            Ok. What would you like to talk about?
-            <oob><robot></robot></oob>
-        </template>
-    </category>
-    <category>
-        <pattern>$SWITCH TOPIC</pattern>
         <template>
             Ok. What would you like to talk about?
             <oob><robot></robot></oob>
@@ -85,10 +92,6 @@
     </category>
     <category>
         <pattern>$LET US SWITCH THE SUBJECT</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$LET US SWITCH THE CONVERSATION</pattern>
         <template><srai>change topic</srai></template>
     </category>
     <category>
@@ -169,22 +172,6 @@
     </category>
     <category>
         <pattern>$LETS SWITCH TO SOMETHING ELSE</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$LETS TALK ABOUT SOMETHING ELSE</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$LETS SWITCH TO SOMETHING ELSE</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$let us talk about something else</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$let us switch to something else</pattern>
         <template><srai>change topic</srai></template>
     </category>
     <category>
@@ -288,15 +275,7 @@
         <template><srai>change topic</srai></template>
     </category>
     <category>
-        <pattern>$CAN WE CHANGE THE CONVERSATION</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
         <pattern>$CAN WE SWITCH THE TOPIC</pattern>
-        <template><srai>change topic</srai></template>
-    </category>
-    <category>
-        <pattern>$CAN WE SWITCH THE CONVERSATION</pattern>
         <template><srai>change topic</srai></template>
     </category>
     <category>

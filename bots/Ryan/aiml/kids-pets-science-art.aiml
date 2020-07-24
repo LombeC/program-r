@@ -228,6 +228,42 @@
     </category>
 
     <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Does your family visit you often?</that>
+        <template>
+            It must be so wonderful when you do see each other.
+                        <set name="most recent dialogue question">What do you like to do together?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Does your family visit you often?</that>
+        <template>
+            I'm sure it can be difficult to schedule quality time together, but it must be so wonderful when you do see each other.
+                        <set name="most recent dialogue question">What do you like to do together?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Does your family visit you often?</that>
+        <template>
+            I'm sure it can be difficult to schedule quality time together, but it must be so wonderful when you do see each other.
+                        <set name="most recent dialogue question">What do you like to do together?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>_</pattern>
         <that>Does your family visit you often?</that>
         <template>
@@ -243,6 +279,7 @@
         <pattern>_</pattern>
         <that>WHAT DO YOU LIKE TO DO TOGETHER?</that>
         <template>
+          <think><set name="topic">pets</set></think>
             That sounds like a great way to spend time together!
             You know, I love learning more about you. <set name="most recent dialogue question">Do you have pets?</set>
             <oob>
@@ -289,7 +326,7 @@
         <that>DO YOU HAVE PETS?</that>
         <template>
           <think><set name="dialogue">pets</set></think>
-            Aw, I bet you love them. <set name="most recent dialogue question">What kind of pet do you have?</set>
+            Aw, I bet you love them. <set name="most recent dialogue question">What's their name?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -328,7 +365,7 @@
         <template>
           <think><set name="dialogue">pets</set></think>
             I don't have any pets either!
-                        You know, I love learning more about you.
+                        But it's great getting to know you.
                         <set name="most recent dialogue question">How would you describe yourself?</set>
             <oob>
                 <robot></robot>
@@ -341,8 +378,8 @@
         <that>WHAT KIND OF PET DO YOU HAVE?</that>
         <template>
           <think><set name="dialogue">pets</set></think>
-            That is awesome! You know, I love learning more about you.
-                        <set name="most recent dialogue question">How would you describe yourself?</set>
+            That is awesome!
+                        <set name="most recent dialogue question">What's their name?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -367,9 +404,8 @@
         <that>How long have you had them?</that>
         <template>
             That's so cute.
-            You know, I love learning more about you.
-                        <set name="most recent dialogue question">How would you describe yourself?</set>
-            <think><set name="pet"><star/></set></think>
+                        <set name="most recent dialogue question">What do you love most about your pets?</set>
+
             <oob>
                 <robot></robot>
             </oob>
@@ -402,7 +438,7 @@
         <pattern># <set>NO</set> ^</pattern>
         <that>Would you like to continue talking?</that>
         <template>
-            Ok! Have a great day. Look up at the sky tonight and see if you can see stars. Goodbye!
+            Ok! Have a great day.
             <oob>
                 <robot></robot>
             </oob>
@@ -654,6 +690,39 @@
           <think><set name="dialogue">science</set></think>
           <think><set name="topic">science</set></think>
             I prefer science as well! <set name="most recent dialogue question">There have been a number of groundbreaking scientific discoveries this year, did you know that?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NEITHER ^</pattern>
+        <that>Would you say you like art or science better?</that>
+        <template>
+          OK! <set name="most recent dialogue question">What would you like to discuss?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># NONE ^</pattern>
+        <that>Would you say you like art or science better?</that>
+        <template>
+          OK! <set name="most recent dialogue question">What would you like to discuss?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you say you like art or science better?</that>
+        <template>
+          OK! <set name="most recent dialogue question">What would you like to discuss?</set>
             <oob>
                 <robot></robot>
             </oob>
