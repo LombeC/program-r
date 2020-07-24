@@ -1,11 +1,11 @@
 import numpy as np
-import time
 import torch
 
 from programr.utils.logging.ylogger import YLogger
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
-from transformers import (DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline,
-                         RobertaModel, RobertaTokenizer, RobertaConfig, RobertaForMaskedLM, DistilBertModel, AutoTokenizer, AutoModel)
+from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample,
+                          glue_convert_examples_to_features)
+
 
 class SemanticSimilarity():
 
@@ -15,7 +15,7 @@ class SemanticSimilarity():
     @staticmethod
     def factory(type_):
         if type_ == "embedding":
-            return EmbeddingSemanticSimilarity()
+            return DistilRobertaSemanticSimilarity()
 
         elif type_ == "default":
             return DefaultSemanticSimilarity()
@@ -31,68 +31,48 @@ class SemanticSimilarity():
         raise NotImplementedError("")
 
 
-class EmbeddingSemanticSimilarity(SemanticSimilarity):
+class DistilRobertaSemanticSimilarity(SemanticSimilarity):
 
-    def __init__(self):
-        ## todo we need to re-implement the semantic similarity with torch, tf is no longer supported in programr
-        pass
-        # super().__init__()
-        # module_url = "https://tfhub.dev/google/universal-sentence-encoder/2"
-        # t1 = time.time()
-        # embed = hub.Module(module_url)
-        # self.similarity_input_placeholder = tf.placeholder(tf.string, shape=(None))
-        # self.similarity_message_encodings = embed(self.similarity_input_placeholder)
-        # self.session = tf.Session()
-        # t2 = time.time()
-        # self.session.run(tf.global_variables_initializer())
-        # t3 = time.time()
-        # self.session.run(tf.tables_initializer())
-        # t4 = time.time()
-        # print(t2 - t1)
-        # print(t3 - t2)
-        # print(t4 - t3)
-
-    def similarity_with_concepts(self, text, concepts):
-        text_embedding = self.session.run(self.similarity_message_encodings,
-                                          feed_dict={self.similarity_input_placeholder: [text]})
-
-        concepts_embedding = self.session.run(self.similarity_message_encodings,
-                                              feed_dict={self.similarity_input_placeholder: concepts})
-
-        similarity_scores = np.inner(text_embedding, concepts_embedding)[0].tolist()
-
-        return similarity_scores
-
-    def similarity_with_concept(self, text, concept):
-        text_embedding = self.session.run(self.similarity_message_encodings,
-                                          feed_dict={self.similarity_input_placeholder: [text]})
-
-        concept_embedding = self.session.run(self.similarity_message_encodings,
-                                             feed_dict={self.similarity_input_placeholder: [concept]})
-
-        similarity_score = np.inner(concept_embedding, text_embedding)[0][0]
-
-        return similarity_score
-
-# TODO: Implement this class as the torch version of above class
-class PyTorchSemanticSimilarity(SemanticSimilarity):
-    
     def __init__(self, semantic_similarity_config: BrainSemanticSimilarityConfiguration):
         super().__init__()
         self.semantic_similarity_config = semantic_similarity_config
-        # model_dir = semantic_similarity_config.model_dir
-        model_dir = 'distilroberta-base'
-        tokenizer = DistilBertTokenizer.from_pretrained(model_dir)
-        model = RobertaModel.from_pretrained(model_dir)
-        
-
-        self.similarity_classifier = SemanticClassifer(model, tokenizer)
+        model_dir = semantic_similarity_config.model_dir
+        self.tokenizer = RobertaTokenizer.from_pretrained(model_dir)
+        self.model = RobertaForSequenceClassification.from_pretrained(model_dir)
 
     def similarity_with_concept(self, text, concept):
-        pass
+        example = InputExample(guid='0', text_a=text, text_b=concept)
+        feature = glue_convert_examples_to_features(examples=[example],
+                                                    tokenizer=tokenizer,
+                                                    max_length=128,
+                                                    output_mode='regression',
+                                                    label_list=[None])
+
+        input_ids = torch.tensor(feature[0].input_ids).unsqueeze(0)
+        attention_mask = torch.tensor(feature[0].attention_mask).unsqueeze(0)
+
+        with torch.no_grad():
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+
+        return outputs[0].item()
 
     def similarity_with_concepts(self, text, concepts):
-        pass
+        examples = [InputExample(guid='0', text_a=text, text_b=concept) for concept in concepts]
+        features = glue_convert_examples_to_features(examples=examples,
+                                                     tokenizer=tokenizer,
+                                                     max_length=128,
+                                                     output_mode='regression',
+                                                     label_list=[None])
+
+        input_ids = torch.tensor([feature.input_ids for feature in features])
+        attention_mask = torch.tensor([feature.attention_mask for feature in features])
+
+        with torch.no_grad():
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            outputs = outputs[0].T.tolist()[0]
+
+        return outputs
+
 
 class DefaultSemanticSimilarity(SemanticSimilarity):
 
@@ -106,57 +86,39 @@ class DefaultSemanticSimilarity(SemanticSimilarity):
         pass
 
 
-class SemanticClassifer:
-
-    def __init__(self, model, tokenizer):
-        self.model = model
-        self.tokenizer = tokenizer
-
-    def __call__(self, text):
-        input_ids = torch.tensor(tokenizer.encode(text)).unsqueeze(0)
-        outputs = model(input_ids)
-        last_hidden_states = outputs[0]  # The last hidden-state is the first element of the output tuple   
-
-        # input_ids = torch.tensor(self.tokenizer.encode(text, add_special_tokens=True)).unsqueeze(0)
-        # outputs = self.model(input_ids)
-        # outputs = outputs[0].detach().numpy()
-        # scores = np.exp(outputs) / np.exp(outputs).sum(-1)
-        # scores = scores[0].tolist()
-        # result = {"negative": scores[0], "neutral": scores[1], "positive": scores[2]}
-        # return result
-
-
-
 if __name__ == "__main__":
-    # NOTE: Example of loading in roberta model
-    # tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-cased')
-    # model = RobertaModel.from_pretrained('roberta-base')
-    # input_ids = torch.tensor(tokenizer.encode("Hello, my dog is cute")).unsqueeze(0)
-    # outputs = model(input_ids)
-    # print(outputs)
+    tokenizer = RobertaTokenizer.from_pretrained('/home/rohola/codes/program-r/libs/pretrain_roberta_model')
+    model = RobertaForSequenceClassification.from_pretrained('/home/rohola/codes/program-r/libs/pretrain_roberta_model')
 
+    sentence1 = "Dogs are cute."
+    sentence2 = "I need an Macbook."
+    sentence3 = "Computer technology is awesome."
 
-    # # Initializing a RoBERTa configuration
-    # configuration = RobertaConfig()
-    # # Initializing a model from the configuration
-    # model = RobertaModel(configuration)
-    # # Accessing the model configuration
-    # configuration = model.config
-    # print("model: {}".format(model))
+    example = InputExample(guid=0, text_a=sentence3, text_b=sentence2, label=0)
+    feature = glue_convert_examples_to_features(examples=[example],
+                                                tokenizer=tokenizer,
+                                                max_length=128,
+                                                output_mode='regression',
+                                                label_list=[None])
 
+    input_ids = torch.tensor(feature[0].input_ids).unsqueeze(0)
+    attention_mask = torch.tensor(feature[0].attention_mask).unsqueeze(0)
 
+    with torch.no_grad():
+        outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+        print(outputs[0].item())
 
+    config = BrainSemanticSimilarityConfiguration()
+    config._model_dir = "/home/rohola/codes/program-r/libs/pretrain_roberta_model"
+    semantic_similarity = DistilRobertaSemanticSimilarity(config)
+    s1 = semantic_similarity.similarity_with_concept("The computer technology is awesome", "Intel")
+    s2 = semantic_similarity.similarity_with_concept("The computer technology is awesome", "dog")
+    print(s1, s2)
 
+    ss = semantic_similarity.similarity_with_concepts("The computer technology is awesome",
+                                                      ["dogs", "peperoni", "Intel"])
+    print(ss)
 
-    tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
-    model = RobertaForMaskedLM.from_pretrained('roberta-base')
-    input_ids = tokenizer("Hello, my dog is cute", return_tensors="pt")["input_ids"]
-    outputs = model(input_ids, labels=input_ids)
-    loss, prediction_scores = outputs[:2]
-    print("prediction_scores: {}".format(prediction_scores))
-
-
-    
     # NOTE: Tensorflow version
     # semantic_similarity = EmbeddingSemanticSimilarity()
     # result = semantic_similarity.similarity_with_concept("Hi", "greeting")

@@ -119,11 +119,11 @@ class DefaultSentimentAnalysis(SentimentAnalysis):
 
 if __name__ == "__main__":
     semantic_analysis_config = BrainSentimentAnalysisConfiguration()
-    semantic_analysis_config._model_dir = "/home/rohola/codes/sentiment_classification/model_out"
+    semantic_analysis_config._model_dir = "/home/rohola/codes/program-r/libs/pretrain_distillbert_full_sst"
     s = DistilBertSentimentAnalysis(semantic_analysis_config)
-    a = s.get_sentence_sentiment("this is cute")
+    a = s.get_sentence_sentiment("this is so cute!")
     print(a)
-    l = s.get_sentences_sentiments(["this is cute", "that's horrible"])
+    l = s.get_sentences_sentiments(["this is cute!", "that's horrible"])
     print(l)
     k = s.expected_sentiment_value(a[1])
     print(k)
