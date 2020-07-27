@@ -196,6 +196,7 @@ class DoubleStringPatternSplitCollection(BaseCollection):
             return True
         return False
 
+
     # def replace_by_pattern(self, replacable):
     #     alreadys = []
     #     print("alreadys: {}".format(alreadys))
@@ -225,6 +226,7 @@ class DoubleStringPatternSplitCollection(BaseCollection):
     #         except Exception as excep:
     #             YLogger.exception(self, "Invalid regular expression [%s]"%str(pair[0]), excep)
 
+    #     print("returning: {}".format(re.sub(' +', ' ', replacable.strip())))
     #     return re.sub(' +', ' ', replacable.strip())
 
     def replace_by_pattern(self, replacable):
