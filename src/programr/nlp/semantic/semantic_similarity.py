@@ -87,8 +87,8 @@ class DefaultSemanticSimilarity(SemanticSimilarity):
 
 
 if __name__ == "__main__":
-    tokenizer = RobertaTokenizer.from_pretrained('/home/rohola/codes/program-r/libs/pretrain_roberta_model')
-    model = RobertaForSequenceClassification.from_pretrained('/home/rohola/codes/program-r/libs/pretrain_roberta_model')
+    tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_roberta_model')
+    model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
 
     sentence1 = "Dogs are cute."
     sentence2 = "I need an Macbook."
@@ -106,18 +106,18 @@ if __name__ == "__main__":
 
     with torch.no_grad():
         outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-        print(outputs[0].item())
+        print("model outputs: {}".format(outputs[0].item()))
 
     config = BrainSemanticSimilarityConfiguration()
-    config._model_dir = "/home/rohola/codes/program-r/libs/pretrain_roberta_model"
+    config._model_dir = "./libs/pretrain_roberta_model"
     semantic_similarity = DistilRobertaSemanticSimilarity(config)
     s1 = semantic_similarity.similarity_with_concept("The computer technology is awesome", "Intel")
     s2 = semantic_similarity.similarity_with_concept("The computer technology is awesome", "dog")
-    print(s1, s2)
+    print("semantics similarity scores: {}, {}".format(s1, s2))
 
     ss = semantic_similarity.similarity_with_concepts("The computer technology is awesome",
                                                       ["dogs", "peperoni", "Intel"])
-    print(ss)
+    print("semantics similarity scores: {}".format(ss))
 
     # NOTE: Tensorflow version
     # semantic_similarity = EmbeddingSemanticSimilarity()
