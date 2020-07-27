@@ -223,11 +223,11 @@ brain:
         alpha: 0.1
         positive_threshold: 0.2
         negative_threshold: -0.2
-        model_dir: libs/pretrain_distillbert_full_sentiment/
+        model_dir: ./libs/pretrain_distilbert_full_sentiment
 
       semantic_similarity:
         method: distilroberta
-        model_dir: libs/pretrain_roberta_model/
+        model_dir: ./libs/pretrain_roberta_model/
 
       tokenizer:
         libname: nltk

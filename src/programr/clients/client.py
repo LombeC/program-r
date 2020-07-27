@@ -226,6 +226,7 @@ class BotClient(ResponseLogger):
     def create_client_context(self, userid, load_variables=True):
         client_context = ClientContext(self, userid)
         client_context.bot = self._bot_factory.select_bot()
+        
         #TODO: here is where we need to load in variables
         client_context.brain = client_context.bot.brain
         if load_variables:
