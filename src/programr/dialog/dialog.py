@@ -272,6 +272,7 @@ class Conversation(object):
 
     def set_property(self, name: str, value: str):
         # TODO: Need to save self._properties to database with user info
+        print("Setting property - {} with value {}".format(name, value))
         if name == 'topic':
             if value == "":
                 value = '*'

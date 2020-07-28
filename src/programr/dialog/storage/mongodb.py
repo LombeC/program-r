@@ -127,6 +127,15 @@ class ConversationMongodbStorage(ConversationStorage):
         bot_properties = client_context.bot.conversations[userid].properties
         print("bot_properties: {}".format(type(bot_properties)))
 
+        if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:
+                print("Found user")
+                # user_info = self.db['user_info'].find_one({'userid': client_context.userid})
+
+                self.db['user_info'].update_one({'userid': client_context.userid}, { '$set': {'variables': bot_properties} })
+                print("Finished saving info")
+        else:
+            print("user not found. nothing saved.")
+
     def load_client_properties(self, client_context):
         try:
             if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:
