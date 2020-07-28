@@ -107,12 +107,10 @@ class RestBotClient(BotClient):
             # if threshold_reached:
             #     response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
             
-            client_context.bot.save_conversation(client_context)
+            # client_context.bot.save_conversation(client_context)
+            client_context.brain._save_variables(client_context)
 
             response = self.remove_oob(response)
-
-            # YLogger.debug(client_context, "response from ask_question_with_options (%s)", response)
-            # YLogger.debug(client_context, "options from ask_question_with_options (%s)", options)
         except Exception as e:
             print(e)
         return response, options

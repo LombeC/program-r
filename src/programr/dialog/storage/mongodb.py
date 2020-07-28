@@ -121,6 +121,12 @@ class ConversationMongodbStorage(ConversationStorage):
         except Exception as e:
             YLogger.error(self, e)
 
+    def save_client_properties(self, client_context):
+        # TODO: save client_context.bot.conversations[userid].properties to MongoDB document
+        userid = client_context.userid
+        bot_properties = client_context.bot.conversations[userid].properties
+        print("bot_properties: {}".format(type(bot_properties)))
+
     def load_client_properties(self, client_context):
         try:
             if self.db['user_info'].find_one({'userid': client_context.userid}) is not None:

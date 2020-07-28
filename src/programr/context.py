@@ -49,6 +49,10 @@ class ClientContext(object):
     def brain(self, id):
         self._brain = id
 
+    def save_user_info(self):
+        # TODO: Add saving to storage here.
+        pass
+
     def load_client_properties(self, user_name, location, time_zone):
         self.user_name = user_name
         self.location = location

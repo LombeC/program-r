@@ -223,7 +223,7 @@ class MajorDomoBotClient(EventBotClient):
 
                         answer = self.process_question_with_options(client_context, request.question)
 
-                        #client_context.bot.save_conversation(client_context)
+                        client_context.bot.save_conversation(client_context)
                         response = self.render_response(client_context, answer)
                     else:
                         response = ["client context is not initiated. Initial Session request"]

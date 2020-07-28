@@ -44,6 +44,9 @@ class BaseCollection(object):
     def load_from_database(self, client_context, id=None):
         client_context.bot._conversation_storage.load_client_properties(client_context)
 
+    def save_to_database(self, client_context, id=None):
+        client_context.bot._conversation_storage.save_client_properties(client_context)
+
     def load_from_text(self, text):
         count = 0
         lines = text.split("\n")

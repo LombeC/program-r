@@ -341,6 +341,10 @@ class Brain(object):
         else:
             YLogger.warning(self, "No configuration setting for properties")
 
+    def _save_variables(self, client_context):
+        # NOTE: Added by Jarid 7/28
+        self._variables_collection.save_to_database(client_context)
+    
     def _load_variables(self, client_context):
         # TODO ROHOLA: Refactor this funciton
         # TODO: Add in load from db here, need to find a way to retrieve proper clientid        
