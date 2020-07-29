@@ -12,6 +12,7 @@ class TemplatePersonNode(TemplateNode):
         try:
             string = self.resolve_children_to_string(client_context)
             resolved = client_context.brain.persons.personalise_string(string)
+            # print("templatenode: {}".format(client_context.brain.persons.person(resolved)))
             YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
             return resolved
         except Exception as excep:
