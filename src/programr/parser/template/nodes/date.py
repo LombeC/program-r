@@ -1,5 +1,6 @@
 from programr.utils.logging.ylogger import YLogger
 import datetime
+from datetime import timezone
 
 from programr.parser.exceptions import ParserException
 from programr.parser.template.nodes.attrib import TemplateAttribNode
@@ -16,6 +17,7 @@ class TemplateDateNode(TemplateAttribNode):
 
     def resolve_to_string(self, client_context):
         time_now = datetime.datetime.now()
+        time_now.replace(tzinfo=timezone.utc)
         resolved = time_now.strftime(self._format)
         YLogger.debug(client_context, "[%s] resolved to [%s]", self.to_string(), resolved)
         return resolved
