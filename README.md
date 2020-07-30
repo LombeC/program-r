@@ -105,12 +105,8 @@ You should see the "linking successful" message.
 
 7- [Install mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
  - If you want to change the default port number you have to consider changing it in your bot configuration in bot > database_config > port
- 
-8- [we should remove this part, corenlp is not part of programr anymore]  <del> download, extract and copy the [corenlp](https://stanfordnlp.github.io/CoreNLP/download.html) to the libs directory in root(after this you need to point to your specific version of corenlp in the config file of the bot you use in the section brain > nlp > corenlp > jar_dir) </del>
 
-    
-
-9- Set src:
+8- Set src:
 - In command line:
         Add src path to PYTHONPATH
 

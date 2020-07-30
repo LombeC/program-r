@@ -42,30 +42,6 @@
     </category>
 
     <category>
-        <pattern>Show me a picture</pattern>
-        <template>
-            OK!!
-            <oob>
-                <robot>
-                    <image><filename>Christmas.jpg</filename></image>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern>Show me a video</pattern>
-        <template>
-            OK!!
-            <oob>
-                <robot>
-                    <video><filename>Chopped.mp4</filename></video>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
 		<pattern>CONVERSATION SENTIMENT</pattern>
 		<template>
 			Current positivity is <get name="positivity" />, and subjectivity is
