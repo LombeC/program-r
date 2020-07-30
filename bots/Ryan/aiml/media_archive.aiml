@@ -224,4 +224,61 @@
         </template>
     </category>
 
+    <category>
+        <pattern>Show me a video *</pattern>
+        <template>
+            I'm sorry, I don't think I have a video about that. Want to watch a video about 
+            <random>
+                <li>music?</li>
+                <li>science?</li>
+                <li>sports?</li>
+                <li>tv?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to watch a video about music?</that>
+        <template>Ok.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch a video about music?</that>
+        <template><srai>Show me a video * music</srai></template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to watch a video about science?</that>
+        <template>Ok.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch a video about science?</that>
+        <template><srai>Show me a video * science</srai></template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to watch a video about sports?</that>
+        <template>Ok.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch a video about sports?</that>
+        <template><srai>Show me a video * sports</srai></template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Want to watch a video about tv?</that>
+        <template>Ok.<oob><robot></robot></oob></template>
+    </category>
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Want to watch a video about tv?</that>
+        <template><srai>Show me a video * tv</srai></template>
+    </category>
+
 </aiml>
