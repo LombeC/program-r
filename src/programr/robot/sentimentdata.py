@@ -1,7 +1,7 @@
 import numpy as np
 
 DISTRIBUTION_SIZE = 10
-NEGATIVE_THRESHOLD = -2
+NEGATIVE_THRESHOLD = -15
 
 class SentimentData():
 

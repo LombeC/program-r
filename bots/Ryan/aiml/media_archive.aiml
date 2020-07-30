@@ -47,6 +47,80 @@
     </category>
 
     <category>
+        <pattern>Show me a picture * food</pattern>
+        <template>
+            OK!!
+            <random>
+                <li><oob><robot><image><filename>Apples.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Hamburger.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Thanksgiving.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>chop_suey.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>pad_thai.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>thai_curry.jpg</filename></image></robot></oob></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Show me a picture * art</pattern>
+        <template>
+            OK!!
+            <random>
+                <li><oob><robot><image><filename>American_Gothic.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens_2.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Renoir.jpg</filename></image></robot></oob></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Show me a some art</pattern>
+        <template>
+            OK!!
+            <random>
+                <li><oob><robot><image><filename>American_Gothic.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens_2.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Renoir.jpg</filename></image></robot></oob></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Show me * art</pattern>
+        <template>
+            OK!!
+            <random>
+                <li><oob><robot><image><filename>American_Gothic.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jacob_Jordaens_2.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Renoir.jpg</filename></image></robot></oob></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Show me a picture * sports</pattern>
+        <template>
+            OK!!
+            <random>
+                <li><oob><robot><image><filename>Babe_Ruth.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Baseball_Diamond.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Bill_Russell.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Cal_Ripkin.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Doctor_J.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Football_Rugby.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Football_Stadium.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Hank_Aaron.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Jackie_Robinson.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Larry_Bird.jpg</filename></image></robot></oob></li>
+                <li><oob><robot><image><filename>Yogi_Berra.jpg</filename></image></robot></oob></li>
+            </random>
+        </template>
+    </category>
+
+    <category>
         <pattern>Show me a video</pattern>
         <template>
             OK!!
@@ -227,7 +301,7 @@
     <category>
         <pattern>Show me a video *</pattern>
         <template>
-            I'm sorry, I don't think I have a video about that. Want to watch a video about 
+            I'm sorry, I don't think I have a video about <star/>. Want to watch a video about 
             <random>
                 <li>music?</li>
                 <li>science?</li>
@@ -240,7 +314,7 @@
     <category>
         <pattern># <set>NO</set> ^</pattern>
         <that>Want to watch a video about music?</that>
-        <template>Ok.<oob><robot></robot></oob></template>
+        <template>Ok. What would you like to talk about?<oob><robot></robot></oob></template>
     </category>
     <category>
         <pattern># <set>YES</set> ^</pattern>

@@ -71,19 +71,20 @@ class RestBotClient(BotClient):
     def remove_oob(self, response):
         return re.sub('<oob><robot></robot></oob>', '', response)
     
-    def process_sentiment(self, client_context, question):
+    def process_sentiment(self, client_context, question, verbose=False):
         # Calculating and saving sentiment
         sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
         numerical_sentiment = client_context.brain.nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
 
         client_context.bot.sentiment.append_sentiment(numerical_sentiment)
         client_context.bot.sentiment.append_sentiment_distribution(sentiment_distribution)
-        
-        # print("Sentiment: {}".format(sentiment_value))
-        print("Sentiment for current sentence: {}".format(numerical_sentiment))
-        # print("Sentiment Distribution: {}".format(sentiment_distribution))
-        print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
-        print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
+
+        if verbose:    
+            print("Sentiment: {}".format(sentiment_value))
+            print("Sentiment for current sentence: {}".format(numerical_sentiment))
+            print("Sentiment Distribution: {}".format(sentiment_distribution))
+            print("Sentiment list: {}".format(client_context.bot.sentiment._sentiment_values))
+            print("Rolling Sentiment: {}".format(client_context.bot.sentiment._rolling_sentiment))
 
         return client_context, client_context.bot.sentiment._threshold_reached
 
@@ -103,9 +104,9 @@ class RestBotClient(BotClient):
             response, options = client_context.bot.ask_question_with_options(client_context, question)
             
             # NOTE: Commenting them out temporarily 
-            # client_context, threshold_reached = self.process_sentiment(client_context, question)
-            # if threshold_reached:
-            #     response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
+            client_context, threshold_reached = self.process_sentiment(client_context, question)
+            if threshold_reached:
+                response, options = client_context.bot.ask_question_with_options(client_context, "XTHRESHOLD REACHED")
             
             # client_context.bot.save_conversation(client_context)
             client_context.brain._save_variables(client_context)
