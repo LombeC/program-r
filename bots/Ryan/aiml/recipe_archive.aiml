@@ -281,6 +281,15 @@
         </template>
     </category>
     <category>
+        <pattern>^ show ^ ingredients ^ curry ^</pattern>
+        <template>
+            Here you go! If you want to copy the ingredients, you'll have to write them down by hand or take a photo of the screen. Take as long as you need.
+            Let me know when you finish by saying done!
+            <think><set name="topic">chickpeacurry</set></think>
+            <oob><robot><image><filename>chickpeacurryingredients.jpg</filename></image></robot></oob>
+        </template>
+    </category>
+    <category>
         <pattern>^ show ^ chickpea ^ ingredients ^</pattern>
         <template>
             Here you go! If you want to copy the ingredients, you'll have to write them down by hand or take a photo of the screen. Take as long as you need.
