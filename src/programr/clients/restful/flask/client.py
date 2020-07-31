@@ -1,5 +1,6 @@
 import json
 import datetime
+from xmlrpc.client import ServerProxy
 
 from flask import Flask, jsonify, request, make_response, abort, session, g
 # import flask_login
@@ -89,6 +90,8 @@ class FlaskRestBotClient(RestBotClient):
 #     session.modified = True
 #     g.user = flask_login.current_user
 
+# PORT = 5000
+proxy = ServerProxy('http://localhost:3000')
 
 if __name__ == '__main__':
 
@@ -102,6 +105,36 @@ if __name__ == '__main__':
     def ask():
         response_data, status = rest_client.process_request(request)
         return rest_client.create_response(response_data, status)
+
+    @app.route('/api/rest/v1.0/wiki', methods=['POST'])
+    def ask_wiki():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.wiki_summary(r["question"])}))
+        return response
+
+    @app.route('/api/rest/v1.0/sentiment', methods=['POST'])
+    def ask_sentiment():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.check_sentiment(r["question"])}))
+        return response
+
+    @app.route('/api/rest/v1.0/similarity', methods=['POST'])
+    def ask_similarity():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.get_semantic_similarity(r['text'], r['concept'])}))
+        return response
+
+    @app.route('/api/rest/v1.0/news', methods=['POST'])
+    def ask_news():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.get_news()}))
+        return response
+
+    @app.route('/api/rest/v1.0/weather', methods=['POST'])
+    def ask_weather():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.get_weather()}))
+        return response
 
     
 

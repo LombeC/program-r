@@ -18,14 +18,14 @@ from transformers import (RobertaTokenizer, RobertaForSequenceClassification, In
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
 from programr.nlp.semantic.semantic_similarity import DistilRobertaSemanticSimilarity
 from programr.nlp.semantic.sentiment_analysis import DistilBertSentimentAnalysis
+from programr.services.wikipediaservice import WikipediaAPI, WikipediaService
 
 
 server = SimpleXMLRPCServer(('localhost', 3000), logRequests=True)
 
-
-
 def wiki_summary(title, sentences=2, chars=0, auto_suggest=True, redirect=False):
     try:
+        print("in the server")
         return wikipedia.summary(title, sentences, chars, auto_suggest, redirect)
     except:
         return "No result"

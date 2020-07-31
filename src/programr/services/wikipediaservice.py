@@ -1,6 +1,8 @@
 import re
-
+import requests
 import wikipedia
+
+from flask import Flask, make_response, jsonify
 
 from programr.utils.logging.ylogger import YLogger
 from programr.services.service import Service
@@ -49,8 +51,13 @@ class WikipediaService(Service):
             words  = question.split()
             question = " ".join(words[1:])
             if words[0] == 'SUMMARY':
-                search = self._api.summary(question, sentences=1)
-                search = "According to wikipedia, " + self.clean_summary(search)
+                # TODO: Replace below function call with a call to the server
+                # search = self._api.summary(question, sentences=1)
+                search = requests.post('http://localhost:5000/api/rest/v1.0/wiki',  json={'question': question})
+                print(type(search))
+                print(search)
+
+                search = "According to wikipedia, " + self.clean_summary(search.text)
                 # if search == "".join(search.split()):
                 #     print("True")
                 YLogger.debug(client_context, f"search in wikipediaservice: {search}")
@@ -67,6 +74,6 @@ class WikipediaService(Service):
             return search
         except wikipedia.exceptions.PageError:
             YLogger.error(client_context, "No page on Wikipedia for your question [%s]", question)
-        except Exception:
-            YLogger.error(client_context, "General error querying Wikipedia for your question [%s]", question)
+        except Exception as ex:
+            YLogger.error(client_context, "General error querying Wikipedia for your question [%s], Exception - [%s]", question, ex)
         return "Sorry, but I couldn't find anything on Wikipedia for your question about, " + question
