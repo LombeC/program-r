@@ -85,19 +85,25 @@ class NewsService(Service):
             words  = question.split()
             question = " ".join(words[1:])
             if words[0] == 'HEADLINES':
-                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article}).text
+                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article})
+                search = json.loads(search.text)
+                search = search['response']
                 
             elif words[0] == 'NEXT':
                 # top_headlines = self._api.headlines(country=question)
                 # YLogger.debug(client_context, f"top_headlines: {top_headlines}")
                 self._current_article += 1
-                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article}).text
+                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article})
+                search = json.loads(search.text)
+                search = search['response']
 
             elif words[0] == 'PREVIOUS':
                 # top_headlines = self._api.headlines(country=question)
                 # YLogger.debug(client_context, f"top_headlines: {top_headlines}")
                 self._current_article -= 1
-                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article}).text
+                search = requests.post('http://localhost:5000/api/rest/v1.0/news',  json={'headline_index': self._current_article})
+                search = json.loads(search.text)
+                search = search['response']
 
             else:
                 YLogger.error(client_context, "Unknown News API command [%s]", words[0])

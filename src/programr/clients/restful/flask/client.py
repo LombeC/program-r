@@ -130,10 +130,16 @@ if __name__ == '__main__':
         response = make_response(jsonify({"response": proxy.get_news(r['headline_index'])}))
         return response
 
-    @app.route('/api/rest/v1.0/weather', methods=['POST'])
-    def ask_weather():
+    @app.route('/api/rest/v1.0/weather_temperature', methods=['POST'])
+    def ask_weather_temperature():
         r = request.get_json()
-        response = make_response(jsonify({"response": proxy.get_weather()}))
+        response = make_response(jsonify({"response": proxy.get_weather_temperature(r['location'])}))
+        return response
+
+    @app.route('/api/rest/v1.0/weather_status', methods=['POST'])
+    def ask_weather_status():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.get_weather_status(r['location'])}))
         return response
 
     

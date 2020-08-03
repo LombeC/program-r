@@ -1,6 +1,7 @@
 import re
 import requests
 import wikipedia
+import json
 
 from flask import Flask, make_response, jsonify
 
@@ -54,6 +55,8 @@ class WikipediaService(Service):
                 # TODO: Replace below function call with a call to the server
                 # search = self._api.summary(question, sentences=1)
                 search = requests.post('http://localhost:5000/api/rest/v1.0/wiki',  json={'question': question})
+                search = json.loads(search.text)
+                search = search['response']
                 # print(type(search))
                 # print(search)
 

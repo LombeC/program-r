@@ -1,4 +1,5 @@
 import requests
+import json
 
 from flask import Flask, make_response, jsonify
 from pyowm import OWM
@@ -26,12 +27,12 @@ class WeatherService(Service):
     def __init__(self, config=None, api=None):
         Service.__init__(self, config)
 
-        api_key = 'b42dab02ba31304c08ae33bd9c63d0a4'
+        # api_key = 'b42dab02ba31304c08ae33bd9c63d0a4'
 
-        if api is None:
-            self._api = WeatherAPI(api_key)
-        else:
-            self._api = api
+        # if api is None:
+        #     self._api = WeatherAPI(api_key)
+        # else:
+        #     self._api = api
 
     def get_temp_info(self, observation):
         weather = observation.get_weather()
@@ -41,12 +42,12 @@ class WeatherService(Service):
         forecast = forecaster.get_forecast()
         return str(forecast)
 
-    def get_status_info(self, observation):
-        weather = observation.get_weather()
+    def get_status_info(self, weather):
+        #   
         # print(f"weather: {weather.get_status()}")
-        if weather.get_status() == "Clouds":
+        if weather== "Clouds":
             return "cloudy weather"
-        elif weather.get_status() == "Clear":
+        elif weather == "Clear":
             return "clear skies are"
         else:
             return str(weather.get_status()) + " is"
@@ -56,15 +57,25 @@ class WeatherService(Service):
             words  = question.split()
             question = " ".join(words[1:])
             if words[0] == 'TEMPERATURE':
-                search = requests.post('http://localhost:5000/api/rest/v1.0/weather',  json={'location': question}).text
-                # observation = self._api.weather(question)
-                # search = self.get_temp_info(observation)
+                search = requests.post('http://localhost:5000/api/rest/v1.0/weather_temperature',  json={'location': question})
+                search = json.loads(search.text)
+                search = search['response']
                 search += ' degrees fahrenheit'
                 YLogger.debug(client_context, f"weather report: {search}")
 
             elif words[0] == "STATUS":
-                observation = self._api.weather(question)
-                search = self.get_status_info(observation)
+                search = requests.post('http://localhost:5000/api/rest/v1.0/weather_status',  json={'location': question})
+                print("search: {}".format(type(search)))
+                print("search: {}".format(search))
+                search = json.loads(search.text)
+                print("search: {}".format(type(search)))
+                print("search: {}".format(search))
+                search = search['response']
+                # observation = self._api.weather(question)
+                search = self.get_status_info(search)
+                print("search: {}".format(type(search)))
+                print("search: {}".format(search))
+
             # NOTE: This API call doesn't work with free API subscriptions
             # elif words[0] == 'FORECAST':
             #     forecaster = self._api.todays_forecast(question)
