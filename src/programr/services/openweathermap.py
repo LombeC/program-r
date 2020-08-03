@@ -65,16 +65,9 @@ class WeatherService(Service):
 
             elif words[0] == "STATUS":
                 search = requests.post('http://localhost:5000/api/rest/v1.0/weather_status',  json={'location': question})
-                print("search: {}".format(type(search)))
-                print("search: {}".format(search))
                 search = json.loads(search.text)
-                print("search: {}".format(type(search)))
-                print("search: {}".format(search))
                 search = search['response']
-                # observation = self._api.weather(question)
                 search = self.get_status_info(search)
-                print("search: {}".format(type(search)))
-                print("search: {}".format(search))
 
             # NOTE: This API call doesn't work with free API subscriptions
             # elif words[0] == 'FORECAST':

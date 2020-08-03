@@ -86,25 +86,10 @@ def get_weather_status(location="Denver, USA"):
             observation = OWM(api_key).weather_at_place(location)
             print("observation: {}".format(type(observation)))
             print("observation: {}".format(observation))
-            # weather = get_status_info(observation)
-            # print("weather: {}".format(type(weather)))
-            # print("weather: {}".format(weather))
-            # return weather
             weather = observation.get_weather()
             return str(weather.get_status())
     except Exception as ex:
         print("Exception found getting weather status - {}".format(ex))
-
-
-def get_status_info(observation):
-    weather = observation.get_status()
-    # print(f"weather: {weather.get_status()}")
-    if weather.get_status() == "Clouds":
-        return "cloudy weather"
-    elif weather.get_status() == "Clear":
-        return "clear skies are"
-    else:
-        return str(weather.get_status()) + " is"
 
 
 def register_functions(server):

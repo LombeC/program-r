@@ -57,12 +57,7 @@ class WikipediaService(Service):
                 search = requests.post('http://localhost:5000/api/rest/v1.0/wiki',  json={'question': question})
                 search = json.loads(search.text)
                 search = search['response']
-                # print(type(search))
-                # print(search)
-
-                search = "According to wikipedia, " + self.clean_summary(search.text)
-                # if search == "".join(search.split()):
-                #     print("True")
+                search = "According to wikipedia, " + self.clean_summary(search)
                 YLogger.debug(client_context, f"search in wikipediaservice: {search}")
             elif words[0] == 'SEARCH':
                 results = self._api.search(question)
