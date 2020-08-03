@@ -1,3 +1,6 @@
+import requests
+
+from flask import Flask, make_response, jsonify
 from pyowm import OWM
 
 from programr.utils.logging.ylogger import YLogger
@@ -53,10 +56,12 @@ class WeatherService(Service):
             words  = question.split()
             question = " ".join(words[1:])
             if words[0] == 'TEMPERATURE':
-                observation = self._api.weather(question)
-                search = self.get_temp_info(observation)
+                search = requests.post('http://localhost:5000/api/rest/v1.0/weather',  json={'location': question}).text
+                # observation = self._api.weather(question)
+                # search = self.get_temp_info(observation)
                 search += ' degrees fahrenheit'
                 YLogger.debug(client_context, f"weather report: {search}")
+
             elif words[0] == "STATUS":
                 observation = self._api.weather(question)
                 search = self.get_status_info(observation)
@@ -64,9 +69,11 @@ class WeatherService(Service):
             # elif words[0] == 'FORECAST':
             #     forecaster = self._api.todays_forecast(question)
             #     search = self.get_forecast_info(observation)
+
             else:
                 YLogger.error(client_context, "Unknown Open Weather Map command [%s]", words[0])
                 search = ""
+
             return search
         except Exception as ex:
             YLogger.error(client_context, "General error querying Open Weather Map for question [%s]", question)

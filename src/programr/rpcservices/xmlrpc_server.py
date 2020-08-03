@@ -70,11 +70,10 @@ def get_news(headline_index=0, sources=None, country=None):
         print("error getting request. {}".format(ex))
         return ""
 
-def get_weather():
+def get_weather(location="Denver, USA"):
     with open("./src/programr/rpcservices/api_key_config.yaml", 'r') as stream:
         data = yaml.safe_load(stream)
         api_key = data['weather']
-        location = "Denver, USA"
         observation = OWM(api_key).weather_at_place(location)
         weather = observation.get_weather()
         return str(weather.get_temperature(unit='fahrenheit')['temp'])

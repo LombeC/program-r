@@ -5,9 +5,7 @@ from newsapi import NewsApiClient
 from flask import Flask, make_response, jsonify
 
 from programr.utils.logging.ylogger import YLogger
-from programr.services.service import Service]
-
-
+from programr.services.service import Service
 
 
 class NewsAPI(object):
@@ -104,7 +102,7 @@ class NewsService(Service):
             else:
                 YLogger.error(client_context, "Unknown News API command [%s]", words[0])
                 search = ""
-
+                
             return search
         except Exception as ex:
             YLogger.error(client_context, "General error querying News API for question [%s]", question)
