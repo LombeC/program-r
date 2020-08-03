@@ -127,7 +127,7 @@ if __name__ == '__main__':
     @app.route('/api/rest/v1.0/news', methods=['POST'])
     def ask_news():
         r = request.get_json()
-        response = make_response(jsonify({"response": proxy.get_news()}))
+        response = make_response(jsonify({"response": proxy.get_news(r['headline_index'])}))
         return response
 
     @app.route('/api/rest/v1.0/weather', methods=['POST'])

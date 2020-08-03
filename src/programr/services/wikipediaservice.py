@@ -54,8 +54,8 @@ class WikipediaService(Service):
                 # TODO: Replace below function call with a call to the server
                 # search = self._api.summary(question, sentences=1)
                 search = requests.post('http://localhost:5000/api/rest/v1.0/wiki',  json={'question': question})
-                print(type(search))
-                print(search)
+                # print(type(search))
+                # print(search)
 
                 search = "According to wikipedia, " + self.clean_summary(search.text)
                 # if search == "".join(search.split()):

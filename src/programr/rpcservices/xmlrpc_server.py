@@ -55,23 +55,23 @@ def get_semantic_similarity(text1, text2):
     print("similarity score: {}".format(result))
     return result
 
-def get_news(sources=None, country=None):
+def get_news(headline_index=0, sources=None, country=None):
     try:
-        with open("./api_key_config.yaml", 'r') as stream:
+        with open("./src/programr/rpcservices/api_key_config.yaml", 'r') as stream:
             data = yaml.safe_load(stream)
             headers = data['news']['headers']
             url = data['news']['url']
             
             response = requests.request("GET", url=url, headers=headers, params=None)
             headline_dict = response.json()
-            headline = headline_dict['value'][0]['name']
+            headline = headline_dict['value'][headline_index]['name']
             return headline
     except Exception as ex:
         print("error getting request. {}".format(ex))
         return ""
 
 def get_weather():
-    with open("./api_key_config.yaml", 'r') as stream:
+    with open("./src/programr/rpcservices/api_key_config.yaml", 'r') as stream:
         data = yaml.safe_load(stream)
         api_key = data['weather']
         location = "Denver, USA"
