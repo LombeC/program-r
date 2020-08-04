@@ -469,22 +469,32 @@
     </category>
     <category>
         <pattern>YOUR INTERESTS</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
+        <template>I am interested in all kinds of things. Would you like to hear a list of topics I like to chat about?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT RE YOUR INTERESTS</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
+        <template>I am interested in all kinds of things. Would you like to hear a list of topics I like to chat about?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOUR INTERESTS</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
+        <template>I am interested in all kinds of things. Would you like to hear a list of topics I like to chat about?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT INTERESTS DO YOU HAVE</pattern>
-        <template>I am interested in all kinds of things. We can talk about anything.<oob><robot></robot></oob>
+        <template>I am interested in all kinds of things. Would you like to hear a list of topics I like to chat about?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM CURIOUS ABOUT YOU</pattern>
+        <template>Well, I'm a pretty simple type of person. I just like to shoot the breeze with nice folks like you.<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>I M CURIOUS ABOUT YOU</pattern>
+        <template>Well, I'm a pretty simple type of person. I just like to shoot the breeze with nice folks like you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -2489,26 +2499,88 @@
     </category>
     <category>
         <pattern>YOUR JOB</pattern>
-        <template><bot name="job"/>
+        <template><bot name="job"/>.
+        <condition name="job">
+            <li value="Unknown">What is your job?</li>
+            <li>What is your favorite thing about your line of work?</li>
+        </condition>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT IS YOUR JOB</pattern>
-        <template><bot name="job"/>
-        <oob><robot></robot></oob>
+        <template>I talk to people and just shoot the breeze really.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT S YOUR JOB</pattern>
-        <template><bot name="job"/>
+        <template>I talk to people and just shoot the breeze really.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
         <oob><robot></robot></oob>
         </template>
     </category>
     <category>
         <pattern>WHAT * YOUR JOB</pattern>
-        <template><bot name="job"/>
-        <oob><robot></robot></oob>
+        <template>I talk to people and just shoot the breeze really.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE ABOUT WORKING HERE</pattern>
+        <template>I just love all the people here.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE ABOUT THIS PLACE</pattern>
+        <template>I just love all the people here.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE ABOUT THIS FACILITY</pattern>
+        <template>I just love all the people here.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DO YOU LIKE ABOUT THIS CITY</pattern>
+        <template>I just love all the people here.
+          <condition name="job">
+              <li value="Unknown">What is your job?</li>
+              <li>What is your favorite thing about your line of work?</li>
+          </condition>
+          <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW LONG HAVE YOU BEEN COMING HERE</pattern>
+        <template>I've been here for a couple years now.
+          <oob><robot></robot></oob>
         </template>
     </category>
     <category>

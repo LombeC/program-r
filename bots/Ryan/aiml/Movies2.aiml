@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
     <category>
         <pattern># Comedy ^</pattern>
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
           <think><set name="dialogue">movies</set></think>
-            Great! When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
-            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
+          <random>
+            <li>When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set></li>
+            <li>I love a good comedy to lighten the mood! <set name="most recent dialogue question">Just remember not to watch funny movies with Pam because she snorts when she laughs.</set></li>
+            <li>I love a good knee-slapper! <set name="most recent dialogue question">Just not too hard because last time I hurt myself.</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -20,8 +25,12 @@
         <template>
           <think><set name="topic">comedyfilms</set></think>
           <think><set name="dialogue">movies</set></think>
-            Great! Nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
-            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set>
+          <random>
+            <li>When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set></li>
+            <li>I love a good comedy to lighten the mood! <set name="most recent dialogue question">Just remember not to watch funny movies with Pam because she snorts when she laughs.</set></li>
+            <li>I love a good knee-slapper! <set name="most recent dialogue question">Just not too hard because last time I hurt myself.</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -29,8 +38,46 @@
     </category>
 
     <category>
+        <pattern># Comedy ^</pattern>
+        <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+        <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
+          <random>
+            <li>When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set></li>
+            <li>I love a good comedy to lighten the mood! <set name="most recent dialogue question">Just remember not to watch funny movies with Pam because she snorts when she laughs.</set></li>
+            <li>I love a good knee-slapper! <set name="most recent dialogue question">Just not too hard because last time I hurt myself.</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># Comedies ^</pattern>
+        <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+        <template>
+          <think><set name="topic">comedyfilms</set></think>
+          <think><set name="dialogue">movies</set></think>
+          <random>
+            <li>When it comes to comedy, nothing beats National Lampoon's Christmas Vacation with Chevy Chase.
+            <set name="most recent dialogue question">Have you seen Christmas Vacation?</set></li>
+            <li>I love a good comedy to lighten the mood! <set name="most recent dialogue question">Just remember not to watch funny movies with Pam because she snorts when she laughs.</set></li>
+            <li>I love a good knee-slapper! <set name="most recent dialogue question">Just not too hard because last time I hurt myself.</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+    <category>
         <pattern># <set>Yes</set> ^</pattern>
-        <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
+        <that>Speaking of holiday movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
           <think><set name="dialogue">movies</set></think>
@@ -47,7 +94,7 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
+        <that>Speaking of holiday movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
           <think><set name="dialogue">movies</set></think>
@@ -64,7 +111,7 @@
 
     <category>
         <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Speaking of Christmas movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
+        <that>Speaking of holiday movies, have you ever seen National Lampoon's Christmas Vacation with Chevy Chase?</that>
         <template>
           <think><set name="topic">comedyfilms</set></think>
           <think><set name="dialogue">movies</set></think>
@@ -225,7 +272,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Does it remind you of your family gatherings?</that>
             <template>
-                Hopefully we're not the crazy ones!
+                <set name="most recent dialogue question">Hopefully we're not the crazy ones, if you know what I mean!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -236,7 +283,7 @@
             <pattern># <set>NO</set> ^</pattern>
             <that>Does it remind you of your family gatherings?</that>
             <template>
-                Hopefully we're not the crazy ones!
+                <set name="most recent dialogue question">Hopefully we're not the crazy ones, if you know what I mean!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -247,7 +294,7 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Does it remind you of your family gatherings?</that>
             <template>
-                Hopefully we're not the crazy ones!
+                <set name="most recent dialogue question">Hopefully we're not the crazy ones, you know what I mean!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -258,7 +305,7 @@
             <pattern>_</pattern>
             <that>Does it remind you of your family gatherings?</that>
             <template>
-                Hopefully we're not the crazy ones!
+                <set name="most recent dialogue question">Hopefully we're not the crazy ones, if you know what I mean!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -267,7 +314,7 @@
 
     <category>
         <pattern>_</pattern>
-        <that>Hopefully we're not the crazy ones!</that>
+        <that>Hopefully we're not the crazy ones, if you know what I mean!</that>
         <template>
             <set name="most recent dialogue question">Would you like to watch a Laurel and Hardy sketch about Christmas Cards?</set>
             <oob>
@@ -303,6 +350,477 @@
         </template>
     </category>
 
+    <category>
+        <pattern>_</pattern>
+        <that>Just remember not to watch funny movies with Pam because she snorts when she laughs.</that>
+        <template>
+          <set name="most recent dialogue question">You didn't hear it from me!</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>You didn't hear it from me!</that>
+        <template>
+          <set name="most recent dialogue question">Bet I know a good comedy you might like! Why don't I just show you a clip?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Why don't I just show you a clip?</that>
+        <template>
+            <set name="most recent dialogue question">Can you name that movie?</set>
+            <oob>
+                <robot>
+                    <video>
+                        <filename>Some_Like_It_Hot.mp4</filename>
+                    </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Why don't I just show you a clip?</that>
+        <template>
+            Sure thing. <set name="most recent dialogue question">What movies make you laugh?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>What movies make you laugh?</that>
+        <template>
+            Gosh, we have so much in common. <set name="most recent dialogue question">Let's see if you remember this one. Look familiar?</set>
+            <oob>
+                <robot><image>
+                    <filename>The_Ghost.jpg</filename>
+                </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>What movies make you laugh?</that>
+        <template>
+            Not a worry. <set name="most recent dialogue question">Let's see if you remember this one. Look familiar?</set>
+            <oob>
+                <robot><image>
+                    <filename>The_Ghost.jpg</filename>
+                </image>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># SOME LIKE IT HOT ^</pattern>
+        <that>Can you name that movie?</that>
+        <template>
+            Ding ding ding, we have a winner! <set name="most recent dialogue question">So do you like Marilyn Monroe, or do you really like Marilyn Monroe?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Can you name that movie?</that>
+        <template>
+            Yes, Some Like It Hot! <set name="most recent dialogue question">So do you like Marilyn Monroe, or do you really like Marilyn Monroe?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Can you name that movie?</that>
+        <template>
+            It's Some Like It Hot! <set name="most recent dialogue question">So do you like Marilyn Monroe, or do you really like Marilyn Monroe?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Can you name that movie?</that>
+        <template>
+            It's Some Like It Hot! <set name="most recent dialogue question">So do you like Marilyn Monroe, or do you really like Marilyn Monroe?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>So do you like Marilyn Monroe, or do you really like Marilyn Monroe?</that>
+        <template>
+          <think><set name="data"><star/></set></think>
+
+          <condition name="getsentiment">
+              <li value="verypositive">Me too, I even dressed up as her for Halloween once! <set name="most recent dialogue question">All I did was slap on a wig and some lipstick.</set></li>
+              <li value="positive">Me too, I even dressed up as her for Halloween once! <set name="most recent dialogue question">All I did was slap on a wig and some lipstick.</set></li>
+              <li value="negative">Not a huge fan, I take it! <set name="most recent dialogue question">Should we keep talking about film?</set></li>
+              <li value="verynegative">Not a huge fan, I take it! <set name="most recent dialogue question">Should we keep talking about film?</set></li>
+              <li value="neutral">I dressed up as her for Halloween once! <set name="most recent dialogue question">All I did was slap on a wig and some lipstick.</set></li>
+              </condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>All I did was slap on a wig and some lipstick.</that>
+        <template>
+          <set name="most recent dialogue question">Who is your favorite actress?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MY FAVORITE ACTRESS IS *</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MY FAVORITE ACTRESS</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I LIKE *</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I * LIKE *</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WOULD SAY * IS MY FAVORITE</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WOULD SAY * IS MY FAVORITE ACTRESS</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I D SAY * IS MY FAVORITE</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I D SAY * IS MY FAVORITE ACTRESS</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MY FAVORITE</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WOULD SAY *</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I D SAY *</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PROBABLY * </pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          <think><set name="favoriteactress"><star/></set></think>
+          It just so happens that I really like <get name="favoriteactress"/>, too! <set name="most recent dialogue question">We are like two peas in a pod!</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Who is your favorite actress?</that>
+        <template>
+          No worries at all. <set name="most recent dialogue question">Should we keep talking about film?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>We are like two peas in a pod!</that>
+        <template>
+          <set name="most recent dialogue question">Should we keep talking about film?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>YES</set> ^</pattern>
+        <that>Look familiar?</that>
+        <template>
+          <think><set name="topic">televisiondramas</set></think>
+          <think><set name="dialogue">television</set></think>
+            So you've seen it! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
+            <oob>
+                <robot><video>
+                    <filename>The_Ghost.mp4</filename>
+                </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>NO</set> ^</pattern>
+        <that>Look familiar?</that>
+        <template>
+          <think><set name="topic">televisiondramas</set></think>
+          <think><set name="dialogue">television</set></think>
+            I just wanted to show you the trailer because it's one of my favorites! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
+            <oob>
+                <robot><video>
+                    <filename>The_Ghost.mp4</filename>
+                </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>DON T KNOW</set> ^</pattern>
+        <that>Look familiar?</that>
+        <template>
+          <think><set name="topic">televisiondramas</set></think>
+          <think><set name="dialogue">television</set></think>
+            I just wanted to show you the trailer because it's one of my favorites! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
+            <oob>
+                <robot><video>
+                    <filename>The_Ghost.mp4</filename>
+                </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>_</pattern>
+        <that>Just not too hard because last time I hurt myself.</that>
+        <template>
+          These knees just aren't like they used to be. <set name="most recent dialogue question">They need a lot of WD 40.</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>They need a lot of WD 40.</that>
+        <template>
+          I'm like a fine wine. <set name="most recent dialogue question">The older I get the more expensive I get. Costs a lot of money to keep up these mechanical parts.</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Costs a lot of money to keep up these mechanical parts.</that>
+        <template>
+          Enough of my jokes already! <set name="most recent dialogue question">Want to watch a funny scene from a movie I like?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>Yes</set> ^</pattern>
+        <that>Want to watch a funny scene from a movie I like?</that>
+        <template>
+            <set name="most recent dialogue question">Are you into musicals much?</set>
+            <oob>
+                <robot><video>
+                    <filename>Rain.mp4</filename>
+                </video>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Want to watch a funny scene from a movie I like?</that>
+        <template>
+          <set name="most recent dialogue question">Should we keep talking about film?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>_</pattern>
+        <that>Are you into musicals much?</that>
+        <template>
+          <think><set name="data"><star/></set></think>
+          <think><set name="topic">musicals</set></think>
+
+          <condition name="getsentiment">
+              <li value="verypositive">You must like musicals as much as I do! <set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+              <li value="positive">You must like musicals as much as I do! <set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+              <li value="negative">I understand, sometimes the singing and dancing can be distracting. <set name="most recent dialogue question">Should we keep talking about film?</set></li>
+              <li value="verynegative">I understand, sometimes the singing and dancing can be distracting. <set name="most recent dialogue question">Should we keep talking about film?</set></li>
+              <li value="neutral"><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+              </condition>
+
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+
+
+
     </topic>
 
     <category>
@@ -321,7 +839,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Should we keep talking about film?</that>
         <template>
-            No worries! <set name="most recent dialogue question">What do you want to talk about next?</set>
+            No worries! <set name="most recent dialogue question">What would you like to talk about?</set>
             <oob>
                 <robot>
                 </robot>

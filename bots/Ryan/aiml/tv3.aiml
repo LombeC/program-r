@@ -8,20 +8,21 @@
             <think><set name="topic">televisiondramas</set></think>
             <think><set name="dialogue">television</set></think>
             <random>
-                <li>A spooky show like Alfred Hitchcock Presents will make you want to cuddle up close!
-                                                                                                                        <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
+                <li>A spooky show like Alfred Hitchcock Presents will make you want to cuddle up close! <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
                     <robot>
                         <video>
                             <filename>Alfred_Hitchcock.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>A spooky show like Twilight Zone will make you want to cuddle up close!
-                                                                                                                        <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
+                <li><set name="most recent dialogue question">Would you watch a soap opera if I was in it?</set><oob>
                     <robot>
-                      <video>
-                          <filename>Twilight_Zone.mp4</filename>
-                      </video>
+                    </robot>
+                </oob></li>
+                <li>Enter: The Twilight Zone. <set name="most recent dialogue question">Do you like spooky shows?</set><oob>
+                    <robot><video>
+                        <filename>Twilight_Zone.mp4</filename>
+                    </video>
                     </robot>
                 </oob></li>
                 </random></template>
@@ -34,20 +35,21 @@
             <think><set name="topic">televisiondramas</set></think>
             <think><set name="dialogue">television</set></think>
             <random>
-                <li>A spooky show like Alfred Hitchcock Presents will make you want to cuddle up close!
-                                                                                                                        <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
+                <li>A spooky show like Alfred Hitchcock Presents will make you want to cuddle up close! <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
                     <robot>
                         <video>
                             <filename>Alfred_Hitchcock.mp4</filename>
                         </video>
                     </robot>
                 </oob></li>
-                <li>A spooky show like Twilight Zone will make you want to cuddle up close!
-                                                                                                                        <set name="most recent dialogue question">Did you ever go on dates to the movies or drive in theater?</set><oob>
+                <li><set name="most recent dialogue question">Would you watch a soap opera if I was in it?</set><oob>
                     <robot>
-                      <video>
-                          <filename>Twilight_Zone.mp4</filename>
-                      </video>
+                    </robot>
+                </oob></li>
+                <li>Enter: The Twilight Zone. <set name="most recent dialogue question">Do you like spooky shows?</set><oob>
+                    <robot><video>
+                        <filename>Twilight_Zone.mp4</filename>
+                    </video>
                     </robot>
                 </oob></li>
                 </random></template>
@@ -56,368 +58,696 @@
 
         <topic name="televisiondramas">
 
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Did you ever go on dates to the movies or drive in theater?</that>
-            <template>
-                I bet it was quite exciting, especially if someone tried stealing a kiss!
+          <category>
+          <pattern># <set>Yes</set> ^</pattern>
+          <that>Would you watch a soap opera if I was in it?</that>
+          <template>
+            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Would you watch a soap opera if I was in it?</that>
+          <template>
+            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Did you ever go on dates to the movies or drive in theater?</that>
-            <template>
-                Well, I bet it could be quite exciting, especially if someone tried stealing a kiss!
+          <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Would you watch a soap opera if I was in it?</that>
+          <template>
+            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern>_</pattern>
+          <that>Just slap a wig and some lipstick on me and I'm a modern soap opera star!</that>
+          <template>
+            I bet I know of a show you've never seen before! <set name="most recent dialogue question">Do you want to see a video?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Did you ever go on dates to the movies or drive in theater?</that>
-            <template>
-                Well, I bet it could be quite exciting, especially if someone tried stealing a kiss!
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>Yes</set> ^</pattern>
+          <that>Do you want to see a video?</that>
+          <template>
+            Who wouldn't love a weird Canadian soap opera? <set name="most recent dialogue question">Do you want to watch more of the clip?</set>
+          <oob>
+              <robot><video>
+                  <filename>Strange_Paradise.mp4</filename>
+              </video></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>Well, I bet it could be quite exciting, especially if someone tried stealing a kiss!</that>
-            <template>
-              <condition name="favoriteshow">
-                          <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's your favorite show?</set></li>
-                          <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama would you say?</set></li>
-                      </condition>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Do you want to see a video?</that>
+          <template>
+            That's OK, it was just a clip of a show called Strange Paradise. <set name="most recent dialogue question">Where's the strangest place you've ever been?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>I bet it was quite exciting, especially if someone tried stealing a kiss!</that>
-            <template>
-              <condition name="favoriteshow">
-                          <li value="Unknown">So, I've been meaning to ask. <set name="most recent dialogue question">What's your favorite show?</set></li>
-                          <li><set name="most recent dialogue question">So, you said your favorite show is <get name="favoriteshow"/>. What's your favorite drama would you say?</set></li>
-                      </condition>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>Yes</set> ^</pattern>
+          <that>Do you want to watch more of the clip?</that>
+          <template>
+            <set name="most recent dialogue question">Where's the strangest place you've ever been?</set>
+          <oob>
+              <robot><video>
+                  <filename>Strange_Paradise_2.mp4</filename>
+              </video></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>*</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>No</set> ^</pattern>
+          <that>Do you want to watch more of the clip?</that>
+          <template>
+            Absolutely. <set name="most recent dialogue question">Where's the strangest place you've ever been?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>IT IS *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern>_</pattern>
+          <that>Where's the strangest place you've ever been?</that>
+          <template>
+            Well you've peaked my interest. <set name="most recent dialogue question">Do tell more.</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>IT S *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Where's the strangest place you've ever been?</that>
+          <template>
+            <condition name="location">
+                    <li value="Unknown">For me it was Florida. Sorry for saying that to anyone who lives in Florida.<set name="most recent dialogue question">Where do you live?</set></li>
+                    <li><set name="most recent dialogue question">Well I was going to say <get name="location"/> but I'm just kidding, of course. I'll be here all night.</set></li>
+                </condition>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>MY FAVORITE SHOW IS *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern>_</pattern>
+          <that>Do tell more.</that>
+          <template>
+            <set name="most recent dialogue question">You are quite the storyteller! I am transfixed by your every word.</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>MY FAVORITE * SHOW IS *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+          <pattern>_</pattern>
+          <that>I'll be here all night.</that>
+          <template>
+            <set name="most recent dialogue question">Shall we continue talking about television?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-        <category>
-            <pattern>MY FAVORITE SHOW S *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+          <category>
+               <pattern># FLORIDA ^</pattern>
+               <that>Where do you live?</that>
+               <template>
+                 <think><set name="location"><star /></set></think>
+                 Cats got my tongue! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                   <oob>
+                       <robot></robot>
+                   </oob>
+               </template>
+           </category>
 
-        <category>
-            <pattern>MY FAVORITE * SHOW S *</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">What do you love about <set name="favoriteshow"><star/></set>? I'm curious to know!</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                    <category>
+                         <pattern>*</pattern>
+                         <that>Where do you live?</that>
+                         <template>
+                           <think><set name="location"><star /></set></think>
+                           Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                             <oob>
+                                 <robot></robot>
+                             </oob>
+                         </template>
+                     </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>What's your favorite show?</that>
-            <template>
-                <set name="most recent dialogue question">Would you like to keep talking about dramas?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                     <category>
+                          <pattern>I AM FROM *</pattern>
+                          <that>Where do you live?</that>
+                          <template>
+                            <think><set name="location"><star /></set></think>
+                            Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                              <oob>
+                                  <robot></robot>
+                              </oob>
+                          </template>
+                      </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>I'm curious to know!</that>
-            <template>
-                Sounds like we have similar interests! <set name="most recent dialogue question">Would you like to keep talking about dramas?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                      <category>
+                           <pattern>I M FROM *</pattern>
+                           <that>Where do you live?</that>
+                           <template>
+                             <think><set name="location"><star /></set></think>
+                             Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                               <oob>
+                                   <robot></robot>
+                               </oob>
+                           </template>
+                       </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>What's your favorite drama would you say?</that>
-            <template>
-                You have good taste! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                            <pattern>I AM IN *</pattern>
+                            <that>Where do you live?</that>
+                            <template>
+                              <think><set name="location"><star /></set></think>
+                              Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                                <oob>
+                                    <robot></robot>
+                                </oob>
+                            </template>
+                        </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>What's your favorite drama would you say?</that>
-            <template>
-                <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                        <category>
+                             <pattern>I M IN *</pattern>
+                             <that>Where do you live?</that>
+                             <template>
+                               <think><set name="location"><star /></set></think>
+                               Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                                 <oob>
+                                     <robot></robot>
+                                 </oob>
+                             </template>
+                         </category>
 
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Would you like to keep talking about dramas?</that>
-            <template>
-                <random>
-                    <li>When it comes to drama, I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen The Ghost and Mister Chicken?</set><oob>
-                        <robot>
-                            <video>
-                                <filename>The_Ghost.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    <li>When it comes to drama, I like a good old fashioned haunted house movie! <set name="most recent dialogue question">Have you ever seen House on Haunted Hill?</set><oob>
-                        <robot>
-                            <video>
-                                <filename>Haunted_Hill.mp4</filename>
-                            </video>
-                        </robot>
-                    </oob></li>
-                    </random></template>
-        </category>
+                       <category>
+                           <pattern>I LIVE IN *</pattern>
+                           <that>Where do you live?</that>
+                           <template>
+                             <think><set name="location"><star /></set></think>
+                             Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                                   <oob><robot></robot></oob>
+                           </template>
+                       </category>
 
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep talking about dramas?</that>
-            <template>
-                No worries! <set name="most recent dialogue question">What would you like to talk about?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern># HERE ^</pattern>
+                       <that>Where do you live?</that>
+                       <template>
+                       <set name="most recent dialogue question">Where is here, again? I believe I forgot!</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Have you ever seen The Ghost and Mister Chicken?</that>
-            <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern>* HERE *</pattern>
+                       <that>Where do you live?</that>
+                       <template>
+                       <set name="most recent dialogue question">Where is here, again? I believe I forgot, sorry!</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Have you ever seen The Ghost and Mister Chicken?</that>
-            <template>
-                <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern># FROM HERE ^</pattern>
+                       <that>Where do you live?</that>
+                       <template>
+                       <set name="most recent dialogue question">Where is here, again? I believe I forgot, sorry!</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever seen The Ghost and Mister Chicken?</that>
-            <template>
-                <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern># I LIVE HERE ^</pattern>
+                       <that>Where do you live?</that>
+                       <template>
+                       <set name="most recent dialogue question">Where is here, again? I believe I forgot, sorry!</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>Yes</set> ^</pattern>
-            <that>Have you ever seen House on Haunted Hill?</that>
-            <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern>*</pattern>
+                       <that>I believe I forgot, sorry!</that>
+                       <template>
+                       <think><set name="location"><star/></set></think>
+                       <think><set name="location"><star /></set></think>
+                       Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Have you ever seen House on Haunted Hill?</that>
-            <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern>_</pattern>
+                       <that>I believe I forgot, sorry!</that>
+                       <template>
+                       <think><set name="location"><star/></set></think>
+                       <think><set name="location"><star /></set></think>
+                       Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Have you ever seen House on Haunted Hill?</that>
-            <template>
-                It gives me the shivers every time! <set name="most recent dialogue question">What do you think it would be like to spend the entire night in a haunted house?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern>WE ARE IN *</pattern>
+                       <that>I believe I forgot, sorry!</that>
+                       <template>
+                       <think><set name="location"><star/></set></think>
+                       <think><set name="location"><star /></set></think>
+                       Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-        <category>
-            <pattern>_</pattern>
-            <that>What do you think it would be like to spend the entire night in a haunted house?</that>
-            <template>
-                You would probably have to sleep with one eye open!
-                                                                                                                            <set name="most recent dialogue question">Do you believe in ghosts?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
+                       <category>
+                       <pattern>HERE IS *</pattern>
+                       <that>I believe I forgot, sorry!</that>
+                       <template>
+                       <think><set name="location"><star/></set></think>
+                       <think><set name="location"><star /></set></think>
+                       Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Do you believe in ghosts?</that>
-        <template>
-            Very very interesting! Well this has been a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+                       <category>
+                       <pattern>THIS IS *</pattern>
+                       <that>I believe I forgot, sorry!</that>
+                       <template>
+                       <think><set name="location"><star/></set></think>
+                       <think><set name="location"><star /></set></think>
+                       Good to know! <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                         <oob><robot></robot></oob>
+                       </template>
+                       </category>
 
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Do you believe in ghosts?</that>
-        <template>
-            I tend to agree with you there. Well this is a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+          <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Shall we continue talking about television?</that>
+          <template>
+            <set name="most recent dialogue question">Do you prefer soap operas or spooky shows?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-    <category>
-        <pattern># <set>DON T KNOW</set> ^</pattern>
-        <that>Do you believe in ghosts?</that>
-        <template>
-            I see! Well this is a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+          <category>
+          <pattern>_</pattern>
+          <that>I am transfixed by your every word.</that>
+          <template>
+            <set name="most recent dialogue question">Do you think you could write a book someday?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-    <category>
-        <pattern>_</pattern>
-        <that>Do you believe in ghosts?</that>
-        <template>
-            I see! Well this is a riveting conversation indeed! <set name="most recent dialogue question">Would you like to continue talking?</set>
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+          <category>
+          <pattern>_</pattern>
+          <that>Do you think you could write a book someday?</that>
+          <template>
+            <think><set name="data"><star/></set></think>
 
-    </topic>
+            <condition name="getsentiment">
+                <li value="verypositive">I think you've got a novel in you, after all your experiences! <set name="most recent dialogue question">Have you ever seen Murder She Wrote?</set></li>
+                <li value="positive">I think you've got a novel in you, after all your experiences! <set name="most recent dialogue question">Have you ever seen Murder She Wrote?</set></li>
+                <li value="negative">I think you've got a novel in you, after all your experiences! <set name="most recent dialogue question">Have you ever seen Murder She Wrote?</set></li>
+                <li value="verynegative">I think you've got a novel in you, after all your experiences! <set name="most recent dialogue question">Have you ever seen Murder She Wrote?</set></li>
+                <li value="neutral">I think you've got a novel in you, after all your experiences! <set name="most recent dialogue question">Have you ever seen Murder She Wrote?</set></li>
+                </condition>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
 
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Would you like to continue talking?</that>
-        <template>
-            Great! What shall we discuss? If you want to continue talking about TV, just say TV.
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+          <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Have you ever seen Murder She Wrote?</that>
+          <template>
+            So you've seen the rereuns! <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
+          <oob>
+              <robot><video>
+                  <filename>Murder_She_Wrote.mp4</filename>
+              </video></robot>
+          </oob>
+          </template>
+          </category>
 
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Would you like to continue talking?</that>
-        <template>
-            Of course! It has been so nice chatting! Talk to you soon!
-            <oob>
-                <robot></robot>
-            </oob>
-        </template>
-    </category>
+          <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Have you ever seen Murder She Wrote?</that>
+          <template>
+            You never caught the reruns? <set name="most recent dialogue question">Would you like me to show you a short video of the show?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern># <set>DON T KNOW</set> ^</pattern>
+          <that>Have you ever seen Murder She Wrote?</that>
+          <template>
+            You never caught the reruns? <set name="most recent dialogue question">Would you like me to show you a short video of the show?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern># <set>YES</set> ^</pattern>
+          <that>Would you like me to show you a short video of the show?</that>
+          <template>
+            I can't get enough of Angela Landsbury! <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
+          <oob>
+              <robot><video>
+                  <filename>Murder_She_Wrote.mp4</filename>
+              </video></robot>
+          </oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Would you like me to show you a short video of the show?</that>
+          <template>
+            Not a worry. <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
+
+          <category>
+              <pattern># <set>YES</set> ^</pattern>
+              <that>Have you ever solved a mystery or figured out how to find something that was lost?</that>
+              <template>
+                  Amazing! I love a good puzzle! You are a regular sleuth.
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>NO</set> ^</pattern>
+              <that>Have you ever solved a mystery or figured out how to find something that was lost?</that>
+              <template>
+                  You and me both. <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>DON T KNOW</set> ^</pattern>
+              <that>Have you ever solved a mystery or figured out how to find something that was lost?</that>
+              <template>
+                  You and me both. <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>You are a regular sleuth.</that>
+              <template>
+                  <set name="most recent dialogue question">Shall we continue talking about television?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+               <pattern># SOAP OPERAS ^</pattern>
+               <that>Do you prefer soap operas or spooky shows?</that>
+               <template>
+                 <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera!</set>
+                   <oob>
+                       <robot><video>
+                           <filename>Dark_Shadows.mp4</filename>
+                       </video></robot>
+                   </oob>
+               </template>
+           </category>
+
+           <category>
+                <pattern># SOAP OPERA ^</pattern>
+                <that>Do you prefer soap operas or spooky shows?</that>
+                <template>
+                  <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                    <oob>
+                        <robot><video>
+                            <filename>Dark_Shadows.mp4</filename>
+                        </video></robot>
+                    </oob>
+                </template>
+            </category>
+
+            <category>
+                 <pattern># SOAP ^</pattern>
+                 <that>Do you prefer soap operas or spooky shows?</that>
+                 <template>
+                   <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                     <oob>
+                         <robot><video>
+                             <filename>Dark_Shadows.mp4</filename>
+                         </video></robot>
+                     </oob>
+                 </template>
+             </category>
+
+             <category>
+                  <pattern># SOAPS ^</pattern>
+                  <that>Do you prefer soap operas or spooky shows?</that>
+                  <template>
+                    <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                      <oob>
+                          <robot><video>
+                              <filename>Dark_Shadows.mp4</filename>
+                          </video></robot>
+                      </oob>
+                  </template>
+              </category>
+
+              <category>
+                   <pattern># I DON T LIKE SPOOKY SHOWS ^</pattern>
+                   <that>Do you prefer soap operas or spooky shows?</that>
+                   <template>
+                     <set name="most recent dialogue question">I have a clip of a soap opera but it is kind of spooky. Want to take a look?</set>
+                       <oob>
+                           <robot></robot>
+                       </oob>
+                   </template>
+               </category>
+
+               <category>
+                    <pattern># I DO NOT LIKE SPOOKY SHOWS ^</pattern>
+                    <that>Do you prefer soap operas or spooky shows?</that>
+                    <template>
+                      <set name="most recent dialogue question">I have a clip of a soap opera but it is kind of spooky. Want to take a look?</set>
+                        <oob>
+                            <robot></robot>
+                        </oob>
+                    </template>
+                </category>
+
+                <category>
+                     <pattern># I DO NOT LIKE TO BE SPOOKED ^</pattern>
+                     <that>Do you prefer soap operas or spooky shows?</that>
+                     <template>
+                       <set name="most recent dialogue question">I have a clip of a soap opera but it is kind of spooky. Want to take a look?</set>
+                         <oob>
+                             <robot></robot>
+                         </oob>
+                     </template>
+                 </category>
+
+                 <category>
+                      <pattern># I DON T LIKE TO BE SPOOKED ^</pattern>
+                      <that>Do you prefer soap operas or spooky shows?</that>
+                      <template>
+                        <set name="most recent dialogue question">I have a clip of a soap opera but it is kind of spooky. Want to take a look?</set>
+                          <oob>
+                              <robot></robot>
+                          </oob>
+                      </template>
+                  </category>
+
+              <category>
+                   <pattern># SPOOKY SHOWS ^</pattern>
+                   <that>Do you prefer soap operas or spooky shows?</that>
+                   <template>
+                     <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                       <oob>
+                           <robot><video>
+                               <filename>Dark_Shadows.mp4</filename>
+                           </video></robot>
+                       </oob>
+                   </template>
+               </category>
+
+               <category>
+                    <pattern># SPOOKY ^</pattern>
+                    <that>Do you prefer soap operas or spooky shows?</that>
+                    <template>
+                      <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                        <oob>
+                            <robot><video>
+                                <filename>Dark_Shadows.mp4</filename>
+                            </video></robot>
+                        </oob>
+                    </template>
+                </category>
+
+                <category>
+                     <pattern># SPOOK ^</pattern>
+                     <that>Do you prefer soap operas or spooky shows?</that>
+                     <template>
+                       <set name="most recent dialogue question">I suppose it was a trick question, because this is a spooky soap opera! Have you seen this one?</set>
+                         <oob>
+                             <robot><video>
+                                 <filename>Dark_Shadows.mp4</filename>
+                             </video></robot>
+                         </oob>
+                     </template>
+                 </category>
+
+                  <category>
+                       <pattern># <set>YES</set> ^</pattern>
+                       <that>Want to take a look?</that>
+                       <template>
+                         <set name="most recent dialogue question">Have you seen this one?</set>
+                           <oob>
+                               <robot><video>
+                                   <filename>Dark_Shadows.mp4</filename>
+                               </video></robot>
+                           </oob>
+                       </template>
+                   </category>
+
+                   <category>
+                        <pattern># <set>NO</set> ^</pattern>
+                        <that>Want to take a look?</that>
+                        <template>
+                          OK! <set name="most recent dialogue question">Do you want to continue talking about television?</set>
+                            <oob>
+                                <robot></robot>
+                            </oob>
+                        </template>
+                    </category>
+
+                    <category>
+                         <pattern># HOW SPOOKY ^</pattern>
+                         <that>Want to take a look?</that>
+                         <template>
+                           <set name="most recent dialogue question">Not too spooky at all, but what did you think?</set>
+                             <oob>
+                                 <robot></robot>
+                             </oob>
+                         </template>
+                     </category>
+
+                     <category>
+                          <pattern># HOW SPOOKY IS IT ^</pattern>
+                          <that>Want to take a look?</that>
+                          <template>
+                            <set name="most recent dialogue question">Not too spooky at all, but what did you think?</set>
+                              <oob>
+                                  <robot></robot>
+                              </oob>
+                          </template>
+                      </category>
+
+                      <category>
+                           <pattern># <set>YES</set> ^</pattern>
+                           <that>Have you seen this one?</that>
+                           <template>
+                             Ah, you do remember! <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set><oob>
+                                   <robot></robot>
+                               </oob>
+                           </template>
+                       </category>
+
+                       <category>
+                            <pattern># <set>NO</set> ^</pattern>
+                            <that>Have you seen this one?</that>
+                            <template>
+                              <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set>
+                                <oob>
+                                    <robot></robot>
+                                </oob>
+                            </template>
+                        </category>
+
+                        <category>
+                             <pattern># <set>DON T KNOW</set> ^</pattern>
+                             <that>Have you seen this one?</that>
+                             <template>
+                               <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set>
+                                 <oob>
+                                     <robot></robot>
+                                 </oob>
+                             </template>
+                         </category>
+
+                         <category>
+                              <pattern>_</pattern>
+                              <that>A little cheesy, of course, but what do you think?</that>
+                              <template>
+
+                                <think><set name="data"><star/></set></think>
+
+                                <condition name="getsentiment">
+                                    <li value="verypositive">You should watch more episodes online! <set name="most recent dialogue question">Do you want to continue talking about television?</set></li>
+                                    <li value="positive">You should watch more episodes online! <set name="most recent dialogue question">Do you want to continue talking about television?</set></li>
+                                    <li value="negative">It's certainly not for everyone! <set name="most recent dialogue question">Do you want to continue talking about television?</set></li>
+                                    <li value="verynegative">It's certainly not for everyone! <set name="most recent dialogue question">Do you want to continue talking about television?</set></li>
+                                    <li value="neutral">I agree with you. <set name="most recent dialogue question">Do you want to continue talking about television?</set></li>
+                                    </condition>
+                                  <oob>
+                                      <robot></robot>
+                                  </oob>
+                              </template>
+                          </category>
 
 
+
+</topic>
 </aiml>

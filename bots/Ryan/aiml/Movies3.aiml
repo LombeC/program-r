@@ -7,7 +7,11 @@
        <template>
          <think><set name="topic">musicals</set></think>
          <think><set name="dialogue">movies</set></think>
-           You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set>
+         <random>
+           <li>You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set></li>
+           <li><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+           <li>Nothin' like a good old musical to make you want to get up and dance! <set name="most recent dialogue question">Have you ever seen Hello, Dolly?</set></li>
+         </random>
            <oob>
                <robot></robot>
            </oob>
@@ -19,7 +23,12 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">musicals</set></think>
-            You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set>
+          <think><set name="dialogue">movies</set></think>
+          <random>
+            <li>You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set></li>
+            <li><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+            <li>Nothin' like a good old musical to make you want to get up and dance! <set name="most recent dialogue question">Have you ever seen Hello, Dolly?</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -27,12 +36,50 @@
     </category>
 
     <category>
+         <pattern># MUSICALS ^</pattern>
+         <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+         <template>
+           <think><set name="topic">musicals</set></think>
+           <think><set name="dialogue">movies</set></think>
+           <random>
+             <li>You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set></li>
+             <li><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+             <li>Nothin' like a good old musical to make you want to get up and dance! <set name="most recent dialogue question">Have you ever seen Hello, Dolly?</set></li>
+             </random>
+             <oob>
+                 <robot></robot>
+             </oob>
+         </template>
+     </category>
+
+     <category>
+          <pattern># MUSICAL ^</pattern>
+          <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+          <template>
+            <think><set name="topic">musicals</set></think>
+            <think><set name="dialogue">movies</set></think>
+            <random>
+              <li>You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set></li>
+              <li><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+              <li>Nothin' like a good old musical to make you want to get up and dance! <set name="most recent dialogue question">Have you ever seen Hello, Dolly?</set></li>
+              </random>
+              <oob>
+                  <robot></robot>
+              </oob>
+          </template>
+      </category>
+
+    <category>
          <pattern># <set>YES</set> ^</pattern>
          <that>Would you like to talk about musicals?</that>
          <template>
            <think><set name="topic">musicals</set></think>
            <think><set name="dialogue">movies</set></think>
-             You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set>
+           <random>
+             <li>You must like musicals as much as I do! <set name="most recent dialogue question">What do you think of The Sound of Music?</set></li>
+             <li><set name="most recent dialogue question">Can I show you the funniest musical scene I can think of?</set></li>
+             <li>Nothin' like a good old musical to make you want to get up and dance! <set name="most recent dialogue question">Have you ever seen Hello, Dolly?</set></li>
+             </random>
              <oob>
                  <robot></robot>
              </oob>
@@ -43,7 +90,7 @@
           <pattern># <set>NO</set> ^</pattern>
           <that>Would you like to talk about musicals?</that>
           <template>
-              Sure! <set name="most recent dialogue question">What should we talk about?</set>
+              Sure! <set name="most recent dialogue question">What would you like to talk about?</set>
               <oob>
                   <robot></robot>
               </oob>
@@ -175,119 +222,6 @@
              </template>
          </category>
 
-         <category>
-              <pattern>_</pattern>
-              <that>You sound like you put on quite a show! </that>
-              <template>
-                  <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
-                  <oob>
-                      <robot></robot>
-                  </oob>
-              </template>
-          </category>
-
-        <category>
-             <pattern># <set>Musicals</set> ^</pattern>
-             <that>Which musicals do you like to watch?</that>
-             <template>
-                I've watched it a couple times! I'd like to see it on stage.
-                 <oob>
-                     <robot></robot>
-                 </oob>
-             </template>
-         </category>
-
-         <category>
-              <pattern>_</pattern>
-              <that>I'd like to see it on stage.</that>
-              <template>
-                 <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
-                  <oob>
-                      <robot></robot>
-                  </oob>
-              </template>
-          </category>
-
-          <category>
-               <pattern>*</pattern>
-               <that>I'd like to see it on stage.</that>
-               <template>
-                  <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
-                   <oob>
-                       <robot></robot>
-                   </oob>
-               </template>
-           </category>
-
-           <category>
-                <pattern># <set>DON T KNOW</set> ^</pattern>
-                <that>Which musicals do you like to watch?</that>
-                <template>
-                   <set name="most recent dialogue question">So, when was the last time you saw The Wizard of Oz?</set>
-                    <oob>
-                        <robot></robot>
-                    </oob>
-                </template>
-            </category>
-
-         <category>
-              <pattern>_</pattern>
-              <that>Which musicals do you like to watch?</that>
-              <template>
-                 Just curious! Mine is Wizard of Oz. <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
-                  <oob>
-                      <robot></robot>
-                  </oob>
-              </template>
-          </category>
-
-          <category>
-               <pattern>_</pattern>
-               <that>So, when was the last time you saw The Wizard of Oz?</that>
-               <template>
-                  <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
-                   <oob>
-                       <robot></robot>
-                   </oob>
-               </template>
-           </category>
-
-          <category>
-               <pattern># <set>DON T KNOW</set> ^</pattern>
-               <that>Which musicals do you like to watch?</that>
-               <template>
-                  My favorite is Wizard of Oz. <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
-                   <oob>
-                       <robot></robot>
-                   </oob>
-               </template>
-           </category>
-
-         <category>
-              <pattern># WIZARD OF OZ ^</pattern>
-              <that>Which musicals do you like to watch?</that>
-              <template>
-                 My favorite is Wizard of Oz too! <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
-                  <oob>
-                      <robot></robot>
-                  </oob>
-              </template>
-          </category>
-
-          <category>
-               <pattern># THE WIZARD OF OZ ^</pattern>
-               <that>Which musicals do you like to watch?</that>
-               <template>
-                My favorite is Wizard of Oz too! <set name="most recent dialogue question">Do you believe that there's no place like home?</set>
-                   <oob>
-                       <robot></robot>
-                   </oob>
-               </template>
-           </category>
-
-
-
-
 
 </topic>
 
@@ -307,7 +241,7 @@
     <pattern># <set>No</set> ^</pattern>
     <that>Should we keep talking about film?</that>
     <template>
-        No worries! <set name="most recent dialogue question">What do you want to talk about next?</set>
+        No worries! <set name="most recent dialogue question">What would you like to talk about?</set>
         <oob>
             <robot>
             </robot>

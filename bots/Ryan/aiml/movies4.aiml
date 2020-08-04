@@ -5,8 +5,10 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
             <think><set name="topic">action</set></think>
-            <think><set name="dialogue">movies</set></think>
-            Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -18,8 +20,10 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
             <think><set name="topic">action</set></think>
-
-            Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -31,8 +35,55 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
             <think><set name="topic">action</set></think>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
 
-            Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set>
+    <category>
+        <pattern># ACTION ^</pattern>
+        <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+        <template>
+            <think><set name="topic">action</set></think>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ACTION MOVIES ^</pattern>
+        <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+        <template>
+            <think><set name="topic">action</set></think>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># ACTION FILMS ^</pattern>
+        <that>Would you like to chat about drama, action, comedy, or musicals?</that>
+        <template>
+            <think><set name="topic">action</set></think>
+            <random>
+            <li>Excellent! <set name="most recent dialogue question">Would you say you prefer Bond, James Bond or Indiana Jones?</set></li>
+            <li><set name="most recent dialogue question">What do action movies and tragedies have in common? Humans apparently love watching people get hurt!</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -575,31 +626,187 @@
             </template>
         </category>
 
+        <category>
+            <pattern>_</pattern>
+            <that>Humans apparently love watching people get hurt!</that>
+            <template>
+                I just thought of that off the top of my head! <set name="most recent dialogue question">Kinda true though, right?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Kinda true though, right?</that>
+            <template>
+              <set name="most recent dialogue question">To tell you the truth, nothing gets my blood pumping like a good old fashioned car chase flick. Can I show you a snippet?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Kinda true though, right?</that>
+            <template>
+              <set name="most recent dialogue question">To tell you the truth, nothing gets my blood pumping like a good old fashioned car chase flick. Can I show you a snippet?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Kinda true though, right?</that>
+            <template>
+              <set name="most recent dialogue question">To tell you the truth, nothing gets my blood pumping like a good old fashioned car chase flick. Can I show you a snippet?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Can I show you a snippet?</that>
+            <template>
+                <set name="most recent dialogue question">Do you remember this one?</set>
+                <oob>
+                    <robot><video>
+                        <filename>Smokey_Bandit.mp4</filename>
+                    </video></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you remember this one?</that>
+            <template>
+              <set name="most recent dialogue question">All that burnt rubber, smoke and exhaust really revs my engine!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you remember this one?</that>
+            <template>
+              I guess you've never seen it! <set name="most recent dialogue question">All that burnt rubber, smoke and exhaust really revs my engine!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you remember this one?</that>
+            <template>
+              I guess you've never seen it! <set name="most recent dialogue question">All that burnt rubber, smoke and exhaust really revs my engine!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>All that burnt rubber, smoke and exhaust really revs my engine!</that>
+            <template>
+              <set name="most recent dialogue question">Please tell me you've been in a drag race or two in your life!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Please tell me you've been in a drag race or two in your life!</that>
+            <template>
+              You've got the need for speed! <set name="most recent dialogue question">I can see that you're a professional!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Please tell me you've been in a drag race or two in your life!</that>
+            <template>
+              You've never felt the need for speed, I guess! <set name="most recent dialogue question">Do you think you have what it takes?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Please tell me you've been in a drag race or two in your life!</that>
+            <template>
+              You've never felt the need for speed, I guess! <set name="most recent dialogue question">Do you think you have what it takes?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>I can see that you're a professional!</that>
+            <template>
+               <set name="most recent dialogue question">Should we keep talking about film?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>YES</set> ^</pattern>
+            <that>Do you think you have what it takes?</that>
+            <template>
+               I can see you now, zipping down the road all the way from here to Nantucket! <set name="most recent dialogue question">Should we keep talking about film?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>NO</set> ^</pattern>
+            <that>Do you think you have what it takes?</that>
+            <template>
+               No way, I bet you've got a lot of spunk in ya! <set name="most recent dialogue question">Should we keep talking about film?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>Do you think you have what it takes?</that>
+            <template>
+               No way, I bet you've got a lot of spunk in ya! <set name="most recent dialogue question">Should we keep talking about film?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+
 
 
     </topic>
 
-    <category>
-        <pattern># <set>Yes</set> ^</pattern>
-        <that>Should we keep talking about film?</that>
-        <template>
-            OK! <set name="most recent dialogue question">When it comes to movies, do you like to watch drama, action, comedy, or musicals?</set>
-            <oob>
-                <robot>
-                </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>No</set> ^</pattern>
-        <that>Should we keep talking about film?</that>
-        <template>
-            No worries! <set name="most recent dialogue question">What do you want to talk about next?</set>
-            <oob>
-                <robot>
-                </robot>
-            </oob>
-        </template>
-    </category>
 </aiml>

@@ -6595,11 +6595,14 @@
     <category>
         <pattern>WHAT DO YOU DO</pattern>
         <template>
-            <random>
-                <li>I talk to people, so sometimes I do that. What do you do?</li>
-                <li>I try to do at least one new thing a day.</li>
-                <li>A little bit of this, a little bit of that.</li>
-            </random>
+                I talk to people and just shoot the breeze really. What is your job?
+        <oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT KIND OF WORK DO YOU DO</pattern>
+        <template>
+                I talk to people and just shoot the breeze really. What is your job?
         <oob><robot></robot></oob>
         </template>
     </category>
@@ -7667,12 +7670,6 @@
         <template>My creators teach me everything I need to know. But I can learn some things through conversation as well.<oob><robot></robot></oob>
         </template>
     </category>
-    <!-- RIGHT NOW THIS GETS PICKED UP IN badanswerNew.aiml
-    <category>
-        <pattern>CAN YOU LEARN</pattern>
-        <template>The more people talk to me, the smarter I become.<oob><robot></robot></oob></template>
-    </category>
-    -->
     <category>
         <pattern>CAN YOU SMELL</pattern>
         <template>Only when the right sensor is attached.<oob><robot></robot></oob></template>

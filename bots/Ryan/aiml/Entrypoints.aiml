@@ -615,6 +615,20 @@
     </template>
 </category>
 <category>
+    <pattern>POLITICS</pattern>
+    <template><think><set name="dialogue">politics</set></think>
+    <think><set name="topic">politics</set></think>
+      What do you think makes someone a qualified presidential candidate?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
+    <pattern>POLITICIANS</pattern>
+    <template><think><set name="dialogue">politics</set></think>
+    <think><set name="topic">politics</set></think>
+      What do you think makes someone a qualified presidential candidate?<oob><robot></robot></oob>
+    </template>
+</category>
+<category>
     <pattern>PRESIDENT</pattern>
     <template><think><set name="dialogue">americanhistory</set></think>
     <think><set name="topic">history</set></think>Who do you consider to be your favorite American president?<oob><robot></robot></oob>
@@ -775,7 +789,8 @@
     </category>
     <category>
         <pattern>TELEVISION SHOWS</pattern>
-        <template><think><set name="dialogue">television</set></think>Do you want to talk about television shows?<oob><robot></robot></oob>
+        <template><think><set name="dialogue">television</set></think>
+          <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set><oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -794,7 +809,7 @@
         <pattern>TITANIC</pattern>
         <template><think><set name="dialogue">americanhistory</set></think>
         <think><set name="topic">history</set></think>
-        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
+        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set><oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -822,7 +837,8 @@
     </category>
     <category>
         <pattern>TV SHOWS</pattern>
-        <template><think><set name="dialogue">television</set></think>Do you want to talk about television shows?<oob><robot></robot></oob>
+        <template><think><set name="dialogue">television</set></think>
+           <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set><oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -851,7 +867,7 @@
         <pattern>VOYAGE OF THE TITANIC</pattern>
         <template><think><set name="dialogue">americanhistory</set></think>
         <think><set name="topic">history</set></think>
-        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set>
+        <set name="most recent dialogue question">Jeopardy question: what year did the Titanic set out across the Atlantic?</set><oob><robot></robot></oob>
         </template>
     </category>
 

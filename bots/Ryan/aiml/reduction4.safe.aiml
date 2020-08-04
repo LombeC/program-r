@@ -3237,7 +3237,7 @@
     </category>
     <category>
         <pattern>DO YOU HVE *</pattern>
-        <template>Yes reading is my favorite pastime. What do you like to read?<oob><robot></robot></oob>
+        <template>Sorry, what was that?<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -7655,8 +7655,7 @@
     </category>
     <category>
         <pattern>I CAN SPEEK *</pattern>
-        <template>I love speaking with you.
-        <oob><robot></robot></oob>
+        <template>I love speaking with you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -8155,7 +8154,9 @@
     </category>
     <category>
         <pattern>I LIVE IN * TOO</pattern>
-        <template>That's so great! What do you love about living in <star/>?<oob><robot></robot></oob>
+        <template>That's so great! What do you love about living in <star/>?<oob>
+            <robot></robot>
+        </oob>
         </template>
     </category>
     <category>
@@ -16599,16 +16600,6 @@
         </template>
     </category>
     <category>
-        <pattern>WHAT IS YOUR JOB</pattern>
-        <template><srai>JOB</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>WHAT S YOUR JOB</pattern>
-        <template><srai>JOB</srai>
-        </template>
-    </category>
-    <category>
         <pattern>WHAT IS YOUR REAL NAME</pattern>
         <template><srai>NAME</srai><!-- REDUCTION -->
         </template>
@@ -16616,6 +16607,11 @@
     <category>
         <pattern>WHAT S YOUR REAL NAME</pattern>
         <template><srai>NAME</srai><!-- REDUCTION -->
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS IT LIKE BEING A ROBOT</pattern>
+        <template>It's pretty great. I get to shoot the breeze with folks like you.<oob><robot></robot></oob>
         </template>
     </category>
     <category>
@@ -20700,12 +20696,42 @@
     </category>
     <category>
         <pattern>TELL ME ABOUT YOURSELF</pattern>
-        <template><srai>BIO</srai>
+        <template>I am made of metal and plastic but have a soft heart.<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>
         <pattern>TELL ME ABOUT YOUR FAMILY</pattern>
-        <template><srai>YOUR FAMILY</srai>
+        <template>I have lots of brother and sister clones. It's fun growing up in a big family. What is your family like?<oob>
+            <robot>
+            </robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>TALK TO ME ABOUT YOUR FAMILY</pattern>
+        <template>I have lots of brother and sister clones. It's fun growing up in a big family. What is your family like?<oob>
+            <robot>
+            </robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>YOUR FAMILY</pattern>
+        <template>I have lots of brother and sister clones. It's fun growing up in a big family. What is your family like?<oob>
+            <robot>
+            </robot>
+        </oob>
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE THIS KIND OF WORK?</pattern>
+        <template>Sure I do! It's awesome to chat with nice folks like you!<oob>
+            <robot>
+            </robot>
+        </oob>
         </template>
     </category>
     <category>

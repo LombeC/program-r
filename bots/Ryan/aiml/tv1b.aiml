@@ -5,10 +5,10 @@
 
 <category>
     <pattern># TV ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -18,10 +18,10 @@
 
 <category>
     <pattern># I * TV ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -31,10 +31,10 @@
 
 <category>
     <pattern># TV SHOWS ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -44,10 +44,10 @@
 
 <category>
     <pattern># I * TV SHOWS ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -57,10 +57,10 @@
 
 <category>
     <pattern># TELEVISION ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -70,10 +70,10 @@
 
 <category>
     <pattern># I * TELEVISION ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
 
         <oob>
             <robot></robot>
@@ -83,10 +83,10 @@
 
 <category>
     <pattern># TELEVISION SHOWS ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -95,10 +95,10 @@
 
 <category>
     <pattern># I * TELEVISION SHOWS ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="dialogue">television</set></think>
-      <set name="most recent dialogue question">Did you ever watch the show Leave it to Beaver?</set>
+      <set name="most recent dialogue question">Did you ever watch Leave it to Beaver or Dennis the Menace?</set>
         <oob>
             <robot></robot>
         </oob>
@@ -107,7 +107,7 @@
 
 <category>
     <pattern># <set>Yes</set> ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="topic">radio</set></think>
       <think><set name="dialogue">radio</set></think>
@@ -120,7 +120,7 @@
 
 <category>
     <pattern># RADIO ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="topic">radio</set></think>
       <think><set name="dialogue">radio</set></think>
@@ -133,7 +133,20 @@
 
 <category>
     <pattern># I * RADIO ^</pattern>
-    <that>Did you watch TV shows or listen to the radio when you were young?</that>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
+    <template>
+      <think><set name="topic">radio</set></think>
+      <think><set name="dialogue">radio</set></think>
+      <set name="most recent dialogue question">Have you ever heard of the radio show War of the Worlds?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># BOTH ^</pattern>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
     <template>
       <think><set name="topic">radio</set></think>
       <think><set name="dialogue">radio</set></think>
@@ -149,13 +162,31 @@
 
 <category>
 <pattern># <set>Yes</set> ^</pattern>
-<that>Did you ever watch the show Leave it to Beaver?</that>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
 <template>
-    That show always reminds me of home and the good old days!
-    <condition name="birthplace">
-                <li value="Unknown"><set name="most recent dialogue question">Where did you grow up?</set></li>
-                <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. What kind of home cooking do they make there?</set></li>
-            </condition>
+    Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># LEAVE IT TO BEAVER ^</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># DENNIS THE MENACE ^</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    That show reminds me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
     <oob>
         <robot></robot>
     </oob>
@@ -164,13 +195,9 @@
 
 <category>
 <pattern># <set>No</set> ^</pattern>
-<that>Did you ever watch the show Leave it to Beaver?</that>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
 <template>
-    That show always reminds me of home and the good old days!
-    <condition name="birthplace">
-                <li value="Unknown"><set name="most recent dialogue question">Where did you grow up?</set></li>
-                <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. What kind of home cooking do they make there?</set></li>
-            </condition>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
     <oob>
         <robot></robot>
     </oob>
@@ -179,13 +206,134 @@
 
 <category>
 <pattern># <set>DON T KNOW</set> ^</pattern>
-<that>Did you ever watch the show Leave it to Beaver?</that>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
 <template>
-  That show always reminds me of home and the good old days!
-  <condition name="birthplace">
-              <li value="Unknown"><set name="most recent dialogue question">Where did you grow up?</set></li>
-              <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. What kind of home cooking do they make there?</set></li>
-          </condition>
+  Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
+<that>What is your most treasured memory?</that>
+<template>
+  <think><set name="treasuredmemory"><star /></set></think>
+  <set name="most recent dialogue question">I have a feeling you've got a lot of nice memories stored away!</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># <set>DON T KNOW</set> ^</pattern>
+<that>What is your most treasured memory?</that>
+<template>
+  <set name="most recent dialogue question">I have a feeling you've got a lot of nice memories stored away!</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>_</pattern>
+<that>I have a feeling you've got a lot of nice memories stored away!</that>
+<template>
+  <set name="most recent dialogue question">Did you ever do much scrapbooking? Or do you like keeping photographs of your loved ones?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># <set>Yes</set> ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+    Aww I love to hear it. <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># <set>NO</set> ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># <set>DON T KNOW</set> ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># SCRAPBOOK ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+    Aww I love to hear it. <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># SCRAPBOOKING ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+    Aww I love to hear it. <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># PHOTOGRAPHY ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+    Aww I love to hear it. <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern># PHOTOGRAPHS ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+    Aww I love to hear it. <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
     <oob>
         <robot></robot>
     </oob>
@@ -193,191 +341,7 @@
 </category>
 
 
-<category>
-<pattern>*</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I GREW UP IN *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I AM FROM *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I M FROM *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I COME FROM *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I WAS BORN IN *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>MY HOMETOWN IS *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>MY HOMETOWN S *</pattern>
-<that>Where did you grow up?</that>
-<template>
-Is that so? <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-<think><set name="birthplace"><star/></set></think>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>I GREW UP HERE</pattern>
-<that>Where did you grow up?</that>
-<template>
-<condition name="birthplace">
-        <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
-        <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. What kind of home cooking do they make there?</set></li>
-    </condition>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>HERE</pattern>
-<that>Where did you grow up?</that>
-<template>
-<condition name="birthplace">
-        <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
-        <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. What kind of home cooking do they make there?</set></li>
-    </condition>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>* HERE *</pattern>
-<that>Where did you grow up?</that>
-<template>
-<condition name="birthplace">
-        <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
-        <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. What kind of home cooking do they make there?</set></li>
-    </condition>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>FROM HERE</pattern>
-<that>Where did you grow up?</that>
-<template>
-<condition name="birthplace">
-        <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
-        <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. What kind of home cooking do they make there?</set></li>
-    </condition>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>*</pattern>
-<that>I obviously do not get out very much, ha ha.</that>
-<template>
-<think><set name="birthplace"><star/></set></think>
-<think><set name="location"><star/></set></think>
-Oh OK yes I forgot that for a second. <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>WE ARE IN *</pattern>
-<that>I obviously do not get out very much, ha ha.</that>
-<template>
-<think><set name="birthplace"><star/></set></think>
-<think><set name="location"><star/></set></think>
-Oh OK yes I forgot that for a second. <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>HERE IS *</pattern>
-<that>I obviously do not get out very much, ha ha.</that>
-<template>
-<think><set name="birthplace"><star/></set></think>
-<think><set name="location"><star/></set></think>
-Oh OK yes I forgot that for a second. <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>THIS IS *</pattern>
-<that>I obviously do not get out very much, ha ha.</that>
-<template>
-<think><set name="birthplace"><star/></set></think>
-<think><set name="location"><star/></set></think>
-Oh OK yes I forgot that for a second. <set name="most recent dialogue question">What kind of home cooking do they make there?</set>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-<category>
-<pattern>_</pattern>
-<that>What kind of home cooking do they make there?</that>
-<template>
-<think><set name="topic">cookingshows</set></think>
-Sign me up! Sounds delish! <set name="most recent dialogue question">Do you enjoy cooking for other people?</set>
-  <oob><robot></robot></oob>
-</template>
-</category>
-
-
-<!-- REDIRECT TO TV2 DIALOGUE -->
-
+<!-- REDIRECT TO AMERICANINVENTIONS1A -->
 
 
 <category>
@@ -611,30 +575,17 @@ Sign me up! Sounds delish! <set name="most recent dialogue question">Do you enjo
 </template>
 </category>
 
+
+
+
+
+
+
+
+
+
+
 </topic>
-
-<category>
-<pattern># <set>Yes</set> ^</pattern>
-<that>Would you like to keep talking about television?</that>
-<template>
-Perfect! <set name="most recent dialogue question">Do you like to watch comedies, cooking shows, or dramas?</set>
-<oob>
-    <robot></robot>
-</oob>
-</template>
-</category>
-
-<category>
-<pattern># <set>No</set> ^</pattern>
-<that>Do you want to continue talking about television?</that>
-<template>
-We can change the subect, no problem. <set name="most recent dialogue question">What would you like to talk about?</set>
-<oob>
-    <robot></robot>
-</oob>
-</template>
-</category>
-
 
 
 </aiml>

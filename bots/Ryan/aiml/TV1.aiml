@@ -39,7 +39,11 @@
         <that>Do you like to watch comedies, cooking shows, or dramas?</that>
         <template>
           <think><set name="topic">comedy</set></think>
-            I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.
+          <random>
+            <li><set name="most recent dialogue question">I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.</set></li>
+            <li><set name="most recent dialogue question">Speaking of comedy, I tried stand-up once. I got booed off stage. Guess I'll stick to my day job!</set></li>
+            <li><set name="most recent dialogue question">I love watching comedy, but sometimes the TV gets stuck on Jerry Springer and my robot fingers can't change the channel.</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -51,7 +55,11 @@
         <that>Do you like to watch comedies, cooking shows, or dramas?</that>
         <template>
           <think><set name="topic">comedy</set></think>
-            I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.
+          <random>
+            <li><set name="most recent dialogue question">I got offered a spot on TV once. Too bad it was for "Robots Gone Wild." I like to think I've grown up a lot since then.</set></li>
+            <li><set name="most recent dialogue question">Speaking of comedy, I tried stand-up once. I got booed off stage. Guess I'll stick to my day job!</set></li>
+            <li><set name="most recent dialogue question">I love watching comedy, but sometimes the TV gets stuck on Jerry Springer and my robot fingers can't change the channel.</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -59,6 +67,8 @@
     </category>
 
     <topic name="comedy">
+
+      <!-- START OF BRANCH OFF OF FIRST ITEM IN RANDOM LIST. ENDS IN TV1B. BRANCHES TWO AND THREE START IN TV1B -->
 
     <category>
         <pattern>_</pattern>

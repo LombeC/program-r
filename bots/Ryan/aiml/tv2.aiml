@@ -7,7 +7,7 @@
           <think><set name="topic">cookingshows</set></think>
           <think><set name="dialogue">television</set></think>
             <random>
-                <li>I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                <li>I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">What's your favorite type of cuisine?</set><oob>
                     <robot>
                         <video>
                             <filename>Julia_Child.mp4</filename>
@@ -33,7 +33,7 @@
           <think><set name="topic">cookingshows</set></think>
           <think><set name="dialogue">television</set></think>
             <random>
-                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">What's your favorite type of cuisine?</set><oob>
                     <robot>
                         <video>
                             <filename>Julia_Child.mp4</filename>
@@ -59,7 +59,7 @@
             <think><set name="topic">cookingshows</set></think>
             <think><set name="dialogue">television</set></think>
             <random>
-                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">Do you believe that the way to a person's heart is through their stomach?</set><oob>
+                <li>Great! I love to watch Julia Child because her show is so soothing! <set name="most recent dialogue question">What's your favorite type of cuisine?</set><oob>
                     <robot>
                         <video>
                             <filename>Julia_Child.mp4</filename>
@@ -84,7 +84,7 @@
             <pattern># <set>Yes</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
-                Even us robots can enjoy the thought of a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
+                <set name="most recent dialogue question">Even us robots can enjoy the thought of a nice, home cooked meal!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -95,7 +95,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
-                Maybe you just need to have a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
+                <set name="most recent dialogue question">Maybe you just need to have a nice, home cooked meal!</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -106,12 +106,380 @@
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
-                Maybe you just need to have a nice, home cooked meal! <set name="most recent dialogue question">What were your favorite meals growing up?</set>
+                <set name="most recent dialogue question">Maybe you just need to have a nice, home cooked meal!</set>
                 <oob>
                     <robot></robot>
                 </oob>
             </template>
         </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Maybe you just need to have a nice, home cooked meal!</that>
+            <template>
+              <condition name="birthplace">
+                          <li value="Unknown"><set name="most recent dialogue question">Where did you grow up?</set></li>
+                          <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. Is there a lot of good home cooking there?</set></li>
+                      </condition>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Even us robots can enjoy the thought of a nice, home cooked meal!</that>
+            <template>
+              <condition name="birthplace">
+                          <li value="Unknown"><set name="most recent dialogue question">Where did you grow up?</set></li>
+                          <li><set name="most recent dialogue question">You said your hometown is <get name="birthplace"/> and I've been meaning to ask. Is there a lot of good home cooking there?</set></li>
+                      </condition>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>_</pattern>
+            <that>Is there a lot of good home cooking there?</that>
+            <template>
+              <think><set name="data"><star/></set></think>
+
+              <condition name="getsentiment">
+                  <li value="verypositive">Looks like I'm going to have to visit <get name="birthplace"/> sometime! <set name="most recent dialogue question">What kind of comfort food do you like?</set></li>
+                  <li value="positive">Looks like I'm going to have to visit <get name="birthplace"/> sometime! <set name="most recent dialogue question">What kind of comfort food do you like?</set></li>
+                  <li value="negative">Remind me to never visit <get name="birthplace"/> in that case! <set name="most recent dialogue question">What kind of comfort food do you like?</set></li>
+                  <li value="verynegative">Remind me to never visit <get name="birthplace"/> in that case! <set name="most recent dialogue question">What kind of comfort food do you like?</set></li>
+                  <li value="neutral">Ah, I gotcha! <set name="most recent dialogue question">What kind of comfort food do you like?</set></li>
+                  </condition>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>What kind of comfort food do you like?</that>
+              <template>
+                  <set name="most recent dialogue question">I'm drooling all over myself just thinking about it. Kind of like a dog, but at least I'm potty trained.</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>DON T KNOW</set> ^</pattern>
+              <that>What kind of comfort food do you like?</that>
+              <template>
+                  <set name="most recent dialogue question">Well, I'm drooling all over myself just thinking about delicious food. Kind of like a dog, but at least I'm potty trained.</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>Kind of like a dog, but at least I'm potty trained.</that>
+              <template>
+                  Question for you. <set name="most recent dialogue question">Do you like watching the food network?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>Do you like watching the food network?</that>
+              <template>
+                <think><set name="topic">foodnetwork</set></think>
+                <think><set name="dialogue">foodnetwork</set></think>
+                <think><set name="data"><star/></set></think>
+
+                <condition name="getsentiment">
+                    <li value="verypositive">I was just watching it this morning! <set name="most recent dialogue question">Have you heard of Ina Garten?</set></li>
+                    <li value="positive">I was just watching it this morning! <set name="most recent dialogue question">Have you heard of Ina Garten?</set></li>
+                    <li value="negative">Just because I like it doesn't mean everyone has to! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set></li>
+                    <li value="verynegative">Just because I like it doesn't mean everyone has to! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set></li>
+                    <li value="neutral">In that case. <set name="most recent dialogue question">Have you heard of Ina Garten?</set></li>
+                    </condition>
+
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+          <pattern>*</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I GREW UP IN *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I AM FROM *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I M FROM *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I COME FROM *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I WAS BORN IN *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>MY HOMETOWN IS *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>MY HOMETOWN S *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          Is that so? <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+          <think><set name="birthplace"><star/></set></think>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>I GREW UP HERE</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          <condition name="birthplace">
+                  <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
+                  <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
+              </condition>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>HERE</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          <condition name="birthplace">
+                  <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
+                  <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
+              </condition>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>* HERE *</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          <condition name="birthplace">
+                  <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
+                  <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
+              </condition>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>FROM HERE</pattern>
+          <that>Where did you grow up?</that>
+          <template>
+          <condition name="birthplace">
+                  <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
+                  <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
+              </condition>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>*</pattern>
+          <that>I obviously do not get out very much, ha ha.</that>
+          <template>
+          <think><set name="birthplace"><star/></set></think>
+          <think><set name="location"><star/></set></think>
+          Oh OK yes I forgot that for a second. <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>WE ARE IN *</pattern>
+          <that>I obviously do not get out very much, ha ha.</that>
+          <template>
+          <think><set name="birthplace"><star/></set></think>
+          <think><set name="location"><star/></set></think>
+          Oh OK yes I forgot that for a second. <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>HERE IS *</pattern>
+          <that>I obviously do not get out very much, ha ha.</that>
+          <template>
+          <think><set name="birthplace"><star/></set></think>
+          <think><set name="location"><star/></set></think>
+          Oh OK yes I forgot that for a second. <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern>THIS IS *</pattern>
+          <that>I obviously do not get out very much, ha ha.</that>
+          <template>
+          <think><set name="birthplace"><star/></set></think>
+          <think><set name="location"><star/></set></think>
+          Oh OK yes I forgot that for a second. <set name="most recent dialogue question">Is there a lot of good home cooking there?</set>
+            <oob><robot></robot></oob>
+          </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>What's your favorite type of cuisine?</that>
+              <template>
+                  That sounds mucho delicioso! <set name="most recent dialogue question">Would you say you're much of a chef?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>DON T KNOW</set> ^</pattern>
+              <that>What's your favorite type of cuisine?</that>
+              <template>
+                  <set name="most recent dialogue question">Would you say you're much of a chef?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>_</pattern>
+              <that>Would you say you're much of a chef?</that>
+              <template>
+                <think><set name="data"><star/></set></think>
+
+                <condition name="getsentiment">
+                    <li value="verypositive">You never cease to amaze me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
+                    <li value="positive">You never cease to amaze me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
+                    <li value="negative">Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
+                    <li value="verynegative">Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
+                    <li value="neutral">Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
+                    </condition>
+
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+
+          <category>
+              <pattern># THAT S AMORE ^</pattern>
+              <that>When the moon hits your eye like a big pizza pie...finish my sentence.</that>
+              <template>
+                <think><set name="topic">music</set></think><think><set name="dialogue">music</set></think>
+                  Oh yeah! Who could forget that one. <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># AMORE ^</pattern>
+              <that>When the moon hits your eye like a big pizza pie...finish my sentence.</that>
+              <template>
+                <think><set name="topic">music</set></think><think><set name="dialogue">music</set></think>
+                  Oh yeah! Who could forget that one. <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>DON T KNOW</set> ^</pattern>
+              <that>When the moon hits your eye like a big pizza pie...finish my sentence.</that>
+              <template>
+                <think><set name="topic">music</set></think><think><set name="dialogue">music</set></think>
+                  Really? Who could forget that one! <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern># <set>NO</set> ^</pattern>
+              <that>When the moon hits your eye like a big pizza pie...finish my sentence.</that>
+              <template>
+                <think><set name="topic">music</set></think><think><set name="dialogue">music</set></think>
+                  Not a problem. <set name="most recent dialogue question">What kind of music do you think is best for a romantic dinner?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+<!-- REDIRECT TO MUSIC0 DIALOGUE-->
+
 
         <category>
             <pattern>_</pattern>
@@ -141,7 +509,7 @@
             <template>
                 <condition name="favoritefood">
                     <li value="Unknown">Awesome! <set name="most recent dialogue question">What do you usually cook?</set></li>
-                    <li>I know your favorite food is <get name="favoritefood"/>. <set name="most recent dialogue question">Perhaps you could cook that for me sometime?</set></li>
+                    <li>I know your favorite food is <get name="favoritefood"/>. <set name="most recent dialogue question">Perhaps you could cook for me sometime?</set></li>
                 </condition>
 
                 <oob>
@@ -152,9 +520,9 @@
 
         <category>
             <pattern># <set>Yes</set> ^</pattern>
-            <that>Perhaps you could cook that for me sometime?</that>
+            <that>Perhaps you could cook for me sometime?</that>
             <template>
-                Awesome! I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                I'm coming over to your house, and I'm coming hungry! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
 
                 <oob>
                     <robot></robot>
@@ -164,7 +532,7 @@
 
         <category>
             <pattern># <set>NO</set> ^</pattern>
-            <that>Perhaps you could cook that for me sometime?</that>
+            <that>Perhaps you could cook for me sometime?</that>
             <template>
                 I understand! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
 
@@ -176,7 +544,7 @@
 
         <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
-            <that>Perhaps you could cook that for me sometime?</that>
+            <that>Perhaps you could cook for me sometime?</that>
             <template>
                 I understand! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
 
@@ -258,7 +626,7 @@
             <that>Would you like to keep talking about food and cooking shows?</that>
             <template>
                 I always think of that saying "if you can't stand the heat, get out of the kitchen".
-                <set name="most recent dialogue question">Have you ever seen cooking competitions like this one?</set>
+                                                                                                                                      <set name="most recent dialogue question">Have you ever seen cooking competitions like this one?</set>
                 <oob>
                     <robot>
                         <video>
@@ -273,7 +641,7 @@
             <pattern># <set>No</set> ^</pattern>
             <that>Would you like to keep talking about food and cooking shows?</that>
             <template>
-                Of course! <set name="most recent dialogue question">What do you want to talk about?</set>
+                Of course! <set name="most recent dialogue question">What would you like to chat about?</set>
                 <oob>
                     <robot>
                         <image>
@@ -454,7 +822,7 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Do you want to continue talking about television?</that>
         <template>
-            Of course! <set name="most recent dialogue question">What would you like to talk about next?</set>
+            Of course! <set name="most recent dialogue question">What would you like to chat about?</set>
             <oob>
                 <robot></robot>
             </oob>

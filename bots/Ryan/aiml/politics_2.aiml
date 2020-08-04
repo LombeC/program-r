@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+      <pattern>^ POLITICS ^</pattern>
+      <template>
+        <think><set name="dialogue">politics</set></think>
+        <think><set name="topic">politics</set></think>
+          What do you think makes someone a qualified presidential candidate?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>^ POLITICIANS ^</pattern>
+      <template>
+        <think><set name="dialogue">politics</set></think>
+        <think><set name="topic">politics</set></think>
+          What do you think makes someone a qualified presidential candidate?
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <topic name="politics">
+
+  <category>
+      <pattern>_</pattern>
+      <that>What do you think makes someone a qualified presidential candidate?</that>
+      <template>
+          That makes a whole lot of sense to me. Personally, I think it's a bad sign when a presidential candidate asks for a lifeline during a debate.
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Personally, I think it's a bad sign when a presidential candidate asks for a lifeline during a debate.</that>
+      <template>
+        <think><set name="dialogue">americanhistory</set></think>
+        <think><set name="topic">history</set></think>
+          All jokes aside, I'm interested to know! <set name="most recent dialogue question">Who do you consider to be your favorite American president?</set>
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+</topic>
+
+
+
+
+
+</aiml>

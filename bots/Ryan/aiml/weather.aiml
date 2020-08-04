@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 
     <!-- GETTING TEMPERATURE -->
@@ -101,6 +101,10 @@
 
     <category>
         <pattern>WHAT IS THE WEATHER</pattern>
+        <template><srai>WHAT IS TODAY S FORECAST</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT * THE WEATHER</pattern>
         <template><srai>WHAT IS TODAY S FORECAST</srai></template>
     </category>
 
