@@ -30,14 +30,8 @@ class GetSentiment(DynamicVariable):
 
             # TODO: Finish this implementation and remove function call below this segment
             response = requests.post('http://localhost:5000/api/rest/v1.0/sentiment',  json={'question': text})
-            print("response: {}".format(type(response)))
-            print("response: {}".format(response))
             response = json.loads(response.text)
-            print("response: {}".format(type(response)))
-            print("response: {}".format(response))
             sentiment = response['response']
-            print("sentiment: {}".format(type(sentiment)))
-            print("sentiment: {}".format(sentiment))
             sentiment = sentiment[0]
             sentiment_distribution = sentiment[1]
 
