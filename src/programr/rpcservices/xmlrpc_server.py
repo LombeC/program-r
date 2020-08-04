@@ -15,9 +15,10 @@ import torch
 from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample,
                           glue_convert_examples_to_features, DistilBertTokenizer, DistilBertForSequenceClassification)
 
+from programr.rpcservices.models import DistilBertSentimentAnalysis
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
+from programr.config.brain.sentiment_analysis import BrainSentimentAnalysisConfiguration
 from programr.nlp.semantic.semantic_similarity import DistilRobertaSemanticSimilarity
-from programr.nlp.semantic.sentiment_analysis import DistilBertSentimentAnalysis
 from programr.services.wikipediaservice import WikipediaAPI, WikipediaService
 
 
@@ -31,14 +32,13 @@ def wiki_summary(title, sentences=2, chars=0, auto_suggest=True, redirect=False)
         return "No result"
 
 def check_sentiment(text):
-    tokenizer = DistilBertTokenizer.from_pretrained('./libs/pretrain_distillbert_full_sst')
-    model = DistilBertForSequenceClassification.from_pretrained('./libs/pretrain_distillbert_full_sst')
-    sentiment_classifier = SentimentClassifer(model, tokenizer)
-    result = sentiment_classifier(text)
-    sentiment = max(result, key=result.get)
-    sentiment_distribution = list(result.values())
-    print("sentiment of {}: {}".format(text, sentiment))
-    return sentiment
+    try:
+        sentiment_classifier = DistilBertSentimentAnalysis()
+        sentiment, sentiment_distribution = sentiment_classifier.get_sentence_sentiment(text)
+        print("sentiment of {}: {}".format(text, sentiment))
+        return sentiment, sentiment_distribution
+    except Exception as ex:
+        print("Exception caught trying to analyze sentiment - {}".format(ex))
 
 def get_semantic_similarity(text1, text2):
     # model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
