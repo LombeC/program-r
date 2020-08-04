@@ -18,7 +18,7 @@ ENV PYTHONPATH="/usr/src/app/src:/usr/src/app/src/programr:${PYTHONPATH}"
 EXPOSE 5000
 RUN pip install --upgrade setuptools
 RUN pip install spacy
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 RUN python -m spacy download en
 RUN mkdir bots/Ryan/session_data
 RUN chmod +x run.sh
