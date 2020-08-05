@@ -12,7 +12,7 @@ from newsapi import NewsApiClient
 from pyowm import OWM
 
 import torch 
-from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample,
+from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample, pipeline,
                           glue_convert_examples_to_features, DistilBertTokenizer, DistilBertForSequenceClassification)
 
 from programr.rpcservices.models import DistilBertSentimentAnalysis
@@ -39,6 +39,14 @@ def check_sentiment(text):
         return sentiment, sentiment_distribution
     except Exception as ex:
         print("Exception caught trying to analyze sentiment - {}".format(ex))
+
+def get_summary(text):
+    try:
+        summarizer = pipeline("summarization")
+        summary = summarizer(text, min_length=1, max_length=30)
+        return summary[0]['summary_text']
+    except Exception as ex:
+        print("Exception caught trying to summarize text - {}".format(ex))
 
 def get_semantic_similarity(text1, text2):
     # model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
@@ -99,6 +107,7 @@ def register_functions(server):
     server.register_function(get_weather_temperature)
     server.register_function(get_weather_status)
     server.register_function(get_semantic_similarity)
+    server.register_function(get_summary)
 
 if __name__ == "__main__":
     try:

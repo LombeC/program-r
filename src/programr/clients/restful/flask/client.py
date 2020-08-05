@@ -118,6 +118,12 @@ if __name__ == '__main__':
         response = make_response(jsonify({"response": proxy.check_sentiment(r["question"])}))
         return response
 
+    @app.route('/api/rest/v1.0/summary', methods=['POST'])
+    def ask_summary():
+        r = request.get_json()
+        response = make_response(jsonify({"response": proxy.get_summary(r['text'])}))
+        return response
+
     @app.route('/api/rest/v1.0/similarity', methods=['POST'])
     def ask_similarity():
         r = request.get_json()
