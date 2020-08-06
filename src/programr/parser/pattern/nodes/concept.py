@@ -49,6 +49,7 @@ class PatternConceptNode(PatternNode):
 
             sentence_text = " ".join(sentence)
 
+            # TODO: Change this to use XMLRPC Server
             similarity_with_this_concept = client_context.brain.nlp.semantic_similarity.similarity_with_concept(sentence_text, this_concept)
             similarity_with_other_concepts = client_context.brain.nlp.semantic_similarity.similarity_with_concepts(sentence_text, other_concepts)
 

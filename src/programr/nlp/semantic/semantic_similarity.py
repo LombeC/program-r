@@ -1,5 +1,7 @@
 import numpy as np
 import torch
+import requests
+import json
 
 from programr.utils.logging.ylogger import YLogger
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration

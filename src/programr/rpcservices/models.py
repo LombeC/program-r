@@ -1,7 +1,8 @@
 from programr.config.brain.nlp import BrainNLPConfiguration
 from programr.config.brain.semantic_similarity import BrainSemanticSimilarityConfiguration
 from programr.config.brain.sentiment_analysis import BrainSentimentAnalysisConfiguration
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, TextClassificationPipeline
+from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample, TextClassificationPipeline,
+                          glue_convert_examples_to_features, DistilBertTokenizer, DistilBertForSequenceClassification)
 import torch
 import numpy as np
 from programr.utils.logging.ylogger import YLogger
@@ -83,14 +84,68 @@ class DistilBertSentimentAnalysis(SentimentAnalysis):
         value = -sentiment_distribution[0] + sentiment_distribution[2]
         return value
 
-    # @property
-    # def alpha(self):
-    #     return self._semantic_analysis_config.alpha
 
-    # @property
-    # def positive_threshold(self):
-    #     return self._semantic_analysis_config.positive_threshold
 
-    # @property
-    # def negative_threshold(self):
-    #     return self._semantic_analysis_config.negative_threshold
+class SemanticSimilarity():
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def factory(type_):
+        if type_ == "embedding":
+            return DistilRobertaSemanticSimilarity()
+
+        elif type_ == "default":
+            return DefaultSemanticSimilarity()
+
+        else:
+            YLogger.warning(DefaultSemanticSimilarity, "the module is unknown, defaulting to DefaultSemanticSimilarity")
+            return DefaultSemanticSimilarity()
+
+    def similarity_with_concepts(self, text, concepts):
+        raise NotImplementedError("Should be override to be used.")
+
+    def similarity_with_concept(self, text, concept):
+        raise NotImplementedError("")
+
+
+class DistilRobertaSemanticSimilarity(SemanticSimilarity):
+
+    def __init__(self):
+        super().__init__()
+        self.tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_roberta_model')
+        self.model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
+
+    def similarity_with_concept(self, text, concept):
+        example = InputExample(guid='0', text_a=text, text_b=concept)
+        feature = glue_convert_examples_to_features(examples=[example],
+                                                    tokenizer=self.tokenizer,
+                                                    max_length=128,
+                                                    output_mode='regression',
+                                                    label_list=[None])
+
+        input_ids = torch.tensor(feature[0].input_ids).unsqueeze(0)
+        attention_mask = torch.tensor(feature[0].attention_mask).unsqueeze(0)
+
+        with torch.no_grad():
+            outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
+
+        return outputs[0].item()
+
+    def similarity_with_concepts(self, text, concepts):
+        examples = [InputExample(guid='0', text_a=text, text_b=concept) for concept in concepts]
+        features = glue_convert_examples_to_features(examples=examples,
+                                                     tokenizer=self.tokenizer,
+                                                     max_length=128,
+                                                     output_mode='regression',
+                                                     label_list=[None])
+
+        input_ids = torch.tensor([feature.input_ids for feature in features])
+        attention_mask = torch.tensor([feature.attention_mask for feature in features])
+
+        with torch.no_grad():
+            outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
+            outputs = outputs[0].T.tolist()[0]
+
+        return outputs
