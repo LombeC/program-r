@@ -140,6 +140,11 @@ python ./src/programr/clients/events/console/client.py --config ./bots/tutorial/
 ```
 python ./src/programr/clients/events/console/client.py --config ./bots/Ryan/config.yaml --cformat yaml --logging ./bots/Ryan/logging.yaml
 ```
+- #### Concept Bot
+```
+python ./src/programr/clients/events/console/client.py --config ./bots/concept/config.yaml --cformat yaml --logging ./bots/concept/logging.yaml
+```
+
 ### Majordomo run
 
 ```
