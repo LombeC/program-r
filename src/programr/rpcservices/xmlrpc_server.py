@@ -45,27 +45,23 @@ def get_summary(text):
     except Exception as ex:
         print("Exception caught trying to summarize text - {}".format(ex))
 
-def get_semantic_similarity(text1, text2):
+def get_semantic_similarity_concept(text, concept):
     try:
         similarity_classifier = DistilRobertaSemanticSimilarity()
-        result = similarity_classifier.similarity_with_concept(text1, text2)
+        result = similarity_classifier.similarity_with_concept(text, concept)
         print("similarity score: {}".format(result))
         return result
     except Exception as ex:
         print("Exception caught getting sentence similiarity - {}".format(ex))
-    # model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
-    # print("model created...")
-    
-    # tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_roberta_model')
-    # print("tokenizer created...")
 
-    # config = BrainSemanticSimilarityConfiguration()
-    # config._model_dir = "./libs/pretrain_roberta_model"
-
-    # semantic_similarity_classifier = DistilRobertaSemanticSimilarity(config)
-    # result = semantic_similarity_classifier.similarity_with_concept(text1, text2)
-    # print("similarity score: {}".format(result))
-    # return result
+def get_semantic_similarity_concepts(text, concepts):
+    try:
+        similarity_classifier = DistilRobertaSemanticSimilarity()
+        result = similarity_classifier.similarity_with_concepts(text, concepts)
+        print("similarity score: {}".format(result))
+        return result
+    except Exception as ex:
+        print("Exception caught getting sentence similiarity - {}".format(ex))
 
 def get_news(headline_index=0, sources=None, country=None):
     try:
@@ -110,7 +106,8 @@ def register_functions(server):
     server.register_function(get_news)
     server.register_function(get_weather_temperature)
     server.register_function(get_weather_status)
-    server.register_function(get_semantic_similarity)
+    server.register_function(get_semantic_similarity_concept)
+    server.register_function(get_semantic_similarity_concepts)
     server.register_function(get_summary)
 
 if __name__ == "__main__":

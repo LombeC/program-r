@@ -13,15 +13,15 @@ class SentimentAnalysis():
     def __init__(self, ):
         pass
 
-    @staticmethod
-    def factory(config: BrainNLPConfiguration):
-        if config.sentiment_analysis.method == "corenlp":
-            print("corenlp is not supported anymore")
-        elif config.sentiment_analysis.method == "distilbert":
-            print("Using distilbert for sentiment analysis")
-            return DistilBertSentimentAnalysis(config.sentiment_analysis)
-        elif config.sentiment_analysis.method == "default":
-            return DefaultSentimentAnalysis()
+    # @staticmethod
+    # def factory(config: BrainNLPConfiguration):
+    #     if config.sentiment_analysis.method == "corenlp":
+    #         print("corenlp is not supported anymore")
+    #     elif config.sentiment_analysis.method == "distilbert":
+    #         print("Using distilbert for sentiment analysis")
+    #         return DistilBertSentimentAnalysis(config.sentiment_analysis)
+    #     elif config.sentiment_analysis.method == "default":
+    #         return DefaultSentimentAnalysis()
 
     def get_sentence_sentiment(self, sentence):
         raise NotImplementedError("Should be override to be used.")
@@ -91,17 +91,17 @@ class SemanticSimilarity():
     def __init__(self):
         pass
 
-    @staticmethod
-    def factory(type_):
-        if type_ == "embedding":
-            return DistilRobertaSemanticSimilarity()
+    # @staticmethod
+    # def factory(type_):
+    #     if type_ == "embedding":
+    #         return DistilRobertaSemanticSimilarity()
 
-        elif type_ == "default":
-            return DefaultSemanticSimilarity()
+    #     elif type_ == "default":
+    #         return DefaultSemanticSimilarity()
 
-        else:
-            YLogger.warning(DefaultSemanticSimilarity, "the module is unknown, defaulting to DefaultSemanticSimilarity")
-            return DefaultSemanticSimilarity()
+    #     else:
+    #         YLogger.warning(DefaultSemanticSimilarity, "the module is unknown, defaulting to DefaultSemanticSimilarity")
+    #         return DefaultSemanticSimilarity()
 
     def similarity_with_concepts(self, text, concepts):
         raise NotImplementedError("Should be override to be used.")
@@ -114,8 +114,11 @@ class DistilRobertaSemanticSimilarity(SemanticSimilarity):
 
     def __init__(self):
         super().__init__()
-        self.tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_roberta_model')
-        self.model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
+        # self.tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_roberta_model')
+        # self.model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_roberta_model')
+
+        self.tokenizer = RobertaTokenizer.from_pretrained('./libs/pretrain_distilroberta')
+        self.model = RobertaForSequenceClassification.from_pretrained('./libs/pretrain_distilroberta')
 
     def similarity_with_concept(self, text, concept):
         example = InputExample(guid='0', text_a=text, text_b=concept)
