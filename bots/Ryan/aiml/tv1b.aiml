@@ -157,6 +157,39 @@
     </template>
 </category>
 
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
+    <template>
+      <set name="most recent dialogue question">What is your most treasured memory?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DID NOT</pattern>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
+    <template>
+      <set name="most recent dialogue question">What is your most treasured memory?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Did you watch TV or listen to the radio when you were young?</that>
+    <template>
+      <set name="most recent dialogue question">What is your most treasured memory?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
 <!-- REDIRECT TO RADIO DIALOGUE -->
 
 
@@ -195,6 +228,61 @@
 
 <category>
 <pattern># <set>No</set> ^</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE NOT</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DID NOT</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>ABSOLUTELY NOT</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DID NOT</pattern>
+<that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
+<template>
+    Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE NOT</pattern>
 <that>Did you ever watch Leave it to Beaver or Dennis the Menace?</that>
 <template>
     Really? Those shows remind me the good old days! <set name="most recent dialogue question">What is your most treasured memory?</set>
@@ -264,6 +352,58 @@
 
 <category>
 <pattern># <set>NO</set> ^</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DO NOT</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE NOT</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DID NOT</pattern>
+<that>Or do you like keeping photographs of your loved ones?</that>
+<template>
+  <think><set name="dialogue">americanhistory</set></think>
+  <think><set name="topic">history</set></think>
+  <set name="most recent dialogue question">So do you use Facebook to keep in touch with family and friends?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>ABSOLUTELY NOT</pattern>
 <that>Or do you like keeping photographs of your loved ones?</that>
 <template>
   <think><set name="dialogue">americanhistory</set></think>
@@ -378,10 +518,76 @@
 </category>
 
 <category>
+<pattern>I DO NOT</pattern>
+<that>Did you ever watch Johnny Carson?</that>
+<template>
+    <set name="most recent dialogue question">Do you think it would be hard to think of new jokes every night?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE NOT</pattern>
+<that>Did you ever watch Johnny Carson?</that>
+<template>
+    <set name="most recent dialogue question">Do you think it would be hard to think of new jokes every night?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DID NOT</pattern>
+<that>Did you ever watch Johnny Carson?</that>
+<template>
+    <set name="most recent dialogue question">Do you think it would be hard to think of new jokes every night?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>ABSOLUTELY NOT</pattern>
+<that>Did you ever watch Johnny Carson?</that>
+<template>
+    <set name="most recent dialogue question">Do you think it would be hard to think of new jokes every night?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
 <pattern># <set>Yes</set> ^</pattern>
 <that>Do you think it would be hard to think of new jokes every night?</that>
 <template>
     I agree, even though I have a vast repository of jokes! Whether or not they are any good is up for you to decide! <set name="most recent dialogue question">Would you like to hear a joke?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>ABSOLUTELY NOT</pattern>
+<that>Do you think it would be hard to think of new jokes every night?</that>
+<template>
+    You sound very witty! I have some jokes up my sleeve, too. <set name="most recent dialogue question">Would you like to hear a joke?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
+
+<category>
+<pattern>I DO NOT</pattern>
+<that>Do you think it would be hard to think of new jokes every night?</that>
+<template>
+    You sound very witty! I have some jokes up my sleeve, too. <set name="most recent dialogue question">Would you like to hear a joke?</set>
     <oob>
         <robot></robot>
     </oob>
@@ -564,6 +770,8 @@
 </template>
 </category>
 
+</topic>
+
 <category>
 <pattern># <set>No</set> ^</pattern>
 <that>Would you like to hear a joke?</that>
@@ -575,17 +783,39 @@
 </template>
 </category>
 
+<category>
+<pattern>ABSOLUTELY NOT</pattern>
+<that>Would you like to hear a joke?</that>
+<template>
+    No worries! <set name="most recent dialogue question">What would you like to chat about?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
 
+<category>
+<pattern>I DO NOT</pattern>
+<that>Would you like to hear a joke?</that>
+<template>
+    No worries! <set name="most recent dialogue question">What would you like to chat about?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
 
+<category>
+<pattern>I WOULD NOT</pattern>
+<that>Would you like to hear a joke?</that>
+<template>
+    No worries! <set name="most recent dialogue question">What would you like to chat about?</set>
+    <oob>
+        <robot></robot>
+    </oob>
+</template>
+</category>
 
-
-
-
-
-
-
-
-</topic>
 
 
 </aiml>

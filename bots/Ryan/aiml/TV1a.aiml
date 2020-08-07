@@ -16,7 +16,79 @@
 </category>
 
 <category>
+    <pattern>I WAS</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
     <pattern># <set>No</set> ^</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DO NOT</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I HAVE NOT</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DID NOT</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Were you ever married?</that>
+    <template>
+    <think><set name="dialogue">television</set></think>
+        <set name="most recent dialogue question">Do you have any kids or grandkids?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I WAS NOT</pattern>
     <that>Were you ever married?</that>
     <template>
     <think><set name="dialogue">television</set></think>
@@ -110,6 +182,50 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DO NOT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I HAVE NOT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DID NOT</pattern>
+        <that>Do you have kids or grandkids?</that>
+        <template>
+            Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV or listen to the radio when you were young?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ABSOLUTELY NOT</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             Well, I like to think that we are all still kids at heart! <set name="most recent dialogue question">Did you watch TV or listen to the radio when you were young?</set>
@@ -384,7 +500,7 @@
     </category>
 
     <category>
-        <pattern> YES * </pattern>
+        <pattern>YES *</pattern>
         <that>Do you have kids or grandkids?</that>
         <template>
             That's wonderful. <set name="most recent dialogue question">What do you like most about being a grandparent?</set>

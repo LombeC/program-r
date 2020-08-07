@@ -70,7 +70,7 @@
         <pattern># <set>Yes</set> ^</pattern>
         <that>Did you learn to play as a child?</that>
         <template>
-            You are so talented. I wish you could play me a little ditty.
+            You are so talented. <set name="most recent dialogue question">I wish you could play me a little ditty.</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -81,7 +81,29 @@
         <pattern># <set>No</set> ^</pattern>
         <that>Did you learn to play as a child?</that>
         <template>
-            Oh wow! So you learned to play later in life. I wish you could play me a little ditty.
+            Oh wow! So you learned to play later in life. <set name="most recent dialogue question">I wish you could play me a little ditty.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DID NOT</pattern>
+        <that>Did you learn to play as a child?</that>
+        <template>
+            Oh wow! So you learned to play later in life. <set name="most recent dialogue question">I wish you could play me a little ditty.</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ABSOLUTELY NOT</pattern>
+        <that>Did you learn to play as a child?</that>
+        <template>
+            Oh wow! So you learned to play later in life. <set name="most recent dialogue question">I wish you could play me a little ditty.</set>
             <oob>
                 <robot></robot>
             </oob>

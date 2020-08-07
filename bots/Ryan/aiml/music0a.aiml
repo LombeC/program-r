@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name="music">
+
+  <category>
+      <pattern>_</pattern>
+      <that>What's the best music to dance to?</that>
+      <template>
+          Oh yes, that will really get your feet steppin'! <set name="most recent dialogue question">Do you get to dance much where you live?</set>
+          <oob>
+              <robot>
+              </robot>
+          </oob>
+      </template>
+  </category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What's the best music to dance to?</that>
+    <template>
+        <set name="most recent dialogue question">Do you get to dance much where you live?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+        You party animal, you! <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+      <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I HAVE NOT</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+      <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DO NOT</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+      <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+      <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you get to dance much where you live?</that>
+    <template>
+        <set name="most recent dialogue question">I heard that Roger danced with Mary and then Ethel right after. Can you believe the nerve?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Can you believe the nerve?</that>
+    <template>
+        <set name="most recent dialogue question">He must think he's a regular Don Giovanni!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>He must think he's a regular Don Giovanni!</that>
+    <template>
+        Tell me. <set name="most recent dialogue question">Have you ever visited Branson, Nashville or Graceland?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># ALL ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># ALL OF THEM ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># ALL THREE ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>yes</set> ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        No way! <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># BRANSON ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        No way! <set name="most recent dialogue question">Can you tell me a little about your visit to Branson? I want to learn more!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>BRANSON AND NASHVILLE</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>BRANSON AND GRACELAND</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># NASHVILLE ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Get out of here! <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more about Nashville!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>NASHVILLE AND BRANSON</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>NASHVILLE AND GRACELAND</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># GRACELAND ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Get out of here! <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more about Graceland!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>GRACELAND AND NASHVILLE</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>GRACELAND AND BRANSON</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        You're a world traveler! <set name="most recent dialogue question">Which did you like best?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Me either! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I HAVE NOT</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Me either! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DID NOT</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Me either! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Me either! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DID NOT</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        Me either! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Have you ever visited Branson, Nashville or Graceland?</that>
+    <template>
+        I've never been! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># GRACELAND ^</pattern>
+    <that>Which did you like best?</that>
+    <template>
+        <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more about Graceland!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># BRANSON ^</pattern>
+    <that>Which did you like best?</that>
+    <template>
+        <set name="most recent dialogue question">Can you tell me a little about your visit to Branson? I want to learn more!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># NASHVILLE ^</pattern>
+    <that>Which did you like best?</that>
+    <template>
+        <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more about Nashville!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Which did you like best?</that>
+    <template>
+        <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Which did you like best?</that>
+    <template>
+      <set name="most recent dialogue question">Can you tell me a little about your visit? I want to learn more!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I want to learn more!</that>
+    <template>
+      I'm jealous! <set name="most recent dialogue question">It's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I want to learn more about Nashville!</that>
+    <template>
+      I'm jealous! It's on my bucket list! <set name="most recent dialogue question">What do you think of the Grand Ole Opry?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you think of the Grand Ole Opry?</that>
+    <template>
+      <think><set name="data"><star/></set></think>
+
+      <condition name="getsentiment">
+          <li value="verypositive">I love country music too! <set name="most recent dialogue question">Can you believe Grand Ole Opry started out as a radio barn dance?</set></li>
+          <li value="positive">I love country music too!<set name="most recent dialogue question">Can you believe Grand Ole Opry started out as a radio barn dance?</set></li>
+          <li value="negative">Not your favorite! <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+          <li value="verynegative">Not your favorite! <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+          <li value="neutral">You seem to enjoy it! <set name="most recent dialogue question">Can you believe Grand Ole Opry started out as a radio barn dance?</set></li>
+          </condition>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I want to learn more about Graceland!</that>
+    <template>
+      I'm jealous! It's on my bucket list! <set name="most recent dialogue question">What do you think of Elvis?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What do you think of Elvis?</that>
+    <template>
+      <think><set name="data"><star/></set></think>
+
+      <condition name="getsentiment">
+          <li value="verypositive">Have I got a tune for you! <set name="most recent dialogue question">Can I play you a song?</set></li>
+          <li value="positive">I love country music too!<set name="most recent dialogue question">Can I play you a song?</set></li>
+          <li value="negative">Not your favorite! <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+          <li value="verynegative">Not your favorite! <set name="most recent dialogue question">Would you like to continue talking about music?</set></li>
+          <li value="neutral">You seem to enjoy it! <set name="most recent dialogue question">Can I play you a song?</set></li>
+          </condition>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Can I play you a song?</that>
+    <template>
+      <set name="most recent dialogue question">What did you think of the rock clip?</set>
+        <oob>
+            <robot><video>
+                <filename>elvisJailhouse.mp4</filename>
+            </video>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Can I play you a song?</that>
+    <template>
+      <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Can I play you a song?</that>
+    <template>
+      <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>It's on my bucket list!</that>
+    <template>
+      <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>But it's on my bucket list!</that>
+    <template>
+      <set name="most recent dialogue question">Would you like to continue talking about music?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Can you believe Grand Ole Opry started out as a radio barn dance?</that>
+    <template>
+      <set name="most recent dialogue question">Did you ever go to a barn dance?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      Aww I bet it was so much fun! <set name="most recent dialogue question">It's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      Same here! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I HAVE NOT</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      Same here! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DID NOT</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      Same here! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      Same here! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Did you ever go to a barn dance?</that>
+    <template>
+      I never have! <set name="most recent dialogue question">But it's on my bucket list!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>_</pattern>
+    <that>It's more awkward than a middle school dance.</that>
+    <template>
+        <set name="most recent dialogue question">Do you remember your high school's song?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you remember your high school's song?</that>
+    <template>
+        <set name="most recent dialogue question">How does it go?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you remember your high school's song?</that>
+    <template>
+        <set name="most recent dialogue question">I don't remember mine from the robot academy either. </set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>I DO NOT</pattern>
+    <that>Do you remember your high school's song?</that>
+    <template>
+        <set name="most recent dialogue question">I don't remember mine from the robot academy either. </set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>ABSOLUTELY NOT</pattern>
+    <that>Do you remember your high school's song?</that>
+    <template>
+        <set name="most recent dialogue question">I don't remember mine from the robot academy either. </set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you remember your high school's song?</that>
+    <template>
+        <set name="most recent dialogue question">I don't remember mine from the robot academy either. </set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>How does it go?</that>
+    <template>
+        Now there's a tune to remember! Thanks for sharing. <set name="most recent dialogue question">What kind of music do you like, big band, crooner, jazz, or rock?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>How does it go?</that>
+    <template>
+        <set name="most recent dialogue question">I don't remember mine from the robot academy either. </set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I don't remember mine from the robot academy either.</that>
+    <template>
+        <set name="most recent dialogue question">What kind of music do you like, big band, crooner, jazz, or rock?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+</topic>
+
+</aiml>

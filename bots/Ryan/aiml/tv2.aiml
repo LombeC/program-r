@@ -103,6 +103,28 @@
         </category>
 
         <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Do you believe that the way to a person's heart is through their stomach?</that>
+            <template>
+                <set name="most recent dialogue question">Maybe you just need to have a nice, home cooked meal!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DO NOT</pattern>
+            <that>Do you believe that the way to a person's heart is through their stomach?</that>
+            <template>
+                <set name="most recent dialogue question">Maybe you just need to have a nice, home cooked meal!</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you believe that the way to a person's heart is through their stomach?</that>
             <template>
@@ -161,6 +183,18 @@
           </category>
 
           <category>
+              <pattern>ABSOLUTELY NOT</pattern>
+              <that>Is there a lot of good home cooking there?</that>
+              <template>
+                Remind me to never visit <get name="birthplace"/> in that case! <set name="most recent dialogue question">What kind of comfort food do you like?</set>
+
+                    <oob>
+                        <robot></robot>
+                    </oob>
+                </template>
+            </category>
+
+          <category>
               <pattern>_</pattern>
               <that>What kind of comfort food do you like?</that>
               <template>
@@ -209,6 +243,32 @@
                     <li value="neutral">In that case. <set name="most recent dialogue question">Have you heard of Ina Garten?</set></li>
                     </condition>
 
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>ABSOLUTELY NOT</pattern>
+              <that>Do you like watching the food network?</that>
+              <template>
+                <think><set name="topic">foodnetwork</set></think>
+                <think><set name="dialogue">foodnetwork</set></think>
+                Just because I like it doesn't mean everyone has to! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>I DO NOT</pattern>
+              <that>Do you like watching the food network?</that>
+              <template>
+                <think><set name="topic">foodnetwork</set></think>
+                <think><set name="dialogue">foodnetwork</set></think>
+                Just because I like it doesn't mean everyone has to! <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
                   <oob>
                       <robot></robot>
                   </oob>
@@ -323,6 +383,7 @@
           <pattern>* HERE *</pattern>
           <that>Where did you grow up?</that>
           <template>
+
           <condition name="birthplace">
                   <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
                   <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
@@ -335,6 +396,7 @@
           <pattern>FROM HERE</pattern>
           <that>Where did you grow up?</that>
           <template>
+            <think><set name="birthplace"><star/></set></think>
           <condition name="birthplace">
                   <li value="Unknown"><set name="most recent dialogue question">Where is here, again? I believe I forgot! I obviously do not get out very much, ha ha.</set></li>
                   <li><set name="most recent dialogue question">Oh OK you grew up in <get name="location"/>. Is there a lot of good home cooking there?</set></li>
@@ -423,6 +485,39 @@
                     <li value="neutral">Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set></li>
                     </condition>
 
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>ABSOLUTELY NOT</pattern>
+              <that>Would you say you're much of a chef?</that>
+              <template>
+                Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>I WOULD NOT</pattern>
+              <that>Would you say you're much of a chef?</that>
+              <template>
+                Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set>
+                  <oob>
+                      <robot></robot>
+                  </oob>
+              </template>
+          </category>
+
+          <category>
+              <pattern>I DO NOT</pattern>
+              <that>Would you say you're much of a chef?</that>
+              <template>
+                Maybe you just stick to ordering takeout like me! <set name="most recent dialogue question">When the moon hits your eye like a big pizza pie...finish my sentence.</set>
                   <oob>
                       <robot></robot>
                   </oob>
@@ -611,6 +706,28 @@
         </category>
 
         <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Do you enjoy cooking for other people?</that>
+            <template>
+                I understand. <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DO NOT</pattern>
+            <that>Do you enjoy cooking for other people?</that>
+            <template>
+                I understand. <set name="most recent dialogue question">Would you like to keep talking about food and cooking shows?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you enjoy cooking for other people?</that>
             <template>
@@ -638,21 +755,6 @@
         </category>
 
         <category>
-            <pattern># <set>No</set> ^</pattern>
-            <that>Would you like to keep talking about food and cooking shows?</that>
-            <template>
-                Of course! <set name="most recent dialogue question">What would you like to chat about?</set>
-                <oob>
-                    <robot>
-                        <image>
-                            <filename>CLRSCR</filename>
-                        </image>
-                    </robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
             <pattern># <set>Yes</set> ^</pattern>
             <that>Have you ever seen cooking competitions like this one?</that>
             <template>
@@ -666,6 +768,54 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
+            <that>Have you ever seen cooking competitions like this one?</that>
+            <template>
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I HAVE NOT</pattern>
+            <that>Have you ever seen cooking competitions like this one?</that>
+            <template>
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DID NOT</pattern>
+            <that>Have you ever seen cooking competitions like this one?</that>
+            <template>
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Have you ever seen cooking competitions like this one?</that>
+            <template>
+                Those chefs are able to whip up gourmet meals in under thirty minutes!
+                                                                                                                                        <set name="most recent dialogue question">Do you think you would be able to make something that fast?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I HAVE NOT</pattern>
             <that>Have you ever seen cooking competitions like this one?</that>
             <template>
                 Those chefs are able to whip up gourmet meals in under thirty minutes!
@@ -711,6 +861,39 @@
         </category>
 
         <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Do you think you would be able to make something that fast?</that>
+            <template>
+                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DO NOT</pattern>
+            <that>Do you think you would be able to make something that fast?</that>
+            <template>
+                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I WOULD NOT</pattern>
+            <that>Do you think you would be able to make something that fast?</that>
+            <template>
+                I am not exactly a whiz in the kitchen either! <set name="most recent dialogue question">Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Do you think you would be able to make something that fast?</that>
             <template>
@@ -735,6 +918,54 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
+            <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
+            <template>
+                I love all the interesting food they cook up on that show!
+                                                                                      <set name="most recent dialogue question">Are you an adventurous eater?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I HAVE NOT</pattern>
+            <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
+            <template>
+                I love all the interesting food they cook up on that show!
+                                                                                      <set name="most recent dialogue question">Are you an adventurous eater?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DID NOT</pattern>
+            <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
+            <template>
+                I love all the interesting food they cook up on that show!
+                                                                                      <set name="most recent dialogue question">Are you an adventurous eater?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
+            <template>
+                I love all the interesting food they cook up on that show!
+                                                                                      <set name="most recent dialogue question">Are you an adventurous eater?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I HAVE NOT</pattern>
             <that>Have you seen Guy Fieri's Diners, Drive Ins, and Dives?</that>
             <template>
                 I love all the interesting food they cook up on that show!
@@ -781,6 +1012,18 @@
         </category>
 
         <category>
+            <pattern>ABSOLUTELY NOT</pattern>
+            <that>Are you an adventurous eater?</that>
+            <template>
+                I think life is more fun when we try new things!
+                                                                                        <set name="most recent dialogue question">What do you like to do for fun?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
             <pattern># <set>DON T KNOW</set> ^</pattern>
             <that>Are you an adventurous eater?</that>
             <template>
@@ -799,6 +1042,19 @@
               <think><set name="topic">reading</set></think>
               <think><set name="dialogue">reading</set></think>
                 That's so great to hear! I think it's fun to chat with people like you, and I also love to read! <set name="most recent dialogue question">Do you want to talk about books?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># <set>DON T KNOW</set> ^</pattern>
+            <that>What do you like to do for fun?</that>
+            <template>
+              <think><set name="topic">reading</set></think>
+              <think><set name="dialogue">reading</set></think>
+                Well, I think it's fun to chat with people like you, and I also love to read! <set name="most recent dialogue question">Do you want to talk about books?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -825,6 +1081,21 @@
             Of course! <set name="most recent dialogue question">What would you like to chat about?</set>
             <oob>
                 <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern># <set>No</set> ^</pattern>
+        <that>Would you like to keep talking about food and cooking shows?</that>
+        <template>
+            Of course! <set name="most recent dialogue question">What would you like to chat about?</set>
+            <oob>
+                <robot>
+                    <image>
+                        <filename>CLRSCR</filename>
+                    </image>
+                </robot>
             </oob>
         </template>
     </category>

@@ -152,6 +152,17 @@
     </category>
 
     <category>
+        <pattern>ABSOLUTELY NOT</pattern>
+        <that>Can I show you a clip you might find funny?</that>
+        <template>
+            No problem. <set name="most recent dialogue question">What's your favorite show?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern>*</pattern>
         <that>What's your favorite show?</that>
         <template>
@@ -299,6 +310,39 @@
     </category>
 
     <category>
+        <pattern>ABSOLUTELY NOT</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            Tough crowd! <set name="most recent dialogue question">Well why don't we talk about funny movies?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WOULD NOT</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            Tough crowd! <set name="most recent dialogue question">Well why don't we talk about funny movies?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I DO NOT</pattern>
+        <that>Want to watch one more funny clip?</that>
+        <template>
+            Tough crowd! <set name="most recent dialogue question">Well why don't we talk about funny movies?</set>
+            <oob>
+                <robot></robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
         <pattern># <set>YES</set> ^</pattern>
         <that>Well why don't we talk about funny movies?</that>
         <template>
@@ -309,18 +353,6 @@
             <oob>
                 <robot>
                 </robot>
-            </oob>
-        </template>
-    </category>
-
-    <category>
-        <pattern># <set>NO</set> ^</pattern>
-        <that>Well why don't we talk about funny movies?</that>
-        <template>
-          OK!
-          <set name="most recent dialogue question">What would you like to chat about next?</set>
-            <oob>
-                <robot></robot>
             </oob>
         </template>
     </category>
@@ -338,6 +370,50 @@
 
         <category>
             <pattern># <set>No</set> ^</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I HAVE NOT</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DID NOT</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>I DO NOT</pattern>
+            <that>Did you ever watch I Love Lucy?</that>
+            <template>
+                Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern>ABSOLUTELY NOT</pattern>
             <that>Did you ever watch I Love Lucy?</that>
             <template>
                 Lucy and Ricky Ricardo were so funny together, I nearly burst my circuits from laughing! <set name="most recent dialogue question">Were you ever married?</set>
