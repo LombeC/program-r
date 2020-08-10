@@ -152,16 +152,16 @@ python ./src/programr/clients/events/majordomo/client.py --config ./bots/tutoria
 ```
 
 ### Restful POST run
-- ### Tutorial bot
+- #### Tutorial bot
 
 ```
 python ./src/programr/clients/restful/flask/client.py --config ./bots/tutorial/config.yaml --cformat yaml --logging ./bots/tutorial/logging.yaml
 ```
-- ### Ryan Bot
+- #### Ryan Bot
 ```
 python ./src/programr/clients/restful/flask/client.py --config ./bots/Ryan/config.yaml --cformat yaml --logging ./bots/Ryan/logging.yaml
 ```
-- ### Concept Bot
+- #### Concept Bot
 ```
 python ./src/programr/clients/restful/flask/client.py --config ./bots/concept/config.yaml --cformat yaml --logging ./bots/concept/logging.yaml
 ```

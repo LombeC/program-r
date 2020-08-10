@@ -49,7 +49,7 @@ def get_semantic_similarity_concept(text, concept):
     try:
         similarity_classifier = DistilRobertaSemanticSimilarity()
         result = similarity_classifier.similarity_with_concept(text, concept)
-        print("similarity score: {}".format(result))
+        print("similarity score between \'{}\' and \'{}\': {}".format(text, concept, result))
         return result
     except Exception as ex:
         print("Exception caught getting sentence similiarity - {}".format(ex))
@@ -58,7 +58,7 @@ def get_semantic_similarity_concepts(text, concepts):
     try:
         similarity_classifier = DistilRobertaSemanticSimilarity()
         result = similarity_classifier.similarity_with_concepts(text, concepts)
-        print("similarity score: {}".format(result))
+        print("similarity score between \'{}\' and \'{}\': {}".format(text, concepts, result))
         return result
     except Exception as ex:
         print("Exception caught getting sentence similiarity - {}".format(ex))

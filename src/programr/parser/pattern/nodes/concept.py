@@ -1,6 +1,8 @@
 import requests
 import json
 
+from time import time
+
 from programr.utils.logging.ylogger import YLogger
 
 from programr.parser.pattern.nodes.base import PatternNode
@@ -8,6 +10,7 @@ from programr.parser.pattern.matcher import EqualsMatch
 from programr.parser.exceptions import ParserException
 
 #from programr.nlp.semantic.semantic_similarity import SemanticSimilarity
+
 
 class PatternConceptNode(PatternNode):
 
@@ -34,7 +37,7 @@ class PatternConceptNode(PatternNode):
         raise Exception("Needs to be implemented")
 
 
-
+    
     def equals(self, client_context, words, word_no):
         word = words.word(word_no)
 

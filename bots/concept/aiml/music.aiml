@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern><concept>music | sports</concept></pattern>
+        <template>
+            Do you want to talk about music?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern><concept>sports | music </concept></pattern>
+        <template>
+            You are talking about sports
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern><concept>yes | no</concept></pattern>
+        <that>Do you want to talk about music?</that>
+        <template>
+            <think><set name="topic">music</set><set name="dialogue">music</set></think>
+            I'm the best robot to karaoke with. Maybe we'd make a good duo!
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern><concept>no | yes</concept></pattern>
+        <template>
+            Alright! Do you want to talk about sports?
+            <oob><robot></robot></oob>
+        </template>
+    </category>
+
+    
+
+    <topic name="music">
+
+    <category>
+        <pattern>_</pattern>
+        <that>Maybe we'd make a good duo! </that>
+        <template>
+            We could be like Sonny and Cher or Captain and Tennille! <set name="most recent dialogue question">Have you ever sang karaoke before?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern><concept>yes | no</concept></pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            I'm going with you next time!
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    <category>
+        <pattern><concept>no | yes</concept></pattern>
+        <that>Have you ever sang karaoke before?</that>
+        <template>
+            What about dancing? <set name="most recent dialogue question">You ever gone dancing?</set>
+            <oob>
+                <robot>
+                </robot>
+            </oob>
+        </template>
+    </category>
+
+    </topic>
+</aiml>
