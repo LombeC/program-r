@@ -25,6 +25,7 @@ class BrainSemanticSimilarityConfiguration(BaseConfigurationData):
             self._model_dir = configuration_file.get_option(semantic_similarity, "model_dir", missing_value="")
         else:
             YLogger.warning(self, "'semantic_similarity' section missing from bot config, using defaults")
+            print("semantic_similarity' section missing from bot config, using defaults")
 
     def to_yaml(self, data, defaults=True):
         if defaults is True:

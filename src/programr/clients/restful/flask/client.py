@@ -127,13 +127,13 @@ if __name__ == '__main__':
     @app.route('/api/rest/v1.0/similarity_concept', methods=['POST'])
     def ask_similarity_concept():
         r = request.get_json()
-        response = make_response(jsonify({"response": proxy.get_semantic_similarity(r['text'], r['concept'])}))
+        response = make_response(jsonify({"response": proxy.get_semantic_similarity_concept(r['text'], r['concept'])}))
         return response
 
     @app.route('/api/rest/v1.0/similarity_concepts', methods=['POST'])
     def ask_similarity_concepts():
         r = request.get_json()
-        response = make_response(jsonify({"response": proxy.get_semantic_similarity(r['text'], r['concepts'])}))
+        response = make_response(jsonify({"response": proxy.get_semantic_similarity_concepts(r['text'], r['concepts'])}))
         return response
 
     @app.route('/api/rest/v1.0/news', methods=['POST'])

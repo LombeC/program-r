@@ -1,3 +1,6 @@
+import requests
+import json
+
 from programr.utils.logging.ylogger import YLogger
 
 from programr.parser.pattern.nodes.base import PatternNode
@@ -50,8 +53,16 @@ class PatternConceptNode(PatternNode):
             sentence_text = " ".join(sentence)
 
             # TODO: Change this to use XMLRPC Server
-            similarity_with_this_concept = client_context.brain.nlp.semantic_similarity.similarity_with_concept(sentence_text, this_concept)
-            similarity_with_other_concepts = client_context.brain.nlp.semantic_similarity.similarity_with_concepts(sentence_text, other_concepts)
+            similarity_with_this_concept = requests.post('http://localhost:5000/api/rest/v1.0/similarity_concept',  json={'text': sentence_text, 'concept': this_concept})
+            similarity_with_this_concept = json.loads(similarity_with_this_concept.text)
+            similarity_with_this_concept = similarity_with_this_concept['response']
+            
+            similarity_with_other_concepts = requests.post('http://localhost:5000/api/rest/v1.0/similarity_concepts',  json={'text': sentence_text, 'concepts': other_concepts})
+            similarity_with_other_concepts = json.loads(similarity_with_other_concepts.text)
+            similarity_with_other_concepts = similarity_with_other_concepts['response']
+
+            # similarity_with_this_concept = client_context.brain.nlp.semantic_similarity.similarity_with_concept(sentence_text, this_concept)
+            # similarity_with_other_concepts = client_context.brain.nlp.semantic_similarity.similarity_with_concepts(sentence_text, other_concepts)
 
             if similarity_with_this_concept > max(similarity_with_other_concepts):
                 result = True
