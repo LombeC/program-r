@@ -7,7 +7,7 @@
         <template>
             <random>
             <li><set name="most recent dialogue question">I'm somewhat of a movie buff, not gonna lie! How about you?</set></li>
-            <li><set name="most recent dialogue question">Being the couch potato that I am, I love a good flick! How about you?</set></li>
+            <li><set name="most recent dialogue question">Being the couch potato that I am, I always love a good flick! How about you?</set></li>
             <li><set name="most recent dialogue question">I like to hold hands at the movies, which always seems to startle strangers.</set></li>
           </random>
             <think><set name="dialogue">movies</set></think>
@@ -435,8 +435,12 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">dramaticmovies</set></think>
-            Excellent! <set name="most recent dialogue question">My favorite is It's a Wonderful Life.
-                    Who doesn't like that movie?</set>
+          <random>
+            <li><set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
+                    Who doesn't like that movie?</set></li>
+            <li>Let's see. <set name="most recent dialogue question">You might be familiar with a guy named Marlon Brando?</set></li>
+            <li>Well then, speaking of dramatic movies. <set name="most recent dialogue question">I think you may know of a gal named Elizabeth Taylor?</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -448,8 +452,12 @@
         <that>When it comes to movies, do you like to watch drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">dramaticmovies</set></think>
-            Excellent! <set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
-                      Who doesn't like that movie?</set>
+          <random>
+            <li><set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
+                    Who doesn't like that movie?</set></li>
+            <li>Let's see. <set name="most recent dialogue question">You might be familiar with a guy named Marlon Brando?</set></li>
+            <li>Well then, speaking of dramatic movies. <set name="most recent dialogue question">I think you may know of a gal named Elizabeth Taylor?</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -461,8 +469,12 @@
         <that>Would you like to chat about drama, action, comedy, or musicals?</that>
         <template>
           <think><set name="topic">dramaticmovies</set></think>
-            Excellent! <set name="most recent dialogue question">My favorite is It's a Wonderful Life.
-                    Who doesn't like that movie?</set>
+          <random>
+            <li><set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
+                    Who doesn't like that movie?</set></li>
+            <li>Let's see. <set name="most recent dialogue question">You might be familiar with a guy named Marlon Brando?</set></li>
+            <li>Well then, speaking of dramatic movies. <set name="most recent dialogue question">I think you may know of a gal named Elizabeth Taylor?</set></li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -478,7 +490,7 @@
               <li><set name="most recent dialogue question">When it comes to dramas, my favorite is It's a Wonderful Life.
                       Who doesn't like that movie?</set></li>
               <li>Let's see. <set name="most recent dialogue question">You might be familiar with a guy named Marlon Brando?</set></li>
-              <li>Well then. <set name="most recent dialogue question">I think you may know of a gal named Elizabeth Taylor?</set></li>
+              <li>Well then, speaking of dramatic movies. <set name="most recent dialogue question">I think you may know of a gal named Elizabeth Taylor?</set></li>
             </random>
 
             <oob>

@@ -497,7 +497,7 @@
 </category>
 <category>
     <pattern>MUSEUM</pattern>
-    <template>Would you like to talk about museums?<oob><robot></robot></oob>
+    <template><think><set name="dialogue">museums</set></think>Would you like to talk about museums?<oob><robot></robot></oob>
     </template>
 </category>
 <category>
@@ -720,6 +720,11 @@
     </category>
     <category>
         <pattern>ROUTE SIXTY SIX</pattern>
+        <template><think><set name="topic">routesixtysix</set></think><think><set name="dialogue">museums</set></think>The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?<oob><robot></robot></oob>
+        </template>
+    </category>
+    <category>
+        <pattern>ROUTE 66</pattern>
         <template><think><set name="topic">routesixtysix</set></think><think><set name="dialogue">museums</set></think>The largest Route 66 museum is in Clinton, Oklahoma! Would you like to take a tour?<oob><robot></robot></oob>
         </template>
     </category>

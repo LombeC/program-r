@@ -25,7 +25,7 @@
         <that>Would you like to talk about museums?</that>
         <template>
           <think><set name="dialogue">museums</set></think>
-            Excellent! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+            Excellent! <set name="most recent dialogue question">Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
@@ -34,10 +34,14 @@
 
     <category>
         <pattern># Smithsonian ^</pattern>
-        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
             <think><set name="topic">smithsonian</set></think>
-            The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set>
+            <random>
+            <li>The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set></li>
+            <li><set name="most recent dialogue question">Tell me, have you ever been to the National Smithsonian?</set></li>
+            <li>Do you like learning about natural history?</li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>
@@ -46,10 +50,14 @@
 
     <category>
         <pattern># Smithsonian museum ^</pattern>
-        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
             <think><set name="topic">smithsonian</set></think>
-            The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set>
+            <random>
+            <li>The Smithsonian is a marvel! <set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set></li>
+            <li><set name="most recent dialogue question">Tell me, have you ever been to the National Smithsonian?</set></li>
+            <li>Do you like learning about natural history?</li>
+          </random>
             <oob>
                 <robot></robot>
             </oob>

@@ -7,8 +7,7 @@
     <pattern>_</pattern>
     <that>What did you think?</that>
     <template>
-      <think><set name="dialogue">museums</set></think>
-      I really enjoyed it to be honest! It was on my bucket list.
+      I really enjoyed it to be honest! <set name="most recent dialogue question">It was on my bucket list.</set>
         <oob>
             <robot></robot>
         </oob>
@@ -19,7 +18,6 @@
     <pattern>_</pattern>
     <that>It was on my bucket list.</that>
     <template>
-      <think><set name="dialogue">museums</set></think>
       <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
         <oob>
             <robot></robot>
@@ -31,7 +29,6 @@
     <pattern>_</pattern>
     <that>I'm guessing going to a rodeo isn't really on your bucket list?</that>
     <template>
-      <think><set name="dialogue">museums</set></think>
       <set name="most recent dialogue question">What is on your bucket list? Where would you want to travel?</set>
         <oob>
             <robot></robot>
@@ -56,25 +53,143 @@
     <that>What do you say?</that>
     <template>
       <think><set name="topic">routesixtysix</set></think>
-      <set name="most recent dialogue question">Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</set>
+      <set name="most recent dialogue question">Want to check out the Route 66 museum in Clinton, Oklahoma?</set>
         <oob>
             <robot></robot>
         </oob>
     </template>
 </category>
 
-</topic>
+<category>
+    <pattern>_</pattern>
+    <that>We're about to go on an adventure!</that>
+    <template>
+      <set name="most recent dialogue question">Do you like watching Westerns?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you like watching Westerns?</that>
+    <template>
+      <think><set name="data"><star/></set></think>
+
+      <condition name="getsentiment">
+          <li value="verypositive">I should have known! <set name="most recent dialogue question">Just break open the sarsaparilla and let's watch one together!</set></li>
+          <li value="positive">I should have known! <set name="most recent dialogue question">Just break open the sarsaparilla and let's watch one together!</set></li>
+          <li value="negative">Let's cross Westerns off the list! <set name="most recent dialogue question">Would you like to take a tour of the National Cowboy Museum?</set></li>
+          <li value="verynegative">Let's cross Westerns off the list! <set name="most recent dialogue question">Would you like to take a tour of the National Cowboy Museum?</set></li>
+          <li value="neutral"><set name="most recent dialogue question">Just break out the sarsaparilla and let's watch one together!</set></li>
+          </condition>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Just break open the sarsaparilla and let's watch one together!</that>
+    <template>
+      That's right! <set name="most recent dialogue question">You, me, and the wild wild West!</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>You, me, and the wild wild West!</that>
+    <template>
+      Hey Pilgrim. <set name="most recent dialogue question">Do you think you'd want to go back in time and visit an old fashioned saloon?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you think you'd want to go back in time and visit an old fashioned saloon?</that>
+    <template>
+      <think><set name="data"><star/></set></think>
+
+      <condition name="getsentiment">
+          <li value="verypositive"><set name="most recent dialogue question">Seems like you're not afraid of a brawl or two!</set></li>
+          <li value="positive"><set name="most recent dialogue question">Seems like you're not afraid of a brawl or two!</set></li>
+          <li value="negative"><set name="most recent dialogue question">What time would you go back to if you could?</set></li>
+          <li value="verynegative"><set name="most recent dialogue question">What time would you go back to if you could?</set></li>
+          <li value="neutral"><set name="most recent dialogue question">Seems like you're not afraid of a brawl or two!</set></li>
+          </condition>
+
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Seems like you're not afraid of a brawl or two!</that>
+    <template>
+      <set name="most recent dialogue question">What time would you go back to if you could?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What time would you go back to if you could?</that>
+    <template>
+      <set name="most recent dialogue question">Ah, the good old days! You got me there.</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What time would you go back to if you could?</that>
+    <template>
+      You got me there. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>You got me there.</that>
+    <template>
+      <set name="most recent dialogue question">Do you want to take a tour of the Wild West Ghost Town Museum?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
 
 <category>
     <pattern># <set>YES</set> ^</pattern>
-    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
+    <that>Do you want to take a tour of the Wild West Ghost Town Museum?</that>
     <template>
-      <think><set name="topic">routesixtysix</set></think>
-        I really dig the diner they showed! <set name="most recent dialogue question">What do you like about Route 66?</set>
+      What did you think of the Western town? <set name="most recent dialogue question">Would you go into that saloon?</set>
         <oob>
             <robot>
                 <video>
-                    <filename>Route_66.mp4</filename>
+                    <filename>Ghost_Town.mp4</filename>
                 </video>
             </robot>
         </oob>
@@ -82,10 +197,103 @@
 </category>
 
 <category>
-    <pattern># <set>NO</set> ^</pattern>
-    <that>Want to check out the Route Sixty Six museum in Clinton, Oklahoma?</that>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you go into that saloon?</that>
     <template>
-        No problem! <set name="most recent dialogue question">What would you like to talk about next?</set>
+      <set name="most recent dialogue question">I can see you walking through the swinging door now!</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Would you go into that saloon?</that>
+    <template>
+      No? <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Would you go into that saloon?</that>
+    <template>
+      Don't know? <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>I can see you walking through the swinging door now!</that>
+    <template>
+      <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you want to take a tour of the Wild West Ghost Town Museum?</that>
+    <template>
+      No biggie! <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Would you like to take a tour of the National Cowboy Museum?</that>
+    <template>
+      I would love to visit!
+      I have to ask. <set name="most recent dialogue question">Have you ever been to a rodeo?</set>
+        <oob>
+            <robot>
+                <video>
+                    <filename>Cowboy_Museum.mp4</filename>
+                </video>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+
+</topic>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Want to check out the Route 66 museum in Clinton, Oklahoma?</that>
+    <template>
+      No problem! I have to ask. <set name="most recent dialogue question">
+      have you ever been to a rodeo?</set>
+        <oob>
+            <robot>
+            </robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Want to check out the Route 66 museum in Clinton, Oklahoma?</that>
+    <template>
+        No problem! <set name="most recent dialogue question">What would you like to talk about?</set>
         <oob>
             <robot>
             </robot>

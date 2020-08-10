@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <topic name="smithsonian">
+
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Tell me, have you ever been to the National Smithsonian?</that>
+    <template>
+      Oh that's wonderful! <set name="most recent dialogue question">What exhibits did you get to see?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Tell me, have you ever been to the National Smithsonian?</that>
+    <template>
+      <set name="most recent dialogue question">Well then, may I show you a short video on some of its exhibits?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Tell me, have you ever been to the National Smithsonian?</that>
+    <template>
+      <set name="most recent dialogue question">Well then, may I show you a short video on some of its exhibits?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>What exhibits did you get to see?</that>
+    <template>
+      <set name="most recent dialogue question">Well then, may I show you a short video on some of its exhibits?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>What exhibits did you get to see?</that>
+    <template>
+      So interesting and so cool! <set name="most recent dialogue question">May I show you a short video on some of its exhibits?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>May I show you a short video on some of its exhibits?</that>
+    <template>
+      I love learning about history. <set name="most recent dialogue question">Have you ever found or discovered something really old?</set>
+        <oob>
+            <robot><video>
+                <filename>Exhibits.mp4</filename>
+            </video></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Well then, may I show you a short video on some of its exhibits?</that>
+    <template>
+      I love learning about history. <set name="most recent dialogue question">Have you ever found or discovered something really old?</set>
+        <oob>
+            <robot><video>
+                <filename>Exhibits.mp4</filename>
+            </video></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>May I show you a short video on some of its exhibits?</that>
+    <template>
+      Sure. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>No</set> ^</pattern>
+    <that>Well then, may I show you a short video on some of its exhibits?</that>
+    <template>
+      Sure. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Have you ever found or discovered something really old?</that>
+    <template>
+      <set name="most recent dialogue question">Can you tell me a little more about it? I would love to hear!</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Have you ever found or discovered something really old?</that>
+    <template>
+    <set name="most recent dialogue question">Do you have any keepsakes?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Have you ever found or discovered something really old?</that>
+    <template>
+      <set name="most recent dialogue question">Do you have any keepsakes?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you have any keepsakes?</that>
+    <template>
+      <set name="most recent dialogue question">Can you tell me a little more about it? I would love to hear!</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you have any keepsakes?</that>
+    <template>
+      Totally fine! <set name="most recent dialogue question">Did you know that the Smithsonian holds the actual star-spangled banner?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you have any keepsakes?</that>
+    <template>
+      Totally fine! <set name="most recent dialogue question">Did you know that the Smithsonian holds the actual star-spangled banner?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I would love to hear!</that>
+    <template>
+      How exciting and special! <set name="most recent dialogue question">I love all of your stories.</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>I would love to hear!</that>
+    <template>
+      Totally fine! <set name="most recent dialogue question">Did you know that the Smithsonian holds the actual star-spangled banner?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>I love all of your stories.</that>
+    <template>
+      Speaking of stories. <set name="most recent dialogue question">Do you ever write down your thoughts?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Do you ever write down your thoughts?</that>
+    <template>
+      <think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>
+          Really? I like to write poems from time to time! <set name="most recent dialogue question">Who's your favorite author?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Do you ever write down your thoughts?</that>
+    <template>
+      <think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>
+          I like to write poems from time to time! <set name="most recent dialogue question">Who's your favorite author?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Do you ever write down your thoughts?</that>
+    <template>
+      <think><set name="topic">reading</set></think>
+      <think><set name="dialogue">reading</set></think>
+          I like to write poems from time to time! <set name="most recent dialogue question">Who's your favorite author?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds the actual star-spangled banner?</that>
+    <template>
+      Indeed! 'Tis the flag that inspired the national anthem! <set name="most recent dialogue question">Would you like to talk about American history?</set>
+        <oob>
+            <robot><image>
+                <filename>Banner.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds the actual star-spangled banner?</that>
+    <template>
+      Indeed! 'Tis the flag that inspired the national anthem! <set name="most recent dialogue question">Would you like to talk about American history?</set>
+        <oob>
+            <robot><image>
+                <filename>Banner.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds the actual star-spangled banner?</that>
+    <template>
+          Indeed! 'Tis the flag that inspired the national anthem! <set name="most recent dialogue question">Would you like to talk about American history?</set>
+        <oob>
+            <robot><image>
+                <filename>Banner.jpg</filename>
+            </image></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern>_</pattern>
+    <that>Do you like learning about natural history?</that>
+    <template>
+      <think><set name="data"><star/></set></think>
+
+      <condition name="getsentiment">
+          <li value="verypositive"><set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set></li>
+          <li value="positive"><set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set></li>
+          <li value="negative">OK then! <set name="most recent dialogue question">Did you know that the Smithsonian holds all of the presidential portraits?</set></li>
+          <li value="verynegative">OK then! <set name="most recent dialogue question">Did you know that the Smithsonian holds all of the presidential portraits?</set></li>
+          <li value="neutral"><set name="most recent dialogue question">Would you like to see a video on the dinosaur exhibit?</set></li>
+          </condition>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>YES</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds all of the presidential portraits?</that>
+    <template>
+      <think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>
+          Indeed! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds all of the presidential portraits?</that>
+    <template>
+      <think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>
+          Indeed! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+<category>
+    <pattern># <set>DON T KNOW</set> ^</pattern>
+    <that>Did you know that the Smithsonian holds all of the presidential portraits?</that>
+    <template>
+      <think><set name="dialogue">americanhistory</set></think>
+      <think><set name="topic">history</set></think>
+          Indeed! <set name="most recent dialogue question">Would you like to hear another fact about the presidents?</set>
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+
+
+
+
+
+
+
+
+</topic>
+
+</aiml>

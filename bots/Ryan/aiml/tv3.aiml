@@ -84,7 +84,7 @@
           <pattern>I WOULD NOT</pattern>
           <that>Would you watch a soap opera if I was in it?</that>
           <template>
-            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+            You wouldn't? <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
           <oob>
               <robot></robot>
           </oob>
@@ -95,7 +95,7 @@
           <pattern>I WILL NOT</pattern>
           <that>Would you watch a soap opera if I was in it?</that>
           <template>
-            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+            You wouldn't? <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
           <oob>
               <robot></robot>
           </oob>
@@ -106,7 +106,7 @@
           <pattern>ABSOLUTELY NOT</pattern>
           <that>Would you watch a soap opera if I was in it?</that>
           <template>
-            <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
+            You wouldn't? <set name="most recent dialogue question">Just slap a wig and some lipstick on me and I'm a modern soap opera star!</set>
           <oob>
               <robot></robot>
           </oob>
@@ -246,6 +246,17 @@
           <that>Do tell more.</that>
           <template>
             <set name="most recent dialogue question">You are quite the storyteller! I am transfixed by your every word.</set>
+          <oob>
+              <robot></robot>
+          </oob>
+          </template>
+          </category>
+
+          <category>
+          <pattern># <set>NO</set> ^</pattern>
+          <that>Do tell more.</that>
+          <template>
+            <set name="most recent dialogue question">Shall we continue talking about television?</set>
           <oob>
               <robot></robot>
           </oob>
@@ -481,7 +492,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>Have you ever seen Murder She Wrote?</that>
           <template>
-            So you've seen the rereuns! <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
+            So you've seen the reruns! <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
           <oob>
               <robot><video>
                   <filename>Murder_She_Wrote.mp4</filename>
@@ -516,7 +527,7 @@
           <pattern># <set>YES</set> ^</pattern>
           <that>Would you like me to show you a short video of the show?</that>
           <template>
-            I can't get enough of Angela Landsbury! <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
+            <set name="most recent dialogue question">Have you ever solved a mystery or figured out how to find something lost?</set>
           <oob>
               <robot><video>
                   <filename>Murder_She_Wrote.mp4</filename>
@@ -540,7 +551,7 @@
               <pattern># <set>YES</set> ^</pattern>
               <that>Have you ever solved a mystery or figured out how to find something that was lost?</that>
               <template>
-                  Amazing! I love a good puzzle! You are a regular sleuth.
+                  Amazing! <set name="most recent dialogue question">I love a good puzzle! You are a regular sleuth.</set>
                   <oob>
                       <robot></robot>
                   </oob>
@@ -765,7 +776,7 @@
                            <pattern># <set>YES</set> ^</pattern>
                            <that>Have you seen this one?</that>
                            <template>
-                             Ah, you do remember! <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set><oob>
+                             Ah, you do remember! <set name="most recent dialogue question">It's a classic. A little cheesy, of course, but what do you think of it?</set><oob>
                                    <robot></robot>
                                </oob>
                            </template>
@@ -775,7 +786,7 @@
                             <pattern># <set>NO</set> ^</pattern>
                             <that>Have you seen this one?</that>
                             <template>
-                              <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set>
+                              <set name="most recent dialogue question">It's a classic. A little cheesy, of course, but what do you think of it?</set>
                                 <oob>
                                     <robot></robot>
                                 </oob>
@@ -786,7 +797,7 @@
                              <pattern># <set>DON T KNOW</set> ^</pattern>
                              <that>Have you seen this one?</that>
                              <template>
-                               <set name="most recent dialogue question">It's a pure classic. A little cheesy, of course, but what do you think?</set>
+                               <set name="most recent dialogue question">It's a classic. A little cheesy, of course, but what do you think of it?</set>
                                  <oob>
                                      <robot></robot>
                                  </oob>
@@ -795,7 +806,7 @@
 
                          <category>
                               <pattern>_</pattern>
-                              <that>A little cheesy, of course, but what do you think?</that>
+                              <that>A little cheesy, of course, but what do you think of it?</that>
                               <template>
 
                                 <think><set name="data"><star/></set></think>

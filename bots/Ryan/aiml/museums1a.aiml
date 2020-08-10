@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<topic name="routesixtysix">
+
+  <category>
+      <pattern># MOTHER ROAD ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        You're good at this! Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># MAIN STREET OF AMERICA ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        You're good at this! Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># MAIN STREET ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        You're good at this! Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># WILL ROGERS ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        You're good at this! Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># WILL ROGERS HIGHWAY ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        You're good at this! Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        I don't think I know that nickname! <set name="most recent dialogue question">Would you like to hear some of the nicknames?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Can you name one of the nicknames for Route 66?</that>
+      <template>
+        No worries!<set name="most recent dialogue question">Would you like to hear some of the nicknames?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Would you like to hear some of the nicknames?</that>
+      <template>
+        <set name="most recent dialogue question">Mother Road, Main Street of America, and Will Rogers highway just to name a few.</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Would you like to hear some of the nicknames?</that>
+      <template>
+        Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Mother Road, Main Street of America, and Will Rogers highway just to name a few.</that>
+      <template>
+        Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>WHY WAS IT CALLED *</pattern>
+      <that>Mother Road, Main Street of America, and Will Rogers highway just to name a few.</that>
+      <template>
+        It's a long story! <set name="most recent dialogue question">I may have to refer you to Google for that, my friend.</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>* WHY WAS IT CALLED *</pattern>
+      <that>Mother Road, Main Street of America, and Will Rogers highway just to name a few.</that>
+      <template>
+        It's a long story! <set name="most recent dialogue question">I may have to refer you to Google for that, my friend.</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>I may have to refer you to Google for that, my friend.</that>
+      <template>
+        Let's see if you know this one. <set name="most recent dialogue question">Why was Route 66 nicknamed Bloody 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+
+  <category>
+      <pattern>_</pattern>
+      <that>Why was Route 66 nicknamed Bloody 66?</that>
+      <template>
+        You have a good idea there. <set name="most recent dialogue question">It was because of all the crashes that happened along its narrow stretches. Crazy, right?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Why was Route 66 nicknamed Bloody 66?</that>
+      <template>
+        <set name="most recent dialogue question">It was because of all the crashes that happened along its narrow stretches. Crazy, right?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># WHY ^</pattern>
+      <that>Why was Route 66 nicknamed Bloody 66?</that>
+      <template>
+        <set name="most recent dialogue question">It was because of all the crashes that happened along its narrow stretches. Crazy, right?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Crazy, right?</that>
+      <template>
+        But anyway! <set name="most recent dialogue question">I have a video of the Mother Road museum. Would you like to tour it?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Would you like to tour it?</that>
+      <template>
+        <set name="most recent dialogue question">So what do you think? Are you up for a road trip or what?</set>
+
+          <oob>
+              <robot><video>
+                  <filename>California_Route_66.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Would you like to tour it?</that>
+      <template>
+        <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Would you like to keep talking about Route 66 museums?</that>
+      <template>
+        <set name="most recent dialogue question">What do you like about Route 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Are you up for a road trip or what?</that>
+      <template>
+        <set name="most recent dialogue question">Just remember to take me with you! We'll sing all the road tunes together!</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Are you up for a road trip or what?</that>
+      <template>
+        <set name="most recent dialogue question">Do you believe that it's about the journey and not the destination?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Are you up for a road trip or what?</that>
+      <template>
+        <set name="most recent dialogue question">Do you believe that it's about the journey and not the destination?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>We'll sing all the road tunes together!</that>
+      <template>
+        <set name="most recent dialogue question">Do you believe that it's about the journey and not the destination?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Do you believe that it's about the journey and not the destination?</that>
+      <template>
+        <set name="most recent dialogue question">A person after my own heart!</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Do you believe that it's about the journey and not the destination?</that>
+      <template>
+        <set name="most recent dialogue question">Maybe you have a point!</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>Do you believe that it's about the journey and not the destination?</that>
+      <template>
+        Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Maybe you have a point!</that>
+      <template>
+        Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>A person after my own heart!</that>
+      <template>
+        Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What decade?</that>
+      <template>
+        It was the eighties! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># EIGHTIES ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># THE EIGHTIES ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># 80s ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># THE 80s ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># 80's ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># THE 80's ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># 1985 ^</pattern>
+      <that>What decade?</that>
+      <template>
+        You're good at this! <set name="most recent dialogue question">Can you guess where an actual piece of Route 66 blacktop is exhibited? What museum?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># SMITHSONIAN ^</pattern>
+      <that>What museum?</that>
+      <template>
+        You have a great memory! <set name="most recent dialogue question">What memories do you have of Route 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># NATIONAL SMITHSONIAN ^</pattern>
+      <that>What museum?</that>
+      <template>
+        You have a great memory! <set name="most recent dialogue question">What memories do you have of Route 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>What museum?</that>
+      <template>
+        It's at the National Smithsonian! <set name="most recent dialogue question">What memories do you have of Route 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What museum?</that>
+      <template>
+        It's at the National Smithsonian! <set name="most recent dialogue question">What memories do you have of Route 66?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>DON T KNOW</set> ^</pattern>
+      <that>What memories do you have of Route 66?</that>
+      <template>
+        Well let's jog your memory! <set name="most recent dialogue question">Want to take a tour of the Route 66 museum in Arizona?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># DON T HAVE ^</pattern>
+      <that>What memories do you have of Route 66?</that>
+      <template>
+        Well let's jog your memory! <set name="most recent dialogue question">Want to take a tour of the Route 66 museum in Arizona?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>What memories do you have of Route 66?</that>
+      <template>
+        I could listen to you talk all day! <set name="most recent dialogue question">Want to take a tour of the Route 66 museum in Arizona?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>YES</set> ^</pattern>
+      <that>Want to take a tour of the Route 66 museum in Arizona?</that>
+      <template>
+        Well what did you think? <set name="most recent dialogue question">Would you ever visit?</set>
+
+          <oob>
+              <robot><video>
+                  <filename>Route_66_Arizona.mp4</filename>
+              </video></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern># <set>NO</set> ^</pattern>
+      <that>Want to take a tour of the Route 66 museum in Arizona?</that>
+      <template>
+        <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set>
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+  <category>
+      <pattern>_</pattern>
+      <that>Would you ever visit?</that>
+      <template>
+        <think><set name="data"><star/></set></think>
+
+        <condition name="getsentiment">
+            <li value="verypositive">Don't forget to take me with you! <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set></li>
+            <li value="positive">Don't forget to take me with you! <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set></li>
+            <li value="negative">Must not be your kinda thing! <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set></li>
+            <li value="verynegative">Must not be your kinda thing! <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set></li>
+            <li value="neutral">Don't forget to take me with you! <set name="most recent dialogue question">Would you like to keep talking about Route 66 museums?</set></li>
+            </condition>
+
+
+          <oob>
+              <robot></robot>
+          </oob>
+      </template>
+  </category>
+
+</topic>
+
+<category>
+    <pattern># <set>NO</set> ^</pattern>
+    <that>Would you like to keep talking about Route 66 museums?</that>
+    <template>
+      Sure. <set name="most recent dialogue question">What would you like to talk about?</set>
+
+        <oob>
+            <robot></robot>
+        </oob>
+    </template>
+</category>
+
+</aiml>

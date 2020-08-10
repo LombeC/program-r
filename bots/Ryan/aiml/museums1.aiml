@@ -25,27 +25,39 @@
         <that>Would you like to talk about museums?</that>
         <template>
           <think><set name="dialogue">museums</set></think>
-            <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
-            <oob><robot></robot></oob>
+            <set name="most recent dialogue question">Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</set>
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
     <category>
-        <pattern># Route sixty six ^</pattern>
-        <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+        <pattern># Route 66 ^</pattern>
+        <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
         <template>
           <think><set name="topic">routesixtysix</set></think>
-            You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
-            <oob><robot></robot></oob>
+          <random>
+            <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+            <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+            <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+          </random>
+            <oob>
+                <robot></robot>
+            </oob>
         </template>
     </category>
 
         <category>
-            <pattern># Route sixty six museums ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <pattern># Route 66 museums ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
               <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -54,10 +66,14 @@
 
         <category>
             <pattern># Route 66 museums ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
               <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -66,10 +82,78 @@
 
         <category>
             <pattern># Route 66 ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
               <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route sixty six ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route sixty-six ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route sixty six museums ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route sixty-six museums ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -78,22 +162,14 @@
 
         <category>
             <pattern># 66 ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
               <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
-                <oob>
-                    <robot></robot>
-                </oob>
-            </template>
-        </category>
-
-        <category>
-            <pattern># Route sixty six museum ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
-            <template>
-              <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -102,10 +178,30 @@
 
         <category>
             <pattern># Route 66 museum ^</pattern>
-            <that>Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
             <template>
               <think><set name="topic">routesixtysix</set></think>
-                You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
+                <oob>
+                    <robot></robot>
+                </oob>
+            </template>
+        </category>
+
+        <category>
+            <pattern># Route 66 museum ^</pattern>
+            <that>Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</that>
+            <template>
+              <think><set name="topic">routesixtysix</set></think>
+              <random>
+                <li>You must like to get your kicks! <set name="most recent dialogue question">The largest Route 66 museum is in Clinton, Oklahoma. Would you like to take a tour?</set></li>
+                <li><set name="most recent dialogue question">Can you name one of the nicknames for Route 66?</set></li>
+                <li><set name="most recent dialogue question">Can you guess when the last stretch of Route 66 disappeared from maps? What decade?</set></li>
+              </random>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -221,8 +317,8 @@
             <pattern>_</pattern>
             <that>Where did you go?</that>
             <template>
-                I am just imagining you there now! <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
-                
+                I am just imagining you there now! <set name="most recent dialogue question">Can I show you some Route 66 highlights?</set>
+
                 <oob>
                     <robot></robot>
                 </oob>
@@ -234,7 +330,7 @@
             <that>Where have you road tripped to?</that>
             <template>
                 I am just imagining you there now!
-                <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
+                <set name="most recent dialogue question">Can I show you some Route 66 highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -246,7 +342,7 @@
             <that>Where would you like to travel, if you could?</that>
             <template>
                 I am just imagining you there now!
-                        <set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set>
+                        <set name="most recent dialogue question">Can I show you some Route 66 highlights?</set>
                 <oob>
                     <robot></robot>
                 </oob>
@@ -256,7 +352,7 @@
 
     <category>
         <pattern># <set>YES</set> ^</pattern>
-        <that>Can I show you some Route sixty six highlights?</that>
+        <that>Can I show you some Route 66 highlights?</that>
         <template>
             <set name="most recent dialogue question">Let's hit the road Jack and never come back!</set>
             <oob>
@@ -283,7 +379,7 @@
 
     <category>
         <pattern># <set>No</set> ^</pattern>
-        <that><set name="most recent dialogue question">Can I show you some Route sixty six highlights?</set></that>
+        <that><set name="most recent dialogue question">Can I show you some Route 66 highlights?</set></that>
         <template>
             Okay. <set name="most recent dialogue question">Do you want to keep talking about museums?</set>
             <oob>
@@ -298,7 +394,7 @@
         <pattern># <set>YES</set> ^</pattern>
         <that>Do you want to keep talking about museums?</that>
         <template>
-            Great! <set name="most recent dialogue question">Do you want to talk about route sixty six museums, art museums, the cowboy museum, or the Smithsonian?</set>
+            Great! <set name="most recent dialogue question">Do you want to talk about Route 66 museums, art museums, the cowboy museum, or the Smithsonian?</set>
             <oob>
                 <robot></robot>
             </oob>
