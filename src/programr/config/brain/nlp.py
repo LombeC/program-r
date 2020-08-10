@@ -14,8 +14,8 @@ class BrainNLPConfiguration(BaseSectionConfigurationData):
         self._nltk_data_dir = None
         self._toknizer = BrainTokenizerConfiguration()
         self._sentence_segmentation = BrainSentenceSegmentationConfiguration()
-        self._semantic_similarity = BrainSemanticSimilarityConfiguration()
-        self._sentiment_analysis = BrainSentimentAnalysisConfiguration()
+        # self._semantic_similarity = BrainSemanticSimilarityConfiguration()
+        # self._sentiment_analysis = BrainSentimentAnalysisConfiguration()
 
     @property
     def classname(self):
@@ -33,13 +33,13 @@ class BrainNLPConfiguration(BaseSectionConfigurationData):
     def sentence_segmentation(self):
         return self._sentence_segmentation
 
-    @property
-    def semantic_similarity(self):
-        return self._semantic_similarity
+    # @property
+    # def semantic_similarity(self):
+    #     return self._semantic_similarity
 
-    @property
-    def sentiment_analysis(self):
-        return self._sentiment_analysis
+    # @property
+    # def sentiment_analysis(self):
+    #     return self._sentiment_analysis
 
     def load_config_section(self, configuration_file, configuration, bot_root):
         nlp = configuration_file.get_section("nlp", configuration)
@@ -48,8 +48,8 @@ class BrainNLPConfiguration(BaseSectionConfigurationData):
             self._nltk_data_dir = configuration_file.get_option(nlp, "nltk_data_dir")
             tokenizer = self._toknizer.load_config_section(configuration_file, nlp, bot_root)
             sentence_segmentation = self._sentence_segmentation.load_config_section(configuration_file, nlp, bot_root)
-            semantic_similarity = self._semantic_similarity.load_config_section(configuration_file, nlp, bot_root)
-            sentiment_analysis = self._sentiment_analysis.load_config_section(configuration_file, nlp, bot_root)
+            # semantic_similarity = self._semantic_similarity.load_config_section(configuration_file, nlp, bot_root)
+            # sentiment_analysis = self._sentiment_analysis.load_config_section(configuration_file, nlp, bot_root)
         else:
             YLogger.warning(self, "Config section [services] missing from Brain, no nlp loaded")
 

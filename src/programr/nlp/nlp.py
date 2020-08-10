@@ -13,7 +13,7 @@ class NLP(object):
         self._tokenizer = Tokenizer.factory(configuraion.tokenizer.libname)
         self._sentence_segmentation = SentenceSegmentation.factory(configuraion.sentence_segmentation.libname)
         # self._semantic_similarity = SemanticSimilarity.factory(configuraion.semantic_similarity.method)
-        self._sentiment_analysis = SentimentAnalysis.factory(configuraion)
+        # self._sentiment_analysis = SentimentAnalysis.factory(configuraion)
         self._load_libraries(configuraion.nltk_data_dir)
 
     @property
@@ -28,9 +28,9 @@ class NLP(object):
     # def semantic_similarity(self):
     #     return self._semantic_similarity
 
-    @property
-    def sentiment_analysis(self):
-        return self._sentiment_analysis
+    # @property
+    # def sentiment_analysis(self):
+    #     return self._sentiment_analysis
 
     def _load_libraries(self, nltk_data_dir):
         if nltk_data_dir and os.path.isdir(nltk_data_dir):

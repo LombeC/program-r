@@ -47,12 +47,18 @@ class GetSentiment(DynamicVariable):
             if len(bot.facial_expression_recognition.values):
                 last_fer_value = 0#bot.facial_expression_recognition.last_fer_value
 
+                # NOTE: Old way, which reads from config.yaml
                 #the logic of mixing fer and sentiment goes here
-                alpha = nlp.sentiment_analysis.alpha
-                positive_threshold = nlp.sentiment_analysis.positive_threshold
-                negative_threshold = nlp.sentiment_analysis.negative_threshold
+                # alpha = nlp.sentiment_analysis.alpha
+                # positive_threshold = nlp.sentiment_analysis.positive_threshold
+                # negative_threshold = nlp.sentiment_analysis.negative_threshold
 
-                sentiment_value = nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
+                alpha = 0.1
+                positive_threshold = 0.2
+                negative_threshold = -0.2
+
+                # sentiment_value = nlp.sentiment_analysis.expected_sentiment_value(sentiment_distribution)
+                sentiment_value = self.expected_sentiment_value(sentiment_distribution)
 
                 print("FER: ", last_fer_value)
                 print("Sentiment:", sentiment_value)
@@ -90,3 +96,8 @@ class GetSentiment(DynamicVariable):
 
         print("In GetSentiment sentiment: {}".format(sentiment))
         return sentiment
+
+    def expected_sentiment_value(self, sentiment_distribution):
+        value = -sentiment_distribution[0] + sentiment_distribution[2]
+        return value
+
