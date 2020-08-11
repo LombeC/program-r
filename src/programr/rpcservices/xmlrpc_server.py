@@ -1,22 +1,24 @@
+# Standard Library Imports
 import os
+import yaml
 import time
 import requests
 import wikipedia
+
+# 3rd Party Imports
+import torch
 import numpy as np
-import yaml
-from yaml import load, dump
-
-from flask import Flask, make_response, jsonify
-from xmlrpc.server import SimpleXMLRPCServer
-from newsapi import NewsApiClient
 from pyowm import OWM
+from yaml import load, dump
+from transformers import pipeline
+from newsapi import NewsApiClient
+from xmlrpc.server import SimpleXMLRPCServer
+from flask import Flask, make_response, jsonify
 
-import torch 
-from transformers import (RobertaTokenizer, RobertaForSequenceClassification, InputExample, pipeline,
-                          glue_convert_examples_to_features, DistilBertTokenizer, DistilBertForSequenceClassification)
-
-from programr.rpcservices.models import DistilBertSentimentAnalysis, DistilRobertaSemanticSimilarity
+# Relative Imports
 from programr.services.wikipediaservice import WikipediaAPI, WikipediaService
+from programr.rpcservices.sentiment_analysis import DistilBertSentimentAnalysis
+from programr.rpcservices.semantic_similarity import DistilRobertaSemanticSimilarity
 
 
 server = SimpleXMLRPCServer(('localhost', 3000), logRequests=True)
@@ -92,8 +94,8 @@ def get_weather_status(location="Denver, USA"):
             data = yaml.safe_load(stream)
             api_key = data['weather']
             observation = OWM(api_key).weather_at_place(location)
-            print("observation: {}".format(type(observation)))
-            print("observation: {}".format(observation))
+            # print("observation: {}".format(type(observation)))
+            # print("observation: {}".format(observation))
             weather = observation.get_weather()
             return str(weather.get_status())
     except Exception as ex:

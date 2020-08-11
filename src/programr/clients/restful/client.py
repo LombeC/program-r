@@ -80,7 +80,6 @@ class RestBotClient(BotClient):
         sentiment = response['response']
         sentiment_value = sentiment[0]
         sentiment_distribution = sentiment[1]
-        # sentiment_value, sentiment_distribution = client_context.brain.nlp.sentiment_analysis.get_sentence_sentiment(question)
         numerical_sentiment = -sentiment_distribution[0] + sentiment_distribution[2]
 
         client_context.bot.sentiment.append_sentiment(numerical_sentiment)

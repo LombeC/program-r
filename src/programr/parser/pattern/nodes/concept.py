@@ -11,6 +11,8 @@ from programr.parser.exceptions import ParserException
 
 #from programr.nlp.semantic.semantic_similarity import SemanticSimilarity
 
+DEBUG = False
+
 
 class PatternConceptNode(PatternNode):
 
@@ -39,6 +41,7 @@ class PatternConceptNode(PatternNode):
 
     
     def equals(self, client_context, words, word_no):
+        if DEBUG: print("In equals for concept tag")
         word = words.word(word_no)
 
         if self.userid != '*':
@@ -48,14 +51,18 @@ class PatternConceptNode(PatternNode):
 
         last_index = words.words.index("__TOPIC__")
         sentence = words.words[:last_index]
+        if DEBUG: print("self._concept_name: {}".format(self._concept_name))
+        if DEBUG: print("words.words: {}".format(words.words))
         if sentence:
             concepts = self._concept_name.split("|")
             this_concept = concepts[0]  # this is the main concept we have to compare others to
+            if DEBUG: print("this_concept: {}".format(type(this_concept)))
             other_concepts = concepts[1:]  # this is other concepts we have to compare this_concept to
+            if DEBUG: print("other_concepts: {}".format(type(other_concepts)))
 
             sentence_text = " ".join(sentence)
 
-            # TODO: Change this to use XMLRPC Server
+            
             similarity_with_this_concept = requests.post('http://localhost:5000/api/rest/v1.0/similarity_concept',  json={'text': sentence_text, 'concept': this_concept})
             similarity_with_this_concept = json.loads(similarity_with_this_concept.text)
             similarity_with_this_concept = similarity_with_this_concept['response']
@@ -64,6 +71,7 @@ class PatternConceptNode(PatternNode):
             similarity_with_other_concepts = json.loads(similarity_with_other_concepts.text)
             similarity_with_other_concepts = similarity_with_other_concepts['response']
 
+            # NOTE: Old way of getting similarity. Seems to be loading incorrectly.
             # similarity_with_this_concept = client_context.brain.nlp.semantic_similarity.similarity_with_concept(sentence_text, this_concept)
             # similarity_with_other_concepts = client_context.brain.nlp.semantic_similarity.similarity_with_concepts(sentence_text, other_concepts)
 

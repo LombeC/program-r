@@ -82,9 +82,7 @@
         <that>Did you learn to play as a child?</that>
         <template>
             Oh wow! So you learned to play later in life. I wish you could play me a little ditty.
-            <oob>
-                <robot></robot>
-            </oob>
+            <oob><robot></robot></oob>
         </template>
     </category>
 
@@ -94,9 +92,7 @@
         <template>
           <think><set name="topic">music</set></think>
             <set name="most recent dialogue question">Do you like listening to music while cooking dinner?</set>
-            <oob>
-                <robot></robot>
-            </oob>
+            <oob><robot></robot></oob>
         </template>
     </category>
 
@@ -109,11 +105,7 @@
             <random>
                 <li>This music makes me swoon!
                     <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
-                    <robot>
-                        <video>
-                            <filename>natKing.mp3</filename>
-                        </video>
-                    </robot>
+                    <robot><video><filename>natKing.mp3</filename></video></robot>
                 </oob></li>
                 <li>It has a way of making you want to get up and dance! <set name="most recent dialogue question">What did you think of the crooner clip?</set><oob>
                     <robot>
